@@ -6,82 +6,393 @@
 
 <title>Titirangi Real Estate Agents | Team Peter & Edita</title>
 
-<meta name="description" content="Trusted Titirangi real estate agents helping sellers in Titirangi, Blockhouse Bay and Lynfield Auckland with smart marketing and expert advice.">
+<meta name="description" content="Premium real estate agents in Titirangi, Blockhouse Bay and Lynfield Auckland. Free property appraisals, local expertise, AI marketing and trusted service from Team Peter & Edita.">
 
 <style>
-body{
-font-family:Arial, sans-serif;
-margin:0;
-padding:0;
-background:#f7f7f7;
-color:#222;
-line-height:1.6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header{
-background:#111;
-color:white;
-padding:50px 20px;
-text-align:center;
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #111;
+  background: #f7f4ef;
+  line-height: 1.6;
 }
-section{
-max-width:1000px;
-margin:auto;
-padding:40px 20px;
-background:white;
-margin-top:20px;
-border-radius:12px;
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 28px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 10;
 }
-h1,h2{
-margin-bottom:15px;
+
+.logo {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.button{
-display:inline-block;
-padding:14px 24px;
-background:#111;
-color:white;
-text-decoration:none;
-border-radius:8px;
-margin-top:15px;
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 28px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
-ul{
-padding-left:20px;
+
+.hero {
+  height: 92vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.45)),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  color: white;
 }
-footer{
-text-align:center;
-padding:30px;
-font-size:14px;
-color:#777;
+
+.hero-content {
+  max-width: 780px;
+}
+
+.hero h1 {
+  font-size: 62px;
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  max-width: 620px;
+  margin-bottom: 35px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: #111;
+}
+
+.btn.dark {
+  border: 1px solid #111;
+  color: #111;
+}
+
+.btn.dark:hover {
+  background: #111;
+  color: white;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.stat {
+  padding: 35px 20px;
+  border-right: 1px solid #333;
+}
+
+.stat h2 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.stat p {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section {
+  padding: 90px 8%;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.intro h2,
+.section-title {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 25px;
+}
+
+.intro p,
+.card p,
+.area p {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  color: #444;
+}
+
+.image-box {
+  height: 480px;
+  background:
+    url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 45px;
+}
+
+.card {
+  background: white;
+  padding: 38px;
+  min-height: 250px;
+}
+
+.card h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.areas {
+  background: #111;
+  color: white;
+}
+
+.areas .section-title {
+  color: white;
+}
+
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.area {
+  border: 1px solid #444;
+  padding: 35px;
+}
+
+.area h3 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.area p {
+  color: #ccc;
+}
+
+.cta {
+  text-align: center;
+  background: #d8c9ad;
+}
+
+.cta h2 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  padding: 40px 8%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 850px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .stats,
+  .intro,
+  .cards,
+  .area-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    height: 85vh;
+  }
+
+  .section {
+    padding: 60px 6%;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Titirangi Real Estate Agents</h1>
-<p>Helping Sellers Achieve Better Results</p>
-<a href="tel:021765234" class="button">Call Now</a>
-</header>
+<nav>
+  <div class="logo">Team Peter & Edita</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#areas">Areas</a>
+    <a href="#appraisal">Appraisal</a>
+    <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">Contact</a>
+  </div>
+</nav>
 
-<section>
-<h2>Why Choose Team Peter & Edita</h2>
-<ul>
-<li>25+ Years Combined Experience</li>
-<li>Local Experts: Titirangi, Blockhouse Bay & Lynfield</li>
-<li>AI Powered Marketing</li>
-<li>Personal Service & Negotiation</li>
-<li>Trusted 5-Star Reviews</li>
-</ul>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Titirangi Real Estate Agents Helping Sellers Move With Confidence</h1>
+    <p>Premium local real estate advice for Titirangi, Blockhouse Bay and Lynfield homeowners, combining trusted experience, smart marketing and personal service.</p>
+    <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz" class="btn">Request Appraisal</a>
+    <a href="tel:021765234" class="btn">Call Peter & Edita</a>
+  </div>
 </section>
 
-<section>
-<h2>Thinking of Selling?</h2>
-<p>Request a free no-obligation property appraisal today.</p>
-<a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz" class="button">Email Us</a>
+<section class="stats">
+  <div class="stat">
+    <h2>25+</h2>
+    <p>Years Experience</p>
+  </div>
+  <div class="stat">
+    <h2>5★</h2>
+    <p>Client Reviews</p>
+  </div>
+  <div class="stat">
+    <h2>AI</h2>
+    <p>Buyer Marketing</p>
+  </div>
+  <div class="stat">
+    <h2>Local</h2>
+    <p>West Auckland Experts</p>
+  </div>
+</section>
+
+<section class="section intro" id="about">
+  <div>
+    <h2>Local Knowledge. Premium Presentation. Smarter Buyer Reach.</h2>
+    <p>
+      Selling a home in Titirangi, Blockhouse Bay or Lynfield requires more than simply placing a property online. Buyers compare lifestyle, presentation, sunlight, access, condition and value before deciding whether to inspect or offer.
+    </p>
+    <br>
+    <p>
+      Team Peter & Edita help homeowners position their property with confidence, using strong local knowledge, professional advice, AI-powered marketing and skilled negotiation.
+    </p>
+    <br>
+    <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz" class="btn dark">Get Selling Advice</a>
+  </div>
+  <div class="image-box"></div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">Why Sellers Choose Team Peter & Edita</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Premium Marketing</h3>
+      <p>Your property deserves more than basic advertising. We focus on presentation, buyer targeting and smart digital exposure to create stronger interest.</p>
+    </div>
+
+    <div class="card">
+      <h3>Local Expertise</h3>
+      <p>We understand how buyers compare homes across Titirangi, Blockhouse Bay, Lynfield, Green Bay, New Lynn and nearby suburbs.</p>
+    </div>
+
+    <div class="card">
+      <h3>Personal Service</h3>
+      <p>You work directly with experienced agents who care about the result, not a volume-based system where your property becomes just another listing.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section areas" id="areas">
+  <h2 class="section-title">Suburbs We Specialise In</h2>
+
+  <div class="area-grid">
+    <div class="area">
+      <h3>Titirangi</h3>
+      <p>Bush settings, lifestyle appeal, privacy, character homes and outdoor living require careful buyer positioning.</p>
+    </div>
+
+    <div class="area">
+      <h3>Blockhouse Bay</h3>
+      <p>Family homes, convenience, schools and strong local demand make presentation and pricing strategy essential.</p>
+    </div>
+
+    <div class="area">
+      <h3>Lynfield</h3>
+      <p>A popular central-west location where buyers compare value, access, condition and long-term potential.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section cta" id="appraisal">
+  <h2>Thinking of Selling?</h2>
+  <p>Request a free, no-obligation property appraisal and find out what your home could be worth in today’s market.</p>
+  <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz" class="btn dark">Email Us Today</a>
+  <a href="tel:021765234" class="btn dark">Call 021 765 234</a>
 </section>
 
 <footer>
-Team Peter & Edita | Raine & Horne Auckland
+  <div>
+    <strong>Team Peter & Edita</strong><br>
+    Raine & Horne Titirangi, Blockhouse Bay & Lynfield
+  </div>
+  <div>
+    <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a><br>
+    <a href="tel:021765234">021 765 234</a>
+  </div>
 </footer>
 
 </body>
