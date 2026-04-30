@@ -9,49 +9,341 @@
 <meta name="description" content="Team Peter & Edita are trusted real estate agents in Titirangi, Blockhouse Bay and Lynfield Auckland. Get a free property appraisal, local market advice and seller-focused articles.">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;background:#f7f4ef;color:#111;line-height:1.6}
-h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400}
-nav{position:absolute;top:0;width:100%;padding:26px 8%;display:flex;justify-content:space-between;align-items:center;z-index:10;color:white}
-.logo{font-size:18px;letter-spacing:2px;text-transform:uppercase}
-nav a{color:white;text-decoration:none;margin-left:24px;font-size:13px;text-transform:uppercase;letter-spacing:1px}
-.hero{min-height:92vh;background:linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.45)),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80');background-size:cover;background-position:center;display:flex;align-items:center;padding:0 8%;color:white}
-.hero-content{max-width:820px}
-.hero h1{font-size:62px;line-height:1.05;margin-bottom:24px}
-.hero p{font-size:20px;max-width:650px;margin-bottom:34px}
-.btn{display:inline-block;padding:15px 28px;border:1px solid currentColor;color:inherit;text-decoration:none;text-transform:uppercase;letter-spacing:1.4px;font-size:13px;margin:6px 8px 6px 0}
-.btn:hover{background:white;color:#111}
-.btn.dark{color:#111}
-.btn.dark:hover{background:#111;color:white}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);background:#111;color:white;text-align:center}
-.stat{padding:34px 18px;border-right:1px solid #333}
-.stat h2{font-size:34px}
-.stat p{font-size:13px;text-transform:uppercase;letter-spacing:1px}
-.section{padding:90px 8%}
-.white{background:white}
-.dark{background:#111;color:white}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:38px}
-.section h2{font-size:44px;line-height:1.15;margin-bottom:22px}
-.card{background:white;padding:34px;min-height:230px}
-.dark .card{background:#1d1d1d;border:1px solid #333}
-.card h3{font-size:25px;margin-bottom:14px}
-.card p,.section p,.section li{font-size:17px;color:#444}
-.dark p,.dark li{color:#ccc}
-ul{padding-left:22px;margin-top:12px}
-.image-box{height:460px;background:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80');background-size:cover;background-position:center}
-.appraisal{background:#d8c9ad;text-align:center}
-.appraisal p{max-width:720px;margin:0 auto 26px}
-.article-list a{display:block;color:#111;text-decoration:none;border-bottom:1px solid #ddd;padding:18px 0;font-size:20px;font-family:Georgia,'Times New Roman',serif}
-.article-list a:hover{color:#7a5c2e}
-footer{background:#111;color:white;padding:42px 8%;display:flex;justify-content:space-between;flex-wrap:wrap;font-size:14px}
-footer a{color:white;text-decoration:none}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --gold:#b08a42;
+  --gold-dark:#8f6d2e;
+  --black:#111;
+  --cream:#d8c9ad;
+  --soft:#f7f4ef;
+  --white:#fff;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:var(--soft);
+  color:#111;
+  line-height:1.6;
+}
+
+h1,h2,h3{
+  font-family:Georgia,'Times New Roman',serif;
+  font-weight:400;
+}
+
+nav{
+  position:absolute;
+  top:0;
+  width:100%;
+  padding:26px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:10;
+  color:white;
+}
+
+.logo{
+  font-size:18px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:24px;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+nav a:hover{
+  color:#e7c782;
+}
+
+.hero{
+  min-height:92vh;
+  background:
+    linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.45)),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  padding:0 8%;
+  color:white;
+}
+
+.hero-content{
+  max-width:820px;
+}
+
+.hero h1{
+  font-size:62px;
+  line-height:1.05;
+  margin-bottom:24px;
+}
+
+.hero p{
+  font-size:20px;
+  max-width:650px;
+  margin-bottom:34px;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 30px;
+  border:1px solid var(--gold);
+  background:var(--gold);
+  color:white;
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:1.4px;
+  font-size:13px;
+  font-weight:bold;
+  margin:6px 8px 6px 0;
+  transition:.25s ease;
+}
+
+.btn:hover{
+  background:var(--gold-dark);
+  border-color:var(--gold-dark);
+  color:white;
+  transform:translateY(-1px);
+}
+
+.btn.dark{
+  background:var(--gold);
+  color:white;
+  border-color:var(--gold);
+}
+
+.btn.dark:hover{
+  background:var(--gold-dark);
+  color:white;
+  border-color:var(--gold-dark);
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  background:#111;
+  color:white;
+  text-align:center;
+}
+
+.stat{
+  padding:34px 18px;
+  border-right:1px solid #333;
+}
+
+.stat h2{
+  font-size:34px;
+  color:var(--gold);
+}
+
+.stat p{
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.section{
+  padding:90px 8%;
+}
+
+.white{
+  background:white;
+}
+
+.dark{
+  background:#111;
+  color:white;
+}
+
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+  margin-top:38px;
+}
+
+.section h2{
+  font-size:44px;
+  line-height:1.15;
+  margin-bottom:22px;
+}
+
+.card{
+  background:white;
+  padding:34px;
+  min-height:230px;
+  border:1px solid #eee;
+}
+
+.dark .card{
+  background:#1d1d1d;
+  border:1px solid #333;
+}
+
+.card h3{
+  font-size:25px;
+  margin-bottom:14px;
+}
+
+.card p,
+.section p,
+.section li{
+  font-size:17px;
+  color:#444;
+}
+
+.dark p,
+.dark li{
+  color:#ccc;
+}
+
+ul{
+  padding-left:22px;
+  margin-top:12px;
+}
+
+.image-box{
+  height:460px;
+  background:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80');
+  background-size:cover;
+  background-position:center;
+}
+
+.appraisal{
+  background:var(--cream);
+  text-align:center;
+}
+
+.appraisal p{
+  max-width:720px;
+  margin:0 auto 26px;
+}
+
+.article-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  margin-top:38px;
+}
+
+.article-list a{
+  display:block;
+  color:#111;
+  text-decoration:none;
+  background:#f7f4ef;
+  border:1px solid #e4dccd;
+  padding:26px;
+  font-size:22px;
+  line-height:1.25;
+  font-family:Georgia,'Times New Roman',serif;
+  transition:.25s ease;
+}
+
+.article-list a:hover{
+  color:white;
+  background:var(--gold);
+  border-color:var(--gold);
+  transform:translateY(-2px);
+}
+
+.article-section{
+  border-top:1px solid #ddd;
+  padding-top:45px;
+  margin-top:45px;
+}
+
+.article-section h3{
+  font-size:34px;
+  line-height:1.2;
+  margin-bottom:18px;
+}
+
+.article-section p{
+  margin-bottom:18px;
+  max-width:950px;
+}
+
+.article-section strong{
+  color:#111;
+}
+
+.back-link{
+  display:inline-block;
+  margin-top:10px;
+  color:var(--gold-dark);
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.back-link:hover{
+  text-decoration:underline;
+}
+
+footer{
+  background:#111;
+  color:white;
+  padding:42px 8%;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:24px;
+  font-size:14px;
+}
+
+footer a{
+  color:white;
+  text-decoration:none;
+}
+
+footer a:hover{
+  color:#e7c782;
+}
+
 @media(max-width:850px){
-nav{position:relative;background:#111;display:block}
-nav a{display:inline-block;margin:10px 12px 0 0}
-.hero h1{font-size:42px}
-.stats,.grid-2,.grid-3{grid-template-columns:1fr}
-.section{padding:60px 6%}
+  nav{
+    position:relative;
+    background:#111;
+    display:block;
+  }
+
+  nav a{
+    display:inline-block;
+    margin:10px 12px 0 0;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .stats,
+  .grid-2,
+  .grid-3,
+  .article-list{
+    grid-template-columns:1fr;
+  }
+
+  .section{
+    padding:60px 6%;
+  }
 }
 </style>
 </head>
@@ -80,48 +372,134 @@ nav a{display:inline-block;margin:10px 12px 0 0}
 </section>
 
 <section class="stats">
-  <div class="stat"><h2>25+</h2><p>Years Experience</p></div>
-  <div class="stat"><h2>5★</h2><p>Client Reviews</p></div>
-  <div class="stat"><h2>AI</h2><p>Buyer Marketing</p></div>
-  <div class="stat"><h2>Local</h2><p>Auckland Experts</p></div>
+  <div class="stat">
+    <h2>25+</h2>
+    <p>Years Experience</p>
+  </div>
+
+  <div class="stat">
+    <h2>5★</h2>
+    <p>Client Reviews</p>
+  </div>
+
+  <div class="stat">
+    <h2>AI</h2>
+    <p>Buyer Marketing</p>
+  </div>
+
+  <div class="stat">
+    <h2>Local</h2>
+    <p>Auckland Experts</p>
+  </div>
 </section>
 
 <section class="section white" id="about">
   <div class="grid-2">
     <div>
       <h2>Local Knowledge. Premium Presentation. Smarter Buyer Reach.</h2>
+
       <p>Selling in Titirangi, Blockhouse Bay or Lynfield is not just about putting a home online. Buyers compare sunlight, outdoor living, privacy, access, condition, schools and lifestyle before deciding whether to inspect or offer.</p>
+
       <br>
+
       <p>Team Peter & Edita help homeowners position their property with confidence using local market knowledge, professional advice, AI-powered marketing and skilled negotiation.</p>
+
       <br>
+
       <a href="#appraisal" class="btn dark">Request Selling Advice</a>
     </div>
+
     <div class="image-box"></div>
   </div>
 </section>
 
 <section class="section appraisal" id="appraisal">
   <h2>Free Property Appraisal</h2>
+
   <p>Wondering what your home could be worth in today’s market? Request a free no-obligation appraisal for Titirangi, Blockhouse Bay, Lynfield or nearby Auckland suburbs.</p>
+
   <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz?subject=Free Property Appraisal Request" class="btn dark">Email For Appraisal</a>
+
   <a href="tel:021765234" class="btn dark">Call 021 765 234</a>
 </section>
 
 <section class="section white" id="articles">
   <h2>Seller Articles & Property Advice</h2>
+
   <p>Helpful local articles designed for homeowners thinking about selling, preparing their property, or understanding buyer behaviour in West Auckland.</p>
 
   <div class="article-list">
-    <a href="#">Titirangi House Prices 2026: What Sellers Should Watch</a>
-    <a href="#">How To Choose The Best Real Estate Agent In Titirangi</a>
-    <a href="#">Why Some Homes Do Not Sell In Blockhouse Bay</a>
-    <a href="#">Best Time To Sell In West Auckland</a>
-    <a href="#">How To Prepare Your Home For A Stronger Sale Price</a>
+    <a href="#article-titirangi-prices">Titirangi House Prices 2026: What Sellers Should Watch</a>
+    <a href="#article-choose-agent">How To Choose The Best Real Estate Agent In Titirangi</a>
+    <a href="#article-not-selling">Why Some Homes Do Not Sell In Blockhouse Bay</a>
+    <a href="#article-best-time">Best Time To Sell In West Auckland</a>
+    <a href="#article-prepare-home">How To Prepare Your Home For A Stronger Sale Price</a>
+  </div>
+
+  <div class="article-section" id="article-titirangi-prices">
+    <h3>Titirangi House Prices 2026: What Sellers Should Watch</h3>
+
+    <p>Titirangi sellers should watch more than just the headline price. Buyer behaviour is often influenced by presentation, privacy, sunlight, access, maintenance, views, outdoor living and how easily buyers can imagine living in the home.</p>
+
+    <p>In 2026, sellers should pay close attention to how their home compares with similar properties already on the market. A home that feels well-presented, easy to inspect and clearly positioned can attract stronger enquiry than a property that relies only on online estimates or a hopeful price.</p>
+
+    <p><strong>Seller tip:</strong> before launching, review recent comparable sales, current competition, buyer objections and the quality of your marketing. The right strategy can help protect your first impression and create stronger buyer confidence.</p>
+
+    <a class="back-link" href="#articles">Back to articles</a>
+  </div>
+
+  <div class="article-section" id="article-choose-agent">
+    <h3>How To Choose The Best Real Estate Agent In Titirangi</h3>
+
+    <p>Choosing the best real estate agent in Titirangi is not only about who gives the highest appraisal figure. A strong agent should explain the market clearly, show evidence behind their advice and have a plan to attract the right buyers.</p>
+
+    <p>Ask how your property will be positioned, how buyer enquiry will be followed up, whether other agents can bring buyers, and what will be done if the first two weeks do not create the right response.</p>
+
+    <p><strong>Seller tip:</strong> choose an agent who can combine local knowledge, strong presentation, skilled negotiation and smart digital buyer targeting.</p>
+
+    <a class="back-link" href="#articles">Back to articles</a>
+  </div>
+
+  <div class="article-section" id="article-not-selling">
+    <h3>Why Some Homes Do Not Sell In Blockhouse Bay</h3>
+
+    <p>When a home does not sell, many sellers assume the only issue is price. Sometimes that is true, but buyers may also hesitate because of presentation, layout, maintenance, competition, marketing quality or lack of confidence.</p>
+
+    <p>In Blockhouse Bay, buyers often compare family appeal, school access, parking, indoor-outdoor flow, condition and value against other nearby homes. If another property feels easier, brighter, better presented or better priced, buyers may move quickly toward that option.</p>
+
+    <p><strong>Seller tip:</strong> before reducing the price, first check what buyers are reacting to. The real issue may be fixable with better presentation, clearer positioning or stronger marketing.</p>
+
+    <a class="back-link" href="#articles">Back to articles</a>
+  </div>
+
+  <div class="article-section" id="article-best-time">
+    <h3>Best Time To Sell In West Auckland</h3>
+
+    <p>The best time to sell in West Auckland depends on the property, the suburb, buyer demand and the level of competition. Spring and early summer often bring more activity, but that can also mean more competing listings.</p>
+
+    <p>Some homes perform well when there is less competition, especially if the property is well-presented and buyers have fewer similar options. Timing matters, but strategy matters more.</p>
+
+    <p><strong>Seller tip:</strong> before deciding when to sell, look at current competing homes, buyer demand, weather, presentation needs and your own timeline.</p>
+
+    <a class="back-link" href="#articles">Back to articles</a>
+  </div>
+
+  <div class="article-section" id="article-prepare-home">
+    <h3>How To Prepare Your Home For A Stronger Sale Price</h3>
+
+    <p>Preparing your home for sale does not always mean spending a large amount of money. Often, the biggest impact comes from small improvements that help buyers feel confident.</p>
+
+    <p>Focus on first impressions: clean presentation, natural light, tidy gardens, clear access, decluttered rooms, minor repairs and professional photography. Buyers make quick emotional judgements, especially online.</p>
+
+    <p><strong>Seller tip:</strong> before spending money on major renovations, get advice on what buyers in your suburb are likely to value. Some improvements help; others may not return enough to justify the cost.</p>
+
+    <a class="back-link" href="#articles">Back to articles</a>
   </div>
 </section>
 
 <section class="section dark" id="suburbs">
   <h2>Suburb Guides</h2>
+
   <p>Local property guides help homeowners and buyers understand each market more clearly.</p>
 
   <div class="grid-3">
@@ -129,10 +507,12 @@ nav a{display:inline-block;margin:10px 12px 0 0}
       <h3>Titirangi</h3>
       <p>Bush settings, privacy, decks, sunlight and lifestyle appeal need careful buyer positioning.</p>
     </div>
+
     <div class="card">
       <h3>Blockhouse Bay</h3>
       <p>Family homes, schools, convenience and buyer demand make pricing and presentation important.</p>
     </div>
+
     <div class="card">
       <h3>Lynfield</h3>
       <p>A central-west suburb where buyers compare value, condition, access and long-term potential.</p>
@@ -148,10 +528,12 @@ nav a{display:inline-block;margin:10px 12px 0 0}
       <h3>Premium Marketing</h3>
       <p>We focus on strong presentation, buyer targeting and digital exposure designed to create better enquiry.</p>
     </div>
+
     <div class="card">
       <h3>Local Expertise</h3>
       <p>We understand how buyers compare homes across Titirangi, Blockhouse Bay, Lynfield, Green Bay and New Lynn.</p>
     </div>
+
     <div class="card">
       <h3>Personal Service</h3>
       <p>You work directly with experienced agents who care about the result, not a volume-based system.</p>
@@ -164,6 +546,7 @@ nav a{display:inline-block;margin:10px 12px 0 0}
     <strong>Team Peter & Edita</strong><br>
     Raine & Horne Titirangi, Blockhouse Bay & Lynfield
   </div>
+
   <div>
     <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a><br>
     <a href="tel:021765234">021 765 234</a>
