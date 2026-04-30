@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How To Choose The Best Real Estate Agent In Titirangi | Seller Guide</title>
+
+<meta name="description" content="How to choose the best real estate agent in Titirangi. A practical seller guide covering appraisals, local knowledge, marketing, negotiation, fees, buyer follow-up and red flags.">
+
+<link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/articles/best-real-estate-agent-titirangi.html">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --gold:#b08a42;
+  --gold-dark:#8f6d2e;
+  --black:#111;
+  --cream:#d8c9ad;
+  --soft:#f7f4ef;
+  --white:#fff;
+  --muted:#555;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:Arial,sans-serif;
+  background:var(--soft);
+  color:#111;
+  line-height:1.75;
+}
+
+h1,h2,h3{
+  font-family:Georgia,'Times New Roman',serif;
+  font-weight:400;
+  line-height:1.15;
+}
+
+nav{
+  background:#111;
+  color:white;
+  padding:24px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:16px;
+}
+
+.logo{
+  font-size:18px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:22px;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+nav a:hover{color:#e7c782}
+
+.article-hero{
+  background:
+    linear-gradient(rgba(0,0,0,.66),rgba(0,0,0,.50)),
+    url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1800&q=80');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  padding:115px 8%;
+}
+
+.article-hero-inner{max-width:980px}
+
+.kicker{
+  color:#e7c782;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:18px;
+}
+
+.article-hero h1{
+  font-size:clamp(42px,6vw,72px);
+  margin-bottom:22px;
+}
+
+.article-hero p{
+  font-size:21px;
+  max-width:850px;
+  color:#f1f1f1;
+}
+
+.meta{
+  margin-top:26px;
+  font-size:14px;
+  color:#ddd;
+}
+
+.article-wrap{
+  display:grid;
+  grid-template-columns:minmax(0,780px) 320px;
+  gap:46px;
+  padding:80px 8%;
+  align-items:start;
+}
+
+.article{
+  background:white;
+  padding:54px;
+  border:1px solid #eee;
+}
+
+.article p{
+  font-size:18px;
+  color:#333;
+  margin-bottom:22px;
+}
+
+.article h2{
+  font-size:36px;
+  margin:46px 0 18px;
+}
+
+.article h3{
+  font-size:26px;
+  margin:32px 0 14px;
+}
+
+.article ul{
+  margin:10px 0 26px 24px;
+}
+
+.article li{
+  font-size:18px;
+  color:#333;
+  margin-bottom:10px;
+}
+
+.article a{
+  color:var(--gold-dark);
+  font-weight:bold;
+}
+
+.snapshot{
+  background:#f7f4ef;
+  border-left:5px solid var(--gold);
+  padding:26px;
+  margin:36px 0;
+}
+
+.snapshot h3{margin-top:0}
+
+.snapshot p{margin-bottom:12px}
+
+.source-note{
+  font-size:14px!important;
+  color:#666!important;
+  margin-top:10px;
+}
+
+.callout{
+  background:#111;
+  color:white;
+  padding:30px;
+  margin:36px 0;
+}
+
+.callout h3{
+  color:white;
+  margin-top:0;
+}
+
+.callout p{color:#ddd}
+
+.faq{
+  background:#f7f4ef;
+  padding:28px;
+  margin-top:42px;
+}
+
+.faq h2{margin-top:0}
+
+.faq h3{font-size:24px}
+
+.cta-box{
+  background:#111;
+  color:white;
+  padding:36px;
+  margin:46px 0 10px;
+}
+
+.cta-box h2{
+  color:white;
+  font-size:34px;
+  margin-top:0;
+}
+
+.cta-box p{color:#ddd}
+
+.btn{
+  display:inline-block;
+  padding:15px 28px;
+  border:1px solid var(--gold);
+  background:var(--gold);
+  color:white!important;
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:1.4px;
+  font-size:13px;
+  font-weight:bold;
+  margin-top:8px;
+  transition:.25s ease;
+}
+
+.btn:hover{
+  background:var(--gold-dark);
+  border-color:var(--gold-dark);
+  transform:translateY(-1px);
+}
+
+.sidebar{
+  position:sticky;
+  top:24px;
+}
+
+.side-card{
+  background:white;
+  padding:28px;
+  border:1px solid #eee;
+  margin-bottom:22px;
+}
+
+.side-card h3{
+  font-size:24px;
+  margin-bottom:12px;
+}
+
+.side-card p,
+.side-card li{
+  color:#444;
+  font-size:16px;
+}
+
+.side-card ul{
+  padding-left:20px;
+  margin-top:10px;
+}
+
+.side-card a{
+  color:var(--gold-dark);
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.related a{
+  display:block;
+  padding:12px 0;
+  border-bottom:1px solid #eee;
+}
+
+footer{
+  background:#111;
+  color:white;
+  padding:42px 8%;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:24px;
+  font-size:14px;
+}
+
+footer a{
+  color:white;
+  text-decoration:none;
+}
+
+footer a:hover{color:#e7c782}
+
+@media(max-width:980px){
+  .article-wrap{grid-template-columns:1fr}
+  .sidebar{position:relative;top:0}
+}
+
+@media(max-width:760px){
+  nav a{
+    display:inline-block;
+    margin:10px 12px 0 0;
+  }
+
+  .article-hero{padding:70px 6%}
+  .article-wrap{padding:50px 6%}
+  .article{padding:30px 22px}
+  .article h2{font-size:31px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How To Choose The Best Real Estate Agent In Titirangi",
+  "description": "A practical seller guide explaining how to choose the best real estate agent in Titirangi, including appraisal evidence, local knowledge, marketing, buyer follow-up, negotiation, fees and agency agreements.",
+  "author": {
+    "@type": "Organization",
+    "name": "Team Peter & Edita | Raine & Horne"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Team Peter & Edita | Raine & Horne"
+  },
+  "datePublished": "2026-04-30",
+  "dateModified": "2026-04-30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://theateamraineandhorne.github.io/The-A-Team/articles/best-real-estate-agent-titirangi.html"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I choose the best real estate agent in Titirangi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose an agent who can explain local Titirangi buyer behaviour, provide an evidence-based written appraisal, show a clear marketing plan, explain buyer follow-up, discuss fees transparently and demonstrate strong negotiation ability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I choose the agent who gives the highest appraisal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not automatically. A high appraisal should be supported by comparable sales, current competition and buyer demand. The best agent should explain the price, not just promise it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What questions should I ask a Titirangi real estate agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask how the appraisal was calculated, which recent sales were used, how your home compares, who the likely buyer is, how marketing will reach qualified buyers, how feedback will be reported, what costs apply and how they will negotiate if offers come in below expectations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes selling in Titirangi different?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Titirangi homes can vary widely because of bush settings, views, sunlight, access, decks, privacy, maintenance, slope, property condition and documentation. A good local agent should understand how buyers compare these features."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to sign an agency agreement to sell with an agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In New Zealand, if you use a real estate agency to sell your property, you must sign an agency agreement first. Sellers should understand the commission, marketing costs and terms before signing."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Team Peter & Edita</div>
+  <div>
+    <a href="../index.html">Home</a>
+    <a href="../index.html#appraisal">Free Appraisal</a>
+    <a href="../index.html#articles">Articles</a>
+    <a href="../index.html#suburbs">Suburbs</a>
+    <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">Contact</a>
+  </div>
+</nav>
+
+<section class="article-hero">
+  <div class="article-hero-inner">
+    <div class="kicker">Titirangi Seller Guide</div>
+
+    <h1>How To Choose The Best Real Estate Agent In Titirangi</h1>
+
+    <p>The best agent is not always the one who gives the biggest price. It is the one who can explain the market clearly, attract the right buyers, protect your value, and guide you calmly when the pressure starts.</p>
+
+    <div class="meta">By Team Peter & Edita | Raine & Horne • Practical seller guide for Titirangi homeowners</div>
+  </div>
+</section>
+
+<main class="article-wrap">
+
+  <article class="article">
+
+    <p>Choosing a real estate agent can feel simple at first. You invite a few agents in, listen to their price opinions, compare fees, and decide who feels right.</p>
+
+    <p>But once the property is live, the real difference between agents becomes much clearer. It shows in how the home is positioned, how buyers are followed up, how feedback is explained, how objections are handled, and how strongly the agent negotiates when buyers test the price.</p>
+
+    <p>If you are selling in Titirangi, this matters even more. Titirangi is not a suburb where every home is easy to compare. Buyers look at bush settings, sunlight, driveways, decks, privacy, maintenance, school access, views, access and whether the property feels easy to own.</p>
+
+    <p>That is why choosing the best real estate agent in Titirangi should not be based only on who gives the highest appraisal. It should be based on who can prove the strategy.</p>
+
+    <div class="snapshot">
+      <h3>Quick Titirangi market context</h3>
+
+      <p>Recent public market summaries show Titirangi sitting around the low $1m range, with homes taking about 40 days to sell on average or median measures depending on the source.</p>
+
+      <p>Opes Partners reports an average house value of about $1,126,400, around 40 days to sell, and 197 properties sold in Titirangi over the last year.</p>
+
+      <p>realestate.co.nz reports a 12-month median sale price around $1,042,500, down around 3.1%, with 40 median days to sale and a median asking price around $1,000,000.</p>
+
+      <p><strong>What this means for sellers:</strong> in a careful market, the agent you choose needs to do more than create a listing. They need to explain how your home compares, where buyer hesitation may appear, and how the campaign will build confidence and competition.</p>
+
+      <p class="source-note">Sources checked April 2026: <a href="https://www.opespartners.co.nz/property-markets/auckland/titirangi">Opes Partners Titirangi market data</a>, <a href="https://www.realestate.co.nz/insights/auckland/waitakere-city/titirangi">realestate.co.nz Titirangi insights</a>, <a href="https://www.rea.govt.nz/real-estate-professionals/listing-a-property/appraisals/">REA appraisal guidance</a>, <a href="https://www.rea.govt.nz/real-estate-professionals/listing-a-property/agency-agreements/">REA agency agreement guidance</a>, and <a href="https://www.consumer.org.nz/articles/how-to-choose-a-real-estate-agent">Consumer NZ agent selection guidance</a>. Market data and selling conditions change regularly and should be checked before making decisions.</p>
+    </div>
+
+    <h2>Start with this question: can the agent explain the price?</h2>
+
+    <p>Every seller wants a strong price. That is natural. Your home may be your biggest asset, and the sale result can affect your next move.</p>
+
+    <p>But there is a difference between an agent who gives you a high number and an agent who can explain why buyers would pay it.</p>
+
+    <p>A strong appraisal should not feel like guesswork. It should be supported by recent comparable sales, current competing listings, market conditions, buyer demand and the specific strengths and weaknesses of your property.</p>
+
+    <p>REA guidance says a written appraisal must be provided to a prospective client before they sign an agency agreement. That matters because a seller should not be asked to sign based only on confidence, charm or a verbal price promise.</p>
+
+    <h3>Ask the agent:</h3>
+
+    <ul>
+      <li>Which recent sales genuinely support this price range?</li>
+      <li>Which properties will buyers compare us against right now?</li>
+      <li>What part of the price is evidence-based, and what part is aspirational?</li>
+      <li>What could make buyers hesitate?</li>
+      <li>What is the plan if the market does not respond in the first two weeks?</li>
+    </ul>
+
+    <p>The best agent should make you feel informed, not just excited.</p>
+
+    <h2>Be careful with the highest appraisal</h2>
+
+    <p>A high appraisal can feel good in the lounge. It can also create problems later if buyers do not agree.</p>
+
+    <p>Some sellers choose the biggest number because it feels like that agent “believes” in the property more. But buyers do not pay more because an agent was optimistic at the appraisal. Buyers pay more when they see value, confidence and competition.</p>
+
+    <p>If a property launches too high, it can miss its strongest early window. Active buyers see the listing, compare it, decide it is overpriced, and move on. Weeks later, even if the price changes, some of those buyers may not come back.</p>
+
+    <p>That does not mean you should underprice your home. It means your agent should know the difference between ambitious and unrealistic.</p>
+
+    <div class="callout">
+      <h3>The seller mistake to avoid</h3>
+      <p>Do not choose the agent who tells you what you most want to hear. Choose the agent who can tell you the truth clearly, back it with evidence, and still show you how they will fight for the best possible result.</p>
+    </div>
+
+    <h2>Choose someone who understands Titirangi buyer behaviour</h2>
+
+    <p>Titirangi buyers often buy with both head and heart. They may be attracted by privacy, bush views, character, decks, birdsong and lifestyle. But they also think practically about access, maintenance, sunlight, dampness, parking, stairs, school runs and future upkeep.</p>
+
+    <p>A good Titirangi agent should understand that balance.</p>
+
+    <p>For example:</p>
+
+    <ul>
+      <li>a bush outlook can feel peaceful to one buyer, but high-maintenance to another</li>
+      <li>a steep driveway may not worry some buyers, but can be a concern for families or older buyers</li>
+      <li>a large deck can be a major lifestyle feature, but only if it feels safe and well maintained</li>
+      <li>a character home can feel special, but buyers may still worry about repairs, moisture or insulation</li>
+      <li>a private setting can be beautiful, but buyers still want light, warmth and usable outdoor space</li>
+    </ul>
+
+    <p>The right agent knows how to present the strengths while preparing for the questions buyers are likely to ask.</p>
+
+    <h2>Look at the marketing plan, not just the marketing words</h2>
+
+    <p>Almost every agent will say they do “great marketing.” Sellers need to ask what that actually means.</p>
+
+    <p>Putting a home on property websites is not a full marketing strategy. It is the starting point. A stronger campaign should identify who the likely buyer is, what they care about, what objections they may have, and how the property will be positioned to create enquiry and competition.</p>
+
+    <h3>Ask the agent:</h3>
+
+    <ul>
+      <li>Who is the most likely buyer for this home?</li>
+      <li>What is the main buyer story?</li>
+      <li>What will the first photo communicate?</li>
+      <li>Will the campaign include professional photography, video, floor plan and strong copy?</li>
+      <li>How will the property be promoted beyond standard property websites?</li>
+      <li>How will AI-enhanced marketing or buyer targeting be used to reach more relevant buyers?</li>
+    </ul>
+
+    <p>The best marketing does not just create views. It attracts buyers who are ready, able and motivated enough to inspect, ask questions, come back and make decisions.</p>
+
+    <h2>Ask how buyer follow-up actually works</h2>
+
+    <p>Many sellers focus on the launch. But campaigns are often won or lost in the follow-up.</p>
+
+    <p>After an open home, buyers may not reveal everything straight away. Some will say the home is “nice” even when they have concerns. Some are comparing other homes. Some need more information before they can decide. Some are interested but need the agent to keep the conversation alive.</p>
+
+    <p>A strong agent should know:</p>
+
+    <ul>
+      <li>who attended the open home</li>
+      <li>who is finance-ready</li>
+      <li>who is genuinely interested</li>
+      <li>what buyers are comparing the property against</li>
+      <li>what objections are stopping buyers from offering</li>
+      <li>which buyers should be re-engaged</li>
+    </ul>
+
+    <p>General feedback is not enough. Sellers need useful feedback that helps them make decisions.</p>
+
+    <h2>Negotiation is where value is protected</h2>
+
+    <p>When an offer comes in, the agent’s role becomes even more important.</p>
+
+    <p>Buyers may start low. They may raise building concerns. They may compare your home with another listing. They may ask for conditions. They may say they are at their limit. The agent needs to understand what is real, what is a tactic, and how to keep the buyer engaged without weakening the seller’s position.</p>
+
+    <p>Good negotiation is not just passing messages between buyer and seller. It is reading motivation, testing commitment, managing timing, protecting value and keeping pressure in the right place.</p>
+
+    <h3>Ask the agent:</h3>
+
+    <ul>
+      <li>How do you handle low offers?</li>
+      <li>How do you keep buyers engaged without giving away our position?</li>
+      <li>How do you create competition if more than one buyer is interested?</li>
+      <li>How do you respond when buyers raise objections?</li>
+      <li>What would you do if the first offer is below expectation?</li>
+    </ul>
+
+    <p>The best agent should be able to explain their negotiation approach before the pressure is on.</p>
+
+    <h2>Understand commission, marketing costs and the agency agreement</h2>
+
+    <p>Fees matter. But the cheapest agent is not always the best value, and the most expensive agent is not automatically the best either.</p>
+
+    <p>Consumer NZ recommends comparing estimated fees and asking agents about their commission structures. REA guidance also explains that if you use a real estate agency to sell, you must sign an agency agreement first.</p>
+
+    <p>Before signing, make sure you understand:</p>
+
+    <ul>
+      <li>the commission structure</li>
+      <li>whether commission is negotiable</li>
+      <li>what marketing costs apply</li>
+      <li>what is included and what is extra</li>
+      <li>the length of the agency agreement</li>
+      <li>when commission becomes payable</li>
+      <li>what happens if the property does not sell</li>
+      <li>what the agency is promising to do</li>
+    </ul>
+
+    <p>A professional agent should explain this clearly and give you space to understand it. You should not feel rushed.</p>
+
+    <h2>Read reviews for behaviour, not just stars</h2>
+
+    <p>Five-star reviews are helpful, but the words inside the review matter more than the rating.</p>
+
+    <p>Look for reviews that talk about:</p>
+
+    <ul>
+      <li>honest advice</li>
+      <li>communication</li>
+      <li>market knowledge</li>
+      <li>negotiation</li>
+      <li>support during stressful decisions</li>
+      <li>problem solving</li>
+      <li>clear reporting</li>
+      <li>calm guidance when things became difficult</li>
+    </ul>
+
+    <p>The real test of an agent is not just how they behave when everything is easy. It is how they behave when buyers hesitate, offers are low, vendors are nervous, or the strategy needs adjusting.</p>
+
+    <h2>Red flags when choosing a Titirangi real estate agent</h2>
+
+    <p>Be careful if an agent:</p>
+
+    <ul>
+      <li>gives a high appraisal without strong evidence</li>
+      <li>cannot clearly explain the likely buyer</li>
+      <li>only talks about websites, not buyer strategy</li>
+      <li>does not explain buyer follow-up</li>
+      <li>avoids discussing what happens if the property does not sell quickly</li>
+      <li>does not explain fees and marketing costs clearly</li>
+      <li>rushes you to sign before you understand the agency agreement</li>
+      <li>dismisses your concerns instead of answering them</li>
+    </ul>
+
+    <p>A good agent should reduce uncertainty, not create more of it.</p>
+
+    <h2>The 5-minute agent selection checklist</h2>
+
+    <p>If you are comparing Titirangi agents, use this quick checklist before deciding.</p>
+
+    <div class="snapshot">
+      <h3>Quick agent checklist</h3>
+
+      <p><strong>1. Evidence:</strong> Has the agent explained the appraisal with relevant recent sales and current competition?</p>
+
+      <p><strong>2. Local knowledge:</strong> Do they understand Titirangi buyer behaviour, bush settings, decks, sunlight, access, privacy and maintenance concerns?</p>
+
+      <p><strong>3. Marketing:</strong> Is there a clear plan to attract qualified buyers, not just online views?</p>
+
+      <p><strong>4. Follow-up:</strong> How will buyer enquiry, open home feedback and objections be handled?</p>
+
+      <p><strong>5. Negotiation:</strong> Can the agent explain how they will protect value if buyers test the price?</p>
+
+      <p><strong>6. Transparency:</strong> Are commission, marketing costs and the agency agreement explained clearly?</p>
+    </div>
+
+    <p>If an agent cannot answer these questions clearly, they may not be the right fit for your property.</p>
+
+    <h2>What makes the best real estate agent in Titirangi?</h2>
+
+    <p>The best agent is not simply the loudest, the biggest brand, or the person who gives the most flattering appraisal.</p>
+
+    <p>The best agent is the one who can combine:</p>
+
+    <ul>
+      <li>evidence-based pricing</li>
+      <li>local Titirangi knowledge</li>
+      <li>strong presentation advice</li>
+      <li>smart buyer targeting</li>
+      <li>clear communication</li>
+      <li>qualified buyer follow-up</li>
+      <li>skilled negotiation</li>
+      <li>honest guidance when the market responds</li>
+    </ul>
+
+    <p>Selling a home is not just a marketing exercise. It is a strategy, a process and a negotiation. Choosing the right agent means choosing someone who can manage all three.</p>
+
+    <h2>How Team Peter & Edita help Titirangi sellers</h2>
+
+    <p>Team Peter & Edita help Titirangi homeowners prepare, position and market their homes with a clear seller strategy. That includes honest pricing advice, professional presentation guidance, buyer-focused marketing, AI-enhanced buyer targeting, careful follow-up and negotiation support.</p>
+
+    <p>Every property has a different buyer story. Some homes need lifestyle positioning. Some need buyer confidence around documents or maintenance. Some need stronger presentation. Some need better targeting to reach the right buyer group.</p>
+
+    <p>If you are thinking about selling in Titirangi, the best first step is to understand how buyers will see your property before it goes live.</p>
+
+    <section class="faq">
+      <h2>Frequently asked questions about choosing a Titirangi real estate agent</h2>
+
+      <h3>How do I choose the best real estate agent in Titirangi?</h3>
+      <p>Choose an agent who can explain the local market, provide an evidence-based appraisal, show a clear marketing plan, understand buyer behaviour, follow up properly and negotiate strongly on your behalf.</p>
+
+      <h3>Should I choose the agent with the highest appraisal?</h3>
+      <p>Not automatically. A high appraisal should be backed by comparable sales, current competition and buyer evidence. The best agent should explain the price, not just promise it.</p>
+
+      <h3>What questions should I ask before signing with an agent?</h3>
+      <p>Ask about comparable sales, likely buyer groups, marketing strategy, commission, marketing costs, buyer follow-up, open home reporting, negotiation strategy and the agency agreement.</p>
+
+      <h3>Why is Titirangi different from other suburbs?</h3>
+      <p>Titirangi homes often vary widely because of bush settings, slopes, access, views, decks, sunlight, privacy, maintenance and property condition. Local knowledge helps position those features properly.</p>
+
+      <h3>Do I need a written appraisal before signing?</h3>
+      <p>REA guidance says a written appraisal must be provided to a prospective client before they sign an agency agreement. Sellers should ask for the evidence behind the appraisal.</p>
+    </section>
+
+    <div class="cta-box">
+      <h2>Thinking of selling in Titirangi?</h2>
+      <p>Get practical advice on price positioning, presentation, buyer appeal, marketing and the right selling strategy before choosing your next move.</p>
+      <a class="btn" href="../index.html#appraisal">Request Selling Advice</a>
+    </div>
+
+  </article>
+
+  <aside class="sidebar">
+
+    <div class="side-card">
+      <h3>Agent selection checklist</h3>
+      <ul>
+        <li>Evidence-based appraisal</li>
+        <li>Local Titirangi knowledge</li>
+        <li>Clear marketing plan</li>
+        <li>Buyer qualification process</li>
+        <li>Strong feedback reporting</li>
+        <li>Negotiation strategy</li>
+        <li>Transparent fees and costs</li>
+      </ul>
+    </div>
+
+    <div class="side-card">
+      <h3>Compare your options</h3>
+      <p>Before choosing an agent, get a practical view of price, marketing, buyer appeal and strategy.</p>
+      <a class="btn" href="../index.html#appraisal">Free Appraisal</a>
+    </div>
+
+    <div class="side-card related">
+      <h3>Related articles</h3>
+      <a href="titirangi-house-prices-2026.html">Titirangi House Prices 2026: What Sellers Should Watch</a>
+      <a href="prepare-home-for-sale-auckland.html">How To Prepare Your Home For A Stronger Sale Price</a>
+      <a href="why-homes-do-not-sell-blockhouse-bay.html">Why Some Homes Do Not Sell In Blockhouse Bay</a>
+    </div>
+
+  </aside>
+
+</main>
+
+<footer>
+  <div>
+    <strong>Team Peter & Edita</strong><br>
+    Raine & Horne Titirangi, Blockhouse Bay & Lynfield
+  </div>
+
+  <div>
+    <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a><br>
+    <a href="tel:021765234">021 765 234</a>
+  </div>
+</footer>
+
+</body>
+</html>
