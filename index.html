@@ -4,471 +4,201 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Titirangi Real Estate Agents | Team Peter & Edita</title>
-  <meta name="description" content="Team Peter & Edita are local Raine & Horne real estate specialists helping homeowners in Titirangi, Blockhouse Bay, Lynfield and nearby West Auckland suburbs sell with confidence." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/" />
+  <title>Titirangi Real Estate Agents | Free Appraisal & Local Seller Advice</title>
 
-  <meta property="og:title" content="Titirangi Real Estate Agents | Team Peter & Edita" />
-  <meta property="og:description" content="Local real estate advice for Titirangi, Blockhouse Bay and Lynfield homeowners." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://theateamraineandhorne.github.io/The-A-Team/" />
+  <meta name="description" content="Team Peter & Edita are local real estate agents helping homeowners in Titirangi, Blockhouse Bay, Lynfield and nearby West Auckland suburbs with appraisals, selling advice and AI-enhanced marketing.">
 
-  <style>
-    :root {
-      --dark: #4D4E50;
-      --gold: #ffb200;
-      --gold-dark: #E1AA14;
-      --cream: #fff8e6;
-      --soft: #f6f6f6;
-      --white: #ffffff;
-      --text: #2f3032;
-      --muted: #6b7280;
-      --border: #e5e7eb;
-      --shadow: 0 18px 45px rgba(77, 78, 80, 0.14);
-      --radius: 22px;
-    }
+  <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/">
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--white);
-      line-height: 1.65;
-    }
-    a { color: inherit; text-decoration: none; }
-
-    header {
-      background: rgba(255,255,255,0.96);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      backdrop-filter: blur(10px);
-    }
-    .nav {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 18px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-    .brand { display: flex; flex-direction: column; line-height: 1.25; }
-    .brand strong { color: var(--dark); font-size: 19px; letter-spacing: -0.4px; }
-    .brand span { color: var(--muted); font-size: 13px; }
-    .nav-links { display: flex; gap: 22px; align-items: center; font-size: 14px; font-weight: 800; color: var(--dark); }
-    .nav-cta {
-      background: var(--gold);
-      color: var(--dark);
-      padding: 11px 18px;
-      border-radius: 999px;
-      font-weight: 900;
-    }
-
-    .hero {
-      background:
-        linear-gradient(135deg, rgba(77,78,80,0.95), rgba(77,78,80,0.82)),
-        radial-gradient(circle at 18% 25%, rgba(255,178,0,0.38), transparent 30%),
-        linear-gradient(135deg, #4D4E50, #68696b);
-      color: var(--white);
-      padding: 92px 6% 82px;
-    }
-    .hero-inner {
-      max-width: 1180px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 48px;
-      align-items: center;
-    }
-    .eyebrow {
-      display: inline-flex;
-      background: rgba(255,255,255,0.13);
-      border: 1px solid rgba(255,255,255,0.22);
-      color: var(--cream);
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 900;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-size: clamp(42px, 6vw, 72px);
-      line-height: 0.98;
-      letter-spacing: -2.5px;
-      margin-bottom: 24px;
-      max-width: 850px;
-    }
-    .hero p {
-      font-size: 19px;
-      color: #f3f4f6;
-      max-width: 760px;
-      margin-bottom: 30px;
-    }
-    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 15px 22px;
-      border-radius: 999px;
-      font-weight: 900;
-      transition: .2s ease;
-      font-size: 15px;
-    }
-    .btn-primary { background: var(--gold); color: var(--dark); }
-    .btn-primary:hover { transform: translateY(-2px); background: var(--gold-dark); }
-    .btn-secondary { background: rgba(255,255,255,0.12); color: var(--white); border: 1px solid rgba(255,255,255,0.28); }
-
-    .hero-card {
-      background: var(--white);
-      color: var(--dark);
-      border-radius: var(--radius);
-      padding: 30px;
-      box-shadow: var(--shadow);
-    }
-    .hero-card h2 { font-size: 28px; line-height: 1.15; margin-bottom: 12px; color: var(--dark); }
-    .hero-card p { color: var(--muted); font-size: 15px; margin-bottom: 20px; }
-    .mini-list { display: grid; gap: 12px; margin: 20px 0 24px; }
-    .mini-list div { display: flex; gap: 10px; color: var(--text); font-size: 15px; }
-    .tick { color: var(--gold-dark); font-weight: 900; }
-
-    .section { padding: 76px 6%; }
-    .section.alt { background: var(--soft); }
-    .container { max-width: 1180px; margin: 0 auto; }
-    .section-title { max-width: 860px; margin-bottom: 36px; }
-    .small {
-      color: var(--gold-dark);
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      font-size: 13px;
-      font-weight: 900;
-      margin-bottom: 8px;
-    }
-    h2 {
-      font-size: clamp(30px, 4vw, 46px);
-      color: var(--dark);
-      line-height: 1.08;
-      letter-spacing: -1.5px;
-      margin-bottom: 18px;
-    }
-    h3 { color: var(--dark); font-size: 21px; margin-bottom: 10px; letter-spacing: -0.4px; }
-    .lead { color: var(--muted); font-size: 18px; max-width: 850px; }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin-top: -30px;
-      position: relative;
-      z-index: 5;
-    }
-    .stat {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 24px;
-      box-shadow: 0 12px 28px rgba(77,78,80,0.08);
-    }
-    .stat strong { display: block; color: var(--dark); font-size: 26px; margin-bottom: 4px; }
-    .stat span { color: var(--muted); font-size: 14px; }
-
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: start; }
-    .box {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 32px;
-      box-shadow: 0 12px 30px rgba(77,78,80,0.06);
-    }
-    .box.gold {
-      background: linear-gradient(135deg, #fff8e6, #ffffff);
-      border-color: rgba(255,178,0,0.35);
-    }
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 26px;
-    }
-    .article-links {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
-    .article-links a {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 18px 20px;
-      font-weight: 800;
-      color: var(--dark);
-      transition: .2s ease;
-    }
-    .article-links a:hover { border-color: var(--gold); transform: translateY(-2px); }
-
-    .cta {
-      background:
-        linear-gradient(135deg, rgba(77,78,80,0.96), rgba(77,78,80,0.9)),
-        radial-gradient(circle at 85% 18%, rgba(255,178,0,0.35), transparent 28%);
-      color: var(--white);
-      border-radius: 30px;
-      padding: 52px;
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 28px;
-      align-items: center;
-    }
-    .cta h2 { color: var(--white); }
-    .cta p { color: #f3f4f6; font-size: 18px; }
-    .cta-buttons { display: flex; gap: 14px; justify-content: flex-end; flex-wrap: wrap; }
-
-    footer {
-      background: #2f3032;
-      color: #e5e7eb;
-      padding: 38px 6%;
-      font-size: 14px;
-    }
-    footer .container { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-    footer strong { color: var(--white); display: block; margin-bottom: 4px; }
-
-    @media (max-width: 900px) {
-      .hero-inner, .two-col, .cta { grid-template-columns: 1fr; }
-      .stats, .cards { grid-template-columns: 1fr 1fr; }
-      .cta-buttons { justify-content: flex-start; }
-      .nav-links { display: none; }
-    }
-    @media (max-width: 640px) {
-      .hero { padding: 62px 5% 58px; }
-      .section { padding: 56px 5%; }
-      .stats, .cards, .article-links { grid-template-columns: 1fr; }
-      .hero-card, .box, .cta { padding: 26px; border-radius: 20px; }
-      h1 { letter-spacing: -1.6px; }
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": "Team Peter & Edita | Raine & Horne Titirangi, Blockhouse Bay & Lynfield",
-    "url": "https://theateamraineandhorne.github.io/The-A-Team/",
-    "telephone": "+6421765234",
-    "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
-    "areaServed": ["Titirangi", "Blockhouse Bay", "Lynfield", "New Lynn", "Green Bay", "West Auckland"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Auckland",
-      "addressCountry": "NZ"
-    }
-  }
-  </script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <nav class="nav">
-      <a href="https://theateamraineandhorne.github.io/The-A-Team/" class="brand">
-        <strong>Team Peter & Edita</strong>
-        <span>Raine & Horne Titirangi, Blockhouse Bay & Lynfield</span>
-      </a>
 
-      <div class="nav-links">
-        <a href="#advice">Advice</a>
-        <a href="#articles">Articles</a>
-        <a href="#suburbs">Suburbs</a>
-        <a href="#about">About</a>
-        <a class="nav-cta" href="free-home-appraisal-titirangi/">Free Appraisal</a>
-      </div>
-    </nav>
-  </header>
+<header class="site-header">
+  <div class="logo">Team Peter & Edita</div>
 
-  <main>
-    <section class="hero">
-      <div class="hero-inner">
-        <div>
-          <div class="eyebrow">Titirangi • Blockhouse Bay • Lynfield</div>
-          <h1>Titirangi Real Estate Agents Helping Sellers Move With Confidence</h1>
-          <p>
-            Premium local real estate advice for Titirangi, Blockhouse Bay and Lynfield homeowners, combining local knowledge, smart AI marketing and trusted personal service.
-          </p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="appraisal.html">Free Appraisal</a>
+    <a href="#articles">Articles</a>
+    <a href="#suburbs">Suburbs</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
 
-          <div class="hero-actions">
-            <a href="free-home-appraisal-titirangi/" class="btn btn-primary">Free Titirangi Appraisal</a>
-            <a href="#articles" class="btn btn-secondary">Read Seller Advice</a>
-          </div>
-        </div>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">Titirangi • Blockhouse Bay • Lynfield</p>
 
-        <aside class="hero-card">
-          <h2>Thinking Of Selling In Titirangi?</h2>
-          <p>
-            Get a clear, local view of what your property could achieve in today’s market.
-          </p>
+    <h1>Titirangi Real Estate Agents Helping Sellers Move With Confidence</h1>
 
-          <div class="mini-list">
-            <div><span class="tick">✓</span><span>Free Home Appraisal Titirangi</span></div>
-            <div><span class="tick">✓</span><span>Free House Appraisal Titirangi</span></div>
-            <div><span class="tick">✓</span><span>Free Property Appraisal Titirangi</span></div>
-          </div>
+    <p>
+      Local real estate advice for homeowners who want clear pricing guidance,
+      stronger presentation, smarter buyer reach and a more confident selling strategy.
+    </p>
 
-          <a href="free-home-appraisal-titirangi/" class="btn btn-primary">Request Free Appraisal</a>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="stats">
-          <div class="stat"><strong>25+</strong><span>Years Experience</span></div>
-          <div class="stat"><strong>5★</strong><span>Client Reviews</span></div>
-          <div class="stat"><strong>AI</strong><span>Buyer Marketing</span></div>
-          <div class="stat"><strong>Local</strong><span>Auckland Experts</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="advice">
-      <div class="container">
-        <div class="section-title">
-          <div class="small">Local property advice</div>
-          <h2>Local Knowledge. Premium Presentation. Smarter Buyer Reach.</h2>
-          <p class="lead">
-            Selling in Titirangi, Blockhouse Bay or Lynfield is not just about putting a home online. Buyers compare sunlight, outdoor living, privacy, access, condition, schools and lifestyle before deciding whether to inspect or offer.
-          </p>
-        </div>
-
-        <div class="two-col">
-          <div class="box">
-            <h3>What We Help Sellers Understand</h3>
-            <p>
-              Team Peter & Edita help homeowners position their property with confidence using local market knowledge, professional advice, AI-enhanced marketing and skilled negotiation.
-            </p>
-          </div>
-
-          <div class="box gold">
-            <h3>Start With A Titirangi Appraisal</h3>
-            <p>
-              Our dedicated Titirangi appraisal page gives homeowners a clear next step without turning the homepage into a duplicated appraisal page.
-            </p>
-            <p style="margin-top:18px;">
-              <a href="free-home-appraisal-titirangi/" class="btn btn-primary">Free Home Appraisal Titirangi</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="articles">
-      <div class="container">
-        <div class="section-title">
-          <div class="small">Seller articles</div>
-          <h2>Seller Articles & Property Advice</h2>
-          <p class="lead">
-            Helpful local articles for homeowners thinking about selling, preparing their property, choosing an agent, timing the market, or understanding buyer behaviour in West Auckland.
-          </p>
-        </div>
-
-        <div class="article-links">
-          <a href="titirangi-house-prices-2026/">Titirangi House Prices 2026: What Sellers Should Watch</a>
-          <a href="how-to-choose-the-best-real-estate-agent-in-titirangi/">How To Choose The Best Real Estate Agent In Titirangi</a>
-          <a href="why-some-homes-do-not-sell-in-blockhouse-bay/">Why Some Homes Do Not Sell In Blockhouse Bay</a>
-          <a href="best-time-to-sell-west-auckland/">Best Time To Sell In West Auckland</a>
-          <a href="how-to-prepare-your-home-for-a-stronger-sale-price/">How To Prepare Your Home For A Stronger Sale Price</a>
-          <a href="free-home-appraisal-titirangi/">Free Home Appraisal Titirangi</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="suburbs">
-      <div class="container">
-        <div class="section-title">
-          <div class="small">Suburb guides</div>
-          <h2>Suburb Guides</h2>
-          <p class="lead">
-            Local property guides help homeowners and buyers understand each market more clearly.
-          </p>
-        </div>
-
-        <div class="cards">
-          <div class="card">
-            <h3>Titirangi</h3>
-            <p>Bush settings, privacy, decks, sunlight and lifestyle appeal need careful buyer positioning.</p>
-          </div>
-
-          <div class="card">
-            <h3>Blockhouse Bay</h3>
-            <p>Family homes, schools, convenience and buyer demand make pricing and presentation important.</p>
-          </div>
-
-          <div class="card">
-            <h3>Lynfield</h3>
-            <p>A central-west suburb where buyers compare value, condition, access and long-term potential.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-title">
-          <div class="small">Why sellers choose us</div>
-          <h2>Why Sellers Choose Team Peter & Edita</h2>
-        </div>
-
-        <div class="cards">
-          <div class="card">
-            <h3>Premium Marketing</h3>
-            <p>We focus on strong presentation, buyer targeting and digital exposure designed to create better enquiry.</p>
-          </div>
-
-          <div class="card">
-            <h3>Local Expertise</h3>
-            <p>We understand how buyers compare homes across Titirangi, Blockhouse Bay, Lynfield, Green Bay and New Lynn.</p>
-          </div>
-
-          <div class="card">
-            <h3>Personal Service</h3>
-            <p>You work directly with experienced agents who care about the result, not a volume-based system.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="cta">
-          <div>
-            <h2>Want To Know What Your Titirangi Home Could Be Worth?</h2>
-            <p>
-              Use the dedicated Titirangi appraisal page for a clear, focused appraisal request.
-            </p>
-          </div>
-
-          <div class="cta-buttons">
-            <a href="free-home-appraisal-titirangi/" class="btn btn-primary">Free Home Appraisal Titirangi</a>
-            <a href="tel:021765234" class="btn btn-secondary">Call 021 765 234</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div>
-        <strong>Team Peter & Edita</strong>
-        Raine & Horne Titirangi, Blockhouse Bay & Lynfield
-      </div>
-
-      <div>
-        <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a><br>
-        <a href="tel:021765234">021 765 234</a>
-      </div>
+    <div class="hero-buttons">
+      <a href="appraisal.html" class="btn">Request Free Appraisal</a>
+      <a href="#articles" class="btn secondary">Read Seller Advice</a>
     </div>
-  </footer>
+  </div>
+</section>
+
+<section class="stats">
+  <div>
+    <h2>25+</h2>
+    <p>Years Experience</p>
+  </div>
+
+  <div>
+    <h2>5★</h2>
+    <p>Client Reviews</p>
+  </div>
+
+  <div>
+    <h2>AI</h2>
+    <p>Buyer Marketing</p>
+  </div>
+
+  <div>
+    <h2>Local</h2>
+    <p>West Auckland Experts</p>
+  </div>
+</section>
+
+<section class="section white" id="about">
+  <div class="grid-2">
+    <div>
+      <p class="eyebrow">Local Seller Help</p>
+
+      <h2>Local Knowledge. Premium Presentation. Smarter Buyer Reach.</h2>
+
+      <p>
+        Selling in Titirangi, Blockhouse Bay or Lynfield is not just about putting a home online.
+        Buyers compare sunlight, outdoor living, privacy, access, condition, schools and lifestyle
+        before deciding whether to inspect or offer.
+      </p>
+
+      <p>
+        Team Peter & Edita help homeowners position their property with confidence using local market knowledge,
+        professional advice, AI-enhanced marketing and skilled negotiation.
+      </p>
+
+      <a href="appraisal.html" class="btn">Request Selling Advice</a>
+    </div>
+
+    <div class="image-box"></div>
+  </div>
+</section>
+
+<section class="section appraisal">
+  <p class="eyebrow">Free Property Appraisal</p>
+
+  <h2>Wondering what your home could be worth?</h2>
+
+  <p>
+    Request a free, no-obligation appraisal for Titirangi, Blockhouse Bay, Lynfield
+    or nearby West Auckland suburbs.
+  </p>
+
+  <a href="appraisal.html" class="btn">Request Free Appraisal</a>
+</section>
+
+<section class="section white" id="articles">
+  <p class="eyebrow">Seller Articles</p>
+
+  <h2>Property Advice For West Auckland Homeowners</h2>
+
+  <p>
+    Helpful local articles for homeowners thinking about selling, preparing their property,
+    choosing an agent, timing the market, or understanding buyer behaviour.
+  </p>
+
+  <div class="article-list">
+    <a href="articles/titirangi-house-prices-2026.html">
+      Titirangi House Prices 2026: What Sellers Should Watch
+    </a>
+
+    <a href="articles/best-real-estate-agent-titirangi.html">
+      How To Choose The Best Real Estate Agent In Titirangi
+    </a>
+
+    <a href="articles/why-homes-do-not-sell-blockhouse-bay.html">
+      Why Some Homes Do Not Sell In Blockhouse Bay
+    </a>
+
+    <a href="articles/best-time-to-sell-west-auckland.html">
+      Best Time To Sell In West Auckland
+    </a>
+
+    <a href="articles/prepare-home-for-sale-auckland.html">
+      How To Prepare Your Home For A Stronger Sale Price
+    </a>
+  </div>
+</section>
+
+<section class="section dark" id="suburbs">
+  <p class="eyebrow">Local Areas</p>
+
+  <h2>Suburb Guides</h2>
+
+  <p>
+    Local property knowledge helps homeowners and buyers understand each market more clearly.
+  </p>
+
+  <div class="grid-3">
+    <div class="card">
+      <h3>Titirangi</h3>
+      <p>Bush settings, privacy, decks, sunlight and lifestyle appeal need careful buyer positioning.</p>
+    </div>
+
+    <div class="card">
+      <h3>Blockhouse Bay</h3>
+      <p>Family homes, schools, convenience and buyer demand make pricing and presentation important.</p>
+    </div>
+
+    <div class="card">
+      <h3>Lynfield</h3>
+      <p>A central-west suburb where buyers compare value, condition, access and long-term potential.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <p class="eyebrow">Why Sellers Choose Us</p>
+
+  <h2>Personal Service With Smarter Marketing</h2>
+
+  <div class="grid-3">
+    <div class="card">
+      <h3>Premium Marketing</h3>
+      <p>Strong presentation, buyer targeting and digital exposure designed to create better enquiry.</p>
+    </div>
+
+    <div class="card">
+      <h3>Local Expertise</h3>
+      <p>We understand how buyers compare homes across Titirangi, Blockhouse Bay, Lynfield and nearby suburbs.</p>
+    </div>
+
+    <div class="card">
+      <h3>Direct Advice</h3>
+      <p>You work directly with experienced agents who care about the result, not a volume-based system.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <strong>Team Peter & Edita</strong><br>
+    Raine & Horne Titirangi, Blockhouse Bay & Lynfield
+  </div>
+
+  <div>
+    <a href="appraisal.html">Request Free Appraisal</a><br>
+    <a href="tel:021765234">021 765 234</a>
+  </div>
+</footer>
+
 </body>
 </html>
