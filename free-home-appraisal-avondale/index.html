@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>What Is My Avondale Home Worth? | Free Property Appraisal</title>
+
+  <meta name="description" content="What is your Avondale home worth? Get a free property appraisal and local selling advice on buyer demand, property type, presentation, pricing and strategy.">
+
+  <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-avondale/">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --gold: #b08a42;
+      --gold-dark: #8f6d2e;
+      --black: #111111;
+      --cream: #d8c9ad;
+      --soft: #f7f4ef;
+      --white: #ffffff;
+      --text: #222222;
+      --muted: #555555;
+      --line: #e7dfd1;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--soft);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      line-height: 1.12;
+    }
+
+    p {
+      font-size: 17px;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 14px 0 26px;
+    }
+
+    li {
+      font-size: 17px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .site-header {
+      background: #111111;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .logo {
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: #e7c782;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at top left, rgba(176,138,66,.22), transparent 34%),
+        linear-gradient(135deg, #111111 0%, #252525 56%, #3a3328 100%);
+      padding: 90px 8% 75px;
+      color: white;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) 460px;
+      gap: 52px;
+      align-items: start;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 74px);
+      color: white;
+      margin-bottom: 24px;
+      max-width: 890px;
+    }
+
+    .hero-lead {
+      font-size: 21px;
+      color: #f1f1f1;
+      max-width: 790px;
+      margin-bottom: 24px;
+    }
+
+    .hero-note {
+      background: rgba(255,255,255,.10);
+      border-left: 5px solid var(--gold);
+      padding: 24px;
+      max-width: 790px;
+      margin-top: 28px;
+    }
+
+    .hero-note p {
+      color: #f2f2f2;
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+
+    .form-card {
+      background: white;
+      padding: 34px;
+      border: 1px solid rgba(176,138,66,.55);
+      box-shadow: 0 24px 70px rgba(0,0,0,.28);
+      position: sticky;
+      top: 24px;
+    }
+
+    .form-card h2 {
+      color: var(--black);
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .form-card p {
+      color: #555555;
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+
+    form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #222222;
+      font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      margin-top: 7px;
+      padding: 14px 15px;
+      border: 1px solid #d8d8d8;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222222;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(176,138,66,.18);
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      padding: 16px 30px;
+      border: 1px solid var(--gold);
+      background: var(--gold);
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .25s ease;
+    }
+
+    .btn:hover {
+      background: var(--gold-dark);
+      border-color: var(--gold-dark);
+      transform: translateY(-1px);
+    }
+
+    .small-note {
+      font-size: 12px !important;
+      color: #777777 !important;
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
+
+    .section {
+      padding: 82px 8%;
+    }
+
+    .white {
+      background: white;
+    }
+
+    .soft {
+      background: var(--soft);
+    }
+
+    .cream {
+      background: var(--cream);
+    }
+
+    .black {
+      background: #111111;
+      color: white;
+    }
+
+    .content {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .narrow {
+      max-width: 860px;
+    }
+
+    .section h2 {
+      font-size: clamp(34px, 4vw, 50px);
+      margin-bottom: 22px;
+      color: var(--black);
+    }
+
+    .black h2,
+    .black h3 {
+      color: white;
+    }
+
+    .black p,
+    .black li {
+      color: #d7d7d7;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 52px;
+      align-items: start;
+    }
+
+    .side-panel {
+      background: var(--soft);
+      border-left: 5px solid var(--gold);
+      padding: 30px;
+    }
+
+    .side-panel h3 {
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+
+    .type-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .type-card {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 30px;
+    }
+
+    .type-card h3 {
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+
+    .type-card p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .comparison-strip {
+      background: #111111;
+      color: white;
+      padding: 34px;
+      margin-top: 34px;
+    }
+
+    .comparison-strip h3 {
+      color: white;
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+
+    .comparison-strip p {
+      color: #dddddd;
+      margin-bottom: 0;
+    }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .value-item {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 28px;
+    }
+
+    .value-item h3 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .value-item p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .mistake-list {
+      display: grid;
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .mistake {
+      background: #1d1d1d;
+      border: 1px solid #333333;
+      padding: 26px;
+    }
+
+    .mistake h3 {
+      color: white;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .mistake p {
+      color: #dddddd;
+      margin-bottom: 0;
+    }
+
+    .steps {
+      counter-reset: step;
+      display: grid;
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .step {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 28px;
+      position: relative;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      top: 24px;
+      right: 28px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .step h3 {
+      font-size: 26px;
+      margin-bottom: 12px;
+      padding-right: 50px;
+    }
+
+    .cta-band {
+      background: var(--cream);
+      padding: 60px 8%;
+      text-align: center;
+    }
+
+    .cta-band h2 {
+      font-size: clamp(34px, 4vw, 48px);
+      margin-bottom: 16px;
+    }
+
+    .cta-band p {
+      max-width: 740px;
+      margin: 0 auto 26px;
+    }
+
+    .cta-band .btn {
+      width: auto;
+    }
+
+    .faq {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 34px;
+      margin-top: 34px;
+    }
+
+    .faq h3 {
+      font-size: 24px;
+      margin: 26px 0 10px;
+    }
+
+    footer {
+      background: #111111;
+      color: white;
+      padding: 38px 8%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #e7c782;
+    }
+
+    @media(max-width: 980px) {
+      .site-header {
+        display: block;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 12px 0 0;
+      }
+
+      .hero {
+        padding: 60px 6%;
+      }
+
+      .hero-grid,
+      .split,
+      .type-grid,
+      .value-grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-card {
+        position: relative;
+        top: 0;
+      }
+
+      .section {
+        padding: 60px 6%;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Team Peter & Edita | Raine & Horne",
+    "description": "Free property appraisal and selling advice for Avondale homeowners.",
+    "url": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-avondale/",
+    "telephone": "+6421765234",
+    "areaServed": ["Avondale", "Auckland"],
+    "brand": {
+      "@type": "Brand",
+      "name": "Raine & Horne"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I find out what my Avondale home is worth?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A local Avondale appraisal should consider recent comparable sales, property type, land, condition, presentation, transport convenience, buyer demand and nearby competition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What affects property value in Avondale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Avondale property value can be affected by property type, land size, zoning, condition, renovation quality, parking, layout, transport access, buyer demand and how the home compares with nearby suburbs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Avondale popular with different buyer groups?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Depending on the property, Avondale can attract first-home buyers, families, investors, renovators, townhouse buyers and buyers comparing central-west convenience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a real estate appraisal the same as a registered valuation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A real estate appraisal is an agent's market estimate based on buyer demand and comparable sales. A registered valuation is a formal valuation completed by a registered valuer."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="logo">Team Peter & Edita</div>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../index.html#articles">Articles</a>
+    <a href="../index.html#suburbs">Suburbs</a>
+    <a href="tel:021765234">Call</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">Avondale Home Value Guide</p>
+
+      <h1>What Is My Avondale Home Worth — And Which Buyers Will Pay More?</h1>
+
+      <p class="hero-lead">
+        Avondale is not a one-type-of-buyer market. One property may appeal to first-home buyers. Another may attract families, investors, renovators, townhouse buyers or people wanting central-west convenience.
+      </p>
+
+      <p class="hero-lead">
+        A useful Avondale appraisal should not only estimate price. It should identify which buyer group is most likely to see the strongest value in your property.
+      </p>
+
+      <div class="hero-note">
+        <p>
+          In Avondale, the result often depends on matching the property to the right buyer story — convenience, land, character, condition, rental appeal, or future potential.
+        </p>
+      </div>
+    </div>
+
+    <div class="form-card" id="appraisal-form">
+      <h2>Free Avondale Appraisal</h2>
+
+      <p>
+        Tell us a little about your Avondale property and we will help you understand likely value, buyer appeal and selling strategy.
+      </p>
+
+      <form action="https://formspree.io/f/mdabnpgl" method="POST">
+        <input type="hidden" name="_subject" value="New Avondale Home Value Request - The A-Team Website" />
+        <input type="hidden" name="landing_page" value="What Is My Avondale Home Worth" />
+
+        <div class="form-grid">
+          <label>
+            First name
+            <input type="text" name="first_name" required />
+          </label>
+
+          <label>
+            Phone number
+            <input type="tel" name="phone" required />
+          </label>
+        </div>
+
+        <label>
+          Email address
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Property address
+          <input type="text" name="property_address" placeholder="Please enter the Avondale property address" required />
+        </label>
+
+        <div class="form-grid">
+          <label>
+            Property suburb
+            <input type="text" name="suburb" value="Avondale" required />
+          </label>
+
+          <label>
+            Selling timeframe
+            <select name="selling_timeframe" required>
+              <option value="">Please choose</option>
+              <option>As soon as possible</option>
+              <option>Within 1–3 months</option>
+              <option>Within 3–6 months</option>
+              <option>Later this year</option>
+              <option>Just curious for now</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          What would you like help with?
+          <select name="main_reason" required>
+            <option value="">Please choose</option>
+            <option>Finding out the likely value</option>
+            <option>Preparing the home for sale</option>
+            <option>Choosing the best time to sell</option>
+            <option>Already listed and need advice</option>
+            <option>Comparing agents or selling options</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+
+        <label>
+          Tell us anything helpful
+          <textarea name="message" rows="5" placeholder="Example: We are thinking of selling our Avondale home and want to understand value, timing and preparation."></textarea>
+        </label>
+
+        <button class="btn" type="submit">Send Appraisal Request</button>
+
+        <p class="small-note">
+          Team Peter & Edita are licensed real estate salespeople with Raine & Horne. Your details are used only to respond to your appraisal request.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="content split">
+    <div>
+      <p class="eyebrow">The Avondale Difference</p>
+
+      <h2>Avondale Homes Need The Right Buyer Story</h2>
+
+      <p>
+        In some suburbs, most buyers are looking for a similar type of home. Avondale is different. Buyers may be comparing character homes, family homes, townhouses, units, renovation opportunities, investment properties and homes close to transport or key routes.
+      </p>
+
+      <p>
+        That means the appraisal should not only ask, “What did the last similar home sell for?” It should also ask, “Who is most likely to want this property, and why would they pay more for it?”
+      </p>
+    </div>
+
+    <div class="side-panel">
+      <h3>A stronger Avondale appraisal should answer:</h3>
+
+      <ul>
+        <li>Is the strongest buyer a family, first-home buyer, investor, renovator or developer?</li>
+        <li>Will buyers focus more on condition, land, convenience, rental appeal or future potential?</li>
+        <li>What nearby suburbs will buyers compare against?</li>
+        <li>Does the property need presentation work before launch?</li>
+        <li>What is the clearest buyer story for the marketing campaign?</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="content">
+    <p class="eyebrow">Buyer Types</p>
+
+    <h2>Different Avondale Properties Attract Different Buyers</h2>
+
+    <p class="narrow">
+      The same Avondale address can be valued differently depending on who is looking. A strong campaign should know which buyer group matters most before the property goes live.
+    </p>
+
+    <div class="type-grid">
+      <div class="type-card">
+        <h3>First-Home Buyers</h3>
+        <p>
+          They often want affordability and convenience, but they may hesitate if the property feels too hard to maintain or improve.
+        </p>
+      </div>
+
+      <div class="type-card">
+        <h3>Families</h3>
+        <p>
+          Families usually compare layout, parking, outdoor space, storage, schools, parks and how easy the home feels for daily living.
+        </p>
+      </div>
+
+      <div class="type-card">
+        <h3>Investors</h3>
+        <p>
+          Investors may focus on rentability, location, future maintenance, layout, tenant appeal and long-term value.
+        </p>
+      </div>
+    </div>
+
+    <div class="comparison-strip">
+      <h3>The Avondale pricing question</h3>
+      <p>
+        “Which buyer group will see the highest value in this property — and is the campaign speaking directly to them?”
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section cream">
+  <div class="content">
+    <p class="eyebrow">Local Comparison</p>
+
+    <h2>Avondale Buyers Often Compare Across Suburb Borders</h2>
+
+    <p>
+      Avondale buyers may also look at New Lynn, Mount Albert, Waterview, Blockhouse Bay, New Windsor, Mt Roskill or other central-west options depending on price, property type and lifestyle needs.
+    </p>
+
+    <p>
+      This means your property is not only competing with other Avondale homes. It may also be competing against homes with different land sizes, different renovation levels, different transport convenience and different buyer appeal.
+    </p>
+
+    <p>
+      A strong appraisal should explain where your home sits in that wider buyer comparison, not just give a narrow suburb estimate.
+    </p>
+  </div>
+</section>
+
+<section class="section black">
+  <div class="content">
+    <p class="eyebrow">Selling Strategy</p>
+
+    <h2>Convenience Is Valuable — But Only If Buyers Can See The Full Benefit</h2>
+
+    <p>
+      Avondale’s convenience can be a major strength, but buyers still need to feel confident about the home itself. If the property is poorly presented, unclear, dated or hard to understand, buyers may like the location but still hesitate on price.
+    </p>
+
+    <p>
+      The goal is to connect the location advantage with the property’s strongest buyer story: family practicality, first-home buyer value, investment appeal, renovation upside or future flexibility.
+    </p>
+
+    <div class="mistake-list">
+      <div class="mistake">
+        <h3>Mistake 1: Marketing only the location</h3>
+        <p>
+          Location helps, but buyers still need a clear reason to choose your home over other nearby options.
+        </p>
+      </div>
+
+      <div class="mistake">
+        <h3>Mistake 2: Using the wrong buyer angle</h3>
+        <p>
+          A renovator, investor and family buyer all judge value differently. The campaign should not speak to the wrong audience.
+        </p>
+      </div>
+
+      <div class="mistake">
+        <h3>Mistake 3: Ignoring presentation</h3>
+        <p>
+          Even practical buyers compare feeling. A cleaner, brighter and clearer home can feel easier to buy.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="content">
+    <p class="eyebrow">Before You List</p>
+
+    <h2>How To Prepare An Avondale Home Before Going To Market</h2>
+
+    <p class="narrow">
+      The right preparation depends on the property type. A character home, townhouse, unit, rental property or family home may each need a different strategy.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <h3>Identify the strongest buyer group</h3>
+        <p>
+          Decide whether the home is most likely to attract families, first-home buyers, investors, renovators or buyers wanting central-west convenience.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Make the property easy to understand</h3>
+        <p>
+          Clear room use, strong photos, tidy outdoor areas and confident presentation help buyers quickly understand value.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Prepare documents and details early</h3>
+        <p>
+          Title, LIM, council records and improvement details can help reduce buyer hesitation before offers are made.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Position against the right competition</h3>
+        <p>
+          Buyers may compare Avondale with several nearby suburbs, so your pricing and marketing need to make that comparison work in your favour.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Want A Clearer View Of Your Avondale Property Value?</h2>
+
+  <p>
+    Request a free appraisal and get practical advice on likely value, buyer appeal, preparation, timing and selling strategy.
+  </p>
+
+  <a class="btn" href="#appraisal-form">Request Free Appraisal</a>
+</section>
+
+<section class="section soft">
+  <div class="content">
+    <p class="eyebrow">FAQ</p>
+
+    <h2>Avondale Property Appraisal Questions</h2>
+
+    <div class="faq">
+      <h3>How much is my Avondale home worth?</h3>
+      <p>
+        The value depends on recent comparable sales, property type, condition, land, layout, parking, presentation, buyer demand and competition from Avondale and nearby suburbs.
+      </p>
+
+      <h3>What makes Avondale different when selling?</h3>
+      <p>
+        Avondale can attract different buyer groups, including first-home buyers, families, investors, renovators and buyers looking for central-west convenience. The right strategy depends on which buyer group is most likely to value your property.
+      </p>
+
+      <h3>Should I renovate before selling in Avondale?</h3>
+      <p>
+        Not always. Some improvements can help buyer confidence, but major renovations may not return enough before sale. Get advice before spending heavily.
+      </p>
+
+      <h3>Is a free home appraisal the same as a registered valuation?</h3>
+      <p>
+        No. A real estate appraisal is an agent’s market estimate. A registered valuation is a formal valuation prepared by a registered valuer and is often used for finance, legal or accounting purposes.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <strong>Team Peter & Edita</strong><br>
+    Raine & Horne Titirangi, Blockhouse Bay & Lynfield
+  </div>
+
+  <div>
+    <a href="../index.html">Back to home</a><br>
+    <a href="tel:021765234">021 765 234</a>
+  </div>
+</footer>
+
+</body>
+</html>
