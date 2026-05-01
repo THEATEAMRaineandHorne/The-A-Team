@@ -6,7 +6,7 @@
 
   <title>What Is My Avondale Home Worth? | Free Property Appraisal</title>
 
-  <meta name="description" content="What is your Avondale home worth? Get a free property appraisal and local selling advice on buyer demand, property type, presentation, pricing and strategy.">
+  <meta name="description" content="What is your Avondale home worth? Get a free property appraisal and local selling advice based on property type, buyer demand, presentation, land, condition and selling strategy.">
 
   <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-avondale/">
 
@@ -96,19 +96,21 @@
 
     .hero {
       background:
-        radial-gradient(circle at top left, rgba(176,138,66,.22), transparent 34%),
-        linear-gradient(135deg, #111111 0%, #252525 56%, #3a3328 100%);
-      padding: 90px 8% 75px;
+        linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.58)),
+        url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=80");
+      background-size: cover;
+      background-position: center;
       color: white;
+      padding: 92px 8% 76px;
     }
 
     .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.05fr) 460px;
-      gap: 52px;
-      align-items: start;
       max-width: 1280px;
       margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) 460px;
+      gap: 54px;
+      align-items: start;
     }
 
     .eyebrow {
@@ -121,38 +123,66 @@
     }
 
     .hero h1 {
-      font-size: clamp(42px, 6vw, 74px);
+      font-size: clamp(42px, 6vw, 76px);
       color: white;
       margin-bottom: 24px;
-      max-width: 890px;
+      max-width: 880px;
     }
 
     .hero-lead {
       font-size: 21px;
-      color: #f1f1f1;
-      max-width: 790px;
-      margin-bottom: 24px;
+      color: #f2f2f2;
+      max-width: 800px;
+      margin-bottom: 22px;
     }
 
-    .hero-note {
+    .hero-angle {
+      margin-top: 30px;
       background: rgba(255,255,255,.10);
       border-left: 5px solid var(--gold);
-      padding: 24px;
-      max-width: 790px;
-      margin-top: 28px;
+      padding: 26px;
+      max-width: 820px;
     }
 
-    .hero-note p {
-      color: #f2f2f2;
-      margin-bottom: 0;
+    .hero-angle p {
+      color: #f3f3f3;
       font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+      max-width: 850px;
+    }
+
+    .mini-card {
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 18px;
+    }
+
+    .mini-card strong {
+      display: block;
+      color: white;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 7px;
+    }
+
+    .mini-card span {
+      color: #dddddd;
+      font-size: 15px;
     }
 
     .form-card {
       background: white;
       padding: 34px;
-      border: 1px solid rgba(176,138,66,.55);
-      box-shadow: 0 24px 70px rgba(0,0,0,.28);
+      border: 1px solid rgba(176,138,66,.60);
+      box-shadow: 0 24px 70px rgba(0,0,0,.30);
       position: sticky;
       top: 24px;
     }
@@ -186,7 +216,7 @@
       border: 1px solid #d8d8d8;
       font-size: 15px;
       font-family: Arial, sans-serif;
-      background: #ffffff;
+      background: white;
       color: #222222;
     }
 
@@ -238,7 +268,7 @@
     }
 
     .section {
-      padding: 82px 8%;
+      padding: 84px 8%;
     }
 
     .white {
@@ -301,43 +331,43 @@
       margin-bottom: 14px;
     }
 
-    .type-grid {
+    .market-map {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
       margin-top: 34px;
     }
 
-    .type-card {
+    .map-card {
       background: white;
       border: 1px solid #eeeeee;
-      padding: 30px;
+      padding: 24px;
     }
 
-    .type-card h3 {
-      font-size: 26px;
-      margin-bottom: 14px;
+    .map-card h3 {
+      font-size: 23px;
+      margin-bottom: 10px;
     }
 
-    .type-card p {
+    .map-card p {
+      font-size: 15.5px;
       margin-bottom: 0;
-      font-size: 16px;
     }
 
-    .comparison-strip {
+    .question-box {
       background: #111111;
       color: white;
       padding: 34px;
       margin-top: 34px;
     }
 
-    .comparison-strip h3 {
+    .question-box h3 {
       color: white;
       font-size: 30px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
-    .comparison-strip p {
+    .question-box p {
       color: #dddddd;
       margin-bottom: 0;
     }
@@ -349,43 +379,45 @@
       margin-top: 34px;
     }
 
-    .value-item {
+    .value-card {
       background: white;
       border: 1px solid #eeeeee;
       padding: 28px;
     }
 
-    .value-item h3 {
+    .value-card h3 {
       font-size: 25px;
       margin-bottom: 12px;
     }
 
-    .value-item p {
-      margin-bottom: 0;
+    .value-card p {
       font-size: 16px;
+      margin-bottom: 0;
     }
 
-    .mistake-list {
+    .mistake-grid {
       display: grid;
-      gap: 18px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
       margin-top: 34px;
     }
 
-    .mistake {
+    .mistake-card {
       background: #1d1d1d;
       border: 1px solid #333333;
-      padding: 26px;
+      padding: 28px;
     }
 
-    .mistake h3 {
+    .mistake-card h3 {
       color: white;
       font-size: 25px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
-    .mistake p {
+    .mistake-card p {
       color: #dddddd;
       margin-bottom: 0;
+      font-size: 16px;
     }
 
     .steps {
@@ -427,7 +459,7 @@
 
     .cta-band {
       background: var(--cream);
-      padding: 60px 8%;
+      padding: 62px 8%;
       text-align: center;
     }
 
@@ -477,6 +509,12 @@
       color: #e7c782;
     }
 
+    @media(max-width: 1100px) {
+      .market-map {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     @media(max-width: 980px) {
       .site-header {
         display: block;
@@ -493,9 +531,14 @@
 
       .hero-grid,
       .split,
-      .type-grid,
+      .mini-grid,
       .value-grid,
+      .mistake-grid,
       .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .market-map {
         grid-template-columns: 1fr;
       }
 
@@ -536,7 +579,15 @@
         "name": "How do I find out what my Avondale home is worth?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A local Avondale appraisal should consider recent comparable sales, property type, land, condition, presentation, transport convenience, buyer demand and nearby competition."
+          "text": "A local Avondale appraisal should consider recent comparable sales, property type, land, condition, presentation, buyer demand, transport convenience and the most likely buyer group for the property."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are Avondale homes hard to price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Avondale has different property types and buyer groups, including family homes, townhouses, units, character homes, renovation opportunities and investment properties. Each can attract different buyer behaviour."
         }
       },
       {
@@ -544,15 +595,7 @@
         "name": "What affects property value in Avondale?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Avondale property value can be affected by property type, land size, zoning, condition, renovation quality, parking, layout, transport access, buyer demand and how the home compares with nearby suburbs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Avondale popular with different buyer groups?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Depending on the property, Avondale can attract first-home buyers, families, investors, renovators, townhouse buyers and buyers comparing central-west convenience."
+          "text": "Avondale property value can be affected by property type, land size, zoning, condition, renovation quality, parking, layout, transport access, buyer demand and nearby competition."
         }
       },
       {
@@ -586,20 +629,37 @@
     <div>
       <p class="eyebrow">Avondale Home Value Guide</p>
 
-      <h1>What Is My Avondale Home Worth — And Which Buyers Will Pay More?</h1>
+      <h1>What Is My Avondale Home Worth — And Which Buyer Story Fits Best?</h1>
 
       <p class="hero-lead">
-        Avondale is not a one-type-of-buyer market. One property may appeal to first-home buyers. Another may attract families, investors, renovators, townhouse buyers or people wanting central-west convenience.
+        Avondale is not one simple market. A villa, a townhouse, a rental, a family home, a unit, and a renovation project can all attract different buyers — and those buyers judge value in different ways.
       </p>
 
       <p class="hero-lead">
-        A useful Avondale appraisal should not only estimate price. It should identify which buyer group is most likely to see the strongest value in your property.
+        A strong appraisal should not only estimate a price. It should identify the buyer group most likely to pay the strongest price and show how your property should be positioned before going live.
       </p>
 
-      <div class="hero-note">
+      <div class="hero-angle">
         <p>
-          In Avondale, the result often depends on matching the property to the right buyer story — convenience, land, character, condition, rental appeal, or future potential.
+          In Avondale, the key question is not just “what is it worth?” The better question is: “who is most likely to value it highly — and why?”
         </p>
+      </div>
+
+      <div class="mini-grid">
+        <div class="mini-card">
+          <strong>Property Type</strong>
+          <span>Different buyers value houses, units, townhouses and renovation homes differently.</span>
+        </div>
+
+        <div class="mini-card">
+          <strong>Buyer Story</strong>
+          <span>Family, investor, first-home buyer and renovator campaigns need different angles.</span>
+        </div>
+
+        <div class="mini-card">
+          <strong>Competition</strong>
+          <span>Buyers may compare Avondale with New Lynn, Mt Albert, Waterview and New Windsor.</span>
+        </div>
       </div>
     </div>
 
@@ -607,7 +667,7 @@
       <h2>Free Avondale Appraisal</h2>
 
       <p>
-        Tell us a little about your Avondale property and we will help you understand likely value, buyer appeal and selling strategy.
+        Tell us a little about your Avondale property and we will help you understand likely value, buyer appeal and the best selling angle.
       </p>
 
       <form action="https://formspree.io/f/mdabnpgl" method="POST">
@@ -688,14 +748,14 @@
     <div>
       <p class="eyebrow">The Avondale Difference</p>
 
-      <h2>Avondale Homes Need The Right Buyer Story</h2>
+      <h2>Avondale Property Value Depends On The Buyer Lane</h2>
 
       <p>
-        In some suburbs, most buyers are looking for a similar type of home. Avondale is different. Buyers may be comparing character homes, family homes, townhouses, units, renovation opportunities, investment properties and homes close to transport or key routes.
+        In Avondale, two homes can sit close to each other but appeal to completely different buyers. One may be valued for land and future potential. Another may appeal because it is easy to rent. Another may win because it is move-in ready and family friendly.
       </p>
 
       <p>
-        That means the appraisal should not only ask, “What did the last similar home sell for?” It should also ask, “Who is most likely to want this property, and why would they pay more for it?”
+        That is why a useful appraisal should go deeper than “similar homes sold for this.” It should explain which buyer lane your property sits in and how to make that lane clear in the campaign.
       </p>
     </div>
 
@@ -703,11 +763,11 @@
       <h3>A stronger Avondale appraisal should answer:</h3>
 
       <ul>
-        <li>Is the strongest buyer a family, first-home buyer, investor, renovator or developer?</li>
-        <li>Will buyers focus more on condition, land, convenience, rental appeal or future potential?</li>
-        <li>What nearby suburbs will buyers compare against?</li>
-        <li>Does the property need presentation work before launch?</li>
-        <li>What is the clearest buyer story for the marketing campaign?</li>
+        <li>Is the property best suited to families, first-home buyers, investors, renovators or townhouse/unit buyers?</li>
+        <li>Will buyers value land, condition, convenience, rental appeal or future potential most?</li>
+        <li>What competing suburbs will buyers compare it with?</li>
+        <li>What could stop buyers from offering strongly?</li>
+        <li>What buyer story should the marketing lead with?</li>
       </ul>
     </div>
   </div>
@@ -715,41 +775,45 @@
 
 <section class="section soft">
   <div class="content">
-    <p class="eyebrow">Buyer Types</p>
+    <p class="eyebrow">Buyer Lanes</p>
 
-    <h2>Different Avondale Properties Attract Different Buyers</h2>
+    <h2>Which Avondale Buyer Is Most Likely To Pay More?</h2>
 
     <p class="narrow">
-      The same Avondale address can be valued differently depending on who is looking. A strong campaign should know which buyer group matters most before the property goes live.
+      The same property can feel more valuable to one buyer group than another. The appraisal should identify the strongest buyer lane before the campaign starts.
     </p>
 
-    <div class="type-grid">
-      <div class="type-card">
+    <div class="market-map">
+      <div class="map-card">
         <h3>First-Home Buyers</h3>
-        <p>
-          They often want affordability and convenience, but they may hesitate if the property feels too hard to maintain or improve.
-        </p>
+        <p>They often want value, convenience and confidence that the home will not become too expensive after purchase.</p>
       </div>
 
-      <div class="type-card">
+      <div class="map-card">
         <h3>Families</h3>
-        <p>
-          Families usually compare layout, parking, outdoor space, storage, schools, parks and how easy the home feels for daily living.
-        </p>
+        <p>They compare bedrooms, parking, storage, outdoor space, school convenience, parks and daily practicality.</p>
       </div>
 
-      <div class="type-card">
+      <div class="map-card">
         <h3>Investors</h3>
-        <p>
-          Investors may focus on rentability, location, future maintenance, layout, tenant appeal and long-term value.
-        </p>
+        <p>They focus on rentability, maintenance risk, tenant appeal, location, layout and long-term value.</p>
+      </div>
+
+      <div class="map-card">
+        <h3>Renovators</h3>
+        <p>They may accept work, but only when the upside feels stronger than the cost and effort required.</p>
+      </div>
+
+      <div class="map-card">
+        <h3>Townhouse/Unit Buyers</h3>
+        <p>They often compare body corporate, layout, parking, privacy, sunlight, storage and convenience.</p>
       </div>
     </div>
 
-    <div class="comparison-strip">
+    <div class="question-box">
       <h3>The Avondale pricing question</h3>
       <p>
-        “Which buyer group will see the highest value in this property — and is the campaign speaking directly to them?”
+        “Which buyer group will see the highest value here — and is the campaign speaking directly to that buyer?”
       </p>
     </div>
   </div>
@@ -759,18 +823,18 @@
   <div class="content">
     <p class="eyebrow">Local Comparison</p>
 
-    <h2>Avondale Buyers Often Compare Across Suburb Borders</h2>
+    <h2>Avondale Buyers Often Compare Across Several Nearby Suburbs</h2>
 
     <p>
-      Avondale buyers may also look at New Lynn, Mount Albert, Waterview, Blockhouse Bay, New Windsor, Mt Roskill or other central-west options depending on price, property type and lifestyle needs.
+      Avondale buyers may also look at New Lynn, Mount Albert, Waterview, New Windsor, Blockhouse Bay, Mt Roskill and other central-west options depending on budget and property type.
     </p>
 
     <p>
-      This means your property is not only competing with other Avondale homes. It may also be competing against homes with different land sizes, different renovation levels, different transport convenience and different buyer appeal.
+      This means your property is not only competing with other Avondale listings. It may also be competing against homes with different land sizes, different renovation levels, different transport convenience, different school access and different buyer appeal.
     </p>
 
     <p>
-      A strong appraisal should explain where your home sits in that wider buyer comparison, not just give a narrow suburb estimate.
+      A strong appraisal should therefore explain where your home sits in the wider buyer comparison — not just give a narrow suburb estimate.
     </p>
   </div>
 </section>
@@ -779,77 +843,122 @@
   <div class="content">
     <p class="eyebrow">Selling Strategy</p>
 
-    <h2>Convenience Is Valuable — But Only If Buyers Can See The Full Benefit</h2>
+    <h2>Three Avondale Selling Mistakes To Avoid</h2>
 
-    <p>
-      Avondale’s convenience can be a major strength, but buyers still need to feel confident about the home itself. If the property is poorly presented, unclear, dated or hard to understand, buyers may like the location but still hesitate on price.
+    <p class="narrow">
+      Avondale has strong appeal, but the wrong campaign angle can still weaken buyer confidence. These are the mistakes sellers should avoid before going to market.
     </p>
 
-    <p>
-      The goal is to connect the location advantage with the property’s strongest buyer story: family practicality, first-home buyer value, investment appeal, renovation upside or future flexibility.
-    </p>
-
-    <div class="mistake-list">
-      <div class="mistake">
-        <h3>Mistake 1: Marketing only the location</h3>
+    <div class="mistake-grid">
+      <div class="mistake-card">
+        <h3>1. Marketing only the location</h3>
         <p>
-          Location helps, but buyers still need a clear reason to choose your home over other nearby options.
+          Location helps, but buyers still need a clear reason to choose your property over nearby alternatives.
         </p>
       </div>
 
-      <div class="mistake">
-        <h3>Mistake 2: Using the wrong buyer angle</h3>
+      <div class="mistake-card">
+        <h3>2. Speaking to the wrong buyer</h3>
         <p>
-          A renovator, investor and family buyer all judge value differently. The campaign should not speak to the wrong audience.
+          A renovator, family buyer, investor and first-home buyer all judge value differently.
         </p>
       </div>
 
-      <div class="mistake">
-        <h3>Mistake 3: Ignoring presentation</h3>
+      <div class="mistake-card">
+        <h3>3. Ignoring presentation</h3>
         <p>
-          Even practical buyers compare feeling. A cleaner, brighter and clearer home can feel easier to buy.
+          Even practical buyers are influenced by how easy, bright, clean and confident the home feels.
         </p>
       </div>
+    </div>
+
+    <div class="question-box">
+      <h3>The campaign should make the buyer story obvious</h3>
+      <p>
+        If buyers have to work too hard to understand the value, they often move on or offer less.
+      </p>
     </div>
   </div>
 </section>
 
 <section class="section white">
   <div class="content">
+    <p class="eyebrow">Value Factors</p>
+
+    <h2>What Can Change An Avondale Appraisal?</h2>
+
+    <p class="narrow">
+      Avondale values can shift depending on both the property itself and the buyer group most likely to compete for it.
+    </p>
+
+    <div class="value-grid">
+      <div class="value-card">
+        <h3>Property Type</h3>
+        <p>
+          Houses, units, townhouses, character homes, rentals and renovation opportunities each need different comparison evidence.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>Land & Future Use</h3>
+        <p>
+          Land size, access, site shape, zoning and future flexibility can influence value for some buyers.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>Condition & Presentation</h3>
+        <p>
+          Buyers may pay more when the home feels clean, maintained, easy to understand and low-risk.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>Convenience & Lifestyle</h3>
+        <p>
+          Transport, shops, parks, schools, motorway access and daily convenience can affect buyer interest.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="content">
     <p class="eyebrow">Before You List</p>
 
     <h2>How To Prepare An Avondale Home Before Going To Market</h2>
 
     <p class="narrow">
-      The right preparation depends on the property type. A character home, townhouse, unit, rental property or family home may each need a different strategy.
+      The right preparation depends on the property type. The goal is not always to renovate. Often it is to remove buyer doubt and make the strongest buyer story clear.
     </p>
 
     <div class="steps">
       <div class="step">
-        <h3>Identify the strongest buyer group</h3>
+        <h3>Identify the strongest buyer lane</h3>
         <p>
-          Decide whether the home is most likely to attract families, first-home buyers, investors, renovators or buyers wanting central-west convenience.
+          Decide whether the property should be positioned for families, first-home buyers, investors, renovators, townhouse/unit buyers or future-potential buyers.
         </p>
       </div>
 
       <div class="step">
-        <h3>Make the property easy to understand</h3>
+        <h3>Make the home easy to compare</h3>
         <p>
-          Clear room use, strong photos, tidy outdoor areas and confident presentation help buyers quickly understand value.
+          Buyers compare quickly. Clean presentation, strong photos, clear room use and tidy outdoor areas help them understand value faster.
         </p>
       </div>
 
       <div class="step">
-        <h3>Prepare documents and details early</h3>
+        <h3>Prepare confidence documents</h3>
         <p>
-          Title, LIM, council records and improvement details can help reduce buyer hesitation before offers are made.
+          Title, LIM, council records and information about improvements can help reduce hesitation before offers are made.
         </p>
       </div>
 
       <div class="step">
-        <h3>Position against the right competition</h3>
+        <h3>Price against the right competition</h3>
         <p>
-          Buyers may compare Avondale with several nearby suburbs, so your pricing and marketing need to make that comparison work in your favour.
+          Compare with the properties your buyers will actually consider, not just the closest recent sale.
         </p>
       </div>
     </div>
@@ -860,13 +969,13 @@
   <h2>Want A Clearer View Of Your Avondale Property Value?</h2>
 
   <p>
-    Request a free appraisal and get practical advice on likely value, buyer appeal, preparation, timing and selling strategy.
+    Request a free appraisal and get practical advice on likely value, buyer appeal, preparation, timing and the best selling strategy for your property type.
   </p>
 
   <a class="btn" href="#appraisal-form">Request Free Appraisal</a>
 </section>
 
-<section class="section soft">
+<section class="section white">
   <div class="content">
     <p class="eyebrow">FAQ</p>
 
@@ -875,20 +984,20 @@
     <div class="faq">
       <h3>How much is my Avondale home worth?</h3>
       <p>
-        The value depends on recent comparable sales, property type, condition, land, layout, parking, presentation, buyer demand and competition from Avondale and nearby suburbs.
+        The value depends on recent comparable sales, property type, land, condition, layout, parking, presentation, buyer demand and competition from Avondale and nearby suburbs.
       </p>
 
-      <h3>What makes Avondale different when selling?</h3>
+      <h3>Why are Avondale homes hard to compare?</h3>
       <p>
-        Avondale can attract different buyer groups, including first-home buyers, families, investors, renovators and buyers looking for central-west convenience. The right strategy depends on which buyer group is most likely to value your property.
+        Avondale has a mix of property types and buyer groups. A family home, townhouse, unit, rental, renovation project or character home may each need a different appraisal approach.
       </p>
 
       <h3>Should I renovate before selling in Avondale?</h3>
       <p>
-        Not always. Some improvements can help buyer confidence, but major renovations may not return enough before sale. Get advice before spending heavily.
+        Not always. Some improvements can help, but major renovation may not return enough before sale. It is better to get advice before spending heavily.
       </p>
 
-      <h3>Is a free home appraisal the same as a registered valuation?</h3>
+      <h3>Is a free appraisal the same as a registered valuation?</h3>
       <p>
         No. A real estate appraisal is an agent’s market estimate. A registered valuation is a formal valuation prepared by a registered valuer and is often used for finance, legal or accounting purposes.
       </p>
