@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://theateamraineandhorne.github.io/The-A-Team/</loc>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-near-me/</loc>
-    <priority>0.9</priority>
+    <priority>1.00</priority>
   </url>
 
   <url>
     <loc>https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-titirangi/</loc>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-blockhouse-bay/</loc>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-lynfield/</loc>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-new-lynn/</loc>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://theateamraineandhorne.github.io/The-A-Team/articles/titirangi-house-prices-2026.html</loc>
-    <priority>0.8</priority>
+    <loc>https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-green-bay/</loc>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://theateamraineandhorne.github.io/The-A-Team/articles/best-real-estate-agent-titirangi.html</loc>
-    <priority>0.8</priority>
+    <loc>https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-glen-eden/</loc>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://theateamraineandhorne.github.io/The-A-Team/articles/why-homes-do-not-sell-blockhouse-bay.html</loc>
-    <priority>0.8</priority>
+    <loc>https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-mount-roskill/</loc>
+    <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://theateamraineandhorne.github.io/The-A-Team/articles/best-time-to-sell-west-auckland.html</loc>
-    <priority>0.8</priority>
+    <loc>https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-new-windsor/</loc>
+    <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://theateamraineandhorne.github.io/The-A-Team/articles/prepare-home-for-sale-auckland.html</loc>
-    <priority>0.8</priority>
+    <loc>https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-glendene/</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-avondale/</loc>
+    <priority>0.80</priority>
   </url>
 
 </urlset>
