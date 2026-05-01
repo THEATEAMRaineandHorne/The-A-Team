@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Free Home Appraisal Mount Roskill | Team Peter & Edita</title>
+  <title>Free Property Appraisal Mount Roskill | Home Value Advice</title>
 
-  <meta name="description" content="Request a free home appraisal in Mount Roskill from Team Peter & Edita | Raine & Horne. Local property advice for Mount Roskill homeowners thinking of selling.">
+  <meta name="description" content="Request a free property appraisal in Mount Roskill. Get local advice on your home value, buyer demand, presentation, timing and selling strategy from Team Peter & Edita.">
 
   <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-mount-roskill/">
 
@@ -28,6 +28,10 @@
       --muted: #555555;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
       background: var(--soft);
@@ -47,6 +51,17 @@
       font-size: 17px;
       color: var(--muted);
       margin-bottom: 18px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 14px 0 26px;
+    }
+
+    li {
+      font-size: 17px;
+      color: var(--muted);
+      margin-bottom: 9px;
     }
 
     .site-header {
@@ -80,11 +95,11 @@
       color: #e7c782;
     }
 
-    .page-hero {
+    .hero {
       min-height: 100vh;
       padding: 120px 8% 80px;
       background:
-        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.50)),
+        linear-gradient(rgba(0,0,0,.64), rgba(0,0,0,.52)),
         url("https://images.unsplash.com/photo-1600585153490-76fb20a32601?auto=format&fit=crop&w=1800&q=80");
       background-size: cover;
       background-position: center;
@@ -92,13 +107,17 @@
       align-items: center;
     }
 
-    .form-card {
+    .hero-grid {
       width: 100%;
-      max-width: 780px;
-      background: white;
-      padding: 48px;
-      border: 1px solid #eeeeee;
-      box-shadow: 0 24px 70px rgba(0,0,0,.22);
+      display: grid;
+      grid-template-columns: 1fr 460px;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-copy {
+      max-width: 820px;
+      color: white;
     }
 
     .eyebrow {
@@ -110,46 +129,67 @@
       margin-bottom: 16px;
     }
 
-    .form-card h1 {
-      font-size: clamp(38px, 5vw, 58px);
-      margin-bottom: 18px;
+    .hero-copy h1 {
+      font-size: clamp(42px, 6vw, 68px);
+      margin-bottom: 24px;
+      color: white;
+    }
+
+    .hero-copy p {
+      font-size: 20px;
+      color: #f1f1f1;
+      max-width: 760px;
+    }
+
+    .hero-points {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .hero-point {
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 16px;
+      color: white;
+      font-size: 15px;
+    }
+
+    .form-card {
+      background: white;
+      padding: 36px;
+      border: 1px solid #eeeeee;
+      box-shadow: 0 24px 70px rgba(0,0,0,.24);
+    }
+
+    .form-card h2 {
+      font-size: 34px;
+      margin-bottom: 12px;
       color: var(--black);
     }
 
-    .intro {
-      font-size: 18px;
-      color: #444444;
-      margin-bottom: 30px;
-      max-width: 680px;
-    }
-
-    .trust-box {
-      background: var(--soft);
-      border-left: 5px solid var(--gold);
-      padding: 20px;
-      margin: 26px 0 34px;
-    }
-
-    .trust-box p {
-      margin-bottom: 0;
-      color: #333333;
+    .form-card p {
+      font-size: 15px;
+      margin-bottom: 24px;
     }
 
     form label {
       display: block;
       font-weight: bold;
-      margin-bottom: 18px;
+      margin-bottom: 15px;
       color: #222222;
+      font-size: 14px;
     }
 
     input,
     select,
     textarea {
       width: 100%;
-      margin-top: 8px;
-      padding: 15px 16px;
+      margin-top: 7px;
+      padding: 14px 15px;
       border: 1px solid #d8d8d8;
-      font-size: 16px;
+      font-size: 15px;
       font-family: Arial, sans-serif;
       background: white;
       color: #222222;
@@ -170,7 +210,7 @@
     .form-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 18px;
+      gap: 14px;
     }
 
     .btn {
@@ -198,30 +238,115 @@
     .small-note {
       font-size: 12px;
       color: #777777;
-      margin-top: 18px;
+      margin-top: 16px;
       margin-bottom: 0;
     }
 
-    .mini-disclosure {
-      text-align: center;
-      font-size: 11px;
-      color: rgba(255,255,255,.7);
-      margin-top: 18px;
+    .section {
+      padding: 80px 8%;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-top: 18px;
-      color: var(--gold-dark);
-      font-weight: bold;
+    .white {
+      background: white;
+    }
+
+    .soft {
+      background: var(--soft);
+    }
+
+    .section h2 {
+      font-size: clamp(34px, 4vw, 48px);
+      margin-bottom: 22px;
+    }
+
+    .content-wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+      margin-top: 34px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 30px;
+    }
+
+    .soft .card {
+      background: white;
+    }
+
+    .card h3 {
+      font-size: 25px;
+      margin-bottom: 14px;
+    }
+
+    .callout {
+      background: #111111;
+      color: white;
+      padding: 34px;
+      margin-top: 34px;
+    }
+
+    .callout h3 {
+      color: white;
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .callout p {
+      color: #dddddd;
+      margin-bottom: 0;
+    }
+
+    .faq {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 34px;
+      margin-top: 34px;
+    }
+
+    .faq h3 {
+      font-size: 24px;
+      margin: 26px 0 10px;
+    }
+
+    footer {
+      background: #111111;
+      color: white;
+      padding: 38px 8%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
       text-decoration: none;
     }
 
-    .back-link:hover {
-      text-decoration: underline;
+    footer a:hover {
+      color: #e7c782;
     }
 
-    @media(max-width: 850px) {
+    @media(max-width: 980px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-points,
+      .grid-3,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
       .site-header {
         position: relative;
         background: var(--black);
@@ -233,20 +358,73 @@
         margin: 10px 12px 0 0;
       }
 
-      .page-hero {
-        padding: 50px 6%;
+      .hero {
+        padding: 60px 6%;
         min-height: auto;
       }
 
-      .form-card {
-        padding: 30px 22px;
+      .section {
+        padding: 60px 6%;
       }
 
-      .form-grid {
-        grid-template-columns: 1fr;
+      .form-card {
+        padding: 28px 22px;
       }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Team Peter & Edita | Raine & Horne",
+    "description": "Free property appraisal and selling advice for Mount Roskill homeowners.",
+    "url": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-mount-roskill/",
+    "telephone": "+6421765234",
+    "areaServed": [
+      "Mount Roskill",
+      "Mt Roskill",
+      "Auckland"
+    ],
+    "brand": {
+      "@type": "Brand",
+      "name": "Raine & Horne"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I get a free property appraisal in Mount Roskill?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can request a free Mount Roskill property appraisal by submitting your property address and contact details. A local appraisal should consider recent comparable sales, buyer demand, property condition, land, zoning, presentation and current competition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What affects home value in Mount Roskill?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mount Roskill home value can be influenced by land size, zoning, condition, renovation level, parking, school access, transport links, development potential, layout, presentation and how the property compares with nearby homes for sale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a home appraisal the same as a valuation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A real estate appraisal is an agent's price estimate based on market evidence and buyer demand. A registered valuation is completed by a registered valuer and may be used for finance, legal or formal valuation purposes."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -262,29 +440,35 @@
   </nav>
 </header>
 
-<section class="page-hero">
-  <div>
-    <div class="form-card">
-      <p class="eyebrow">Mount Roskill Free Property Appraisal</p>
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Mount Roskill Property Appraisal</p>
 
-      <h1>Request Your Free Mount Roskill Home Appraisal</h1>
+      <h1>Free Property Appraisal in Mount Roskill</h1>
 
-      <p class="intro">
-        Thinking of selling in Mount Roskill? Get a practical, local view of what your home could be worth,
-        how buyers may compare it, and what steps could help you prepare for a stronger selling result.
+      <p>
+        Thinking of selling in Mount Roskill? Get a practical home value estimate that looks beyond a simple online number and considers how real buyers may compare your property in today’s market.
       </p>
 
-      <div class="trust-box">
-        <p>
-          A strong appraisal should do more than give you a number. It should help you understand buyer demand,
-          recent comparable sales, presentation, timing, competition and the selling strategy that may work best
-          for your Mount Roskill property.
-        </p>
+      <div class="hero-points">
+        <div class="hero-point">Local price positioning advice</div>
+        <div class="hero-point">Buyer demand and competition review</div>
+        <div class="hero-point">Preparation tips before going live</div>
+        <div class="hero-point">AI-enhanced marketing guidance</div>
       </div>
+    </div>
+
+    <div class="form-card">
+      <h2>Request Your Free Appraisal</h2>
+
+      <p>
+        Tell us a little about your Mount Roskill property and your selling plans.
+      </p>
 
       <form action="https://formspree.io/f/mdabnpgl" method="POST">
-        <input type="hidden" name="_subject" value="New Mount Roskill Home Appraisal Request - The A-Team Website" />
-        <input type="hidden" name="landing_page" value="Free Home Appraisal Mount Roskill" />
+        <input type="hidden" name="_subject" value="New Mount Roskill Property Appraisal Request - The A-Team Website" />
+        <input type="hidden" name="landing_page" value="Free Property Appraisal Mount Roskill" />
 
         <div class="form-grid">
           <label>
@@ -342,25 +526,139 @@
 
         <label>
           Tell us anything helpful
-          <textarea name="message" rows="6" placeholder="Example: We are thinking of selling our Mount Roskill home and want to understand price, timing and preparation."></textarea>
+          <textarea name="message" rows="5" placeholder="Example: We are thinking of selling our Mount Roskill home and want advice on value, timing and preparation."></textarea>
         </label>
 
         <button class="btn" type="submit">Send Appraisal Request</button>
 
         <p class="small-note">
-          Team Peter & Edita are licensed real estate salespeople with Raine & Horne.
-          Your details are used only to respond to your appraisal request.
+          Team Peter & Edita are licensed real estate salespeople with Raine & Horne. Your details are used only to respond to your appraisal request.
         </p>
       </form>
-
-      <a class="back-link" href="../index.html">← Back to home page</a>
     </div>
+  </div>
+</section>
 
-    <p class="mini-disclosure">
-      Team Peter & Edita | Raine & Horne Titirangi, Blockhouse Bay & Lynfield
+<section class="section white">
+  <div class="content-wrap">
+    <p class="eyebrow">Mount Roskill Home Value</p>
+
+    <h2>Why Mount Roskill Needs A More Careful Appraisal</h2>
+
+    <p>
+      Mount Roskill is not a simple one-price-fits-all market. Buyers may compare older family homes, renovated properties, larger sites, cross-lease homes, homes with development potential, and properties that compete with nearby central-west suburbs.
+    </p>
+
+    <p>
+      That means a good appraisal should not rely only on an automated estimate or one recent sale. It should consider your land, zoning, condition, layout, parking, presentation, access, school convenience, buyer demand and what else is available at the same time.
+    </p>
+
+    <div class="callout">
+      <h3>The important point for Mount Roskill sellers</h3>
+      <p>
+        Buyers often compare Mount Roskill on convenience, value and long-term potential. If your home is not positioned clearly, buyers may like the location but still hesitate on price.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="content-wrap">
+    <p class="eyebrow">What Buyers Compare</p>
+
+    <h2>What Can Affect Your Mount Roskill Property Value?</h2>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Land & Future Use</h3>
+        <p>
+          Land size, site shape, access, zoning and future flexibility can influence how buyers and developers assess value.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Condition & Confidence</h3>
+        <p>
+          Older homes can attract strong interest, but buyers often look closely at roofing, moisture, maintenance, renovations and documentation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Convenience & Access</h3>
+        <p>
+          Buyers often weigh transport, motorway access, schools, shops, parks and commuting convenience when comparing Mount Roskill homes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="content-wrap">
+    <p class="eyebrow">Before You Sell</p>
+
+    <h2>How To Prepare A Mount Roskill Home Before Going To Market</h2>
+
+    <p>
+      The right preparation depends on the property. A renovated family home may need strong lifestyle marketing. An older home may need buyer confidence around condition and documents. A larger site may need clear positioning around land, potential and buyer groups.
+    </p>
+
+    <ul>
+      <li>Check recent comparable sales, not just online estimates.</li>
+      <li>Review what similar homes are currently listed nearby.</li>
+      <li>Prepare title, LIM and council information early where possible.</li>
+      <li>Improve first impressions, especially exterior, entrance, light and presentation.</li>
+      <li>Decide whether your property should target families, first-home buyers, investors, renovators or developers.</li>
+      <li>Use marketing that explains the buyer story clearly rather than relying only on standard portal exposure.</li>
+    </ul>
+
+    <p>
+      A stronger appraisal should help you decide what to fix, what to leave, when to launch, and how to position the property to attract the right buyers.
     </p>
   </div>
 </section>
+
+<section class="section soft">
+  <div class="content-wrap">
+    <p class="eyebrow">FAQ</p>
+
+    <h2>Mount Roskill Property Appraisal Questions</h2>
+
+    <div class="faq">
+      <h3>How much is my Mount Roskill home worth?</h3>
+      <p>
+        The value depends on recent comparable sales, land, condition, zoning, layout, location, buyer demand and current competition. A local appraisal can help you understand a realistic selling range.
+      </p>
+
+      <h3>Is a free property appraisal the same as a registered valuation?</h3>
+      <p>
+        No. A real estate appraisal is an agent’s market estimate. A registered valuation is a formal valuation prepared by a registered valuer, often used for lending, legal or accounting purposes.
+      </p>
+
+      <h3>Should I renovate before selling in Mount Roskill?</h3>
+      <p>
+        Not always. Some improvements can help buyer confidence, but major renovations may not return enough before sale. It is better to get advice before spending heavily.
+      </p>
+
+      <h3>What type of buyers look in Mount Roskill?</h3>
+      <p>
+        Depending on the property, buyers may include families, first-home buyers, investors, renovators, developers and people looking for central-west convenience.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <strong>Team Peter & Edita</strong><br>
+    Raine & Horne Titirangi, Blockhouse Bay & Lynfield
+  </div>
+
+  <div>
+    <a href="../index.html">Back to home</a><br>
+    <a href="tel:021765234">021 765 234</a>
+  </div>
+</footer>
 
 </body>
 </html>
