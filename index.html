@@ -6,11 +6,561 @@
 
   <title>West Auckland Real Estate Agents | Titirangi, Blockhouse Bay, Lynfield & New Lynn</title>
 
-  <meta name="description" content="Team Peter & Edita are local West Auckland real estate agents helping homeowners in Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mt Roskill, New Windsor, Glendene, Avondale and nearby suburbs with free home appraisals, selling advice and AI-enhanced property marketing.">
+  <meta name="description" content="Team Peter & Edita provide local real estate advice, free property appraisals and seller guidance across Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene and Avondale.">
 
   <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/">
 
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --black: #111111;
+      --dark: #1d1d1d;
+      --grey: #4D4E50;
+      --gold: #b08a42;
+      --gold2: #E1AA14;
+      --cream: #d8c9ad;
+      --soft: #f7f4ef;
+      --white: #ffffff;
+      --muted: #d8d8d8;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #222222;
+      background: var(--soft);
+      line-height: 1.65;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      line-height: 1.12;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      background: var(--black);
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .logo {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      color: var(--gold2);
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(0,0,0,.66), rgba(0,0,0,.58)),
+        url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 105px 8% 88px;
+    }
+
+    .hero-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      color: var(--gold2);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(46px, 6vw, 82px);
+      max-width: 1020px;
+      margin-bottom: 26px;
+    }
+
+    .hero p {
+      max-width: 880px;
+      color: #eeeeee;
+      font-size: 21px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      text-decoration: none;
+      padding: 16px 28px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid var(--gold);
+      transition: 0.25s ease;
+    }
+
+    .btn:hover {
+      background: #8f6d2e;
+      border-color: #8f6d2e;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: rgba(255,255,255,0.65);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--black);
+      border-color: white;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 55px;
+      max-width: 900px;
+    }
+
+    .stat-card {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.18);
+      padding: 24px;
+    }
+
+    .stat-card strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      font-weight: 400;
+      color: white;
+      margin-bottom: 6px;
+    }
+
+    .stat-card span {
+      color: #dddddd;
+      font-size: 14px;
+    }
+
+    .section {
+      padding: 84px 8%;
+    }
+
+    .section-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .white {
+      background: white;
+    }
+
+    .soft {
+      background: var(--soft);
+    }
+
+    .black {
+      background: var(--black);
+      color: white;
+    }
+
+    .cream {
+      background: var(--cream);
+    }
+
+    .section h2 {
+      font-size: clamp(36px, 4vw, 56px);
+      margin-bottom: 22px;
+      color: var(--black);
+    }
+
+    .black h2,
+    .black h3 {
+      color: white;
+    }
+
+    .section p {
+      color: #555555;
+      margin-bottom: 20px;
+      max-width: 920px;
+    }
+
+    .black p {
+      color: #dddddd;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 54px;
+      align-items: start;
+    }
+
+    .feature-box {
+      background: var(--soft);
+      padding: 34px;
+      border-left: 5px solid var(--gold);
+    }
+
+    .feature-box h3 {
+      font-size: 32px;
+      margin-bottom: 14px;
+      color: var(--black);
+    }
+
+    .appraisal-panel {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .appraisal-panel h2 {
+      margin-bottom: 18px;
+    }
+
+    .appraisal-panel p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      margin-top: 38px;
+    }
+
+    .article-card {
+      display: block;
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 26px;
+      color: #222222;
+      text-decoration: none;
+      min-height: 210px;
+      transition: 0.25s ease;
+    }
+
+    .article-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+    }
+
+    .article-card h3 {
+      font-size: 23px;
+      margin-bottom: 14px;
+      color: var(--black);
+    }
+
+    .article-card p {
+      font-size: 15px;
+      margin: 0;
+      color: #666666;
+    }
+
+    .suburb-section {
+      background: #111111;
+      padding: 84px 8%;
+      color: #ffffff;
+    }
+
+    .suburb-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .suburb-section h2 {
+      color: #ffffff;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(36px, 4vw, 56px);
+      font-weight: 400;
+      margin-bottom: 18px;
+      line-height: 1.15;
+    }
+
+    .suburb-intro {
+      color: #dddddd;
+      font-size: 18px;
+      max-width: 900px;
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+
+    .suburb-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 22px;
+    }
+
+    .suburb-card {
+      display: block;
+      background: #1d1d1d;
+      border: 1px solid #333333;
+      padding: 30px;
+      min-height: 245px;
+      text-decoration: none;
+      color: #ffffff;
+      transition: 0.25s ease;
+    }
+
+    .suburb-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+      background: #242424;
+    }
+
+    .suburb-card h3 {
+      color: #ffffff;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .suburb-card p {
+      color: #dddddd;
+      font-size: 16px;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .why-card {
+      background: #1d1d1d;
+      border: 1px solid #333333;
+      padding: 34px;
+    }
+
+    .why-card h3 {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+
+    .why-card p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .internal-appraisal-links {
+      background: #111111;
+      padding: 42px 8%;
+      border-top: 1px solid rgba(176, 138, 66, 0.35);
+    }
+
+    .internal-appraisal-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .internal-appraisal-links h2 {
+      color: #ffffff;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+
+    .internal-appraisal-links p {
+      color: #cccccc;
+      font-size: 15px;
+      max-width: 850px;
+      margin-bottom: 22px;
+    }
+
+    .internal-link-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+    }
+
+    .internal-link-grid a {
+      color: #d8c9ad;
+      font-size: 13px;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(216, 201, 173, 0.35);
+    }
+
+    .internal-link-grid a:hover {
+      color: #ffffff;
+      border-bottom-color: #ffffff;
+    }
+
+    footer {
+      background: #0b0b0b;
+      color: white;
+      padding: 42px 8%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 26px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    footer strong {
+      font-size: 18px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--gold2);
+    }
+
+    @media(max-width: 1200px) {
+      .suburb-grid,
+      .article-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media(max-width: 980px) {
+      .site-header {
+        display: block;
+      }
+
+      nav {
+        margin-top: 16px;
+      }
+
+      .stats,
+      .split,
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 72px 6%;
+      }
+
+      .section,
+      .suburb-section {
+        padding: 64px 6%;
+      }
+    }
+
+    @media(max-width: 760px) {
+      .suburb-grid,
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .suburb-card,
+      .article-card {
+        min-height: auto;
+      }
+
+      .hero-buttons {
+        display: grid;
+      }
+
+      .btn {
+        text-align: center;
+      }
+
+      .internal-link-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Team Peter & Edita | Raine & Horne",
+    "url": "https://theateamraineandhorne.github.io/The-A-Team/",
+    "telephone": "+6421765234",
+    "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
+    "areaServed": [
+      "Titirangi",
+      "Blockhouse Bay",
+      "Lynfield",
+      "New Lynn",
+      "Green Bay",
+      "Glen Eden",
+      "Mount Roskill",
+      "New Windsor",
+      "Glendene",
+      "Avondale",
+      "West Auckland",
+      "Auckland"
+    ],
+    "brand": {
+      "@type": "Brand",
+      "name": "Raine & Horne"
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -19,8 +569,8 @@
   <div class="logo">Team Peter & Edita</div>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="free-home-appraisal-near-me/">Free Appraisal</a>
+    <a href="#home">Home</a>
+    <a href="#suburbs">Free Appraisal</a>
     <a href="#articles">Articles</a>
     <a href="#suburbs">Suburbs</a>
     <a href="#about">About</a>
@@ -28,243 +578,225 @@
 </header>
 
 <section class="hero" id="home">
-  <div class="hero-content">
+  <div class="hero-wrap">
     <p class="eyebrow">West Auckland • Central-West Auckland • Local Seller Advice</p>
 
     <h1>West Auckland Real Estate Agents Helping Sellers Move With Confidence</h1>
 
     <p>
-      Local selling advice for homeowners in Titirangi, Blockhouse Bay, Lynfield, New Lynn,
-      Green Bay, Glen Eden, Mt Roskill, New Windsor, Glendene, Avondale and surrounding
-      Auckland suburbs.
+      Local selling advice for homeowners in Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and surrounding Auckland suburbs.
     </p>
 
     <div class="hero-buttons">
-      <a href="free-home-appraisal-near-me/" class="btn">Request Free Home Appraisal</a>
-      <a href="https://theateamraineandhorne.github.io/auckland-seller-checker/" class="btn secondary">Request Selling Advice</a>
+      <a class="btn" href="#suburbs">Request Free Home Value Now</a>
+      <a class="btn btn-outline" href="https://theateamraineandhorne.github.io/auckland-seller-checker/">Request Selling Advice</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <strong>25+</strong>
+        <span>Years Experience</span>
+      </div>
+
+      <div class="stat-card">
+        <strong>5★</strong>
+        <span>Client Reviews</span>
+      </div>
+
+      <div class="stat-card">
+        <strong>AI</strong>
+        <span>Buyer Marketing</span>
+      </div>
+
+      <div class="stat-card">
+        <strong>Local</strong>
+        <span>Auckland Experts</span>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="stats">
-  <div>
-    <h2>25+</h2>
-    <p>Years Experience</p>
-  </div>
-
-  <div>
-    <h2>5★</h2>
-    <p>Client Reviews</p>
-  </div>
-
-  <div>
-    <h2>AI</h2>
-    <p>Buyer Marketing</p>
-  </div>
-
-  <div>
-    <h2>Local</h2>
-    <p>Auckland Experts</p>
-  </div>
-</section>
-
 <section class="section white" id="about">
-  <div class="grid-2">
+  <div class="section-wrap split">
     <div>
       <p class="eyebrow">Local Seller Help</p>
 
       <h2>Local Knowledge. Premium Presentation. Smarter Buyer Reach.</h2>
 
       <p>
-        Selling in West Auckland and Central-West Auckland is not just about putting a home online.
-        Buyers compare sunlight, outdoor living, privacy, access, condition, schools, convenience
-        and lifestyle before deciding whether to inspect or offer.
+        Selling in West Auckland and Central-West Auckland is not just about putting a home online. Buyers compare sunlight, outdoor living, privacy, access, condition, schools, convenience and lifestyle before deciding whether to inspect or offer.
       </p>
 
       <p>
-        We help sellers across Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay,
-        Glen Eden, Mt Roskill, New Windsor, Glendene, Avondale and nearby suburbs understand
-        how buyers are likely to compare their property before going to market.
+        We help sellers across Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and nearby suburbs understand how buyers are likely to compare their property before going to market.
       </p>
 
       <p>
-        Team Peter & Edita help homeowners position their property with confidence using local market knowledge,
-        professional advice, AI-enhanced marketing and skilled negotiation.
+        Team Peter & Edita help homeowners position their property with confidence using local market knowledge, professional advice, AI-enhanced marketing and skilled negotiation.
       </p>
 
-      <a href="https://theateamraineandhorne.github.io/auckland-seller-checker/" class="btn">Request Selling Advice</a>
+      <a class="btn" href="https://theateamraineandhorne.github.io/auckland-seller-checker/">Request Selling Advice</a>
     </div>
 
-    <div class="image-box"></div>
-  </div>
-</section>
-
-<section class="section appraisal" id="appraisal">
-  <p class="eyebrow">Free Property Appraisal</p>
-
-  <h2>Wondering what your home could be worth?</h2>
-
-  <p>
-    Get a free, no-obligation home value estimate and practical selling advice for
-    Titirangi, Blockhouse Bay, Lynfield, New Lynn and nearby West Auckland suburbs.
-  </p>
-
-  <a href="free-home-appraisal-near-me/" class="btn">Request Free Home Appraisal</a>
-</section>
-
-<section class="section white" id="articles">
-  <p class="eyebrow">Seller Articles</p>
-
-  <h2>Property Advice For West Auckland Homeowners</h2>
-
-  <p>
-    Helpful local articles for homeowners thinking about selling, preparing their property,
-    choosing an agent, timing the market, or understanding buyer behaviour.
-  </p>
-
-  <div class="article-list">
-    <a href="articles/titirangi-house-prices-2026.html">
-      Titirangi House Prices 2026: What Sellers Should Watch
-    </a>
-
-    <a href="articles/best-real-estate-agent-titirangi.html">
-      How To Choose The Best Real Estate Agent In Titirangi
-    </a>
-
-    <a href="articles/why-homes-do-not-sell-blockhouse-bay.html">
-      Why Some Homes Do Not Sell In Blockhouse Bay
-    </a>
-
-    <a href="articles/best-time-to-sell-west-auckland.html">
-      Best Time To Sell In West Auckland
-    </a>
-
-    <a href="articles/prepare-home-for-sale-auckland.html">
-      How To Prepare Your Home For A Stronger Sale Price
-    </a>
-  </div>
-</section>
-
-<section class="section dark" id="suburbs">
-  <p class="eyebrow">Local Areas</p>
-
-  <h2>Suburb Guides</h2>
-
-  <p>
-    Local property knowledge helps homeowners and buyers understand each market more clearly.
-  </p>
-
-  <div class="grid-3">
-    <div class="card">
-      <h3>Titirangi</h3>
-      <p>Bush settings, privacy, decks, sunlight and lifestyle appeal need careful buyer positioning.</p>
-    </div>
-
-    <div class="card">
-      <h3>Blockhouse Bay</h3>
-      <p>Family homes, schools, convenience and buyer demand make pricing and presentation important.</p>
-    </div>
-
-    <div class="card">
-      <h3>Lynfield</h3>
-      <p>A central-west suburb where buyers compare value, condition, access and long-term potential.</p>
-    </div>
-
-    <div class="card">
-      <h3>New Lynn</h3>
-      <p>A busy and convenient suburb where buyers compare access, value, transport and lifestyle.</p>
-    </div>
-
-    <div class="card">
-      <h3>Green Bay & Glen Eden</h3>
-      <p>Family homes, lifestyle appeal and value-focused buyers make presentation and pricing important.</p>
-    </div>
-
-    <div class="card">
-      <h3>Mt Roskill, New Windsor, Glendene & Avondale</h3>
-      <p>Central-west suburbs where buyers compare convenience, condition, land, transport and long-term value.</p>
+    <div class="feature-box">
+      <h3>Why this matters</h3>
+      <p>
+        A good result is rarely created by price alone. Buyers need confidence. That confidence comes from the right pricing evidence, strong presentation, smart marketing, clear documents and careful follow-up.
+      </p>
     </div>
   </div>
 </section>
 
-<section class="section white">
-  <p class="eyebrow">Why Sellers Choose Us</p>
+<section class="section cream" id="appraisal">
+  <div class="section-wrap appraisal-panel">
+    <p class="eyebrow">Free Property Appraisal</p>
 
-  <h2>Personal Service With Smarter Marketing</h2>
+    <h2>Wondering What Your Home Could Be Worth?</h2>
 
-  <div class="grid-3">
-    <div class="card">
-      <h3>Premium Marketing</h3>
-      <p>Strong presentation, buyer targeting and digital exposure designed to create better enquiry.</p>
-    </div>
+    <p>
+      Choose your suburb below and request a free, no-obligation home value estimate with practical local selling advice.
+    </p>
 
-    <div class="card">
-      <h3>Local Expertise</h3>
-      <p>We understand how buyers compare homes across West Auckland and Central-West Auckland suburbs.</p>
-    </div>
+    <a class="btn" href="#suburbs">Choose Your Area</a>
+  </div>
+</section>
 
-    <div class="card">
-      <h3>Direct Advice</h3>
-      <p>You work directly with experienced agents who care about the result, not a volume-based system.</p>
+<section class="section soft" id="articles">
+  <div class="section-wrap">
+    <p class="eyebrow">Seller Articles</p>
+
+    <h2>Property Advice For West Auckland Homeowners</h2>
+
+    <p>
+      Helpful local articles for homeowners thinking about selling, preparing their property, choosing an agent, timing the market, or understanding buyer behaviour.
+    </p>
+
+    <div class="article-grid">
+      <a class="article-card" href="articles/titirangi-house-prices-2026.html">
+        <h3>Titirangi House Prices 2026</h3>
+        <p>What sellers should watch before going to market.</p>
+      </a>
+
+      <a class="article-card" href="articles/best-real-estate-agent-titirangi.html">
+        <h3>Best Real Estate Agent In Titirangi</h3>
+        <p>How to choose the right agent and avoid costly mistakes.</p>
+      </a>
+
+      <a class="article-card" href="articles/why-homes-do-not-sell-blockhouse-bay.html">
+        <h3>Why Some Homes Do Not Sell</h3>
+        <p>Common reasons Blockhouse Bay homes struggle to attract offers.</p>
+      </a>
+
+      <a class="article-card" href="articles/best-time-to-sell-west-auckland.html">
+        <h3>Best Time To Sell In West Auckland</h3>
+        <p>How timing, preparation and competition affect your result.</p>
+      </a>
+
+      <a class="article-card" href="articles/prepare-home-for-sale-auckland.html">
+        <h3>Prepare Your Home For Sale</h3>
+        <p>How to improve buyer confidence before launch.</p>
+      </a>
     </div>
   </div>
 </section>
 
-<section class="footer-seo-links">
-  <p>
-    Free property appraisal areas:
-    <a href="free-home-appraisal-near-me/">Near Me</a>
-    <span>|</span>
-    <a href="free-home-appraisal-titirangi/">Titirangi</a>
-    <span>|</span>
-    <a href="free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
-    <span>|</span>
-    <a href="free-home-appraisal-lynfield/">Lynfield</a>
-    <span>|</span>
-    <a href="free-home-appraisal-new-lynn/">New Lynn</a>
-  </p>
+<section class="suburb-section" id="suburbs">
+  <div class="suburb-wrap">
+    <p class="eyebrow">Local Property Knowledge</p>
+
+    <h2>Suburb Guides</h2>
+
+    <p class="suburb-intro">
+      Local property knowledge helps homeowners and buyers understand each market more clearly. Each suburb below has its own separate appraisal page and local selling advice.
+    </p>
+
+    <div class="suburb-grid">
+
+      <a class="suburb-card" href="free-home-appraisal-titirangi/">
+        <h3>Titirangi</h3>
+        <p>Bush settings, privacy, decks, sunlight, access and lifestyle appeal need careful buyer positioning.</p>
+      </a>
+
+      <a class="suburb-card" href="free-home-appraisal-blockhouse-bay/">
+        <h3>Blockhouse Bay</h3>
+        <p>Family homes, schools, parking, layout, presentation and buyer confidence can strongly affect value.</p>
+      </a>
+
+      <a class="suburb-card" href="free-home-appraisal-lynfield/">
+        <h3>Lynfield</h3>
+        <p>Buyers compare practical living, access, parking, views, condition and long-term value.</p>
+      </a>
+
+      <a class="suburb-card" href="free-home-appraisal-new-lynn/">
+        <h3>New Lynn</h3>
+        <p>Convenience attracts buyers, but parking, privacy, property type and condition influence offers.</p>
+      </a>
+
+      <a class="suburb-card" href="free-home-appraisal-green-bay/">
+        <h3>Green Bay</h3>
+        <p>Lifestyle appeal, privacy, outdoor usability, sunlight and maintenance all shape buyer confidence.</p>
+      </a>
+
+      <a class="suburb-card" href="free-home-appraisal-glen-eden/">
+        <h3>Glen Eden</h3>
+        <p>Buyers often look for value and potential, but they also calculate condition, work and future costs.</p>
+      </a>
+
+      <a class="suburb-card" href="free-home-appraisal-mount-roskill/">
+        <h3>Mount Roskill</h3>
+        <p>Central access, land, condition, development potential and buyer confidence need careful pricing.</p>
+      </a>
+
+      <a class="suburb-card" href="free-home-appraisal-new-windsor/">
+        <h3>New Windsor</h3>
+        <p>Buyers compare nearby suburbs, so value needs to be positioned clearly against alternatives.</p>
+      </a>
+
+      <a class="suburb-card" href="free-home-appraisal-glendene/">
+        <h3>Glendene</h3>
+        <p>Value-focused buyers look closely at presentation, maintenance, parking, layout and hidden risk.</p>
+      </a>
+
+      <a class="suburb-card" href="free-home-appraisal-avondale/">
+        <h3>Avondale</h3>
+        <p>Property type matters — family homes, units, townhouses, investors and renovators judge value differently.</p>
+      </a>
+
+    </div>
+  </div>
 </section>
 
-<footer>
-  <div>
-    <strong>Team Peter & Edita</strong><br>
-    Raine & Horne Titirangi, Blockhouse Bay & Lynfield
-  </div>
+<section class="section black">
+  <div class="section-wrap">
+    <p class="eyebrow">Why Sellers Choose Us</p>
 
-  <div>
-    <a href="free-home-appraisal-near-me/">Request Free Appraisal</a><br>
-    <a href="tel:021765234">021 765 234</a>
-  </div>
-</footer>
+    <h2>Personal Service With Smarter Marketing</h2>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "name": "Team Peter & Edita | Raine & Horne",
-  "description": "Real estate agents helping homeowners in West Auckland and Central-West Auckland with property appraisals, selling advice, AI-enhanced marketing and local property guidance.",
-  "url": "https://theateamraineandhorne.github.io/The-A-Team/",
-  "telephone": "+6421765234",
-  "areaServed": [
-    "Titirangi",
-    "Blockhouse Bay",
-    "Lynfield",
-    "New Lynn",
-    "Green Bay",
-    "Glen Eden",
-    "Mount Roskill",
-    "New Windsor",
-    "Glendene",
-    "Avondale",
-    "West Auckland",
-    "Auckland"
-  ],
-  "brand": {
-    "@type": "Brand",
-    "name": "Raine & Horne"
-  }
-}
-</script>
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>Premium Marketing</h3>
+        <p>
+          Strong presentation, buyer targeting and digital exposure designed to create better enquiry.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <h3>Local Expertise</h3>
+        <p>
+          We understand how buyers compare homes across West Auckland and Central-West Auckland suburbs.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <h3>Direct Advice</h3>
+        <p>
+          You work directly with experienced agents who care about the result, not a volume-based system.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="internal-appraisal-links" aria-label="Local property appraisal links">
   <div class="internal-appraisal-wrap">
     <h2>Free Property Appraisal Across West and Central Auckland</h2>
@@ -287,5 +819,20 @@
     </div>
   </div>
 </section>
+
+<footer>
+  <div>
+    <strong>Team Peter & Edita</strong><br>
+    Raine & Horne Titirangi, Blockhouse Bay & Lynfield<br>
+    Licensed under the REAA 2008
+  </div>
+
+  <div>
+    <a href="#suburbs">Request Free Appraisal</a><br>
+    <a href="tel:021765234">021 765 234</a><br>
+    <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
+  </div>
+</footer>
+
 </body>
 </html>
