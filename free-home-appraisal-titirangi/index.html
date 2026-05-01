@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Free Home Appraisal Titirangi | Team Peter & Edita</title>
+  <title>What Is My Titirangi Home Worth? | Free Property Appraisal</title>
 
-  <meta name="description" content="Request a free home appraisal in Titirangi, Blockhouse Bay, Lynfield and nearby West Auckland suburbs from Team Peter & Edita | Raine & Horne.">
+  <meta name="description" content="What is your Titirangi home worth? Get a free property appraisal and local selling advice focused on lifestyle appeal, bush settings, sunlight, access, maintenance, buyer confidence and selling strategy.">
 
   <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-titirangi/">
 
@@ -26,6 +26,11 @@
       --white: #ffffff;
       --text: #222222;
       --muted: #555555;
+      --line: #e7dfd1;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -40,7 +45,7 @@
     h3 {
       font-family: Georgia, "Times New Roman", serif;
       font-weight: 400;
-      line-height: 1.15;
+      line-height: 1.12;
     }
 
     p {
@@ -49,16 +54,25 @@
       margin-bottom: 18px;
     }
 
+    ul {
+      padding-left: 22px;
+      margin: 14px 0 26px;
+    }
+
+    li {
+      font-size: 17px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
     .site-header {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      padding: 26px 8%;
+      background: #111111;
+      color: white;
+      padding: 22px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      z-index: 10;
-      color: white;
+      gap: 22px;
     }
 
     .logo {
@@ -80,25 +94,23 @@
       color: #e7c782;
     }
 
-    .page-hero {
-      min-height: 100vh;
-      padding: 120px 8% 80px;
+    .hero {
       background:
-        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.50)),
-        url("https://images.unsplash.com/photo-1600585153490-76fb20a32601?auto=format&fit=crop&w=1800&q=80");
+        linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.58)),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80");
       background-size: cover;
       background-position: center;
-      display: flex;
-      align-items: center;
+      color: white;
+      padding: 92px 8% 76px;
     }
 
-    .form-card {
-      width: 100%;
-      max-width: 780px;
-      background: white;
-      padding: 48px;
-      border: 1px solid #eeeeee;
-      box-shadow: 0 24px 70px rgba(0,0,0,.22);
+    .hero-grid {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) 460px;
+      gap: 54px;
+      align-items: start;
     }
 
     .eyebrow {
@@ -110,46 +122,99 @@
       margin-bottom: 16px;
     }
 
-    .form-card h1 {
-      font-size: clamp(38px, 5vw, 58px);
-      margin-bottom: 18px;
-      color: var(--black);
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      color: white;
+      margin-bottom: 24px;
+      max-width: 960px;
     }
 
-    .intro {
-      font-size: 18px;
-      color: #444444;
-      margin-bottom: 30px;
-      max-width: 680px;
+    .hero-lead {
+      font-size: 21px;
+      color: #f2f2f2;
+      max-width: 850px;
+      margin-bottom: 22px;
     }
 
-    .trust-box {
-      background: var(--soft);
+    .hero-angle {
+      margin-top: 30px;
+      background: rgba(255,255,255,.11);
       border-left: 5px solid var(--gold);
-      padding: 20px;
-      margin: 26px 0 34px;
+      padding: 26px;
+      max-width: 870px;
     }
 
-    .trust-box p {
+    .hero-angle p {
+      color: #f3f3f3;
+      font-size: 18px;
       margin-bottom: 0;
-      color: #333333;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+      max-width: 910px;
+    }
+
+    .mini-card {
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 18px;
+    }
+
+    .mini-card strong {
+      display: block;
+      color: white;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 7px;
+    }
+
+    .mini-card span {
+      color: #dddddd;
+      font-size: 15px;
+    }
+
+    .form-card {
+      background: white;
+      padding: 34px;
+      border: 1px solid rgba(176,138,66,.60);
+      box-shadow: 0 24px 70px rgba(0,0,0,.30);
+      position: sticky;
+      top: 24px;
+    }
+
+    .form-card h2 {
+      color: var(--black);
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .form-card p {
+      color: #555555;
+      font-size: 15px;
+      margin-bottom: 24px;
     }
 
     form label {
       display: block;
       font-weight: bold;
-      margin-bottom: 18px;
+      margin-bottom: 15px;
       color: #222222;
+      font-size: 14px;
     }
 
     input,
     select,
     textarea {
       width: 100%;
-      margin-top: 8px;
-      padding: 15px 16px;
+      margin-top: 7px;
+      padding: 14px 15px;
       border: 1px solid #d8d8d8;
-      font-size: 16px;
+      font-size: 15px;
       font-family: Arial, sans-serif;
       background: white;
       color: #222222;
@@ -160,7 +225,7 @@
     textarea:focus {
       outline: none;
       border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(176, 138, 66, .15);
+      box-shadow: 0 0 0 3px rgba(176,138,66,.18);
     }
 
     textarea {
@@ -170,7 +235,7 @@
     .form-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 18px;
+      gap: 14px;
     }
 
     .btn {
@@ -186,7 +251,7 @@
       font-size: 13px;
       font-weight: bold;
       cursor: pointer;
-      transition: 0.25s ease;
+      transition: .25s ease;
     }
 
     .btn:hover {
@@ -196,35 +261,319 @@
     }
 
     .small-note {
-      font-size: 12px;
-      color: #777777;
-      margin-top: 18px;
+      font-size: 12px !important;
+      color: #777777 !important;
+      margin-top: 16px;
       margin-bottom: 0;
     }
 
-    .mini-disclosure {
-      text-align: center;
-      font-size: 11px;
-      color: rgba(255,255,255,.7);
-      margin-top: 18px;
+    .section {
+      padding: 84px 8%;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-top: 18px;
-      color: var(--gold-dark);
+    .white {
+      background: white;
+    }
+
+    .soft {
+      background: var(--soft);
+    }
+
+    .cream {
+      background: var(--cream);
+    }
+
+    .black {
+      background: #111111;
+      color: white;
+    }
+
+    .content {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .narrow {
+      max-width: 860px;
+    }
+
+    .section h2 {
+      font-size: clamp(34px, 4vw, 50px);
+      margin-bottom: 22px;
+      color: var(--black);
+    }
+
+    .black h2,
+    .black h3 {
+      color: white;
+    }
+
+    .black p,
+    .black li {
+      color: #d7d7d7;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 52px;
+      align-items: start;
+    }
+
+    .side-panel {
+      background: var(--soft);
+      border-left: 5px solid var(--gold);
+      padding: 30px;
+    }
+
+    .side-panel h3 {
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+
+    .lifestyle-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 34px;
+    }
+
+    .lifestyle-card {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 26px;
+    }
+
+    .lifestyle-card h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .lifestyle-card p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .objection-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .objection-card {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 28px;
+    }
+
+    .objection-card h3 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .objection-card p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .confidence-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .confidence-card {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .tick {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-weight: bold;
+      font-size: 15px;
+    }
+
+    .confidence-card h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    .confidence-card p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .comparison-card {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 30px;
+    }
+
+    .comparison-card h3 {
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+
+    .comparison-card p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .black-box {
+      background: #111111;
+      color: white;
+      padding: 34px;
+      margin-top: 34px;
+    }
+
+    .black-box h3 {
+      color: white;
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .black-box p {
+      color: #dddddd;
+      margin-bottom: 0;
+    }
+
+    .mistake-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .mistake-card {
+      background: #1d1d1d;
+      border: 1px solid #333333;
+      padding: 28px;
+    }
+
+    .mistake-card h3 {
+      color: white;
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .mistake-card p {
+      color: #dddddd;
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .steps {
+      counter-reset: step;
+      display: grid;
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .step {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 28px;
+      position: relative;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      top: 24px;
+      right: 28px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .step h3 {
+      font-size: 26px;
+      margin-bottom: 12px;
+      padding-right: 50px;
+    }
+
+    .cta-band {
+      background: var(--cream);
+      padding: 62px 8%;
+      text-align: center;
+    }
+
+    .cta-band h2 {
+      font-size: clamp(34px, 4vw, 48px);
+      margin-bottom: 16px;
+    }
+
+    .cta-band p {
+      max-width: 740px;
+      margin: 0 auto 26px;
+    }
+
+    .cta-band .btn {
+      width: auto;
+    }
+
+    .faq {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 34px;
+      margin-top: 34px;
+    }
+
+    .faq h3 {
+      font-size: 24px;
+      margin: 26px 0 10px;
+    }
+
+    footer {
+      background: #111111;
+      color: white;
+      padding: 38px 8%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
       text-decoration: none;
     }
 
-    .back-link:hover {
-      text-decoration: underline;
+    footer a:hover {
+      color: #e7c782;
     }
 
-    @media(max-width: 850px) {
+    @media(max-width: 980px) {
       .site-header {
-        position: relative;
-        background: var(--black);
         display: block;
       }
 
@@ -233,20 +582,97 @@
         margin: 10px 12px 0 0;
       }
 
-      .page-hero {
-        padding: 50px 6%;
-        min-height: auto;
+      .hero {
+        padding: 60px 6%;
       }
 
-      .form-card {
-        padding: 30px 22px;
-      }
-
+      .hero-grid,
+      .split,
+      .mini-grid,
+      .lifestyle-grid,
+      .objection-grid,
+      .confidence-grid,
+      .comparison-grid,
+      .mistake-grid,
       .form-grid {
         grid-template-columns: 1fr;
       }
+
+      .form-card {
+        position: relative;
+        top: 0;
+      }
+
+      .section {
+        padding: 60px 6%;
+      }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Team Peter & Edita | Raine & Horne",
+    "description": "Free property appraisal and selling advice for Titirangi homeowners.",
+    "url": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-titirangi/",
+    "telephone": "+6421765234",
+    "areaServed": ["Titirangi", "West Auckland", "Auckland"],
+    "brand": {
+      "@type": "Brand",
+      "name": "Raine & Horne"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I find out what my Titirangi home is worth?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A local Titirangi appraisal should consider recent comparable sales, buyer demand, bush setting, privacy, sunlight, driveway access, slope, decks, outdoor usability, maintenance, presentation and nearby competition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What affects property value in Titirangi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Titirangi property value can be affected by lifestyle appeal, bush views, privacy, sun, access, parking, slope, maintenance, dampness, deck condition, outdoor usability, presentation, documents and buyer confidence."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why can Titirangi homes be hard to price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Titirangi homes can be hard to price because lifestyle, privacy, sun, access, slope, views, maintenance and buyer emotion can vary significantly from property to property."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I prepare outdoor areas before selling in Titirangi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In Titirangi, outdoor usability, decks, paths, stairs, bush views, sunlight and maintenance presentation can strongly affect buyer confidence and value perception."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a real estate appraisal the same as a registered valuation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A real estate appraisal is an agent's market estimate based on buyer demand and comparable sales. A registered valuation is a formal valuation completed by a registered valuer."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -262,28 +688,55 @@
   </nav>
 </header>
 
-<section class="page-hero">
-  <div>
-    <div class="form-card">
-      <p class="eyebrow">Free Property Appraisal</p>
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">Titirangi Home Value Guide</p>
 
-      <h1>Request Your Free Home Appraisal</h1>
+      <h1>What Is My Titirangi Home Worth — And Will Buyers See Lifestyle Or Maintenance?</h1>
 
-      <p class="intro">
-        Thinking of selling in Titirangi, Blockhouse Bay, Lynfield or nearby West Auckland suburbs?
-        Tell us a little about your property and we will help you understand price, timing, preparation
-        and the best next step.
+      <p class="hero-lead">
+        Titirangi buyers often fall in love with the feeling first — the bush, privacy, views, birdlife, decks, character and lifestyle atmosphere.
       </p>
 
-      <div class="trust-box">
+      <p class="hero-lead">
+        But before they offer, they start checking the practical side: sunlight, access, driveway ease, dampness, stairs, decks, drainage, maintenance, documents and whether the home is easy to live in every day.
+      </p>
+
+      <div class="hero-angle">
         <p>
-          A good appraisal is not just a number. It should help you understand how buyers may see your home,
-          what could affect value, and how to prepare for a stronger selling result.
+          A strong Titirangi appraisal should measure both sides: the emotional lifestyle value that attracts buyers, and the practical concerns that can reduce confidence or price.
         </p>
       </div>
 
+      <div class="mini-grid">
+        <div class="mini-card">
+          <strong>Lifestyle</strong>
+          <span>Bush, privacy, decks, outlook and character can create powerful buyer emotion.</span>
+        </div>
+
+        <div class="mini-card">
+          <strong>Practicality</strong>
+          <span>Sun, access, warmth, parking, stairs, moisture and maintenance still affect offers.</span>
+        </div>
+
+        <div class="mini-card">
+          <strong>Comparison</strong>
+          <span>Buyers may compare Green Bay, Laingholm, Waiatarua, Glen Eden and Blockhouse Bay.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card" id="appraisal-form">
+      <h2>Free Titirangi Appraisal</h2>
+
+      <p>
+        Tell us a little about your Titirangi property and we will help you understand likely value, buyer appeal and selling strategy.
+      </p>
+
       <form action="https://formspree.io/f/mdabnpgl" method="POST">
-        <input type="hidden" name="_subject" value="New Free Home Appraisal Request - The A-Team Website" />
+        <input type="hidden" name="_subject" value="New Titirangi Home Value Request - The A-Team Website" />
+        <input type="hidden" name="landing_page" value="What Is My Titirangi Home Worth" />
 
         <div class="form-grid">
           <label>
@@ -304,13 +757,13 @@
 
         <label>
           Property address
-          <input type="text" name="property_address" placeholder="Please enter the property address" required />
+          <input type="text" name="property_address" placeholder="Please enter the Titirangi property address" required />
         </label>
 
         <div class="form-grid">
           <label>
             Property suburb
-            <input type="text" name="suburb" placeholder="Example: Titirangi" required />
+            <input type="text" name="suburb" value="Titirangi" required />
           </label>
 
           <label>
@@ -341,25 +794,390 @@
 
         <label>
           Tell us anything helpful
-          <textarea name="message" rows="6" placeholder="Example: We are thinking of selling in the next few months and want to understand price, timing and preparation."></textarea>
+          <textarea name="message" rows="5" placeholder="Example: We are thinking of selling our Titirangi home and want to understand value, timing and preparation."></textarea>
         </label>
 
         <button class="btn" type="submit">Send Appraisal Request</button>
 
         <p class="small-note">
-          Team Peter & Edita are licensed real estate salespeople with Raine & Horne.
-          Your details are used only to respond to your appraisal request.
+          Team Peter & Edita are licensed real estate salespeople with Raine & Horne. Your details are used only to respond to your appraisal request.
         </p>
       </form>
-
-      <a class="back-link" href="../index.html">← Back to home page</a>
     </div>
-
-    <p class="mini-disclosure">
-      Team Peter & Edita | Raine & Horne Titirangi, Blockhouse Bay & Lynfield
-    </p>
   </div>
 </section>
+
+<section class="section white">
+  <div class="content split">
+    <div>
+      <p class="eyebrow">The Titirangi Difference</p>
+
+      <h2>Titirangi Buyers Often Buy The Feeling — Then Inspect The Reality</h2>
+
+      <p>
+        A Titirangi home can create a strong emotional reaction. Buyers may walk in and immediately connect with the bush outlook, the privacy, the sound of birds, the timber, the deck, the character and the sense of escape.
+      </p>
+
+      <p>
+        But after the emotion comes the checklist. Buyers may ask whether the home gets enough sun, whether the driveway feels comfortable, whether the deck is solid, whether the home is warm and dry, and whether the bush setting will become expensive to maintain.
+      </p>
+
+      <p>
+        That is why a proper appraisal should not only ask what similar homes sold for. It should ask what buyers will love — and what they may quietly worry about.
+      </p>
+    </div>
+
+    <div class="side-panel">
+      <h3>A stronger Titirangi appraisal should answer:</h3>
+
+      <ul>
+        <li>Will buyers see the bush setting as lifestyle value or future maintenance?</li>
+        <li>Does the home feel sunny, warm, dry and easy to live in?</li>
+        <li>Will access, driveway, stairs, slope or parking reduce confidence?</li>
+        <li>Are decks, retaining, drainage or exterior areas likely to raise questions?</li>
+        <li>How does the home compare with Green Bay, Laingholm, Glen Eden or Blockhouse Bay alternatives?</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="content">
+    <p class="eyebrow">Lifestyle Value</p>
+
+    <h2>What Can Add Or Reduce Value In Titirangi?</h2>
+
+    <p class="narrow">
+      Titirangi buyers may love the idea of living among trees and privacy, but they still want the home to feel safe, warm, practical and manageable.
+    </p>
+
+    <div class="lifestyle-grid">
+      <div class="lifestyle-card">
+        <h3>Bush & Privacy</h3>
+        <p>
+          Privacy, outlook and natural surroundings can create strong emotion when they feel peaceful rather than overwhelming.
+        </p>
+      </div>
+
+      <div class="lifestyle-card">
+        <h3>Sunlight & Warmth</h3>
+        <p>
+          Sun into living areas, decks and bedrooms can change how buyers feel about comfort and value.
+        </p>
+      </div>
+
+      <div class="lifestyle-card">
+        <h3>Access & Parking</h3>
+        <p>
+          Driveway ease, off-street parking, stairs and entry experience can strongly affect buyer confidence.
+        </p>
+      </div>
+
+      <div class="lifestyle-card">
+        <h3>Decks & Outdoor Living</h3>
+        <p>
+          Buyers often value decks and outdoor living, but only when the spaces feel safe, solid and usable.
+        </p>
+      </div>
+    </div>
+
+    <div class="black-box">
+      <h3>The Titirangi appraisal question</h3>
+      <p>
+        “Will buyers see the setting as a lifestyle advantage — or start calculating maintenance, access and future work?”
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section cream">
+  <div class="content">
+    <p class="eyebrow">Price Objections</p>
+
+    <h2>When Titirangi Lifestyle Becomes A Price Objection</h2>
+
+    <p class="narrow">
+      The same feature can either add value or create doubt. Bush can feel private — or dark. A sloping site can feel dramatic — or difficult. A deck can feel like lifestyle — or future expense.
+    </p>
+
+    <div class="objection-grid">
+      <div class="objection-card">
+        <h3>Bush Privacy vs Light</h3>
+        <p>
+          Buyers may love the privacy, but they still want the home to feel bright, dry and comfortable.
+        </p>
+      </div>
+
+      <div class="objection-card">
+        <h3>Character vs Maintenance</h3>
+        <p>
+          Character helps, but tired exterior details, moisture signs or deferred maintenance can quickly reduce confidence.
+        </p>
+      </div>
+
+      <div class="objection-card">
+        <h3>Decks vs Future Cost</h3>
+        <p>
+          Decks can be a major emotional feature, but buyers often look closely at safety, condition and lifespan.
+        </p>
+      </div>
+
+      <div class="objection-card">
+        <h3>Setting vs Access</h3>
+        <p>
+          Buyers may love the setting, but still compare driveway comfort, parking, stairs and daily convenience.
+        </p>
+      </div>
+    </div>
+
+    <div class="black-box">
+      <h3>The key before going live</h3>
+      <p>
+        Make the lifestyle feel beautiful and manageable. If buyers have to imagine too much or worry too much, they often offer less.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="content">
+    <p class="eyebrow">Buyer Confidence</p>
+
+    <h2>How To Make Titirangi Buyers Feel Safer About The Value</h2>
+
+    <p class="narrow">
+      Many buyers want the Titirangi lifestyle, but they do not want uncertainty. The right preparation can help buyers feel that the home is special and sensible.
+    </p>
+
+    <div class="confidence-grid">
+      <div class="confidence-card">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Show the best light</h3>
+          <p>Photos and inspections should show when the home, deck and living areas receive their best sun.</p>
+        </div>
+      </div>
+
+      <div class="confidence-card">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Make access feel easy</h3>
+          <p>Clear the driveway, entry, paths, stairs and parking so daily use feels comfortable.</p>
+        </div>
+      </div>
+
+      <div class="confidence-card">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Reduce maintenance worry</h3>
+          <p>Handle visible exterior, deck, drainage, dampness or overgrowth concerns before buyers magnify them.</p>
+        </div>
+      </div>
+
+      <div class="confidence-card">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Prepare documents early</h3>
+          <p>LIM, title, council information and improvement details can reduce hesitation before offers are made.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="black-box">
+      <h3>Before reducing price</h3>
+      <p>
+        Ask whether buyers are rejecting the price — or whether access, maintenance, documents, sunlight or dampness concerns are making them hesitate.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section black">
+  <div class="content">
+    <p class="eyebrow">Nearby Comparison</p>
+
+    <h2>Titirangi Buyers Often Compare Lifestyle Against Practicality</h2>
+
+    <p>
+      A Titirangi buyer may also consider Green Bay for family lifestyle, Laingholm for a stronger escape feel, Waiatarua or Oratia for larger lifestyle settings, Glen Eden for value, or Blockhouse Bay for convenience and family practicality.
+    </p>
+
+    <p>
+      This means your property is not only competing with other Titirangi homes. It may be compared against very different lifestyle, access, convenience and value options nearby.
+    </p>
+
+    <div class="comparison-grid">
+      <div class="comparison-card">
+        <h3>Against Green Bay</h3>
+        <p>
+          Buyers may compare lifestyle feel, sun, outdoor usability, access, family practicality and maintenance.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <h3>Against Laingholm</h3>
+        <p>
+          Buyers may compare privacy, escape, views, drive time, access and how much lifestyle they really want.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <h3>Against Blockhouse Bay</h3>
+        <p>
+          Buyers may compare convenience, schools, parking, flatness, maintenance and everyday practicality.
+        </p>
+      </div>
+    </div>
+
+    <div class="black-box">
+      <h3>The wider comparison matters</h3>
+      <p>
+        A strong appraisal should show where your Titirangi property sits in the buyer’s real decision set — not just in a narrow suburb estimate.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="content">
+    <p class="eyebrow">Selling Strategy</p>
+
+    <h2>Three Titirangi Selling Mistakes To Avoid</h2>
+
+    <p class="narrow">
+      Titirangi has strong emotional appeal, but the wrong presentation can turn lifestyle features into buyer concerns.
+    </p>
+
+    <div class="mistake-grid">
+      <div class="mistake-card">
+        <h3>1. Assuming the bush sells itself</h3>
+        <p>
+          Bush and privacy help, but buyers still need confidence around sun, warmth, access and maintenance.
+        </p>
+      </div>
+
+      <div class="mistake-card">
+        <h3>2. Hiding practical compromises</h3>
+        <p>
+          If access, slope, stairs, parking or maintenance may concern buyers, the campaign needs to handle that intelligently.
+        </p>
+      </div>
+
+      <div class="mistake-card">
+        <h3>3. Weak outdoor presentation</h3>
+        <p>
+          Decks, paths, stairs, gardens and outdoor areas need to look safe, usable and easy to enjoy.
+        </p>
+      </div>
+    </div>
+
+    <div class="black-box">
+      <h3>The campaign should make the lifestyle feel easy</h3>
+      <p>
+        Buyers are more likely to act when the home feels emotional, practical and manageable at the same time.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="content">
+    <p class="eyebrow">Before You List</p>
+
+    <h2>How To Prepare A Titirangi Home Before Going To Market</h2>
+
+    <p class="narrow">
+      Preparation should focus on making the lifestyle benefits obvious and reducing anything that creates doubt.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <h3>Show the home at its best time of day</h3>
+        <p>
+          Where possible, photography and inspections should highlight sunlight, outlook, decks and outdoor living.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Clean decks, paths, stairs and outdoor spaces</h3>
+        <p>
+          Buyers need to feel that outdoor areas are safe, usable and enjoyable — not a maintenance burden.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Handle visible maintenance early</h3>
+        <p>
+          Moisture signs, slippery paths, overgrowth, exterior wear and tired deck areas can quickly become price objections.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Position the right lifestyle story</h3>
+        <p>
+          Decide whether the home should lead with privacy, views, family lifestyle, character, outdoor living, renovation potential or convenience.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Want A Clearer View Of Your Titirangi Property Value?</h2>
+
+  <p>
+    Request a free appraisal and get practical advice on likely value, buyer appeal, lifestyle presentation, preparation, timing and selling strategy.
+  </p>
+
+  <a class="btn" href="#appraisal-form">Request Free Appraisal</a>
+</section>
+
+<section class="section white">
+  <div class="content">
+    <p class="eyebrow">FAQ</p>
+
+    <h2>Titirangi Property Appraisal Questions</h2>
+
+    <div class="faq">
+      <h3>How much is my Titirangi home worth?</h3>
+      <p>
+        The value depends on recent comparable sales, buyer demand, bush setting, privacy, sunlight, access, decks, outdoor usability, condition, presentation and current competition.
+      </p>
+
+      <h3>What affects value in Titirangi?</h3>
+      <p>
+        Lifestyle appeal, bush views, privacy, sunlight, driveway access, parking, slope, deck condition, warmth, dampness, maintenance and buyer confidence can all influence value.
+      </p>
+
+      <h3>Why can Titirangi homes be hard to price?</h3>
+      <p>
+        Titirangi homes can vary widely in sun, outlook, access, slope, privacy, maintenance, character, age, outdoor usability and buyer emotion, so a narrow comparison can be misleading.
+      </p>
+
+      <h3>Should I prepare outdoor areas before selling?</h3>
+      <p>
+        Yes. In Titirangi, decks, paths, stairs, gardens, bush views and outdoor living areas can strongly affect buyer emotion and confidence.
+      </p>
+
+      <h3>Is a free home appraisal the same as a registered valuation?</h3>
+      <p>
+        No. A real estate appraisal is an agent’s market estimate. A registered valuation is a formal valuation prepared by a registered valuer and is often used for finance, legal or accounting purposes.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <strong>Team Peter & Edita</strong><br>
+    Raine & Horne Titirangi, Blockhouse Bay & Lynfield
+  </div>
+
+  <div>
+    <a href="../index.html">Back to home</a><br>
+    <a href="tel:021765234">021 765 234</a>
+  </div>
+</footer>
 
 </body>
 </html>
