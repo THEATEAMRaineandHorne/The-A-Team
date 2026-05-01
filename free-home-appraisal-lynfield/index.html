@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Free Home Appraisal Lynfield | Team Peter & Edita</title>
+  <title>What Is My Lynfield Home Worth? | Free Property Appraisal</title>
 
-  <meta name="description" content="Request a free home appraisal in Lynfield from Team Peter & Edita | Raine & Horne. Local property advice for Lynfield homeowners thinking of selling.">
+  <meta name="description" content="What is your Lynfield home worth? Get a free property appraisal and local selling advice focused on buyer demand, family appeal, access, parking, layout, presentation and pricing strategy.">
 
   <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-lynfield/">
 
@@ -26,6 +26,11 @@
       --white: #ffffff;
       --text: #222222;
       --muted: #555555;
+      --line: #e7dfd1;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -40,7 +45,7 @@
     h3 {
       font-family: Georgia, "Times New Roman", serif;
       font-weight: 400;
-      line-height: 1.15;
+      line-height: 1.12;
     }
 
     p {
@@ -49,16 +54,25 @@
       margin-bottom: 18px;
     }
 
+    ul {
+      padding-left: 22px;
+      margin: 14px 0 26px;
+    }
+
+    li {
+      font-size: 17px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
     .site-header {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      padding: 26px 8%;
+      background: #111111;
+      color: white;
+      padding: 22px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      z-index: 10;
-      color: white;
+      gap: 22px;
     }
 
     .logo {
@@ -80,29 +94,24 @@
       color: #e7c782;
     }
 
-    .page-hero {
-      min-height: 100vh;
-      padding: 120px 8% 80px;
+    .hero {
       background:
-        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.50)),
-        url("https://images.unsplash.com/photo-1600585153490-76fb20a32601?auto=format&fit=crop&w=1800&q=80");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
+        radial-gradient(circle at top right, rgba(176,138,66,.22), transparent 34%),
+        linear-gradient(135deg, #f7f4ef 0%, #efe5d5 50%, #e3d3b8 100%);
+      padding: 92px 8% 76px;
     }
 
-    .form-card {
-      width: 100%;
-      max-width: 780px;
-      background: white;
-      padding: 48px;
-      border: 1px solid #eeeeee;
-      box-shadow: 0 24px 70px rgba(0,0,0,.22);
+    .hero-grid {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) 460px;
+      gap: 54px;
+      align-items: start;
     }
 
     .eyebrow {
-      color: var(--gold);
+      color: var(--gold-dark);
       text-transform: uppercase;
       letter-spacing: 2px;
       font-size: 13px;
@@ -110,46 +119,99 @@
       margin-bottom: 16px;
     }
 
-    .form-card h1 {
-      font-size: clamp(38px, 5vw, 58px);
-      margin-bottom: 18px;
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 76px);
       color: var(--black);
+      margin-bottom: 24px;
+      max-width: 940px;
     }
 
-    .intro {
-      font-size: 18px;
-      color: #444444;
-      margin-bottom: 30px;
-      max-width: 680px;
-    }
-
-    .trust-box {
-      background: var(--soft);
-      border-left: 5px solid var(--gold);
-      padding: 20px;
-      margin: 26px 0 34px;
-    }
-
-    .trust-box p {
-      margin-bottom: 0;
+    .hero-lead {
+      font-size: 21px;
       color: #333333;
+      max-width: 830px;
+      margin-bottom: 22px;
+    }
+
+    .hero-angle {
+      margin-top: 30px;
+      background: rgba(255,255,255,.78);
+      border-left: 5px solid var(--gold);
+      padding: 26px;
+      max-width: 850px;
+    }
+
+    .hero-angle p {
+      color: #333333;
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+      max-width: 900px;
+    }
+
+    .mini-card {
+      background: white;
+      border: 1px solid var(--line);
+      padding: 18px;
+    }
+
+    .mini-card strong {
+      display: block;
+      color: var(--black);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 7px;
+    }
+
+    .mini-card span {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .form-card {
+      background: #111111;
+      padding: 34px;
+      border: 1px solid rgba(176,138,66,.60);
+      box-shadow: 0 24px 70px rgba(0,0,0,.25);
+      position: sticky;
+      top: 24px;
+    }
+
+    .form-card h2 {
+      color: white;
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .form-card p {
+      color: #dddddd;
+      font-size: 15px;
+      margin-bottom: 24px;
     }
 
     form label {
       display: block;
       font-weight: bold;
-      margin-bottom: 18px;
-      color: #222222;
+      margin-bottom: 15px;
+      color: white;
+      font-size: 14px;
     }
 
     input,
     select,
     textarea {
       width: 100%;
-      margin-top: 8px;
-      padding: 15px 16px;
-      border: 1px solid #d8d8d8;
-      font-size: 16px;
+      margin-top: 7px;
+      padding: 14px 15px;
+      border: 1px solid #4a4a4a;
+      font-size: 15px;
       font-family: Arial, sans-serif;
       background: white;
       color: #222222;
@@ -160,7 +222,7 @@
     textarea:focus {
       outline: none;
       border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(176, 138, 66, .15);
+      box-shadow: 0 0 0 3px rgba(176,138,66,.20);
     }
 
     textarea {
@@ -170,7 +232,7 @@
     .form-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 18px;
+      gap: 14px;
     }
 
     .btn {
@@ -186,7 +248,7 @@
       font-size: 13px;
       font-weight: bold;
       cursor: pointer;
-      transition: 0.25s ease;
+      transition: .25s ease;
     }
 
     .btn:hover {
@@ -196,35 +258,296 @@
     }
 
     .small-note {
-      font-size: 12px;
-      color: #777777;
-      margin-top: 18px;
+      font-size: 12px !important;
+      color: #bfbfbf !important;
+      margin-top: 16px;
       margin-bottom: 0;
     }
 
-    .mini-disclosure {
-      text-align: center;
-      font-size: 11px;
-      color: rgba(255,255,255,.7);
-      margin-top: 18px;
+    .section {
+      padding: 84px 8%;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-top: 18px;
-      color: var(--gold-dark);
+    .white {
+      background: white;
+    }
+
+    .soft {
+      background: var(--soft);
+    }
+
+    .cream {
+      background: var(--cream);
+    }
+
+    .black {
+      background: #111111;
+      color: white;
+    }
+
+    .content {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .narrow {
+      max-width: 860px;
+    }
+
+    .section h2 {
+      font-size: clamp(34px, 4vw, 50px);
+      margin-bottom: 22px;
+      color: var(--black);
+    }
+
+    .black h2,
+    .black h3 {
+      color: white;
+    }
+
+    .black p,
+    .black li {
+      color: #d7d7d7;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 52px;
+      align-items: start;
+    }
+
+    .side-panel {
+      background: var(--soft);
+      border-left: 5px solid var(--gold);
+      padding: 30px;
+    }
+
+    .side-panel h3 {
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+
+    .value-map {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 34px;
+    }
+
+    .value-card {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 26px;
+    }
+
+    .value-card h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .value-card p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .pressure-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .pressure-card {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .tick {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-weight: bold;
+      font-size: 15px;
+    }
+
+    .pressure-card h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    .pressure-card p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .comparison-card {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 30px;
+    }
+
+    .comparison-card h3 {
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+
+    .comparison-card p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .black-box {
+      background: #111111;
+      color: white;
+      padding: 34px;
+      margin-top: 34px;
+    }
+
+    .black-box h3 {
+      color: white;
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .black-box p {
+      color: #dddddd;
+      margin-bottom: 0;
+    }
+
+    .mistake-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .mistake-card {
+      background: #1d1d1d;
+      border: 1px solid #333333;
+      padding: 28px;
+    }
+
+    .mistake-card h3 {
+      color: white;
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .mistake-card p {
+      color: #dddddd;
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .steps {
+      counter-reset: step;
+      display: grid;
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .step {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 28px;
+      position: relative;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      top: 24px;
+      right: 28px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .step h3 {
+      font-size: 26px;
+      margin-bottom: 12px;
+      padding-right: 50px;
+    }
+
+    .cta-band {
+      background: var(--cream);
+      padding: 62px 8%;
+      text-align: center;
+    }
+
+    .cta-band h2 {
+      font-size: clamp(34px, 4vw, 48px);
+      margin-bottom: 16px;
+    }
+
+    .cta-band p {
+      max-width: 740px;
+      margin: 0 auto 26px;
+    }
+
+    .cta-band .btn {
+      width: auto;
+    }
+
+    .faq {
+      background: white;
+      border: 1px solid #eeeeee;
+      padding: 34px;
+      margin-top: 34px;
+    }
+
+    .faq h3 {
+      font-size: 24px;
+      margin: 26px 0 10px;
+    }
+
+    footer {
+      background: #111111;
+      color: white;
+      padding: 38px 8%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
       text-decoration: none;
     }
 
-    .back-link:hover {
-      text-decoration: underline;
+    footer a:hover {
+      color: #e7c782;
     }
 
-    @media(max-width: 850px) {
+    @media(max-width: 980px) {
       .site-header {
-        position: relative;
-        background: var(--black);
         display: block;
       }
 
@@ -233,20 +556,88 @@
         margin: 10px 12px 0 0;
       }
 
-      .page-hero {
-        padding: 50px 6%;
-        min-height: auto;
+      .hero {
+        padding: 60px 6%;
       }
 
-      .form-card {
-        padding: 30px 22px;
-      }
-
+      .hero-grid,
+      .split,
+      .mini-grid,
+      .value-map,
+      .pressure-grid,
+      .comparison-grid,
+      .mistake-grid,
       .form-grid {
         grid-template-columns: 1fr;
       }
+
+      .form-card {
+        position: relative;
+        top: 0;
+      }
+
+      .section {
+        padding: 60px 6%;
+      }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Team Peter & Edita | Raine & Horne",
+    "description": "Free property appraisal and selling advice for Lynfield homeowners.",
+    "url": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-lynfield/",
+    "telephone": "+6421765234",
+    "areaServed": ["Lynfield", "Auckland"],
+    "brand": {
+      "@type": "Brand",
+      "name": "Raine & Horne"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I find out what my Lynfield home is worth?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A local Lynfield appraisal should consider recent comparable sales, buyer demand, school convenience, layout, parking, access, slope, views, condition, presentation and nearby competition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What affects property value in Lynfield?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lynfield property value can be affected by family practicality, school access, views, sunlight, parking, driveway access, section usability, condition, renovation quality, presentation and buyer confidence."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why can Lynfield homes be hard to price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lynfield homes can be hard to price because buyers may value convenience, school access, views, family layout, land, renovation potential and access differently depending on the property."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a real estate appraisal the same as a registered valuation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A real estate appraisal is an agent's market estimate based on buyer demand and comparable sales. A registered valuation is a formal valuation completed by a registered valuer."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -262,29 +653,55 @@
   </nav>
 </header>
 
-<section class="page-hero">
-  <div>
-    <div class="form-card">
-      <p class="eyebrow">Lynfield Free Property Appraisal</p>
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">Lynfield Home Value Guide</p>
 
-      <h1>Request Your Free Lynfield Home Appraisal</h1>
+      <h1>What Is My Lynfield Home Worth — And Will Buyers See The Practical Value?</h1>
 
-      <p class="intro">
-        Thinking of selling in Lynfield? Get a practical, local view of what your home could be worth,
-        how buyers may compare it, and what steps could help you prepare for a stronger selling result.
+      <p class="hero-lead">
+        Lynfield buyers often look for central-west convenience, family practicality, school access, parking, views, outdoor use and easy connection to nearby suburbs. But they still compare carefully before making an offer.
       </p>
 
-      <div class="trust-box">
+      <p class="hero-lead">
+        A strong appraisal should not only estimate a price. It should explain how buyers may judge the home’s layout, access, condition, sunlight, section usability and day-to-day liveability.
+      </p>
+
+      <div class="hero-angle">
         <p>
-          A strong appraisal should do more than give you a number. It should help you understand buyer demand,
-          recent comparable sales, presentation, timing, competition and the selling strategy that may work best
-          for your Lynfield property.
+          In Lynfield, the strongest results often come when buyers can clearly see how the home works for real life — not just how it looks online.
         </p>
       </div>
 
+      <div class="mini-grid">
+        <div class="mini-card">
+          <strong>Liveability</strong>
+          <span>Layout, parking, storage, indoor-outdoor flow and usable space can lift buyer confidence.</span>
+        </div>
+
+        <div class="mini-card">
+          <strong>Access</strong>
+          <span>Driveways, slopes, garages, stairs and arrival experience can affect buyer reaction.</span>
+        </div>
+
+        <div class="mini-card">
+          <strong>Comparison</strong>
+          <span>Buyers may compare Blockhouse Bay, Hillsborough, Mt Roskill, New Windsor and Green Bay.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card" id="appraisal-form">
+      <h2>Free Lynfield Appraisal</h2>
+
+      <p>
+        Tell us a little about your Lynfield property and we will help you understand likely value, buyer appeal and selling strategy.
+      </p>
+
       <form action="https://formspree.io/f/mdabnpgl" method="POST">
-        <input type="hidden" name="_subject" value="New Lynfield Home Appraisal Request - The A-Team Website" />
-        <input type="hidden" name="landing_page" value="Free Home Appraisal Lynfield" />
+        <input type="hidden" name="_subject" value="New Lynfield Home Value Request - The A-Team Website" />
+        <input type="hidden" name="landing_page" value="What Is My Lynfield Home Worth" />
 
         <div class="form-grid">
           <label>
@@ -342,25 +759,341 @@
 
         <label>
           Tell us anything helpful
-          <textarea name="message" rows="6" placeholder="Example: We are thinking of selling our Lynfield home and want to understand price, timing and preparation."></textarea>
+          <textarea name="message" rows="5" placeholder="Example: We are thinking of selling our Lynfield home and want to understand value, timing and preparation."></textarea>
         </label>
 
         <button class="btn" type="submit">Send Appraisal Request</button>
 
         <p class="small-note">
-          Team Peter & Edita are licensed real estate salespeople with Raine & Horne.
-          Your details are used only to respond to your appraisal request.
+          Team Peter & Edita are licensed real estate salespeople with Raine & Horne. Your details are used only to respond to your appraisal request.
         </p>
       </form>
-
-      <a class="back-link" href="../index.html">← Back to home page</a>
     </div>
-
-    <p class="mini-disclosure">
-      Team Peter & Edita | Raine & Horne Titirangi, Blockhouse Bay & Lynfield
-    </p>
   </div>
 </section>
+
+<section class="section white">
+  <div class="content split">
+    <div>
+      <p class="eyebrow">The Lynfield Difference</p>
+
+      <h2>Lynfield Buyers Often Judge How Easy The Home Feels To Live In</h2>
+
+      <p>
+        In Lynfield, buyers may like the location, but the final decision often comes down to practical details: parking, access, layout, stairs, sunlight, storage, outdoor use and whether the home works for everyday family life.
+      </p>
+
+      <p>
+        A home with a strong view or good location can still lose buyer momentum if the driveway feels difficult, the layout is confusing, the outdoor space is hard to use, or the presentation makes the home feel like too much work.
+      </p>
+
+      <p>
+        A useful appraisal should help you understand both the price range and the practical buyer questions that may influence the final offer.
+      </p>
+    </div>
+
+    <div class="side-panel">
+      <h3>A stronger Lynfield appraisal should answer:</h3>
+
+      <ul>
+        <li>Who is the most likely buyer for this property?</li>
+        <li>Will buyers value the location, view, layout, land, school access or convenience most?</li>
+        <li>Could driveway, slope, stairs, parking or access reduce buyer confidence?</li>
+        <li>How does the home compare with similar options in nearby suburbs?</li>
+        <li>What should be improved or explained before going live?</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="content">
+    <p class="eyebrow">Value Factors</p>
+
+    <h2>What Can Change A Lynfield Property Appraisal?</h2>
+
+    <p class="narrow">
+      Lynfield value is rarely about one single feature. Buyers often weigh several practical factors at once before deciding whether a home feels worth the price.
+    </p>
+
+    <div class="value-map">
+      <div class="value-card">
+        <h3>Family Layout</h3>
+        <p>
+          Bedrooms, living spaces, storage and indoor-outdoor flow need to make daily life feel easy.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>Access & Parking</h3>
+        <p>
+          Driveway access, garage use, off-street parking, stairs and entry experience can affect confidence.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>Views & Sunlight</h3>
+        <p>
+          Outlook, natural light and privacy can create emotional value when they are presented well.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <h3>Condition</h3>
+        <p>
+          Buyers look closely at maintenance, renovations, warmth, moisture, roofing and overall care.
+        </p>
+      </div>
+    </div>
+
+    <div class="black-box">
+      <h3>The Lynfield appraisal question</h3>
+      <p>
+        “Will buyers see this as a home that makes everyday life easier — or will they focus on compromises?”
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section cream">
+  <div class="content">
+    <p class="eyebrow">Buyer Hesitation</p>
+
+    <h2>Small Practical Issues Can Change How Lynfield Buyers Judge Value</h2>
+
+    <p class="narrow">
+      Sometimes a Lynfield home has strong underlying value, but buyers hesitate because something feels inconvenient, unclear or risky.
+    </p>
+
+    <div class="pressure-grid">
+      <div class="pressure-card">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Driveway and access</h3>
+          <p>Steep, narrow or awkward access can affect confidence, especially for family buyers.</p>
+        </div>
+      </div>
+
+      <div class="pressure-card">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Parking practicality</h3>
+          <p>Buyers often compare garage use, off-street parking and visitor parking.</p>
+        </div>
+      </div>
+
+      <div class="pressure-card">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Outdoor usability</h3>
+          <p>A view helps, but buyers also ask whether outdoor spaces are safe, accessible and easy to use.</p>
+        </div>
+      </div>
+
+      <div class="pressure-card">
+        <div class="tick">✓</div>
+        <div>
+          <h3>Maintenance confidence</h3>
+          <p>Visible maintenance can quickly become a price objection if not handled before launch.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="black-box">
+      <h3>Before reducing price</h3>
+      <p>
+        Ask whether buyers are rejecting the price — or reacting to a practical concern that can be improved, explained or positioned better.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section black">
+  <div class="content">
+    <p class="eyebrow">Nearby Competition</p>
+
+    <h2>Lynfield Buyers Often Compare Several Central-West Suburbs</h2>
+
+    <p>
+      A Lynfield buyer may also look at Blockhouse Bay, Hillsborough, Mt Roskill, New Windsor, Green Bay, New Lynn or nearby central-west options depending on budget, school needs, lifestyle and property type.
+    </p>
+
+    <p>
+      This means your home is not only competing with other Lynfield listings. It may be compared with homes that offer different land sizes, different school convenience, different parking, different views, different renovation levels and different access.
+    </p>
+
+    <div class="comparison-grid">
+      <div class="comparison-card">
+        <h3>Against Blockhouse Bay</h3>
+        <p>
+          Buyers may compare family practicality, schools, parking, section use and convenience.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <h3>Against Mt Roskill</h3>
+        <p>
+          Buyers may compare central access, land, development potential, condition and value.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <h3>Against Green Bay</h3>
+        <p>
+          Buyers may compare lifestyle feel, privacy, outdoor space, sunlight and family appeal.
+        </p>
+      </div>
+    </div>
+
+    <div class="black-box">
+      <h3>The wider buyer comparison matters</h3>
+      <p>
+        A strong appraisal should show where your Lynfield property sits against the homes buyers are genuinely considering.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section white">
+  <div class="content">
+    <p class="eyebrow">Selling Strategy</p>
+
+    <h2>Three Lynfield Selling Mistakes To Avoid</h2>
+
+    <p class="narrow">
+      Lynfield can attract strong buyer interest, but the wrong preparation or campaign angle can make a good home feel harder to buy.
+    </p>
+
+    <div class="mistake-grid">
+      <div class="mistake-card">
+        <h3>1. Assuming location is enough</h3>
+        <p>
+          Location helps, but buyers still need confidence around layout, parking, access, condition and daily practicality.
+        </p>
+      </div>
+
+      <div class="mistake-card">
+        <h3>2. Hiding practical compromises</h3>
+        <p>
+          If access, slope, stairs or parking may concern buyers, the campaign needs to handle that intelligently.
+        </p>
+      </div>
+
+      <div class="mistake-card">
+        <h3>3. Weak presentation of lifestyle</h3>
+        <p>
+          Views, sunlight and outdoor living need to be shown clearly, not assumed.
+        </p>
+      </div>
+    </div>
+
+    <div class="black-box">
+      <h3>The campaign should make the home feel easy to choose</h3>
+      <p>
+        Buyers are more likely to act when the value, lifestyle and practical benefits are clear from the start.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="content">
+    <p class="eyebrow">Before You List</p>
+
+    <h2>How To Prepare A Lynfield Home Before Going To Market</h2>
+
+    <p class="narrow">
+      Preparation should focus on reducing buyer hesitation and making the home’s strongest practical benefits obvious.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <h3>Review the real buyer comparison</h3>
+        <p>
+          Look at homes buyers will genuinely compare in Lynfield and nearby suburbs, not just the closest sale.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Make access and parking feel easy</h3>
+        <p>
+          Clear driveways, tidy entries, garage presentation and parking clarity can improve confidence.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Show light, views and outdoor use clearly</h3>
+        <p>
+          Good photography and presentation should make lifestyle benefits obvious.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>Prepare documents and maintenance details</h3>
+        <p>
+          LIM, title, council records and information about improvements can help reduce hesitation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h2>Want A Clearer View Of Your Lynfield Property Value?</h2>
+
+  <p>
+    Request a free appraisal and get practical advice on likely value, buyer appeal, access, presentation, timing and selling strategy.
+  </p>
+
+  <a class="btn" href="#appraisal-form">Request Free Appraisal</a>
+</section>
+
+<section class="section white">
+  <div class="content">
+    <p class="eyebrow">FAQ</p>
+
+    <h2>Lynfield Property Appraisal Questions</h2>
+
+    <div class="faq">
+      <h3>How much is my Lynfield home worth?</h3>
+      <p>
+        The value depends on recent comparable sales, buyer demand, location, school convenience, layout, parking, access, land, views, condition, presentation and current competition.
+      </p>
+
+      <h3>What affects value in Lynfield?</h3>
+      <p>
+        Layout, parking, driveway access, outlook, sunlight, outdoor usability, condition, renovation quality, documents and buyer confidence can all influence value.
+      </p>
+
+      <h3>Why can Lynfield homes be hard to compare?</h3>
+      <p>
+        Lynfield properties can vary widely in access, views, land, slope, layout, age, renovation level and buyer appeal, so a narrow comparison can be misleading.
+      </p>
+
+      <h3>Should I fix things before selling in Lynfield?</h3>
+      <p>
+        Small visible maintenance, presentation and access improvements can help buyer confidence. It is best to get advice before spending heavily on major work.
+      </p>
+
+      <h3>Is a free home appraisal the same as a registered valuation?</h3>
+      <p>
+        No. A real estate appraisal is an agent’s market estimate. A registered valuation is a formal valuation prepared by a registered valuer and is often used for finance, legal or accounting purposes.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <strong>Team Peter & Edita</strong><br>
+    Raine & Horne Titirangi, Blockhouse Bay & Lynfield
+  </div>
+
+  <div>
+    <a href="../index.html">Back to home</a><br>
+    <a href="tel:021765234">021 765 234</a>
+  </div>
+</footer>
 
 </body>
 </html>
