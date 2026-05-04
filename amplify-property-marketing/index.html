@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Amplify™ AI Property Marketing | Team Peter & Edita</title>
+  <meta name="description" content="Amplify™ is Raine & Horne’s AI-powered property marketing technology designed to help your home reach more relevant buyers across Google, Facebook, Instagram and digital channels." />
+  <meta name="keywords" content="Amplify property marketing, Raine and Horne Amplify, AI property marketing Auckland, real estate marketing West Auckland, Team Peter and Edita" />
+  <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/amplify-property-marketing/" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --black: #111111;
+      --dark: #1d1d1d;
+      --grey: #4D4E50;
+      --gold: #b08a42;
+      --gold2: #E1AA14;
+      --cream: #d8c9ad;
+      --soft: #f7f4ef;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--soft);
+      color: #222222;
+      line-height: 1.65;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      line-height: 1.12;
+    }
+
+    p { font-size: 17px; line-height: 1.7; }
+
+    .site-header {
+      background: var(--black);
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .logo {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    nav a:hover { color: var(--gold2); }
+
+    .hero {
+      background:
+        linear-gradient(rgba(0,0,0,.74), rgba(0,0,0,.60)),
+        url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1800&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 90px 8% 82px;
+    }
+
+    .hero-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--gold2);
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 78px);
+      max-width: 860px;
+      margin-bottom: 24px;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      color: #eeeeee;
+      font-size: 20px;
+      max-width: 780px;
+      margin-bottom: 24px;
+    }
+
+    .hero-highlight {
+      border-left: 5px solid var(--gold2);
+      padding-left: 20px;
+      color: white;
+      font-size: 21px;
+      line-height: 1.55;
+      max-width: 760px;
+      margin: 28px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      text-decoration: none;
+      padding: 16px 26px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid var(--gold);
+      transition: 0.25s ease;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #8f6d2e;
+      border-color: #8f6d2e;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: rgba(255,255,255,0.65);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--black);
+      border-color: white;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .hero-card {
+      background: rgba(17,17,17,0.86);
+      border: 1px solid rgba(255,255,255,0.14);
+      padding: 34px;
+      border-radius: 24px;
+      box-shadow: 0 20px 55px rgba(0,0,0,0.32);
+    }
+
+    .hero-card h2 {
+      color: white;
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+
+    .hero-card p {
+      font-size: 16px;
+      color: #dddddd;
+      margin-bottom: 18px;
+    }
+
+    .proof-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .proof-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: #f3f3f3;
+      font-size: 15px;
+    }
+
+    .tick {
+      color: var(--gold2);
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .stats {
+      background: var(--black);
+      padding: 34px 8%;
+      color: white;
+      border-top: 1px solid rgba(176,138,66,0.35);
+      border-bottom: 1px solid rgba(176,138,66,0.35);
+    }
+
+    .stats-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .stat-card {
+      background: white;
+      color: var(--black);
+      padding: 28px;
+      text-align: center;
+      border-top: 5px solid var(--gold2);
+    }
+
+    .stat-card strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .stat-card span {
+      display: block;
+      color: var(--grey);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .section {
+      padding: 76px 8%;
+    }
+
+    .section-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .white { background: white; }
+    .soft { background: var(--soft); }
+    .black { background: var(--black); color: white; }
+
+    .section h2 {
+      color: var(--black);
+      font-size: clamp(34px, 4vw, 56px);
+      margin-bottom: 20px;
+    }
+
+    .black h2, .black h3 { color: white; }
+
+    .section p {
+      color: #555555;
+      max-width: 920px;
+      margin-bottom: 18px;
+    }
+
+    .black p { color: #dddddd; }
+
+    .video-box {
+      background: #1d1d1d;
+      border: 1px solid #333333;
+      padding: 30px;
+      text-align: center;
+      border-radius: 22px;
+    }
+
+    .video-box h2 {
+      color: white;
+      font-size: clamp(30px, 4vw, 48px);
+      margin-bottom: 12px;
+    }
+
+    .video-box p {
+      color: #dddddd;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .video-frame {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 26px auto 0;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+      background: #000000;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .benefit-card {
+      background: var(--soft);
+      border-left: 5px solid var(--gold);
+      padding: 30px;
+    }
+
+    .black .benefit-card {
+      background: #1d1d1d;
+      border: 1px solid #333333;
+      border-left: 5px solid var(--gold2);
+    }
+
+    .benefit-card h3 {
+      font-size: 27px;
+      margin-bottom: 12px;
+      color: var(--black);
+    }
+
+    .black .benefit-card h3 { color: white; }
+
+    .benefit-card p {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .cta-panel {
+      background: var(--cream);
+      padding: 42px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      margin-top: 38px;
+    }
+
+    .cta-panel h2 {
+      color: var(--black);
+      font-size: clamp(32px, 4vw, 48px);
+      margin-bottom: 10px;
+    }
+
+    .cta-panel p {
+      color: #333333;
+      margin: 0;
+      max-width: 760px;
+    }
+
+    .disclaimer {
+      margin-top: 26px;
+      color: #777777;
+      font-size: 12px;
+      line-height: 1.6;
+      max-width: 1100px;
+    }
+
+    footer {
+      background: #0b0b0b;
+      color: white;
+      padding: 38px 8%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 26px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    footer strong { font-size: 18px; }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover { color: var(--gold2); }
+
+    .sticky-mobile { display: none; }
+
+    @media(max-width: 980px) {
+      .hero-wrap, .stats-wrap, .benefit-grid, .cta-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .hero { padding: 68px 6%; }
+
+      .section, .stats {
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+
+      .site-header { display: block; }
+
+      nav { margin-top: 14px; }
+    }
+
+    @media(max-width: 640px) {
+      nav { gap: 14px; }
+      nav a { font-size: 12px; }
+      .hero h1 { font-size: 42px; }
+
+      .hero-card, .video-box, .cta-panel, .benefit-card {
+        padding: 24px;
+      }
+
+      .hero-buttons { display: grid; }
+      .btn { width: 100%; }
+
+      .sticky-mobile {
+        display: block;
+        position: fixed;
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        z-index: 70;
+        background: var(--gold2);
+        color: var(--black);
+        text-align: center;
+        padding: 15px;
+        border-radius: 999px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 14px 35px rgba(0,0,0,0.28);
+      }
+
+      body { padding-bottom: 76px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Amplify AI Property Marketing",
+    "serviceType": "Real estate digital marketing",
+    "provider": {
+      "@type": "RealEstateAgent",
+      "name": "Team Peter & Edita | Raine & Horne",
+      "telephone": "+6421765234",
+      "email": "edita.andrijasevic@blockhousebay.rh.co.nz"
+    },
+    "areaServed": [
+      "Titirangi",
+      "Blockhouse Bay",
+      "Lynfield",
+      "New Lynn",
+      "Green Bay",
+      "Glen Eden",
+      "Mount Roskill",
+      "New Windsor",
+      "Glendene",
+      "Avondale",
+      "West Auckland",
+      "Auckland"
+    ],
+    "url": "https://theateamraineandhorne.github.io/The-A-Team/amplify-property-marketing/"
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="logo">Team Peter & Edita</div>
+
+  <nav>
+    <a href="../">Home</a>
+    <a href="#video">Video</a>
+    <a href="#benefits">Benefits</a>
+    <a href="../free-home-appraisal-west-auckland/">Free Appraisal</a>
+    <a href="tel:021765234">Call</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-wrap">
+      <div>
+        <p class="eyebrow">Amplify™ AI Property Marketing</p>
+
+        <h1>Smarter Marketing To Find More Of The Right Buyers</h1>
+
+        <p>
+          Most agents can place your property on the usual real estate websites. Amplify™ helps take your property further by using AI-powered digital marketing across Google, Facebook, Instagram and online channels.
+        </p>
+
+        <div class="hero-highlight">
+          Your home should not just sit online waiting to be found. It should be actively marketed to people most likely to care.
+        </div>
+
+        <div class="hero-buttons">
+          <a class="btn" href="../free-home-appraisal-west-auckland/">Get My Free Appraisal</a>
+          <a class="btn btn-outline" href="#video">Watch The Video</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h2>Why Amplify™ Matters</h2>
+
+        <p>
+          The best buyer may not be checking property portals every day. They may be scrolling social media, searching Google, comparing suburbs quietly or waiting for the right home to appear.
+        </p>
+
+        <div class="proof-list">
+          <div class="proof-item"><span class="tick">✓</span><span>Targets more relevant buyer audiences online</span></div>
+          <div class="proof-item"><span class="tick">✓</span><span>Helps your property stand out beyond standard portals</span></div>
+          <div class="proof-item"><span class="tick">✓</span><span>Creates multiple ad versions for different buyer groups</span></div>
+          <div class="proof-item"><span class="tick">✓</span><span>Combines technology with local strategy and negotiation</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Amplify performance highlights">
+    <div class="stats-wrap">
+      <div class="stat-card">
+        <strong>15</strong>
+        <span>days faster average sale duration*</span>
+      </div>
+
+      <div class="stat-card">
+        <strong>+$2,436</strong>
+        <span>increase in average sale price*</span>
+      </div>
+
+      <div class="stat-card">
+        <strong>+3.3%</strong>
+        <span>higher sale success rate*</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section black" id="video">
+    <div class="section-wrap">
+      <p class="eyebrow">How It Works</p>
+
+      <div class="video-box">
+        <h2>Watch How Amplify™ Works</h2>
+
+        <p>
+          See how Raine & Horne’s Amplify™ technology helps your property reach more relevant buyers across digital channels.
+        </p>
+
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube.com/embed/DkKp8I__4mI?rel=0&modestbranding=1"
+            title="How Raine & Horne Amplify property marketing works"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white" id="benefits">
+    <div class="section-wrap">
+      <p class="eyebrow">The Seller Advantage</p>
+
+      <h2>Why Standard Marketing Is No Longer Enough</h2>
+
+      <p>
+        Buyers do not all behave the same way. A family, investor, first-home buyer, renovator and downsizer may all notice different parts of the same property. Amplify™ helps your home appeal to more relevant buyer groups.
+      </p>
+
+      <div class="benefit-grid">
+        <div class="benefit-card">
+          <h3>Find Buyers Others May Miss</h3>
+          <p>
+            Reach people who may be interested in your property even before they search a property portal.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <h3>Stand Out Online</h3>
+          <p>
+            Your property can appear across Google, Facebook, Instagram and digital channels, not only on listing websites.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <h3>Create Better Competition</h3>
+          <p>
+            More relevant awareness can support stronger enquiry, inspections and buyer confidence during the campaign.
+          </p>
+        </div>
+      </div>
+
+      <div class="cta-panel">
+        <div>
+          <h2>Thinking Of Selling?</h2>
+          <p>
+            Ask us how Amplify™ could help your property reach more of the right buyers.
+          </p>
+        </div>
+
+        <a class="btn" href="../free-home-appraisal-west-auckland/">Get My Free Appraisal</a>
+      </div>
+
+      <p class="disclaimer">
+        *Based on a Raine & Horne analysis of 1,366 residential property listings from January 2024 to August 2025 comparing properties marketed with Amplify™ against those marketed without it. Results may vary depending on property type, location, price, market conditions, presentation and campaign strategy. Amplify™ does not guarantee a sale price or selling timeframe. Raine & Horne Amplify™ is a registered trademark of Raine & Horne (Holdings) Pty Ltd. Licensed under the REAA 2008.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>
+    <strong>Team Peter & Edita</strong><br>
+    Raine & Horne Titirangi, Blockhouse Bay & Lynfield<br>
+    Licensed under the REAA 2008
+  </div>
+
+  <div>
+    <a href="../free-home-appraisal-west-auckland/">Request Free Appraisal</a><br>
+    <a href="tel:021765234">021 765 234</a><br>
+    <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
+  </div>
+</footer>
+
+<a href="../free-home-appraisal-west-auckland/" class="sticky-mobile">Get Free Appraisal</a>
+
+</body>
+</html>
