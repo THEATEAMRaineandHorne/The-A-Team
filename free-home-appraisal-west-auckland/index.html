@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Free Home Appraisal West Auckland | Team Peter & Edita</title>
+  <title>What’s My Home Worth? Free Home Appraisal West Auckland</title>
 
-  <meta name="description" content="Request a free home appraisal in West Auckland and Central-West Auckland. Team Peter & Edita from Raine & Horne help homeowners in Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mt Roskill, New Windsor, Glendene and Avondale." />
-
-  <meta name="keywords" content="free home appraisal West Auckland, free property appraisal Auckland, home value West Auckland, house appraisal Titirangi, Blockhouse Bay home appraisal, New Lynn property appraisal, Team Peter and Edita, Raine and Horne" />
+  <meta name="description" content="Request a free home appraisal in West Auckland. Team Peter & Edita from Raine & Horne provide quick, clear local property value advice for homeowners." />
+  <meta name="keywords" content="what is my home worth, free home appraisal West Auckland, free property appraisal Auckland, home value Auckland, Team Peter and Edita, Raine and Horne" />
+  <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-west-auckland/" />
 
   <style>
     * {
@@ -26,6 +26,7 @@
       --cream: #d8c9ad;
       --soft: #f7f4ef;
       --white: #ffffff;
+      --border: #e7dfd0;
     }
 
     html {
@@ -34,9 +35,9 @@
 
     body {
       font-family: Arial, sans-serif;
-      color: #222222;
       background: var(--soft);
-      line-height: 1.65;
+      color: #222222;
+      line-height: 1.6;
     }
 
     h1,
@@ -49,7 +50,7 @@
 
     p {
       font-size: 17px;
-      line-height: 1.7;
+      line-height: 1.65;
     }
 
     a {
@@ -59,11 +60,11 @@
     .site-header {
       background: var(--black);
       color: white;
-      padding: 22px 8%;
+      padding: 18px 8%;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 24px;
+      align-items: center;
+      gap: 22px;
       position: sticky;
       top: 0;
       z-index: 50;
@@ -71,7 +72,7 @@
     }
 
     .logo {
-      font-size: 18px;
+      font-size: 17px;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: bold;
@@ -79,7 +80,6 @@
 
     nav {
       display: flex;
-      align-items: center;
       gap: 22px;
       flex-wrap: wrap;
     }
@@ -87,9 +87,9 @@
     nav a {
       color: white;
       text-decoration: none;
-      font-size: 13px;
-      letter-spacing: 1px;
       text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 13px;
     }
 
     nav a:hover {
@@ -98,60 +98,82 @@
 
     .hero {
       background:
-        linear-gradient(rgba(0,0,0,.67), rgba(0,0,0,.58)),
+        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.58)),
         url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=80");
       background-size: cover;
       background-position: center;
       color: white;
-      padding: 108px 8% 92px;
+      padding: 78px 8%;
     }
 
     .hero-wrap {
       max-width: 1180px;
       margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 440px;
+      gap: 44px;
+      align-items: center;
     }
 
     .eyebrow {
       color: var(--gold2);
       text-transform: uppercase;
-      letter-spacing: 2.5px;
+      letter-spacing: 2.2px;
       font-size: 13px;
       font-weight: bold;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     .hero h1 {
-      font-size: clamp(42px, 6vw, 78px);
-      max-width: 980px;
-      margin-bottom: 26px;
+      font-size: clamp(42px, 6vw, 74px);
+      margin-bottom: 20px;
+      max-width: 760px;
     }
 
     .hero p {
-      max-width: 860px;
       color: #eeeeee;
-      font-size: 21px;
-      margin-bottom: 30px;
+      font-size: 20px;
+      max-width: 720px;
+      margin-bottom: 24px;
     }
 
-    .hero-buttons {
+    .simple-points {
+      display: grid;
+      gap: 10px;
+      margin: 26px 0 0;
+      max-width: 720px;
+    }
+
+    .simple-point {
       display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 34px;
+      align-items: flex-start;
+      gap: 10px;
+      color: #f4f4f4;
+      font-size: 16px;
+    }
+
+    .tick {
+      color: var(--gold2);
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1.2;
     }
 
     .btn {
       display: inline-block;
       background: var(--gold);
       color: white;
+      border: 1px solid var(--gold);
+      padding: 15px 24px;
       text-decoration: none;
-      padding: 16px 28px;
       text-transform: uppercase;
-      letter-spacing: 1.2px;
+      letter-spacing: 1.1px;
       font-size: 13px;
       font-weight: bold;
-      border: 1px solid var(--gold);
       transition: 0.25s ease;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      text-align: center;
     }
 
     .btn:hover {
@@ -160,24 +182,130 @@
       transform: translateY(-2px);
     }
 
-    .btn-outline {
-      background: transparent;
-      border-color: rgba(255,255,255,0.65);
-      color: white;
+    .form-card {
+      background: white;
+      color: #222222;
+      border-radius: 22px;
+      padding: 30px;
+      box-shadow: 0 18px 48px rgba(0,0,0,0.34);
     }
 
-    .btn-outline:hover {
-      background: white;
+    .form-card h2 {
       color: var(--black);
-      border-color: white;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .form-card p {
+      color: #666666;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 13px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--grey);
+      margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 13px;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+      outline: none;
+      background: #ffffff;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--gold2);
+      box-shadow: 0 0 0 4px rgba(225,170,20,0.13);
+    }
+
+    textarea {
+      min-height: 76px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      width: 100%;
+      border-radius: 11px;
+      margin-top: 4px;
+    }
+
+    .form-note {
+      margin-top: 12px;
+      font-size: 12px;
+      color: #777777;
+      line-height: 1.45;
+    }
+
+    .message-box {
+      display: none;
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 11px;
+      font-size: 13px;
+      line-height: 1.45;
+      background: #f7f4ef;
+      color: #4D4E50;
+      border: 1px solid var(--border);
+    }
+
+    .trust-strip {
+      background: var(--black);
+      color: white;
+      padding: 26px 8%;
+      border-top: 1px solid rgba(176,138,66,0.35);
+    }
+
+    .trust-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      text-align: center;
+    }
+
+    .trust-item {
+      background: #1d1d1d;
+      border: 1px solid #333333;
+      padding: 18px;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }
+
+    .trust-item span {
+      color: #dddddd;
+      font-size: 14px;
     }
 
     .section {
-      padding: 84px 8%;
+      padding: 58px 8%;
     }
 
     .section-wrap {
-      max-width: 1200px;
+      max-width: 1180px;
       margin: 0 auto;
     }
 
@@ -189,187 +317,70 @@
       background: var(--soft);
     }
 
-    .cream {
-      background: var(--cream);
-    }
-
-    .black {
-      background: var(--black);
-      color: white;
-    }
-
     .section h2 {
-      font-size: clamp(36px, 4vw, 56px);
-      margin-bottom: 22px;
+      font-size: clamp(32px, 4vw, 48px);
+      margin-bottom: 16px;
       color: var(--black);
-    }
-
-    .black h2,
-    .black h3 {
-      color: white;
     }
 
     .section p {
       color: #555555;
-      margin-bottom: 20px;
-      max-width: 920px;
+      max-width: 900px;
+      margin-bottom: 18px;
     }
 
-    .black p {
-      color: #dddddd;
-    }
-
-    .intro-grid {
+    .quick-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 38px;
-      align-items: stretch;
-      margin-top: 34px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 26px;
     }
 
-    .info-box {
+    .quick-card {
       background: var(--soft);
-      padding: 34px;
+      padding: 26px;
       border-left: 5px solid var(--gold);
     }
 
-    .info-box h3 {
-      font-size: 30px;
-      margin-bottom: 14px;
+    .quick-card h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
       color: var(--black);
     }
 
-    .info-box p {
+    .quick-card p {
+      font-size: 15px;
       margin: 0;
-      font-size: 16px;
     }
 
-    .suburb-section {
-      background: #111111;
-      padding: 84px 8%;
-      color: #ffffff;
-    }
-
-    .suburb-wrap {
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-
-    .suburb-section h2 {
-      color: #ffffff;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(36px, 4vw, 56px);
-      font-weight: 400;
-      margin-bottom: 18px;
-      line-height: 1.15;
-    }
-
-    .suburb-intro {
-      color: #dddddd;
-      font-size: 18px;
-      max-width: 900px;
-      margin-bottom: 40px;
-      line-height: 1.7;
-    }
-
-    .suburb-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 22px;
-    }
-
-    .suburb-card {
-      display: block;
-      background: #1d1d1d;
-      border: 1px solid #333333;
-      padding: 30px;
-      min-height: 245px;
-      text-decoration: none;
-      color: #ffffff;
-      transition: 0.25s ease;
-    }
-
-    .suburb-card:hover {
-      border-color: var(--gold);
-      transform: translateY(-3px);
-      background: #242424;
-    }
-
-    .suburb-card h3 {
-      color: #ffffff;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 28px;
-      font-weight: 400;
-      margin-bottom: 16px;
-      line-height: 1.15;
-    }
-
-    .suburb-card p {
-      color: #dddddd;
-      font-size: 16px;
-      line-height: 1.65;
-      margin: 0 0 20px;
-    }
-
-    .card-link {
-      color: var(--gold2);
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: bold;
-    }
-
-    .cta-panel {
+    .area-line {
+      background: var(--cream);
+      padding: 34px 8%;
       text-align: center;
-      max-width: 900px;
+    }
+
+    .area-line h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: var(--black);
+    }
+
+    .area-line p {
+      max-width: 950px;
       margin: 0 auto;
-    }
-
-    .cta-panel h2 {
-      margin-bottom: 18px;
-    }
-
-    .cta-panel p {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 34px;
-    }
-
-    .why-card {
-      background: #1d1d1d;
-      border: 1px solid #333333;
-      padding: 34px;
-    }
-
-    .why-card h3 {
-      font-size: 28px;
-      margin-bottom: 14px;
-    }
-
-    .why-card p {
-      margin: 0;
+      color: #333333;
       font-size: 16px;
     }
 
     footer {
       background: #0b0b0b;
       color: white;
-      padding: 42px 8%;
+      padding: 34px 8%;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 26px;
+      gap: 24px;
       border-top: 1px solid rgba(255,255,255,0.08);
-    }
-
-    footer strong {
-      font-size: 18px;
     }
 
     footer a {
@@ -381,10 +392,8 @@
       color: var(--gold2);
     }
 
-    @media(max-width: 1200px) {
-      .suburb-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
+    .sticky-mobile {
+      display: none;
     }
 
     @media(max-width: 980px) {
@@ -393,39 +402,77 @@
       }
 
       nav {
-        margin-top: 16px;
+        margin-top: 14px;
       }
 
-      .intro-grid,
-      .why-grid {
+      .hero-wrap,
+      .quick-grid {
         grid-template-columns: 1fr;
       }
 
       .hero {
-        padding: 72px 6%;
+        padding: 58px 6%;
+      }
+
+      .form-card {
+        max-width: 560px;
+      }
+
+      .trust-wrap {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .section,
-      .suburb-section {
-        padding: 64px 6%;
+      .area-line {
+        padding-left: 6%;
+        padding-right: 6%;
       }
     }
 
-    @media(max-width: 760px) {
-      .suburb-grid {
+    @media(max-width: 640px) {
+      nav {
+        gap: 14px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .form-card {
+        padding: 24px;
+      }
+
+      .trust-wrap {
         grid-template-columns: 1fr;
       }
 
-      .suburb-card {
-        min-height: auto;
-      }
-
-      .hero-buttons {
-        display: grid;
-      }
-
-      .btn {
+      .sticky-mobile {
+        display: block;
+        position: fixed;
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        z-index: 70;
+        background: var(--gold2);
+        color: var(--black);
         text-align: center;
+        padding: 15px;
+        border-radius: 999px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 14px 35px rgba(0,0,0,0.28);
+      }
+
+      body {
+        padding-bottom: 76px;
       }
     }
   </style>
@@ -467,182 +514,150 @@
 
   <nav>
     <a href="../">Home</a>
-    <a href="#choose-your-suburb">Free Appraisal</a>
-    <a href="../#articles">Articles</a>
-    <a href="#choose-your-suburb">Suburbs</a>
-    <a href="../#about">About</a>
+    <a href="#appraisal-form">Free Appraisal</a>
+    <a href="#what-you-get">What You Get</a>
+    <a href="tel:021765234">Call</a>
   </nav>
 </header>
 
-<section class="hero">
-  <div class="hero-wrap">
-    <p class="eyebrow">Free Home Appraisal • West Auckland • Central-West Auckland</p>
+<main>
+  <section class="hero">
+    <div class="hero-wrap">
+      <div>
+        <p class="eyebrow">Free Home Appraisal • West Auckland</p>
 
-    <h1>What’s My Home Worth?</h1>
+        <h1>What’s My Home Worth?</h1>
 
-    <p>
-      Request a free home appraisal and get practical local selling advice from Team Peter & Edita at Raine & Horne. We help homeowners understand value, buyer demand, presentation, pricing and the best way to position their property before going to market.
-    </p>
+        <p>
+          Get a quick, clear local view of your property’s value before you sell, refinance, downsize or plan your next move.
+        </p>
 
-    <div class="hero-buttons">
-      <a class="btn" href="#choose-your-suburb">Choose Your Suburb</a>
-      <a class="btn btn-outline" href="tel:021765234">Call 021 765 234</a>
+        <div class="simple-points">
+          <div class="simple-point"><span class="tick">✓</span><span>Free, no-obligation property appraisal</span></div>
+          <div class="simple-point"><span class="tick">✓</span><span>Local advice from Team Peter & Edita at Raine & Horne</span></div>
+          <div class="simple-point"><span class="tick">✓</span><span>No pressure — just practical guidance</span></div>
+        </div>
+      </div>
+
+      <aside class="form-card" id="appraisal-form">
+        <h2>Request Free Appraisal</h2>
+        <p>Fill this in and we will contact you directly.</p>
+
+        <!-- Optional: add your Formspree endpoint below in the script if you want direct form submission. -->
+
+        <form id="quickAppraisalForm" class="form-grid">
+          <input type="hidden" name="_subject" value="Free Home Appraisal West Auckland Request">
+          <input type="hidden" name="source_page" value="Simple Free Home Appraisal West Auckland page">
+
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+          </div>
+
+          <div>
+            <label for="contact">Best Contact</label>
+            <input id="contact" name="contact" type="text" placeholder="Phone or email" autocomplete="tel" required>
+          </div>
+
+          <div>
+            <label for="address">Property Address</label>
+            <input id="address" name="address" type="text" placeholder="Property address" autocomplete="street-address" required>
+          </div>
+
+          <div>
+            <label for="suburb">Suburb / Area</label>
+            <input id="suburb" name="suburb" type="text" placeholder="Example: Blockhouse Bay" required>
+          </div>
+
+          <div>
+            <label for="timeframe">When are you thinking?</label>
+            <select id="timeframe" name="timeframe" required>
+              <option value="">Please choose</option>
+              <option value="Just curious">Just curious</option>
+              <option value="Thinking of selling soon">Thinking of selling soon</option>
+              <option value="Selling in 3 to 6 months">Selling in 3 to 6 months</option>
+              <option value="Selling later">Selling later</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message">Anything else? <span style="font-weight:normal;">Optional</span></label>
+            <textarea id="message" name="message" placeholder="Any quick details or questions"></textarea>
+          </div>
+
+          <button id="submitButton" class="btn submit-btn" type="submit">Get My Free Appraisal</button>
+
+          <div id="formMessage" class="message-box"></div>
+        </form>
+
+        <div class="form-note">
+          No obligation. Licensed under the REAA 2008.
+        </div>
+      </aside>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section white">
-  <div class="section-wrap">
-    <p class="eyebrow">Free Property Appraisal</p>
-
-    <h2>Clear Local Advice Before You Sell</h2>
-
-    <p>
-      An online estimate can be a helpful starting point, but it cannot always see what buyers will notice in person: presentation, sunlight, floor plan, privacy, maintenance, access, parking, improvements, land use and competing listings nearby.
-    </p>
-
-    <p>
-      Our appraisal process helps you understand where your property may sit in the current market and what could improve buyer confidence before you launch.
-    </p>
-
-    <div class="intro-grid">
-      <div class="info-box">
-        <h3>What You Receive</h3>
-        <p>
-          Recent comparable sales, local buyer demand feedback, pricing guidance, property presentation advice and practical recommendations for your next step.
-        </p>
+  <section class="trust-strip" aria-label="Trust highlights">
+    <div class="trust-wrap">
+      <div class="trust-item">
+        <strong>25+</strong>
+        <span>Years combined experience</span>
       </div>
 
-      <div class="info-box">
-        <h3>No Pressure</h3>
-        <p>
-          You can ask for advice early, even if you are not ready to sell. The goal is to help you make a clearer and more confident decision.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="suburb-section" id="choose-your-suburb">
-  <div class="suburb-wrap">
-    <p class="eyebrow">Choose Your Area</p>
-
-    <h2>Free Home Appraisal By Suburb</h2>
-
-    <p class="suburb-intro">
-      Choose your suburb below and request a free, no-obligation home value estimate with local selling advice tailored to your area.
-    </p>
-
-    <div class="suburb-grid">
-
-      <a class="suburb-card" href="../free-home-appraisal-titirangi/">
-        <h3>Titirangi</h3>
-        <p>Bush settings, privacy, decks, sunlight, access and lifestyle appeal need careful buyer positioning.</p>
-        <span class="card-link">Request Titirangi Appraisal</span>
-      </a>
-
-      <a class="suburb-card" href="../free-home-appraisal-blockhouse-bay/">
-        <h3>Blockhouse Bay</h3>
-        <p>Family homes, schools, parking, layout, presentation and buyer confidence can strongly affect value.</p>
-        <span class="card-link">Request Blockhouse Bay Appraisal</span>
-      </a>
-
-      <a class="suburb-card" href="../free-home-appraisal-lynfield/">
-        <h3>Lynfield</h3>
-        <p>Buyers compare practical living, access, parking, views, condition and long-term value.</p>
-        <span class="card-link">Request Lynfield Appraisal</span>
-      </a>
-
-      <a class="suburb-card" href="../free-home-appraisal-new-lynn/">
-        <h3>New Lynn</h3>
-        <p>Convenience attracts buyers, but parking, privacy, property type and condition influence offers.</p>
-        <span class="card-link">Request New Lynn Appraisal</span>
-      </a>
-
-      <a class="suburb-card" href="../free-home-appraisal-green-bay/">
-        <h3>Green Bay</h3>
-        <p>Lifestyle appeal, privacy, outdoor usability, sunlight and maintenance all shape buyer confidence.</p>
-        <span class="card-link">Request Green Bay Appraisal</span>
-      </a>
-
-      <a class="suburb-card" href="../free-home-appraisal-glen-eden/">
-        <h3>Glen Eden</h3>
-        <p>Buyers often look for value and potential, but they also calculate condition, work and future costs.</p>
-        <span class="card-link">Request Glen Eden Appraisal</span>
-      </a>
-
-      <a class="suburb-card" href="../free-home-appraisal-mount-roskill/">
-        <h3>Mt Roskill</h3>
-        <p>Central access, land, condition, development potential and buyer confidence need careful pricing.</p>
-        <span class="card-link">Request Mt Roskill Appraisal</span>
-      </a>
-
-      <a class="suburb-card" href="../free-home-appraisal-new-windsor/">
-        <h3>New Windsor</h3>
-        <p>Buyers compare nearby suburbs, so value needs to be positioned clearly against alternatives.</p>
-        <span class="card-link">Request New Windsor Appraisal</span>
-      </a>
-
-      <a class="suburb-card" href="../free-home-appraisal-glendene/">
-        <h3>Glendene</h3>
-        <p>Value-focused buyers look closely at presentation, maintenance, parking, layout and hidden risk.</p>
-        <span class="card-link">Request Glendene Appraisal</span>
-      </a>
-
-      <a class="suburb-card" href="../free-home-appraisal-avondale/">
-        <h3>Avondale</h3>
-        <p>Family homes, units, townhouses, investors and renovators judge value differently.</p>
-        <span class="card-link">Request Avondale Appraisal</span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<section class="section cream">
-  <div class="section-wrap cta-panel">
-    <p class="eyebrow">Not Sure Which Page To Choose?</p>
-
-    <h2>We Can Still Help</h2>
-
-    <p>
-      If your suburb is nearby but not listed, contact us and we can still give you practical advice or point you in the right direction.
-    </p>
-
-    <a class="btn" href="tel:021765234">Call 021 765 234</a>
-  </div>
-</section>
-
-<section class="section black">
-  <div class="section-wrap">
-    <p class="eyebrow">Why Sellers Choose Us</p>
-
-    <h2>Local Advice With Smarter Buyer Reach</h2>
-
-    <div class="why-grid">
-      <div class="why-card">
-        <h3>Local Market Knowledge</h3>
-        <p>
-          We understand how buyers compare homes across West Auckland and Central-West Auckland suburbs.
-        </p>
+      <div class="trust-item">
+        <strong>5★</strong>
+        <span>Client-focused service</span>
       </div>
 
-      <div class="why-card">
-        <h3>Smarter Marketing</h3>
-        <p>
-          Strong presentation, buyer targeting and digital exposure can help your property reach the right audience.
-        </p>
+      <div class="trust-item">
+        <strong>AI</strong>
+        <span>Smarter buyer marketing</span>
       </div>
 
-      <div class="why-card">
-        <h3>Direct Advice</h3>
-        <p>
-          You work directly with experienced agents who care about clarity, confidence and the final result.
-        </p>
+      <div class="trust-item">
+        <strong>Local</strong>
+        <span>West Auckland advice</span>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="section white" id="what-you-get">
+    <div class="section-wrap">
+      <p class="eyebrow">Simple. Useful. No Pressure.</p>
+
+      <h2>What You Get</h2>
+
+      <p>
+        A quick appraisal gives you a clearer starting point than online estimates alone, because local buyers judge presentation, layout, condition, location, parking, sunlight and current competition.
+      </p>
+
+      <div class="quick-grid">
+        <div class="quick-card">
+          <h3>Price Guidance</h3>
+          <p>Recent sales, current competition and local buyer demand considered.</p>
+        </div>
+
+        <div class="quick-card">
+          <h3>Buyer Feedback</h3>
+          <p>What buyers may value, question or compare before making a decision.</p>
+        </div>
+
+        <div class="quick-card">
+          <h3>Next Step</h3>
+          <p>Clear advice on whether to sell now, prepare first, or simply keep planning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="area-line">
+    <h2>Areas We Commonly Help</h2>
+    <p>
+      Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mt Roskill, New Windsor, Glendene, Avondale and nearby West/Central-West Auckland suburbs.
+    </p>
+  </section>
+</main>
 
 <footer>
   <div>
@@ -652,11 +667,90 @@
   </div>
 
   <div>
-    <a href="#choose-your-suburb">Request Free Appraisal</a><br>
+    <a href="#appraisal-form">Request Free Appraisal</a><br>
     <a href="tel:021765234">021 765 234</a><br>
-    <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita@blockhousebay.rh.co.nz</a>
+    <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
   </div>
 </footer>
+
+<a href="#appraisal-form" class="sticky-mobile">Get Free Appraisal</a>
+
+<script>
+  /*
+    To make the form submit directly instead of opening email:
+    replace "" with your Formspree endpoint, for example:
+    const FORM_ENDPOINT = "https://formspree.io/f/abcxyz";
+  */
+  const FORM_ENDPOINT = "";
+
+  const form = document.getElementById("quickAppraisalForm");
+  const submitButton = document.getElementById("submitButton");
+  const formMessage = document.getElementById("formMessage");
+
+  function showMessage(text) {
+    formMessage.textContent = text;
+    formMessage.style.display = "block";
+  }
+
+  function emailBody(data) {
+    return (
+      "Hi Team Peter & Edita,%0D%0A%0D%0A" +
+      "I would like to request a free home appraisal.%0D%0A%0D%0A" +
+      "Name: " + encodeURIComponent(data.get("name")) + "%0D%0A" +
+      "Best Contact: " + encodeURIComponent(data.get("contact")) + "%0D%0A" +
+      "Property Address: " + encodeURIComponent(data.get("address")) + "%0D%0A" +
+      "Suburb / Area: " + encodeURIComponent(data.get("suburb")) + "%0D%0A" +
+      "Timeframe: " + encodeURIComponent(data.get("timeframe")) + "%0D%0A" +
+      "Message: " + encodeURIComponent(data.get("message") || "") + "%0D%0A%0D%0A" +
+      "Thank you."
+    );
+  }
+
+  form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    const data = new FormData(form);
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+
+    if (FORM_ENDPOINT && FORM_ENDPOINT.includes("formspree.io")) {
+      try {
+        const response = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          body: data,
+          headers: { "Accept": "application/json" }
+        });
+
+        if (response.ok) {
+          form.reset();
+          showMessage("Thank you — your request has been sent. We will contact you directly.");
+        } else {
+          showMessage("Something went wrong. Please call 021 765 234.");
+        }
+      } catch (error) {
+        showMessage("Something went wrong. Please call 021 765 234.");
+      }
+
+      submitButton.disabled = false;
+      submitButton.textContent = "Get My Free Appraisal";
+    } else {
+      window.location.href =
+        "mailto:edita.andrijasevic@blockhousebay.rh.co.nz?subject=" +
+        encodeURIComponent("Free Home Appraisal West Auckland Request") +
+        "&body=" +
+        emailBody(data);
+
+      showMessage("Your email app should open with the request ready to send.");
+      submitButton.disabled = false;
+      submitButton.textContent = "Get My Free Appraisal";
+    }
+  });
+</script>
 
 </body>
 </html>
