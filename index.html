@@ -648,7 +648,358 @@
     </div>
   </div>
 </section>
+<!-- AMPLIFY SECTION START -->
+<section class="ateam-amplify-section" id="amplify">
+  <style>
+    .ateam-amplify-section {
+      background: #111111;
+      color: #ffffff;
+      padding: 86px 8%;
+      font-family: Arial, sans-serif;
+    }
 
+    .ateam-amplify-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .ateam-amplify-eyebrow {
+      color: #E1AA14;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .ateam-amplify-hero {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .ateam-amplify-section h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.12;
+      margin: 0 0 24px;
+      color: #ffffff;
+    }
+
+    .ateam-amplify-section h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.2;
+      margin: 0 0 14px;
+      color: #ffffff;
+    }
+
+    .ateam-amplify-section p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #dddddd;
+      margin: 0 0 20px;
+    }
+
+    .ateam-amplify-highlight {
+      color: #ffffff;
+      font-size: 21px;
+      line-height: 1.55;
+      border-left: 5px solid #E1AA14;
+      padding-left: 22px;
+      margin: 28px 0;
+    }
+
+    .ateam-amplify-card {
+      background: #1d1d1d;
+      border: 1px solid #333333;
+      padding: 34px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+    }
+
+    .ateam-amplify-logo {
+      display: inline-block;
+      background: #E1AA14;
+      color: #111111;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 10px 16px;
+      margin-bottom: 22px;
+      font-size: 13px;
+    }
+
+    .ateam-amplify-points {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .ateam-amplify-point {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: #eeeeee;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .ateam-amplify-tick {
+      color: #E1AA14;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1.2;
+      flex-shrink: 0;
+    }
+
+    .ateam-amplify-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 48px;
+    }
+
+    .ateam-amplify-stat {
+      background: #ffffff;
+      color: #111111;
+      padding: 30px;
+      text-align: center;
+      border-top: 5px solid #E1AA14;
+    }
+
+    .ateam-amplify-stat strong {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: 10px;
+      color: #111111;
+    }
+
+    .ateam-amplify-stat span {
+      display: block;
+      color: #4D4E50;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .ateam-amplify-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 52px;
+    }
+
+    .ateam-amplify-info {
+      background: #1d1d1d;
+      border: 1px solid #333333;
+      padding: 32px;
+    }
+
+    .ateam-amplify-info p {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .ateam-amplify-cta {
+      margin-top: 54px;
+      background: #d8c9ad;
+      color: #111111;
+      padding: 38px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .ateam-amplify-cta h3 {
+      color: #111111;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .ateam-amplify-cta p {
+      color: #333333;
+      margin: 0;
+      max-width: 760px;
+    }
+
+    .ateam-amplify-btn {
+      display: inline-block;
+      background: #111111;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 16px 26px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid #111111;
+      transition: 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .ateam-amplify-btn:hover {
+      background: #4D4E50;
+      border-color: #4D4E50;
+      transform: translateY(-2px);
+    }
+
+    .ateam-amplify-disclaimer {
+      margin-top: 28px;
+      color: #aaaaaa;
+      font-size: 12px;
+      line-height: 1.6;
+      max-width: 1120px;
+    }
+
+    @media (max-width: 980px) {
+      .ateam-amplify-hero,
+      .ateam-amplify-cta {
+        grid-template-columns: 1fr;
+      }
+
+      .ateam-amplify-stats,
+      .ateam-amplify-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ateam-amplify-section {
+        padding: 64px 6%;
+      }
+
+      .ateam-amplify-cta {
+        padding: 30px;
+      }
+
+      .ateam-amplify-btn {
+        text-align: center;
+      }
+    }
+  </style>
+
+  <div class="ateam-amplify-wrap">
+
+    <div class="ateam-amplify-hero">
+      <div>
+        <p class="ateam-amplify-eyebrow">AI-Powered Property Marketing</p>
+
+        <h2>Amplify™: Smarter Marketing For Serious Sellers</h2>
+
+        <p>
+          Most agents can place your property on the usual real estate websites. But today, the best buyer for your home may not be actively searching every day.
+        </p>
+
+        <p>
+          They may be scrolling Facebook, watching Instagram, searching on Google, comparing suburbs quietly, or waiting for the right property to appear in front of them.
+        </p>
+
+        <div class="ateam-amplify-highlight">
+          Your property should not just sit online waiting to be found. It should be actively marketed to the people most likely to care.
+        </div>
+
+        <p>
+          Amplify™ is Raine & Horne’s AI-powered digital marketing technology, designed to match your property with more of the right people, in the right place, at the right time.
+        </p>
+      </div>
+
+      <div class="ateam-amplify-card">
+        <div class="ateam-amplify-logo">Amplify™</div>
+
+        <h3>More Than A Standard Listing</h3>
+
+        <p>
+          Amplify™ helps your property reach potential buyers across Google, Facebook, Instagram and digital channels — using location, interests, behaviour and buyer signals.
+        </p>
+
+        <div class="ateam-amplify-points">
+          <div class="ateam-amplify-point">
+            <span class="ateam-amplify-tick">✓</span>
+            <span>Targets more relevant buyer audiences online</span>
+          </div>
+
+          <div class="ateam-amplify-point">
+            <span class="ateam-amplify-tick">✓</span>
+            <span>Helps your property stand out beyond standard portals</span>
+          </div>
+
+          <div class="ateam-amplify-point">
+            <span class="ateam-amplify-tick">✓</span>
+            <span>Creates multiple digital ad versions for different buyer groups</span>
+          </div>
+
+          <div class="ateam-amplify-point">
+            <span class="ateam-amplify-tick">✓</span>
+            <span>Supports stronger awareness, enquiry and competition</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ateam-amplify-stats">
+      <div class="ateam-amplify-stat">
+        <strong>15</strong>
+        <span>days faster average sale duration*</span>
+      </div>
+
+      <div class="ateam-amplify-stat">
+        <strong>+$2,436</strong>
+        <span>increase in average sale price*</span>
+      </div>
+
+      <div class="ateam-amplify-stat">
+        <strong>+3.3%</strong>
+        <span>higher sale success rate*</span>
+      </div>
+    </div>
+
+    <div class="ateam-amplify-grid">
+      <div class="ateam-amplify-info">
+        <h3>Find Buyers Others May Miss</h3>
+        <p>
+          Some buyers are actively searching. Others are passive, curious or waiting. Amplify™ helps put your property in front of more potential buyers before they even visit a property portal.
+        </p>
+      </div>
+
+      <div class="ateam-amplify-info">
+        <h3>Speak To Different Buyer Types</h3>
+        <p>
+          Families, investors, first-home buyers, renovators and downsizers notice different things. Amplify™ helps tailor digital messages and images to appeal to different audiences.
+        </p>
+      </div>
+
+      <div class="ateam-amplify-info">
+        <h3>Technology Plus Strategy</h3>
+        <p>
+          We combine Amplify™ with professional photography, strong property wording, local market knowledge, buyer follow-up and skilled negotiation.
+        </p>
+      </div>
+    </div>
+
+    <div class="ateam-amplify-cta">
+      <div>
+        <h3>Good Marketing Should Not Be Passive</h3>
+        <p>
+          Before choosing an agent, ask: how will you find the best buyers for my property — not just the obvious ones?
+        </p>
+      </div>
+
+      <a class="ateam-amplify-btn" href="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-west-auckland/">
+        Get My Free Appraisal
+      </a>
+    </div>
+
+    <p class="ateam-amplify-disclaimer">
+      *Based on a Raine & Horne analysis of 1,366 residential property listings from January 2024 to August 2025 comparing properties marketed with Amplify™ against those marketed without it. Results may vary depending on property type, location, price, market conditions, presentation and campaign strategy. Amplify™ does not guarantee a sale price or selling timeframe. Raine & Horne Amplify™ is a registered trademark of Raine & Horne (Holdings) Pty Ltd. Licensed under the REAA 2008.
+    </p>
+
+  </div>
+</section>
+<!-- AMPLIFY SECTION END -->
 <section class="section cream" id="appraisal">
   <div class="section-wrap appraisal-panel">
     <p class="eyebrow">Free Property Appraisal</p>
