@@ -15,8 +15,9 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://theateamraineandhorne.github.io/The-A-Team/">
   <meta property="og:image" content="https://theateamraineandhorne.github.io/The-A-Team/images/west-auckland-free-property-appraisal.jpg">
-  <link rel="preload" as="image" href="images/west-auckland-free-property-appraisal.jpg" fetchpriority="high">
   <meta property="og:image:alt" content="West Auckland free property appraisal and home selling advice from Team Peter and Edita Raine and Horne">
+
+  <link rel="preload" as="image" href="images/west-auckland-free-property-appraisal.jpg" fetchpriority="high">
 
   <style>
     :root {
@@ -315,6 +316,11 @@
       padding: 78px 20px;
     }
 
+    section:not(.hero) {
+      content-visibility: auto;
+      contain-intrinsic-size: 800px;
+    }
+
     .container {
       max-width: 1220px;
       margin: 0 auto;
@@ -436,6 +442,45 @@
       width: 100%;
       height: 100%;
       border: 0;
+    }
+
+    .video-placeholder {
+      background: #000;
+    }
+
+    .video-play-button {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      background: #000;
+    }
+
+    .video-play-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      opacity: 0.88;
+    }
+
+    .video-play-button span {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      transform: translate(-50%, -50%);
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      font-weight: 900;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.35);
     }
 
     .bullet-list {
@@ -618,20 +663,19 @@
   </script>
 
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": "Raine & Horne Amplify AI Property Marketing",
-  "description": "Video explaining Raine & Horne Amplify and how AI-powered digital marketing can help promote property listings to more relevant buyers.",
-  "thumbnailUrl": [
-    "https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg"
-  ],
-  "uploadDate": "2024-12-03T09:00:00+13:00",
-  "duration": "PT2M",
-  "embedUrl": "https://www.youtube.com/embed/DkKp8I__4mI",
-  "contentUrl": "https://www.youtube.com/watch?v=DkKp8I__4mI"
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Raine & Horne Amplify AI Property Marketing",
+    "description": "Video explaining Raine & Horne Amplify and how AI-powered digital marketing can help promote property listings to more relevant buyers.",
+    "thumbnailUrl": [
+      "https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg"
+    ],
+    "uploadDate": "2024-12-03T09:00:00+13:00",
+    "embedUrl": "https://www.youtube.com/embed/DkKp8I__4mI",
+    "contentUrl": "https://www.youtube.com/watch?v=DkKp8I__4mI"
+  }
+  </script>
 
   <script type="application/ld+json">
   {
@@ -684,6 +728,7 @@
         <a href="#appraisal">Free Appraisal</a>
         <a href="#amplify">Amplify</a>
         <a href="#suburbs">Suburbs</a>
+        <a href="free-home-appraisal-near-me/">Agents Near Me</a>
         <a href="#reviews">Reviews</a>
         <a href="#request-appraisal">Contact</a>
       </div>
@@ -694,14 +739,14 @@
 
     <section class="hero" id="appraisal">
       <img
-  src="images/west-auckland-free-property-appraisal.jpg"
-  alt="West Auckland property appraisal and home selling advice from Team Peter and Edita Raine and Horne"
-  class="hero-bg"
-  width="1800"
-  height="1000"
-  loading="eager"
-  fetchpriority="high"
-  decoding="async">
+        src="images/west-auckland-free-property-appraisal.jpg"
+        alt="West Auckland property appraisal and home selling advice from Team Peter and Edita Raine and Horne"
+        class="hero-bg"
+        width="1800"
+        height="1000"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async">
 
       <div class="hero-overlay"></div>
 
@@ -887,14 +932,14 @@
           </div>
 
           <div>
-            <div class="video-wrap">
-              <iframe
-                src="https://www.youtube.com/embed/DkKp8I__4mI"
-                title="Raine & Horne Amplify AI Property Marketing"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                loading="lazy">
-              </iframe>
+            <div class="video-wrap video-placeholder" data-video-id="DkKp8I__4mI">
+              <button class="video-play-button" type="button" aria-label="Play Raine and Horne Amplify video">
+                <img
+                  src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg"
+                  alt="Raine and Horne Amplify AI property marketing video"
+                  loading="lazy">
+                <span>▶</span>
+              </button>
             </div>
           </div>
         </div>
@@ -922,6 +967,7 @@
           <a class="suburb-link" href="free-home-appraisal-new-windsor/">New Windsor</a>
           <a class="suburb-link" href="free-home-appraisal-glendene/">Glendene</a>
           <a class="suburb-link" href="free-home-appraisal-avondale/">Avondale</a>
+          <a class="suburb-link" href="free-home-appraisal-near-me/">Real Estate Agents Near Me</a>
         </div>
       </div>
     </section>
@@ -937,9 +983,7 @@
         </div>
 
         <div class="reviews-card">
-          <div class="elfsight-review-box">
-            <!-- Elfsight Google Reviews | THE A-TEAM REVIEWS -->
-            <script src="https://elfsightcdn.com/platform.js" async></script>
+          <div class="elfsight-review-box" id="reviews-widget">
             <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
           </div>
         </div>
@@ -962,6 +1006,7 @@
           <li>House value estimate</li>
           <li>Sell my house West Auckland</li>
           <li>Real estate agent West Auckland</li>
+          <li>Real estate agents near me</li>
           <li>Property pricing advice</li>
           <li>Home selling strategy</li>
           <li>Pre-sale presentation advice</li>
@@ -980,7 +1025,6 @@
           <li>Cross-lease property advice</li>
           <li>Unit and townhouse selling advice</li>
           <li>Development opportunity advice</li>
-          <li>Local market advice</li>
         </ul>
       </div>
     </section>
@@ -1040,12 +1084,66 @@
         <p><strong>Call:</strong> <a href="tel:021765234">021 765 234</a></p>
         <p><strong>Email:</strong> <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a></p>
         <p><strong>Website:</strong> <a href="https://www.raineandhorne.co.nz/blockhousebay">Raine & Horne Blockhouse Bay</a></p>
+        <p><strong>Useful link:</strong> <a href="free-home-appraisal-near-me/">Real Estate Agents Near Me</a></p>
         <p class="small">
           Areas served: Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and nearby suburbs.
         </p>
       </div>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('.video-placeholder').forEach(function (wrapper) {
+      const button = wrapper.querySelector('button');
+      const videoId = wrapper.getAttribute('data-video-id');
+
+      if (!button || !videoId) return;
+
+      button.addEventListener('click', function () {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+        iframe.title = 'Raine & Horne Amplify AI Property Marketing';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.loading = 'lazy';
+
+        wrapper.innerHTML = '';
+        wrapper.appendChild(iframe);
+      });
+    });
+  </script>
+
+  <script>
+    (function () {
+      const reviews = document.getElementById('reviews-widget');
+      let loaded = false;
+
+      function loadElfsight() {
+        if (loaded) return;
+        loaded = true;
+
+        const script = document.createElement('script');
+        script.src = 'https://elfsightcdn.com/platform.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+
+      if ('IntersectionObserver' in window && reviews) {
+        const observer = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) {
+            loadElfsight();
+            observer.disconnect();
+          }
+        }, {
+          rootMargin: '300px'
+        });
+
+        observer.observe(reviews);
+      } else {
+        window.addEventListener('load', loadElfsight);
+      }
+    })();
+  </script>
 
 </body>
 </html>
