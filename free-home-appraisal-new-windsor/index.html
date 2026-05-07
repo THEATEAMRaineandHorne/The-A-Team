@@ -1,192 +1,349 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>New Windsor House Appraisal | Free Market Advice</title>
-
-  <meta name="description" content="What is your New Windsor home worth? Request a free property appraisal and get local selling advice on price, buyer demand, presentation, timing and strategy.">
+  <title>Free Home Appraisal New Windsor | Raine & Horne</title>
+  <meta name="description" content="What is your New Windsor home worth? Get a free property appraisal with local pricing, buyer demand, presentation and selling advice.">
 
   <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-new-windsor/">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Free Home Appraisal New Windsor | Raine & Horne">
+  <meta property="og:description" content="What is your New Windsor home worth? Get a free property appraisal with local pricing, buyer demand, presentation and selling advice.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-new-windsor/">
+  <meta property="og:image" content="https://theateamraineandhorne.github.io/The-A-Team/images/new-windsor-home-appraisal.jpg">
+  <meta property="og:image:alt" content="New Windsor home appraisal and property selling advice from Team Peter and Edita Raine and Horne">
 
   <style>
+    :root {
+      --gold: #ffb200;
+      --dark: #232323;
+      --charcoal: #4D4E50;
+      --white: #ffffff;
+      --border: #e8e2d7;
+      --soft-gold: #fff5db;
+      --light: #f7f7f5;
+    }
+
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
     }
 
-    :root {
-      --gold: #b08a42;
-      --gold-dark: #8f6d2e;
-      --black: #111111;
-      --cream: #d8c9ad;
-      --soft: #f7f4ef;
-      --white: #ffffff;
-      --text: #222222;
-      --muted: #555555;
-      --line: #e7dfd1;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
-      font-family: Arial, sans-serif;
-      background: var(--soft);
-      color: var(--text);
-      line-height: 1.65;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
     }
 
-    h1,
-    h2,
-    h3 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: 400;
-      line-height: 1.12;
-    }
-
-    p {
-      font-size: 17px;
-      color: var(--muted);
-      margin-bottom: 18px;
-    }
-
-    ul {
-      padding-left: 22px;
-      margin: 14px 0 26px;
-    }
-
-    li {
-      font-size: 17px;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-
-    .site-header {
-      background: #111111;
-      color: white;
-      padding: 22px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 22px;
-    }
-
-    .logo {
-      font-size: 18px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    nav a {
-      color: white;
+    a {
+      color: inherit;
       text-decoration: none;
-      margin-left: 22px;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
     }
 
-    nav a:hover {
-      color: #e7c782;
+    .topbar {
+      background: var(--dark);
+      color: var(--white);
+      font-size: 14px;
+      padding: 9px 20px;
+      text-align: center;
+    }
+
+    .topbar a {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
     }
 
     .hero {
-      background:
-        radial-gradient(circle at top right, rgba(176,138,66,.18), transparent 36%),
-        linear-gradient(135deg, #f7f4ef 0%, #efe6d8 100%);
-      padding: 90px 8% 70px;
+      background: linear-gradient(135deg, #fff8e8 0%, #ffffff 50%, #f2f2ef 100%);
+      padding: 72px 20px;
     }
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.05fr) 460px;
-      gap: 52px;
-      align-items: start;
-      max-width: 1280px;
+    .hero-inner {
+      max-width: 1180px;
       margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: center;
     }
 
     .eyebrow {
-      color: var(--gold-dark);
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      display: inline-block;
+      background: var(--dark);
+      color: var(--gold);
+      padding: 7px 12px;
+      border-radius: 999px;
       font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 16px;
+      font-weight: 800;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
     }
 
-    .hero h1 {
-      font-size: clamp(44px, 6vw, 76px);
-      color: var(--black);
-      margin-bottom: 24px;
-      max-width: 850px;
+    h1 {
+      font-size: clamp(36px, 5vw, 60px);
+      line-height: 1.05;
+      margin: 0 0 18px;
+      letter-spacing: -1.8px;
     }
 
-    .hero-lead {
-      font-size: 21px;
-      color: #333333;
-      max-width: 780px;
-      margin-bottom: 30px;
+    h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 14px;
+      letter-spacing: -1px;
     }
 
-    .local-proof {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      margin-top: 32px;
-      max-width: 860px;
-    }
-
-    .proof-box {
-      background: rgba(255,255,255,.72);
-      border: 1px solid var(--line);
-      padding: 20px;
-    }
-
-    .proof-box strong {
-      display: block;
-      font-family: Georgia, "Times New Roman", serif;
+    h3 {
+      margin: 0 0 10px;
       font-size: 22px;
-      font-weight: 400;
-      margin-bottom: 8px;
-      color: var(--black);
+      line-height: 1.2;
     }
 
-    .proof-box span {
-      color: var(--muted);
-      font-size: 15px;
+    p {
+      margin-top: 0;
     }
 
-    .form-card {
-      background: #111111;
-      padding: 34px;
-      border: 1px solid rgba(176,138,66,.55);
-      box-shadow: 0 24px 70px rgba(0,0,0,.22);
-      position: sticky;
-      top: 24px;
+    .hero p {
+      font-size: 18px;
+      max-width: 720px;
+      margin-bottom: 22px;
     }
 
-    .form-card h2 {
-      color: white;
-      font-size: 34px;
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-weight: 800;
+      border: 2px solid var(--dark);
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    .btn-primary:hover {
+      background: var(--dark);
+      color: var(--gold);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--dark);
+    }
+
+    .btn-secondary:hover {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .hero-card,
+    .card,
+    .form-wrap {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 26px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.06);
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    .hero-card h2 {
+      font-size: 26px;
+      margin-top: 0;
+    }
+
+    .hero-reviews {
+      max-width: 1180px;
+      margin: 42px auto 0;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 26px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.06);
+    }
+
+    .hero-reviews-header {
+      margin-bottom: 18px;
+    }
+
+    .hero-reviews-header .eyebrow {
       margin-bottom: 12px;
     }
 
-    .form-card p {
-      color: #dddddd;
-      font-size: 15px;
-      margin-bottom: 24px;
+    .hero-reviews-header h2 {
+      font-size: clamp(26px, 3vw, 36px);
+      margin-bottom: 8px;
     }
 
-    form label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 15px;
-      color: white;
+    .hero-reviews-header p {
+      color: #444;
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    .elfsight-review-box {
+      width: 100%;
+      min-height: 180px;
+      overflow: hidden;
+    }
+
+    section {
+      padding: 68px 20px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      max-width: 860px;
+      margin-bottom: 34px;
+    }
+
+    .section-title p {
+      font-size: 17px;
+      color: #444;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .highlight {
+      background: var(--soft-gold);
+    }
+
+    .dark-section {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .dark-section .card {
+      background: #303030;
+      border-color: #555;
+    }
+
+    .dark-section p,
+    .dark-section .card p {
+      color: #eeeeee;
+    }
+
+    .mini-list {
+      padding: 0;
+      margin: 18px 0 0;
+      list-style: none;
+    }
+
+    .mini-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-weight: 700;
+    }
+
+    .mini-list li:last-child {
+      border-bottom: none;
+    }
+
+    .suburb-links {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .suburb-links a {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 16px;
+      border-radius: 14px;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .suburb-links a:hover {
+      background: var(--gold);
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    label {
+      font-weight: 800;
       font-size: 14px;
     }
 
@@ -194,300 +351,99 @@
     select,
     textarea {
       width: 100%;
-      margin-top: 7px;
-      padding: 14px 15px;
-      border: 1px solid #4a4a4a;
-      font-size: 15px;
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #222222;
-    }
-
-    input:focus,
-    select:focus,
-    textarea:focus {
-      outline: none;
-      border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(176,138,66,.22);
+      padding: 13px 14px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: inherit;
     }
 
     textarea {
+      min-height: 120px;
       resize: vertical;
     }
 
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-
-    .btn {
-      display: inline-block;
-      width: 100%;
-      padding: 16px 30px;
-      border: 1px solid var(--gold);
-      background: var(--gold);
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 1.4px;
-      font-size: 13px;
-      font-weight: bold;
+    button {
       cursor: pointer;
-      transition: .25s ease;
+      border: none;
+      font-family: inherit;
+      font-size: 16px;
     }
 
-    .btn:hover {
-      background: var(--gold-dark);
-      border-color: var(--gold-dark);
-      transform: translateY(-1px);
-    }
-
-    .small-note {
-      font-size: 12px !important;
-      color: #bfbfbf !important;
-      margin-top: 16px;
-      margin-bottom: 0;
-    }
-
-    .section {
-      padding: 82px 8%;
-    }
-
-    .white {
-      background: white;
-    }
-
-    .soft {
-      background: var(--soft);
-    }
-
-    .black {
-      background: #111111;
-      color: white;
-    }
-
-    .cream {
-      background: var(--cream);
-    }
-
-    .content {
-      max-width: 1080px;
-      margin: 0 auto;
-    }
-
-    .narrow {
-      max-width: 860px;
-    }
-
-    .section h2 {
-      font-size: clamp(34px, 4vw, 50px);
-      margin-bottom: 22px;
-      color: var(--black);
-    }
-
-    .black h2,
-    .black h3 {
-      color: white;
-    }
-
-    .black p,
-    .black li {
-      color: #d7d7d7;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: .95fr 1.05fr;
-      gap: 52px;
-      align-items: start;
-    }
-
-    .feature-panel {
-      background: var(--soft);
-      border-left: 5px solid var(--gold);
-      padding: 30px;
-    }
-
-    .feature-panel h3 {
-      font-size: 30px;
-      margin-bottom: 14px;
-    }
-
-    .comparison-highlight {
-      background: #111111;
-      color: white;
-      padding: 34px;
-      margin-top: 30px;
-    }
-
-    .comparison-highlight h3 {
-      color: white;
-      font-size: 30px;
-      margin-bottom: 14px;
-    }
-
-    .comparison-highlight p {
-      color: #dddddd;
-    }
-
-    .value-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 34px;
-    }
-
-    .value-card {
-      background: white;
-      border: 1px solid #eeeeee;
-      padding: 30px;
-    }
-
-    .value-card h3 {
-      font-size: 26px;
-      margin-bottom: 14px;
-    }
-
-    .value-card p {
-      margin-bottom: 0;
-    }
-
-    .comparison-box {
-      background: #1d1d1d;
-      border: 1px solid #333333;
-      padding: 30px;
-      margin-top: 34px;
-    }
-
-    .comparison-box h3 {
-      font-size: 30px;
-      margin-bottom: 14px;
-      color: white;
-    }
-
-    .comparison-box p {
-      color: #dddddd;
-    }
-
-    .steps {
-      counter-reset: step;
-      display: grid;
-      gap: 22px;
-      margin-top: 34px;
-    }
-
-    .step {
-      background: white;
-      border: 1px solid #eeeeee;
-      padding: 28px;
-      position: relative;
-    }
-
-    .step::before {
-      counter-increment: step;
-      content: counter(step);
-      position: absolute;
-      top: 24px;
-      right: 28px;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background: var(--gold);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-    }
-
-    .step h3 {
-      font-size: 26px;
+    .faq details {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
       margin-bottom: 12px;
-      padding-right: 50px;
+      background: var(--white);
     }
 
-    .faq {
-      background: white;
-      border: 1px solid #eeeeee;
-      padding: 34px;
-      margin-top: 34px;
-    }
-
-    .faq h3 {
-      font-size: 24px;
-      margin: 26px 0 10px;
-    }
-
-    .cta-band {
-      background: var(--cream);
-      padding: 60px 8%;
-      text-align: center;
-    }
-
-    .cta-band h2 {
-      font-size: clamp(34px, 4vw, 48px);
-      margin-bottom: 16px;
-    }
-
-    .cta-band p {
-      max-width: 720px;
-      margin: 0 auto 26px;
-    }
-
-    .cta-band .btn {
-      width: auto;
+    .faq summary {
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 18px;
     }
 
     footer {
-      background: #111111;
-      color: white;
-      padding: 38px 8%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 24px;
-      font-size: 14px;
+      background: var(--dark);
+      color: var(--white);
+      padding: 42px 20px;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 28px;
     }
 
     footer a {
-      color: white;
-      text-decoration: none;
+      color: var(--gold);
+      font-weight: 800;
     }
 
-    footer a:hover {
-      color: #e7c782;
+    .small {
+      font-size: 13px;
+      color: #d6d6d6;
     }
 
-    @media(max-width: 980px) {
-      .site-header {
-        display: block;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 10px 12px 0 0;
-      }
-
-      .hero {
-        padding: 60px 6%;
-      }
-
-      .hero-grid,
-      .split,
-      .local-proof,
-      .value-grid,
-      .form-grid {
+    @media (max-width: 900px) {
+      .hero-inner,
+      .grid-2,
+      .grid-3,
+      .footer-inner {
         grid-template-columns: 1fr;
       }
 
-      .form-card {
-        position: relative;
-        top: 0;
+      .suburb-links {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .section {
-        padding: 60px 6%;
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .hero-reviews {
+        margin-top: 30px;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .suburb-links {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 52px 18px;
+      }
+
+      .hero {
+        padding: 56px 18px;
       }
     }
   </style>
@@ -496,15 +452,43 @@
   {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    "name": "Team Peter & Edita | Raine & Horne",
-    "description": "Free property appraisal and selling advice for New Windsor homeowners.",
+    "name": "Team Peter & Edita | Raine & Horne Titirangi, Blockhouse Bay & Lynfield",
     "url": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-new-windsor/",
     "telephone": "+6421765234",
-    "areaServed": ["New Windsor", "Auckland"],
-    "brand": {
-      "@type": "Brand",
-      "name": "Raine & Horne"
-    }
+    "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
+    "priceRange": "$$",
+    "image": "https://theateamraineandhorne.github.io/The-A-Team/images/new-windsor-home-appraisal.jpg",
+    "logo": "https://theateamraineandhorne.github.io/The-A-Team/images/rh-logo.png",
+    "areaServed": [
+      "New Windsor",
+      "Mount Roskill",
+      "Mt Roskill",
+      "Lynfield",
+      "Blockhouse Bay",
+      "New Lynn",
+      "Avondale",
+      "West Auckland",
+      "Central Auckland"
+    ],
+    "description": "Free home appraisal and property selling advice for homeowners in New Windsor, Auckland. Team Peter & Edita help with pricing, presentation, buyer demand, marketing and negotiation.",
+    "knowsAbout": [
+      "New Windsor real estate",
+      "Free home appraisal New Windsor",
+      "Property appraisal New Windsor",
+      "Selling a home in New Windsor",
+      "West Auckland real estate",
+      "Central Auckland real estate",
+      "Buyer demand",
+      "Property pricing strategy",
+      "Pre-sale presentation",
+      "Renovation potential",
+      "Raine & Horne Amplify",
+      "Property marketing",
+      "Negotiation strategy"
+    ],
+    "sameAs": [
+      "https://www.raineandhorne.co.nz/blockhousebay"
+    ]
   }
   </script>
 
@@ -515,10 +499,10 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How do I find out what my New Windsor home is worth?",
+        "name": "How do I get a free home appraisal in New Windsor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A local New Windsor appraisal should consider recent comparable sales, current buyer demand, property condition, layout, land, parking, presentation, access and nearby competition."
+          "text": "You can request a free New Windsor home appraisal by sending your property address, contact details and selling timeframe to Team Peter & Edita. The advice can include local pricing, buyer demand, property presentation and selling strategy."
         }
       },
       {
@@ -526,15 +510,23 @@
         "name": "What affects property value in New Windsor?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "New Windsor property value can be affected by location, land, condition, renovation quality, parking, outdoor space, transport access, buyer demand and how the home compares with nearby suburbs such as Lynfield, Blockhouse Bay, New Lynn, Avondale and Mount Roskill."
+          "text": "Property value in New Windsor can be affected by location, motorway access, land, condition, layout, parking, renovation potential, presentation, buyer demand and recent comparable sales."
         }
       },
       {
         "@type": "Question",
-        "name": "Is a real estate appraisal the same as a registered valuation?",
+        "name": "Is a New Windsor appraisal the same as an online property estimate?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. A real estate appraisal is an agent's market estimate based on likely buyer demand and comparable sales. A registered valuation is a formal valuation completed by a registered valuer."
+          "text": "No. An online estimate can be a rough guide, but a proper New Windsor appraisal considers property condition, presentation, access, layout, buyer confidence, competing homes and current market evidence."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Team Peter & Edita help if I am not ready to sell yet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Earlier advice can help New Windsor homeowners understand value, avoid unnecessary spending, improve presentation and make smarter selling decisions before going to market."
         }
       }
     ]
@@ -544,338 +536,347 @@
 
 <body>
 
-<header class="site-header">
-  <div class="logo">Team Peter & Edita</div>
+  <div class="topbar">
+    Free New Windsor home appraisal · Call <a href="tel:021765234">021 765 234</a> · Licensed under the REAA 2008
+  </div>
 
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="../index.html#articles">Articles</a>
-    <a href="../index.html#suburbs">Suburbs</a>
-    <a href="tel:021765234">Call</a>
-  </nav>
-</header>
+  <header>
+    <nav class="nav">
+      <a href="https://theateamraineandhorne.github.io/The-A-Team/" class="brand">
+        Team Peter & Edita <span>| Raine & Horne</span>
+      </a>
 
-<section class="hero">
-  <div class="hero-grid">
-    <div>
-      <p class="eyebrow">New Windsor Home Value Guide</p>
+      <div class="nav-links">
+        <a href="#appraisal">Free Appraisal</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#local-advice">New Windsor Advice</a>
+        <a href="#request-appraisal">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-      <h1>What Is My New Windsor Home Worth?</h1>
+  <main>
 
-      <p class="hero-lead">
-        New Windsor can be easy to underestimate because buyers often compare it with several nearby suburbs at once — Lynfield, Blockhouse Bay, New Lynn, Avondale and Mount Roskill.
-      </p>
+    <section class="hero" id="appraisal">
+      <div class="hero-inner">
+        <div>
+          <span class="eyebrow">Free Home Appraisal New Windsor</span>
+          <h1>What Is Your New Windsor Home Worth?</h1>
 
-      <p class="hero-lead">
-        A proper appraisal should look at more than an online estimate. It should consider how your home presents, who the likely buyer is, what else they can buy nearby, and what could make them confident enough to offer.
-      </p>
+          <p>
+            If you are thinking of selling in <strong>New Windsor</strong>, the real question is not only what your property may be worth. It is how buyers will judge location, motorway access, condition, layout, parking, future potential and overall value.
+          </p>
 
-      <div class="local-proof">
-        <div class="proof-box">
-          <strong>Location</strong>
-          <span>Buyers compare New Windsor for access, convenience and nearby suburb alternatives.</span>
+          <p>
+            Team Peter & Edita from Raine & Horne help New Windsor homeowners with local pricing advice, buyer demand, property presentation, marketing and negotiation strategy before going to market.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#request-appraisal">Request Free New Windsor Appraisal</a>
+            <a class="btn btn-secondary" href="tel:021765234">Call 021 765 234</a>
+          </div>
         </div>
 
-        <div class="proof-box">
-          <strong>Liveability</strong>
-          <span>Layout, parking, storage, outdoor space and presentation can strongly influence value.</span>
+        <aside class="hero-card">
+          <img 
+            src="../images/new-windsor-home-appraisal.jpg" 
+            alt="New Windsor home appraisal and property selling advice from Team Peter and Edita Raine and Horne" 
+            width="1600" 
+            height="900" 
+            class="hero-image"
+            loading="eager">
+
+          <h2>What you get</h2>
+          <ul class="mini-list">
+            <li>Local New Windsor value guidance</li>
+            <li>Recent comparable sales discussion</li>
+            <li>Buyer demand and likely buyer groups</li>
+            <li>Presentation and preparation advice</li>
+            <li>Marketing and launch strategy</li>
+            <li>Clear next steps if you decide to sell</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="hero-reviews" id="google-reviews">
+        <div class="hero-reviews-header">
+          <span class="eyebrow">Google Reviews</span>
+          <h2>What Local Sellers Say About Team Peter & Edita</h2>
+          <p>
+            Read recent Google reviews from people who have worked with Team Peter & Edita and Raine & Horne.
+          </p>
         </div>
 
-        <div class="proof-box">
-          <strong>Confidence</strong>
-          <span>Older homes need clear documents, maintenance confidence and strong first impressions.</span>
+        <div class="elfsight-review-box">
+          <!-- Elfsight Google Reviews | THE A-TEAM REVIEWS -->
+          <script src="https://elfsightcdn.com/platform.js" async></script>
+          <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="form-card" id="appraisal-form">
-      <h2>Free New Windsor Appraisal</h2>
-
-      <p>
-        Tell us a little about your property and we will help you understand where it may sit in today’s market.
-      </p>
-
-      <form action="https://formspree.io/f/mdabnpgl" method="POST">
-        <input type="hidden" name="_subject" value="New New Windsor Home Value Request - The A-Team Website" />
-        <input type="hidden" name="landing_page" value="What Is My New Windsor Home Worth" />
-
-        <div class="form-grid">
-          <label>
-            First name
-            <input type="text" name="first_name" required />
-          </label>
-
-          <label>
-            Phone number
-            <input type="tel" name="phone" required />
-          </label>
+    <section id="why-us">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Why choose us</span>
+          <h2>More Than A Price Estimate — A New Windsor Selling Strategy</h2>
+          <p>
+            A useful appraisal should help you make better decisions. We look at value, buyer behaviour, property presentation, likely objections and the best way to create buyer confidence.
+          </p>
         </div>
 
-        <label>
-          Email address
-          <input type="email" name="email" required />
-        </label>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Local buyer understanding</h3>
+            <p>
+              New Windsor buyers often look for convenience, motorway access, family practicality, quiet streets, parking, renovation potential and value compared with nearby central-west suburbs.
+            </p>
+          </div>
 
-        <label>
-          Property address
-          <input type="text" name="property_address" placeholder="Please enter the New Windsor property address" required />
-        </label>
+          <div class="card">
+            <h3>Seller-first advice</h3>
+            <p>
+              For New Windsor sellers, the strategy should make the property’s everyday convenience easy to see. Buyers often compare layout, condition, outdoor use, access and future improvement potential.
+            </p>
+          </div>
 
-        <div class="form-grid">
-          <label>
-            Property suburb
-            <input type="text" name="suburb" value="New Windsor" required />
-          </label>
+          <div class="card">
+            <h3>Value strategy</h3>
+            <p>
+              New Windsor value is often shaped by location, access, land, home condition, layout, parking and buyer confidence in the property’s long-term practicality.
+            </p>
+          </div>
 
-          <label>
-            Selling timeframe
-            <select name="selling_timeframe" required>
-              <option value="">Please choose</option>
-              <option>As soon as possible</option>
-              <option>Within 1–3 months</option>
-              <option>Within 3–6 months</option>
-              <option>Later this year</option>
-              <option>Just curious for now</option>
-            </select>
-          </label>
+          <div class="card">
+            <h3>Amplify AI marketing</h3>
+            <p>
+              Raine & Horne Amplify helps put your property in front of more of the right buyers across key digital channels, supporting stronger awareness beyond standard real estate websites.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Conjunctional approach</h3>
+            <p>
+              We work with other agencies and agents where it helps your sale. Choosing us does not mean limiting the buyer pool — it means having experienced local agents manage the process while reaching more buyers.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Direct local service</h3>
+            <p>
+              You deal directly with experienced agents who are personally involved in strategy, feedback, buyer follow-up, negotiation and communication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight" id="local-advice">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">New Windsor property advice</span>
+          <h2>What New Windsor Sellers Should Think About Before Going To Market</h2>
+          <p>
+            Buyers do not judge every suburb the same way. In New Windsor, many buyers are weighing convenience, access, family practicality, value, condition and how the home compares with nearby Lynfield, Mount Roskill, New Lynn and Blockhouse Bay options.
+          </p>
         </div>
 
-        <label>
-          What would you like help with?
-          <select name="main_reason" required>
-            <option value="">Please choose</option>
-            <option>Finding out the likely value</option>
-            <option>Preparing the home for sale</option>
-            <option>Choosing the best time to sell</option>
-            <option>Already listed and need advice</option>
-            <option>Comparing agents or selling options</option>
-            <option>Not sure yet</option>
-          </select>
-        </label>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Convenience and access</h3>
+            <p>
+              New Windsor buyers often value motorway links, access to nearby suburbs, schools, parks, shopping and practical daily routines. A strong campaign should make these everyday advantages easy to understand.
+            </p>
+          </div>
 
-        <label>
-          Tell us anything helpful
-          <textarea name="message" rows="5" placeholder="Example: We are thinking of selling our New Windsor home and want to understand value, timing and preparation."></textarea>
-        </label>
+          <div class="card">
+            <h3>Presentation and practicality</h3>
+            <p>
+              Buyers notice layout, natural light, storage, parking, outdoor usability, maintenance, kitchen function and whether the home feels easy to live in from day one.
+            </p>
+          </div>
 
-        <button class="btn" type="submit">Send Appraisal Request</button>
+          <div class="card">
+            <h3>Future potential</h3>
+            <p>
+              Some New Windsor homes attract buyers thinking about renovation, rental appeal, family growth or future flexibility. That potential needs to be clear without making the property feel risky or unfinished.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <p class="small-note">
-          Team Peter & Edita are licensed real estate salespeople with Raine & Horne. Your details are used only to respond to your appraisal request.
-        </p>
-      </form>
-    </div>
-  </div>
-</section>
+    <section class="dark-section">
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <span class="eyebrow">Goal match</span>
+            <h2>If Your Goal Is To Sell Well, Start With Better New Windsor Advice</h2>
+            <p>
+              A free New Windsor appraisal is not just about finding a number. It is about understanding what your property is competing against, what buyers are likely to notice, and how to create a stronger reason for them to act.
+            </p>
+            <p>
+              That is why our appraisal process looks at pricing, presentation, marketing, buyer targeting and negotiation together.
+            </p>
+          </div>
 
-<section class="section white">
-  <div class="content split">
-    <div>
-      <p class="eyebrow">Why Values Vary</p>
+          <div class="card">
+            <h3>Why a searcher should choose us</h3>
+            <p>
+              Because we help turn a property value question into a practical selling plan. We explain what may help, what may hurt, and how to position your New Windsor home so buyers feel more confident.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h2>New Windsor Homes Need Careful Price Positioning</h2>
+    <section id="request-appraisal">
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <span class="eyebrow">Request your free appraisal</span>
+            <h2>Find Out What Your New Windsor Property May Be Worth</h2>
+            <p>
+              Send your details and we will help you understand your likely value, buyer demand and the best next step for your situation.
+            </p>
 
-      <p>
-        New Windsor buyers often compare value across suburb borders. A buyer may look at your home, then compare it with something in Lynfield, Blockhouse Bay, Avondale, New Lynn or Mount Roskill.
-      </p>
+            <ul class="mini-list">
+              <li>No pressure</li>
+              <li>Local New Windsor property advice</li>
+              <li>Practical selling strategy</li>
+              <li>Clear guidance before you spend money</li>
+            </ul>
+          </div>
 
-      <p>
-        That means your price needs to make sense not only for New Windsor, but also against the wider central-west market. A useful appraisal should explain where your property sits, what buyers may compare it with, and how to make your home feel like the stronger choice.
-      </p>
-    </div>
+          <div class="form-wrap">
+            <form action="https://formspree.io/f/mdabnpgl" method="POST">
+              <input type="hidden" name="_subject" value="New New Windsor appraisal enquiry">
+              <input type="hidden" name="suburb" value="New Windsor">
 
-    <div class="feature-panel">
-      <h3>A stronger appraisal should answer:</h3>
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+              </div>
 
-      <ul>
-        <li>Which recent sales are genuinely comparable?</li>
-        <li>What other suburbs will buyers compare your home against?</li>
-        <li>Does the home feel move-in ready or like a project?</li>
-        <li>Will buyers see value in the land, location, layout or condition?</li>
-        <li>What should be improved before photos and open homes?</li>
-      </ul>
-    </div>
-  </div>
-</section>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" required>
+              </div>
 
-<section class="section cream">
-  <div class="content">
-    <p class="eyebrow">Local Buyer Comparison</p>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+              </div>
 
-    <h2>Why New Windsor Sellers Need To Think Beyond New Windsor</h2>
+              <div>
+                <label for="address">Property address</label>
+                <input id="address" name="property_address" type="text" required>
+              </div>
 
-    <p>
-      New Windsor buyers often search across several nearby suburbs before deciding where the best value sits. A buyer may compare a New Windsor home with properties in New Lynn, Blockhouse Bay, Lynfield, Avondale or Mount Roskill in the same price range.
-    </p>
+              <div>
+                <label for="timeframe">When are you thinking of selling?</label>
+                <select id="timeframe" name="selling_timeframe">
+                  <option value="">Select timeframe</option>
+                  <option>Just curious</option>
+                  <option>Within 3 months</option>
+                  <option>Within 6 months</option>
+                  <option>This year</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
 
-    <p>
-      This means your property is not only competing with other New Windsor homes. It may also be competing against homes with different school access, different land sizes, different presentation, different renovation levels and different convenience factors.
-    </p>
+              <div>
+                <label for="message">What would you like help with?</label>
+                <textarea id="message" name="message" placeholder="Example: value, timing, preparation, buyer demand, family home, renovation potential, investment property, rental appeal, etc."></textarea>
+              </div>
 
-    <p>
-      A strong appraisal should therefore look at the wider buyer comparison, not just a narrow suburb estimate. The question is not only what your home is worth in New Windsor — it is whether buyers will see it as better value than the alternatives nearby.
-    </p>
+              <button class="btn btn-primary" type="submit">Send My New Windsor Appraisal Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="comparison-highlight">
-      <h3>The New Windsor appraisal question</h3>
-      <p>
-        “Would a buyer see this home as the best choice compared with what they can also buy in nearby suburbs?”
-      </p>
-    </div>
-  </div>
-</section>
+    <section class="faq">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">New Windsor FAQs</span>
+          <h2>Free Home Appraisal New Windsor — Common Questions</h2>
+        </div>
 
-<section class="section soft">
-  <div class="content">
-    <p class="eyebrow">Buyer Behaviour</p>
+        <details>
+          <summary>Is the New Windsor appraisal really free?</summary>
+          <p>
+            Yes. We offer free appraisal advice for New Windsor homeowners who are thinking of selling, planning ahead, or simply wanting to understand their current market position.
+          </p>
+        </details>
 
-    <h2>What Buyers Often Compare In New Windsor</h2>
+        <details>
+          <summary>What makes a New Windsor appraisal different?</summary>
+          <p>
+            New Windsor homes often need more than a simple bedroom-count comparison. Access, location, land, parking, condition, presentation, family practicality and buyer confidence can all influence value.
+          </p>
+        </details>
 
-    <p class="narrow">
-      New Windsor can attract practical buyers who are looking for location, value, convenience and liveability. The best result often comes from making the property easy to understand and easy to compare favourably.
-    </p>
+        <details>
+          <summary>What makes your appraisal different from an online estimate?</summary>
+          <p>
+            Online estimates can miss condition, presentation, layout, access, buyer emotion, parking, outdoor usability, future potential, competing homes and current buyer demand. We look at the whole selling picture.
+          </p>
+        </details>
 
-    <div class="value-grid">
-      <div class="value-card">
-        <h3>Family Practicality</h3>
+        <details>
+          <summary>Can you help if we are not ready to sell yet?</summary>
+          <p>
+            Yes. Earlier advice often helps sellers avoid wasting money and make smarter preparation decisions before going to market.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Nearby appraisal pages</span>
+          <h2>Other West and Central Auckland Appraisal Areas</h2>
+        </div>
+
+        <div class="suburb-links">
+          <a href="../free-home-appraisal-mount-roskill/">Mount Roskill</a>
+          <a href="../free-home-appraisal-lynfield/">Lynfield</a>
+          <a href="../free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
+          <a href="../free-home-appraisal-new-lynn/">New Lynn</a>
+          <a href="../free-home-appraisal-avondale/">Avondale</a>
+          <a href="../free-home-appraisal-titirangi/">Titirangi</a>
+          <a href="../free-home-appraisal-green-bay/">Green Bay</a>
+          <a href="../free-home-appraisal-glen-eden/">Glen Eden</a>
+          <a href="../free-home-appraisal-glendene/">Glendene</a>
+          <a href="../">West Auckland</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h2>Team Peter & Edita | Raine & Horne</h2>
         <p>
-          Buyers may look closely at bedroom layout, storage, parking, outdoor space, school access and whether the home works for daily family life.
+          Helping New Windsor, West Auckland and Central-West Auckland homeowners with free property appraisals, selling strategy, buyer-focused marketing and negotiation.
+        </p>
+        <p class="small">
+          Licensed under the Real Estate Agents Act 2008. This website provides general real estate information and appraisal enquiry options. It is not a registered valuation.
         </p>
       </div>
 
-      <div class="value-card">
-        <h3>Condition & Presentation</h3>
-        <p>
-          A clean, bright, well-presented home can feel more valuable than a similar home that looks tired or harder to maintain.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <h3>Nearby Alternatives</h3>
-        <p>
-          Buyers may compare your home with New Lynn, Lynfield, Blockhouse Bay, Avondale and Mount Roskill options in a similar price range.
-        </p>
+      <div>
+        <p><strong>Call:</strong> <a href="tel:021765234">021 765 234</a></p>
+        <p><strong>Email:</strong> <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a></p>
+        <p><strong>Website:</strong> <a href="https://www.raineandhorne.co.nz/blockhousebay">Raine & Horne Blockhouse Bay</a></p>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="section black">
-  <div class="content">
-    <p class="eyebrow">Local Selling Strategy</p>
-
-    <h2>The Key Is To Make Buyers See New Windsor Value Clearly</h2>
-
-    <p>
-      Some buyers may not start their search in New Windsor first. They may discover it while comparing nearby suburbs for better value, more space, easier access or stronger long-term potential.
-    </p>
-
-    <p>
-      That is why your marketing should not just say what the home has. It should explain why the home makes sense compared with other choices buyers are considering.
-    </p>
-
-    <div class="comparison-box">
-      <h3>The best question is not only “what is my home worth?”</h3>
-      <p>
-        The better question is: “How do we make buyers understand why this New Windsor home is the stronger option for them?”
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="section white">
-  <div class="content">
-    <p class="eyebrow">Before You List</p>
-
-    <h2>How To Prepare A New Windsor Home Before Going To Market</h2>
-
-    <p class="narrow">
-      The right preparation depends on the property. Often, the biggest gains come from improving buyer confidence, presentation and clarity — not from spending heavily on unnecessary renovations.
-    </p>
-
-    <div class="steps">
-      <div class="step">
-        <h3>Compare the right homes</h3>
-        <p>
-          Look at genuine comparable sales and current listings in New Windsor and nearby suburbs buyers may also consider.
-        </p>
-      </div>
-
-      <div class="step">
-        <h3>Improve first impressions</h3>
-        <p>
-          Clean presentation, better light, tidy outdoor areas and clear room use can change how buyers feel about value.
-        </p>
-      </div>
-
-      <div class="step">
-        <h3>Prepare buyer confidence</h3>
-        <p>
-          Title, LIM, council records and information about improvements can help buyers feel safer before making an offer.
-        </p>
-      </div>
-
-      <div class="step">
-        <h3>Position the buyer story</h3>
-        <p>
-          Decide whether the home is best presented for families, first-home buyers, renovators, investors or value-focused buyers.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-band">
-  <h2>Want A Clearer View Of Your New Windsor Property Value?</h2>
-
-  <p>
-    Request a free appraisal and get practical advice on likely value, buyer appeal, preparation, timing and selling strategy.
-  </p>
-
-  <a class="btn" href="#appraisal-form">Request Free Appraisal</a>
-</section>
-
-<section class="section soft">
-  <div class="content">
-    <p class="eyebrow">FAQ</p>
-
-    <h2>New Windsor Property Appraisal Questions</h2>
-
-    <div class="faq">
-      <h3>How much is my New Windsor home worth?</h3>
-      <p>
-        The value depends on recent comparable sales, property condition, land, layout, parking, presentation, buyer demand and current competition from both New Windsor and nearby suburbs.
-      </p>
-
-      <h3>Is a free home appraisal the same as a registered valuation?</h3>
-      <p>
-        No. A real estate appraisal is an agent’s market estimate. A registered valuation is a formal valuation prepared by a registered valuer and is often used for finance, legal or accounting purposes.
-      </p>
-
-      <h3>Should I renovate before selling in New Windsor?</h3>
-      <p>
-        Not always. Some small improvements can help buyer confidence, but major renovations may not return enough before sale. Get advice before spending heavily.
-      </p>
-
-      <h3>What type of buyers look in New Windsor?</h3>
-      <p>
-        Depending on the property, buyers may include families, first-home buyers, renovators, investors and people comparing value across nearby central-west suburbs.
-      </p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div>
-    <strong>Team Peter & Edita</strong><br>
-    Raine & Horne Titirangi, Blockhouse Bay & Lynfield
-  </div>
-
-  <div>
-    <a href="../index.html">Back to home</a><br>
-    <a href="tel:021765234">021 765 234</a>
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>
