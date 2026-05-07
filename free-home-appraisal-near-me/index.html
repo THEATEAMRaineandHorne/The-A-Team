@@ -1,389 +1,991 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Free Home Appraisal Near Me | West Auckland Agents</title>
-
-  <meta name="description" content="Looking for a free home appraisal? Request a free property value estimate for Titirangi, Blockhouse Bay, Lynfield and nearby West Auckland suburbs.">
+  <title>Real Estate Agents Near Me | Free Appraisal West Auckland</title>
+  <meta name="description" content="Looking for real estate agents near you? Get a free West Auckland property appraisal from Team Peter & Edita with local selling advice.">
 
   <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-near-me/">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Real Estate Agents Near Me | Free Appraisal West Auckland">
+  <meta property="og:description" content="Looking for real estate agents near you? Get a free West Auckland property appraisal from Team Peter & Edita with local pricing and selling advice.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-near-me/">
+  <meta property="og:image" content="https://theateamraineandhorne.github.io/The-A-Team/images/free-home-appraisal-near-me.jpg">
+  <meta property="og:image:alt" content="Real estate agents near me and free property appraisal West Auckland">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     :root {
-      --gold: #b08a42;
-      --gold-dark: #8f6d2e;
-      --black: #111111;
-      --cream: #d8c9ad;
-      --soft: #f7f4ef;
+      --gold: #ffb200;
+      --dark: #202020;
+      --charcoal: #4D4E50;
       --white: #ffffff;
-      --text: #222222;
+      --cream: #fff8e8;
+      --soft: #f7f7f5;
+      --border: #e8e2d7;
       --muted: #555555;
     }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: var(--soft);
-      color: var(--text);
-      line-height: 1.65;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
     }
 
-    h1,
-    h2,
-    h3 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: 400;
-      line-height: 1.15;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    p {
-      font-size: 17px;
-      color: var(--muted);
-      margin-bottom: 18px;
+    .topbar {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 9px 20px;
+      font-size: 14px;
     }
 
-    .site-header {
-      position: absolute;
+    .topbar a {
+      color: var(--gold);
+      font-weight: 800;
+    }
+
+    header {
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
       top: 0;
-      width: 100%;
-      padding: 26px 8%;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+    }
+
+    .nav {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 15px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      z-index: 10;
-      color: white;
+      gap: 20px;
     }
 
-    .logo {
-      font-size: 18px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 22px;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    nav a:hover {
-      color: #e7c782;
-    }
-
-    .page-hero {
-      min-height: 100vh;
-      padding: 120px 8% 80px;
-      background:
-        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.50)),
-        url("https://images.unsplash.com/photo-1600585153490-76fb20a32601?auto=format&fit=crop&w=1800&q=80");
-      background-size: cover;
-      background-position: center;
+    .brand {
       display: flex;
       align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: -0.3px;
+      font-size: 18px;
     }
 
-    .form-card {
+    .brand img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 720px;
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+      background: var(--dark);
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
       width: 100%;
-      max-width: 820px;
-      background: white;
-      padding: 48px;
-      border: 1px solid #eeeeee;
-      box-shadow: 0 24px 70px rgba(0,0,0,.22);
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.60) 48%, rgba(0,0,0,0.22) 100%),
+        linear-gradient(0deg, rgba(0,0,0,0.48), rgba(0,0,0,0.08));
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 84px 20px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 44px;
+      align-items: center;
+      color: var(--white);
     }
 
     .eyebrow {
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark);
+      padding: 8px 13px;
+      border-radius: 999px;
       font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 16px;
-    }
-
-    .form-card h1 {
-      font-size: clamp(38px, 5vw, 58px);
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
       margin-bottom: 18px;
-      color: var(--black);
     }
 
-    .intro {
-      font-size: 18px;
-      color: #444444;
-      margin-bottom: 30px;
-      max-width: 700px;
+    h1 {
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 1.02;
+      letter-spacing: -2.4px;
+      margin: 0 0 22px;
     }
 
-    .trust-box {
-      background: var(--soft);
-      border-left: 5px solid var(--gold);
-      padding: 20px;
-      margin: 26px 0 34px;
+    .hero-lead {
+      font-size: 21px;
+      max-width: 760px;
+      color: #f3f3f3;
+      margin-bottom: 22px;
     }
 
-    .trust-box p {
-      margin-bottom: 0;
-      color: #333333;
+    .hero-proof {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 32px 0;
+      max-width: 780px;
     }
 
-    form label {
+    .proof-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.20);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .proof-card strong {
       display: block;
-      font-weight: bold;
-      margin-bottom: 18px;
-      color: #222222;
+      color: var(--gold);
+      font-size: 22px;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .proof-card span {
+      color: #eeeeee;
+      font-size: 14px;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 23px;
+      border-radius: 10px;
+      font-weight: 900;
+      border: 2px solid var(--gold);
+      transition: 0.2s ease;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 15px;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    .btn-primary:hover {
+      background: var(--white);
+      border-color: var(--white);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255,255,255,0.72);
+    }
+
+    .btn-secondary:hover {
+      background: var(--white);
+      color: var(--dark);
+      border-color: var(--white);
+    }
+
+    .hero-form {
+      background: rgba(255,255,255,0.96);
+      color: var(--dark);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 24px 70px rgba(0,0,0,0.28);
+      border: 1px solid rgba(255,255,255,0.7);
+    }
+
+    .hero-form h2 {
+      margin-top: 0;
+      font-size: 30px;
+      line-height: 1.15;
+    }
+
+    .hero-form p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 13px;
+    }
+
+    label {
+      font-weight: 900;
+      font-size: 14px;
     }
 
     input,
     select,
     textarea {
       width: 100%;
-      margin-top: 8px;
-      padding: 15px 16px;
-      border: 1px solid #d8d8d8;
+      padding: 13px 14px;
+      border: 1px solid #cccccc;
+      border-radius: 10px;
       font-size: 16px;
-      font-family: Arial, sans-serif;
-      background: white;
-      color: #222222;
-    }
-
-    input:focus,
-    select:focus,
-    textarea:focus {
-      outline: none;
-      border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(176, 138, 66, .15);
+      font-family: inherit;
+      margin-top: 6px;
     }
 
     textarea {
+      min-height: 105px;
       resize: vertical;
     }
 
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
-
-    .btn {
-      display: inline-block;
+    .form-button {
       width: 100%;
-      padding: 16px 30px;
-      border: 1px solid var(--gold);
+      border: 2px solid var(--dark);
       background: var(--gold);
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 1.4px;
-      font-size: 13px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.25s ease;
+      color: var(--dark);
+      margin-top: 4px;
     }
 
-    .btn:hover {
-      background: var(--gold-dark);
-      border-color: var(--gold-dark);
-      transform: translateY(-1px);
+    .form-button:hover {
+      background: var(--dark);
+      color: var(--gold);
     }
 
-    .small-note {
-      font-size: 12px;
-      color: #777777;
-      margin-top: 18px;
-      margin-bottom: 0;
+    section {
+      padding: 78px 20px;
     }
 
-    .mini-disclosure {
+    .container {
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      max-width: 900px;
+      margin-bottom: 36px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.1;
+      letter-spacing: -1.2px;
+      margin: 0 0 14px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 26px;
+      align-items: center;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 26px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      font-size: 23px;
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .highlight {
+      background: var(--cream);
+    }
+
+    .dark-section {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .dark-section .section-title p,
+    .dark-section .card p {
+      color: #e8e8e8;
+    }
+
+    .dark-section .card {
+      background: #303030;
+      border-color: #555555;
+    }
+
+    .suburb-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .suburb-link {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 18px;
       text-align: center;
-      font-size: 11px;
-      color: rgba(255,255,255,.7);
-      margin-top: 18px;
+      font-weight: 900;
+      transition: 0.2s ease;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-top: 18px;
-      color: var(--gold-dark);
-      font-weight: bold;
-      text-decoration: none;
+    .suburb-link:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      transform: translateY(-2px);
     }
 
-    .back-link:hover {
-      text-decoration: underline;
+    .reviews-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.05);
     }
 
-    .area-links {
-      margin-top: 18px;
-      font-size: 12px;
-      color: #777777;
+    .elfsight-review-box {
+      width: 100%;
+      min-height: 220px;
+      overflow: hidden;
     }
 
-    .area-links a {
-      color: var(--gold-dark);
-      text-decoration: none;
-      font-weight: bold;
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+      margin: 0;
     }
 
-    .area-links a:hover {
-      text-decoration: underline;
+    .service-list li {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 14px 16px;
+      font-weight: 800;
     }
 
-    @media(max-width: 850px) {
-      .site-header {
-        position: relative;
-        background: var(--black);
-        display: block;
+    .near-me-box {
+      background: linear-gradient(135deg, #302a1a, #111111);
+      color: var(--white);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+    }
+
+    .near-me-box p {
+      color: #eeeeee;
+    }
+
+    .faq details {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 18px;
+      margin-bottom: 13px;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      padding: 46px 20px;
+    }
+
+    .footer-inner {
+      max-width: 1220px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 30px;
+    }
+
+    footer a {
+      color: var(--gold);
+      font-weight: 900;
+    }
+
+    .small {
+      font-size: 13px;
+      color: #d6d6d6;
+    }
+
+    @media (max-width: 980px) {
+      .hero-content,
+      .grid-2,
+      .grid-3,
+      .footer-inner {
+        grid-template-columns: 1fr;
       }
 
-      nav a {
-        display: inline-block;
-        margin: 10px 12px 0 0;
-      }
-
-      .page-hero {
-        padding: 50px 6%;
+      .hero {
         min-height: auto;
       }
 
-      .form-card {
-        padding: 30px 22px;
+      .hero-proof {
+        grid-template-columns: 1fr;
       }
 
-      .form-grid {
+      .suburb-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .service-list {
         grid-template-columns: 1fr;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .suburb-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content {
+        padding: 62px 18px;
+      }
+
+      section {
+        padding: 58px 18px;
       }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Team Peter & Edita | Raine & Horne Titirangi, Blockhouse Bay & Lynfield",
+    "alternateName": "THE A-TEAM",
+    "url": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-near-me/",
+    "telephone": "+6421765234",
+    "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
+    "priceRange": "$$",
+    "image": "https://theateamraineandhorne.github.io/The-A-Team/images/free-home-appraisal-near-me.jpg",
+    "logo": "https://theateamraineandhorne.github.io/The-A-Team/images/rh-logo.png",
+    "description": "Team Peter & Edita help homeowners searching for real estate agents near me, property appraisal near me and home appraisal near me across West Auckland and nearby Central Auckland suburbs.",
+    "areaServed": [
+      "West Auckland",
+      "Titirangi",
+      "Blockhouse Bay",
+      "Lynfield",
+      "New Lynn",
+      "Green Bay",
+      "Glen Eden",
+      "Mount Roskill",
+      "New Windsor",
+      "Glendene",
+      "Avondale",
+      "Central Auckland"
+    ],
+    "knowsAbout": [
+      "Real estate agents near me",
+      "Best real estate agents near me",
+      "Property appraisal near me",
+      "Home appraisal near me",
+      "Free property appraisal",
+      "Free home appraisal",
+      "West Auckland real estate",
+      "Property selling strategy",
+      "Raine & Horne Amplify",
+      "Buyer targeting",
+      "Property pricing advice",
+      "Negotiation strategy"
+    ],
+    "sameAs": [
+      "https://www.raineandhorne.co.nz/blockhousebay"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I find real estate agents near me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you are in West Auckland or nearby Central Auckland suburbs, you can contact Team Peter & Edita for local real estate advice, free property appraisal guidance, selling strategy, marketing and negotiation support."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I look for in the best real estate agent near me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Look for local suburb knowledge, strong reviews, clear pricing advice, professional marketing, buyer follow-up, negotiation skill and a strategy that explains how your property will compete in the current market."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I get a free property appraisal near me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Team Peter & Edita offer free property appraisal advice for homeowners in Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and nearby suburbs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a local real estate agent better than an online estimate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An online estimate can be a starting point, but a local real estate agent can consider condition, presentation, buyer demand, current competition, layout, access, privacy, sunlight and the selling strategy needed to create confidence."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
-<header class="site-header">
-  <div class="logo">Team Peter & Edita</div>
+  <div class="topbar">
+    Looking for real estate agents near you? Call <a href="tel:021765234">021 765 234</a> · Licensed under the REAA 2008
+  </div>
 
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="../index.html#articles">Articles</a>
-    <a href="../index.html#suburbs">Suburbs</a>
-    <a href="tel:021765234">Call</a>
-  </nav>
-</header>
+  <header>
+    <nav class="nav">
+      <a href="https://theateamraineandhorne.github.io/The-A-Team/" class="brand">
+        <img src="../images/rh-logo.png" alt="Team Peter and Edita Raine and Horne logo" width="46" height="46">
+        <div>Team Peter & Edita <span>| Raine & Horne</span></div>
+      </a>
 
-<section class="page-hero">
-  <div>
-    <div class="form-card">
-      <p class="eyebrow">Free Home Appraisal Near Me</p>
+      <div class="nav-links">
+        <a href="#appraisal">Free Appraisal</a>
+        <a href="#best-agent">Best Agent</a>
+        <a href="#suburbs">Areas</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#request-appraisal">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-      <h1>Request Your Free Home Appraisal</h1>
+  <main>
 
-      <p class="intro">
-        Wondering what your home could be worth in today’s market?
-        Request a free, no-obligation property appraisal for Titirangi, Blockhouse Bay,
-        Lynfield and nearby West Auckland suburbs.
-      </p>
+    <section class="hero" id="appraisal">
+      <img
+        src="../images/free-home-appraisal-near-me.jpg"
+        alt="Real estate agents near me and free property appraisal West Auckland"
+        class="hero-bg"
+        width="1800"
+        height="1000"
+        loading="eager">
 
-      <div class="trust-box">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div>
+          <span class="eyebrow">Real Estate Agents Near Me</span>
+          <h1>Looking For A Real Estate Agent Near You?</h1>
+
+          <p class="hero-lead">
+            If you are searching for <strong>real estate agents near me</strong>, <strong>best real estate agents near me</strong>, or a <strong>free property appraisal near me</strong>, the next step is choosing someone who understands your local market — not just someone who gives you a quick price.
+          </p>
+
+          <p class="hero-lead">
+            Team Peter & Edita help West Auckland homeowners with appraisals, pricing, presentation, AI-powered marketing, buyer targeting and negotiation strategy.
+          </p>
+
+          <div class="hero-proof">
+            <div class="proof-card">
+              <strong>Local</strong>
+              <span>Titirangi, Blockhouse Bay, Lynfield and nearby suburbs</span>
+            </div>
+            <div class="proof-card">
+              <strong>Strategic</strong>
+              <span>pricing, marketing and buyer demand advice</span>
+            </div>
+            <div class="proof-card">
+              <strong>Trusted</strong>
+              <span>Google reviews and direct local service</span>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#request-appraisal">Request Free Appraisal</a>
+            <a class="btn btn-secondary" href="tel:021765234">Call 021 765 234</a>
+          </div>
+        </div>
+
+        <div class="hero-form" id="request-appraisal">
+          <h2>Request A Free Appraisal Near You</h2>
+          <p>
+            Send your details and we will help you understand your likely value, local buyer demand and best selling strategy.
+          </p>
+
+          <form action="https://formspree.io/f/mdabnpgl" method="POST">
+            <input type="hidden" name="_subject" value="New near me appraisal enquiry">
+
+            <label>
+              Name
+              <input name="name" type="text" required>
+            </label>
+
+            <label>
+              Phone
+              <input name="phone" type="tel" required>
+            </label>
+
+            <label>
+              Email
+              <input name="email" type="email" required>
+            </label>
+
+            <label>
+              Property address
+              <input name="property_address" type="text" required>
+            </label>
+
+            <label>
+              Suburb
+              <select name="suburb" required>
+                <option value="">Select suburb</option>
+                <option>Titirangi</option>
+                <option>Blockhouse Bay</option>
+                <option>Lynfield</option>
+                <option>New Lynn</option>
+                <option>Green Bay</option>
+                <option>Glen Eden</option>
+                <option>Mount Roskill</option>
+                <option>New Windsor</option>
+                <option>Glendene</option>
+                <option>Avondale</option>
+                <option>Other West Auckland suburb</option>
+              </select>
+            </label>
+
+            <label>
+              When are you thinking of selling?
+              <select name="selling_timeframe">
+                <option value="">Select timeframe</option>
+                <option>Just curious</option>
+                <option>Within 3 months</option>
+                <option>Within 6 months</option>
+                <option>This year</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+
+            <label>
+              What would you like help with?
+              <textarea name="message" placeholder="Example: value, timing, preparation, buyer demand, marketing, downsizing, investment property, cross-lease, etc."></textarea>
+            </label>
+
+            <button class="btn form-button" type="submit">Send My Appraisal Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="best-agent">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Best real estate agents near me</span>
+          <h2>What “Best Real Estate Agent Near Me” Should Really Mean</h2>
+          <p>
+            The best agent for you is not always the loudest, biggest or cheapest. The right agent should explain your property’s value, likely buyer groups, possible buyer objections and the strategy to create stronger confidence.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Local market understanding</h3>
+            <p>
+              Different suburbs attract different buyers. Titirangi is not the same as New Lynn, and Blockhouse Bay is not the same as Glendene. Your strategy should reflect your actual buyer pool.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Clear pricing advice</h3>
+            <p>
+              A strong agent should explain value in plain English, using recent sales, buyer demand, property condition and the current market mood — not just tell you what you want to hear.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Marketing beyond listing portals</h3>
+            <p>
+              We use professional presentation and Raine & Horne Amplify AI-powered marketing to help your property reach more relevant buyers across key digital channels.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Buyer follow-up</h3>
+            <p>
+              Enquiry is only the start. Strong follow-up helps separate serious buyers from browsers, handle objections and keep momentum in the campaign.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Negotiation skill</h3>
+            <p>
+              The agent you choose should know how to read motivation, manage timing, reduce friction and negotiate for the strongest possible result.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Trust and communication</h3>
+            <p>
+              Selling a home is a major decision. You should feel informed, respected and clear about what is happening at each stage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="near-me-box">
+            <span class="eyebrow">Our honest view</span>
+            <h2>Searching “Near Me” Is A Good Start — But It Is Not Enough</h2>
+            <p>
+              A nearby agent may be convenient, but convenience alone does not sell a home well. You need local understanding, sharp pricing, strong marketing, buyer confidence and careful negotiation.
+            </p>
+            <p>
+              If you are choosing between agents, ask: Who understands my suburb? Who can explain buyer behaviour? Who has a clear marketing plan? Who will follow up properly? Who can negotiate when the pressure comes on?
+            </p>
+          </div>
+
+          <div class="grid-2" style="grid-template-columns: 1fr;">
+            <div class="card">
+              <h3>What we help with</h3>
+              <p>
+                Free appraisals, pricing strategy, presentation, buyer targeting, open home feedback, negotiation, Amplify marketing and suburb-specific selling advice.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Where we help</h3>
+              <p>
+                Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and nearby Auckland suburbs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight" id="suburbs">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Areas near you</span>
+          <h2>Choose Your Local Property Appraisal Area</h2>
+          <p>
+            These suburb pages give more specific local advice about value, buyer demand, property type and selling strategy.
+          </p>
+        </div>
+
+        <div class="suburb-grid">
+          <a class="suburb-link" href="../free-home-appraisal-titirangi/">Titirangi</a>
+          <a class="suburb-link" href="../free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
+          <a class="suburb-link" href="../free-home-appraisal-lynfield/">Lynfield</a>
+          <a class="suburb-link" href="../free-home-appraisal-new-lynn/">New Lynn</a>
+          <a class="suburb-link" href="../free-home-appraisal-green-bay/">Green Bay</a>
+          <a class="suburb-link" href="../free-home-appraisal-glen-eden/">Glen Eden</a>
+          <a class="suburb-link" href="../free-home-appraisal-mount-roskill/">Mount Roskill</a>
+          <a class="suburb-link" href="../free-home-appraisal-new-windsor/">New Windsor</a>
+          <a class="suburb-link" href="../free-home-appraisal-glendene/">Glendene</a>
+          <a class="suburb-link" href="../free-home-appraisal-avondale/">Avondale</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Google Reviews</span>
+          <h2>What Local Sellers Say About Team Peter & Edita</h2>
+          <p>
+            Reviews help you judge whether an agent communicates well, follows through and cares about the result.
+          </p>
+        </div>
+
+        <div class="reviews-card">
+          <div class="elfsight-review-box">
+            <!-- Elfsight Google Reviews | THE A-TEAM REVIEWS -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Searches this page supports</span>
+          <h2>Real Estate Services Near You</h2>
+          <p>
+            This page is designed for people searching broadly before they choose a suburb-specific appraisal page or contact an agent directly.
+          </p>
+        </div>
+
+        <ul class="service-list">
+          <li>Real estate agents near me</li>
+          <li>Best real estate agents near me</li>
+          <li>Property appraisal near me</li>
+          <li>Home appraisal near me</li>
+          <li>Free house valuation near me</li>
+          <li>Real estate agent West Auckland</li>
+          <li>Selling my house near me</li>
+          <li>Local real estate agent near me</li>
+          <li>Property selling advice near me</li>
+          <li>Home value estimate near me</li>
+          <li>House appraisal West Auckland</li>
+          <li>Raine & Horne real estate agent</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Near me FAQs</span>
+          <h2>Real Estate Agents Near Me — Common Questions</h2>
+        </div>
+
+        <details>
+          <summary>How do I choose the best real estate agent near me?</summary>
+          <p>
+            Look for local suburb knowledge, strong reviews, clear communication, honest pricing advice, professional marketing, buyer follow-up and negotiation ability. The right agent should give you a strategy, not just a price guess.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I get a free property appraisal near me?</summary>
+          <p>
+            Yes. Team Peter & Edita offer free property appraisal advice across Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and nearby Auckland suburbs.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is the nearest real estate agent always the best choice?</summary>
+          <p>
+            Not always. Being nearby helps, but the best choice should also understand buyer demand, pricing, marketing, presentation and negotiation in your local area.
+          </p>
+        </details>
+
+        <details>
+          <summary>What is better: an online estimate or a local appraisal?</summary>
+          <p>
+            An online estimate can be a useful starting point, but a local appraisal can consider condition, presentation, buyer emotion, current competition, access, privacy, sunlight, layout and the selling strategy needed to create confidence.
+          </p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h2>Team Peter & Edita | Raine & Horne</h2>
         <p>
-          A good home appraisal should give you more than a number. It should help you understand
-          likely buyer demand, recent comparable sales, current competition, presentation, timing
-          and what may help you achieve a stronger result.
+          Helping West Auckland homeowners searching for real estate agents near me, free property appraisal near me and local home selling advice.
+        </p>
+        <p class="small">
+          Licensed under the Real Estate Agents Act 2008. This website provides general real estate information and appraisal enquiry options. It is not a registered valuation.
         </p>
       </div>
 
-      <form action="https://formspree.io/f/mdabnpgl" method="POST">
-        <input type="hidden" name="_subject" value="New Free Home Appraisal Near Me Request - The A-Team Website" />
-        <input type="hidden" name="landing_page" value="Free Home Appraisal Near Me" />
-
-        <div class="form-grid">
-          <label>
-            First name
-            <input type="text" name="first_name" required />
-          </label>
-
-          <label>
-            Phone number
-            <input type="tel" name="phone" required />
-          </label>
-        </div>
-
-        <label>
-          Email address
-          <input type="email" name="email" required />
-        </label>
-
-        <label>
-          Property address
-          <input type="text" name="property_address" placeholder="Please enter the property address" required />
-        </label>
-
-        <div class="form-grid">
-          <label>
-            Property suburb
-            <input type="text" name="suburb" placeholder="Example: Titirangi, Blockhouse Bay, Lynfield" required />
-          </label>
-
-          <label>
-            Selling timeframe
-            <select name="selling_timeframe" required>
-              <option value="">Please choose</option>
-              <option>As soon as possible</option>
-              <option>Within 1–3 months</option>
-              <option>Within 3–6 months</option>
-              <option>Later this year</option>
-              <option>Just curious for now</option>
-            </select>
-          </label>
-        </div>
-
-        <label>
-          What would you like help with?
-          <select name="main_reason" required>
-            <option value="">Please choose</option>
-            <option>Finding out the likely value</option>
-            <option>Preparing the home for sale</option>
-            <option>Choosing the best time to sell</option>
-            <option>Already listed and need advice</option>
-            <option>Comparing agents or selling options</option>
-            <option>Not sure yet</option>
-          </select>
-        </label>
-
-        <label>
-          Tell us anything helpful
-          <textarea name="message" rows="6" placeholder="Example: We are thinking of selling and want to understand price, timing and preparation."></textarea>
-        </label>
-
-        <button class="btn" type="submit">Send Appraisal Request</button>
-
-        <p class="small-note">
-          Team Peter & Edita are licensed real estate salespeople with Raine & Horne.
-          Your details are used only to respond to your appraisal request.
+      <div>
+        <p><strong>Call:</strong> <a href="tel:021765234">021 765 234</a></p>
+        <p><strong>Email:</strong> <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a></p>
+        <p><strong>Website:</strong> <a href="https://www.raineandhorne.co.nz/blockhousebay">Raine & Horne Blockhouse Bay</a></p>
+        <p class="small">
+          Areas served: Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and nearby suburbs.
         </p>
-
-        <p class="area-links">
-          Area pages:
-          <a href="../free-home-appraisal-titirangi/">Titirangi appraisal</a> |
-          <a href="../free-home-appraisal-blockhouse-bay/">Blockhouse Bay appraisal</a>
-        </p>
-      </form>
-
-      <a class="back-link" href="../index.html">← Back to home page</a>
+      </div>
     </div>
-
-    <p class="mini-disclosure">
-      Team Peter & Edita | Raine & Horne Titirangi, Blockhouse Bay & Lynfield
-    </p>
-  </div>
-</section>
+  </footer>
 
 </body>
 </html>
