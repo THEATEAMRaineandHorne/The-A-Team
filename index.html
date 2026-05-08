@@ -961,33 +961,201 @@
       </div>
     </section>
 
-    <section id="about-team">
-      <div class="container">
-        <div class="section-title">
-          <span class="eyebrow">Local real estate agents</span>
-          <h2>Meet Team Peter & Edita</h2>
-          <p>
-            Team Peter & Edita, also known as THE A-TEAM, are local Raine & Horne real estate agents helping homeowners across Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and nearby Auckland suburbs.
-          </p>
+    <!-- A-TEAM ABOUT SECTION - START -->
+<section id="about-team" class="a-team-about-proof">
+  <style>
+    .a-team-about-proof {
+      background: #ffffff;
+      padding: 78px 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+    }
+
+    .a-team-about-proof .about-container {
+      max-width: 1220px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .a-team-about-proof .about-photo-card {
+      background: #f7f5ef;
+      border-radius: 26px;
+      padding: 18px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .a-team-about-proof .about-photo-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    .a-team-about-proof .photo-caption {
+      margin: 14px 6px 0;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+
+    .a-team-about-proof .about-eyebrow {
+      display: inline-block;
+      background: #ffb200;
+      color: #202020;
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .a-team-about-proof h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.1;
+      margin: 0 0 18px;
+      color: #222;
+      letter-spacing: -1px;
+    }
+
+    .a-team-about-proof .about-lead {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #555;
+      margin: 0 0 22px;
+    }
+
+    .a-team-about-proof .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin: 28px 0;
+    }
+
+    .a-team-about-proof .trust-item {
+      background: #fff8e8;
+      border: 1px solid #e8e2d7;
+      border-radius: 16px;
+      padding: 16px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .a-team-about-proof .trust-item strong {
+      display: block;
+      color: #202020;
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    .a-team-about-proof .about-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .a-team-about-proof .about-btn {
+      display: inline-block;
+      background: #ffb200;
+      color: #202020;
+      text-decoration: none;
+      font-weight: 900;
+      border-radius: 999px;
+      padding: 15px 24px;
+      border: 2px solid #ffb200;
+    }
+
+    .a-team-about-proof .about-btn.secondary {
+      background: #ffffff;
+      border-color: #202020;
+      color: #202020;
+    }
+
+    .a-team-about-proof .about-note {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 900px) {
+      .a-team-about-proof .about-container {
+        grid-template-columns: 1fr;
+      }
+
+      .a-team-about-proof .trust-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="about-container">
+    <div class="about-photo-card">
+      <img
+        src="images/peter-edita-rh.png"
+        alt="Peter and Edita Andrijasevic, local Raine and Horne real estate agents in West Auckland"
+        loading="lazy">
+      <p class="photo-caption">
+        Peter & Edita Andrijasevic | Team Peter & Edita, Raine & Horne
+      </p>
+    </div>
+
+    <div>
+      <span class="about-eyebrow">Meet your local agents</span>
+      <h2>Real estate advice from people who know West Auckland homes.</h2>
+
+      <p class="about-lead">
+        We are Peter & Edita Andrijasevic, local Raine & Horne real estate agents helping homeowners across Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and nearby Auckland suburbs.
+      </p>
+
+      <p class="about-lead">
+        With more than 25 years of combined real estate experience, we help sellers understand price, presentation, buyer demand, marketing, negotiation and the small details that can affect buyer confidence before a property goes to market.
+      </p>
+
+      <div class="trust-grid">
+        <div class="trust-item">
+          <strong>Personal service</strong>
+          You deal directly with us, not a factory-style process.
         </div>
 
-        <div class="grid-2">
-          <div class="card">
-            <h3>Personal advice, not a factory process</h3>
-            <p>
-              With more than 25 years of combined real estate experience, we work closely with sellers on pricing, preparation, marketing, buyer follow-up and negotiation. Our goal is to give you clear advice before you make a major property decision.
-            </p>
-          </div>
+        <div class="trust-item">
+          <strong>Local knowledge</strong>
+          We understand West Auckland buyer behaviour, suburbs and property types.
+        </div>
 
-          <div class="card">
-  <h3>Backed by Raine & Horne Since 1883</h3>
-  <p>
-    You get the best of both worlds: personal local guidance from Team Peter & Edita, backed by the strength, history and marketing power of a real estate brand whose story began in 1883.
-  </p>
-</div>
+        <div class="trust-item">
+          <strong>Backed by Raine & Horne</strong>
+          Local care supported by a recognised real estate network.
+        </div>
+
+        <div class="trust-item">
+          <strong>Licensed advice</strong>
+          Licensed under the Real Estate Agents Act 2008.
         </div>
       </div>
-    </section>
+
+      <p class="about-lead">
+        Our goal is simple: give you clear, honest and practical advice so you can make a confident decision before selling.
+      </p>
+
+      <div class="about-buttons">
+        <a class="about-btn" href="#request-appraisal">Request Free Appraisal</a>
+        <a class="about-btn secondary" href="tel:+6421765234">Call 021 765 234</a>
+      </div>
+
+      <p class="about-note">
+        Team Peter & Edita | THE A-TEAM | Raine & Horne Titirangi, Blockhouse Bay & Lynfield
+      </p>
+    </div>
+  </div>
+</section>
+<!-- A-TEAM ABOUT SECTION - END -->
 
     <section class="dark-section" id="amplify">
       <div class="container">
