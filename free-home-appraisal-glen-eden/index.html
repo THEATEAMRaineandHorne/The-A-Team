@@ -4,35 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Free Home Appraisal Glen Eden | Raine & Horne</title>
-  <meta name="description" content="What is your Glen Eden home worth? Get a free property appraisal with local pricing, buyer demand, property type and selling strategy advice.">
+  <title>Free Property Appraisal Glen Eden | Team Peter & Edita</title>
+  <meta name="description" content="Free Glen Eden property appraisal from Team Peter & Edita, Raine & Horne. Local pricing, buyer demand, presentation, marketing and selling strategy advice.">
 
   <link rel="canonical" href="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-glen-eden/">
   <meta name="robots" content="index, follow">
-<link rel="icon" type="image/png" sizes="96x96" href="https://theateamraineandhorne.github.io/The-A-Team/images/favicon-96x96.png">
-<link rel="shortcut icon" type="image/png" href="https://theateamraineandhorne.github.io/The-A-Team/images/favicon-96x96.png">
-<link rel="apple-touch-icon" href="https://theateamraineandhorne.github.io/The-A-Team/images/favicon-96x96.png">
-  <meta property="og:title" content="Free Home Appraisal Glen Eden | Raine & Horne">
-  <meta property="og:description" content="What is your Glen Eden home worth? Get a free property appraisal with local pricing, buyer demand, property type and selling strategy advice.">
+
+  <link rel="icon" type="image/png" sizes="96x96" href="https://theateamraineandhorne.github.io/The-A-Team/images/favicon-96x96.png">
+  <link rel="shortcut icon" type="image/png" href="https://theateamraineandhorne.github.io/The-A-Team/images/favicon-96x96.png">
+  <link rel="apple-touch-icon" href="https://theateamraineandhorne.github.io/The-A-Team/images/favicon-96x96.png">
+
+  <meta property="og:title" content="Free Property Appraisal Glen Eden | Team Peter & Edita">
+  <meta property="og:description" content="Find out what your Glen Eden home may be worth with local pricing, buyer demand, presentation and selling strategy advice.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-glen-eden/">
   <meta property="og:image" content="https://theateamraineandhorne.github.io/The-A-Team/images/free-home-appraisal-glen-eden.jpg">
-  <meta property="og:image:alt" content="Glen Eden home appraisal and property selling advice from Team Peter and Edita Raine and Horne">
+  <meta property="og:image:alt" content="Free Glen Eden property appraisal and home selling advice from Team Peter and Edita Raine and Horne">
 
   <style>
     :root {
       --gold: #ffb200;
-      --dark: #232323;
+      --dark: #202020;
       --charcoal: #4D4E50;
       --white: #ffffff;
+      --cream: #fff8e8;
+      --soft: #f7f7f5;
       --border: #e8e2d7;
-      --soft-gold: #fff5db;
-      --light: #f7f7f5;
+      --muted: #555555;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -50,117 +53,175 @@
     .topbar {
       background: var(--dark);
       color: var(--white);
-      font-size: 14px;
-      padding: 9px 20px;
       text-align: center;
+      padding: 9px 20px;
+      font-size: 14px;
     }
 
     .topbar a {
       color: var(--gold);
-      font-weight: 700;
+      font-weight: 800;
     }
 
     header {
-      background: var(--white);
+      background: rgba(255,255,255,0.96);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 50;
+      backdrop-filter: blur(8px);
     }
 
     .nav {
-      max-width: 1180px;
+      max-width: 1220px;
       margin: 0 auto;
-      padding: 16px 20px;
+      padding: 15px 20px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       gap: 20px;
     }
 
     .brand {
-      font-weight: 800;
-      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
       letter-spacing: -0.3px;
+      font-size: 18px;
     }
 
-    .brand span {
-      color: var(--gold);
+    .brand img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
     }
+
+    .brand span { color: var(--gold); }
 
     .nav-links {
       display: flex;
-      gap: 18px;
       flex-wrap: wrap;
+      gap: 18px;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 800;
     }
 
-    .nav-links a:hover {
-      color: var(--gold);
-    }
+    .nav-links a:hover { color: var(--gold); }
 
     .hero {
-      background: linear-gradient(135deg, #fff8e8 0%, #ffffff 50%, #f2f2ef 100%);
-      padding: 72px 20px;
+      position: relative;
+      min-height: 720px;
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+      background: var(--dark);
     }
 
-    .hero-inner {
-      max-width: 1180px;
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.58) 48%, rgba(0,0,0,0.24) 100%),
+        linear-gradient(0deg, rgba(0,0,0,0.42), rgba(0,0,0,0.08));
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1220px;
       margin: 0 auto;
+      padding: 86px 20px;
+      width: 100%;
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 40px;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 44px;
       align-items: center;
+      color: var(--white);
     }
 
     .eyebrow {
       display: inline-block;
-      background: var(--dark);
-      color: var(--gold);
-      padding: 7px 12px;
+      background: var(--gold);
+      color: var(--dark);
+      padding: 8px 13px;
       border-radius: 999px;
       font-size: 13px;
-      font-weight: 800;
-      margin-bottom: 18px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
       text-transform: uppercase;
-      letter-spacing: 0.4px;
+      margin-bottom: 18px;
     }
 
     h1 {
-      font-size: clamp(36px, 5vw, 60px);
-      line-height: 1.05;
-      margin: 0 0 18px;
-      letter-spacing: -1.8px;
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.02;
+      letter-spacing: -2.2px;
+      margin: 0 0 22px;
     }
 
     h2 {
-      font-size: clamp(30px, 4vw, 44px);
-      line-height: 1.12;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.1;
+      letter-spacing: -1.2px;
       margin: 0 0 14px;
-      letter-spacing: -1px;
     }
 
     h3 {
-      margin: 0 0 10px;
-      font-size: 22px;
+      font-size: 23px;
       line-height: 1.2;
+      margin: 0 0 10px;
     }
 
-    p {
-      margin-top: 0;
+    p { margin-top: 0; }
+
+    .hero-lead {
+      font-size: 20px;
+      max-width: 760px;
+      color: #f3f3f3;
+      margin-bottom: 20px;
     }
 
-    .hero p {
-      font-size: 18px;
-      max-width: 720px;
-      margin-bottom: 22px;
+    .hero-proof {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 30px 0;
+      max-width: 780px;
+    }
+
+    .proof-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.20);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .proof-card strong {
+      display: block;
+      color: var(--gold);
+      font-size: 22px;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .proof-card span {
+      color: #eeeeee;
+      font-size: 14px;
     }
 
     .cta-row {
       display: flex;
-      gap: 14px;
       flex-wrap: wrap;
+      gap: 14px;
       margin-top: 28px;
     }
 
@@ -168,11 +229,14 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 14px 22px;
+      padding: 15px 23px;
       border-radius: 10px;
-      font-weight: 800;
-      border: 2px solid var(--dark);
+      font-weight: 900;
+      border: 2px solid var(--gold);
       transition: 0.2s ease;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 15px;
     }
 
     .btn-primary {
@@ -181,171 +245,49 @@
     }
 
     .btn-primary:hover {
-      background: var(--dark);
-      color: var(--gold);
+      background: var(--white);
+      border-color: var(--white);
     }
 
     .btn-secondary {
-      background: var(--white);
-      color: var(--dark);
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255,255,255,0.72);
     }
 
     .btn-secondary:hover {
-      background: var(--dark);
-      color: var(--white);
-    }
-
-    .hero-card,
-    .card,
-    .form-wrap {
       background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 26px;
-      box-shadow: 0 14px 38px rgba(0,0,0,0.06);
+      color: var(--dark);
+      border-color: var(--white);
     }
 
-    .hero-image {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 16px;
-      margin-bottom: 20px;
-      object-fit: cover;
+    .hero-form {
+      background: rgba(255,255,255,0.96);
+      color: var(--dark);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 24px 70px rgba(0,0,0,0.28);
+      border: 1px solid rgba(255,255,255,0.7);
     }
 
-    .hero-card h2 {
-      font-size: 26px;
+    .hero-form h2 {
       margin-top: 0;
+      font-size: 30px;
+      line-height: 1.15;
     }
 
-    .hero-reviews {
-      max-width: 1180px;
-      margin: 42px auto 0;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 26px;
-      box-shadow: 0 14px 38px rgba(0,0,0,0.06);
-    }
-
-    .hero-reviews-header {
-      margin-bottom: 18px;
-    }
-
-    .hero-reviews-header .eyebrow {
-      margin-bottom: 12px;
-    }
-
-    .hero-reviews-header h2 {
-      font-size: clamp(26px, 3vw, 36px);
-      margin-bottom: 8px;
-    }
-
-    .hero-reviews-header p {
-      color: #444;
-      font-size: 16px;
-      margin-bottom: 0;
-    }
-
-    .elfsight-review-box {
-      width: 100%;
-      min-height: 180px;
-      overflow: hidden;
-    }
-
-    section {
-      padding: 68px 20px;
-    }
-
-    .container {
-      max-width: 1180px;
-      margin: 0 auto;
-    }
-
-    .section-title {
-      max-width: 860px;
-      margin-bottom: 34px;
-    }
-
-    .section-title p {
-      font-size: 17px;
-      color: #444;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-    }
-
-    .highlight {
-      background: var(--soft-gold);
-    }
-
-    .dark-section {
-      background: var(--dark);
-      color: var(--white);
-    }
-
-    .dark-section .card {
-      background: #303030;
-      border-color: #555;
-    }
-
-    .dark-section p,
-    .dark-section .card p {
-      color: #eeeeee;
-    }
-
-    .mini-list {
-      padding: 0;
-      margin: 18px 0 0;
-      list-style: none;
-    }
-
-    .mini-list li {
-      padding: 10px 0;
-      border-bottom: 1px solid var(--border);
-      font-weight: 700;
-    }
-
-    .mini-list li:last-child {
-      border-bottom: none;
-    }
-
-    .suburb-links {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 14px;
-    }
-
-    .suburb-links a {
-      background: var(--white);
-      border: 1px solid var(--border);
-      padding: 16px;
-      border-radius: 14px;
-      text-align: center;
-      font-weight: 800;
-    }
-
-    .suburb-links a:hover {
-      background: var(--gold);
+    .hero-form p {
+      color: var(--muted);
+      margin-bottom: 20px;
     }
 
     form {
       display: grid;
-      gap: 14px;
+      gap: 13px;
     }
 
     label {
-      font-weight: 800;
+      font-weight: 900;
       font-size: 14px;
     }
 
@@ -354,55 +296,158 @@
     textarea {
       width: 100%;
       padding: 13px 14px;
-      border: 1px solid #ccc;
+      border: 1px solid #cccccc;
       border-radius: 10px;
       font-size: 16px;
       font-family: inherit;
+      margin-top: 6px;
     }
 
     textarea {
-      min-height: 120px;
+      min-height: 105px;
       resize: vertical;
     }
 
-    button {
-      cursor: pointer;
-      border: none;
-      font-family: inherit;
-      font-size: 16px;
+    .form-button {
+      width: 100%;
+      border: 2px solid var(--dark);
+      background: var(--gold);
+      color: var(--dark);
+      margin-top: 4px;
+    }
+
+    .form-button:hover {
+      background: var(--dark);
+      color: var(--gold);
+    }
+
+    section {
+      padding: 78px 20px;
+    }
+
+    .container {
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      max-width: 880px;
+      margin-bottom: 36px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 26px;
+      align-items: center;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 26px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.05);
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .highlight {
+      background: var(--cream);
+    }
+
+    .dark-section {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .dark-section .section-title p,
+    .dark-section .card p {
+      color: #e8e8e8;
+    }
+
+    .dark-section .card {
+      background: #303030;
+      border-color: #555555;
+    }
+
+    .mini-list {
+      padding-left: 20px;
+      margin: 18px 0 0;
+    }
+
+    .mini-list li {
+      margin-bottom: 10px;
+    }
+
+    .suburb-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .suburb-link {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 18px;
+      text-align: center;
+      font-weight: 900;
+      transition: 0.2s ease;
+    }
+
+    .suburb-link:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      transform: translateY(-2px);
     }
 
     .faq details {
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 18px;
-      margin-bottom: 12px;
       background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 18px;
+      margin-bottom: 13px;
     }
 
     .faq summary {
       cursor: pointer;
-      font-weight: 800;
       font-size: 18px;
+      font-weight: 900;
     }
 
     footer {
       background: var(--dark);
       color: var(--white);
-      padding: 42px 20px;
+      padding: 46px 20px;
     }
 
     .footer-inner {
-      max-width: 1180px;
+      max-width: 1220px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1.4fr 1fr;
-      gap: 28px;
+      gap: 30px;
     }
 
     footer a {
       color: var(--gold);
-      font-weight: 800;
+      font-weight: 900;
     }
 
     .small {
@@ -410,42 +455,43 @@
       color: #d6d6d6;
     }
 
-    @media (max-width: 900px) {
-      .hero-inner,
+    @media (max-width: 980px) {
+      .hero-content,
       .grid-2,
       .grid-3,
       .footer-inner {
         grid-template-columns: 1fr;
       }
 
-      .suburb-links {
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-proof {
+        grid-template-columns: 1fr;
+      }
+
+      .suburb-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
       .nav {
-        align-items: flex-start;
         flex-direction: column;
+        align-items: flex-start;
       }
     }
 
-    @media (max-width: 700px) {
-      .hero-reviews {
-        margin-top: 30px;
-        padding: 20px;
-      }
-    }
-
-    @media (max-width: 520px) {
-      .suburb-links {
+    @media (max-width: 560px) {
+      .suburb-grid {
         grid-template-columns: 1fr;
       }
 
-      section {
-        padding: 52px 18px;
+      .hero-content {
+        padding: 62px 18px;
       }
 
-      .hero {
-        padding: 56px 18px;
+      section {
+        padding: 58px 18px;
       }
     }
   </style>
@@ -453,191 +499,113 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": "Team Peter & Edita | Raine & Horne Titirangi, Blockhouse Bay & Lynfield",
-    "url": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-glen-eden/",
-    "telephone": "+6421765234",
-    "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
-    "priceRange": "$$",
-    "image": "https://theateamraineandhorne.github.io/The-A-Team/images/free-home-appraisal-glen-eden.jpg",
-    "logo": "https://theateamraineandhorne.github.io/The-A-Team/images/rh-logo.png",
-    "areaServed": [
-      "Glen Eden",
-      "Titirangi",
-      "Green Bay",
-      "New Lynn",
-      "Glendene",
-      "Sunnyvale",
-      "West Auckland"
-    ],
-    "description": "Free home appraisal and property selling advice for homeowners in Glen Eden, Auckland. Team Peter & Edita help with pricing, presentation, buyer demand, marketing and negotiation.",
-    "knowsAbout": [
-      "Glen Eden real estate",
-      "Free home appraisal Glen Eden",
-      "Property appraisal Glen Eden",
-      "Selling a home in Glen Eden",
-      "First-home buyer demand",
-      "Investment property selling advice",
-      "West Auckland real estate",
-      "Raine & Horne Amplify",
-      "Property marketing",
-      "Buyer demand",
-      "Negotiation strategy"
-    ],
-    "sameAs": [
-      "https://www.raineandhorne.co.nz/blockhousebay"
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "How do I get a free home appraisal in Glen Eden?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can request a free home appraisal in Glen Eden by sending your property address, contact details and selling timeframe to Team Peter & Edita. The advice can include local pricing, buyer demand, property type, presentation and selling strategy."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What affects property value in Glen Eden?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Property value in Glen Eden can be affected by land, condition, location, transport access, renovation potential, rental appeal, layout, parking, presentation, buyer demand and recent comparable sales."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is a Glen Eden appraisal the same as an online property estimate?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. An online estimate can be a rough guide, but a proper Glen Eden appraisal considers property condition, presentation, buyer demand, renovation potential, rental appeal, competing homes and current market evidence."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can Team Peter & Edita help if I am not ready to sell yet?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Earlier advice can help Glen Eden homeowners understand value, avoid unnecessary spending, improve presentation and make smarter decisions before going to market."
-        }
-      }
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      "@id": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-glen-eden/#service",
-      "name": "Free Glen Eden Property Appraisal",
-      "serviceType": "Real estate property appraisal and selling advice",
-      "description": "Free Glen Eden property appraisal service from Team Peter & Edita, Raine & Horne. Includes local pricing guidance, buyer demand insight, presentation advice, marketing strategy and selling preparation for Glen Eden homeowners.",
-      "url": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-glen-eden/",
-      "provider": {
-        "@type": "RealEstateAgent",
-        "@id": "https://theateamraineandhorne.github.io/The-A-Team/#realestateagent",
-        "name": "Raine & Horne Real Estate : Edita Andrijasevic",
-        "alternateName": "Team Peter & Edita | THE A-TEAM"
-      },
-      "areaServed": {
-        "@type": "Place",
-        "name": "Glen Eden, Auckland, New Zealand"
-      },
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Glen Eden homeowners thinking of selling"
-      },
-      "offers": {
-        "@type": "Offer",
+        "@type": "Service",
+        "@id": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-glen-eden/#service",
         "name": "Free Glen Eden Property Appraisal",
-        "price": "0",
-        "priceCurrency": "NZD",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-glen-eden/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do I get a free property appraisal in Glen Eden?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You can request a free Glen Eden property appraisal from Team Peter & Edita, Raine & Horne. We can help you understand likely value, recent local sales, buyer demand, presentation, pricing strategy and the best next steps before selling."
-          }
+        "serviceType": "Real estate property appraisal and selling advice",
+        "description": "Free Glen Eden property appraisal service from Team Peter & Edita, Raine & Horne. Includes local pricing guidance, buyer demand insight, presentation advice, marketing strategy and selling preparation for Glen Eden homeowners.",
+        "url": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-glen-eden/",
+        "provider": {
+          "@type": "RealEstateAgent",
+          "@id": "https://theateamraineandhorne.github.io/The-A-Team/#realestateagent",
+          "name": "Raine & Horne Real Estate : Edita Andrijasevic",
+          "alternateName": "Team Peter & Edita | THE A-TEAM"
         },
-        {
-          "@type": "Question",
-          "name": "What affects property value in Glen Eden?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Glen Eden property values can be affected by location, land size, property type, layout, condition, parking, access, outdoor space, school appeal, buyer demand, nearby competition and recent comparable sales."
-          }
+        "areaServed": {
+          "@type": "Place",
+          "name": "Glen Eden, Auckland, New Zealand"
         },
-        {
-          "@type": "Question",
-          "name": "Why should I use a local Glen Eden real estate agent?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A local Glen Eden real estate agent understands how buyers compare homes in the area, including family appeal, transport access, land size, presentation, privacy, parking and value compared with nearby suburbs such as New Lynn, Green Bay, Titirangi, Sunnyvale and Glendene."
-          }
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Glen Eden homeowners thinking of selling"
         },
-        {
-          "@type": "Question",
-          "name": "What should I prepare before selling a Glen Eden home?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Before selling a Glen Eden home, it can help to review presentation, maintenance, gardens, LIM and title documents, recent comparable sales, competing listings and likely buyer objections. Early preparation can help buyers feel more confident."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is a real estate appraisal the same as a registered valuation?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. A real estate appraisal is market guidance prepared by a licensed real estate professional to estimate a likely selling range. It is not a registered valuation. A registered valuation is prepared by a registered valuer and may be used for lending, legal or formal valuation purposes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can Team Peter and Edita help if I am not ready to sell yet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Many Glen Eden homeowners ask for advice before they are ready to sell. Early guidance can help with timing, preparation, presentation, repairs, pricing expectations and understanding current buyer demand."
-          }
+        "offers": {
+          "@type": "Offer",
+          "name": "Free Glen Eden Property Appraisal",
+          "price": "0",
+          "priceCurrency": "NZD",
+          "availability": "https://schema.org/InStock"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://theateamraineandhorne.github.io/The-A-Team/free-home-appraisal-glen-eden/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I get a free property appraisal in Glen Eden?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can request a free Glen Eden property appraisal from Team Peter & Edita, Raine & Horne. We can help you understand likely value, recent local sales, buyer demand, presentation, pricing strategy and the best next steps before selling."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What affects property value in Glen Eden?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Glen Eden property values can be affected by location, land size, property type, layout, condition, parking, access, outdoor space, school appeal, buyer demand, nearby competition and recent comparable sales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why should I use a local Glen Eden real estate agent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A local Glen Eden real estate agent understands how buyers compare homes in the area, including family appeal, transport access, land size, presentation, privacy, parking and value compared with nearby suburbs such as New Lynn, Green Bay, Titirangi, Sunnyvale and Glendene."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I prepare before selling a Glen Eden home?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Before selling a Glen Eden home, it can help to review presentation, maintenance, gardens, LIM and title documents, recent comparable sales, competing listings and likely buyer objections. Early preparation can help buyers feel more confident."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a real estate appraisal the same as a registered valuation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A real estate appraisal is market guidance prepared by a licensed real estate professional to estimate a likely selling range. It is not a registered valuation. A registered valuation is prepared by a registered valuer and may be used for lending, legal or formal valuation purposes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Team Peter and Edita help if I am not ready to sell yet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Many Glen Eden homeowners ask for advice before they are ready to sell. Early guidance can help with timing, preparation, presentation, repairs, pricing expectations and understanding current buyer demand."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
   <div class="topbar">
-    Free Glen Eden home appraisal · Call <a href="tel:021765234">021 765 234</a> · Licensed under the REAA 2008
+    Free Glen Eden property appraisal · Call <a href="tel:+6421765234">021 765 234</a> · Licensed under the REAA 2008
   </div>
 
   <header>
     <nav class="nav">
       <a href="https://theateamraineandhorne.github.io/The-A-Team/" class="brand">
-        Team Peter & Edita <span>| Raine & Horne</span>
+        <img src="../images/rh-logo.png" alt="Team Peter and Edita Raine and Horne logo" width="46" height="46">
+        <div>Team Peter & Edita <span>| Raine & Horne</span></div>
       </a>
 
       <div class="nav-links">
         <a href="#appraisal">Free Appraisal</a>
         <a href="#why-us">Why Us</a>
         <a href="#local-advice">Glen Eden Advice</a>
+        <a href="#faq">FAQs</a>
         <a href="#request-appraisal">Contact</a>
       </div>
     </nav>
@@ -646,59 +614,106 @@
   <main>
 
     <section class="hero" id="appraisal">
-      <div class="hero-inner">
+      <img
+        src="../images/free-home-appraisal-glen-eden.jpg"
+        alt="Glen Eden property appraisal and home selling advice from Team Peter and Edita Raine and Horne"
+        class="hero-bg"
+        width="1800"
+        height="1000"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async">
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
         <div>
-          <span class="eyebrow">Free Home Appraisal Glen Eden</span>
+          <span class="eyebrow">Free Property Appraisal Glen Eden</span>
           <h1>What Is Your Glen Eden Home Worth?</h1>
 
-          <p>
-            If you are thinking of selling in <strong>Glen Eden</strong>, the real question is not only what your property may be worth. It is how buyers will judge the value, condition, location, future potential and the cost of any work they may need to do.
+          <p class="hero-lead">
+            If you are thinking of selling in Glen Eden, the real question is not only what your home may be worth. It is how buyers will judge the value, condition, location, future potential and confidence of the property.
           </p>
 
-          <p>
-            Team Peter & Edita from Raine & Horne help Glen Eden homeowners with local pricing advice, buyer demand, property presentation, marketing and negotiation strategy before going to market.
+          <p class="hero-lead">
+            Team Peter & Edita from Raine & Horne help Glen Eden homeowners with local pricing advice, buyer demand, presentation, marketing strategy and negotiation planning before going to market.
           </p>
+
+          <div class="hero-proof">
+            <div class="proof-card">
+              <strong>25+ years</strong>
+              <span>combined real estate experience</span>
+            </div>
+            <div class="proof-card">
+              <strong>AI marketing</strong>
+              <span>through Raine & Horne Amplify</span>
+            </div>
+            <div class="proof-card">
+              <strong>Glen Eden</strong>
+              <span>local appraisal and selling advice</span>
+            </div>
+          </div>
 
           <div class="cta-row">
             <a class="btn btn-primary" href="#request-appraisal">Request Free Glen Eden Appraisal</a>
-            <a class="btn btn-secondary" href="tel:021765234">Call 021 765 234</a>
+            <a class="btn btn-secondary" href="tel:+6421765234">Call 021 765 234</a>
           </div>
         </div>
 
-        <aside class="hero-card">
-          <img 
-            src="../images/free-home-appraisal-glen-eden.jpg" 
-            alt="Glen Eden home appraisal and property selling advice from Team Peter and Edita Raine and Horne" 
-            width="1600" 
-            height="900" 
-            class="hero-image"
-            loading="eager">
-
-          <h2>What you get</h2>
-          <ul class="mini-list">
-            <li>Local Glen Eden value guidance</li>
-            <li>Recent comparable sales discussion</li>
-            <li>Buyer demand and likely buyer groups</li>
-            <li>Presentation and preparation advice</li>
-            <li>Marketing and launch strategy</li>
-            <li>Clear next steps if you decide to sell</li>
-          </ul>
-        </aside>
-      </div>
-
-      <div class="hero-reviews" id="google-reviews">
-        <div class="hero-reviews-header">
-          <span class="eyebrow">Google Reviews</span>
-          <h2>What Local Sellers Say About Team Peter & Edita</h2>
+        <div class="hero-form" id="request-appraisal">
+          <h2>Request Your Free Glen Eden Appraisal</h2>
           <p>
-            Read recent Google reviews from people who have worked with Team Peter & Edita and Raine & Horne.
+            Send your details and we will help you understand your likely value, buyer demand and best selling strategy.
           </p>
-        </div>
 
-        <div class="elfsight-review-box">
-          <!-- Elfsight Google Reviews | THE A-TEAM REVIEWS -->
-          <script src="https://elfsightcdn.com/platform.js" async></script>
-          <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
+          <form action="https://formspree.io/f/mdabnpgl" method="POST">
+            <input type="hidden" name="_subject" value="New Glen Eden appraisal enquiry">
+            <input type="hidden" name="suburb" value="Glen Eden">
+
+            <label>
+              Name
+              <input name="name" type="text" required>
+            </label>
+
+            <label>
+              Phone
+              <input name="phone" type="tel" required>
+            </label>
+
+            <label>
+              Email
+              <input name="email" type="email" required>
+            </label>
+
+            <label>
+              Property address
+              <input name="property_address" type="text" required>
+            </label>
+
+            <label>
+              When are you thinking of selling?
+              <select name="selling_timeframe">
+                <option value="">Select timeframe</option>
+                <option>Just curious</option>
+                <option>Within 3 months</option>
+                <option>Within 6 months</option>
+                <option>This year</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+
+            <label>
+              What would you like help with?
+              <textarea name="message" placeholder="Example: value, timing, preparation, buyer demand, renovation potential, investment property, family home, first-home buyer appeal, etc."></textarea>
+            </label>
+
+            <button class="btn form-button" type="submit">Send My Glen Eden Appraisal Request</button>
+
+            <p class="small" style="color:#555555; margin:0;">
+              Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.
+              <a href="../privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
+            </p>
+          </form>
         </div>
       </div>
     </section>
@@ -706,10 +721,10 @@
     <section id="why-us">
       <div class="container">
         <div class="section-title">
-          <span class="eyebrow">Why choose us</span>
+          <span class="eyebrow">Why sellers choose us</span>
           <h2>More Than A Price Estimate — A Glen Eden Selling Strategy</h2>
           <p>
-            A useful appraisal should help you make better decisions. We look at value, buyer behaviour, property presentation, likely objections and the best way to create buyer confidence.
+            A good appraisal should not just give you a number. It should help you understand buyer demand, likely objections, presentation, pricing, marketing and the best way to create buyer confidence before they visit your property.
           </p>
         </div>
 
@@ -717,42 +732,42 @@
           <div class="card">
             <h3>Local buyer understanding</h3>
             <p>
-              Glen Eden buyers often include first-home buyers, families and investors looking for value, transport access, land, future potential and practical living. Condition, affordability and confidence are often key decision points.
+              Glen Eden buyers often include first-home buyers, families and investors looking for value, transport access, land, future potential and practical living.
             </p>
           </div>
 
           <div class="card">
-            <h3>Seller-first advice</h3>
+            <h3>Presentation advice</h3>
             <p>
-              For Glen Eden sellers, the campaign should show buyers why the property is worth choosing now. Presentation, pricing and clear explanation of potential can strongly influence enquiry and offer confidence.
+              We help you decide what to fix, what to leave, what to highlight and how to make the home feel more appealing before spending money.
             </p>
           </div>
 
           <div class="card">
-            <h3>Value strategy</h3>
+            <h3>AI-powered marketing</h3>
             <p>
-              Glen Eden value is often influenced by land, condition, location, transport, renovation potential, rental appeal and how the property compares with other affordable West Auckland options.
+              Raine & Horne Amplify helps promote your property beyond standard listing portals, aiming to reach more of the right buyers online.
             </p>
           </div>
 
           <div class="card">
-            <h3>Amplify AI marketing</h3>
+            <h3>Conjunctional exposure</h3>
             <p>
-              Raine & Horne Amplify helps put your property in front of more of the right buyers across key digital channels, supporting stronger awareness beyond standard real estate websites.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Conjunctional approach</h3>
-            <p>
-              We work with other agencies and agents where it helps your sale. Choosing us does not mean limiting the buyer pool — it means having experienced local agents manage the process while reaching more buyers.
+              We work with other agencies and agents where it helps your sale, so choosing us does not mean limiting your buyer pool.
             </p>
           </div>
 
           <div class="card">
             <h3>Direct local service</h3>
             <p>
-              You deal directly with experienced agents who are personally involved in strategy, feedback, buyer follow-up, negotiation and communication.
+              You deal directly with experienced local agents who are personally involved in strategy, feedback, buyer follow-up and negotiation.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Negotiation strategy</h3>
+            <p>
+              Selling well is not only about attracting buyers. It is also about reading motivation, managing objections and negotiating with confidence.
             </p>
           </div>
         </div>
@@ -780,14 +795,14 @@
           <div class="card">
             <h3>Condition and presentation</h3>
             <p>
-              Buyers often calculate future costs quickly. Maintenance, roof condition, paint, moisture, flooring, kitchens, bathrooms, gardens and presentation can all affect whether they feel confident or cautious.
+              Buyers often calculate future costs quickly. Maintenance, roof condition, paint, moisture, flooring, kitchens, bathrooms, gardens and presentation can affect confidence.
             </p>
           </div>
 
           <div class="card">
             <h3>Potential without confusion</h3>
             <p>
-              If a home has renovation, rental or future-use potential, it needs to be explained clearly. Buyers should understand the opportunity without feeling the property is risky or too much work.
+              If a home has renovation, rental or future-use potential, it needs to be explained clearly so buyers see the opportunity without feeling the property is risky.
             </p>
           </div>
         </div>
@@ -798,7 +813,7 @@
       <div class="container">
         <div class="grid-2">
           <div>
-            <span class="eyebrow">Goal match</span>
+            <span class="eyebrow">Selling smarter</span>
             <h2>If Your Goal Is To Sell Well, Start With Better Glen Eden Advice</h2>
             <p>
               A free Glen Eden appraisal is not just about finding a number. It is about understanding what your property is competing against, what buyers are likely to notice, and how to create a stronger reason for them to act.
@@ -809,137 +824,87 @@
           </div>
 
           <div class="card">
-            <h3>Why a searcher should choose us</h3>
+            <h3>Why this matters</h3>
             <p>
-              Because we help turn a property value question into a practical selling plan. We explain what may help, what may hurt, and how to position your Glen Eden home so buyers feel more confident.
+              Better preparation can reduce buyer hesitation, improve enquiry quality and help you make calmer decisions during the campaign.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="request-appraisal">
-      <div class="container">
-        <div class="grid-2">
-          <div>
-            <span class="eyebrow">Request your free appraisal</span>
-            <h2>Find Out What Your Glen Eden Property May Be Worth</h2>
-            <p>
-              Send your details and we will help you understand your likely value, buyer demand and the best next step for your situation.
-            </p>
-
-            <ul class="mini-list">
-              <li>No pressure</li>
-              <li>Local Glen Eden property advice</li>
-              <li>Practical selling strategy</li>
-              <li>Clear guidance before you spend money</li>
-            </ul>
-          </div>
-
-          <div class="form-wrap">
-            <form action="https://formspree.io/f/mdabnpgl" method="POST">
-              <input type="hidden" name="_subject" value="New Glen Eden appraisal enquiry">
-              <input type="hidden" name="suburb" value="Glen Eden">
-
-              <div>
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" required>
-              </div>
-
-              <div>
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="tel" required>
-              </div>
-
-              <div>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required>
-              </div>
-
-              <div>
-                <label for="address">Property address</label>
-                <input id="address" name="property_address" type="text" required>
-              </div>
-
-              <div>
-                <label for="timeframe">When are you thinking of selling?</label>
-                <select id="timeframe" name="selling_timeframe">
-                  <option value="">Select timeframe</option>
-                  <option>Just curious</option>
-                  <option>Within 3 months</option>
-                  <option>Within 6 months</option>
-                  <option>This year</option>
-                  <option>Not sure yet</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="message">What would you like help with?</label>
-                <textarea id="message" name="message" placeholder="Example: value, timing, preparation, buyer demand, renovation potential, investment property, family home, first-home buyer appeal, etc."></textarea>
-              </div>
-
-              <button class="btn btn-primary" type="submit">Send My Glen Eden Appraisal Request</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq">
+    <section class="faq" id="faq">
       <div class="container">
         <div class="section-title">
           <span class="eyebrow">Glen Eden FAQs</span>
-          <h2>Free Home Appraisal Glen Eden — Common Questions</h2>
+          <h2>Free Property Appraisal Glen Eden — Common Questions</h2>
         </div>
 
         <details>
-          <summary>Is the Glen Eden appraisal really free?</summary>
+          <summary>How do I get a free property appraisal in Glen Eden?</summary>
           <p>
-            Yes. We offer free appraisal advice for Glen Eden homeowners who are thinking of selling, planning ahead, or simply wanting to understand their current market position.
+            You can request a free Glen Eden property appraisal from Team Peter & Edita, Raine & Horne. We can help you understand likely value, recent local sales, buyer demand, presentation, pricing strategy and next steps before selling.
           </p>
         </details>
 
         <details>
-          <summary>What makes a Glen Eden appraisal different?</summary>
+          <summary>What affects property value in Glen Eden?</summary>
           <p>
-            Glen Eden homes often need more than a simple bedroom-count comparison. Land, condition, transport, rental appeal, renovation potential, affordability and buyer confidence can all influence value.
+            Glen Eden property values can be affected by location, land size, property type, layout, condition, parking, access, outdoor space, school appeal, buyer demand, nearby competition and recent comparable sales.
           </p>
         </details>
 
         <details>
-          <summary>What makes your appraisal different from an online estimate?</summary>
+          <summary>Why should I use a local Glen Eden real estate agent?</summary>
           <p>
-            Online estimates can miss condition, presentation, buyer confidence, renovation potential, future costs, layout, parking, outdoor usability, competing homes and current buyer demand. We look at the whole selling picture.
+            A local Glen Eden agent understands how buyers compare homes in the area, including family appeal, transport access, land size, presentation, privacy, parking and value compared with nearby suburbs such as New Lynn, Green Bay, Titirangi, Sunnyvale and Glendene.
           </p>
         </details>
 
         <details>
-          <summary>Can you help if we are not ready to sell yet?</summary>
+          <summary>What should I prepare before selling a Glen Eden home?</summary>
           <p>
-            Yes. Earlier advice often helps sellers avoid wasting money and make smarter preparation decisions before going to market.
+            It can help to review presentation, maintenance, gardens, LIM and title documents, recent comparable sales, competing listings and likely buyer objections. Early preparation can help buyers feel more confident.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is a real estate appraisal the same as a registered valuation?</summary>
+          <p>
+            No. A real estate appraisal is market guidance prepared by a licensed real estate professional to estimate a likely selling range. It is not a registered valuation.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can Team Peter and Edita help if I am not ready to sell yet?</summary>
+          <p>
+            Yes. Many Glen Eden homeowners ask for advice before they are ready to sell. Early guidance can help with timing, preparation, presentation, repairs, pricing expectations and understanding current buyer demand.
           </p>
         </details>
       </div>
     </section>
 
-    <section class="highlight">
+    <section class="highlight" id="nearby">
       <div class="container">
         <div class="section-title">
           <span class="eyebrow">Nearby appraisal pages</span>
           <h2>Other West Auckland Appraisal Areas</h2>
+          <p>
+            Explore nearby suburb appraisal pages for more specific local selling advice.
+          </p>
         </div>
 
-        <div class="suburb-links">
-          <a href="../free-home-appraisal-titirangi/">Titirangi</a>
-          <a href="../free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
-          <a href="../free-home-appraisal-lynfield/">Lynfield</a>
-          <a href="../free-home-appraisal-new-lynn/">New Lynn</a>
-          <a href="../free-home-appraisal-green-bay/">Green Bay</a>
-          <a href="../free-home-appraisal-mount-roskill/">Mount Roskill</a>
-          <a href="../free-home-appraisal-new-windsor/">New Windsor</a>
-          <a href="../free-home-appraisal-glendene/">Glendene</a>
-          <a href="../free-home-appraisal-avondale/">Avondale</a>
-          <a href="../">West Auckland</a>
+        <div class="suburb-grid">
+          <a class="suburb-link" href="../free-home-appraisal-titirangi/">Titirangi</a>
+          <a class="suburb-link" href="../free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
+          <a class="suburb-link" href="../free-home-appraisal-lynfield/">Lynfield</a>
+          <a class="suburb-link" href="../free-home-appraisal-new-lynn/">New Lynn</a>
+          <a class="suburb-link" href="../free-home-appraisal-green-bay/">Green Bay</a>
+          <a class="suburb-link" href="../free-home-appraisal-mount-roskill/">Mount Roskill</a>
+          <a class="suburb-link" href="../free-home-appraisal-new-windsor/">New Windsor</a>
+          <a class="suburb-link" href="../free-home-appraisal-glendene/">Glendene</a>
+          <a class="suburb-link" href="../free-home-appraisal-avondale/">Avondale</a>
+          <a class="suburb-link" href="../">West Auckland</a>
         </div>
       </div>
     </section>
@@ -951,7 +916,7 @@
       <div>
         <h2>Team Peter & Edita | Raine & Horne</h2>
         <p>
-          Helping Glen Eden and West Auckland homeowners with free property appraisals, selling strategy, buyer-focused marketing and negotiation.
+          Helping Glen Eden and West Auckland homeowners with free property appraisals, selling strategy, buyer-focused marketing, Raine & Horne Amplify and negotiation.
         </p>
         <p class="small">
           Licensed under the Real Estate Agents Act 2008. This website provides general real estate information and appraisal enquiry options. It is not a registered valuation.
@@ -959,9 +924,19 @@
       </div>
 
       <div>
-        <p><strong>Call:</strong> <a href="tel:021765234">021 765 234</a></p>
+        <p><strong>Call:</strong> <a href="tel:+6421765234">021 765 234</a></p>
         <p><strong>Email:</strong> <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a></p>
-        <p><strong>Website:</strong> <a href="https://www.raineandhorne.co.nz/blockhousebay">Raine & Horne Blockhouse Bay</a></p>
+        <p>
+          <strong>Office:</strong>
+          <a href="https://www.google.com/maps/place/Raine+%26+Horne+Real+Estate+Agents+:+Edita+Andrijasevic/@-36.9230647,174.6725165,663m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6d0d43c91b5924b1:0x3315ff59433d189f!8m2!3d-36.923069!4d174.6750914!16s%2Fg%2F11b6v8nh90" target="_blank" rel="noopener">
+            9 Sheridan Drive, New Lynn, Auckland 0600, New Zealand
+          </a>
+        </p>
+        <p><strong>Hours:</strong> Mon–Fri 9am–3pm & 4pm–9pm · Sat–Sun 9am–7pm</p>
+        <p><strong>Website:</strong> <a href="https://www.raineandhorne.co.nz/blockhousebay">Raine & Horne Blockhouse Bay, Titirangi & Lynfield</a></p>
+        <p class="small">
+          <a href="../privacy-policy.html">Privacy Policy</a>
+        </p>
       </div>
     </div>
   </footer>
