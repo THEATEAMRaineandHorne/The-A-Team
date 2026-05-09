@@ -124,6 +124,23 @@
     .nav-links a:hover {
       color: var(--gold);
     }
+    .breadcrumb-bar {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      font-size: 14px;
+      color: #555555;
+    }
+
+    .breadcrumb-bar a {
+      color: #202020;
+      font-weight: 800;
+    }
+
+    .breadcrumb-bar span {
+      margin: 0 6px;
+    }
+
 
     .hero {
       position: relative;
@@ -405,6 +422,77 @@
       border-color: #555555;
     }
 
+    .local-team-section {
+      background: #ffffff;
+    }
+
+    .local-team-wrap {
+      max-width: 1220px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .local-team-image-card {
+      background: #f8f7f4;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 18px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.05);
+    }
+
+    .local-team-image-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 18px;
+      object-fit: cover;
+    }
+
+    .local-team-photo-note {
+      margin: 12px 4px 0;
+      font-size: 14px;
+      color: #666666;
+      text-align: center;
+    }
+
+    .local-team-content p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #555555;
+      margin: 0 0 18px;
+    }
+
+    .local-team-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .local-team-box {
+      background: #fffdf8;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .local-team-box h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #202020;
+    }
+
+    .local-team-box p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.65;
+      color: #555555;
+    }
+
     .suburb-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -559,7 +647,8 @@
       .hero-content,
       .grid-2,
       .grid-3,
-      .footer-inner {
+      .footer-inner,
+      .local-team-wrap {
         grid-template-columns: 1fr;
       }
 
@@ -567,7 +656,8 @@
         min-height: auto;
       }
 
-      .hero-proof {
+      .hero-proof,
+      .local-team-grid {
         grid-template-columns: 1fr;
       }
 
@@ -615,7 +705,7 @@
   },
   "primaryImageOfPage": {
     "@type": "ImageObject",
-    "url": "https://theateamraineandhorne.github.io/The-A-Team/images/free-home-appraisal-mount-roskill.jpg"
+    "url": "https://theateamraineandhorne.github.io/The-A-Team/images/mount-roskill-free-property-appraisal.jpg"
   },
   "publisher": {
     "@type": "RealEstateAgent",
@@ -767,7 +857,7 @@
   <header>
     <nav class="nav">
       <a href="https://theateamraineandhorne.github.io/The-A-Team/" class="brand">
-        <img src="https://theateamraineandhorne.github.io/The-A-Team/images/rh-logo.png" alt="Team Peter and Edita Raine and Horne logo" width="46" height="46">
+        <img src="../images/rh-logo.png" alt="Team Peter and Edita Raine and Horne logo" width="46" height="46">
         <div>Team Peter & Edita <span>| Raine & Horne</span></div>
       </a>
 
@@ -784,11 +874,17 @@
     </nav>
   </header>
 
+  <div class="breadcrumb-bar">
+    <a href="../">Home</a>
+    <span>›</span>
+    <span>Free Property Appraisal Mount Roskill</span>
+  </div>
+
   <main>
 
     <section class="hero" id="appraisal">
       <img
-        src="https://theateamraineandhorne.github.io/The-A-Team/images/mount-roskill-free-property-appraisal.jpg"
+        src="../images/mount-roskill-free-property-appraisal.jpg"
         alt="Free property appraisal Mount Roskill and home selling advice from Team Peter and Edita Raine and Horne"
         class="hero-bg"
         width="1800"
@@ -898,6 +994,7 @@
 
             <p class="small" style="color:#555555; margin:0;">
               Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.
+              <a href="../privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
             </p>
           </form>
         </div>
@@ -960,29 +1057,45 @@
       </div>
     </section>
 
-    <section id="about-team">
-      <div class="container">
-        <div class="section-title">
-          <span class="eyebrow">Local Mount Roskill real estate agents</span>
-          <h2>Meet Team Peter & Edita</h2>
-          <p>
-            Team Peter & Edita, also known as THE A-TEAM, are local Raine & Horne real estate agents helping homeowners across Mount Roskill, Lynfield, New Windsor, Hillsborough, Waikowhai, Three Kings, Sandringham, Blockhouse Bay and nearby Auckland suburbs.
+    <section id="about-team" class="local-team-section">
+      <div class="local-team-wrap">
+        <div class="local-team-image-card">
+          <img
+            src="../images/peter-edita-rh.png"
+            alt="Peter and Edita Andrijasevic, local Raine and Horne real estate agents helping Mount Roskill homeowners"
+            loading="lazy">
+
+          <p class="local-team-photo-note">
+            Peter &amp; Edita Andrijasevic | Team Peter &amp; Edita | Raine &amp; Horne
           </p>
         </div>
 
-        <div class="grid-2">
-          <div class="card">
-            <h3>Personal advice, not a factory process</h3>
-            <p>
-              With more than 25 years of combined real estate experience, we work closely with sellers on pricing, preparation, marketing, buyer follow-up and negotiation. Our goal is to give you clear advice before you make a major property decision.
-            </p>
-          </div>
+        <div class="local-team-content">
+          <span class="eyebrow">Local Mount Roskill Auckland Real Estate Agents</span>
+          <h2>Meet Team Peter &amp; Edita</h2>
 
-          <div class="card">
-            <h3>Backed by Raine & Horne Since 1883</h3>
-            <p>
-              You get the best of both worlds: personal local guidance from Team Peter & Edita, backed by the strength, history and marketing power of a real estate brand whose story began in 1883.
-            </p>
+          <p>
+            Team Peter &amp; Edita, also known as THE A-TEAM, are local Raine &amp; Horne real estate agents helping homeowners across Mount Roskill, Lynfield, New Windsor, Hillsborough, Waikowhai, Three Kings, Sandringham, Blockhouse Bay and nearby Auckland suburbs.
+          </p>
+
+          <p>
+            If you are thinking about selling in Mount Roskill, we help you understand buyer demand, pricing, presentation, property type, parking, access, renovation potential, marketing and the small details that can affect buyer confidence before your property goes to market.
+          </p>
+
+          <div class="local-team-grid">
+            <div class="local-team-box">
+              <h3>Mount Roskill advice with buyer reality in mind</h3>
+              <p>
+                We help you understand how buyers may react to your property’s location, layout, parking, access, condition, outdoor use, property type and comparison with nearby suburbs.
+              </p>
+            </div>
+
+            <div class="local-team-box">
+              <h3>Personal service, backed by Raine &amp; Horne since 1883</h3>
+              <p>
+                You get direct guidance from Team Peter &amp; Edita, with the support, systems and marketing strength of a real estate brand whose story began in 1883.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1242,7 +1355,8 @@
         <p><strong>Hours:</strong> Mon–Fri 9am–3pm & 4pm–9pm · Sat–Sun 9am–7pm</p>
         <p><strong>Website:</strong> <a href="https://www.raineandhorne.co.nz/blockhousebay">Raine & Horne Blockhouse Bay, Titirangi & Lynfield</a></p>
         <p class="small">
-          Areas served: Mount Roskill, Lynfield, New Windsor, Hillsborough, Waikowhai, Three Kings, Sandringham, Blockhouse Bay and nearby Auckland suburbs.
+          Areas served: Mount Roskill, Lynfield, New Windsor, Hillsborough, Waikowhai, Three Kings, Sandringham, Blockhouse Bay and nearby Auckland suburbs.<br>
+          <a href="../privacy-policy.html">Privacy Policy</a>
         </p>
       </div>
     </div>
