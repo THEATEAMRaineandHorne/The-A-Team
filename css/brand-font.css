@@ -121,3 +121,45 @@ body{
 .nav-links a:hover{
   color:#b08a42 !important;
 }
+/* FINAL HEADER BRAND COLOUR OVERRIDE */
+.nav a.brand,
+.nav a.brand:visited,
+.nav a.brand:hover,
+.nav a.brand .brand-name,
+.nav a.brand .brand-team,
+.nav a.brand .brand-rh{
+  color:#111 !important;
+  font-family:"RaineHorne", Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+
+/* The vertical divider */
+.nav a.brand .brand-divider{
+  color:#b08a42 !important;
+  margin:0 8px !important;
+  font-family:"RaineHorne", Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+
+/* Only the & symbols */
+.nav a.brand .brand-amp{
+  color:#b08a42 !important;
+  font-family:"RaineHorne", Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+
+/* Stop old .brand span styling from making everything gold */
+.nav a.brand span:not(.brand-amp):not(.brand-divider){
+  color:#111 !important;
+}
+
+/* Keep menu links black */
+.nav-links a{
+  color:#111 !important;
+  font-family:"RaineHorne", Arial, Helvetica, sans-serif !important;
+  font-weight:700 !important;
+}
+
+.nav-links a:hover{
+  color:#b08a42 !important;
+}
