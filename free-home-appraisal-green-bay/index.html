@@ -1465,36 +1465,184 @@
 
   </main>
 
-  <footer>
-    <div class="footer-inner">
-      <div>
-        <h2>Team Peter & Edita | Raine & Horne</h2>
-        <p>
-          Helping Green Bay Auckland homeowners with free home appraisals, selling strategy, buyer-focused marketing, Raine & Horne Amplify and negotiation.
-        </p>
-        <p class="small">
-          Licensed under the Real Estate Agents Act 2008. This website provides general real estate information and appraisal enquiry options. It is not a registered valuation.
-        </p>
-      </div>
+  <style>
+  .seo-footer{
+    background:#202020 !important;
+    color:#ffffff !important;
+    padding:54px 20px !important;
+  }
 
-      <div>
-        <p><strong>Call:</strong> <a href="tel:+6421765234">021 765 234</a></p>
-        <p><strong>Email:</strong> <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a></p>
-        <p>
-          <strong>Office:</strong>
-          <a href="https://www.google.com/maps/place/Raine+%26+Horne+Real+Estate+Agents+:+Edita+Andrijasevic/@-36.9230647,174.6725165,663m/data=!3m2!1e3!4b1!4m6!3m5!1s0x6d0d43c91b5924b1:0x3315ff59433d189f!8m2!3d-36.923069!4d174.6750914!16s%2Fg%2F11b6v8nh90?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
-            9 Sheridan Drive, New Lynn, Auckland 0600, New Zealand
-          </a>
-        </p>
-        <p><strong>Hours:</strong> Mon–Fri 9am–3pm & 4pm–9pm · Sat–Sun 9am–7pm</p>
-        <p><strong>Website:</strong> <a href="https://www.raineandhorne.co.nz/blockhousebay">Raine & Horne Blockhouse Bay, Titirangi & Lynfield</a></p>
-        <p class="small">
-          Areas served: Green Bay, Titirangi, Blockhouse Bay, New Lynn, Glen Eden, Lynfield, New Windsor, Laingholm and nearby West Auckland suburbs.<br>
-          <a href="../privacy-policy.html">Privacy Policy</a>
-        </p>
+  .seo-footer-inner{
+    max-width:1220px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+    align-items:stretch;
+  }
+
+  .seo-footer-card{
+    background:#292929;
+    border:1px solid rgba(255,255,255,0.10);
+    border-radius:24px;
+    padding:32px;
+    box-shadow:0 18px 45px rgba(0,0,0,0.18);
+  }
+
+  .seo-footer h2{
+    color:#ffffff !important;
+    font-size:clamp(28px,3vw,42px);
+    line-height:1.1;
+    margin:0 0 16px;
+    letter-spacing:-0.8px;
+  }
+
+  .seo-footer h3{
+    color:#ffffff !important;
+    font-size:20px;
+    margin:0 0 14px;
+  }
+
+  .seo-footer p{
+    color:#eeeeee !important;
+    line-height:1.65;
+    margin:0 0 14px;
+  }
+
+  .seo-footer .small{
+    font-size:13px;
+    color:#cccccc !important;
+  }
+
+  .seo-footer-gold{
+    color:#ffb200 !important;
+  }
+
+  .seo-footer-contact{
+    margin-top:22px;
+    display:grid;
+    gap:10px;
+  }
+
+  .seo-footer-contact a{
+    color:#ffb200 !important;
+    font-weight:800 !important;
+    text-decoration:none !important;
+  }
+
+  .seo-footer-contact a:hover{
+    color:#ffffff !important;
+  }
+
+  .seo-footer-link-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+  }
+
+  .seo-footer-links a{
+    display:block;
+    color:#ffb200 !important;
+    font-weight:800 !important;
+    text-decoration:none !important;
+    margin-bottom:10px;
+    line-height:1.35;
+  }
+
+  .seo-footer-links a:hover{
+    color:#ffffff !important;
+  }
+
+  .seo-footer .seo-footer-contact a.seo-footer-cta{
+    background:#ffb200 !important;
+    color:#202020 !important;
+    font-weight:900 !important;
+    text-align:center !important;
+    min-height:52px !important;
+    padding:13px 24px !important;
+    border-radius:999px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+  }
+
+  .seo-footer .seo-footer-contact a.seo-footer-cta:hover{
+    background:#ffffff !important;
+    color:#202020 !important;
+  }
+
+  @media(max-width:900px){
+    .seo-footer-inner{
+      grid-template-columns:1fr;
+    }
+
+    .seo-footer-link-grid{
+      grid-template-columns:1fr;
+    }
+
+    .seo-footer-card{
+      padding:26px;
+    }
+  }
+</style>
+
+<footer class="seo-footer">
+  <div class="seo-footer-inner">
+
+    <div class="seo-footer-card">
+      <h2>Team Peter &amp; Edita | Raine <span class="seo-footer-gold">&amp;</span> Horne</h2>
+
+      <p>
+        Helping Green Bay and West Auckland homeowners with free property appraisals, selling strategy,
+        buyer-focused marketing, Raine &amp; Horne Amplify and negotiation.
+      </p>
+
+      <p class="small">
+        Licensed under the Real Estate Agents Act 2008. This website provides general real estate
+        information and appraisal enquiry options. It is not a registered valuation.
+      </p>
+
+      <p class="small">
+        Areas served: Green Bay, Titirangi, New Lynn, Glen Eden, Blockhouse Bay, Lynfield,
+        Mount Roskill, New Windsor, Glendene, Avondale and nearby West Auckland suburbs.
+      </p>
+
+      <div class="seo-footer-contact">
+        <a href="tel:+6421765234">021 765 234</a>
+        <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
+        <a class="seo-footer-cta" href="#request-appraisal">Request Free Green Bay Appraisal</a>
       </div>
     </div>
-  </footer>
+
+    <div class="seo-footer-card">
+      <div class="seo-footer-link-grid">
+
+        <div class="seo-footer-links">
+          <h3>Free Appraisals</h3>
+          <a href="/The-A-Team/free-home-appraisal-green-bay/">Green Bay</a>
+          <a href="/The-A-Team/free-home-appraisal-titirangi/">Titirangi</a>
+          <a href="/The-A-Team/free-home-appraisal-new-lynn/">New Lynn</a>
+          <a href="/The-A-Team/free-home-appraisal-glen-eden/">Glen Eden</a>
+          <a href="/The-A-Team/free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
+          <a href="/The-A-Team/free-home-appraisal-lynfield/">Lynfield</a>
+        </div>
+
+        <div class="seo-footer-links">
+          <h3>Seller Guides</h3>
+          <a href="/The-A-Team/articles/best-real-estate-agent-titirangi.html">Best Agent Titirangi</a>
+          <a href="/The-A-Team/articles/best-real-estate-agent-blockhouse-bay.html">Best Agent Blockhouse Bay</a>
+          <a href="/The-A-Team/articles/best-real-estate-agent-lynfield.html">Best Agent Lynfield</a>
+          <a href="/The-A-Team/articles/best-time-to-sell-west-auckland.html">Best Time To Sell</a>
+          <a href="/The-A-Team/articles/prepare-home-for-sale-auckland.html">Prepare Your Home</a>
+          <a href="/The-A-Team/amplify-property-marketing/">Raine &amp; Horne Amplify</a>
+          <a href="/The-A-Team/privacy-policy.html">Privacy Policy</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
 
   <script>
     document.querySelectorAll('.video-placeholder').forEach(function (wrapper) {
