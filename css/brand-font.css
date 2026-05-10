@@ -76,3 +76,48 @@ body{
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
+/* Header brand + navigation font */
+.nav .brand,
+.nav .brand *,
+.nav-links a{
+  font-family:"RaineHorne", Arial, Helvetica, sans-serif !important;
+  font-weight:700;
+}
+
+/* Main brand text */
+.brand-name{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:#111 !important;
+}
+
+/* Team Peter & Edita */
+.brand-team{
+  color:#111 !important;
+}
+
+/* Divider */
+.brand-divider{
+  color:#b08a42 !important;
+}
+
+/* Raine and Horne words */
+.brand-rh{
+  color:#111 !important;
+}
+
+/* Only the & inside Raine & Horne */
+.brand-amp{
+  color:#b08a42 !important;
+}
+
+/* Navigation links */
+.nav-links a{
+  color:#111 !important;
+  letter-spacing:.3px;
+}
+
+.nav-links a:hover{
+  color:#b08a42 !important;
+}
