@@ -296,7 +296,27 @@ b{
   background:#ffffff;
   color:#202020 !important;
 }
+/* FINAL FIX: make footer appraisal button text visible */
+.seo-footer .seo-footer-contact a.seo-footer-cta,
+.seo-footer .seo-footer-contact a.seo-footer-cta:visited {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #ffb200 !important;
+  color: #202020 !important;
+  padding: 16px 28px !important;
+  border-radius: 999px !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+  text-align: center !important;
+  min-height: 56px !important;
+}
 
+.seo-footer .seo-footer-contact a.seo-footer-cta:hover {
+  background: #ffffff !important;
+  color: #202020 !important;
+}
 @media(max-width:900px){
   .seo-footer-inner{
     grid-template-columns:1fr;
