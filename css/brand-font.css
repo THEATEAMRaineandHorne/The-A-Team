@@ -330,3 +330,38 @@ b{
     padding:26px;
   }
 }
+/* ================================
+   FINAL DESKTOP FOOTER FIX
+   ================================ */
+
+.seo-footer .seo-footer-inner {
+  max-width: 1220px !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 1fr) !important;
+  gap: 28px !important;
+  align-items: stretch !important;
+}
+
+.seo-footer .seo-footer-left,
+.seo-footer .seo-footer-right {
+  width: 100% !important;
+}
+
+.seo-footer .seo-footer-link-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 28px !important;
+}
+
+.seo-footer iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Mobile will stack later, but desktop/laptop stays side by side */
+@media (max-width: 900px) {
+  .seo-footer .seo-footer-inner {
+    grid-template-columns: 1fr !important;
+  }
+}
