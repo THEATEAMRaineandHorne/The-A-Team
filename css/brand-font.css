@@ -4,7 +4,7 @@
 
 @font-face{
   font-family:"RaineHorne";
-  src:url("../fonts/raine-horne-regular.ttf") format("truetype");
+  src:url("/fonts/raine-horne-regular.ttf") format("truetype");
   font-weight:400;
   font-style:normal;
   font-display:swap;
@@ -12,7 +12,7 @@
 
 @font-face{
   font-family:"RaineHorne";
-  src:url("../fonts/raine-horne-light.ttf") format("truetype");
+  src:url("/fonts/raine-horne-light.ttf") format("truetype");
   font-weight:300;
   font-style:normal;
   font-display:swap;
@@ -20,7 +20,7 @@
 
 @font-face{
   font-family:"InterCustom";
-  src:url("../fonts/inter-regular.ttf") format("truetype");
+  src:url("/fonts/inter-regular.ttf") format("truetype");
   font-weight:400;
   font-style:normal;
   font-display:swap;
@@ -28,7 +28,7 @@
 
 @font-face{
   font-family:"InterCustom";
-  src:url("../fonts/inter-light.ttf") format("truetype");
+  src:url("/fonts/inter-light.ttf") format("truetype");
   font-weight:300;
   font-style:normal;
   font-display:swap;
@@ -36,7 +36,7 @@
 
 @font-face{
   font-family:"InterCustom";
-  src:url("../fonts/inter-bold.ttf") format("truetype");
+  src:url("/fonts/inter-bold.ttf") format("truetype");
   font-weight:700;
   font-style:normal;
   font-display:swap;
