@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://theateamraineandhorne.github.io/The-A-Team/sitemap.xml
+Sitemap: https://peterandedita.co.nz/sitemap.xml
