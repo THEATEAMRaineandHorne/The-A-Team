@@ -773,7 +773,7 @@ footer a[href="#appraisal"]:hover {
   "priceRange": "$$",
   "image": [
     "https://peterandedita.co.nz/images/west-auckland-free-property-appraisal.jpg",
-    "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg",
+    "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.png",
     "https://peterandedita.co.nz/images/rh-logo.png"
   ],
   "logo": "https://peterandedita.co.nz/images/rh-logo.png",
@@ -1053,6 +1053,7 @@ footer a[href="#appraisal"]:hover {
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://peterandedita.co.nz/#faq",
   "mainEntity": [
     {
       "@type": "Question",
@@ -1083,7 +1084,15 @@ footer a[href="#appraisal"]:hover {
       "name": "Do you only work in Titirangi, Blockhouse Bay and Lynfield?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Edita Andrijasevic regularly helps homeowners across nearby West and Central Auckland suburbs including Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene and Avondale."
+        "text": "Edita Andrijasevic regularly helps homeowners across West and Central Auckland, including Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and nearby suburbs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I ask for advice even if I am not ready to sell yet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Many homeowners request an appraisal early so they can understand their likely value, what improvements may matter, when to sell and how to prepare properly before going to market."
       }
     }
   ]
@@ -1099,7 +1108,7 @@ footer a[href="#appraisal"]:hover {
   "givenName": "Edita",
   "familyName": "Andrijasevic",
   "jobTitle": "Licensed Real Estate Salesperson",
-  "image": "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg",
+  "image": "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.png",
   "url": "https://peterandedita.co.nz/",
   "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
   "telephone": "+64 21 765 234",
@@ -1491,7 +1500,7 @@ footer a[href="#appraisal"]:hover {
   <div class="about-container">
     <div class="about-photo-card">
       <img
-        src="images/edita-andrijasevic-raine-and-horne.jpg"
+        src="images/edita-andrijasevic-raine-and-horne.png"
         alt="Edita Andrijasevic, Raine and Horne real estate agent in West Auckland"
         loading="lazy">
       <p class="photo-caption">
@@ -2238,42 +2247,144 @@ footer a[href="#appraisal"]:hover {
   </div>
 </section>
 
-    <section class="faq">
-      <div class="container">
-        <div class="section-title">
-          <span class="eyebrow">Questions sellers ask</span>
-          <h2>West Auckland Property Appraisal FAQs</h2>
-        </div>
+    <!-- FAQ SECTION - START -->
+<section id="faq" class="faq-visible-section">
+  <style>
+    .faq-visible-section {
+      background: #ffffff;
+      padding: 78px 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #202020;
+    }
 
-        <details>
-          <summary>Is the property appraisal really free?</summary>
-          <p>
-            Yes. Edita Andrijasevic: Raine &amp; Horne offers free property appraisal advice for homeowners thinking of selling, planning ahead or wanting to understand their current market position.
-          </p>
-        </details>
+    .faq-visible-section .faq-container {
+      max-width: 1220px;
+      margin: 0 auto;
+    }
 
-        <details>
-          <summary>What do I get with a free appraisal?</summary>
-          <p>
-            You can receive guidance on likely value, recent comparable sales, buyer demand, presentation, marketing strategy, possible buyer objections and next steps if you decide to sell.
-          </p>
-        </details>
+    .faq-visible-section .faq-eyebrow {
+      display: inline-block;
+      background: #ffb200;
+      color: #202020;
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
 
-        <details>
-          <summary>How is this different from an online estimate?</summary>
-          <p>
-            Online estimates can miss condition, presentation, access, layout, privacy, sunlight, buyer emotion, current competition and local market mood. Edita looks at the whole selling picture.
-          </p>
-        </details>
+    .faq-visible-section h2 {
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.08;
+      letter-spacing: -1.4px;
+      margin: 0 0 18px;
+      color: #202020;
+    }
 
-        <details>
-          <summary>Do you only work in Titirangi, Blockhouse Bay and Lynfield?</summary>
-          <p>
-            Edita Andrijasevic regularly helps homeowners across nearby West and Central Auckland suburbs including Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene and Avondale.
-          </p>
-        </details>
-      </div>
-    </section>
+    .faq-visible-section .faq-intro {
+      max-width: 880px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #555555;
+      margin: 0 0 36px;
+    }
+
+    .faq-visible-section .faq-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .faq-visible-section .faq-item {
+      background: #ffffff;
+      border: 1px solid #e8e2d7;
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.04);
+    }
+
+    .faq-visible-section .faq-item h3 {
+      font-size: 24px;
+      line-height: 1.25;
+      margin: 0 0 12px;
+      color: #202020;
+    }
+
+    .faq-visible-section .faq-item p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #4D4E50;
+      margin: 0;
+    }
+
+    @media (max-width: 700px) {
+      .faq-visible-section {
+        padding: 58px 18px;
+      }
+
+      .faq-visible-section .faq-item {
+        padding: 22px;
+      }
+
+      .faq-visible-section .faq-item h3 {
+        font-size: 21px;
+      }
+
+      .faq-visible-section .faq-item p {
+        font-size: 16px;
+      }
+    }
+  </style>
+
+  <div class="faq-container">
+    <span class="faq-eyebrow">Frequently Asked Questions</span>
+
+    <h2>West Auckland Property Appraisal FAQs</h2>
+
+    <p class="faq-intro">
+      These are common questions homeowners ask before requesting a free property appraisal with Edita Andrijasevic: Raine &amp; Horne.
+    </p>
+
+    <div class="faq-grid">
+      <article class="faq-item">
+        <h3>Is the property appraisal really free?</h3>
+        <p>
+          Yes. Edita Andrijasevic: Raine &amp; Horne offers free property appraisal advice for homeowners thinking of selling, planning ahead or wanting to understand their current market position.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>What do I get with a free appraisal?</h3>
+        <p>
+          You can receive guidance on likely value, recent comparable sales, buyer demand, presentation, marketing strategy, possible buyer objections and next steps if you decide to sell.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>How is this different from an online estimate?</h3>
+        <p>
+          Online estimates can miss condition, presentation, access, layout, privacy, sunlight, buyer emotion, current competition and local market mood. Edita looks at the whole selling picture.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>Do you only work in Titirangi, Blockhouse Bay and Lynfield?</h3>
+        <p>
+          Edita Andrijasevic regularly helps homeowners across West and Central Auckland, including Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and nearby suburbs.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <h3>Can I ask for advice even if I am not ready to sell yet?</h3>
+        <p>
+          Yes. Many homeowners request an appraisal early so they can understand their likely value, what improvements may matter, when to sell and how to prepare properly before going to market.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- FAQ SECTION - END -->
 
   </main>
 
