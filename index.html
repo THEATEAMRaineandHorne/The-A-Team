@@ -335,6 +335,11 @@
       contain-intrinsic-size: 800px;
     }
 
+    #reviews {
+      content-visibility: visible !important;
+      contain-intrinsic-size: auto !important;
+    }
+
     .container {
       max-width: 1220px;
       margin: 0 auto;
@@ -517,8 +522,8 @@
 
     .elfsight-review-box {
       width: 100%;
-      min-height: 220px;
-      overflow: hidden;
+      min-height: 380px;
+      overflow: visible;
     }
 
     .faq details {
@@ -2111,11 +2116,10 @@ footer a[href="#appraisal"]:hover {
       <a href="https://share.google/ddO9ayximJFNs2muB" target="_blank" rel="noopener">
         Read More Google Reviews
       </a>
-      <!-- Elfsight Google Reviews | Edita Andrijasevic Reviews -->
-<div class="elfsight-review-box" style="margin-top: 28px;">
-  <script src="https://elfsightcdn.com/platform.js" async></script>
-  <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
-</div>
+      <!-- Elfsight Google Reviews | THE A-TEAM REVIEWS -->
+      <div id="reviews-widget" class="elfsight-review-box" style="margin-top: 28px; min-height: 380px; overflow: visible;">
+        <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -2340,5 +2344,6 @@ footer a[href="#appraisal"]:hover {
       });
     });
   </script>
+  <script src="https://elfsightcdn.com/platform.js" async></script>
 </body>
 </html>
