@@ -1563,6 +1563,7 @@ footer a[href="#appraisal"]:hover {
         src="images/edita-andrijasevic-raine-and-horne.jpg"
         alt="Edita Andrijasevic, Raine and Horne real estate agent in West Auckland"
         loading="lazy">
+        decoding="async">
       <p class="photo-caption">
         Edita Andrijasevic: Raine &amp; Horne
       </p>
@@ -1654,6 +1655,7 @@ footer a[href="#appraisal"]:hover {
               src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg"
               alt="Raine and Horne Amplify AI property marketing video"
               loading="lazy">
+              decoding="async">
             <span>▶</span>
           </button>
         </div>
@@ -2319,6 +2321,17 @@ footer a[href="#appraisal"]:hover {
       });
     });
   </script>
-  <script src="https://elfsightcdn.com/platform.js" async></script>
+
+  <script>
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      var script = document.createElement('script');
+      script.src = 'https://elfsightcdn.com/platform.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }, 2500);
+  });
+</script>
+  
 </body>
 </html>
