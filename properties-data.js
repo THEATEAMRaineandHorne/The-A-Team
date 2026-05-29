@@ -4,10 +4,10 @@ const currentProperties = [
     title: "60 Kay Drive, Blockhouse Bay",
     details: "4 Bed · Rumpus · 1 Bath · Garage + Off-street",
     status: "For Sale",
-    image: "REPLACE_WITH_PHOTO_URL",
+    image: "https://d3g1fm0n641hm7.cloudfront.net/properties/6650/203274684__1779843327-203268048__1779842574-50520-60KayDriveBlockhouseBay.jpg",
     alt: "60 Kay Drive Blockhouse Bay property photo",
     summary: "A much-loved Blockhouse Bay family home of 61 years, extended in the 1980s, on a flat, sun-soaked, north-facing section with Mixed Housing Suburban zoning and future potential.",
-    url: "REPLACE_WITH_RAINE_AND_HORNE_URL"
+    url: "https://www.raineandhorne.co.nz/blockhousebay/properties/60-kay-drive-blockhouse-bay-1041-auckland"
   },
   {
     label: "Dual property opportunity",
