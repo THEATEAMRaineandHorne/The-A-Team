@@ -1,5 +1,15 @@
 const currentProperties = [
   {
+    label: "First time in 61 years",
+    title: "60 Kay Drive, Blockhouse Bay",
+    details: "4 Bed · Rumpus · 1 Bath · Garage + Off-street",
+    status: "For Sale",
+    image: "REPLACE_WITH_PHOTO_URL",
+    alt: "60 Kay Drive Blockhouse Bay property photo",
+    summary: "A much-loved Blockhouse Bay family home of 61 years, extended in the 1980s, on a flat, sun-soaked, north-facing section with Mixed Housing Suburban zoning and future potential.",
+    url: "REPLACE_WITH_RAINE_AND_HORNE_URL"
+  },
+  {
     label: "Dual property opportunity",
     title: "89 Taylor Street, Blockhouse Bay",
     details: "4 Bed · 2 Bath · 2 Car",
