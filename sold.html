@@ -727,7 +727,64 @@
     font-size: 13px;
     line-height: 1.6;
   }
+.pe-external-strip {
+  margin-top: 34px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  text-align: center;
+}
 
+.pe-external-strip h3 {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 0 22px;
+  text-align: center;
+}
+
+.pe-external-pills {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.pe-external-pill {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: auto !important;
+  min-height: 46px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  font-weight: 800;
+  font-size: 15px;
+  text-decoration: none !important;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+  margin: 0 !important;
+}
+
+.pe-external-pill span {
+  color: #f8b400 !important;
+  margin-right: 8px;
+  font-weight: 900;
+}
+
+.pe-external-pill:hover {
+  background: #f8b400 !important;
+  color: #111111 !important;
+  text-decoration: none !important;
+  transform: translateY(-1px);
+}
+
+.pe-external-pill:hover span {
+  color: #111111 !important;
+}
   @media (max-width: 850px) {
     .pe-footer-grid {
       grid-template-columns: 1fr;
@@ -861,13 +918,6 @@
           <a href="/contact.html">Contact</a>
         </div>
       </div>
-
-    </div>
-</div>
-
-      </div>
-
-    </div>
 
     <div class="pe-external-strip">
       <h3>External Agent Profiles</h3>
