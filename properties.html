@@ -632,30 +632,205 @@
 
   </main>
 
-  <footer>
-    <div class="footer-inner">
+  <style>
+  .pe-footer {
+    background: #111827;
+    color: #ffffff;
+    padding: 48px 20px 28px;
+    margin-top: 60px;
+  }
+
+  .pe-footer-container {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .pe-footer-top {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 34px;
+  }
+
+  .pe-footer h2,
+  .pe-footer h3 {
+    color: #ffffff;
+    margin: 0 0 14px;
+    line-height: 1.25;
+  }
+
+  .pe-footer h2 {
+    font-size: 24px;
+  }
+
+  .pe-footer h3 {
+    font-size: 17px;
+  }
+
+  .pe-footer p {
+    color: #d1d5db;
+    line-height: 1.65;
+    margin: 0 0 12px;
+    font-size: 15px;
+  }
+
+  .pe-footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .pe-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .pe-footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 15px;
+  }
+
+  .pe-footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.18);
+    padding-top: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    align-items: start;
+  }
+
+  .pe-footer-small {
+    font-size: 13px;
+    color: #cbd5e1;
+  }
+
+  .pe-footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    font-size: 15px;
+  }
+
+  @media (max-width: 900px) {
+    .pe-footer-top {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .pe-footer-bottom {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .pe-footer-top {
+      grid-template-columns: 1fr;
+    }
+
+    .pe-footer {
+      padding: 38px 18px 24px;
+    }
+  }
+</style>
+
+<footer class="pe-footer">
+  <div class="pe-footer-container">
+
+    <div class="pe-footer-top">
+
       <div>
-        <h2>Edita Andrijasevic - Raine &amp; Horne</h2>
-        <p>Local real estate advice for Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene, Avondale and nearby Auckland suburbs.</p>
-        <p class="small">Licensed under the REAA 2008. Office: 9 Sheridan Drive, New Lynn, Auckland 0600.</p>
+        <h2>Edita Andrijasevic | Raine & Horne</h2>
+        <p>
+          Helping Auckland homeowners with free property appraisals, selling strategy,
+          buyer-focused marketing, Raine & Horne Amplify, open home feedback and negotiation.
+        </p>
+        <p>
+          Edita Andrijasevic is a Licensed Salesperson under the Real Estate Agents Act 2008.
+          This website provides general real estate information and appraisal enquiry options.
+          It is not a registered valuation.
+        </p>
+        <p>
+          Office: 9 Sheridan Drive, New Lynn, Auckland 0600.
+        </p>
       </div>
+
       <div>
-        <h3>Seller Links</h3>
-        <a href="https://peterandedita.co.nz/">Home</a>
-        <a href="https://peterandedita.co.nz/#appraisal">Free Appraisal</a>
-        <a href="https://peterandedita.co.nz/properties.html">Properties</a>
-        <a href="https://peterandedita.co.nz/sold.html">Sold</a>
-        <a href="https://peterandedita.co.nz/amplify-property-marketing/">Amplify Marketing</a>
-        <a href="https://peterandedita.co.nz/blog.html">Blog</a>
+        <h3>Free Appraisals</h3>
+        <div class="pe-footer-links">
+          <a href="/free-home-appraisal-titirangi/">Titirangi</a>
+          <a href="/free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
+          <a href="/free-home-appraisal-lynfield/">Lynfield</a>
+          <a href="/free-home-appraisal-new-lynn/">New Lynn</a>
+          <a href="/free-home-appraisal-kelston/">Kelston</a>
+          <a href="/free-home-appraisal-green-bay/">Green Bay</a>
+          <a href="/free-home-appraisal-glen-eden/">Glen Eden</a>
+          <a href="/free-home-appraisal-mount-roskill/">Mount Roskill</a>
+          <a href="/free-home-appraisal-new-windsor/">New Windsor</a>
+          <a href="/free-home-appraisal-glendene/">Glendene</a>
+          <a href="/free-home-appraisal-avondale/">Avondale</a>
+        </div>
       </div>
+
       <div>
-        <h3>Contact</h3>
-        <a href="tel:+6421765234">021 765 234</a>
-        <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
-        <a href="https://share.google/ddO9ayximJFNs2muB" target="_blank" rel="noopener">Google Business Profile</a>
+        <h3>Seller Guides</h3>
+        <div class="pe-footer-links">
+          <a href="/articles/should-i-sell-my-house-now-or-wait-auckland.html">Sell Now Or Wait?</a>
+          <a href="/articles/best-real-estate-agent-reviews-auckland.html">Agent Reviews</a>
+          <a href="/articles/best-real-estate-agent-titirangi.html">Best Agent Titirangi</a>
+          <a href="/articles/how-to-choose-real-estate-agent-blockhouse-bay.html">Best Agent Blockhouse Bay</a>
+          <a href="/articles/how-to-choose-real-estate-agent-lynfield.html">Best Agent Lynfield</a>
+          <a href="/articles/best-time-to-sell-west-auckland.html">Best Time To Sell</a>
+          <a href="/articles/prepare-home-for-sale-auckland.html">Prepare Your Home</a>
+          <a href="/amplify.html">Raine & Horne Amplify</a>
+        </div>
       </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <div class="pe-footer-links">
+          <a href="/">Home</a>
+          <a href="/appraisal.html">Free Appraisal</a>
+          <a href="/properties.html">Properties</a>
+          <a href="/sold.html">Sold</a>
+          <a href="/blog.html">Seller Guides</a>
+          <a href="/reviews.html">Reviews</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </div>
+
     </div>
-  </footer>
+
+    <div class="pe-footer-bottom">
+
+      <div>
+        <h3>Contact Edita Andrijasevic</h3>
+        <div class="pe-footer-contact">
+          <a href="tel:021765234">021 765 234</a>
+          <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
+          <a href="https://share.google/ddO9ayximJFNs2muB" target="_blank" rel="noopener">Google Business Profile</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>External Agent Profiles</h3>
+        <div class="pe-footer-links">
+          <a href="https://homes.co.nz/profile/raine-and-horne/blockhouse-bay-and-titirangi/edita-andrijasevic" target="_blank" rel="noopener">Homes.co.nz profile</a>
+          <a href="https://www.oneroof.co.nz/agent/edita-andrijasevic-90262" target="_blank" rel="noopener">OneRoof profile</a>
+          <a href="https://www.trademe.co.nz/a/property/agent/Edita-Andrijasevic" target="_blank" rel="noopener">Trade Me Property profile</a>
+          <a href="https://www.ratemyagent.co.nz/real-estate-agent/edita-andrijasevic-ad977/sales/overview" target="_blank" rel="noopener">RateMyAgent profile</a>
+          <a href="https://www.realestate.co.nz/agent/261782/edita-andrijasevic" target="_blank" rel="noopener">realestate.co.nz profile</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="pe-footer-small" style="margin-top: 24px;">
+      Areas served: Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden,
+      Mount Roskill, New Windsor, Glendene, Avondale, Kelston and nearby Auckland suburbs.
+      Licensed under the REAA 2008.
+    </p>
+
+  </div>
+</footer>
   <script src="properties-data.js?v=2"></script>
 </body>
 </html>
