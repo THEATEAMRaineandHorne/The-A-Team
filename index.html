@@ -1568,7 +1568,7 @@ footer a[href="#appraisal"]:hover {
     .a-team-review-proof {
       background: #f7f5ef;
       padding: 70px 20px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
       color: #2b2b2b;
     }
 
@@ -1578,205 +1578,84 @@ footer a[href="#appraisal"]:hover {
     }
 
     .a-team-review-proof .review-eyebrow {
-      color: #b88900;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 1.4px;
+      display: inline-block;
+      background: #ffb200;
+      color: #202020;
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 18px;
+    }
+
+    .a-team-review-proof .review-title-wrap {
+      max-width: 880px;
+      margin: 0 auto 34px;
       text-align: center;
     }
 
     .a-team-review-proof h2 {
-      font-size: clamp(30px, 4vw, 46px);
+      font-size: clamp(32px, 4vw, 48px);
       line-height: 1.1;
-      margin: 0 0 18px;
-      text-align: center;
+      margin: 0 0 16px;
       color: #222;
+      letter-spacing: -1px;
     }
 
     .a-team-review-proof .review-intro {
       max-width: 760px;
-      margin: 0 auto 38px;
+      margin: 0 auto;
       text-align: center;
       font-size: 18px;
       line-height: 1.65;
       color: #555;
     }
 
-    .a-team-review-proof .rating-line {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+    .a-team-review-proof .reviews-card {
       background: #ffffff;
-      border: 1px solid rgba(0,0,0,0.08);
-      border-radius: 999px;
-      padding: 10px 18px;
-      margin: 0 auto 34px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.06);
-      font-size: 15px;
-      color: #333;
-    }
-
-    .a-team-review-proof .rating-wrap {
-      text-align: center;
-    }
-
-    .a-team-review-proof .stars {
-      color: #ffb200;
-      letter-spacing: 2px;
-      font-size: 18px;
-      white-space: nowrap;
-    }
-
-    .a-team-review-proof .review-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .a-team-review-proof .review-card {
-      background: #ffffff;
-      border-radius: 22px;
+      border: 1px solid #e8e2d7;
+      border-radius: 24px;
       padding: 28px;
-      box-shadow: 0 14px 34px rgba(0,0,0,0.08);
-      border: 1px solid rgba(0,0,0,0.06);
-      display: flex;
-      flex-direction: column;
-      min-height: 100%;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.05);
+      overflow: visible;
     }
 
-    .a-team-review-proof .review-card h3 {
-      font-size: 22px;
-      line-height: 1.25;
-      margin: 14px 0 12px;
-      color: #222;
-    }
-
-    .a-team-review-proof .review-card p {
-      font-size: 16px;
-      line-height: 1.65;
-      margin: 0 0 18px;
-      color: #555;
-    }
-
-    .a-team-review-proof .review-author {
-      margin-top: auto;
-      padding-top: 14px;
-      border-top: 1px solid rgba(0,0,0,0.08);
-      font-weight: 700;
-      color: #333 !important;
-    }
-
-    .a-team-review-proof .review-tag {
-      display: inline-block;
-      background: #fff5d6;
-      color: #5f4500;
-      font-size: 13px;
-      font-weight: 700;
-      border-radius: 999px;
-      padding: 7px 12px;
-      margin-bottom: 8px;
-      width: fit-content;
-    }
-
-    .a-team-review-proof .review-cta {
-      text-align: center;
-      margin-top: 34px;
-    }
-
-    .a-team-review-proof .review-cta a {
-      display: inline-block;
-      background: #ffb200;
-      color: #222;
-      text-decoration: none;
-      font-weight: 800;
-      border-radius: 999px;
-      padding: 15px 26px;
-      box-shadow: 0 10px 22px rgba(0,0,0,0.12);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .a-team-review-proof .review-cta a:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 26px rgba(0,0,0,0.16);
+    .a-team-review-proof .elfsight-review-box {
+      width: 100%;
+      min-height: 380px;
+      overflow: visible;
     }
 
     @media (max-width: 900px) {
-      .a-team-review-proof .review-grid {
-        grid-template-columns: 1fr;
-      }
-
       .a-team-review-proof {
         padding: 52px 16px;
+      }
+
+      .a-team-review-proof .reviews-card {
+        padding: 18px;
       }
     }
   </style>
 
   <div class="review-container">
-    <div class="review-eyebrow">Google Reviews</div>
-    <h2 id="a-team-review-title">Trusted by local Auckland sellers</h2>
+    <div class="review-title-wrap">
+      <span class="review-eyebrow">Google Reviews</span>
+      <h2 id="a-team-review-title">What local Auckland sellers and buyers say</h2>
 
-    <p class="review-intro">
-      Choosing the right real estate agent is about more than a promise. It is about communication,
-      preparation, buyer activity, negotiation and a result sellers feel confident about.
-    </p>
+      <p class="review-intro">
+        Real Google reviews help homeowners understand what it is like to work with Edita and her team before deciding who to trust with their property.
+      </p>
+    </div>
 
-    <div class="rating-wrap">
-      <div class="rating-line">
-        <span class="stars">★★★★★</span>
-        <strong>5.0 Google rating</strong>
-        <span>from 48 reviews</span>
+    <div class="reviews-card">
+      <!-- Elfsight Google Reviews | THE A-TEAM REVIEWS -->
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div id="reviews-widget" class="elfsight-review-box">
+        <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
       </div>
     </div>
-
-    <div class="review-grid">
-      <article class="review-card">
-        <span class="review-tag">Trust & professionalism</span>
-        <div class="stars">★★★★★</div>
-        <h3>A calm, professional sale from start to finish</h3>
-        <p>
-          Tracey Hoffmann highlighted the warmth, professionalism, reliability and attention to detail
-          shown by Edita and Peter throughout the marketing and auction process.
-        </p>
-        <p class="review-author">— Tracey Hoffmann, Google review <span class="review-date">Review date: 4 October 2019</span></p>
-      </article>
-
-      <article class="review-card">
-        <span class="review-tag">Buyer activity & offers</span>
-        <div class="stars">★★★★★</div>
-        <h3>Strong enquiry, multiple offers and clear communication</h3>
-        <p>
-          Mark Geaney described excellent communication while overseas, with more than 60 buyer groups,
-          3 offers and 4 backup offers before the property sold successfully.
-        </p>
-        <p class="review-author">— Mark Geaney, Google review <span class="review-date">Review date: 5 November 2019</span></p>
-      </article>
-
-      <article class="review-card">
-        <span class="review-tag">Auction result</span>
-        <div class="stars">★★★★★</div>
-        <h3>A result beyond expectations</h3>
-        <p>
-          Hayley King shared that after 50 years in the family home, the auction attracted 5 bidders
-          and achieved $200,000 more than expected.
-        </p>
-        <p class="review-author">— Hayley King, Google review <span class="review-date">Review date: 27 January 2020</span></p>
-      </article>
-    </div>
-
-    <div class="review-cta">
-      <a href="https://share.google/ddO9ayximJFNs2muB" target="_blank" rel="noopener">
-        Read More Google Reviews
-      </a>
-      <!-- Elfsight Google Reviews |Edita Andrijasevic - Raine & Horne REVIEWS -->
-      <!-- Elfsight Google Reviews | THE A-TEAM REVIEWS -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div id="reviews-widget" class="elfsight-review-box" style="margin-top: 28px; min-height: 380px; overflow: visible;">
-  <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
-</div>
-      
   </div>
 </section>
 <!-- EDITA GOOGLE REVIEW PROOF SECTION - END -->
