@@ -126,9 +126,8 @@
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://peterandedita.co.nz/free-home-appraisal-west-auckland/</loc>
-<lastmod>2026-05-24T03:49:04+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://peterandedita.co.nz/free-home-appraisal-west-auckland/</loc>
+  <priority>0.90</priority>
 </url>
 <url>
 <loc>https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-new-lynn.html</loc>
@@ -189,5 +188,9 @@
   <loc>https://peterandedita.co.nz/property-auctions-west-auckland/</loc>
   <lastmod>2026-05-28</lastmod>
   <priority>0.8</priority>
+</url>
+  <url>
+  <loc>https://peterandedita.co.nz/locations/</loc>
+  <priority>0.80</priority>
 </url>
 </urlset>
