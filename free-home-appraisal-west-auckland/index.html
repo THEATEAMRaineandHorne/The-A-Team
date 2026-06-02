@@ -661,6 +661,63 @@
       .hero-content { padding: 62px 18px; }
       section { padding: 58px 18px; }
     }
+    .video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 55px rgba(0,0,0,0.22);
+  background: #000;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-placeholder {
+  background: #000;
+}
+
+.video-play-button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  background: #000;
+  display: block;
+}
+
+.video-play-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.88;
+}
+
+.video-play-button span {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: 900;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+}
   </style>
 
   <script type="application/ld+json">
@@ -831,122 +888,139 @@
   <main>
 
     <section class="hero" id="appraisal">
-      <img
-        src="/images/home-hero-960.webp"
-        srcset="
-          /images/home-hero-640.webp 640w,
-          /images/home-hero-960.webp 960w,
-          /images/home-hero-1400.webp 1400w
-        "
-        sizes="100vw"
-        alt="Free West Auckland home appraisal and property selling advice from Edita Andrijasevic, Raine and Horne"
-        class="hero-bg"
-        width="1800"
-        height="1000"
-        loading="eager"
-        fetchpriority="high"
-        decoding="async">
-      <div class="hero-overlay"></div>
+  <img
+    src="/images/home-hero-960.webp"
+    srcset="
+      /images/home-hero-640.webp 640w,
+      /images/home-hero-960.webp 960w,
+      /images/home-hero-1400.webp 1400w
+    "
+    sizes="100vw"
+    alt="Free West Auckland home appraisal and property selling advice from Edita Andrijasevic, Raine and Horne"
+    class="hero-bg"
+    width="1800"
+    height="1000"
+    loading="eager"
+    fetchpriority="high"
+    decoding="async">
 
-      <div class="hero-content">
-        <div>
-          <span class="eyebrow">Know Your Value Before You Sell</span>
-          <h1>Free Home Appraisal West Auckland</h1>
+  <div class="hero-overlay"></div>
 
-          <p class="hero-lead">
-            Thinking of selling, downsizing, refinancing or planning your next move? Get clear local guidance
-            on what your West Auckland property may be worth and how buyers are likely to see it.
-          </p>
+  <div class="hero-content">
+    <div>
+      <span class="eyebrow">Know Your Value Before You Sell</span>
 
-          <p class="hero-lead">
-            Edita Andrijasevic helps homeowners understand pricing, buyer demand, presentation, competition,
-            AI-powered marketing and the best selling strategy before going to market.
-          </p>
+      <h1>Free Home Appraisal West Auckland</h1>
 
-          <div class="hero-proof">
-  <div class="proof-card">
-    <strong>Licensed advice</strong>
-    <span>Edita Andrijasevic, Licensed Salesperson under the REAA 2008</span>
-  </div>
+      <p class="hero-lead">
+        Thinking of selling, downsizing, refinancing or planning your next move? Get clear local guidance
+        on what your West Auckland property may be worth and how buyers are likely to see it.
+      </p>
 
-  <div class="proof-card">
-    <strong>5.0 Google rating</strong>
-    <span>trusted by local Auckland sellers and buyers</span>
-  </div>
+      <p class="hero-lead">
+        Edita Andrijasevic helps homeowners understand pricing, buyer demand, presentation, competition,
+        AI-powered marketing and the best selling strategy before going to market.
+      </p>
 
-  <div class="proof-card">
-    <strong>Local + AI marketing</strong>
-    <span>West Auckland insight supported by Raine &amp; Horne Amplify</span>
-  </div>
-</div>
-          </div>
-
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#request-appraisal">Request Free Appraisal</a>
-            <a class="btn btn-secondary" href="tel:+6421765234">Call 021 765 234</a>
-          </div>
+      <div class="hero-proof">
+        <div class="proof-card">
+          <strong>Licensed advice</strong>
+          <span>Edita Andrijasevic, Licensed Salesperson under the REAA 2008</span>
         </div>
 
-        <div class="hero-form" id="request-appraisal">
-          <h2>Request Your Free Home Appraisal</h2>
-          <p>
-            Send your details and we will help you understand your likely value, buyer demand and best selling strategy.
-          </p>
+        <div class="proof-card">
+          <strong>5.0 Google rating</strong>
+          <span>trusted by local Auckland sellers and buyers</span>
+        </div>
 
-          <form action="https://formspree.io/f/mdabnpgl" method="POST">
-            <input type="hidden" name="_subject" value="New West Auckland appraisal enquiry">
-
-            <label>Name <input name="name" type="text" required></label>
-            <label>Phone <input name="phone" type="tel" required></label>
-            <label>Email <input name="email" type="email" required></label>
-            <label>Property address <input name="property_address" type="text" required></label>
-
-            <label>
-              Suburb
-              <select name="suburb" required>
-                <option value="">Select suburb</option>
-                <option>Titirangi</option>
-                <option>Blockhouse Bay</option>
-                <option>Lynfield</option>
-                <option>New Lynn</option>
-                <option>Kelston</option>
-                <option>Green Bay</option>
-                <option>Glen Eden</option>
-                <option>Mount Roskill</option>
-                <option>New Windsor</option>
-                <option>Glendene</option>
-                <option>Avondale</option>
-                <option>Other West Auckland suburb</option>
-              </select>
-            </label>
-
-            <label>
-              When are you thinking of selling?
-              <select name="selling_timeframe">
-                <option value="">Select timeframe</option>
-                <option>Just curious</option>
-                <option>Within 3 months</option>
-                <option>Within 6 months</option>
-                <option>This year</option>
-                <option>Not sure yet</option>
-              </select>
-            </label>
-
-            <label>
-              What would you like help with?
-              <textarea name="message" placeholder="Example: value, timing, preparation, buyer demand, marketing, downsizing, investment property, cross-lease, etc."></textarea>
-            </label>
-
-            <button class="btn form-button" type="submit">Send My Appraisal Request</button>
-
-            <p class="small" style="color:#555555; margin:0;">
-              Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.
-              <a href="/privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
-            </p>
-          </form>
+        <div class="proof-card">
+          <strong>Local + AI marketing</strong>
+          <span>West Auckland insight supported by Raine &amp; Horne Amplify</span>
         </div>
       </div>
-    </section>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#request-appraisal">Request Free Appraisal</a>
+        <a class="btn btn-secondary" href="tel:+6421765234">Call 021 765 234</a>
+      </div>
+    </div>
+
+    <div class="hero-form" id="request-appraisal">
+      <h2>Request Your Free Home Appraisal</h2>
+
+      <p>
+        Send your details and we will help you understand your likely value, buyer demand and best selling strategy.
+      </p>
+
+      <form action="https://formspree.io/f/mdabnpgl" method="POST">
+        <input type="hidden" name="_subject" value="New West Auckland appraisal enquiry">
+
+        <label>
+          Name
+          <input name="name" type="text" required>
+        </label>
+
+        <label>
+          Phone
+          <input name="phone" type="tel" required>
+        </label>
+
+        <label>
+          Email
+          <input name="email" type="email" required>
+        </label>
+
+        <label>
+          Property address
+          <input name="property_address" type="text" required>
+        </label>
+
+        <label>
+          Suburb
+          <select name="suburb" required>
+            <option value="">Select suburb</option>
+            <option>Titirangi</option>
+            <option>Blockhouse Bay</option>
+            <option>Lynfield</option>
+            <option>New Lynn</option>
+            <option>Kelston</option>
+            <option>Green Bay</option>
+            <option>Glen Eden</option>
+            <option>Mount Roskill</option>
+            <option>New Windsor</option>
+            <option>Glendene</option>
+            <option>Avondale</option>
+            <option>Other West Auckland suburb</option>
+          </select>
+        </label>
+
+        <label>
+          When are you thinking of selling?
+          <select name="selling_timeframe">
+            <option value="">Select timeframe</option>
+            <option>Just curious</option>
+            <option>Within 3 months</option>
+            <option>Within 6 months</option>
+            <option>This year</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+
+        <label>
+          What would you like help with?
+          <textarea name="message" placeholder="Example: value, timing, preparation, buyer demand, marketing, downsizing, investment property, cross-lease, etc."></textarea>
+        </label>
+
+        <button class="btn form-button" type="submit">Send My Appraisal Request</button>
+
+        <p class="small" style="color:#555555; margin:0;">
+          Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.
+          <a href="/privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
 
     <section id="what-you-get">
       <div class="container">
@@ -1064,34 +1138,66 @@
     </section>
 
     <section class="dark-section" id="amplify">
-      <div class="container">
-        <div class="grid-2">
-          <div>
-            <span class="eyebrow">Raine &amp; Horne Amplify</span>
-            <h2>Smarter Marketing To Help Reach More Relevant Buyers</h2>
-            <p>
-              The best buyer may not be sitting on one property website waiting. Raine &amp; Horne Amplify
-              helps promote properties across key digital channels, supporting stronger visibility and more opportunity
-              to reach buyers who may be likely to engage with your home.
-            </p>
-            <p>
-              For West Auckland sellers, this matters because different homes attract different buyer groups:
-              first-home buyers, families, downsizers, investors, renovators, developers or lifestyle-focused buyers.
-            </p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="/amplify-property-marketing/">Learn More About Amplify</a>
-              <a class="btn btn-secondary" href="#request-appraisal">Ask About Marketing Strategy</a>
-            </div>
-          </div>
+  <div class="container">
+    <div class="grid-2">
 
+      <div>
+        <span class="eyebrow">Raine &amp; Horne Amplify</span>
+
+        <h2>Smarter Marketing To Help Reach More Relevant Buyers</h2>
+
+        <p>
+          The best buyer may not be sitting on one property website waiting. Raine &amp; Horne Amplify
+          helps promote properties across key digital channels, supporting stronger visibility and more opportunity
+          to reach buyers who may be likely to engage with your home.
+        </p>
+
+        <p>
+          For West Auckland sellers, this matters because different homes attract different buyer groups:
+          first-home buyers, families, downsizers, investors, renovators, developers or lifestyle-focused buyers.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/amplify-property-marketing/">Learn More About Amplify</a>
+          <a class="btn btn-secondary" href="#request-appraisal">Ask About Marketing Strategy</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="video-wrap video-placeholder" data-video-id="DkKp8I__4mI">
+          <button class="video-play-button" type="button" aria-label="Play Raine and Horne Amplify video">
+            <img
+              src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg"
+              alt="Raine and Horne Amplify AI property marketing video"
+              loading="lazy"
+              decoding="async">
+            <span>▶</span>
+          </button>
+        </div>
+
+        <div style="margin-top:28px;">
           <div class="grid-3" style="grid-template-columns:1fr; gap:14px;">
-            <div class="card"><h3>Better buyer targeting</h3><p>Position your property for the buyer groups most likely to care about its strongest features.</p></div>
-            <div class="card"><h3>More than portals</h3><p>Support your property campaign beyond standard property websites with wider digital visibility.</p></div>
-            <div class="card"><h3>Works with the right price</h3><p>Marketing is strongest when combined with realistic pricing, strong presentation and buyer follow-up.</p></div>
+            <div class="card">
+              <h3>Better buyer targeting</h3>
+              <p>Position your property for the buyer groups most likely to care about its strongest features.</p>
+            </div>
+
+            <div class="card">
+              <h3>More than portals</h3>
+              <p>Support your property campaign beyond standard property websites with wider digital visibility.</p>
+            </div>
+
+            <div class="card">
+              <h3>Works with the right price</h3>
+              <p>Marketing is strongest when combined with realistic pricing, strong presentation and buyer follow-up.</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
 <section id="west-auckland-suburb-advice">
   <div class="container">
     <div class="section-title">
@@ -1344,6 +1450,25 @@
 
     </div>
   </footer>
+<script>
+  document.querySelectorAll('.video-placeholder').forEach(function (wrapper) {
+    const button = wrapper.querySelector('button');
+    const videoId = wrapper.getAttribute('data-video-id');
 
+    if (!button || !videoId) return;
+
+    button.addEventListener('click', function () {
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+      iframe.title = 'Raine & Horne Amplify AI Property Marketing';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      iframe.loading = 'lazy';
+
+      wrapper.innerHTML = '';
+      wrapper.appendChild(iframe);
+    });
+  });
+</script>
 </body>
 </html>
