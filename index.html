@@ -1010,6 +1010,27 @@ footer a[href="#appraisal"]:hover {
     color: var(--dark) !important;
   }
 }
+    /* FIX DESKTOP DROPDOWN TEXT VISIBILITY */
+.dropdown-menu a,
+.dropdown-menu a:visited {
+  color: var(--dark) !important;
+  background: #ffffff !important;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus,
+.dropdown-menu a:active {
+  color: var(--dark) !important;
+  background: var(--gold) !important;
+}
+
+/* Make sure general nav hover does not override dropdown links */
+.nav-links .dropdown-menu a:hover,
+.nav-links .dropdown-menu a:focus,
+.nav-links .dropdown-menu a:active {
+  color: var(--dark) !important;
+  background: var(--gold) !important;
+}
   </style>
 <link rel="stylesheet" href="/css/brand-font.css">
 
