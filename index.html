@@ -915,6 +915,101 @@ footer a[href="#appraisal"]:hover {
 .footer-social-links a:hover i {
   color: #111111;
 }
+    /* MOBILE MENU FIX - services dropdown */
+@media (max-width: 980px) {
+  .nav {
+    width: 100%;
+    align-items: stretch !important;
+    gap: 14px;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
+  .nav-links {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+
+  .nav-links > a,
+  .nav-dropdown {
+    width: 100% !important;
+  }
+
+  .nav-links > a,
+  .nav-parent {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    min-height: 46px !important;
+    padding: 12px 15px !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    background: #fff8e8 !important;
+    color: var(--dark) !important;
+    font-size: 15px !important;
+    font-weight: 900 !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+  }
+
+  .nav-parent::after {
+    margin-left: auto;
+  }
+
+  .nav-dropdown summary {
+    width: 100% !important;
+  }
+
+  .dropdown-menu {
+    position: static !important;
+    display: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    margin-top: 8px !important;
+    padding: 8px !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+  }
+
+  .nav-dropdown:hover .dropdown-menu {
+    display: none !important;
+  }
+
+  .nav-dropdown[open] .dropdown-menu {
+    display: block !important;
+  }
+
+  .dropdown-menu a {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 0 7px !important;
+    padding: 11px 13px !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
+    background: #ffffff !important;
+    color: var(--dark) !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    line-height: 1.25 !important;
+    text-align: left !important;
+  }
+
+  .dropdown-menu a:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .dropdown-menu a:hover {
+    background: var(--gold) !important;
+    color: var(--dark) !important;
+  }
+}
   </style>
 <link rel="stylesheet" href="/css/brand-font.css">
 
