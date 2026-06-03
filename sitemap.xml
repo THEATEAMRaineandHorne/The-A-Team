@@ -193,4 +193,8 @@
   <loc>https://peterandedita.co.nz/locations/</loc>
   <priority>0.80</priority>
 </url>
+  <url>
+  <loc>https://peterandedita.co.nz/services/home-presentation-advice-west-auckland/</loc>
+  <priority>0.8</priority>
+</url>
 </urlset>
