@@ -716,10 +716,7 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      
     }
 
     @media (max-width: 560px) {
@@ -741,10 +738,12 @@
 /* ===== MAIN HEADER / NAVIGATION FIX ===== */
 
 header {
-  background: #ffffff;
+  background: rgba(255,255,255,0.96);
   border-bottom: 1px solid #eee3d3;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 9999;
+  backdrop-filter: blur(8px);
 }
 
 .nav {
@@ -935,7 +934,7 @@ header {
       "@id": "https://peterandedita.co.nz/services/#webpage",
       "url": "https://peterandedita.co.nz/services/",
       "name": "Real Estate Services West Auckland | Edita Andrijasevic - Raine & Horne",
-      "description": "Real estate services for West Auckland homeowners including s, pricing strategy, home presentation advice, buyer marketing, open home feedback and negotiation support with Edita Andrijasevic, Raine & Horne.",
+      "description": "Real estate services for West Auckland homeowners including free property appraisals, pricing strategy, home presentation advice, buyer marketing, open home feedback and negotiation support with Edita Andrijasevic, Raine & Horne.",
       "inLanguage": "en-NZ",
       "isPartOf": {
         "@id": "https://peterandedita.co.nz/#website"
@@ -985,7 +984,7 @@ header {
           "position": 1,
           "item": {
             "@type": "Service",
-            "name": "",
+            "name": "Free Property Appraisal",
             "description": "Free home appraisal advice for West Auckland homeowners based on recent sales, current competition, buyer demand, property condition and timing.",
             "provider": {
               "@id": "https://peterandedita.co.nz/#realestateagent"
@@ -1069,7 +1068,7 @@ header {
           "name": "Which real estate services does Edita Andrijasevic provide?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Edita Andrijasevic helps West Auckland homeowners with s, pricing strategy, home presentation advice, buyer-focused marketing, open home feedback and negotiation support."
+            "text": "Edita Andrijasevic helps West Auckland homeowners with free property appraisals, pricing strategy, home presentation advice, buyer-focused marketing, open home feedback and negotiation support."
           }
         },
         {
