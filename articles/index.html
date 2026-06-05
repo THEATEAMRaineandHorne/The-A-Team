@@ -33,9 +33,9 @@
       --text: #222222;
       --muted: #555555;
       --border: #e5e1d8;
-      --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-      --radius: 18px;
-      --max-width: 1100px;
+      --shadow: 0 16px 38px rgba(0, 0, 0, 0.16);
+      --radius: 22px;
+      --max-width: 1160px;
     }
 
     * {
@@ -48,6 +48,12 @@
       color: var(--text);
       background: var(--white);
       line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
 
     a {
@@ -85,19 +91,23 @@
     }
 
     .hero {
-  padding: 70px 0;
-  min-height: 560px;
-  background-image:
-    linear-gradient(90deg, rgba(77, 78, 80, 0.96), rgba(77, 78, 80, 0.78)),
-    url("/images/west-auckland-real-estate-articles-edita-andrijasevic-raine-horne.webp");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100% 100%, contain;
-  background-position: center center, center bottom;
-  background-color: #4D4E50;
-}
+      background:
+        radial-gradient(circle at top right, rgba(225, 170, 20, 0.22), transparent 34%),
+        linear-gradient(115deg, #3f4042 0%, #4D4E50 55%, #3b3c3e 100%);
+      color: var(--white);
+      padding: 72px 0;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 44px;
+      align-items: center;
+    }
 
     .hero-content {
-      max-width: 680px;
+      max-width: 620px;
     }
 
     .eyebrow {
@@ -110,19 +120,68 @@
     }
 
     .hero h1 {
-      font-size: clamp(38px, 5vw, 64px);
-      margin: 0 0 18px;
+      font-size: clamp(40px, 5vw, 66px);
+      margin: 0 0 20px;
       color: var(--white);
-      max-width: 720px;
       line-height: 1.05;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.04em;
     }
 
     .hero p {
-      max-width: 640px;
-      margin: 0;
+      max-width: 610px;
+      margin: 0 0 26px;
       font-size: 20px;
       color: rgba(255, 255, 255, 0.94);
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--charcoal);
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    .btn:hover {
+      background: var(--gold-dark);
+      color: var(--white);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255, 255, 255, 0.72);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--charcoal);
+    }
+
+    .hero-image-card {
+      background: rgba(255, 255, 255, 0.10);
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 16px;
+      background: #fff;
     }
 
     .articles {
@@ -160,7 +219,7 @@
       border-radius: var(--radius);
       padding: 24px;
       background: var(--white);
-      box-shadow: var(--shadow);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -234,7 +293,7 @@
 
     .suburb-grid a:hover {
       transform: translateY(-2px);
-      box-shadow: var(--shadow);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
       color: var(--gold-dark);
     }
 
@@ -260,22 +319,6 @@
       font-size: 18px;
     }
 
-    .btn {
-      display: inline-block;
-      background: var(--gold);
-      color: var(--charcoal);
-      padding: 14px 22px;
-      border-radius: 999px;
-      font-weight: 800;
-      text-decoration: none;
-      margin-top: 8px;
-    }
-
-    .btn:hover {
-      background: var(--gold-dark);
-      color: var(--white);
-    }
-
     footer {
       background: #2f3032;
       color: var(--white);
@@ -290,63 +333,71 @@
     }
 
     @media (max-width: 950px) {
-  .article-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
 
-  .suburb-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+      .hero-content {
+        max-width: 760px;
+      }
 
-  .hero {
-    background-image:
-      linear-gradient(90deg, rgba(77, 78, 80, 0.92), rgba(77, 78, 80, 0.66)),
-      url("/images/west-auckland-real-estate-articles-edita-andrijasevic-raine-horne.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 76% top;
-    min-height: 580px;
-  }
-}
+      .article-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .suburb-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
     @media (max-width: 650px) {
-  header {
-    padding: 18px 0;
-  }
+      header {
+        padding: 18px 0;
+      }
 
-  .nav {
-    gap: 10px;
-  }
+      .nav {
+        gap: 10px;
+      }
 
-  .nav a {
-    font-size: 14px;
-  }
+      .nav a {
+        font-size: 14px;
+      }
 
-  .hero {
-    padding: 78px 0;
-    min-height: 500px;
-    background-image:
-      linear-gradient(90deg, rgba(77, 78, 80, 0.95), rgba(77, 78, 80, 0.78)),
-      url("/images/west-auckland-real-estate-articles-edita-andrijasevic-raine-horne.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 78% top;
-  }
+      .hero {
+        padding: 48px 0;
+      }
 
-  .hero p {
-    font-size: 18px;
-  }
+      .hero h1 {
+        font-size: 40px;
+      }
 
-  .article-grid,
-  .suburb-grid {
-    grid-template-columns: 1fr;
-  }
+      .hero p {
+        font-size: 18px;
+      }
 
-  .articles,
-  .local-links {
-    padding: 48px 0;
-  }
-}
+      .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        text-align: center;
+      }
+
+      .hero-image-card {
+        padding: 8px;
+      }
+
+      .article-grid,
+      .suburb-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .articles,
+      .local-links {
+        padding: 48px 0;
+      }
+    }
   </style>
 </head>
 
@@ -368,12 +419,29 @@
 
   <section class="hero">
     <div class="container">
-      <div class="hero-content">
-        <p class="eyebrow">West Auckland Property Advice</p>
-        <h1>Real Estate Articles &amp; Seller Advice</h1>
-        <p>
-          Helpful property insights for West Auckland homeowners, including how to choose a real estate agent, what to know before selling, and how to understand your local market.
-        </p>
+      <div class="hero-grid">
+
+        <div class="hero-content">
+          <p class="eyebrow">West Auckland Property Advice</p>
+          <h1>Real Estate Articles &amp; Seller Advice</h1>
+          <p>
+            Helpful property insights for West Auckland homeowners, including how to choose a real estate agent, what to know before selling, and how to understand your local market.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="/free-home-appraisal-west-auckland/" class="btn">Request a Free Appraisal</a>
+            <a href="/real-estate-agent-west-auckland/" class="btn btn-outline">Real Estate Agent West Auckland</a>
+          </div>
+        </div>
+
+        <div class="hero-image-card">
+          <img
+            src="/images/west-auckland-real-estate-articles-edita-andrijasevic-raine-horne.webp"
+            alt="Edita Andrijasevic preparing real estate articles and seller advice for West Auckland homeowners"
+            loading="eager"
+            fetchpriority="high">
+        </div>
+
       </div>
     </div>
   </section>
