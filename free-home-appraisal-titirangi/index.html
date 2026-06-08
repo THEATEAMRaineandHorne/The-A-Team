@@ -95,6 +95,7 @@
       font-weight: 900;
       letter-spacing: -0.3px;
       font-size: 18px;
+      flex-shrink: 0;
     }
 
     .brand img {
@@ -104,10 +105,12 @@
     }
 .nav-links {
       display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      font-size: 14px;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 14px;
+      font-size: 13.5px;
       font-weight: 800;
+      white-space: nowrap;
     }
 
     .nav-links a:hover {
@@ -373,6 +376,20 @@
     .card p {
       color: var(--muted);
       margin: 0;
+    }
+
+    /* Service link inside cards */
+    .card-link {
+      display: inline-block;
+      margin-top: 14px;
+      color: var(--gold);
+      font-weight: 800;
+      text-decoration: underline;
+    }
+
+    .card-link:hover {
+      color: var(--dark);
+      text-decoration: none;
     }
 
     .highlight {
@@ -660,6 +677,11 @@
         flex-direction: column;
         align-items: flex-start;
       }
+
+      .nav-links {
+        flex-wrap: wrap;
+        white-space: normal;
+      }
     }
 
     @media (max-width: 560px) {
@@ -681,6 +703,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      white-space: nowrap;
       color: var(--dark) !important;
     }
 
@@ -803,7 +826,7 @@
         },
         {
           "@type": "Question",
-          "name": "What affects a Titirangi property’s value?",
+          "name": "What affects a Titirangi property value?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Buyer appeal can be influenced by location, outlook, sunlight, privacy, driveway access, parking, land, condition, presentation, layout, maintenance and current competition."
@@ -851,12 +874,12 @@
 <a href="https://peterandedita.co.nz/">Home</a>
 <a href="#appraisal">Appraisal</a>
 <a href="/locations/">Locations</a>
+<a href="/services/">Services</a>
 <a href="/property-auctions-west-auckland/">Auctions</a>
 <a href="#about-team">About</a>
 <a href="#titirangi-market-advice">Titirangi Insight</a>
 <a href="#amplify">Amplify</a>
 <a href="#reviews">Reviews</a>
-<a href="https://peterandedita.co.nz/services/">Services</a>
 <a href="/contact.html">Contact</a>
 </div>
 </nav>
@@ -996,7 +1019,7 @@
 <div class="card">
 <h3>Pricing strategy</h3>
 <p>
-              Pricing a Titirangi home properly means looking beyond online estimates and comparing the property’s real strengths, risks and buyer appeal.
+              Pricing a Titirangi home properly means looking beyond online estimates and comparing the property's real strengths, risks and buyer appeal.
             </p>
 </div>
 <div class="card">
@@ -1004,7 +1027,7 @@
 <p>
               We help manage buyer feedback, conditions, motivation and price conversations so sellers can make decisions with more confidence.
             </p>
-    <a href="https://peterandedita.co.nz/services/selling-your-home-west-auckland/">Learn about selling your home</a>
+<a class="card-link" href="https://peterandedita.co.nz/services/real-estate-negotiation-west-auckland/">Learn about negotiation support</a>
 </div>
 </div>
 </div>
@@ -1013,7 +1036,7 @@
 <section class="local-team-section" id="about-team">
 <div class="local-team-wrap">
 <div class="local-team-image-card">
-<img alt="Edita Andrijasevic, local Raine and Horne real estate agent helping Titirangi homeowners" loading="lazy" src="/images/edita-andrijasevic-raine-and-horne.jpg"/>
+<img alt="Edita Andrijasevic, local Raine and Horne real estate agent helping Titirangi homeowners" loading="lazy" src="https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg"/>
 <p class="local-team-photo-note">
             Edita Andrijasevic - Raine &amp; Horne
           </p>
@@ -1031,7 +1054,7 @@
 <div class="local-team-box">
 <h3>Titirangi advice with buyer reality in mind</h3>
 <p>
-                We help you understand how buyers may react to your property’s privacy, outlook, driveway, decks, sunlight, maintenance, layout, bush setting and comparison with nearby suburbs.
+                We help you understand how buyers may react to your property's privacy, outlook, driveway, decks, sunlight, maintenance, layout, bush setting and comparison with nearby suburbs.
               </p>
 </div>
 <div class="local-team-box">
@@ -1101,7 +1124,7 @@
 <span class="eyebrow">Raine &amp; Horne Amplify</span>
 <h2>AI-Powered Marketing To Help More Titirangi Buyers See Your Home</h2>
 <p>
-              In today’s market, the best buyer for a Titirangi home may not be sitting on one property website waiting. Amplify helps place your property in front of more relevant buyers across key digital channels, supporting stronger visibility, more traffic to the listing and better opportunity for buyer competition.
+              In today's market, the best buyer for a Titirangi home may not be sitting on one property website waiting. Amplify helps place your property in front of more relevant buyers across key digital channels, supporting stronger visibility, more traffic to the listing and better opportunity for buyer competition.
             </p>
 <p>
               For Titirangi homes, this matters because the right buyer may be responding to lifestyle, privacy, setting, family flexibility, renovation potential or emotional appeal — not just bedroom count and floor area.
@@ -1113,6 +1136,7 @@
 <li>Can help create stronger competition when paired with the right pricing and presentation</li>
 <li>Part of a full selling strategy, not just a basic advertisement</li>
 </ul>
+<a class="card-link" href="https://peterandedita.co.nz/amplify-property-marketing/">Learn more about Amplify property marketing</a>
 </div>
 <div>
 <div class="video-wrap video-placeholder" data-video-id="DkKp8I__4mI">
@@ -1180,37 +1204,45 @@
 <p>
               Understand your likely selling range using recent local sales, current competition, buyer demand, property condition and market timing.
             </p>
+<a class="card-link" href="https://peterandedita.co.nz/free-home-appraisal-west-auckland/">Free property appraisal</a>
 </div>
 <div class="card">
 <h3>Pricing Strategy</h3>
 <p>
-              We help you choose a pricing approach that reflects your property’s setting, condition, appeal and likely buyer profile.
+              We help you choose a pricing approach that reflects your property's setting, condition, appeal and likely buyer profile.
             </p>
+<a class="card-link" href="https://peterandedita.co.nz/services/selling-your-home-west-auckland/">Learn about selling your home</a>
 </div>
 <div class="card">
 <h3>Presentation Advice</h3>
 <p>We help you decide what to improve, what to leave and how to make your Titirangi home feel more welcoming to buyers.</p>
-<a href="https://peterandedita.co.nz/services/home-presentation-advice-west-auckland/">Learn about presentation advice</a>
+<a class="card-link" href="https://peterandedita.co.nz/services/home-presentation-advice-west-auckland/">Learn about presentation advice</a>
 </div>
 <div class="card">
 <h3>AI-Powered Buyer Marketing</h3>
 <p>
               Using Raine &amp; Horne Amplify, we help promote your property to more relevant buyers across key digital channels.
             </p>
+<a class="card-link" href="https://peterandedita.co.nz/amplify-property-marketing/">Learn about Amplify marketing</a>
 </div>
 <div class="card">
 <h3>Open Home Feedback</h3>
 <p>
               We help you understand buyer reactions, common objections and enquiry quality during the campaign.
             </p>
+<a class="card-link" href="https://peterandedita.co.nz/services/selling-your-home-west-auckland/">Learn about selling your home</a>
 </div>
 <div class="card">
 <h3>Offer &amp; Negotiation Support</h3>
 <p>
               We help manage buyer motivation, conditions, timing and price conversations with care and strategy.
             </p>
+<a class="card-link" href="https://peterandedita.co.nz/services/real-estate-negotiation-west-auckland/">Learn about negotiation support</a>
 </div>
 </div>
+<p style="margin-top:28px;">
+<a class="btn btn-primary" href="https://peterandedita.co.nz/services/">View All Real Estate Services</a>
+</p>
 </div>
 </section>
 
@@ -1282,7 +1314,7 @@
           </p>
 </details>
 <details>
-<summary>What affects a Titirangi property’s value?</summary>
+<summary>What affects a Titirangi property's value?</summary>
 <p>
             Buyer appeal can be influenced by location, outlook, sunlight, privacy, driveway access, parking, land, condition, presentation, layout, maintenance and current competition.
           </p>
@@ -1422,15 +1454,6 @@
       padding:26px;
     }
   }
-
-  .card-link {
-    color: #ffb200;
-    font-weight: 600;
-    text-decoration: underline;
-  }
-  .card-link:hover {
-    text-decoration: none;
-  }
 </style>
 
 <footer class="seo-footer">
@@ -1481,13 +1504,16 @@
         </div>
 
         <div class="seo-footer-links">
-          <h3>Seller Guides</h3>
+          <h3>Services &amp; Seller Guides</h3>
+          <a href="/services/">All Real Estate Services</a>
+          <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+          <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
+          <a href="/services/real-estate-negotiation-west-auckland/">Negotiation Support</a>
+          <a href="/property-auctions-west-auckland/">Property Auctions</a>
+          <a href="/amplify-property-marketing/">Raine &amp; Horne Amplify</a>
           <a href="/articles/best-real-estate-agent-titirangi.html">Best Agent Titirangi</a>
-          <a href="/articles/best-real-estate-agent-blockhouse-bay.html">Best Agent Blockhouse Bay</a>
-          <a href="/articles/best-real-estate-agent-lynfield.html">Best Agent Lynfield</a>
           <a href="/articles/best-time-to-sell-west-auckland.html">Best Time To Sell</a>
           <a href="/articles/prepare-home-for-sale-auckland.html">Prepare Your Home</a>
-          <a href="/amplify-property-marketing/">Raine &amp; Horne Amplify</a>
           <a href="/privacy-policy.html">Privacy Policy</a>
         </div>
 
