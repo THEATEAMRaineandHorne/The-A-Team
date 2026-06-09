@@ -54,9 +54,9 @@
     .topbar a { color: var(--gold); font-weight: 800; }
     header { background: rgba(255,255,255,0.96); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
     .nav { max-width: 1220px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: -0.3px; font-size: 18px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: -0.3px; font-size: 18px; flex-shrink: 0; white-space: nowrap; }
     .brand img { width: 46px; height: 46px; object-fit: contain; }
-    .nav-links { display: flex; flex-wrap: wrap; gap: 18px; font-size: 14px; font-weight: 800; }
+    .nav-links { display: flex; flex-wrap: nowrap; align-items: center; gap: 14px; font-size: 13.5px; font-weight: 800; white-space: nowrap; }
     .nav-links a:hover { color: var(--gold); }
     .breadcrumb { max-width: 1220px; margin: 0 auto; padding: 14px 20px; font-size: 13px; color: var(--muted); }
     .breadcrumb a { color: var(--muted); }
@@ -189,6 +189,7 @@
       .hero-proof { grid-template-columns: 1fr; }
       .suburb-grid { grid-template-columns: repeat(2, 1fr); }
       .nav { flex-direction: column; align-items: flex-start; }
+      .nav-links { flex-wrap: wrap; white-space: normal; }
     }
     @media (max-width: 560px) {
       .suburb-grid { grid-template-columns: 1fr; }
@@ -220,6 +221,7 @@
       "logo": "https://peterandedita.co.nz/images/rh-logo.png",
       "telephone": "+6421765234",
       "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "9 Sheridan Drive",
@@ -237,6 +239,18 @@
           "@type": "Place",
           "name": "West Auckland, New Zealand"
         }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/EditaAndrijasevicRH/",
+        "https://www.instagram.com/editaandrijasevic/",
+        "https://www.youtube.com/channel/UCAikvFYUvxHoPCxD0m-rNTg",
+        "https://nz.linkedin.com/in/blockhousebayrealestate",
+        "https://www.tiktok.com/@editaandrijasevic",
+        "https://homes.co.nz/profile/raine-and-horne/blockhouse-bay-and-titirangi/edita-andrijasevic",
+        "https://www.oneroof.co.nz/agent/edita-andrijasevic-90262",
+        "https://www.trademe.co.nz/a/property/agent/Edita-Andrijasevic",
+        "https://www.ratemyagent.co.nz/real-estate-agent/edita-andrijasevic-ad977/sales/overview",
+        "https://www.realestate.co.nz/agent/261782/edita-andrijasevic"
       ]
     },
     {
@@ -499,7 +513,7 @@
       <div class="container">
         <div class="grid-2">
           <div class="about-photo-card">
-            <img src="/images/edita-andrijasevic-raine-and-horne.jpg"
+            <img src="https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg"
                  alt="Edita Andrijasevic, local Raine and Horne real estate agent helping Kelston homeowners"
                  loading="lazy" decoding="async">
             <p class="photo-caption">Edita Andrijasevic - Raine &amp; Horne</p>
