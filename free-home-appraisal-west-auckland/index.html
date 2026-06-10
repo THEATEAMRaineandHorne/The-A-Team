@@ -101,6 +101,8 @@
       font-weight: 900;
       letter-spacing: -0.3px;
       font-size: 18px;
+      flex-shrink: 0;
+      white-space: nowrap;
     }
 
     .brand img {
@@ -121,10 +123,12 @@
 
     .nav-links {
       display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      font-size: 14px;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 14px;
+      font-size: 13.5px;
       font-weight: 800;
+      white-space: nowrap;
     }
 
     .nav-links a:hover, .nav-links a.active { color: var(--gold); }
@@ -653,6 +657,7 @@
       .hero-proof, .local-team-grid { grid-template-columns: 1fr; }
       .suburb-grid { grid-template-columns: repeat(2, 1fr); }
       .nav { flex-direction: column; align-items: flex-start; }
+      .nav-links { flex-wrap: wrap; white-space: normal; }
     }
 
     @media (max-width: 560px) {
@@ -751,6 +756,47 @@
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://peterandedita.co.nz/#website",
+        "url": "https://peterandedita.co.nz/",
+        "name": "Edita Andrijasevic - Raine & Horne",
+        "inLanguage": "en-NZ"
+      },
+      {
+        "@type": "RealEstateAgent",
+        "@id": "https://peterandedita.co.nz/#realestateagent",
+        "name": "Edita Andrijasevic - Raine & Horne",
+        "image": "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg",
+        "url": "https://peterandedita.co.nz/",
+        "telephone": "+6421765234",
+        "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "9 Sheridan Drive",
+          "addressLocality": "New Lynn",
+          "addressRegion": "Auckland",
+          "postalCode": "0600",
+          "addressCountry": "NZ"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "West Auckland, New Zealand"
+        },
+        "sameAs": [
+          "https://www.facebook.com/EditaAndrijasevicRH/",
+          "https://www.instagram.com/editaandrijasevic/",
+          "https://www.youtube.com/channel/UCAikvFYUvxHoPCxD0m-rNTg",
+          "https://nz.linkedin.com/in/blockhousebayrealestate",
+          "https://www.tiktok.com/@editaandrijasevic",
+          "https://homes.co.nz/profile/raine-and-horne/blockhouse-bay-and-titirangi/edita-andrijasevic",
+          "https://www.oneroof.co.nz/agent/edita-andrijasevic-90262",
+          "https://www.trademe.co.nz/a/property/agent/Edita-Andrijasevic",
+          "https://www.ratemyagent.co.nz/real-estate-agent/edita-andrijasevic-ad977/sales/overview",
+          "https://www.realestate.co.nz/agent/261782/edita-andrijasevic"
+        ]
+      },
       {
         "@type": "WebPage",
         "@id": "https://peterandedita.co.nz/free-home-appraisal-west-auckland/#webpage",
