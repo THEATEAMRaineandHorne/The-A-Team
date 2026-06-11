@@ -2034,6 +2034,54 @@ footer a[href="#appraisal"]:hover {
     </section>
     
 <section class="highlight" id="popular-seller-searches">
+  <style>
+    #popular-seller-searches .seller-resource-links {
+      margin-top: 18px;
+      display: grid;
+      gap: 8px;
+    }
+
+    #popular-seller-searches .seller-resource-link,
+    #popular-seller-searches .seller-inline-link {
+      color: #9b6b00 !important;
+      font-weight: 900;
+      text-decoration: underline !important;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1.5px;
+      transition: 0.2s ease;
+    }
+
+    #popular-seller-searches .seller-resource-link {
+      display: block;
+      line-height: 1.45;
+    }
+
+    #popular-seller-searches .seller-resource-link:hover,
+    #popular-seller-searches .seller-inline-link:hover {
+      color: #202020 !important;
+      background: #ffb200;
+      text-decoration: none !important;
+    }
+
+    #popular-seller-searches .seller-note {
+      margin-top: 16px;
+      color: #555555;
+    }
+
+    #popular-seller-searches .priority-link-box {
+      margin-top: 18px;
+      padding: 14px 16px;
+      background: #fff8e8;
+      border: 1px solid #e8e2d7;
+      border-radius: 14px;
+    }
+
+    #popular-seller-searches .priority-link-box p {
+      margin: 0;
+      color: #4D4E50;
+    }
+  </style>
+
   <div class="container">
     <div class="section-title">
       <span class="eyebrow">Helpful seller resources</span>
@@ -2049,13 +2097,14 @@ footer a[href="#appraisal"]:hover {
         <p>
           Start with suburb-specific guidance about property value, buyer demand, pricing confidence and next steps.
         </p>
-        <p style="margin-top:18px;">
-          <a href="free-home-appraisal-titirangi/">Titirangi home value guide</a><br>
-          <a href="free-home-appraisal-blockhouse-bay/">Blockhouse Bay home value guide</a><br>
-          <a href="free-home-appraisal-lynfield/">Lynfield home value guide</a><br>
-          <a href="free-home-appraisal-new-lynn/">New Lynn home value guide</a><br>
-          <a href="free-home-appraisal-green-bay/">Green Bay home value guide</a>
-        </p>
+
+        <div class="seller-resource-links">
+          <a class="seller-resource-link" href="/free-home-appraisal-titirangi/">Titirangi home value guide</a>
+          <a class="seller-resource-link" href="/free-home-appraisal-blockhouse-bay/">Blockhouse Bay home value guide</a>
+          <a class="seller-resource-link" href="/free-home-appraisal-lynfield/">Lynfield home value guide</a>
+          <a class="seller-resource-link" href="/free-home-appraisal-new-lynn/">New Lynn home value guide</a>
+          <a class="seller-resource-link" href="/free-home-appraisal-green-bay/">Green Bay home value guide</a>
+        </div>
       </div>
 
       <div class="card">
@@ -2063,28 +2112,36 @@ footer a[href="#appraisal"]:hover {
         <p>
           Compare agents based on local knowledge, pricing evidence, marketing, buyer follow-up and negotiation strategy.
         </p>
-        <p>If you are comparing agents before selling, read our guide to choosing a <a href="/real-estate-agent-west-auckland/">real estate agent in West Auckland</a>.</p>
-        <p style="margin-top:18px;">
-          <a href="articles/best-real-estate-agent-reviews-auckland.html">Best real estate agent reviews Auckland</a><br>
-          <a href="articles/best-real-estate-agent-titirangi.html">Best real estate agent Titirangi guide</a><br>
-          <a href="articles/best-real-estate-agent-blockhouse-bay.html">Best real estate agent Blockhouse Bay guide</a><br>
-          <a href="articles/best-real-estate-agent-lynfield.html">Best real estate agent Lynfield guide</a>
-        </p>
+
+        <div class="priority-link-box">
+          <p>
+            If you are comparing agents before selling, read our guide to choosing a
+            <a class="seller-inline-link" href="/real-estate-agent-west-auckland/">real estate agent in West Auckland</a>.
+          </p>
+        </div>
+
+        <div class="seller-resource-links">
+          <a class="seller-resource-link" href="/articles/best-real-estate-agent-reviews-auckland.html">Best real estate agent reviews Auckland</a>
+          <a class="seller-resource-link" href="/articles/best-real-estate-agent-titirangi.html">Best real estate agent Titirangi guide</a>
+          <a class="seller-resource-link" href="/articles/best-real-estate-agent-blockhouse-bay.html">Best real estate agent Blockhouse Bay guide</a>
+          <a class="seller-resource-link" href="/articles/best-real-estate-agent-lynfield.html">Best real estate agent Lynfield guide</a>
+        </div>
       </div>
 
       <div class="card">
-        <h3>Selling Strategy & Preparation</h3>
+        <h3>Selling Strategy &amp; Preparation</h3>
         <p>
           Learn how timing, presentation, pricing and buyer confidence can affect your result before going to market.
         </p>
-        <p style="margin-top:18px;">
-          <a href="articles/best-time-to-sell-west-auckland.html">Best time to sell in West Auckland</a><br>
-          <a href="articles/should-i-sell-my-house-now-or-wait-auckland.html">Should I sell my house now or wait?</a><br>
-          <a href="articles/prepare-home-for-sale-auckland.html">Prepare your home for a stronger sale price</a><br>
-          <a href="articles/why-homes-do-not-sell-blockhouse-bay.html">Why some homes do not sell in Blockhouse Bay</a><br>
-          <a href="/services/">Real estate services for West Auckland homeowners</a><br>
-          <a href="amplify-property-marketing/">AI-powered property marketing</a>
-        </p>
+
+        <div class="seller-resource-links">
+          <a class="seller-resource-link" href="/articles/best-time-to-sell-west-auckland.html">Best time to sell in West Auckland</a>
+          <a class="seller-resource-link" href="/articles/should-i-sell-my-house-now-or-wait-auckland.html">Should I sell my house now or wait?</a>
+          <a class="seller-resource-link" href="/articles/prepare-home-for-sale-auckland.html">Prepare your home for a stronger sale price</a>
+          <a class="seller-resource-link" href="/articles/why-homes-do-not-sell-blockhouse-bay.html">Why some homes do not sell in Blockhouse Bay</a>
+          <a class="seller-resource-link" href="/services/">Real estate services for West Auckland homeowners</a>
+          <a class="seller-resource-link" href="/amplify-property-marketing/">AI-powered property marketing</a>
+        </div>
       </div>
     </div>
   </div>
