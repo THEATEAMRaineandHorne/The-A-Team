@@ -198,12 +198,15 @@
     .amplify-box .eyebrow { margin-bottom: 14px; }
     .amplify-box h2 { font-size: clamp(28px,4vw,42px); line-height: 1.12; margin: 0 0 16px; letter-spacing: -1px; }
     .amplify-box p { color: #f1f1f1; font-size: 17px; margin: 0 0 14px; max-width: 880px; }
-    .amplify-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 34px; align-items: center; }
+    .amplify-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 34px; align-items: center; }
     .amplify-text { min-width: 0; }
     .amplify-text p { max-width: none; }
+    .amplify-text .bullet-list li { white-space: nowrap; }
     .amplify-media { min-width: 0; }
-    .amplify-media img { width: 100%; height: 100%; max-height: 420px; object-fit: cover; border-radius: 18px; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 18px 46px rgba(0,0,0,0.32); display: block; }
-    @media (max-width: 900px) { .amplify-grid { grid-template-columns: 1fr; gap: 26px; } .amplify-media { order: 2; } .amplify-media img { max-height: 300px; } }
+    .amplify-media a { display: block; border-radius: 18px; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .amplify-media a:hover { transform: translateY(-3px); box-shadow: 0 24px 60px rgba(0,0,0,0.42); }
+    .amplify-media img { width: 100%; height: 100%; max-height: 620px; object-fit: cover; border-radius: 18px; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 18px 46px rgba(0,0,0,0.32); display: block; }
+    @media (max-width: 900px) { .amplify-grid { grid-template-columns: 1fr; gap: 26px; } .amplify-media { order: 2; } .amplify-media img { max-height: 340px; } .amplify-text .bullet-list li { white-space: normal; } }
     .bullet-list { padding-left: 20px; margin: 18px 0 0; }
     .bullet-list li { margin-bottom: 10px; color: #f1f1f1; }
 
@@ -745,7 +748,9 @@
               </div>
             </div>
             <div class="amplify-media">
-              <img src="https://peterandedita.co.nz/images/amplify-edita-andrijasevic-raine-and-horne.webp" alt="Raine and Horne Amplify AI-powered property marketing with Edita Andrijasevic in West Auckland" loading="lazy" decoding="async">
+              <a href="/amplify-property-marketing/" aria-label="Learn more about Raine and Horne Amplify property marketing">
+                <img src="https://peterandedita.co.nz/images/amplify-edita-andrijasevic-raine-and-horne.webp" alt="Raine and Horne Amplify AI-powered property marketing with Edita Andrijasevic in West Auckland" loading="lazy" decoding="async">
+              </a>
             </div>
           </div>
         </div>
