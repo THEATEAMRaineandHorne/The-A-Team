@@ -1,4 +1,4 @@
-const currentProperties = [
+const currentProperties = [ 
   {
     label: "Serious value in a special setting",
     title: "3/17 Cape Horn Road, Mount Roskill",
@@ -6,18 +6,8 @@ const currentProperties = [
     status: "For Sale · Negotiation",
     image: "https://d3g1fm0n641hm7.cloudfront.net/properties/6650/205639767__1781427498-198540-1.png.jpg",
     alt: "3/17 Cape Horn Road Mount Roskill property photo",
-    summary: "A private, bush-surrounded pole home set well back from the road, with light-filled open-plan living, a deck looking across Lynfield, three double bedrooms and excellent under-house storage \u2014 close to walkways, parks and good schools.",
+    summary: "A private, bush-surrounded pole home set well back from the road, with light-filled open-plan living, a deck looking across Lynfield, three double bedrooms and excellent under-house storage — close to walkways, parks and good schools.",
     url: "https://www.raineandhorne.co.nz/blockhousebay/properties/3-17-cape-horn-road-mount-roskill-1041-auckland"
-  },
-  {
-    label: "First time in 61 years",
-    title: "60 Kay Drive, Blockhouse Bay",
-    details: "4 Bed · Rumpus · 1 Bath · Garage + Off-street",
-    status: "For Sale",
-    image: "https://d3g1fm0n641hm7.cloudfront.net/properties/6650/203274684__1779843327-203268048__1779842574-50520-60KayDriveBlockhouseBay.jpg",
-    alt: "60 Kay Drive Blockhouse Bay property photo",
-    summary: "A much-loved Blockhouse Bay family home of 61 years, extended in the 1980s, on a flat, sun-soaked, north-facing section with Mixed Housing Suburban zoning and future potential.",
-    url: "https://www.raineandhorne.co.nz/blockhousebay/properties/60-kay-drive-blockhouse-bay-1041-auckland"
   },
   {
     label: "Dual property opportunity",
