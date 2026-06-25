@@ -1,5 +1,15 @@
 const soldProperties = [
   {
+    label: "Blockhouse Bay family result",
+    title: "60 Kay Drive, Blockhouse Bay",
+    details: "4 Bed · Rumpus · 1 Bath · Garage + Off-street",
+    status: "Sold",
+    image: "https://d3g1fm0n641hm7.cloudfront.net/properties/6650/203274684__1779843327-203268048__1779842574-50520-60KayDriveBlockhouseBay.jpg",
+    alt: "60 Kay Drive Blockhouse Bay sold property photo",
+    summary: "A much-loved Blockhouse Bay family home of 61 years, sold after strong buyer interest in its sunny section, family space and future potential.",
+    url: "https://www.raineandhorne.co.nz/blockhousebay/properties/60-kay-drive-blockhouse-bay-1041-auckland"
+  },
+  {
     label: "Sunnyvale family result",
     title: "18 Nirmal Place, Sunnyvale",
     details: "4 Bed · 2 Bath · 4 Car",
