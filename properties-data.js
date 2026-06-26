@@ -1,4 +1,4 @@
-const currentProperties = [ 
+const currentProperties = [
   {
     label: "Serious value in a special setting",
     title: "3/17 Cape Horn Road, Mount Roskill",
