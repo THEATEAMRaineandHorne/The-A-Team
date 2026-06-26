@@ -469,6 +469,12 @@
       contain-intrinsic-size: 800px;
     }
 
+
+    #reviews {
+      content-visibility: visible !important;
+      contain-intrinsic-size: auto !important;
+    }
+
     .container {
       max-width: 1220px;
       margin: 0 auto;
@@ -1439,30 +1445,104 @@
         </div>
       </div>
     </section>
+<!-- EDITA GOOGLE REVIEW PROOF SECTION - MOVED CLOSER TO TOP -->
+<section id="reviews" class="a-team-review-proof" aria-labelledby="a-team-review-title">
+  <style>
+    .a-team-review-proof {
+      background: #f7f5ef;
+      padding: 70px 20px;
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
+      color: #2b2b2b;
+    }
 
-    <section class="highlight" id="reviews">
-      <div class="container">
-        <div class="section-title">
-          <span class="eyebrow">Google Reviews</span>
-          <h2>Trusted by local Auckland sellers</h2>
-          <p>
-            Trust matters when choosing a real estate agent. Read recent Google reviews from people who have worked with Edita and her team - Raine &amp; Horne.
-          </p>
-        </div>
+    .a-team-review-proof .review-container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
 
-        <div class="card">
-          <h3>Read Edita’s Google Reviews</h3>
-          <p>
-            See what local sellers and buyers say about communication, preparation, buyer activity, negotiation and care throughout the selling process.
-          </p>
-          <p style="margin-top:18px;">
-            <a class="btn btn-primary" href="https://share.google/ddO9ayximJFNs2muB" target="_blank" rel="noopener">Read More Google Reviews</a>
-          </p>
-        </div>
+    .a-team-review-proof .review-eyebrow {
+      display: inline-block;
+      background: #ffb200;
+      color: #202020;
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .a-team-review-proof .review-title-wrap {
+      max-width: 880px;
+      margin: 0 auto 34px;
+      text-align: center;
+    }
+
+    .a-team-review-proof h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.1;
+      margin: 0 0 16px;
+      color: #222;
+      letter-spacing: -1px;
+    }
+
+    .a-team-review-proof .review-intro {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.65;
+      color: #555;
+    }
+
+    .a-team-review-proof .reviews-card {
+      background: #ffffff;
+      border: 1px solid #e8e2d7;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.05);
+      overflow: visible;
+    }
+
+    .a-team-review-proof .elfsight-review-box {
+      width: 100%;
+      min-height: 380px;
+      overflow: visible;
+    }
+
+    @media (max-width: 900px) {
+      .a-team-review-proof {
+        padding: 52px 16px;
+      }
+
+      .a-team-review-proof .reviews-card {
+        padding: 18px;
+      }
+    }
+  </style>
+
+  <div class="review-container">
+    <div class="review-title-wrap">
+      <span class="review-eyebrow">Google Reviews</span>
+      <h2 id="a-team-review-title">Trusted By Local West Auckland Sellers And Buyers</h2>
+
+      <p class="review-intro">
+        Reviews give you a real sense of the service, communication and care local people experienced when working with Edita across West Auckland and nearby suburbs.
+      </p>
+    </div>
+
+    <div class="reviews-card">
+      <!-- Elfsight Google Reviews | THE A-TEAM REVIEWS -->
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
+      <div id="reviews-widget" class="elfsight-review-box">
+        <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
       </div>
-    </section>
-
-    <section class="faq" id="faq">
+    </div>
+  </div>
+</section>
+<!-- EDITA GOOGLE REVIEW PROOF SECTION - END -->
+<section class="faq" id="faq">
       <div class="container">
         <div class="section-title">
           <span class="eyebrow">Questions sellers ask</span>
