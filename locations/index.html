@@ -22,16 +22,16 @@
   <meta property="og:description" content="Local property appraisal and selling advice across Titirangi, Blockhouse Bay, Lynfield, New Lynn, Kelston, Green Bay, Glen Eden, Mount Roskill, New Windsor, Glendene and Avondale.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://peterandedita.co.nz/locations/">
-  <meta property="og:image" content="https://peterandedita.co.nz/images/west-auckland-free-property-appraisal.jpg">
+  <meta property="og:image" content="https://peterandedita.co.nz/images/locations-west-auckland-map-hero.webp">
   <meta property="og:image:alt" content="West Auckland areas served by Edita Andrijasevic, Raine and Horne">
   <meta property="og:locale" content="en_NZ">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Areas We Serve West Auckland | Edita Andrijasevic - Raine &amp; Horne">
   <meta name="twitter:description" content="West Auckland property appraisal and selling advice from Edita Andrijasevic - Raine &amp; Horne.">
-  <meta name="twitter:image" content="https://peterandedita.co.nz/images/west-auckland-free-property-appraisal.jpg">
+  <meta name="twitter:image" content="https://peterandedita.co.nz/images/locations-west-auckland-map-hero.webp">
 
-  <link rel="preload" as="image" href="/images/home-hero-960.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/locations-west-auckland-map-hero.webp" fetchpriority="high">
   <link rel="preload" as="image" href="/images/rh-logo.png">
   <link rel="stylesheet" href="/css/brand-font.css">
 
@@ -171,7 +171,7 @@
 
     .hero {
       position: relative;
-      min-height: 720px;
+      min-height: 640px;
       display: flex;
       align-items: stretch;
       overflow: hidden;
@@ -190,8 +190,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.58) 46%, rgba(0,0,0,0.22) 100%),
-        linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.08));
+        linear-gradient(90deg, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.18) 46%, rgba(0,0,0,0.04) 100%),
+        linear-gradient(0deg, rgba(0,0,0,0.34), rgba(0,0,0,0.02));
     }
 
     .hero-content {
@@ -199,13 +199,107 @@
       z-index: 2;
       max-width: 1220px;
       margin: 0 auto;
-      padding: 88px 20px;
+      padding: 96px 20px;
       width: 100%;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 44px;
+      display: flex;
       align-items: center;
       color: var(--white);
+    }
+
+
+    .hero-copy {
+      max-width: 820px;
+    }
+
+    .hero-copy h1 {
+      text-shadow: 0 4px 20px rgba(0,0,0,0.35);
+    }
+
+    .appraisal-section {
+      background:
+        linear-gradient(135deg, #fff8e8 0%, #ffffff 52%, #f7f7f5 100%);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .appraisal-wrap {
+      max-width: 1220px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .appraisal-copy {
+      background: #202020;
+      color: #ffffff;
+      border-radius: 24px;
+      padding: 34px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+    }
+
+    .appraisal-copy .eyebrow {
+      margin-bottom: 16px;
+    }
+
+    .appraisal-copy h2 {
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.08;
+      letter-spacing: -1.1px;
+      margin: 0 0 16px;
+      color: #ffffff;
+    }
+
+    .appraisal-copy p {
+      color: #eeeeee;
+      font-size: 18px;
+      margin: 0 0 18px;
+    }
+
+    .appraisal-points {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .appraisal-point {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .appraisal-point strong {
+      display: block;
+      color: var(--gold);
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .appraisal-point span {
+      color: #eeeeee;
+      font-size: 15px;
+    }
+
+    .appraisal-form-card {
+      background: rgba(255,255,255,0.98);
+      color: var(--dark);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.12);
+      border: 1px solid var(--border);
+    }
+
+    .appraisal-form-card h2 {
+      margin-top: 0;
+      font-size: 30px;
+      line-height: 1.15;
+    }
+
+    .appraisal-form-card p {
+      color: var(--muted);
+      margin-bottom: 20px;
     }
 
     .eyebrow {
@@ -695,10 +789,10 @@
     }
 
     @media (max-width: 980px) {
-      .hero-content,
       .grid-2,
       .grid-3,
       .local-team-wrap,
+      .appraisal-wrap,
       .seo-footer-inner {
         grid-template-columns: 1fr;
       }
@@ -763,7 +857,7 @@
         },
         "primaryImageOfPage": {
           "@type": "ImageObject",
-          "url": "https://peterandedita.co.nz/images/west-auckland-free-property-appraisal.jpg"
+          "url": "https://peterandedita.co.nz/images/locations-west-auckland-map-hero.webp"
         },
         "publisher": {
           "@id": "https://peterandedita.co.nz/#realestateagent"
@@ -933,26 +1027,21 @@
   </div>
 
   <main>
-    <section class="hero" id="appraisal">
+    <section class="hero">
       <img
-        src="/images/home-hero-960.webp"
-        srcset="
-          /images/home-hero-640.webp 640w,
-          /images/home-hero-960.webp 960w,
-          /images/home-hero-1400.webp 1400w
-        "
+        src="/images/locations-west-auckland-map-hero.webp"
         sizes="100vw"
-        alt="West Auckland property appraisal areas served by Edita Andrijasevic, Raine and Horne"
+        alt="West Auckland suburb map showing local areas served by Edita Andrijasevic, Raine and Horne"
         class="hero-bg"
-        width="1800"
-        height="1000"
+        width="1400"
+        height="600"
         loading="eager"
         fetchpriority="high"
         decoding="async">
       <div class="hero-overlay"></div>
 
       <div class="hero-content">
-        <div>
+        <div class="hero-copy">
           <span class="eyebrow">West Auckland Areas We Serve</span>
           <h1>Local Real Estate Advice Across West Auckland</h1>
 
@@ -983,82 +1072,8 @@
 
           <div class="cta-row">
             <a class="btn btn-primary" href="#local-pages">Choose Your Suburb</a>
-            <a class="btn btn-secondary" href="tel:+6421765234">Call 021 765 234</a>
+            <a class="btn btn-secondary" href="#appraisal">Request Free Appraisal</a>
           </div>
-        </div>
-
-        <div class="hero-form" id="request-appraisal">
-          <h2>Request Your Free Home Appraisal</h2>
-          <p>
-            Send your details and we will help you understand your likely value, buyer demand and best selling strategy.
-          </p>
-
-          <form action="https://formspree.io/f/mdabnpgl" method="POST">
-            <input type="hidden" name="_subject" value="New locations page appraisal enquiry">
-
-            <label>
-              Name
-              <input name="name" type="text" required>
-            </label>
-
-            <label>
-              Phone
-              <input name="phone" type="tel" required>
-            </label>
-
-            <label>
-              Email
-              <input name="email" type="email" required>
-            </label>
-
-            <label>
-              Property address
-              <input name="property_address" type="text" required>
-            </label>
-
-            <label>
-              Suburb
-              <select name="suburb" required>
-                <option value="">Select suburb</option>
-                <option>Titirangi</option>
-                <option>Blockhouse Bay</option>
-                <option>Lynfield</option>
-                <option>New Lynn</option>
-                <option>Kelston</option>
-                <option>Green Bay</option>
-                <option>Glen Eden</option>
-                <option>Mount Roskill</option>
-                <option>New Windsor</option>
-                <option>Glendene</option>
-                <option>Avondale</option>
-                <option>Other West Auckland suburb</option>
-              </select>
-            </label>
-
-            <label>
-              When are you thinking of selling?
-              <select name="selling_timeframe">
-                <option value="">Select timeframe</option>
-                <option>Just curious</option>
-                <option>Within 3 months</option>
-                <option>Within 6 months</option>
-                <option>This year</option>
-                <option>Not sure yet</option>
-              </select>
-            </label>
-
-            <label>
-              What would you like help with?
-              <textarea name="message" placeholder="Example: value, timing, preparation, buyer demand, marketing, downsizing, investment property, cross-lease, etc."></textarea>
-            </label>
-
-            <button class="btn form-button" type="submit">Send My Appraisal Request</button>
-
-            <p class="small" style="color:#555555; margin:0;">
-              Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.
-              <a href="/privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
-            </p>
-          </form>
         </div>
       </div>
     </section>
@@ -1209,6 +1224,111 @@
       </div>
     </section>
 
+    <section class="appraisal-section" id="appraisal">
+      <div class="appraisal-wrap">
+        <div class="appraisal-copy">
+          <span class="eyebrow">Free local appraisal</span>
+          <h2>Want to know what your West Auckland home could sell for?</h2>
+          <p>
+            Once you have found your suburb, the next step is understanding how buyers may see your specific property.
+            A useful appraisal should consider condition, presentation, buyer demand, recent sales and current competition.
+          </p>
+          <p>
+            Send through your details and Edita will help you understand your likely value, your best next steps and the selling strategy that suits your situation.
+          </p>
+
+          <div class="appraisal-points">
+            <div class="appraisal-point">
+              <strong>No pressure</strong>
+              <span>Helpful advice whether you are selling soon or only planning ahead.</span>
+            </div>
+            <div class="appraisal-point">
+              <strong>Local buyer insight</strong>
+              <span>Advice based on how real buyers compare homes across West Auckland suburbs.</span>
+            </div>
+            <div class="appraisal-point">
+              <strong>Clear selling strategy</strong>
+              <span>Understand presentation, pricing, timing, marketing and negotiation before you decide.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="appraisal-form-card" id="request-appraisal">
+          <h2>Request Your Free Home Appraisal</h2>
+          <p>
+            Send your details and we will help you understand your likely value, buyer demand and best selling strategy.
+          </p>
+
+          <form action="https://formspree.io/f/mdabnpgl" method="POST">
+            <input type="hidden" name="_subject" value="New locations page appraisal enquiry">
+
+            <label>
+              Name
+              <input name="name" type="text" required>
+            </label>
+
+            <label>
+              Phone
+              <input name="phone" type="tel" required>
+            </label>
+
+            <label>
+              Email
+              <input name="email" type="email" required>
+            </label>
+
+            <label>
+              Property address
+              <input name="property_address" type="text" required>
+            </label>
+
+            <label>
+              Suburb
+              <select name="suburb" required>
+                <option value="">Select suburb</option>
+                <option>Titirangi</option>
+                <option>Blockhouse Bay</option>
+                <option>Lynfield</option>
+                <option>New Lynn</option>
+                <option>Kelston</option>
+                <option>Green Bay</option>
+                <option>Glen Eden</option>
+                <option>Mount Roskill</option>
+                <option>New Windsor</option>
+                <option>Glendene</option>
+                <option>Avondale</option>
+                <option>Other West Auckland suburb</option>
+              </select>
+            </label>
+
+            <label>
+              When are you thinking of selling?
+              <select name="selling_timeframe">
+                <option value="">Select timeframe</option>
+                <option>Just curious</option>
+                <option>Within 3 months</option>
+                <option>Within 6 months</option>
+                <option>This year</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+
+            <label>
+              What would you like help with?
+              <textarea name="message" placeholder="Example: value, timing, preparation, buyer demand, marketing, downsizing, investment property, cross-lease, etc."></textarea>
+            </label>
+
+            <button class="btn form-button" type="submit">Send My Appraisal Request</button>
+
+            <p class="small" style="color:#555555; margin:0;">
+              Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.
+              <a href="/privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <section class="local-team-section" id="about-team">
       <div class="local-team-wrap">
         <div class="local-team-image-card">
@@ -1256,7 +1376,7 @@
           </div>
 
           <div class="cta-row">
-            <a class="btn btn-primary" href="#request-appraisal">Request Free Appraisal</a>
+            <a class="btn btn-primary" href="#appraisal">Request Free Appraisal</a>
             <a class="btn" href="tel:+6421765234">Call 021 765 234</a>
           </div>
         </div>
@@ -1402,7 +1522,7 @@
         <div class="seo-footer-contact">
           <a href="tel:+6421765234">021 765 234</a>
           <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
-          <a class="seo-footer-cta" href="#request-appraisal">Request Free Appraisal</a>
+          <a class="seo-footer-cta" href="#appraisal">Request Free Appraisal</a>
         </div>
       </div>
 
