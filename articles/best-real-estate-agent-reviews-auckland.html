@@ -127,10 +127,10 @@
     .hero {
       position: relative;
       background:
-        linear-gradient(90deg, rgba(32,32,32,0.90), rgba(32,32,32,0.64)),
+        linear-gradient(90deg, rgba(32,32,32,0.92), rgba(32,32,32,0.72), rgba(32,32,32,0.35)),
         url("https://peterandedita.co.nz/images/best-real-estate-agent-reviews-auckland-hero.webp");
       background-size: cover;
-      background-position: center;
+      background-position: center right;
       color: #ffffff;
       padding: 78px 20px 64px;
     }
@@ -138,10 +138,11 @@
     .hero-inner {
       max-width: var(--max);
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1.18fr 0.82fr;
-      gap: 44px;
-      align-items: center;
+      display: block;
+    }
+
+    .hero-inner > div {
+      max-width: 820px;
     }
 
     .eyebrow {
@@ -205,12 +206,7 @@
     }
 
     .hero-card {
-      background: #ffffff;
-      color: var(--text);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(255,255,255,0.2);
+      display: none;
     }
 
     .hero-image-wrap {
@@ -630,7 +626,6 @@
     }
 
     @media (max-width: 920px) {
-      .hero-inner,
       .article-grid,
       .photo-section {
         grid-template-columns: 1fr;
@@ -660,6 +655,7 @@
 
       .hero {
         padding: 54px 18px 42px;
+        background-position: center;
       }
 
       .quote-grid,
@@ -696,7 +692,7 @@
     "description": "A proof-based article using real seller review themes for Edita Andrijasevic - Raine & Horne at Raine & Horne, helping Auckland homeowners compare real estate agents.",
     "image": "https://peterandedita.co.nz/images/best-real-estate-agent-reviews-auckland-hero.webp",
     "datePublished": "2026-05-14",
-    "dateModified": "2026-05-14",
+    "dateModified": "2026-06-26",
     "author": {
       "@type": "Organization",
       "name": "Edita Andrijasevic - Raine & Horne"
@@ -866,21 +862,7 @@
           <a class="btn btn-secondary" href="#reviews-proof">Read Review Proof</a>
         </div>
       </div>
-
-      <div class="hero-card">
-        <div class="hero-image-wrap">
-          <img src="https://peterandedita.co.nz/images/best-real-estate-agent-reviews-auckland-hero.webp" alt="Edita Andrijasevic Raine and Horne with 5 star Auckland real estate review proof" loading="eager" width="700" height="616">
-          <div class="hero-image-stars" aria-label="5 star real estate review proof">
-            <strong>★★★★★</strong>
-            <span>5-Star Review Proof</span>
-          </div>
-        </div>
-        <div class="hero-card-content">
-          <h2>Edita Andrijasevic</h2>
-          <p>Raine &amp; Horne | Helping Auckland homeowners sell with communication, strategy, marketing and care.</p>
-        </div>
-      </div>
-    </div>
+</div>
   </section>
 
   <section class="trust-strip" aria-label="Key review themes">
