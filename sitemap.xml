@@ -8,31 +8,96 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
+<!-- Homepage -->
 <url>
   <loc>https://peterandedita.co.nz/</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
+
+<!-- Location index -->
 <url>
   <loc>https://peterandedita.co.nz/locations/</loc>
   <lastmod>2026-06-26T05:50:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+<!-- Real estate agent suburb pages (primary keyword targets) -->
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-west-auckland/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-blockhouse-bay/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-titirangi/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-glen-eden/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-new-lynn/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-green-bay/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-lynfield/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-mount-roskill/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-kelston/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-glendene/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-new-windsor/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://peterandedita.co.nz/real-estate-agent-avondale/</loc>
+  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+
+<!-- Free appraisal suburb pages -->
 <url>
   <loc>https://peterandedita.co.nz/free-home-appraisal-west-auckland/</loc>
   <lastmod>2026-06-26T05:50:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-titirangi/</loc>
+  <loc>https://peterandedita.co.nz/free-home-appraisal-blockhouse-bay/</loc>
   <lastmod>2026-06-26T05:50:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-blockhouse-bay/</loc>
+  <loc>https://peterandedita.co.nz/free-home-appraisal-titirangi/</loc>
   <lastmod>2026-06-26T05:50:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -81,13 +146,10 @@
   <lastmod>2026-06-26T05:50:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+<!-- Services -->
 <url>
   <loc>https://peterandedita.co.nz/services/</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-west-auckland/</loc>
   <lastmod>2026-06-26T05:50:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -117,6 +179,13 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://peterandedita.co.nz/property-deadline-sale-west-auckland/</loc>
+  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<!-- Site pages -->
+<url>
   <loc>https://peterandedita.co.nz/properties.html</loc>
   <lastmod>2026-06-26T05:50:34+00:00</lastmod>
   <priority>0.80</priority>
@@ -141,6 +210,8 @@
   <lastmod>2026-06-26T05:50:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+<!-- Articles -->
 <url>
   <loc>https://peterandedita.co.nz/articles/best-real-estate-agent-reviews-auckland.html</loc>
   <lastmod>2026-06-26T05:50:34+00:00</lastmod>
@@ -185,11 +256,6 @@
   <loc>https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html</loc>
   <lastmod>2026-06-26T05:50:34+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/property-deadline-sale-west-auckland/</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://peterandedita.co.nz/articles/questions-to-ask-real-estate-agent-before-selling.html</loc>
