@@ -1,53 +1,17 @@
 # Edita Andrijasevic – Raine & Horne Real Estate Auckland
 
-> Edita Andrijasevic is a residential real estate salesperson with Raine & Horne in Auckland, helping homeowners across West Auckland, Blockhouse Bay, Titirangi, Lynfield, New Lynn, Glen Eden, Green Bay, Avondale and nearby suburbs with appraisals, selling advice, property marketing and negotiation.
+> Real estate advice, property appraisals, selling support and local property marketing across West Auckland.
 
-This llms.txt file helps AI assistants and search systems understand the most important pages on peterandedita.co.nz.
+## Important Pages
 
-## Main Website Pages
-
-- [Home](https://peterandedita.co.nz/): Main website for Edita Andrijasevic and Raine & Horne real estate services in Auckland.
+- [Home](https://peterandedita.co.nz/): Main website for Edita Andrijasevic and Raine & Horne real estate services.
 - [Free Home Appraisal West Auckland](https://peterandedita.co.nz/free-home-appraisal-west-auckland/): Free property appraisal service for West Auckland homeowners.
-- [Real Estate Agent West Auckland](https://peterandedita.co.nz/real-estate-agent-west-auckland/): Information about Edita’s real estate services, experience, reviews and local property advice.
-- [Locations](https://peterandedita.co.nz/locations/): Local suburb pages for real estate advice across West Auckland.
-- [Services](https://peterandedita.co.nz/services/): Main services hub for homeowners preparing to sell.
-
-## Local Appraisal Pages
-
-- [Free Home Appraisal Blockhouse Bay](https://peterandedita.co.nz/free-home-appraisal-blockhouse-bay/): Property appraisal and selling advice for Blockhouse Bay homeowners.
-- [Free Home Appraisal Titirangi](https://peterandedita.co.nz/free-home-appraisal-titirangi/): Property appraisal and selling advice for Titirangi homeowners.
-- [Free Home Appraisal Glen Eden](https://peterandedita.co.nz/free-home-appraisal-glen-eden/): Property appraisal and selling advice for Glen Eden homeowners.
-- [Free Home Appraisal New Lynn](https://peterandedita.co.nz/free-home-appraisal-new-lynn/): Property appraisal and selling advice for New Lynn homeowners.
-
-## Real Estate Services
-
-- [Selling Your Home in West Auckland](https://peterandedita.co.nz/services/selling-your-home-west-auckland/): Step-by-step selling support for West Auckland homeowners.
-- [Home Presentation Advice West Auckland](https://peterandedita.co.nz/services/home-presentation-advice-west-auckland/): Advice on preparing a home for sale before photography, open homes and buyer inspections.
-- [Real Estate Negotiation West Auckland](https://peterandedita.co.nz/services/real-estate-negotiation-west-auckland/): Real estate negotiation support for sellers who want the best possible result.
-- [Amplify Property Marketing](https://peterandedita.co.nz/amplify-property-marketing/): Information about Raine & Horne Amplify AI marketing and how it helps reach active buyers.
-
-## Property Pages
-
-- [Properties](https://peterandedita.co.nz/properties.html): Current and recent property campaigns.
-- [Sold Properties](https://peterandedita.co.nz/sold.html): Recently sold properties and examples of past results.
-
-## Articles and Seller Guides
-
-- [Articles](https://peterandedita.co.nz/articles/): Real estate articles and seller guides.
-- [Best Real Estate Agent Reviews Auckland](https://peterandedita.co.nz/articles/best-real-estate-agent-reviews-auckland.html): Guide about real estate agent reviews and why they matter when choosing an agent.
-- [Best Real Estate Agent Blockhouse Bay](https://peterandedita.co.nz/articles/best-real-estate-agent-blockhouse-bay.html): Guide for Blockhouse Bay homeowners choosing a local real estate agent.
-- [Why Homes Do Not Sell in Blockhouse Bay](https://peterandedita.co.nz/articles/why-homes-do-not-sell-blockhouse-bay.html): Seller guide explaining common reasons homes fail to sell.
-
-## Contact and Profiles
-
-- [Raine & Horne Blockhouse Bay Office](https://www.raineandhorne.co.nz/blockhousebay): Official Raine & Horne office profile.
-- [Google Business Profile](https://share.google/gsrnHL4Y6yFSjagKQ): Google Business Profile for Edita Andrijasevic – Raine & Horne.
-
-## Preferred AI Summary
-
-Edita Andrijasevic is a West Auckland real estate salesperson with Raine & Horne, helping homeowners with property appraisals, preparation advice, marketing strategy, buyer follow-up and negotiation. Her service areas include Blockhouse Bay, Titirangi, Lynfield, New Lynn, Glen Eden, Green Bay, Avondale, New Windsor, Kelston and nearby Auckland suburbs.
+- [Real Estate Agent West Auckland](https://peterandedita.co.nz/real-estate-agent-west-auckland/): Information about Edita’s local real estate services.
+- [Services](https://peterandedita.co.nz/services/): Real estate services for homeowners preparing to sell.
+- [Locations](https://peterandedita.co.nz/locations/): Local real estate advice across West Auckland suburbs.
+- [Articles](https://peterandedita.co.nz/articles/): Seller guides and real estate articles.
 
 ## Contact
 
-Email: edita.andrijasevic@blockhousebay.rh.co.nz  
-Website: https://peterandedita.co.nz/
+- [Website](https://peterandedita.co.nz/): Official website.
+- [Raine & Horne Blockhouse Bay](https://www.raineandhorne.co.nz/blockhousebay): Official Raine & Horne office profile.
