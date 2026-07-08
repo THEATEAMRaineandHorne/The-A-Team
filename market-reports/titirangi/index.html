@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
@@ -34,7 +35,12 @@
 @font-face{font-family:'RaineHorne';src:url('/fonts/rainehorne.ttf') format('truetype');font-weight:400 900;font-style:normal;font-display:swap;}
 :root{--gold:#ffb200;--dark:#202020;--charcoal:#4D4E50;--white:#ffffff;--cream:#fff8e8;--soft:#f7f7f5;--border:#e8e2d7;--muted:#555555;--green:#3d5b4f;}
 *{box-sizing:border-box;}html{scroll-behavior:smooth;}body{margin:0;font-family:'RaineHorne',Arial,Helvetica,sans-serif;color:var(--dark);background:var(--white);line-height:1.65;}button,input,textarea,select{font-family:'RaineHorne',Arial,Helvetica,sans-serif;}a{color:inherit;text-decoration:none;}.topbar{background:var(--dark);color:var(--white);text-align:center;padding:9px 20px;font-size:14px;}.topbar a{color:var(--gold);font-weight:900;}header{background:rgba(255,255,255,0.96);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50;backdrop-filter:blur(8px);}.nav{max-width:1220px;margin:0 auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;gap:20px;}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-0.3px;font-size:18px;}.brand img{width:46px;height:46px;object-fit:contain;}.nav-links{display:flex;flex-wrap:wrap;gap:18px;font-size:14px;font-weight:900;align-items:center;}.nav-links a:hover{color:var(--gold);}.nav-dropdown{position:relative;display:inline-flex;align-items:center;}.nav-dropdown summary{list-style:none;cursor:pointer;}.nav-dropdown summary::-webkit-details-marker{display:none;}.nav-parent{font-size:14px;font-weight:900;color:var(--dark);display:inline-flex;align-items:center;gap:6px;}.nav-parent::after{content:'▾';font-size:11px;color:var(--gold);margin-top:1px;}.nav-parent:hover,.nav-parent.active{color:var(--gold);}.dropdown-menu{display:none;position:absolute;top:34px;left:0;min-width:300px;background:#fff;border:1px solid var(--border);border-radius:16px;box-shadow:0 18px 45px rgba(0,0,0,.14);padding:10px;z-index:100;}.nav-dropdown[open] .dropdown-menu,.nav-dropdown:hover .dropdown-menu{display:block;}.dropdown-menu a,.dropdown-menu a:visited{display:block;padding:11px 13px;border-radius:10px;color:var(--dark)!important;background:#fff!important;font-size:14px;font-weight:900;line-height:1.25;}.dropdown-menu a:hover{background:var(--gold)!important;color:var(--dark)!important;}
-.report-hero{position:relative;overflow:hidden;background:var(--dark);color:#fff;}.report-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.48;}.report-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.56) 48%,rgba(0,0,0,.22));}.report-hero-content{position:relative;z-index:2;max-width:1220px;margin:0 auto;padding:90px 20px 78px;display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center;}.eyebrow{display:inline-block;background:var(--gold);color:var(--dark);padding:8px 13px;border-radius:999px;font-size:13px;font-weight:900;letter-spacing:.5px;text-transform:uppercase;margin-bottom:18px;}h1{font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-2.1px;margin:0 0 22px;}h2{font-size:clamp(30px,4vw,48px);line-height:1.1;letter-spacing:-1px;margin:0 0 16px;}h3{font-size:24px;line-height:1.22;margin:0 0 10px;}.hero-lead{font-size:21px;max-width:850px;color:#f3f3f3;margin:0 0 22px;}.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0;}.hero-pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:10px 13px;font-weight:900;color:#fff;}.hero-card{background:rgba(255,255,255,.96);color:var(--dark);border-radius:24px;padding:28px;box-shadow:0 24px 70px rgba(0,0,0,.28);}.hero-card h2{font-size:30px;}.hero-card p{color:var(--muted);margin:0 0 16px;}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 23px;border-radius:10px;font-weight:900;border:2px solid var(--gold);transition:.2s ease;cursor:pointer;font-size:15px;}.btn-primary{background:var(--gold);color:var(--dark);}.btn-primary:hover{background:#fff;border-color:#fff;}.btn-dark{background:var(--dark);color:#fff;border-color:var(--dark);}.btn-dark:hover{background:var(--gold);color:var(--dark);border-color:var(--gold);}.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px;}section{padding:72px 20px;}.container{max-width:1220px;margin:0 auto;}.section-title{max-width:900px;margin-bottom:34px;}.section-title p,.muted{color:var(--muted);font-size:18px;margin:0;}.highlight{background:var(--cream);}.soft{background:var(--soft);}.dark-section{background:var(--dark);color:#fff;}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}.snapshot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:28px;}.snapshot-card,.card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:24px;box-shadow:0 14px 38px rgba(0,0,0,.05);}.snapshot-card span{display:block;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.4px;font-weight:900;margin-bottom:8px;}.snapshot-card strong{display:block;font-size:23px;line-height:1.15;}.snapshot-card small{display:block;margin-top:8px;color:#666;line-height:1.45;}.report-body{display:grid;grid-template-columns:minmax(0,2fr) minmax(300px,.8fr);gap:34px;align-items:start;}.report-panel{background:#fff;border:1px solid var(--border);border-radius:24px;padding:30px;box-shadow:0 14px 38px rgba(0,0,0,.05);margin-bottom:22px;}.report-panel p{color:#444;font-size:18px;margin:0 0 16px;}.report-panel p:last-child{margin-bottom:0;}.side-card{position:sticky;top:100px;background:var(--dark);color:#fff;border-radius:24px;padding:28px;border:1px solid rgba(255,255,255,.12);}.side-card h3{color:#fff;}.side-card p{color:#eee;margin:0 0 16px;}.data-table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--border);}.data-table th,.data-table td{text-align:left;padding:15px;border-bottom:1px solid var(--border);vertical-align:top;}.data-table th{background:var(--dark);color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:.4px;}.data-table tr:last-child td{border-bottom:0;}.local-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:18px 0 0;padding:0;list-style:none;}.local-list li{background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px;font-weight:800;color:#333;}.seller-advice-list{padding-left:20px;margin:18px 0 0;}.seller-advice-list li{margin-bottom:10px;color:#444;font-size:18px;}.source-note{background:#fff;border-left:6px solid var(--gold);padding:18px;border-radius:14px;color:#444;font-size:15px;}.source-note a{color:#202020;font-weight:900;text-decoration:underline;}.form-card{background:#fff;border:1px solid var(--border);border-radius:24px;padding:30px;box-shadow:0 14px 38px rgba(0,0,0,.05);}form{display:grid;gap:13px;}label{font-weight:900;font-size:14px;}input,select,textarea{width:100%;padding:13px 14px;border:1px solid #ccc;border-radius:10px;font-size:16px;margin-top:6px;}textarea{min-height:105px;resize:vertical;}.form-button{width:100%;border:2px solid var(--dark);background:var(--gold);color:var(--dark);margin-top:4px;}.form-button:hover{background:var(--dark);color:var(--gold);}.small{font-size:13px;color:#d6d6d6;}.breadcrumbs{font-size:14px;margin:0 0 18px;color:#eee;}.breadcrumbs a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.35);}.suburb-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}.suburb-links a{background:#fff;border:1px solid var(--border);border-radius:15px;padding:16px;text-align:center;font-weight:900;}.suburb-links a:hover{background:var(--gold);border-color:var(--gold);}footer{background:var(--dark);color:#fff;padding:46px 20px;}.footer-inner{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:1.25fr .75fr;gap:30px;}.footer-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:28px;}footer h2,footer h3{color:#fff;}footer a{color:var(--gold);font-weight:900;}.footer-link-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px;}.footer-links a{display:block;margin-bottom:8px;line-height:1.35;}.footer-cta{display:inline-flex;align-items:center;justify-content:center;background:var(--gold)!important;color:#202020!important;padding:16px 28px!important;border-radius:999px!important;font-size:18px!important;font-weight:900!important;text-align:center!important;margin-top:12px;width:100%;}.disclaimer{font-size:13px;color:#666;line-height:1.6;margin-top:12px;}
+.report-hero{position:relative;overflow:hidden;background:var(--dark);color:#fff;}.report-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.48;}.report-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.56) 48%,rgba(0,0,0,.22));}.report-hero-content{position:relative;z-index:2;max-width:1220px;margin:0 auto;padding:90px 20px 78px;display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center;}.eyebrow{display:inline-block;background:var(--gold);color:var(--dark);padding:8px 13px;border-radius:999px;font-size:13px;font-weight:900;letter-spacing:.5px;text-transform:uppercase;margin-bottom:18px;}h1{font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-2.1px;margin:0 0 22px;}h2{font-size:clamp(30px,4vw,48px);line-height:1.1;letter-spacing:-1px;margin:0 0 16px;}h3{font-size:24px;line-height:1.22;margin:0 0 10px;}.hero-lead{font-size:21px;max-width:850px;color:#f3f3f3;margin:0 0 22px;}.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0;}.hero-pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:10px 13px;font-weight:900;color:#fff;}.hero-card{background:rgba(255,255,255,.96);color:var(--dark);border-radius:24px;padding:28px;box-shadow:0 24px 70px rgba(0,0,0,.28);}.hero-card h2{font-size:30px;}.hero-card p{color:var(--muted);margin:0 0 16px;}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 23px;border-radius:10px;font-weight:900;border:2px solid var(--gold);transition:.2s ease;cursor:pointer;font-size:15px;}.btn-primary{background:var(--gold);color:var(--dark);}.btn-primary:hover{background:#fff;border-color:#fff;}.btn-dark{background:var(--dark);color:#fff;border-color:var(--dark);}.btn-dark:hover{background:var(--gold);color:var(--dark);border-color:var(--gold);}.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px;}section{padding:72px 20px;}.container{max-width:1220px;margin:0 auto;}.section-title{max-width:900px;margin-bottom:34px;}.section-title p,.muted{color:var(--muted);font-size:18px;margin:0;}.highlight{background:var(--cream);}.soft{background:var(--soft);}.dark-section{background:var(--dark);color:#fff;}
+.dark-section .card,.dark-section .hero-card,.dark-section .form-card{color:var(--dark)!important;}
+.dark-section .card p,.dark-section .hero-card p,.dark-section .form-card p,.dark-section .form-card .muted{color:#444!important;}
+.dark-section .form-card h2,.dark-section .form-card h3,.dark-section .form-card label{color:var(--dark)!important;}
+.dark-section .form-card .disclaimer{color:#666!important;}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}.snapshot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:28px;}.snapshot-card,.card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:24px;box-shadow:0 14px 38px rgba(0,0,0,.05);}.snapshot-card span{display:block;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.4px;font-weight:900;margin-bottom:8px;}.snapshot-card strong{display:block;font-size:23px;line-height:1.15;}.snapshot-card small{display:block;margin-top:8px;color:#666;line-height:1.45;}.report-body{display:grid;grid-template-columns:minmax(0,2fr) minmax(300px,.8fr);gap:34px;align-items:start;}.report-panel{background:#fff;border:1px solid var(--border);border-radius:24px;padding:30px;box-shadow:0 14px 38px rgba(0,0,0,.05);margin-bottom:22px;}.report-panel p{color:#444;font-size:18px;margin:0 0 16px;}.report-panel p:last-child{margin-bottom:0;}.side-card{position:sticky;top:100px;background:var(--dark);color:#fff;border-radius:24px;padding:28px;border:1px solid rgba(255,255,255,.12);}.side-card h3{color:#fff;}.side-card p{color:#eee;margin:0 0 16px;}.data-table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--border);}.data-table th,.data-table td{text-align:left;padding:15px;border-bottom:1px solid var(--border);vertical-align:top;}.data-table th{background:var(--dark);color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:.4px;}.data-table tr:last-child td{border-bottom:0;}.local-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:18px 0 0;padding:0;list-style:none;}.local-list li{background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px;font-weight:800;color:#333;}.seller-advice-list{padding-left:20px;margin:18px 0 0;}.seller-advice-list li{margin-bottom:10px;color:#444;font-size:18px;}.source-note{background:#fff;border-left:6px solid var(--gold);padding:18px;border-radius:14px;color:#444;font-size:15px;}.source-note a{color:#202020;font-weight:900;text-decoration:underline;}.form-card{background:#fff;border:1px solid var(--border);border-radius:24px;padding:30px;box-shadow:0 14px 38px rgba(0,0,0,.05);}form{display:grid;gap:13px;}label{font-weight:900;font-size:14px;}input,select,textarea{width:100%;padding:13px 14px;border:1px solid #ccc;border-radius:10px;font-size:16px;margin-top:6px;}textarea{min-height:105px;resize:vertical;}.form-button{width:100%;border:2px solid var(--dark);background:var(--gold);color:var(--dark);margin-top:4px;}.form-button:hover{background:var(--dark);color:var(--gold);}.small{font-size:13px;color:#d6d6d6;}.breadcrumbs{font-size:14px;margin:0 0 18px;color:#eee;}.breadcrumbs a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.35);}.suburb-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}.suburb-links a{background:#fff;border:1px solid var(--border);border-radius:15px;padding:16px;text-align:center;font-weight:900;}.suburb-links a:hover{background:var(--gold);border-color:var(--gold);}footer{background:var(--dark);color:#fff;padding:46px 20px;}.footer-inner{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:1.25fr .75fr;gap:30px;}.footer-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:28px;}footer h2,footer h3{color:#fff;}footer a{color:var(--gold);font-weight:900;}.footer-link-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px;}.footer-links a{display:block;margin-bottom:8px;line-height:1.35;}.footer-cta{display:inline-flex;align-items:center;justify-content:center;background:var(--gold)!important;color:#202020!important;padding:16px 28px!important;border-radius:999px!important;font-size:18px!important;font-weight:900!important;text-align:center!important;margin-top:12px;width:100%;}.disclaimer{font-size:13px;color:#666;line-height:1.6;margin-top:12px;}
 @media(max-width:1020px){.report-hero-content,.grid-2,.grid-3,.report-body,.footer-inner{grid-template-columns:1fr;}.snapshot-grid{grid-template-columns:1fr 1fr;}.side-card{position:static;}.local-list,.suburb-links,.footer-link-grid{grid-template-columns:1fr;}.nav{width:100%;align-items:stretch!important;gap:14px;flex-direction:column;}.brand{width:100%;}.nav-links{width:100%!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:12px 16px!important;}.nav-links>a{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:900!important;line-height:1.15!important;text-align:center!important;}.nav-dropdown{grid-column:1/-1!important;width:100%!important;display:block!important;position:relative!important;}.nav-dropdown summary.nav-parent{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:900!important;line-height:1.15!important;text-align:center!important;}.dropdown-menu{position:static!important;display:none!important;width:100%!important;min-width:0!important;margin-top:10px!important;padding:12px!important;border-radius:20px!important;box-shadow:none!important;}.nav-dropdown:hover .dropdown-menu{display:none!important;}.nav-dropdown[open] .dropdown-menu{display:grid!important;grid-template-columns:1fr!important;gap:8px!important;}.dropdown-menu a{min-height:52px!important;display:flex!important;align-items:center!important;justify-content:center!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;font-size:17px!important;}}
 @media(max-width:600px){section{padding:56px 18px;}.report-hero-content{padding:60px 18px 58px;}.snapshot-grid{grid-template-columns:1fr;}h1{letter-spacing:-1.2px;}.hero-lead{font-size:18px;}.report-panel,.form-card,.hero-card{padding:22px;}.data-table th,.data-table td{padding:12px;font-size:14px;}}
 
@@ -71,12 +77,30 @@
         "addressCountry": "NZ"
       },
       "areaServed": [
-        { "@type": "Place", "name": "West Auckland" },
-        { "@type": "Place", "name": "Titirangi, Auckland" },
-        { "@type": "Place", "name": "Green Bay, Auckland" },
-        { "@type": "Place", "name": "New Lynn, Auckland" },
-        { "@type": "Place", "name": "Laingholm, Auckland" },
-        { "@type": "Place", "name": "Oratia, Auckland" }
+        {
+          "@type": "Place",
+          "name": "West Auckland"
+        },
+        {
+          "@type": "Place",
+          "name": "Titirangi, Auckland"
+        },
+        {
+          "@type": "Place",
+          "name": "Green Bay, Auckland"
+        },
+        {
+          "@type": "Place",
+          "name": "New Lynn, Auckland"
+        },
+        {
+          "@type": "Place",
+          "name": "Laingholm, Auckland"
+        },
+        {
+          "@type": "Place",
+          "name": "Oratia, Auckland"
+        }
       ],
       "knowsAbout": [
         "Titirangi real estate",
@@ -94,7 +118,9 @@
       "@id": "https://peterandedita.co.nz/#website",
       "url": "https://peterandedita.co.nz/",
       "name": "Edita Andrijasevic - Raine & Horne",
-      "publisher": { "@id": "https://peterandedita.co.nz/#realestateagent" },
+      "publisher": {
+        "@id": "https://peterandedita.co.nz/#realestateagent"
+      },
       "inLanguage": "en-NZ"
     },
     {
@@ -102,11 +128,17 @@
       "@id": "https://peterandedita.co.nz/market-reports/titirangi/#reinz-dataset",
       "name": "Titirangi REINZ sales data used for June 2026 market report",
       "description": "Aggregated Titirangi residential sales analysis based on REINZ Statistics Search Export files reviewed on 8 July 2026.",
-      "creator": { "@type": "Organization", "name": "REINZ" },
+      "creator": {
+        "@type": "Organization",
+        "name": "REINZ"
+      },
       "license": "https://peterandedita.co.nz/market-reports/titirangi/#data-license",
       "usageInfo": "https://peterandedita.co.nz/market-reports/titirangi/#data-license",
       "temporalCoverage": "2024-08-01/2026-07-03",
-      "spatialCoverage": { "@type": "Place", "name": "Titirangi, Auckland, New Zealand" },
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Titirangi, Auckland, New Zealand"
+      },
       "variableMeasured": [
         "Sale price",
         "Sale date",
@@ -121,24 +153,50 @@
       "isAccessibleForFree": false
     },
     {
+      "@type": "ImageObject",
+      "@id": "https://peterandedita.co.nz/market-reports/titirangi/#hero-image",
+      "url": "https://peterandedita.co.nz/images/market-reports/titirangi/titirangi-market-report-hero-rh.webp",
+      "contentUrl": "https://peterandedita.co.nz/images/market-reports/titirangi/titirangi-market-report-hero-rh.webp",
+      "caption": "Titirangi property market report hero image with houses and market trend arrows",
+      "creditText": "Edita Andrijasevic - Raine & Horne",
+      "creator": {
+        "@id": "https://peterandedita.co.nz/#realestateagent"
+      },
+      "copyrightNotice": "© Edita Andrijasevic - Raine & Horne",
+      "license": "https://peterandedita.co.nz/market-reports/titirangi/#image-license",
+      "acquireLicensePage": "https://peterandedita.co.nz/market-reports/titirangi/#image-license",
+      "width": 1400,
+      "height": 600
+    },
+    {
       "@type": "WebPage",
       "@id": "https://peterandedita.co.nz/market-reports/titirangi/#webpage",
       "url": "https://peterandedita.co.nz/market-reports/titirangi/",
       "name": "Titirangi Property Market Report June 2026 | Edita Andrijasevic",
       "description": "June 2026 Titirangi property market report based on recent REINZ sales analysis, including median sale price, days to sell, buyer demand, price movement, property types and seller advice.",
-      "isPartOf": { "@id": "https://peterandedita.co.nz/#website" },
-      "about": [
-        { "@type": "Place", "name": "Titirangi, Auckland" },
-        { "@id": "https://peterandedita.co.nz/#realestateagent" }
-      ],
-      "mainEntity": { "@id": "https://peterandedita.co.nz/market-reports/titirangi/#market-report" },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://peterandedita.co.nz/images/edita-andrijasevic-helping-homeowners-sell-with-confidence-1400.webp"
+      "isPartOf": {
+        "@id": "https://peterandedita.co.nz/#website"
       },
-      "breadcrumb": { "@id": "https://peterandedita.co.nz/market-reports/titirangi/#breadcrumb" },
+      "about": [
+        {
+          "@type": "Place",
+          "name": "Titirangi, Auckland"
+        },
+        {
+          "@id": "https://peterandedita.co.nz/#realestateagent"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://peterandedita.co.nz/market-reports/titirangi/#market-report"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://peterandedita.co.nz/market-reports/titirangi/#hero-image"
+      },
+      "breadcrumb": {
+        "@id": "https://peterandedita.co.nz/market-reports/titirangi/#breadcrumb"
+      },
       "datePublished": "2026-07-08T09:00:00+12:00",
-      "dateModified": "2026-07-08T09:00:00+12:00",
+      "dateModified": "2026-07-09T11:45:00+12:00",
       "inLanguage": "en-NZ"
     },
     {
@@ -146,22 +204,27 @@
       "@id": "https://peterandedita.co.nz/market-reports/titirangi/#market-report",
       "headline": "Titirangi Property Market Report – June 2026",
       "description": "A professional Titirangi property market report for homeowners, based on recent REINZ sales analysis and local real estate market interpretation.",
-      "image": [
-        "https://peterandedita.co.nz/images/edita-andrijasevic-helping-homeowners-sell-with-confidence-1400.webp",
-        "https://peterandedita.co.nz/images/market-reports/titirangi/titirangi-sale-price-comparison-rh.webp",
-        "https://peterandedita.co.nz/images/market-reports/titirangi/titirangi-quarterly-median-sale-price-rh.webp"
-      ],
+      "image": {
+        "@id": "https://peterandedita.co.nz/market-reports/titirangi/#hero-image"
+      },
       "author": {
         "@type": "Person",
         "name": "Edita Andrijasevic",
         "url": "https://peterandedita.co.nz/"
       },
-      "publisher": { "@id": "https://peterandedita.co.nz/#realestateagent" },
+      "publisher": {
+        "@id": "https://peterandedita.co.nz/#realestateagent"
+      },
       "datePublished": "2026-07-08T09:00:00+12:00",
-      "dateModified": "2026-07-08T09:00:00+12:00",
+      "dateModified": "2026-07-09T11:45:00+12:00",
       "articleSection": "West Auckland Property Market Reports",
-      "about": { "@type": "Place", "name": "Titirangi, Auckland" },
-      "citation": { "@id": "https://peterandedita.co.nz/market-reports/titirangi/#reinz-dataset" },
+      "about": {
+        "@type": "Place",
+        "name": "Titirangi, Auckland"
+      },
+      "citation": {
+        "@id": "https://peterandedita.co.nz/market-reports/titirangi/#reinz-dataset"
+      },
       "keywords": [
         "Titirangi property market report",
         "Titirangi house prices",
@@ -170,16 +233,33 @@
         "West Auckland market report June 2026"
       ],
       "isAccessibleForFree": true,
-      "mainEntityOfPage": { "@id": "https://peterandedita.co.nz/market-reports/titirangi/#webpage" },
+      "mainEntityOfPage": {
+        "@id": "https://peterandedita.co.nz/market-reports/titirangi/#webpage"
+      },
       "inLanguage": "en-NZ"
     },
     {
       "@type": "BreadcrumbList",
       "@id": "https://peterandedita.co.nz/market-reports/titirangi/#breadcrumb",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://peterandedita.co.nz/" },
-        { "@type": "ListItem", "position": 2, "name": "Market Reports", "item": "https://peterandedita.co.nz/market-reports/" },
-        { "@type": "ListItem", "position": 3, "name": "Titirangi", "item": "https://peterandedita.co.nz/market-reports/titirangi/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://peterandedita.co.nz/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Market Reports",
+          "item": "https://peterandedita.co.nz/market-reports/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Titirangi",
+          "item": "https://peterandedita.co.nz/market-reports/titirangi/"
+        }
       ]
     },
     {
@@ -278,7 +358,7 @@
 
 <main>
   <section class="report-hero">
-    <img src="/images/market-reports/titirangi/titirangi-market-report-hero-rh.webp" alt="Titirangi property market report hero image with houses and market trend arrows" class="report-hero-bg" width="1400" height="600" loading="eager" fetchpriority="high" decoding="async"> srcset="/images/edita-andrijasevic-helping-homeowners-sell-with-confidence-640.webp 640w, /images/edita-andrijasevic-helping-homeowners-sell-with-confidence-960.webp 960w, /images/edita-andrijasevic-helping-homeowners-sell-with-confidence-1400.webp 1400w" sizes="100vw" alt="Edita Andrijasevic helping West Auckland homeowners understand the property market" class="report-hero-bg" width="1400" height="600" loading="eager" fetchpriority="high" decoding="async">
+    <img src="/images/market-reports/titirangi/titirangi-market-report-hero-rh.webp" srcset="/images/market-reports/titirangi/titirangi-market-report-hero-rh.webp 1400w" sizes="100vw" alt="Titirangi property market report hero image with houses and market trend arrows" class="report-hero-bg" width="1400" height="600" loading="eager" fetchpriority="high" decoding="async">
     <div class="report-hero-content">
       <div>
         <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/market-reports/">Market Reports</a> / Titirangi</nav>
@@ -455,6 +535,7 @@
         </tbody>
       </table>
       <p class="source-note" id="data-license">Data note: This report uses recent REINZ sales export information reviewed on 8 July 2026, supported by public property records, current listing evidence and local buyer feedback. The report is general market commentary only and is not a registered valuation. Individual property results can vary depending on condition, land, position, presentation, title, zoning, consent records, access and buyer competition.</p>
+      <p class="source-note" id="image-license">Image note: Hero image and market report visuals are used for this Titirangi market report page by Edita Andrijasevic - Raine &amp; Horne. All rights reserved.</p>
     </div>
   </section>
 
@@ -577,4 +658,3 @@
 
 </body>
 </html>
-
