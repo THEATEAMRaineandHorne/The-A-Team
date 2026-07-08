@@ -318,5 +318,25 @@
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
+      <url>
+  <loc>https://peterandedita.co.nz/market-reports/titirangi/</loc>
+  <lastmod>2026-07-08</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://peterandedita.co.nz/market-reports/blockhouse-bay/</loc>
+  <lastmod>2026-07-08</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://peterandedita.co.nz/market-reports/lynfield/</loc>
+  <lastmod>2026-07-08</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
