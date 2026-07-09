@@ -1000,7 +1000,7 @@ footer a[href="#appraisal"]:hover {
       "breadcrumb": {
         "@id": "https://peterandedita.co.nz/#breadcrumb"
       },
-      "dateModified": "2026-06-29",
+      "dateModified": "2026-07-10",
       "inLanguage": "en-NZ"
     },
     {
@@ -1112,8 +1112,30 @@ footer a[href="#appraisal"]:hover {
             <a href="/property-auctions-west-auckland/">Property Auctions</a>
           </div>
         </details>
-        <a href="/properties.html">Properties</a>
-        <a href="/sold.html">Sold</a>
+        <details class="nav-dropdown nav-listings">
+          <summary class="nav-parent">Listings</summary>
+          <div class="dropdown-menu">
+            <a href="/properties.html">Properties For Sale</a>
+            <a href="/sold.html">Sold Properties</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-market-reports">
+          <summary class="nav-parent">Market Reports</summary>
+          <div class="dropdown-menu">
+            <a href="/market-reports/">All Suburb Market Reports</a>
+            <a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/market-reports/titirangi/">Titirangi</a>
+            <a href="/market-reports/lynfield/">Lynfield</a>
+            <a href="/market-reports/new-lynn/">New Lynn</a>
+            <a href="/market-reports/green-bay/">Green Bay</a>
+            <a href="/market-reports/glen-eden/">Glen Eden</a>
+            <a href="/market-reports/kelston/">Kelston</a>
+            <a href="/market-reports/mount-roskill/">Mount Roskill</a>
+            <a href="/market-reports/new-windsor/">New Windsor</a>
+            <a href="/market-reports/glendene/">Glendene</a>
+            <a href="/market-reports/avondale/">Avondale</a>
+          </div>
+        </details>
         <a href="/articles/">Articles</a>
         <a href="#reviews">Reviews</a>
         <a href="/contact.html">Contact</a>
@@ -1124,10 +1146,10 @@ footer a[href="#appraisal"]:hover {
     <section class="hero" id="appraisal">
   <img
   src="images/edita-andrijasevic-helping-homeowners-sell-with-confidence-960.webp"
-  srcset="images/edita-andrijasevic-helping-homeowners-sell-with-confidence-640.webp 640w,
-          images/edita-andrijasevic-helping-homeowners-sell-with-confidence-960.webp 960w,
+  srcset="images/edita-andrijasevic-helping-homeowners-sell-with-confidence-640.webp 640w,,"100vw"
+          images/edita-andrijasevic-helping-homeowners-sell-with-confidence-960.webp 960w
           images/edita-andrijasevic-helping-homeowners-sell-with-confidence-1400.webp 1400w
-  sizes="100vw"
+  sizes=
   alt="Edita Andrijasevic helping West Auckland homeowners sell with confidence"
   class="hero-bg"
   width="1400"
@@ -1565,13 +1587,13 @@ footer a[href="#appraisal"]:hover {
     text-align: center !important;
   }
   .nav-links > a[href="/"] { order: 1; }
-  .nav-links > a[href="/properties.html"] { order: 2; }
-  .nav-links > a[href="/sold.html"] { order: 3; }
-  .nav-links > a[href="/articles/"] { order: 4; }
-  .nav-links > a[href="#reviews"] { order: 5; }
-  .nav-links > a[href="/contact.html"] { order: 6; }
-  .nav-locations { order: 7; }
-  .nav-services { order: 8; }
+  .nav-locations { order: 2; }
+  .nav-services { order: 3; }
+  .nav-listings { order: 4; }
+  .nav-market-reports { order: 5; }
+  .nav-links > a[href="/articles/"] { order: 6; }
+  .nav-links > a[href="#reviews"] { order: 7; }
+  .nav-links > a[href="/contact.html"] { order: 8; }
   .nav-dropdown {
     grid-column: 1 / -1 !important;
     width: 100% !important;
