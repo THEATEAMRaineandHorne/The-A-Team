@@ -29,15 +29,49 @@
 <style>
 :root { --gold:#ffb200; --dark:#202020; --charcoal:#4d4e50; --white:#fff; --cream:#fff8e8; --soft:#f7f7f5; --border:#e8e2d7; --muted:#575757; }
     * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
+    html { scroll-behavior:smooth; scrollbar-gutter:stable; }
     body { margin:0; overflow-x:hidden; font-family:Arial,Helvetica,sans-serif; color:var(--dark); background:var(--soft); line-height:1.72; }
     a { color:inherit; }
-    .topbar { background:var(--dark); color:var(--white); text-align:center; padding:9px 20px; font-size:14px; }
+    .topbar {
+      min-height:40px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--dark);
+      color:var(--white);
+      text-align:center;
+      padding:9px 20px;
+      font-size:14px;
+      line-height:1.45;
+    }
     .topbar a { color:var(--gold); font-weight:900; text-decoration:none; }
-    header { background:#fff; border-bottom:1px solid var(--border); position:sticky; top:0; z-index:50; }
-    .nav { max-width:1220px; margin:0 auto; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
-    .brand { display:flex; align-items:center; gap:12px; font-weight:900; font-size:18px; text-decoration:none; }
-    .brand img { width:46px; height:46px; object-fit:contain; }
+    header { min-height:77px; background:#fff; border-bottom:1px solid var(--border); position:sticky; top:0; z-index:50; }
+    .nav {
+      width:100%;
+      min-height:76px;
+      max-width:1220px;
+      margin:0 auto;
+      padding:15px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+    }
+    .brand {
+      min-width:0;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:900;
+      font-size:18px;
+      line-height:1.15;
+      text-decoration:none;
+    }
+    .brand > div {
+      min-width:0;
+      overflow-wrap:anywhere;
+    }
+    .brand img { width:46px; height:46px; flex:0 0 46px; display:block; object-fit:contain; }
     .nav-links { display:flex; flex-wrap:wrap; gap:18px; font-size:14px; font-weight:800; }
     .nav-links a { text-decoration:none; }
     .nav-links a:hover, .nav-parent:hover { color:#9b6b00; }
@@ -51,13 +85,23 @@
     .dropdown-menu a { display:block; padding:11px 13px; border-radius:10px; color:var(--dark)!important; background:#fff!important; font-size:14px; font-weight:800; line-height:1.25; }
     .dropdown-menu a:hover { background:var(--gold)!important; }
     .menu-toggle { display:none; min-height:44px; padding:10px 18px; border:1px solid var(--border); border-radius:999px; background:var(--gold); color:var(--dark); font-weight:900; cursor:pointer; }
-    .breadcrumb { border-bottom:1px solid var(--border); padding:11px 20px; background:#fff; font-size:13px; color:var(--muted); }
-    .breadcrumb-inner { max-width:1220px; margin:0 auto; display:flex; gap:8px; flex-wrap:wrap; }
+    .breadcrumb {
+      min-height:43px;
+      display:flex;
+      align-items:center;
+      border-bottom:1px solid var(--border);
+      padding:11px 20px;
+      background:#fff;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .breadcrumb-inner { width:100%; max-width:1220px; margin:0 auto; display:flex; gap:8px; flex-wrap:wrap; }
     .breadcrumb a { font-weight:800; text-decoration:none; }
     
     .article-hero {
       position:relative;
-      min-height:520px;
+      height:540px;
+      min-height:540px;
       display:flex;
       align-items:center;
       overflow:hidden;
@@ -70,6 +114,8 @@
       inset:0;
       width:100%;
       height:100%;
+      aspect-ratio:7 / 3;
+      display:block;
       object-fit:cover;
       object-position:center;
     }
@@ -81,9 +127,19 @@
         linear-gradient(0deg,rgba(0,0,0,.28),rgba(0,0,0,.08));
     }
 
-    .hero-inner { position:relative; z-index:2; width:100%; max-width:1050px; margin:0 auto; }
+    .hero-inner {
+      position:relative;
+      z-index:2;
+      width:100%;
+      min-height:330px;
+      max-width:1050px;
+      margin:0 auto;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
     .kicker { display:inline-block; background:var(--gold); color:var(--dark); padding:7px 12px; border-radius:999px; font-size:13px; font-weight:900; text-transform:uppercase; letter-spacing:.5px; margin-bottom:18px; }
-    h1 { font-size:clamp(38px,6vw,66px); line-height:1.04; letter-spacing:-1.8px; margin:0 0 20px; max-width:1000px; }
+    h1 { font-size:clamp(38px,6vw,66px); line-height:1.04; letter-spacing:-1.8px; margin:0 0 20px; max-width:1000px; text-wrap:balance; }
     .article-hero p { max-width:850px; font-size:20px; color:#f2f2f2; margin:0; }
     .meta { margin-top:23px; color:#ddd; font-size:14px; }
     .article-layout { max-width:1220px; margin:0 auto; padding:64px 20px 78px; display:grid; grid-template-columns:minmax(0,820px) 320px; gap:36px; align-items:start; }
@@ -129,8 +185,14 @@
     .footer-links a, .footer-card > a { color:var(--gold); display:block; margin-bottom:9px; font-weight:800; text-decoration:none; }
     .small { font-size:13px; color:#ccc!important; }
     @media(max-width:980px) {
-      .nav { align-items:stretch; flex-wrap:wrap; }
-      .brand { flex:1; }
+      header { min-height:76px; }
+      .nav {
+        min-height:76px;
+        display:grid;
+        grid-template-columns:minmax(0,1fr) auto;
+        align-items:center;
+      }
+      .brand { min-width:0; }
       .menu-toggle { display:inline-flex; align-items:center; justify-content:center; }
       .nav-links { display:none; width:100%; grid-template-columns:1fr 1fr; gap:10px; }
       .nav-links.is-open { display:grid; }
@@ -143,12 +205,26 @@
       .sidebar { position:static; }
     }
     @media(max-width:620px) {
-      .article-hero { min-height:470px; padding:62px 18px; }
+      .article-hero { height:500px; min-height:500px; padding:62px 18px; }
       h1 { letter-spacing:-1px; }
       .article-layout { padding:42px 16px 60px; }
       .check-grid, .footer-links { grid-template-columns:1fr; }
       .nav-links { grid-template-columns:1fr; }
     }
+    
+    @media(max-width:520px) {
+      .topbar { min-height:52px; padding:8px 14px; }
+      header { min-height:76px; }
+      .nav { padding:14px 16px; gap:10px; }
+      .brand { gap:9px; font-size:15px; }
+      .brand img { width:42px; height:42px; flex-basis:42px; }
+      .brand > div span { display:block; }
+      .menu-toggle { padding:9px 14px; }
+      .breadcrumb { min-height:50px; }
+      .article-hero { height:540px; min-height:540px; }
+      .hero-inner { min-height:390px; }
+    }
+
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none!important; animation:none!important; } }
   </style>
 
@@ -410,7 +486,7 @@
 </div>
 <main>
 <section aria-labelledby="article-title" class="article-hero">
-<img alt="Glendene homes and local property market representing how to choose a real estate agent in Glendene" class="article-hero-image" decoding="async" fetchpriority="high" height="600" loading="eager" src="/images/how-to-choose-real-estate-agent-glendene.png" width="1400"/>
+<img alt="Glendene homes and local property market representing how to choose a real estate agent in Glendene" class="article-hero-image" decoding="sync" fetchpriority="high" height="600" loading="eager" src="/images/how-to-choose-real-estate-agent-glendene.png" width="1400"/>
 <div aria-hidden="true" class="article-hero-overlay"></div>
 <div class="hero-inner">
 <span class="kicker">Glendene Seller Checklist</span>
