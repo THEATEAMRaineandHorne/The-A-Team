@@ -1,384 +1,1283 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:fo="http://www.w3.org/1999/XSL/Format"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Homepage -->
-<url>
-  <loc>https://peterandedita.co.nz/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
+  <title>Real Estate Agent West Auckland | Edita Andrijasevic - Raine &amp; Horne</title>
 
-<!-- Location index -->
-<url>
-  <loc>https://peterandedita.co.nz/locations/</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <meta name="description" content="Looking for a real estate agent in West Auckland? Edita Andrijasevic from Raine & Horne helps homeowners in Blockhouse Bay, Titirangi, Lynfield, New Lynn, Glen Eden, Green Bay, Avondale and nearby suburbs sell with confidence.">
 
-<!-- Real estate agent suburb pages (primary keyword targets) -->
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-west-auckland/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-blockhouse-bay/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-titirangi/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-glen-eden/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-new-lynn/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-green-bay/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-lynfield/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-mount-roskill/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-kelston/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-glendene/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-new-windsor/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/real-estate-agent-avondale/</loc>
-  <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://peterandedita.co.nz/real-estate-agent-west-auckland/">
+  <link 
+  rel="preload" 
+  as="image" 
+  href="/images/real-estate-agent-west-auckland-raine-and-horne.webp" 
+  fetchpriority="high">
 
-<!-- Market Reports -->
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/</loc>
-  <lastmod>2026-07-09T14:00:00+12:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/titirangi/</loc>
-  <lastmod>2026-07-09T11:45:00+12:00</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/blockhouse-bay/</loc>
-  <lastmod>2026-07-09T09:00:00+12:00</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/lynfield/</loc>
-  <lastmod>2026-07-09T09:00:00+12:00</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/new-lynn/</loc>
-  <lastmod>2026-07-09T09:00:00+12:00</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/green-bay/</loc>
-  <lastmod>2026-07-09T10:35:00+12:00</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/glen-eden/</loc>
-  <lastmod>2026-07-09T09:55:00+12:00</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/kelston/</loc>
-  <lastmod>2026-07-09T12:55:00+12:00</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/mount-roskill/</loc>
-  <lastmod>2026-07-09T13:15:00+12:00</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/new-windsor/</loc>
-  <lastmod>2026-07-09T13:35:00+12:00</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/glendene/</loc>
-  <lastmod>2026-07-09T12:35:00+12:00</lastmod>
-  <priority>0.75</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/market-reports/avondale/</loc>
-  <lastmod>2026-07-09T12:05:00+12:00</lastmod>
-  <priority>0.75</priority>
-</url>
+  <meta property="og:title" content="Real Estate Agent West Auckland | Edita Andrijasevic - Raine &amp; Horne">
+  <meta property="og:description" content="West Auckland real estate agent helping local homeowners with property appraisals, selling advice, marketing, negotiation and buyer strategy.">
+  <meta property="og:url" content="https://peterandedita.co.nz/real-estate-agent-west-auckland/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Edita Andrijasevic - Raine &amp; Horne">
+  <meta property="og:image" content="https://peterandedita.co.nz/images/real-estate-agent-west-auckland-raine-and-horne.webp">
 
-<!-- Free appraisal suburb pages -->
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-west-auckland/</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-blockhouse-bay/</loc>
-  <lastmod>2026-07-01T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-titirangi/</loc>
-  <lastmod>2026-06-09T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-lynfield/</loc>
-  <lastmod>2026-07-01T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-new-lynn/</loc>
-  <lastmod>2026-07-01T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-green-bay/</loc>
-  <lastmod>2026-06-09T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-glen-eden/</loc>
-  <lastmod>2026-07-01T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-kelston/</loc>
-  <lastmod>2026-07-01T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-mount-roskill/</loc>
-  <lastmod>2026-07-01T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-new-windsor/</loc>
-  <lastmod>2026-07-01T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-glendene/</loc>
-  <lastmod>2026-07-01T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/free-home-appraisal-avondale/</loc>
-  <lastmod>2026-07-01T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Real Estate Agent West Auckland | Edita Andrijasevic - Raine &amp; Horne">
+  <meta name="twitter:description" content="West Auckland real estate agent helping local homeowners sell with confidence.">
+  <meta name="twitter:image" content="https://peterandedita.co.nz/images/real-estate-agent-west-auckland-raine-and-horne.webp">
 
-<!-- Services -->
-<url>
-  <loc>https://peterandedita.co.nz/services/</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/services/selling-your-home-west-auckland/</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/services/home-presentation-advice-west-auckland/</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/services/real-estate-negotiation-west-auckland/</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/amplify-property-marketing/</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/property-auctions-west-auckland/</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/property-deadline-sale-west-auckland/</loc>
-  <lastmod>2026-06-16T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <link rel="icon" href="/favicon.ico">
 
-<!-- Site pages -->
-<url>
-  <loc>https://peterandedita.co.nz/properties.html</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/sold.html</loc>
-  <lastmod>2026-06-25T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/</loc>
-  <lastmod>2026-07-04T03:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/contact.html</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/privacy-policy.html</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <style>
+    :root {
+      --charcoal: #4D4E50;
+      --gold: #E1AA14;
+      --gold-dark: #b8870f;
+      --light: #f7f6f2;
+      --white: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --border: #e5e1d8;
+      --shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
+      --radius: 18px;
+      --max: 1180px;
+    }
 
-<!-- Articles -->
-<url>
-  <loc>https://peterandedita.co.nz/articles/best-real-estate-agent-reviews-auckland.html</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/best-real-estate-agent-titirangi.html</loc>
-  <lastmod>2026-05-13T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/best-real-estate-agent-blockhouse-bay.html</loc>
-  <lastmod>2026-06-10T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/best-real-estate-agent-lynfield.html</loc>
-  <lastmod>2026-05-10T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/best-time-to-sell-west-auckland.html</loc>
-  <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/should-i-sell-my-house-now-or-wait-auckland.html</loc>
-  <lastmod>2026-05-14T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/prepare-home-for-sale-auckland.html</loc>
-  <lastmod>2026-04-30T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/why-homes-do-not-sell-blockhouse-bay.html</loc>
-  <lastmod>2026-06-10T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html</loc>
-  <lastmod>2026-05-13T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/questions-to-ask-real-estate-agent-before-selling.html</loc>
-  <lastmod>2026-06-29T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/how-long-to-sell-house-blockhouse-bay.html</loc>
-  <lastmod>2026-06-23T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-avondale.html</loc>
-  <lastmod>2026-05-13T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-glen-eden.html</loc>
-  <lastmod>2026-05-13T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-glendene.html</loc>
-  <lastmod>2026-05-13T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-mount-roskill.html</loc>
-  <lastmod>2026-05-13T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-new-lynn.html</loc>
-  <lastmod>2026-05-13T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-new-windsor.html</loc>
-  <lastmod>2026-05-13T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/free-property-appraisal-online.html</loc>
-  <lastmod>2026-06-26T05:50:34+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/glen-eden-house-prices-2026.html</loc>
-  <lastmod>2026-05-21T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://peterandedita.co.nz/articles/titirangi-house-prices-2026.html</loc>
-  <lastmod>2026-04-30T00:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-      <url>
-  <loc>https://peterandedita.co.nz/articles/how-much-would-auckland-house-prices-need-to-fall.html</loc>
-  <lastmod>2026-07-04T03:50:34+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
+    * {
+      box-sizing: border-box;
+    }
 
-</urlset>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .top-bar {
+      background: var(--charcoal);
+      color: var(--white);
+      font-size: 14px;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 9px 0;
+      flex-wrap: wrap;
+    }
+
+    .top-bar a {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      min-height: 82px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--charcoal);
+      min-width: 220px;
+    }
+
+    .brand img {
+      width: 90px;
+      height: auto;
+    }
+
+    .brand-text {
+      display: none;
+    }
+
+    .nav-toggle {
+      display: none;
+      background: var(--charcoal);
+      color: var(--white);
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 13px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu > li {
+      position: relative;
+    }
+
+    .nav-menu > li > a,
+    .dropdown-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 11px;
+      color: var(--charcoal);
+      font-weight: 700;
+      font-size: 15px;
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .nav-menu > li > a:hover,
+    .dropdown-toggle:hover {
+      color: var(--gold-dark);
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 260px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 10px;
+      z-index: 1001;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .dropdown:focus-within .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 9px;
+      color: var(--charcoal);
+      font-weight: 650;
+      font-size: 14px;
+    }
+
+    .dropdown-menu a:hover {
+      background: var(--light);
+      color: var(--gold-dark);
+    }
+
+    .nav-cta {
+      background: var(--gold);
+      color: var(--charcoal) !important;
+      border-radius: 999px;
+      padding: 11px 16px !important;
+      font-weight: 800 !important;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold-dark);
+      color: var(--white) !important;
+    }
+
+    .hero {
+  background:
+    linear-gradient(90deg, rgba(77, 78, 80, 0.10) 0%, rgba(77, 78, 80, 0.58) 42%, rgba(77, 78, 80, 0.82) 100%),
+    url("/images/real-estate-agent-west-auckland-raine-and-horne.webp");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  color: var(--white);
+  padding: 82px 0 76px;
+}
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 62px);
+      line-height: 1.05;
+      margin: 0 0 22px;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-subtitle {
+      font-size: 20px;
+      max-width: 720px;
+      color: rgba(255, 255, 255, 0.92);
+      margin-bottom: 28px;
+    }
+
+    .hero-buttons,
+    .button-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: 0.2s ease;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--charcoal);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-dark);
+      color: var(--white);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.75);
+    }
+
+    .btn-secondary:hover {
+      background: var(--white);
+      color: var(--charcoal);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--charcoal);
+      border-color: var(--charcoal);
+    }
+
+    .btn-outline:hover {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--charcoal);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      border-top: 6px solid var(--gold);
+    }
+
+    .hero-card h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    .hero-card ul {
+      margin: 0;
+      padding-left: 20px;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 72px 0;
+    }
+
+    .section-light {
+      background: var(--light);
+    }
+
+    .section h2 {
+      color: var(--charcoal);
+      font-size: clamp(28px, 3vw, 40px);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin: 0 0 18px;
+    }
+
+    .section h3 {
+      color: var(--charcoal);
+      margin: 0 0 10px;
+      font-size: 21px;
+      line-height: 1.25;
+    }
+
+    .intro-text {
+      max-width: 880px;
+      font-size: 18px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    .section-light .feature-card {
+      background: var(--white);
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .check-list li {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px 12px 42px;
+      position: relative;
+      font-weight: 700;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 15px;
+      top: 10px;
+      color: var(--gold-dark);
+      font-weight: 900;
+    }
+
+    .suburb-links {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .suburb-links a {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--gold);
+      border-radius: 13px;
+      padding: 14px 15px;
+      font-weight: 800;
+      color: var(--charcoal);
+      transition: 0.2s ease;
+    }
+
+    .suburb-links a:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+      color: var(--gold-dark);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .highlight-box {
+      background: var(--charcoal);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 34px;
+      border-top: 6px solid var(--gold);
+    }
+
+    .highlight-box h2,
+    .highlight-box h3 {
+      color: var(--white);
+    }
+
+    .highlight-box p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .stat {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 22px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--gold-dark);
+      font-size: 28px;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      margin-top: 14px;
+    }
+
+    .faq-section .faq-item:first-of-type {
+      margin-top: 28px;
+    }
+
+    .cta-section {
+      background:
+        linear-gradient(115deg, rgba(77, 78, 80, 0.96), rgba(77, 78, 80, 0.82)),
+        var(--charcoal);
+      color: var(--white);
+      padding: 76px 0;
+    }
+
+    .cta-section h2 {
+      color: var(--white);
+      font-size: clamp(30px, 4vw, 48px);
+      margin: 0 0 18px;
+      line-height: 1.12;
+    }
+
+    .cta-section p {
+      max-width: 800px;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 18px;
+    }
+
+    .text-link {
+      color: var(--gold-dark);
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .section-light .text-link {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      background: #2f3032;
+      color: var(--white);
+      padding: 48px 0 22px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 34px;
+    }
+
+    footer h3 {
+      margin: 0 0 13px;
+      color: var(--gold);
+    }
+
+    footer a {
+      color: rgba(255, 255, 255, 0.88);
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+      padding-top: 18px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .split,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .suburb-links {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .top-bar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .nav {
+        min-height: 72px;
+      }
+
+      .brand img {
+        width: 80px;
+      }
+
+      .nav-toggle {
+        display: inline-flex;
+      }
+
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        padding: 12px 16px 18px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .nav-menu.active {
+        display: flex;
+      }
+
+      .nav-menu > li > a,
+      .dropdown-toggle {
+        width: 100%;
+        justify-content: space-between;
+        padding: 13px 10px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .dropdown-menu {
+        position: static;
+        display: none;
+        min-width: 100%;
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+        padding: 4px 0 10px 14px;
+        background: var(--light);
+      }
+
+      .dropdown.open .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: none;
+      }
+
+      .dropdown.open:hover .dropdown-menu {
+        display: block;
+      }
+
+      .nav-cta {
+        margin-top: 10px;
+        text-align: center;
+        justify-content: center !important;
+      }
+
+        .hero {
+    background:
+      linear-gradient(90deg, rgba(77, 78, 80, 0.48) 0%, rgba(77, 78, 80, 0.78) 100%),
+      url("/images/real-estate-agent-west-auckland-raine-and-horne.webp");
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 58px 0 54px;
+  }
+
+      .section {
+        padding: 54px 0;
+      }
+
+      .feature-grid,
+      .check-list,
+      .suburb-links,
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-buttons,
+      .button-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span>Raine &amp; Horne Blockhouse Bay, Titirangi &amp; Lynfield</span>
+      <span>
+        <a href="tel:021765234">Edita: 021 765 234</a>
+        &nbsp; | &nbsp;
+        <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
+      </span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="Edita Andrijasevic Raine and Horne Home">
+        <img src="/images/rh-logo.png" alt="Raine and Horne real estate logo" width="90" height="90" loading="eager">
+        <span class="brand-text">Edita Andrijasevic</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        ☰ Menu
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/">Home</a></li>
+
+        <li class="dropdown">
+          <button class="dropdown-toggle" type="button" aria-expanded="false">
+            Services <span>▾</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="/services/">All Services</a>
+            <a href="/free-home-appraisal-west-auckland/">Free Property Appraisal</a>
+            <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
+            <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <button class="dropdown-toggle" type="button" aria-expanded="false">
+            Locations <span>▾</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="/locations/">All Locations</a>
+            <a href="/free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/free-home-appraisal-titirangi/">Titirangi</a>
+            <a href="/free-home-appraisal-lynfield/">Lynfield</a>
+            <a href="/free-home-appraisal-new-lynn/">New Lynn</a>
+            <a href="/free-home-appraisal-glen-eden/">Glen Eden</a>
+            <a href="/free-home-appraisal-green-bay/">Green Bay</a>
+            <a href="/free-home-appraisal-avondale/">Avondale</a>
+            <a href="/free-home-appraisal-kelston/">Kelston</a>
+            <a href="/free-home-appraisal-glendene/">Glendene</a>
+            <a href="/free-home-appraisal-new-windsor/">New Windsor</a>
+            <a href="/free-home-appraisal-mount-roskill/">Mount Roskill</a>
+          </div>
+        </li>
+
+        <li><a href="/properties.html">Properties</a></li>
+        <li><a href="/sold.html">Sold</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/free-home-appraisal-west-auckland/" class="nav-cta">Free Appraisal</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Local West Auckland Real Estate Advice</p>
+        <h1>Real Estate Agent West Auckland</h1>
+        <p class="hero-subtitle">
+          Thinking of selling in West Auckland? Edita Andrijasevic from Raine &amp; Horne helps local homeowners understand their property’s value, prepare with confidence and choose a selling strategy designed to attract the right buyers.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="/free-home-appraisal-west-auckland/" class="btn btn-primary">Book a Free Property Appraisal</a>
+          <a href="tel:021765234" class="btn btn-secondary">Call Edita: 021 765 234</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h2>West Auckland Selling Help</h2>
+        <p>
+          Practical advice before you sell, with local knowledge across West Auckland suburbs.
+        </p>
+        <ul>
+          <li>Free property appraisal</li>
+          <li>Pricing and market advice</li>
+          <li>Property marketing strategy</li>
+          <li>Buyer feedback and negotiation</li>
+          <li>Raine &amp; Horne Amplify exposure</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <h2>Choosing the Right Real Estate Agent in West Auckland</h2>
+
+        <div class="intro-text">
+          <p>
+            Selling a home is not only about putting a property online and waiting for buyers to appear. The right real estate agent should help you understand the local market, position your property correctly, create strong buyer interest and negotiate with care when it matters most.
+          </p>
+
+          <p>
+            Edita Andrijasevic from Raine &amp; Horne works with homeowners across West Auckland, including Blockhouse Bay, Titirangi, Lynfield, New Lynn, Glen Eden, Green Bay, Avondale, Kelston, Glendene, New Windsor and Mount Roskill. Her approach is personal, practical and focused on helping sellers make confident decisions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+  <div class="container">
+    <h2>Why West Auckland Sellers Choose Edita</h2>
+
+    <p class="intro-text">
+      West Auckland sellers do not just need an agent who can list a property online. They need clear local advice, strong presentation, smart digital exposure and careful follow-up with buyers. Edita Andrijasevic combines local West Auckland knowledge with Raine &amp; Horne marketing support to help homeowners make confident selling decisions.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Suburb-specific selling advice</h3>
+        <p>
+          Buyer expectations can change from one West Auckland suburb to another. A Titirangi home may need a different strategy from a Blockhouse Bay family home, a New Lynn townhouse or a Glen Eden first-home buyer property. Edita helps sellers understand how their property should be positioned locally.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Honest pricing guidance</h3>
+        <p>
+          Before going to market, sellers need to understand recent comparable sales, current competition and how buyers are likely to view the property. Edita provides practical pricing advice so homeowners can make informed decisions before launching a campaign.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Stronger marketing exposure</h3>
+        <p>
+          A successful campaign needs more than one online listing. Professional presentation, quality photography, buyer follow-up, social media exposure and Raine &amp; Horne Amplify can help place your home in front of more of the right buyers.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Negotiation that protects your result</h3>
+        <p>
+          The best result is often created after buyers show interest. Edita focuses on understanding buyer motivation, managing questions, following up carefully and negotiating with the seller’s position in mind.
+        </p>
+      </div>
+    </div>
+
+    <div class="button-row" style="margin-top: 28px;">
+      <a href="/free-home-appraisal-west-auckland/" class="btn btn-primary">Book a Free West Auckland Appraisal</a>
+      <a href="/sold.html" class="btn btn-outline">View Recent Sold Properties</a>
+    </div>
+  </div>
+</section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Real Estate Services Across West Auckland</h2>
+
+          <p>
+            Whether you are thinking of selling soon or simply want to understand your options, Edita can help with practical advice before you go to market.
+          </p>
+
+          <ul class="check-list">
+            <li>Free property appraisals</li>
+            <li>Pre-sale advice and pricing guidance</li>
+            <li>Property marketing strategy</li>
+            <li>Buyer feedback and campaign reporting</li>
+            <li>Negotiation support</li>
+            <li>Auction, deadline sale and negotiation advice</li>
+            <li>Presentation and staging advice</li>
+            <li>Local suburb selling strategy</li>
+          </ul>
+
+          <p>
+            The goal is simple: to help you make informed decisions and give your property the best possible chance in the market.
+          </p>
+        </div>
+
+        <div class="highlight-box">
+          <h2>Not Ready to Sell Yet?</h2>
+          <p>
+            Many West Auckland homeowners ask for advice months before they sell. That early conversation can help you understand value, timing, presentation, repairs, buyer demand and what may improve your result.
+          </p>
+          <p>
+            A free appraisal gives you a clearer picture without pressure or obligation.
+          </p>
+          <a href="/free-home-appraisal-west-auckland/" class="btn btn-primary">Request Free Advice</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <h2>West Auckland Suburbs We Help</h2>
+
+        <p class="intro-text">
+          Edita and the Raine &amp; Horne team help homeowners across many West Auckland suburbs. Choose your local area below for more specific appraisal and selling advice.
+        </p>
+
+        <div class="suburb-links">
+          <a href="/free-home-appraisal-blockhouse-bay/">Blockhouse Bay Appraisal</a>
+          <a href="/free-home-appraisal-titirangi/">Titirangi Appraisal</a>
+          <a href="/free-home-appraisal-lynfield/">Lynfield Appraisal</a>
+          <a href="/free-home-appraisal-new-lynn/">New Lynn Appraisal</a>
+          <a href="/free-home-appraisal-glen-eden/">Glen Eden Appraisal</a>
+          <a href="/free-home-appraisal-green-bay/">Green Bay Appraisal</a>
+          <a href="/free-home-appraisal-avondale/">Avondale Appraisal</a>
+          <a href="/free-home-appraisal-kelston/">Kelston Appraisal</a>
+          <a href="/free-home-appraisal-glendene/">Glendene Appraisal</a>
+          <a href="/free-home-appraisal-new-windsor/">New Windsor Appraisal</a>
+          <a href="/free-home-appraisal-mount-roskill/">Mount Roskill Appraisal</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Powered by Raine &amp; Horne Amplify</h2>
+
+          <p>
+            One of the advantages of working with Raine &amp; Horne is access to Amplify, an AI-powered digital marketing tool designed to help property campaigns reach more potential buyers across online channels.
+          </p>
+
+          <p>
+            For sellers, this can mean stronger digital exposure, more targeted buyer reach and better campaign visibility compared with relying only on standard property portals.
+          </p>
+
+          <a href="/services/" class="text-link">View our real estate services</a>
+        </div>
+
+        <div class="feature-card">
+          <h3>What this means for sellers</h3>
+          <p>
+            A strong campaign needs more than one listing online. Amplify can support your property marketing by increasing visibility, helping keep your home in front of relevant buyers and adding another layer to the selling strategy.
+          </p>
+          <p>
+            Combined with local knowledge, professional presentation and skilled follow-up, this helps create a stronger campaign for West Auckland homeowners.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <h2>Recent Properties and Local Results</h2>
+
+        <p class="intro-text">
+          Buyers often compare homes across neighbouring suburbs, which is why local experience matters. Edita and the team work across West Auckland markets including Blockhouse Bay, Glen Eden, Lynfield, Sunnyvale, New Windsor, Green Bay and surrounding areas.
+        </p>
+
+        <div class="stats-grid">
+          <div class="stat">
+            <strong>Local</strong>
+            West Auckland suburb knowledge
+          </div>
+          <div class="stat">
+            <strong>Targeted</strong>
+            Property marketing campaigns
+          </div>
+          <div class="stat">
+            <strong>Personal</strong>
+            Seller communication and support
+          </div>
+        </div>
+
+        <div class="button-row" style="margin-top: 28px;">
+          <a href="/properties.html" class="btn btn-primary">View Current Properties</a>
+          <a href="/sold.html" class="btn btn-outline">View Sold Properties</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What Local Clients Say</h2>
+
+        <p class="intro-text">
+          Reviews are an important part of choosing a real estate agent. They show how an agent communicates, handles pressure and supports clients through the selling or buying process.
+        </p>
+
+        <!-- Elfsight Google Reviews | THE A-TEAM REVIEWS -->
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Book a Free West Auckland Property Appraisal</h2>
+
+        <p>
+          A property appraisal gives you a clearer picture of your home’s likely market value, recent comparable sales, current buyer demand and what may help your home stand out.
+        </p>
+
+        <p>
+          There is no pressure and no obligation. It is simply a helpful first step if you are thinking about selling now, later this year or sometime in the future.
+        </p>
+
+        <div class="button-row">
+          <a href="/free-home-appraisal-west-auckland/" class="btn btn-primary">Request a Free Appraisal</a>
+          <a href="tel:021765234" class="btn btn-secondary">Call Edita: 021 765 234</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container">
+        <h2>Real Estate Agent West Auckland FAQs</h2>
+
+        <div class="faq-item">
+          <h3>How do I choose a real estate agent in West Auckland?</h3>
+          <p>
+            Look for an agent who understands your local suburb, explains pricing clearly, has a strong marketing plan and communicates honestly. Reviews, recent local activity and negotiation experience are also important.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you offer free property appraisals in West Auckland?</h3>
+          <p>
+            Yes. Edita offers free property appraisals across West Auckland, including Blockhouse Bay, Titirangi, Lynfield, New Lynn, Glen Eden, Green Bay, Avondale and nearby suburbs.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What suburbs do you cover?</h3>
+          <p>
+            Edita works across West Auckland and surrounding suburbs, including Blockhouse Bay, Titirangi, Lynfield, New Lynn, Glen Eden, Green Bay, Avondale, Kelston, Glendene, New Windsor and Mount Roskill.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is a property appraisal the same as a registered valuation?</h3>
+          <p>
+            No. A real estate appraisal is an estimate of likely market value based on recent sales, current listings and buyer demand. A registered valuation is a formal valuation completed by a registered valuer.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can you help if I am not ready to sell yet?</h3>
+          <p>
+            Yes. Many homeowners ask for advice months before selling. Early guidance can help with presentation, repairs, timing, pricing expectations and understanding the current market.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Edita Andrijasevic - Raine &amp; Horne</h3>
+          <p>
+            Real estate advice, property appraisals and selling support for homeowners across West Auckland.
+          </p>
+          <p>
+            Office: 9 Sheridan Drive, New Lynn, Auckland, New Zealand
+          </p>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <a href="tel:021765234">Edita: 021 765 234</a><br>
+          <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">Email</a><br>
+          <a href="https://www.raineandhorne.co.nz/blockhousebay" target="_blank" rel="noopener">Raine &amp; Horne Office Website</a>
+        </div>
+
+        <div>
+          <h3>Useful Links</h3>
+          <a href="/free-home-appraisal-west-auckland/">Free Property Appraisal</a><br>
+          <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a><br>
+          <a href="/services/">Services</a><br>
+          <a href="/locations/">Locations</a><br>
+          <a href="/properties.html">Current Properties</a><br>
+          <a href="/sold.html">Sold Properties</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Edita Andrijasevic - Raine &amp; Horne Blockhouse Bay, Titirangi &amp; Lynfield. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('#navMenu');
+    const dropdownButtons = document.querySelectorAll('.dropdown-toggle');
+
+    navToggle.addEventListener('click', function () {
+      const isOpen = navMenu.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    dropdownButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        const parent = button.closest('.dropdown');
+        const isOpen = parent.classList.toggle('open');
+        button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    });
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://peterandedita.co.nz/#realestateagent",
+      "name": "Edita Andrijasevic - Raine & Horne",
+      "url": "https://peterandedita.co.nz/",
+      "image": "https://peterandedita.co.nz/images/real-estate-agent-west-auckland-raine-and-horne.webp",
+      "logo": "https://peterandedita.co.nz/images/rh-logo.png",
+      "telephone": "+6421765234",
+      "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
+      "priceRange": "$$",
+      "description": "Edita Andrijasevic from Raine & Horne helps West Auckland homeowners with free property appraisals, real estate selling advice, property marketing, buyer strategy and negotiation.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9 Sheridan Drive",
+        "addressLocality": "New Lynn",
+        "addressRegion": "Auckland",
+        "postalCode": "0600",
+        "addressCountry": "NZ"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "West Auckland" },
+        { "@type": "Place", "name": "Blockhouse Bay, Auckland" },
+        { "@type": "Place", "name": "Titirangi, Auckland" },
+        { "@type": "Place", "name": "Lynfield, Auckland" },
+        { "@type": "Place", "name": "New Lynn, Auckland" },
+        { "@type": "Place", "name": "Glen Eden, Auckland" },
+        { "@type": "Place", "name": "Green Bay, Auckland" },
+        { "@type": "Place", "name": "Avondale, Auckland" },
+        { "@type": "Place", "name": "Kelston, Auckland" },
+        { "@type": "Place", "name": "Glendene, Auckland" },
+        { "@type": "Place", "name": "New Windsor, Auckland" },
+        { "@type": "Place", "name": "Mount Roskill, Auckland" }
+      ],
+      "employee": {
+        "@id": "https://peterandedita.co.nz/#edita"
+      },
+            "sameAs": [
+        "https://www.raineandhorne.co.nz/blockhousebay",
+        "https://homes.co.nz/profile/raine-and-horne/blockhouse-bay-and-titirangi/edita-andrijasevic",
+        "https://www.oneroof.co.nz/agent/edita-andrijasevic-90262",
+        "https://www.trademe.co.nz/a/property/agent/Edita-Andrijasevic",
+        "https://www.hougarden.com/nz/real-estate-agent/edita-andrijasevic-92824",
+        "https://www.realestate.co.nz/agent/261782/edita-andrijasevic",
+        "https://www.facebook.com/EditaAndrijasevicRH/",
+        "https://www.instagram.com/editaandrijasevic/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://peterandedita.co.nz/#website",
+      "url": "https://peterandedita.co.nz/",
+      "name": "Edita Andrijasevic - Raine & Horne",
+      "description": "West Auckland real estate advice, property appraisals and selling support from Edita Andrijasevic - Raine & Horne.",
+      "publisher": {
+        "@id": "https://peterandedita.co.nz/#realestateagent"
+      },
+      "inLanguage": "en-NZ"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://peterandedita.co.nz/#edita",
+      "name": "Edita Andrijasevic",
+      "jobTitle": "Licensed Real Estate Salesperson",
+      "worksFor": {
+        "@id": "https://peterandedita.co.nz/#realestateagent"
+      },
+      "telephone": "+6421765234",
+      "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
+      "url": "https://peterandedita.co.nz/real-estate-agent-west-auckland/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://peterandedita.co.nz/real-estate-agent-west-auckland/#webpage",
+      "url": "https://peterandedita.co.nz/real-estate-agent-west-auckland/",
+      "name": "Real Estate Agent West Auckland | Edita Andrijasevic - Raine & Horne",
+      "description": "Looking for a real estate agent in West Auckland? Edita Andrijasevic from Raine & Horne helps homeowners sell with confidence through local advice, appraisal guidance, marketing and negotiation.",
+      "isPartOf": {
+        "@id": "https://peterandedita.co.nz/#website"
+      },
+      "about": {
+        "@id": "https://peterandedita.co.nz/#realestateagent"
+      },
+      "mainEntity": {
+        "@id": "https://peterandedita.co.nz/real-estate-agent-west-auckland/#service"
+      },
+      "breadcrumb": {
+        "@id": "https://peterandedita.co.nz/real-estate-agent-west-auckland/#breadcrumb"
+      },
+      "inLanguage": "en-NZ"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://peterandedita.co.nz/real-estate-agent-west-auckland/#service",
+      "name": "Real Estate Agent West Auckland",
+      "serviceType": "Residential real estate sales, property appraisals, marketing and negotiation support",
+      "provider": {
+        "@id": "https://peterandedita.co.nz/#realestateagent"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "West Auckland"
+      },
+      "url": "https://peterandedita.co.nz/real-estate-agent-west-auckland/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://peterandedita.co.nz/real-estate-agent-west-auckland/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://peterandedita.co.nz/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Real Estate Agent West Auckland",
+          "item": "https://peterandedita.co.nz/real-estate-agent-west-auckland/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://peterandedita.co.nz/real-estate-agent-west-auckland/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I choose a real estate agent in West Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look for an agent who understands your local suburb, explains pricing clearly, has a strong marketing plan and communicates honestly. Reviews, recent local activity and negotiation experience are also important."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer free property appraisals in West Auckland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Edita Andrijasevic offers free property appraisals across West Auckland, including Blockhouse Bay, Titirangi, Lynfield, New Lynn, Glen Eden, Green Bay, Avondale and nearby suburbs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What suburbs do you cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Edita works across West Auckland and surrounding suburbs, including Blockhouse Bay, Titirangi, Lynfield, New Lynn, Glen Eden, Green Bay, Avondale, Kelston, Glendene, New Windsor and Mount Roskill."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a property appraisal the same as a registered valuation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A real estate appraisal is an estimate of likely market value based on recent sales, current listings and buyer demand. A registered valuation is a formal valuation completed by a registered valuer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help if I am not ready to sell yet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many homeowners ask for advice months before selling. Early guidance can help with presentation, repairs, timing, pricing expectations and understanding the current market."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
