@@ -1,20 +1,52 @@
+# Content Signals — see https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/
+# search: index & link with excerpts | ai-input: real-time AI answers/RAG | ai-train: model training | use: reuse scope
+
 User-agent: *
+Content-Signal: search=yes, ai-train=no, use=reference
 Allow: /
 
-# AI search bots - explicitly welcome
-User-agent: OAI-SearchBot
-Allow:/
+# --- Block AI-training crawlers ---
+User-agent: Amazonbot
+Disallow: /
 
-User-agent: ChatGPT-User
-Allow:/
+User-agent: Applebot-Extended
+Disallow: /
 
-User-agent: PerplexityBot
-Allow:/
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
 
 User-agent: ClaudeBot
-Allow:/
+Disallow: /
+
+User-agent: CloudflareBrowserRenderingCrawler
+Disallow: /
 
 User-agent: Google-Extended
-Allow:/
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+# --- Allow AI search / live-fetch bots (no training use) ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
 
 Sitemap: https://peterandedita.co.nz/sitemap.xml
