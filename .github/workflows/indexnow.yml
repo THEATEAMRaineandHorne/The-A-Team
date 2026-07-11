@@ -1,0 +1,26 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches: [main]   # change to "master" if that's your default branch
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for deployment to go live
+        run: sleep 60
+
+      - name: Fetch sitemap and extract URLs
+        run: |
+          curl -s https://peterandedita.co.nz/sitemap.xml -o sitemap.xml
+          grep -oP '(?<=<loc>)[^<]+' sitemap.xml > urls.txt
+          echo "URLs to submit:"
+          cat urls.txt
+
+      - name: Submit URLs to IndexNow
+        run: |
+          URLS=$(python3 -c "import json; print(json.dumps([l.strip() for l in open('urls.txt') if l.strip()]))")
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"peterandedita.co.nz\",\"key\":\"4f29499ca3cc5690994c3865534f5902\",\"keyLocation\":\"https://peterandedita.co.nz/4f29499ca3cc5690994c3865534f5902.txt\",\"urlList\":$URLS}"
