@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Free Property Appraisal Online | Edita Andrijasevic - Raine &amp; Horne</title>
-  <meta name="description" content="Request a free property appraisal online with Edita Andrijasevic, Raine & Horne. Local Auckland pricing advice, buyer demand insight and selling strategy.">
+  <title>Free Property Appraisal Online Auckland | Edita Andrijasevic</title>
+  <meta name="description" content="Request a free property appraisal online with Edita Andrijasevic, Raine &amp; Horne. Local Auckland pricing advice, buyer demand insight and selling strategy.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://peterandedita.co.nz/articles/free-property-appraisal-online.html">
 
@@ -14,13 +14,23 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://peterandedita.co.nz/articles/free-property-appraisal-online.html">
   <meta property="og:site_name" content="Edita Andrijasevic - Raine &amp; Horne">
+  <meta property="og:image" content="https://peterandedita.co.nz/images/free-property-appraisal-online-auckland.webp">
+  <meta property="og:image:width" content="720">
+  <meta property="og:image:height" content="520">
+  <meta property="og:image:alt" content="Free property appraisal advice for Auckland homeowners">
 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Property Appraisal Online Auckland">
+  <meta name="twitter:description" content="Local Auckland property appraisal advice, buyer demand insight and a clear selling strategy.">
+  <meta name="twitter:image" content="https://peterandedita.co.nz/images/free-property-appraisal-online-auckland.webp">
+
+  <meta name="theme-color" content="#4D4E50">
   <link rel="icon" href="/favicon.ico">
 
   <style>
     :root {
       --gold: #ffb200;
-      --gold-dark: #d79600;
+      --gold-dark: #946300;
       --charcoal: #4D4E50;
       --dark: #202124;
       --light: #f7f5ef;
@@ -36,6 +46,10 @@
 
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -54,6 +68,46 @@
 
     a:hover {
       color: var(--gold-dark);
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid #005fcc;
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: fixed;
+      left: 16px;
+      top: 12px;
+      z-index: 1000;
+      padding: 10px 14px;
+      border-radius: 8px;
+      background: var(--dark);
+      color: var(--white);
+      font-weight: 800;
+      text-decoration: none;
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
     }
 
     img {
@@ -109,6 +163,9 @@
       display: flex;
       align-items: center;
       gap: 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
       font-size: 15px;
     }
 
@@ -231,6 +288,21 @@
       padding: 20px 0 0;
     }
 
+    .breadcrumb ol {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .breadcrumb li:not(:last-child)::after {
+      content: "›";
+      margin-left: 7px;
+      color: var(--muted);
+    }
+
     .breadcrumb a {
       color: var(--muted);
       text-decoration: none;
@@ -347,14 +419,14 @@
       background: var(--white);
     }
 
-    .article- {
+    .article-image {
       margin: 34px 0;
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow);
     }
 
-    .article- figcaption {
+    .article-image figcaption {
       background: #f4f1e8;
       color: var(--muted);
       padding: 12px 16px;
@@ -421,7 +493,22 @@
 
     .side-card form {
       display: grid;
-      gap: 10px;
+      gap: 14px;
+    }
+
+    .form-field {
+      display: grid;
+      gap: 6px;
+    }
+
+    .form-field label {
+      color: var(--dark);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .required {
+      color: #8b0000;
     }
 
     input,
@@ -441,8 +528,14 @@
       resize: vertical;
     }
 
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #005fcc;
+    }
+
     button {
-      border: none;
+      border: 2px solid var(--gold);
       cursor: pointer;
       border-radius: 999px;
       padding: 13px 18px;
@@ -450,6 +543,11 @@
       color: var(--dark);
       font-weight: 900;
       font-size: 15px;
+    }
+
+    button:hover {
+      background: #ffc340;
+      border-color: #ffc340;
     }
 
     .small {
@@ -486,6 +584,12 @@
     .footer-links {
       display: grid;
       gap: 8px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
     }
 
     @media (max-width: 900px) {
@@ -536,14 +640,23 @@
         },
         "about": {
           "@id": "https://peterandedita.co.nz/#realestateagent"
-        }
+        },
+        "breadcrumb": {
+          "@id": "https://peterandedita.co.nz/articles/free-property-appraisal-online.html#breadcrumb"
+        },
+        "inLanguage": "en-NZ"
       },
       {
         "@type": "Article",
         "@id": "https://peterandedita.co.nz/articles/free-property-appraisal-online.html#article",
         "headline": "Free Property Appraisal Online: A Smarter First Step Before Selling",
         "description": "Understand the difference between an online estimate and a local real estate appraisal before selling your Auckland home.",
-        "image": "https://peterandedita.co.nz/images/free-property-appraisal-online-auckland.webp",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://peterandedita.co.nz/images/free-property-appraisal-online-auckland.webp",
+          "width": 720,
+          "height": 520
+        },
         "author": {
           "@type": "Person",
           "name": "Edita Andrijasevic",
@@ -619,24 +732,26 @@
 
 <body>
 
-  <div class="top-bar">
-    Free Auckland property appraisal · Call <a href="tel:021765234">021 765 234</a> · Licensed under the REAA 2008
-  </div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <section class="top-bar" aria-label="Contact information">
+    Free Auckland property appraisal · Call <a href="tel:021765234">021&nbsp;765&nbsp;234</a> · Licensed under the REAA 2008
+  </section>
 
   <header>
     <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="/">Edita Andrijasevic <span>| Raine & Horne</span></a>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/articles/">Articles</a>
-        <a href="/amplify-property-marketing/">Amplify</a>
-        <a href="/contact.html">Contact</a>
-        <a class="nav-cta" href="#appraisal-form">Request Free Appraisal</a>
-      </div>
+      <a class="brand" href="/" aria-label="Edita Andrijasevic, Raine and Horne home page">Edita Andrijasevic <span>| Raine &amp; Horne</span></a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <li><a href="/amplify-property-marketing/">Amplify</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a class="nav-cta" href="#appraisal-form">Request Free Appraisal</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero">
       <div class="hero-wrap">
         <div>
@@ -646,7 +761,7 @@
 
           <div class="buttons">
             <a class="button primary" href="#appraisal-form">Request Free Online Appraisal</a>
-            <a class="button secondary" href="tel:021765234">Call Edita</a>
+            <a class="button secondary" href="tel:021765234">Call&nbsp;Edita</a>
           </div>
         </div>
 
@@ -668,9 +783,13 @@
     </section>
 
     <div class="container">
-      <div class="breadcrumb">
-        <a href="/">Home</a> › <a href="/articles/">Articles</a> › Free Property Appraisal Online
-      </div>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li><a href="/articles/">Articles</a></li>
+          <li aria-current="page">Free Property Appraisal Online</li>
+        </ol>
+      </nav>
     </div>
 
     <div class="main-grid">
@@ -725,10 +844,11 @@
         </p>
 
         <table class="comparison">
+          <caption class="sr-only">Comparison of an automated online property estimate with an online appraisal from a local real estate agent</caption>
           <thead>
             <tr>
-              <th>Online property estimate</th>
-              <th>Online appraisal with a local agent</th>
+              <th scope="col">Online property estimate</th>
+              <th scope="col">Online appraisal with a local agent</th>
             </tr>
           </thead>
           <tbody>
@@ -759,7 +879,7 @@
           <strong>An online estimate looks at data. A proper appraisal looks at data plus buyer behaviour.</strong>
         </p>
 
-        <figure class="article-">
+        <figure class="article-image">
           <img
             src="/images/online-property-appraisal-checklist.webp"
             width="900"
@@ -890,13 +1010,13 @@
           <a href="/free-home-appraisal-new-lynn/">Free Home Appraisal New Lynn</a>
           <a href="/free-home-appraisal-mount-roskill/">Free Property Appraisal Mount Roskill</a>
           <a href="/articles/prepare-home-for-sale-auckland.html">How To Prepare Your Home For Sale</a>
-          <a href="/amplify-property-marketing/">Raine & Horne Amplify Marketing</a>
+          <a href="/amplify-property-marketing/">Raine &amp; Horne Amplify Marketing</a>
         </div>
 
         <h2>What you receive when you request a free appraisal</h2>
 
         <p>
-          When you request a free property appraisal online with Edita Andrijasevic from Raine & Horne, the goal is not just to give you a number. The goal is to help you understand your position.
+          When you request a free property appraisal online with Edita Andrijasevic from Raine &amp; Horne, the goal is not just to give you a number. The goal is to help you understand your position.
         </p>
 
         <p>
@@ -917,7 +1037,7 @@
           <div>
             <h2>Local appraisal advice from Edita Andrijasevic</h2>
             <p>
-              Edita Andrijasevic is a Licensed Salesperson with Raine & Horne, helping homeowners across Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Avondale and surrounding Auckland suburbs.
+              Edita Andrijasevic is a Licensed Salesperson with Raine &amp; Horne, helping homeowners across Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Avondale and surrounding Auckland suburbs.
             </p>
             <p>
               This page provides general real estate information and appraisal enquiry options. It is not a registered valuation.
@@ -961,46 +1081,76 @@
           </p>
           <div class="buttons">
             <a class="button primary" href="#appraisal-form">Start Online Appraisal Request</a>
-            <a class="button secondary" href="tel:021765234">Call 021 765 234</a>
+            <a class="button secondary" href="tel:021765234">Call&nbsp;021&nbsp;765&nbsp;234</a>
           </div>
         </div>
 
       </article>
 
-      <aside>
+      <aside aria-label="Property appraisal form and related links">
         <div class="side-card" id="appraisal-form">
-          <h3>Request Your Free Online Appraisal</h3>
-          <p>Tell us a little about your property and we will help you understand your likely value, buyer demand and next step.</p>
+          <h3 id="appraisal-form-title">Request Your Free Online Appraisal</h3>
+          <p id="appraisal-form-description">Tell us a little about your property and we will help you understand your likely value, buyer demand and next step.</p>
 
-          <form action="https://formspree.io/f/mdabnpgl" method="POST">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="tel" name="phone" placeholder="Phone" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="property-address" placeholder="Property address">
-            <select name="suburb">
-              <option value="">Select suburb</option>
-              <option>Titirangi</option>
-              <option>Blockhouse Bay</option>
-              <option>Lynfield</option>
-              <option>New Lynn</option>
-              <option>Green Bay</option>
-              <option>Glen Eden</option>
-              <option>Mount Roskill</option>
-              <option>New Windsor</option>
-              <option>Avondale</option>
-              <option>Other Auckland suburb</option>
-            </select>
-            <select name="timeframe">
-              <option value="">When are you thinking of selling?</option>
-              <option>Just curious</option>
-              <option>Within 3 months</option>
-              <option>Within 6 months</option>
-              <option>This year</option>
-              <option>Not sure yet</option>
-            </select>
-            <textarea name="message" placeholder="What would you like help with?"></textarea>
+          <form action="https://formspree.io/f/mdabnpgl" method="POST" aria-labelledby="appraisal-form-title" aria-describedby="appraisal-form-description appraisal-privacy-note">
+            <p class="small">Fields marked with <span class="required" aria-hidden="true">*</span> are required.</p>
+
+            <div class="form-field">
+              <label for="appraisal-name">Name <span class="required" aria-hidden="true">*</span></label>
+              <input id="appraisal-name" type="text" name="name" autocomplete="name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="appraisal-phone">Phone <span class="required" aria-hidden="true">*</span></label>
+              <input id="appraisal-phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" required>
+            </div>
+
+            <div class="form-field">
+              <label for="appraisal-email">Email <span class="required" aria-hidden="true">*</span></label>
+              <input id="appraisal-email" type="email" name="email" autocomplete="email" inputmode="email" required>
+            </div>
+
+            <div class="form-field">
+              <label for="appraisal-address">Property address</label>
+              <input id="appraisal-address" type="text" name="property-address" autocomplete="address-line1">
+            </div>
+
+            <div class="form-field">
+              <label for="appraisal-suburb">Suburb</label>
+              <select id="appraisal-suburb" name="suburb" autocomplete="address-level2">
+                <option value="">Select suburb</option>
+                <option>Titirangi</option>
+                <option>Blockhouse Bay</option>
+                <option>Lynfield</option>
+                <option>New Lynn</option>
+                <option>Green Bay</option>
+                <option>Glen Eden</option>
+                <option>Mount Roskill</option>
+                <option>New Windsor</option>
+                <option>Avondale</option>
+                <option>Other Auckland suburb</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="appraisal-timeframe">When are you thinking of selling?</label>
+              <select id="appraisal-timeframe" name="timeframe">
+                <option value="">Select a timeframe</option>
+                <option>Just curious</option>
+                <option>Within 3 months</option>
+                <option>Within 6 months</option>
+                <option>This year</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="appraisal-message">What would you like help with?</label>
+              <textarea id="appraisal-message" name="message"></textarea>
+            </div>
+
             <button type="submit">Send My Appraisal Request</button>
-            <p class="small">Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.</p>
+            <p class="small" id="appraisal-privacy-note">Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.</p>
           </form>
         </div>
 
@@ -1014,7 +1164,7 @@
 
         <div class="side-card">
           <h3>Need help now?</h3>
-          <p><strong>Call:</strong> <a href="tel:021765234">021 765 234</a></p>
+          <p><strong>Call:</strong> <a href="tel:021765234">021&nbsp;765&nbsp;234</a></p>
           <p><strong>Email:</strong> <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a></p>
         </div>
       </aside>
@@ -1024,8 +1174,8 @@
   <footer>
     <div class="footer-inner">
       <div>
-        <h3>Edita Andrijasevic | Raine & Horne</h3>
-        <p>Helping Auckland homeowners with free property appraisals, selling strategy, buyer-focused marketing, Raine & Horne Amplify and negotiation.</p>
+        <h3>Edita Andrijasevic | Raine &amp; Horne</h3>
+        <p>Helping Auckland homeowners with free property appraisals, selling strategy, buyer-focused marketing, Raine &amp; Horne Amplify and negotiation.</p>
         <p>Edita Andrijasevic is a Licensed Salesperson under the Real Estate Agents Act 2008.</p>
       </div>
 
@@ -1042,7 +1192,7 @@
       <div>
         <h3>Contact</h3>
         <div class="footer-links">
-          <a href="tel:021765234">021 765 234</a>
+          <a href="tel:021765234">021&nbsp;765&nbsp;234</a>
           <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
           <a href="/contact.html">Contact page</a>
           <a href="/articles/">Seller guides</a>
