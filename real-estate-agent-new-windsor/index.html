@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
@@ -14,8 +13,6 @@
                      /images/real-estate-agent-new-windsor-1400.webp 1400w"
         imagesizes="100vw"
         fetchpriority="high">
-  <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
 
   <meta name="description" content="Looking for a real estate agent in New Windsor? Edita Andrijasevic from Raine &amp; Horne offers honest local pricing advice, buyer-focused marketing and skilled negotiation for New Windsor homeowners.">
   <meta name="application-name" content="Edita Andrijasevic - Raine &amp; Horne">
@@ -315,18 +312,19 @@
   }
   </script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="/css/brand-font.css">
+  <!-- Footer icons are non-critical, so this stylesheet must not block first paint. -->
+  <link rel="preload"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
   <style>
     @font-face {
       font-family: 'RaineHorne';
       src: url('/fonts/raine-horne-regular.ttf') format('truetype');
-      font-weight: 400; font-style: normal; font-display: swap;
-    }
-    @font-face {
-      font-family: 'RaineHorne';
-      src: url('/fonts/rainehorne.ttf') format('truetype');
-      font-weight: 400 900; font-style: normal; font-display: swap;
+      font-weight: 400;
+      font-style: normal;
+      font-display: optional;
     }
     :root {
       --gold: #ffb200; --dark: #202020; --charcoal: #4D4E50;
@@ -382,7 +380,7 @@
     .hero-rating .stars { color: var(--gold); letter-spacing: 2px; font-size: 17px; }
     section { padding: 76px 20px; }
     section:not(.hero) { content-visibility: auto; contain-intrinsic-size: 800px; }
-    #reviews { content-visibility: visible !important; contain-intrinsic-size: auto !important; }
+    #reviews { content-visibility: auto; contain-intrinsic-size: 650px; }
     .container { max-width: 1220px; margin: 0 auto; }
     .section-label { display: inline-block; background: var(--gold); color: var(--dark); padding: 8px 13px; border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 18px; }
     .section-title { max-width: 880px; margin-bottom: 36px; }
@@ -466,6 +464,7 @@
       .suburb-grid { grid-template-columns: repeat(2,1fr); }
       .trust-grid { grid-template-columns: 1fr; }
       .nav { flex-direction: column; align-items: flex-start; }
+      header { background: #fff; backdrop-filter: none; }
     }
     @media (max-width: 560px) {
       .hero-proof { grid-template-columns: 1fr; }
@@ -580,14 +579,14 @@
     <section class="hero" aria-labelledby="hero-heading">
       <img
         src="/images/real-estate-agent-new-windsor-960.webp"
-        srcset="/images/real-estate-agent-new-windsor-640.webp 640w,
-                /images/real-estate-agent-new-windsor-960.webp 960w,
-                /images/real-estate-agent-new-windsor-1400.webp 1400w"
+        srcset="/images/real-estate-agent-new-windsor-640.webp 640w,,"
+                /images/real-estate-agent-new-windsor-960.webp 960w
+                /images/real-estate-agent-new-windsor-1400.webp 1400w
         sizes="100vw"
         alt="Real estate agent in New Windsor — Edita Andrijasevic, Raine and Horne"
         class="hero-bg"
         width="1400" height="600"
-        loading="eager" fetchpriority="high" decoding="async">
+        loading="eager" fetchpriority="high">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div>
@@ -636,7 +635,6 @@
           </p>
         </div>
         <div class="reviews-card">
-          <script src="https://static.elfsight.com/platform/platform.js" async></script>
           <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
         </div>
       </div>
@@ -1084,6 +1082,37 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    (function () {
+      var reviews = document.getElementById('reviews');
+      var loaded = false;
+
+      function loadReviewsWidget() {
+        if (loaded) return;
+        loaded = true;
+        var script = document.createElement('script');
+        script.src = 'https://static.elfsight.com/platform/platform.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+
+      if (!reviews || !('IntersectionObserver' in window)) {
+        window.addEventListener('load', loadReviewsWidget, { once: true });
+        return;
+      }
+
+      var observer = new IntersectionObserver(function (entries) {
+        if (entries.some(function (entry) { return entry.isIntersecting; })) {
+          observer.disconnect();
+          loadReviewsWidget();
+        }
+      }, { rootMargin: '250px 0px' });
+
+      observer.observe(reviews);
+    }());
+  </script>
 
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     document.querySelectorAll('.video-placeholder').forEach(function(wrapper) {
