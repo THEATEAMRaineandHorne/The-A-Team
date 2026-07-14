@@ -462,7 +462,7 @@
     .hero-overlay {
       position: absolute; inset: 0;
       background:
-        linear-gradient(90deg, rgba(0,0,0,0.68) 0%, rgba(0,0,0,0.46) 50%, rgba(0,0,0,0.14) 100%),
+        linear-gradient(270deg, rgba(0,0,0,0.68) 0%, rgba(0,0,0,0.46) 50%, rgba(0,0,0,0.14) 100%),
         linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.04));
     }
     .hero-content {
@@ -470,11 +470,18 @@
       max-width: 1220px; margin: 0 auto;
       padding: 80px 20px;
       width: 100%;
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 44px;
+      display: flex;
+      justify-content: flex-end;
       align-items: center;
       color: var(--white);
+    }
+    .hero-text-right {
+      max-width: 640px;
+      text-align: left;
+    }
+    @media (max-width: 980px) {
+      .hero-content { justify-content: flex-start; }
+      .hero-text-right { max-width: 100%; }
     }
     .eyebrow {
       display: inline-block;
@@ -922,7 +929,7 @@
 <img alt="Edita Andrijasevic, real estate agent covering all of West Auckland, Raine and Horne" class="hero-bg" decoding="async" fetchpriority="high" height="600" loading="eager" src="/images/real-estate-agent-west-auckland-raine-and-horne.webp" width="1400"/>
 <div class="hero-overlay"></div>
 <div class="hero-content">
-<div>
+<div class="hero-text-right">
 <span class="eyebrow">West Auckland Real Estate</span>
 <h1 id="hero-heading">Real Estate Agent Across West Auckland</h1>
 <p class="hero-lead">One local Raine &amp; Horne agent, eleven West Auckland suburbs. Edita Andrijasevic gives homeowners in Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor, Kelston, Glendene and Avondale the same direct, evidence-based selling advice — priced and positioned for the buyers actually competing for each specific suburb.</p>
