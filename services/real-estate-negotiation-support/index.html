@@ -26,9 +26,11 @@
   <meta name="twitter:description" content="Negotiation support for West Auckland sellers, including buyer follow-up, offer management, conditions, timing and strategy.">
   <meta name="twitter:image" content="https://peterandedita.co.nz/images/real-estate-negotiation-support-west-auckland.webp">
 
-  <link rel="preload" as="image" href="/images/real-estate-negotiation-support-west-auckland.webp" fetchpriority="high">
-  <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" as="image"
+        href="/images/real-estate-negotiation-support-west-auckland-960.webp"
+        imagesrcset="/images/real-estate-negotiation-support-west-auckland-640.webp 640w, /images/real-estate-negotiation-support-west-auckland-960.webp 960w, /images/real-estate-negotiation-support-west-auckland.webp 1392w"
+        imagesizes="100vw"
+        fetchpriority="high">
 
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-the-a-team.png">
@@ -38,25 +40,8 @@
   <meta name="msvalidate.01" content="264FF6E8B62F6502440BB2845919F08B">
   <meta name="google-site-verification" content="Xhfo73jnylWiePCTZw17E-u2BKOtSbDAIsarlM_FSgw">
 
-  <link rel="stylesheet" href="/css/brand-font.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
-    @font-face {
-      font-family: 'RaineHorne';
-      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    @font-face {
-      font-family: 'RaineHorne';
-      src: url('/fonts/rainehorne.ttf') format('truetype');
-      font-weight: 400 900;
-      font-style: normal;
-      font-display: swap;
-    }
 
     :root {
       --gold: #ffb200;
@@ -75,14 +60,14 @@
 
     body {
       margin: 0;
-      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       color: var(--dark);
       background: var(--white);
       line-height: 1.6;
     }
 
     button, input, textarea, select {
-      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     a { color: inherit; text-decoration: none; }
@@ -900,7 +885,67 @@
       transform: translateY(-1px);
     }
 
-    .footer-social-links a:hover i { color: var(--dark); }
+    .social-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1;
+      flex: 0 0 auto;
+    }
+
+    .reviews-loader,
+    .map-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 20px;
+      border: 2px solid var(--dark);
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--dark);
+      font: inherit;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .reviews-placeholder {
+      min-height: 380px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .reviews-placeholder p {
+      max-width: 620px;
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .map-placeholder {
+      min-height: 290px;
+      display: grid;
+      place-items: center;
+      align-content: center;
+      gap: 12px;
+      padding: 24px;
+      text-align: center;
+      background: #f7f7f5;
+      color: var(--dark);
+    }
+
+    .map-placeholder p {
+      margin: 0;
+      color: var(--charcoal);
+    }
 
     @media (max-width: 980px) {
       .hero-content,
@@ -991,11 +1036,13 @@
 
     <section class="hero" id="negotiation-support">
       <img
-        src="/images/real-estate-negotiation-support-west-auckland.webp"
+        src="/images/real-estate-negotiation-support-west-auckland-960.webp"
+        srcset="/images/real-estate-negotiation-support-west-auckland-640.webp 640w, /images/real-estate-negotiation-support-west-auckland-960.webp 960w, /images/real-estate-negotiation-support-west-auckland.webp 1392w"
+        sizes="100vw"
         alt="Real estate negotiation support for West Auckland sellers showing offer review, buyer conditions and negotiation strategy"
         class="hero-bg"
-        width="1800"
-        height="1000"
+        width="1392"
+        height="768"
         loading="eager"
         fetchpriority="high"
         decoding="async">
@@ -1343,8 +1390,10 @@
       <div class="about-container">
         <div class="about-photo-card">
           <img
-            src="/images/edita-andrijasevic-raine-and-horne.jpg"
+            src="/images/edita-andrijasevic-raine-and-horne-640.webp"
             alt="Edita Andrijasevic, Raine and Horne real estate agent in West Auckland"
+            width="640"
+            height="640"
             loading="lazy"
             decoding="async">
           <p class="photo-caption">Edita Andrijasevic - Raine &amp; Horne</p>
@@ -1407,8 +1456,16 @@
       </div>
 
       <div class="reviews-card">
-        <div id="reviews-widget" class="elfsight-review-box">
-          <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
+        <div id="reviews-widget" class="elfsight-review-box" aria-live="polite">
+          <div class="reviews-placeholder">
+            <div>
+              <p>Google reviews are loaded only when you reach this section, which keeps the page fast on first visit.</p>
+              <button class="reviews-loader" id="load-reviews" type="button">Load Google Reviews</button>
+            </div>
+          </div>
+          <noscript>
+            <p><a href="https://share.google/ddO9ayximJFNs2muB" target="_blank" rel="noopener">View Edita Andrijasevic’s Google reviews</a>.</p>
+          </noscript>
         </div>
       </div>
     </section>
@@ -1494,8 +1551,10 @@
             <div class="video-wrap video-placeholder" data-video-id="DkKp8I__4mI">
               <button class="video-play-button" type="button" aria-label="Play Raine and Horne Amplify video">
                 <img
-                  src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg"
+                  src="/images/amplify-video-poster-640.webp"
                   alt="Raine and Horne Amplify AI property marketing video"
+                  width="640"
+                  height="360"
                   loading="lazy"
                   decoding="async">
                 <span>▶</span>
@@ -1670,14 +1729,11 @@
           <a href="https://www.realestate.co.nz/agent/261782/edita-andrijasevic" target="_blank" rel="noopener">realestate.co.nz profile</a>
         </div>
 
-        <div class="map-wrap">
-          <iframe
-            src="https://www.google.com/maps?q=9%20Sheridan%20Drive%2C%20New%20Lynn%2C%20Auckland%200600%2C%20New%20Zealand&output=embed"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Edita Andrijasevic Raine and Horne office map at 9 Sheridan Drive New Lynn Auckland">
-          </iframe>
+        <div class="map-wrap" id="office-map">
+          <div class="map-placeholder">
+            <p><strong>Office location</strong><br>9 Sheridan Drive, New Lynn, Auckland 0600</p>
+            <button class="map-button" id="load-map" type="button">Load Interactive Map</button>
+          </div>
         </div>
 
         <p class="small" style="margin-top:14px;">
@@ -1691,27 +1747,27 @@
 
       <div class="footer-social-links">
         <a href="https://www.facebook.com/EditaAndrijasevicRH/" target="_blank" rel="noopener noreferrer" aria-label="Visit Edita Andrijasevic on Facebook">
-          <i class="fa-brands fa-facebook-f"></i>
+          <span class="social-badge" aria-hidden="true">f</span>
           <span>Facebook</span>
         </a>
 
         <a href="https://www.instagram.com/editaandrijasevic/" target="_blank" rel="noopener noreferrer" aria-label="Visit Edita Andrijasevic on Instagram">
-          <i class="fa-brands fa-instagram"></i>
+          <span class="social-badge" aria-hidden="true">ig</span>
           <span>Instagram</span>
         </a>
 
         <a href="https://www.youtube.com/channel/UCAikvFYUvxHoPCxD0m-rNTg" target="_blank" rel="noopener noreferrer" aria-label="Visit Edita Andrijasevic on YouTube">
-          <i class="fa-brands fa-youtube"></i>
+          <span class="social-badge" aria-hidden="true">▶</span>
           <span>YouTube</span>
         </a>
 
         <a href="https://nz.linkedin.com/in/blockhousebayrealestate" target="_blank" rel="noopener noreferrer" aria-label="Visit Edita Andrijasevic on LinkedIn">
-          <i class="fa-brands fa-linkedin-in"></i>
+          <span class="social-badge" aria-hidden="true">in</span>
           <span>LinkedIn</span>
         </a>
 
         <a href="https://www.tiktok.com/@editaandrijasevic" target="_blank" rel="noopener noreferrer" aria-label="Visit Edita Andrijasevic on TikTok">
-          <i class="fa-brands fa-tiktok"></i>
+          <span class="social-badge" aria-hidden="true">♪</span>
           <span>TikTok</span>
         </a>
       </div>
@@ -1719,35 +1775,70 @@
   </footer>
 
   <script>
-    document.querySelectorAll('.video-placeholder').forEach(function (wrapper) {
-      const button = wrapper.querySelector('button');
-      const videoId = wrapper.getAttribute('data-video-id');
+    (function () {
+      'use strict';
 
-      if (!button || !videoId) return;
+      document.querySelectorAll('.video-placeholder').forEach(function (wrapper) {
+        var button = wrapper.querySelector('button');
+        var videoId = wrapper.getAttribute('data-video-id');
+        if (!button || !videoId) return;
 
-      button.addEventListener('click', function () {
-        const iframe = document.createElement('iframe');
-        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
-        iframe.title = 'Raine & Horne Amplify AI Property Marketing';
-        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-        iframe.allowFullscreen = true;
-        iframe.loading = 'lazy';
-
-        wrapper.innerHTML = '';
-        wrapper.appendChild(iframe);
+        button.addEventListener('click', function () {
+          var iframe = document.createElement('iframe');
+          iframe.src = 'https://www.youtube-nocookie.com/embed/' + videoId + '?autoplay=1';
+          iframe.title = 'Raine & Horne Amplify AI Property Marketing';
+          iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+          iframe.allowFullscreen = true;
+          iframe.loading = 'lazy';
+          iframe.width = '640';
+          iframe.height = '360';
+          wrapper.replaceChildren(iframe);
+        }, { once: true });
       });
-    });
-  </script>
 
-  <script>
-    window.addEventListener('load', function () {
-      setTimeout(function () {
+      var reviewsLoaded = false;
+      var reviewsWidget = document.getElementById('reviews-widget');
+      var reviewsButton = document.getElementById('load-reviews');
+
+      function loadReviews() {
+        if (reviewsLoaded || !reviewsWidget) return;
+        reviewsLoaded = true;
+        reviewsWidget.innerHTML = '<div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>';
         var script = document.createElement('script');
         script.src = 'https://elfsightcdn.com/platform.js';
         script.async = true;
+        script.defer = true;
         document.body.appendChild(script);
-      }, 1200);
-    });
+      }
+
+      if (reviewsButton) reviewsButton.addEventListener('click', loadReviews, { once: true });
+
+      if ('IntersectionObserver' in window && reviewsWidget) {
+        var reviewsObserver = new IntersectionObserver(function (entries, observer) {
+          if (entries.some(function (entry) { return entry.isIntersecting; })) {
+            loadReviews();
+            observer.disconnect();
+          }
+        }, { rootMargin: '150px 0px' });
+        reviewsObserver.observe(reviewsWidget);
+      }
+
+      var mapButton = document.getElementById('load-map');
+      var mapWrap = document.getElementById('office-map');
+      if (mapButton && mapWrap) {
+        mapButton.addEventListener('click', function () {
+          var iframe = document.createElement('iframe');
+          iframe.src = 'https://www.google.com/maps?q=9%20Sheridan%20Drive%2C%20New%20Lynn%2C%20Auckland%200600%2C%20New%20Zealand&output=embed';
+          iframe.allowFullscreen = true;
+          iframe.loading = 'lazy';
+          iframe.referrerPolicy = 'no-referrer-when-downgrade';
+          iframe.title = 'Edita Andrijasevic Raine and Horne office map at 9 Sheridan Drive New Lynn Auckland';
+          iframe.width = '600';
+          iframe.height = '290';
+          mapWrap.replaceChildren(iframe);
+        }, { once: true });
+      }
+    }());
   </script>
 
   <!-- Structured data is placed after visible content so it does not delay CSS discovery or first paint. -->
@@ -1887,8 +1978,8 @@
         "@id": "https://peterandedita.co.nz/services/real-estate-negotiation-support/#primaryimage",
         "url": "https://peterandedita.co.nz/images/real-estate-negotiation-support-west-auckland.webp",
         "contentUrl": "https://peterandedita.co.nz/images/real-estate-negotiation-support-west-auckland.webp",
-        "width": 1800,
-        "height": 1000,
+        "width": 1392,
+        "height": 768,
         "caption": "Real estate negotiation support for West Auckland sellers"
       },
       {
