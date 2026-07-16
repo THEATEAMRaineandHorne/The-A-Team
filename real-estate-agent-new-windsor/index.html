@@ -6,13 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Real Estate Agent New Windsor | Edita Andrijasevic - Raine &amp; Horne</title>
 
-  <link rel="preload" as="image"
-        href="/images/real-estate-agent-new-windsor-960.webp"
-        imagesrcset="/images/real-estate-agent-new-windsor-640.webp 640w,
-                     /images/real-estate-agent-new-windsor-960.webp 960w,
-                     /images/real-estate-agent-new-windsor-1400.webp 1400w"
-        imagesizes="100vw"
-        fetchpriority="high">
+  <link rel="preload" as="image" href="/images/real-estate-agent-new-windsor-960.webp" fetchpriority="high">
+  <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
 
   <meta name="description" content="Looking for a real estate agent in New Windsor? Edita Andrijasevic from Raine &amp; Horne offers honest local pricing advice, buyer-focused marketing and skilled negotiation for New Windsor homeowners.">
   <meta name="application-name" content="Edita Andrijasevic - Raine &amp; Horne">
@@ -63,12 +59,11 @@
         "url": "https://peterandedita.co.nz/",
         "telephone": "+6421765234",
         "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
-        "priceRange": "$$",
         "image": [
           "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg",
           "https://peterandedita.co.nz/images/real-estate-agent-new-windsor-1400.webp"
         ],
-        "logo": "https://peterandedita.co.nz/images/rh-logo.png",
+        "logo": "https://peterandedita.co.nz/images/rh-logo.webp",
         "description": "Edita Andrijasevic is a Raine & Horne real estate agent specialising in New Windsor, Blockhouse Bay, Lynfield, Mount Roskill and West Auckland. She helps homeowners with property appraisals, selling strategy, buyer marketing and negotiation.",
         "address": {
           "@type": "PostalAddress",
@@ -313,19 +308,17 @@
   }
   </script>
 
-  <!-- Footer icons are non-critical, so this stylesheet must not block first paint. -->
-  <link rel="preload"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
   <style>
     @font-face {
       font-family: 'RaineHorne';
       src: url('/fonts/raine-horne-regular.ttf') format('truetype');
-      font-weight: 400;
-      font-style: normal;
-      font-display: optional;
+      font-weight: 400; font-style: normal; font-display: optional;
+    }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/rainehorne.ttf') format('truetype');
+      font-weight: 400 900; font-style: normal; font-display: optional;
     }
     :root {
       --gold: #ffb200; --dark: #202020; --charcoal: #4D4E50;
@@ -381,7 +374,7 @@
     .hero-rating .stars { color: var(--gold); letter-spacing: 2px; font-size: 17px; }
     section { padding: 76px 20px; }
     section:not(.hero) { content-visibility: auto; contain-intrinsic-size: 800px; }
-    #reviews { content-visibility: auto; contain-intrinsic-size: 650px; }
+    #reviews { content-visibility: visible !important; contain-intrinsic-size: auto !important; }
     .container { max-width: 1220px; margin: 0 auto; }
     .section-label { display: inline-block; background: var(--gold); color: var(--dark); padding: 8px 13px; border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 18px; }
     .section-title { max-width: 880px; margin-bottom: 36px; }
@@ -465,7 +458,6 @@
       .suburb-grid { grid-template-columns: repeat(2,1fr); }
       .trust-grid { grid-template-columns: 1fr; }
       .nav { flex-direction: column; align-items: flex-start; }
-      header { background: #fff; backdrop-filter: none; }
     }
     @media (max-width: 560px) {
       .hero-proof { grid-template-columns: 1fr; }
@@ -495,7 +487,7 @@
   <header>
     <nav class="nav">
       <a href="https://peterandedita.co.nz/" class="brand">
-        <img src="/images/rh-logo.png" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
+        <img src="/images/rh-logo.webp" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
         <div>
           <span style="font-weight:900;">Edita Andrijasevic</span>
           <span style="font-weight:400;"> - Raine &amp; Horne</span>
@@ -587,7 +579,7 @@
         alt="Real estate agent in New Windsor — Edita Andrijasevic, Raine and Horne"
         class="hero-bg"
         width="1400" height="600"
-        loading="eager" fetchpriority="high">
+        loading="eager" fetchpriority="high" decoding="async">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div>
@@ -636,6 +628,7 @@
           </p>
         </div>
         <div class="reviews-card">
+          <script src="https://static.elfsight.com/platform/platform.js" async></script>
           <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
         </div>
       </div>
@@ -832,9 +825,7 @@
               <h3 style="color:var(--gold);">Talk to Edita about your New Windsor property</h3>
               <p style="color:#ddd; margin-bottom:14px;">Call for a direct conversation, or request a free appraisal with no pressure and no obligation.</p>
               <a href="tel:+6421765234" style="display:block; color:var(--gold); font-weight:900; font-size:20px; margin-bottom:10px;">021 765 234</a>
-              <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">
-  edita.andrijasevic@blockhousebay.rh.co.nz
-</a>
+              <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz" style="color:#ccc; font-size:14px;">edita.andrijasevic@blockhousebay.rh.co.nz</a>
             </div>
           </div>
         </div>
@@ -868,7 +859,7 @@
           <div>
             <div class="video-wrap video-placeholder" data-video-id="DkKp8I__4mI">
               <button class="video-play-button" type="button" aria-label="Play Raine and Horne Amplify video">
-                <img src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg" alt="Raine and Horne Amplify AI property marketing video" loading="lazy" decoding="async">
+                <img src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg" alt="Raine and Horne Amplify AI property marketing video" width="1280" height="720" loading="lazy" decoding="async">
                 <span>▶</span>
               </button>
             </div>
@@ -997,9 +988,7 @@
         <p class="small">Areas served: New Windsor, Blockhouse Bay, Lynfield, Mount Roskill, New Lynn, Green Bay, Titirangi, Glen Eden, Kelston, Glendene, Avondale and nearby West Auckland suburbs.</p>
         <div class="seo-footer-contact" style="margin-top:14px;">
           <a href="tel:+6421765234">021 765 234</a>
-          <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">
-  edita.andrijasevic@blockhousebay.rh.co.nz
-</a>
+          <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
           <p class="small" style="margin-top:8px;">Office: 9 Sheridan Drive, New Lynn, Auckland 0600</p>
           <a href="/free-home-appraisal-new-windsor/"
              style="display:inline-flex !important; align-items:center !important; justify-content:center !important; background:#ffb200 !important; color:#202020 !important; padding:16px 28px !important; border-radius:999px !important; font-size:17px !important; font-weight:900 !important; text-decoration:none !important; text-align:center !important; min-height:54px !important; margin-top:14px !important; width:100% !important;">
@@ -1088,37 +1077,6 @@
     </div>
   </footer>
 
-
-  <script>
-    (function () {
-      var reviews = document.getElementById('reviews');
-      var loaded = false;
-
-      function loadReviewsWidget() {
-        if (loaded) return;
-        loaded = true;
-        var script = document.createElement('script');
-        script.src = 'https://static.elfsight.com/platform/platform.js';
-        script.async = true;
-        document.body.appendChild(script);
-      }
-
-      if (!reviews || !('IntersectionObserver' in window)) {
-        window.addEventListener('load', loadReviewsWidget, { once: true });
-        return;
-      }
-
-      var observer = new IntersectionObserver(function (entries) {
-        if (entries.some(function (entry) { return entry.isIntersecting; })) {
-          observer.disconnect();
-          loadReviewsWidget();
-        }
-      }, { rootMargin: '250px 0px' });
-
-      observer.observe(reviews);
-    }());
-  </script>
-
   <script>
     document.querySelectorAll('.video-placeholder').forEach(function(wrapper) {
       var button = wrapper.querySelector('button');
@@ -1136,6 +1094,5 @@
       });
     });
   </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"292c0625862c40e79350b7b67aafcdc6","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
