@@ -1,19 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Properties For Sale West Auckland | Edita Andrijasevic - Raine &amp; Horne</title>
   <meta name="description" content="View current property opportunities marketed by Edita Andrijasevic - Raine &amp; Horne, with photos and official links to live Raine &amp; Horne listing pages.">
   <link rel="canonical" href="https://peterandedita.co.nz/properties.html">
   <meta name="robots" content="index, follow">
-
+  <meta name="application-name" content="Edita Andrijasevic - Raine &amp; Horne">
+  <meta name="apple-mobile-web-app-title" content="Edita Andrijasevic - Raine &amp; Horne">
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-the-a-team.png">
   <link rel="shortcut icon" type="image/png" href="/images/favicon-the-a-team.png">
   <link rel="apple-touch-icon" href="/images/favicon-the-a-team.png">
-
   <meta property="og:site_name" content="Edita Andrijasevic - Raine &amp; Horne">
   <meta property="og:title" content="Properties For Sale West Auckland | Edita Andrijasevic - Raine &amp; Horne">
   <meta property="og:description" content="View current property opportunities marketed by Edita Andrijasevic - Raine &amp; Horne, with photos and official links to live Raine &amp; Horne listing pages.">
@@ -21,13 +21,22 @@
   <meta property="og:url" content="https://peterandedita.co.nz/properties.html">
   <meta property="og:image" content="https://peterandedita.co.nz/images/properties-for-sale-blockhouse-bay-titirangi-lynfield-raine-horne.webp">
   <meta property="og:locale" content="en_NZ">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Properties For Sale West Auckland | Edita Andrijasevic - Raine &amp; Horne">
   <meta name="twitter:description" content="View current property opportunities marketed by Edita Andrijasevic - Raine &amp; Horne, with photos and official links to live Raine &amp; Horne listing pages.">
   <meta name="twitter:image" content="https://peterandedita.co.nz/images/properties-for-sale-blockhouse-bay-titirangi-lynfield-raine-horne.webp">
-
+  <link rel="preload" as="image" href="https://peterandedita.co.nz/images/properties-for-sale-blockhouse-bay-titirangi-lynfield-raine-horne.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/rh-logo.webp">
+  <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
   <style>
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/rainehorne.ttf') format('truetype'), url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400 900;
+      font-style: normal;
+      font-display: optional;
+    }
 :root{
       --gold:#ffb200;
       --gold-dark:#e1aa14;
@@ -39,20 +48,17 @@
       --border:#e8e2d7;
       --muted:#555555;
     }
-
     *{box-sizing:border-box;}
     html{scroll-behavior:smooth;}
-
     body{
       margin:0;
-      font-family:Arial, Helvetica, sans-serif;
+      font-family:'RaineHorne', Arial, Helvetica, sans-serif;
       color:var(--dark);
       background:var(--white);
       line-height:1.6;
     }
-
+    button, input, textarea, select{font-family:'RaineHorne', Arial, Helvetica, sans-serif;}
     a{color:inherit;text-decoration:none;}
-
     .topbar{
       background:var(--dark);
       color:var(--white);
@@ -60,12 +66,10 @@
       padding:9px 20px;
       font-size:14px;
     }
-
     .topbar a{
       color:var(--gold);
       font-weight:800;
     }
-
     header{
       background:rgba(255,255,255,0.96);
       border-bottom:1px solid var(--border);
@@ -74,7 +78,6 @@
       z-index:50;
       backdrop-filter:blur(8px);
     }
-
     .nav{
       max-width:1220px;
       margin:0 auto;
@@ -84,7 +87,6 @@
       align-items:center;
       gap:20px;
     }
-
     .brand{
       display:flex;
       align-items:center;
@@ -93,13 +95,11 @@
       letter-spacing:-0.3px;
       font-size:18px;
     }
-
     .brand img{
       width:46px;
       height:46px;
       object-fit:contain;
     }
-
     .brand-name{
       display:flex;
       align-items:center;
@@ -107,32 +107,28 @@
       line-height:1.1;
       flex-wrap:wrap;
     }
-
     .brand-divider,
     .brand-amp{color:var(--gold);}
-
     .nav-links{
       display:flex;
       flex-wrap:wrap;
       gap:16px;
       font-size:14px;
       font-weight:800;
+      align-items:center;
     }
-
-    .nav-links a:hover{color:var(--gold);}
-
+    .nav-links a:hover, .nav-links a.active{color:var(--gold);}
     /* DROPDOWN NAV */
     .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
     .nav-dropdown summary { list-style: none; cursor: pointer; }
     .nav-dropdown summary::-webkit-details-marker { display: none; }
     .nav-parent { font-size: 14px; font-weight: 800; color: var(--dark); display: inline-flex; align-items: center; gap: 6px; }
     .nav-parent::after { content: "\25BE"; font-size: 11px; color: var(--gold); margin-top: 1px; }
-    .nav-parent:hover { color: var(--gold); }
+    .nav-parent:hover, .nav-parent.active { color: var(--gold); }
     .dropdown-menu { display: none; position: absolute; top: 34px; left: 0; min-width: 300px; background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 18px 45px rgba(0,0,0,0.14); padding: 10px; z-index: 100; }
     .nav-dropdown[open] .dropdown-menu, .nav-dropdown:hover .dropdown-menu { display: block; }
     .dropdown-menu a, .dropdown-menu a:visited { display: block; padding: 11px 13px; border-radius: 10px; color: var(--dark) !important; background: #fff !important; font-size: 14px; font-weight: 800; line-height: 1.25; white-space: normal; }
     .dropdown-menu a:hover { background: var(--gold) !important; color: var(--dark) !important; }
-
     .hero{
       background:
         linear-gradient(90deg, rgba(0,0,0,0.84), rgba(0,0,0,0.58)),
@@ -142,14 +138,11 @@
       color:var(--white);
       padding:92px 20px;
     }
-
     .container{
       max-width:1220px;
       margin:0 auto;
     }
-
     .hero-inner{max-width:880px;}
-
     .eyebrow{
       display:inline-block;
       background:var(--gold);
@@ -162,28 +155,24 @@
       text-transform:uppercase;
       margin-bottom:18px;
     }
-
     h1{
       font-size:clamp(42px,6vw,68px);
       line-height:1.03;
       letter-spacing:-2px;
       margin:0 0 20px;
     }
-
     .hero p{
       font-size:20px;
       color:#f1f1f1;
       margin:0 0 16px;
       max-width:780px;
     }
-
     .cta-row{
       display:flex;
       flex-wrap:wrap;
       gap:14px;
       margin-top:28px;
     }
-
     .btn{
       display:inline-flex;
       align-items:center;
@@ -197,49 +186,41 @@
       font-family:inherit;
       font-size:15px;
     }
-
     .btn-primary{
       background:var(--gold);
       color:var(--dark);
     }
-
     .btn-primary:hover{
       background:var(--white);
       border-color:var(--white);
     }
-
     .btn-secondary{
       background:transparent;
       color:var(--white);
       border-color:rgba(255,255,255,0.72);
     }
-
     .btn-secondary:hover{
       background:var(--white);
       color:var(--dark);
       border-color:var(--white);
     }
-
     section{padding:76px 20px;}
-
+    section:not(.hero){content-visibility:auto;contain-intrinsic-size:800px;}
     .section-title{
       max-width:880px;
       margin-bottom:34px;
     }
-
     .section-title h2{
       font-size:clamp(32px,4vw,48px);
       line-height:1.1;
       letter-spacing:-1px;
       margin:0 0 14px;
     }
-
     .section-title p{
       color:var(--muted);
       font-size:18px;
       margin:0;
     }
-
     .notice{
       background:var(--cream);
       border:1px solid var(--border);
@@ -248,15 +229,12 @@
       margin:0 0 30px;
       color:#3a3328;
     }
-
     .notice strong{color:var(--dark);}
-
     .property-grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap:22px;
     }
-
     .property-card{
       background:var(--white);
       border:1px solid var(--border);
@@ -267,13 +245,11 @@
       flex-direction:column;
       min-height:100%;
     }
-
     .property-card:hover{
       transform:translateY(-2px);
       transition:.2s ease;
       box-shadow:0 18px 46px rgba(0,0,0,.075);
     }
-
     .property-image{
       width:100%;
       aspect-ratio:16/10;
@@ -281,14 +257,12 @@
       background:#eee;
       display:block;
     }
-
     .property-content{
       padding:24px;
       display:flex;
       flex-direction:column;
       flex:1;
     }
-
     .tag{
       align-self:flex-start;
       background:var(--dark);
@@ -301,81 +275,66 @@
       letter-spacing:.4px;
       margin-bottom:14px;
     }
-
     .sold-tag{
       background:var(--gold);
       color:var(--dark);
     }
-
     .property-card h3{
       margin:0 0 8px;
       font-size:24px;
       line-height:1.18;
       letter-spacing:-.3px;
     }
-
     .meta{
       color:var(--charcoal);
       font-weight:900;
       margin-bottom:8px;
     }
-
     .price-line{
       color:var(--dark);
       font-weight:900;
       margin-bottom:14px;
     }
-
     .property-card p{
       color:var(--muted);
       margin:0 0 22px;
     }
-
     .property-card .btn{
       margin-top:auto;
       width:100%;
     }
-
     .soft-section{background:var(--soft);}
-
     .dark-section{
       background:var(--dark);
       color:var(--white);
     }
-
     .dark-section .section-title p{color:#e6e6e6;}
-
     .proof-grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap:22px;
     }
-
     .proof-card{
       background:#303030;
       border:1px solid #555;
       border-radius:20px;
       padding:26px;
     }
-
     .proof-card h3{
       color:var(--gold);
       margin:0 0 10px;
       font-size:23px;
       line-height:1.2;
     }
-
     .proof-card p{
       color:#eeeeee;
       margin:0;
     }
-
     footer{
       background:var(--dark);
       color:var(--white);
       padding:46px 20px;
     }
-
     .footer-inner{
       max-width:1220px;
       margin:0 auto;
@@ -383,24 +342,20 @@
       grid-template-columns:1.4fr 1fr 1fr;
       gap:30px;
     }
-
     footer h2, footer h3{
       color:var(--white);
       margin-top:0;
     }
-
     footer p{
       color:#e8e8e8;
       margin:0 0 12px;
     }
-
     footer a{
       color:var(--gold);
       font-weight:900;
       display:block;
       margin-bottom:8px;
     }
-
     .small{
       font-size:13px;
       color:#d6d6d6;
@@ -414,7 +369,6 @@
     align-items: center;
     text-align: center;
   }
-
   .pe-external-strip h3 {
     color: #ffffff;
     font-size: 20px;
@@ -422,7 +376,6 @@
     text-align: center;
     width: 100%;
   }
-
   .pe-external-pills {
   display: flex;
   flex-wrap: wrap;
@@ -430,7 +383,6 @@
   gap: 12px;
   width: 100%;
 }
-
 .pe-external-pill {
   display: inline-flex !important;
   align-items: center;
@@ -447,20 +399,17 @@
   box-shadow: 0 8px 18px rgba(0,0,0,0.18);
   transition: all 0.2s ease;
 }
-
 .pe-external-pill span {
   color: #f8b400 !important;
   margin-right: 8px;
   font-weight: 900;
 }
-
 .pe-external-pill:hover {
   background: #f8b400 !important;
   color: #111111 !important;
   text-decoration: none !important;
   transform: translateY(-1px);
 }
-
 .pe-external-pill:hover span {
   color: #111111 !important;
 }
@@ -470,29 +419,25 @@
   .footer-inner{
     grid-template-columns:1fr;
   }
-
-  .nav{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
   .hero{
     padding:70px 18px;
   }
+  .nav { width: 100%; align-items: stretch !important; gap: 14px; flex-direction: column; }
+  .brand { width: 100%; }
+  .nav-links { width: 100% !important; display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px 16px !important; }
+  .nav-links > a { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; text-align: center !important; }
+  .nav-dropdown { grid-column: 1 / -1 !important; width: 100% !important; display: block !important; position: relative !important; }
+  .nav-dropdown summary.nav-parent { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 7px !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; cursor: pointer !important; list-style: none !important; }
+  .nav-dropdown summary.nav-parent::-webkit-details-marker { display: none !important; }
+  .dropdown-menu { position: static !important; display: none !important; width: 100% !important; min-width: 0 !important; margin-top: 10px !important; }
+  .nav-dropdown:hover .dropdown-menu { display: none !important; }
+  .nav-dropdown[open] .dropdown-menu { display: grid !important; grid-template-columns: 1fr !important; gap: 8px !important; }
+  .dropdown-menu a, .dropdown-menu a:visited { width: 100% !important; min-height: 52px !important; display: flex !important; align-items: center !important; justify-content: center !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; font-size: 17px !important; }
 }
-
-@media(max-width:980px){
-  .nav-dropdown { width: 100%; display: block; position: relative; }
-  .nav-dropdown summary.nav-parent { width: 100%; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 12px 16px; border: 1px solid var(--border); border-radius: 999px; background: #f6f2e8; color: var(--dark); font-weight: 900; cursor: pointer; list-style: none; }
-  .dropdown-menu { position: static !important; display: none; width: 100%; min-width: 0; margin-top: 8px; padding: 10px; border: 1px solid var(--border); border-radius: 16px; box-shadow: none; }
-  .nav-dropdown:hover .dropdown-menu { display: none; }
-  .nav-dropdown[open] .dropdown-menu { display: grid; grid-template-columns: 1fr; gap: 8px; }
-  .dropdown-menu a, .dropdown-menu a:visited { min-height: 48px; display: flex; align-items: center; justify-content: center; padding: 11px; border: 1px solid var(--border); border-radius: 999px; background: #f6f2e8; color: var(--dark); font-weight: 800; text-align: center; }
+@media (max-width: 560px) {
+  .hero-inner h1 { font-size: 38px; }
 }
   </style>
-
-  <link rel="stylesheet" href="/css/brand-font.css">
-
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -548,7 +493,7 @@
       }
     ]
   },
-  "dateModified": "2026-06-26",
+  "dateModified": "2026-07-16",
   "inLanguage": "en-NZ"
 }
   </script>
@@ -572,72 +517,85 @@
   ]
 }
   </script>
-
 </head>
-
 <body>
   <div class="topbar">
     Free West Auckland property appraisal · Call <a href="tel:+6421765234">021 765 234</a> · Licensed under the REAA 2008
   </div>
-
   <header>
     <nav class="nav">
       <a href="https://peterandedita.co.nz/" class="brand">
-        <img src="https://peterandedita.co.nz/images/rh-logo.png" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
+        <img src="/images/rh-logo.webp" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
         <div class="brand-name">
           <span class="brand-team">Edita Andrijasevic</span>
           <span class="brand-divider">-</span>
           <span class="brand-rh">Raine <span class="brand-amp">&amp;</span> Horne</span>
         </div>
       </a>
-
       <div class="nav-links">
-  <a href="/">Home</a>
-
-  <details class="nav-dropdown nav-locations">
-    <summary class="nav-parent">Locations</summary>
-    <div class="dropdown-menu">
-      <a href="/locations/">All Areas We Serve</a>
-      <a href="/free-home-appraisal-west-auckland/">West Auckland</a>
-      <a href="/free-home-appraisal-titirangi/">Titirangi</a>
-      <a href="/free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
-      <a href="/free-home-appraisal-lynfield/">Lynfield</a>
-      <a href="/free-home-appraisal-new-lynn/">New Lynn</a>
-      <a href="/free-home-appraisal-green-bay/">Green Bay</a>
-      <a href="/free-home-appraisal-glen-eden/">Glen Eden</a>
-      <a href="/free-home-appraisal-kelston/">Kelston</a>
-      <a href="/free-home-appraisal-mount-roskill/">Mount Roskill</a>
-      <a href="/free-home-appraisal-new-windsor/">New Windsor</a>
-      <a href="/free-home-appraisal-glendene/">Glendene</a>
-      <a href="/free-home-appraisal-avondale/">Avondale</a>
-    </div>
-  </details>
-
-  <details class="nav-dropdown nav-services">
-    <summary class="nav-parent">Services</summary>
-    <div class="dropdown-menu">
-      <a href="/services/">All Real Estate Services</a>
-      <a href="/free-home-appraisal-west-auckland/">Free Property Appraisal</a>
-      <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
-      <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
-      <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
-      <a href="/services/real-estate-negotiation-west-auckland/">Negotiation Support</a>
-      <a href="/amplify-property-marketing/">Amplify Property Marketing</a>
-      <a href="/property-auctions-west-auckland/">Property Auctions</a>
-      <a href="/property-deadline-sale-west-auckland/">Deadline Sale</a>
-    </div>
-  </details>
-
-  <a href="/properties.html">Properties</a>
-  <a href="/sold.html">Sold</a>
-  <a href="/articles/">Articles</a>
-  <a href="/contact.html">Contact</a>
-</div>
+        <a href="/">Home</a>
+        <details class="nav-dropdown nav-locations">
+          <summary class="nav-parent">Locations</summary>
+          <div class="dropdown-menu">
+            <a href="/locations/">All Areas We Serve</a>
+            <a href="/real-estate-agent-west-auckland/">West Auckland</a>
+            <a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/real-estate-agent-titirangi/">Titirangi</a>
+            <a href="/real-estate-agent-glen-eden/">Glen Eden</a>
+            <a href="/real-estate-agent-new-lynn/">New Lynn</a>
+            <a href="/real-estate-agent-green-bay/">Green Bay</a>
+            <a href="/real-estate-agent-lynfield/">Lynfield</a>
+            <a href="/real-estate-agent-mount-roskill/">Mount Roskill</a>
+            <a href="/real-estate-agent-kelston/">Kelston</a>
+            <a href="/real-estate-agent-glendene/">Glendene</a>
+            <a href="/real-estate-agent-new-windsor/">New Windsor</a>
+            <a href="/real-estate-agent-avondale/">Avondale</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-services">
+          <summary class="nav-parent">Services</summary>
+          <div class="dropdown-menu">
+            <a href="/services/">All Real Estate Services</a>
+            <a href="/free-home-appraisal-west-auckland/">Free Property Appraisal</a>
+            <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
+            <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+            <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
+            <a href="/services/real-estate-negotiation-west-auckland/">Negotiation Support</a>
+            <a href="/amplify-property-marketing/">Amplify Property Marketing</a>
+            <a href="/property-auctions-west-auckland/">Property Auctions</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-listings">
+          <summary class="nav-parent active">Listings</summary>
+          <div class="dropdown-menu">
+            <a href="/properties.html" style="font-weight:900; color:#9b6b00 !important;">Properties For Sale</a>
+            <a href="/sold.html">Sold Properties</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-market-reports">
+          <summary class="nav-parent">Market Reports</summary>
+          <div class="dropdown-menu">
+            <a href="/market-reports/">All Suburb Market Reports</a>
+            <a href="/market-reports/titirangi/">Titirangi</a>
+            <a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/market-reports/lynfield/">Lynfield</a>
+            <a href="/market-reports/new-lynn/">New Lynn</a>
+            <a href="/market-reports/green-bay/">Green Bay</a>
+            <a href="/market-reports/glen-eden/">Glen Eden</a>
+            <a href="/market-reports/kelston/">Kelston</a>
+            <a href="/market-reports/mount-roskill/">Mount Roskill</a>
+            <a href="/market-reports/new-windsor/">New Windsor</a>
+            <a href="/market-reports/glendene/">Glendene</a>
+            <a href="/market-reports/avondale/">Avondale</a>
+          </div>
+        </details>
+        <a href="/articles/">Articles</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="/contact.html">Contact</a>
+      </div>
     </nav>
   </header>
-
   <main>
-
     <section class="hero">
       <div class="container hero-inner">
         <span class="eyebrow">Current Property Opportunities</span>
@@ -649,13 +607,11 @@
         </div>
       </div>
     </section>
-
     <section>
       <div class="container">
         <div class="notice">
           <strong>Important:</strong> Property status, price, open homes and availability can change quickly. These cards are intentionally short. Always click through to the official Raine &amp; Horne page for the latest confirmed information.
         </div>
-
         <div class="section-title">
           <h2>Current Listings &amp; Opportunities</h2>
           <p>Short, seller-safe summaries with property photos and official Raine &amp; Horne buttons.</p>
@@ -663,16 +619,13 @@
   <div id="current-listings" class="property-grid"></div>
       </div>
     </section>
-
     <section class="soft-section">
       <div class="container">
         <div class="section-title">
           <h2>Recently Sold</h2>
           <p>Want to see proof of recent activity? View selected recent sales and local results.</p>
         </div>
-
         <div class="property-grid">
-
           <article class="property-card">
             <img class="property-image" src="https://d3g1fm0n641hm7.cloudfront.net/properties/6650/203274684__1779843327-203268048__1779842574-50520-60KayDriveBlockhouseBay.jpg" alt="60 Kay Drive Blockhouse Bay sold property photo" loading="lazy" referrerpolicy="no-referrer">
             <div class="property-content">
@@ -684,7 +637,6 @@
               <a class="btn btn-primary" href="https://www.raineandhorne.co.nz/blockhousebay/properties/60-kay-drive-blockhouse-bay-1041-auckland" target="_blank" rel="noopener">View on Raine &amp; Horne</a>
             </div>
           </article>
-
           <article class="property-card">
             <img class="property-image" src="https://d3g1fm0n641hm7.cloudfront.net/properties/6650/194477879__1774819069-22106-SOLD-18NirmalPlaceSunnyvale.jpg" alt="18 Nirmal Place Sunnyvale sold property photo" loading="lazy" referrerpolicy="no-referrer">
             <div class="property-content">
@@ -696,7 +648,6 @@
               <a class="btn btn-primary" href="https://www.raineandhorne.co.nz/blockhousebay/properties/18-nirmal-place-sunnyvale-0612-auckland" target="_blank" rel="noopener">View on Raine &amp; Horne</a>
             </div>
           </article>
-
           <article class="property-card">
             <img class="property-image" src="https://d3g1fm0n641hm7.cloudfront.net/properties/6650/185910406__1770532460-185910406__1770415632-12318-19B-standage-lane-kelston10.jpg" alt="19B Standage Lane Kelston sold property photo" loading="lazy" referrerpolicy="no-referrer">
             <div class="property-content">
@@ -708,7 +659,6 @@
               <a class="btn btn-primary" href="https://www.raineandhorne.co.nz/blockhousebay/properties/19b-standage-lane-kelston-0602-auckland" target="_blank" rel="noopener">View on Raine &amp; Horne</a>
             </div>
           </article>
-
           <article class="property-card">
             <img class="property-image" src="https://d3g1fm0n641hm7.cloudfront.net/properties/6650/182287238__1768271317-68166-SOLD-15-127BoundaryRoad.jpg" alt="15/127 Boundary Road Blockhouse Bay sold property photo" loading="lazy" referrerpolicy="no-referrer">
             <div class="property-content">
@@ -720,7 +670,6 @@
               <a class="btn btn-primary" href="https://www.raineandhorne.co.nz/blockhousebay/properties/15-127-boundary-road-blockhouse-bay-1041-auckland" target="_blank" rel="noopener">View on Raine &amp; Horne</a>
             </div>
           </article>
-
           <article class="property-card">
             <img class="property-image" src="https://d3g1fm0n641hm7.cloudfront.net/properties/6650/132259733__1746690257-132259733__1737681330-132259733__1737675006-132259733__1737674868-119684-13127boundaryroadpropertyforsale8.jpg" alt="13/127 Boundary Road Blockhouse Bay sold property photo" loading="lazy" referrerpolicy="no-referrer">
             <div class="property-content">
@@ -732,7 +681,6 @@
               <a class="btn btn-primary" href="https://www.raineandhorne.co.nz/blockhousebay/properties/13-127-boundary-road-blockhouse-bay-0600-auckland-L34255155" target="_blank" rel="noopener">View on Raine &amp; Horne</a>
             </div>
           </article>
-
           <article class="property-card">
             <img class="property-image" src="https://d3g1fm0n641hm7.cloudfront.net/properties/6650/148852630__1747944034-148852630__1747942649-7977-IMG2.jpg" alt="1/55 Sungrove Rise Sunnyvale sold property photo" loading="lazy" referrerpolicy="no-referrer">
             <div class="property-content">
@@ -744,23 +692,19 @@
               <a class="btn btn-primary" href="https://www.raineandhorne.co.nz/blockhousebay/properties/1-55-sungrove-rise-sunnyvale-0612-auckland" target="_blank" rel="noopener">View on Raine &amp; Horne</a>
             </div>
           </article>
-
         </div>
-
         <div class="cta-row">
           <a class="btn btn-primary" href="https://peterandedita.co.nz/sold.html">View More Sold Properties</a>
           <a class="btn" href="https://peterandedita.co.nz/#appraisal">Ask What Your Home Could Sell For</a>
         </div>
       </div>
     </section>
-
     <section class="dark-section">
       <div class="container">
         <div class="section-title">
           <h2>Thinking of selling?</h2>
           <p>A strong property campaign is not just about being online. It is about pricing, presentation, buyer targeting, follow-up and negotiation.</p>
         </div>
-
         <div class="proof-grid">
           <div class="proof-card">
             <h3>Local buyer insight</h3>
@@ -777,9 +721,7 @@
         </div>
       </div>
     </section>
-
   </main>
-
   <style>
   .pe-two-footer {
     background: #171717;
@@ -787,18 +729,15 @@
     padding: 56px 20px 34px;
     margin-top: 60px;
   }
-
   .pe-two-footer-wrap {
     max-width: 1180px;
     margin: 0 auto;
   }
-
   .pe-footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
   }
-
   .pe-footer-card {
     background: #222222;
     border: 1px solid rgba(255,255,255,0.12);
@@ -806,48 +745,40 @@
     padding: 28px;
     box-shadow: 0 12px 30px rgba(0,0,0,0.18);
   }
-
   .pe-footer-card h2 {
     font-size: 32px;
     line-height: 1.15;
     margin: 0 0 18px;
     color: #ffffff;
   }
-
   .pe-footer-card h3 {
     font-size: 18px;
     margin: 24px 0 12px;
     color: #ffffff;
   }
-
   .pe-footer-card p {
     font-size: 15px;
     line-height: 1.65;
     color: #f3f4f6;
     margin: 0 0 14px;
   }
-
   .pe-footer-card a {
     color: #f8b400;
     font-weight: 700;
     text-decoration: none;
   }
-
   .pe-footer-card a:hover {
     text-decoration: underline;
   }
-
   .pe-footer-highlight {
     color: #f8b400;
   }
-
   .pe-footer-contact-links {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 18px 0 24px;
   }
-
   .pe-footer-button {
     display: block;
     width: 100%;
@@ -860,45 +791,38 @@
     margin: 24px 0;
     text-decoration: none !important;
   }
-
   .pe-footer-button:hover {
     background: #ffffff;
     text-decoration: none !important;
   }
-
   .pe-footer-link-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 22px;
     margin-top: 24px;
   }
-
   .pe-footer-links {
     display: flex;
     flex-direction: column;
     gap: 9px;
     font-size: 15px;
   }
-
   .pe-map-wrap {
     overflow: hidden;
     border-radius: 16px;
     margin-top: 18px;
     border: 1px solid rgba(255,255,255,0.12);
   }
-
   .pe-map-wrap iframe {
     width: 100%;
     height: 245px;
     border: 0;
     display: block;
   }
-
   .pe-footer-small {
     font-size: 13px !important;
     color: #d1d5db !important;
   }
-
   .pe-footer-bottom-note {
     max-width: 1180px;
     margin: 26px auto 0;
@@ -906,30 +830,24 @@
     font-size: 13px;
     line-height: 1.6;
   }
-
   @media (max-width: 850px) {
     .pe-footer-grid {
       grid-template-columns: 1fr;
     }
-
     .pe-footer-card h2 {
       font-size: 28px;
     }
   }
-
   @media (max-width: 560px) {
     .pe-two-footer {
       padding: 42px 16px 28px;
     }
-
     .pe-footer-card {
       padding: 22px;
     }
-
     .pe-footer-link-columns {
       grid-template-columns: 1fr;
     }
-
     .pe-footer-card h2 {
       font-size: 25px;
     }
@@ -942,13 +860,11 @@
     border-top: 1px solid #e8e2d7;
     border-bottom: 1px solid #e8e2d7;
   }
-
   .suburb-appraisal-inner {
     max-width: 1220px;
     margin: 0 auto;
     text-align: center;
   }
-
   .suburb-appraisal-block h2 {
     font-size: clamp(28px, 4vw, 42px);
     line-height: 1.1;
@@ -956,7 +872,6 @@
     color: #202020;
     letter-spacing: -0.8px;
   }
-
   .suburb-appraisal-block p {
     max-width: 850px;
     margin: 0 auto 26px;
@@ -964,14 +879,12 @@
     font-size: 18px;
     line-height: 1.65;
   }
-
   .suburb-appraisal-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
   }
-
   .suburb-appraisal-links a {
     display: inline-flex;
     align-items: center;
@@ -985,7 +898,6 @@
     text-decoration: none;
     transition: 0.2s ease;
   }
-
   .suburb-appraisal-links a:hover {
     background: #ffb200;
     border-color: #ffb200;
@@ -993,15 +905,12 @@
     transform: translateY(-2px);
   }
 </style>
-
 <section class="suburb-appraisal-block" aria-label="Suburb property appraisal pages">
   <div class="suburb-appraisal-inner">
     <h2>Selling In A Nearby Suburb?</h2>
-
     <p>
       View our local property appraisal pages for nearby Auckland suburbs. These pages help homeowners understand local selling advice, buyer demand, pricing strategy and how to prepare before going to market.
     </p>
-
     <div class="suburb-appraisal-links">
       <a href="/free-home-appraisal-titirangi/">Titirangi</a>
       <a href="/free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
@@ -1019,36 +928,28 @@
 </section>
 <footer class="pe-two-footer">
   <div class="pe-two-footer-wrap">
-
     <div class="pe-footer-grid">
-
       <!-- LEFT BLOCK -->
       <div class="pe-footer-card">
         <h2>Edita Andrijasevic - Raine <span class="pe-footer-highlight">&amp;</span> Horne</h2>
-
         <p>
           Helping West Auckland homeowners with free property appraisals, selling strategy,
           buyer-focused marketing, Raine &amp; Horne Amplify and negotiation.
         </p>
-
         <p class="pe-footer-small">
           Edita Andrijasevic is a Licensed Salesperson under the Real Estate Agents Act 2008.
           This website provides general real estate information and appraisal enquiry options.
           It is not a registered valuation.
         </p>
-
         <p class="pe-footer-small">
           Areas served: Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden,
           Mount Roskill, New Windsor, Glendene, Avondale, Kelston and nearby West Auckland suburbs.
         </p>
-
         <div class="pe-footer-contact-links">
           <a href="tel:+6421765234">021 765 234</a>
           <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
         </div>
-
         <a class="pe-footer-button" href="/#appraisal">Request Free Appraisal</a>
-
         <div class="pe-footer-link-columns">
           <div>
             <h3>Free Appraisals</h3>
@@ -1066,7 +967,6 @@
               <a href="/free-home-appraisal-avondale/">Avondale</a>
             </div>
           </div>
-
           <div>
             <h3>Seller Guides</h3>
             <div class="pe-footer-links">
@@ -1082,21 +982,16 @@
           </div>
         </div>
       </div>
-
       <!-- RIGHT BLOCK -->
       <div class="pe-footer-card">
         <h2>Our Google Business Profile</h2>
-
         <p>
           View our Google profile, office location, photos and client reviews for
           Edita Andrijasevic - Raine &amp; Horne.
         </p>
-
         <a class="pe-footer-button" href="https://share.google/ddO9ayximJFNs2muB" target="_blank" rel="noopener">
           Edita Andrijasevic Profile
         </a>
-
-
         <div class="pe-map-wrap">
           <iframe
             loading="lazy"
@@ -1105,11 +1000,9 @@
             src="https://www.google.com/maps?q=9%20Sheridan%20Drive%2C%20New%20Lynn%2C%20Auckland%200600&output=embed">
           </iframe>
         </div>
-
         <p class="pe-footer-small" style="margin-top: 12px;">
           Office: 9 Sheridan Drive, New Lynn, Auckland 0600.
         </p>
-
         <h3>Quick Links</h3>
         <div class="pe-footer-links">
           <a href="/">Home</a>
@@ -1121,40 +1014,31 @@
           <a href="/contact.html">Contact</a>
         </div>
       </div>
-
 </div>
-
 <div class="pe-external-strip">
   <h3>External Agent Profiles</h3>
-
   <div class="pe-external-pills">
     <a class="pe-external-pill" href="https://homes.co.nz/profile/raine-and-horne/blockhouse-bay-and-titirangi/edita-andrijasevic" target="_blank" rel="noopener">
       <span>H</span> Homes.co.nz
     </a>
-
     <a class="pe-external-pill" href="https://www.oneroof.co.nz/agent/edita-andrijasevic-90262" target="_blank" rel="noopener">
       <span>O</span> OneRoof
     </a>
-
     <a class="pe-external-pill" href="https://www.trademe.co.nz/a/property/agent/Edita-Andrijasevic" target="_blank" rel="noopener">
       <span>TM</span> Trade Me
     </a>
-
     <a class="pe-external-pill" href="https://www.ratemyagent.co.nz/real-estate-agent/edita-andrijasevic-ad977/sales/overview" target="_blank" rel="noopener">
       <span>R</span> RateMyAgent
     </a>
-
     <a class="pe-external-pill" href="https://www.realestate.co.nz/agent/261782/edita-andrijasevic" target="_blank" rel="noopener">
       <span>RE</span> realestate.co.nz
     </a>
   </div>
 </div>
-
     <p class="pe-footer-bottom-note">
       Licensed under the REAA 2008. This website provides general real estate information only.
       For a current market opinion or selling strategy, please request a free property appraisal.
     </p>
-
   </div>
 </footer>
   <script src="properties-data.js?v=5"></script>
