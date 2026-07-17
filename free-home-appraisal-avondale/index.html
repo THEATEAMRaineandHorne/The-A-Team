@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
@@ -28,8 +29,21 @@
   <meta name="twitter:image" content="https://peterandedita.co.nz/images/free-property-appraisal-avondale-auckland.jpg">
 
   <link rel="preload" as="image" href="https://peterandedita.co.nz/images/free-property-appraisal-avondale-auckland.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/rh-logo.webp">
+  <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
 
   <style>
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400; font-style: normal; font-display: optional;
+    }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/rainehorne.ttf') format('truetype');
+      font-weight: 400 900; font-style: normal; font-display: optional;
+    }
     :root {
       --gold: #ffb200;
       --dark: #202020;
@@ -51,10 +65,14 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
       color: var(--dark);
       background: var(--white);
       line-height: 1.6;
+    }
+
+    button, input, textarea, select {
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
     }
 
     a {
@@ -102,7 +120,6 @@
       letter-spacing: -0.3px;
       font-size: 18px;
       flex-shrink: 0;
-      white-space: nowrap;
     }
 
     .brand img {
@@ -111,40 +128,45 @@
       object-fit: contain;
     }
 
-    .brand span {
-      color: var(--dark);
-    }
-
     .nav-links {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       align-items: center;
       gap: 14px;
       font-size: 13.5px;
       font-weight: 800;
-      white-space: nowrap;
     }
 
-    .nav-links a:hover {
-      color: var(--gold);
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+
+    .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+    .nav-dropdown summary { list-style: none; cursor: pointer; }
+    .nav-dropdown summary::-webkit-details-marker { display: none; }
+    .nav-parent { font-size: 13.5px; font-weight: 800; color: var(--dark); display: inline-flex; align-items: center; gap: 6px; }
+    .nav-parent::after { content: "▾"; font-size: 11px; color: var(--gold); margin-top: 1px; }
+    .nav-parent:hover, .nav-parent.active { color: var(--gold); }
+    .dropdown-menu { display: none; position: absolute; top: 34px; left: 0; min-width: 300px; background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 18px 45px rgba(0,0,0,0.14); padding: 10px; z-index: 100; }
+    .nav-dropdown[open] .dropdown-menu, .nav-dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu a, .dropdown-menu a:visited { display: block; padding: 11px 13px; border-radius: 10px; color: var(--dark) !important; background: #fff !important; font-size: 14px; font-weight: 800; line-height: 1.25; white-space: normal; }
+    .dropdown-menu a:hover { background: var(--gold) !important; color: var(--dark) !important; }
+
+    .breadcrumb-bar {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      font-size: 14px;
+      color: #555555;
     }
-    
-.breadcrumb-bar {
-  max-width: 1220px;
-  margin: 0 auto;
-  padding: 14px 20px;
-  font-size: 14px;
-  color: #555555;
-}
 
-.breadcrumb-bar a {
-  color: #202020;
-  font-weight: 800;
-}
+    .breadcrumb-bar a {
+      color: #202020;
+      font-weight: 800;
+    }
 
-.breadcrumb-bar span {
-  margin: 0 6px;
-}
+    .breadcrumb-bar span {
+      margin: 0 6px;
+    }
+
     .hero {
       position: relative;
       min-height: 760px;
@@ -595,15 +617,17 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-links {
-        flex-wrap: wrap;
-        white-space: normal;
-      }
+      .nav { width: 100%; align-items: stretch !important; gap: 14px; flex-direction: column; }
+      .brand { width: 100%; }
+      .nav-links { width: 100% !important; display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px 16px !important; white-space: normal; }
+      .nav-links > a { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; text-align: center !important; }
+      .nav-dropdown { grid-column: 1 / -1 !important; width: 100% !important; display: block !important; position: relative !important; }
+      .nav-dropdown summary.nav-parent { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 7px !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; cursor: pointer !important; list-style: none !important; }
+      .nav-dropdown summary.nav-parent::-webkit-details-marker { display: none !important; }
+      .dropdown-menu { position: static !important; display: none !important; width: 100% !important; min-width: 0 !important; margin-top: 10px !important; }
+      .nav-dropdown:hover .dropdown-menu { display: none !important; }
+      .nav-dropdown[open] .dropdown-menu { display: grid !important; grid-template-columns: 1fr !important; gap: 8px !important; }
+      .dropdown-menu a, .dropdown-menu a:visited { width: 100% !important; min-height: 52px !important; display: flex !important; align-items: center !important; justify-content: center !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; font-size: 17px !important; }
     }
 
     @media (max-width: 560px) {
@@ -619,9 +643,27 @@
         padding: 58px 18px;
       }
     }
+
+    /* Brand header colour fix */
+    .brand-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      color: var(--dark) !important;
+    }
+
+    .brand-team,
+    .brand-rh {
+      color: var(--dark) !important;
+    }
+
+    .brand-divider,
+    .brand-amp {
+      color: var(--gold) !important;
+    }
   </style>
-<link rel="stylesheet" href="/css/brand-font.css">
- <!-- AVONDALE COMPLETE SCHEMA PACKAGE - START -->
+  <!-- AVONDALE COMPLETE SCHEMA PACKAGE - START -->
 
 <script type="application/ld+json">
 {
@@ -680,7 +722,7 @@
       "url": "https://peterandedita.co.nz/free-home-appraisal-avondale/",
       "name": "Free Property Appraisal Avondale | Edita Andrijasevic - Raine & Horne",
       "description": "Free Avondale Auckland property appraisal from Edita Andrijasevic, Raine & Horne. Local pricing advice, buyer demand, presentation, marketing and selling strategy for Avondale homeowners.",
-      "dateModified": "2026-07-01",
+      "dateModified": "2026-07-17",
       "inLanguage": "en-NZ",
       "isPartOf": {
         "@id": "https://peterandedita.co.nz/#website"
@@ -815,27 +857,78 @@
   <header>
     <nav class="nav">
       <a href="https://peterandedita.co.nz/" class="brand">
-        <img src="https://peterandedita.co.nz/images/rh-logo.png" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
-        <div>Edita Andrijasevic <span>| Raine &amp; Horne</span></div>
+        <img src="/images/rh-logo.webp" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
+        <div class="brand-name"><span class="brand-team">Edita Andrijasevic</span>
+          <span class="brand-divider">-</span>
+          <span class="brand-rh">Raine <span class="brand-amp">&amp;</span> Horne</span></div>
       </a>
 
       <div class="nav-links">
-        <a href="https://peterandedita.co.nz/">Home</a>
-        <a href="#appraisal">Appraisal</a>
-        <a href="/locations/">Locations</a>
-        <a href="/property-auctions-west-auckland/">Auctions</a>
-        <a href="#about-team">About</a>
-        <a href="#avondale-market-advice">Avondale Insight</a>
-        <a href="#amplify">Amplify</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#services">Services</a>
+        <a href="/">Home</a>
+        <details class="nav-dropdown nav-locations">
+          <summary class="nav-parent">Locations</summary>
+          <div class="dropdown-menu">
+            <a href="/locations/">All Areas We Serve</a>
+            <a href="/real-estate-agent-avondale/" style="font-weight:900; color:#9b6b00 !important;">Avondale</a>
+            <a href="/real-estate-agent-west-auckland/">West Auckland</a>
+            <a href="/real-estate-agent-titirangi/">Titirangi</a>
+            <a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/real-estate-agent-lynfield/">Lynfield</a>
+            <a href="/real-estate-agent-new-lynn/">New Lynn</a>
+            <a href="/real-estate-agent-green-bay/">Green Bay</a>
+            <a href="/real-estate-agent-glen-eden/">Glen Eden</a>
+            <a href="/real-estate-agent-kelston/">Kelston</a>
+            <a href="/real-estate-agent-mount-roskill/">Mount Roskill</a>
+            <a href="/real-estate-agent-new-windsor/">New Windsor</a>
+            <a href="/real-estate-agent-glendene/">Glendene</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-services">
+          <summary class="nav-parent active">Services</summary>
+          <div class="dropdown-menu">
+            <a href="/services/">All Real Estate Services</a>
+            <a href="/free-home-appraisal-avondale/" style="font-weight:900; color:#9b6b00 !important;">Free Property Appraisal</a>
+            <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
+            <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+            <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
+            <a href="/services/real-estate-negotiation-west-auckland/">Negotiation Support</a>
+            <a href="/amplify-property-marketing/">Amplify Property Marketing</a>
+            <a href="/property-auctions-west-auckland/">Property Auctions</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-listings">
+          <summary class="nav-parent">Listings</summary>
+          <div class="dropdown-menu">
+            <a href="/properties.html">Properties For Sale</a>
+            <a href="/sold.html">Sold Properties</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-market-reports">
+          <summary class="nav-parent">Market Reports</summary>
+          <div class="dropdown-menu">
+            <a href="/market-reports/">All Suburb Market Reports</a>
+            <a href="/market-reports/avondale/">Avondale</a>
+            <a href="/market-reports/titirangi/">Titirangi</a>
+            <a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/market-reports/lynfield/">Lynfield</a>
+            <a href="/market-reports/new-lynn/">New Lynn</a>
+            <a href="/market-reports/green-bay/">Green Bay</a>
+            <a href="/market-reports/glen-eden/">Glen Eden</a>
+            <a href="/market-reports/kelston/">Kelston</a>
+            <a href="/market-reports/mount-roskill/">Mount Roskill</a>
+            <a href="/market-reports/new-windsor/">New Windsor</a>
+            <a href="/market-reports/glendene/">Glendene</a>
+          </div>
+        </details>
+        <a href="/articles/">Articles</a>
+        <a href="/#reviews">Reviews</a>
         <a href="/contact.html">Contact</a>
       </div>
     </nav>
   </header>
 
   <div class="breadcrumb-bar">
-    <a href="../">Home</a>
+    <a href="/">Home</a>
     <span>›</span>
     <span>Free Property Appraisal Avondale</span>
   </div>
@@ -955,7 +1048,7 @@
 
             <p class="small" style="color:#555555; margin:0;">
               Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.
-              <a href="../privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
+              <a href="/privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
             </p>
           </form>
         </div>
@@ -1130,7 +1223,7 @@
       <img
         src="https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg"
         alt="Edita Andrijasevic, local Raine and Horne real estate agent helping Avondale homeowners"
-        loading="lazy">
+        loading="lazy" width="900" height="1100">
       <p class="local-team-photo-note">
         Edita Andrijasevic - Raine &amp; Horne
       </p>
@@ -1251,7 +1344,7 @@
                 <img
                   src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg"
                   alt="Raine and Horne Amplify AI property marketing video"
-                  loading="lazy">
+                  loading="lazy" width="1280" height="720">
                 <span>▶</span>
               </button>
             </div>
@@ -1524,7 +1617,7 @@
   <div class="seo-footer-inner">
 
     <div class="seo-footer-card">
-      <h2>Edita Andrijasevic | Raine <span class="seo-footer-gold">&amp;</span> Horne</h2>
+      <h2>Edita Andrijasevic - Raine <span class="seo-footer-gold">&amp;</span> Horne</h2>
 
       <p>
         Helping Avondale and West Auckland homeowners with free property appraisals, selling strategy,
