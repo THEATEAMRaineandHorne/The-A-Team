@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en-NZ">
@@ -7,6 +8,9 @@
 <title>How to Choose a New Windsor Real Estate Agent | Seller Guide</title>
 <meta content="Use this practical New Windsor seller guide to compare appraisal evidence, marketing, communication, buyer follow-up and negotiation before choosing an agent." name="description"/>
 <link href="https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-new-windsor.html" rel="canonical"/><link as="image" fetchpriority="high" href="/images/choose-real-estate-agent-new-windsor-auckland.jpg" rel="preload"/>
+<link as="image" href="/images/rh-logo.webp" rel="preload"/>
+<link href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin="" rel="preload"/>
+<link href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin="" rel="preload"/>
 <meta content="index, follow" name="robots"/>
 <meta content="Edita Andrijasevic - Raine &amp; Horne" name="application-name"/>
 <meta content="Edita Andrijasevic - Raine &amp; Horne" name="apple-mobile-web-app-title"/>
@@ -36,6 +40,17 @@
       --soft: #f7f7f5;
       --border: #e8e2d7;
       --muted: #555555;
+    }
+
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400; font-style: normal; font-display: optional;
+    }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/rainehorne.ttf') format('truetype');
+      font-weight: 400 900; font-style: normal; font-display: optional;
     }
 
     * { box-sizing: border-box; }
@@ -93,6 +108,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 20px;
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
     }
 
     .brand {
@@ -132,11 +148,23 @@
       gap: 18px;
       font-size: 14px;
       font-weight: 900;
+      align-items: center;
     }
 
     .nav-links a:hover {
       color: var(--gold);
     }
+
+    .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+    .nav-dropdown summary { list-style: none; cursor: pointer; }
+    .nav-dropdown summary::-webkit-details-marker { display: none; }
+    .nav-parent { font-size: 14px; font-weight: 900; color: var(--dark); display: inline-flex; align-items: center; gap: 6px; }
+    .nav-parent::after { content: '▾'; font-size: 11px; color: var(--gold); margin-top: 1px; }
+    .nav-parent:hover { color: var(--gold); }
+    .dropdown-menu { display: none; position: absolute; top: 38px; left: 0; min-width: 300px; background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 18px 45px rgba(0,0,0,.14); padding: 10px; z-index: 100; }
+    .nav-dropdown[open] .dropdown-menu, .nav-dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu a, .dropdown-menu a:visited { display: block; padding: 11px 13px; border-radius: 10px; color: var(--dark) !important; background: #fff !important; font-size: 14px; font-weight: 800; line-height: 1.25; white-space: normal; }
+    .dropdown-menu a:hover { background: var(--gold) !important; color: var(--dark) !important; }
 
     .hero {
       position: relative;
@@ -454,13 +482,19 @@
         gap: 10px;
       }
 
-      .nav-links a {
+      .nav-links a,
+      .nav-dropdown summary.nav-parent {
         background: #f6f2e8;
         border: 1px solid var(--border);
         border-radius: 999px;
         text-align: center;
         padding: 10px;
       }
+
+      .nav-dropdown { grid-column: 1 / -1; display: block; }
+      .dropdown-menu { position: static; min-width: 0; width: 100%; margin-top: 8px; }
+      .nav-dropdown:hover .dropdown-menu { display: none; }
+      .nav-dropdown[open] .dropdown-menu { display: grid; gap: 7px; }
 
       .hero {
         padding: 72px 18px;
@@ -490,7 +524,7 @@
         font-size: 16px;
       }
     }
-  
+
     .menu-toggle {
       display: none;
       min-height: 44px;
@@ -577,7 +611,7 @@
       "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
       "priceRange": "$$",
       "currenciesAccepted": "NZD",
-      "logo": "https://peterandedita.co.nz/images/rh-logo.png",
+      "logo": "https://peterandedita.co.nz/images/rh-logo.webp",
       "image": [
         "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg",
         "https://peterandedita.co.nz/images/choose-real-estate-agent-new-windsor-auckland.jpg"
@@ -653,7 +687,7 @@
         "@id": "https://peterandedita.co.nz/#realestateagent"
       },
       "datePublished": "2026-05-13T09:00:00+12:00",
-      "dateModified": "2026-07-11T15:00:00+12:00",
+      "dateModified": "2026-07-17T15:00:00+12:00",
       "mainEntityOfPage": {
         "@id": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-new-windsor.html#webpage"
       },
@@ -684,7 +718,7 @@
         "height": 600
       },
       "datePublished": "2026-05-13T09:00:00+12:00",
-      "dateModified": "2026-07-11T15:00:00+12:00",
+      "dateModified": "2026-07-17T15:00:00+12:00",
       "inLanguage": "en-NZ"
     },
     {
@@ -782,16 +816,71 @@
 <header>
 <nav class="nav">
 <a class="brand" href="https://peterandedita.co.nz/">
-<img alt="Team Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.png" width="46"/>
+<img alt="Team Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.webp" width="46"/>
 <div class="brand-name">
 <span class="brand-team">Edita Andrijasevic</span>
-<span class="brand-divider">|</span>
+<span class="brand-divider">-</span>
 <span class="brand-rh">Raine <span class="brand-amp">&amp;</span> Horne</span>
 </div>
 </a><button aria-controls="primary-navigation" aria-expanded="false" class="menu-toggle" type="button">Menu</button>
 <div class="nav-links" id="primary-navigation">
 <a href="https://peterandedita.co.nz/">Home</a>
-<a href="https://peterandedita.co.nz/free-home-appraisal-new-windsor/">New Windsor Appraisal</a>
+<details class="nav-dropdown">
+<summary class="nav-parent">Locations</summary>
+<div class="dropdown-menu">
+<a href="/locations/">All Areas We Serve</a>
+<a href="/real-estate-agent-west-auckland/">West Auckland</a>
+<a href="/real-estate-agent-avondale/">Avondale</a>
+<a href="/real-estate-agent-titirangi/">Titirangi</a>
+<a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+<a href="/real-estate-agent-lynfield/">Lynfield</a>
+<a href="/real-estate-agent-new-lynn/">New Lynn</a>
+<a href="/real-estate-agent-green-bay/">Green Bay</a>
+<a href="/real-estate-agent-glen-eden/">Glen Eden</a>
+<a href="/real-estate-agent-kelston/">Kelston</a>
+<a href="/real-estate-agent-mount-roskill/">Mount Roskill</a>
+<a href="/real-estate-agent-new-windsor/" style="font-weight:900; color:#9b6b00 !important;">New Windsor</a>
+<a href="/real-estate-agent-glendene/">Glendene</a>
+</div>
+</details>
+<details class="nav-dropdown">
+<summary class="nav-parent">Services</summary>
+<div class="dropdown-menu">
+<a href="/services/">All Real Estate Services</a>
+<a href="/free-home-appraisal-new-windsor/" style="font-weight:900; color:#9b6b00 !important;">Free Property Appraisal</a>
+<a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
+<a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+<a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
+<a href="/services/real-estate-negotiation-west-auckland/">Negotiation Support</a>
+<a href="/amplify-property-marketing/">Amplify Property Marketing</a>
+<a href="/property-auctions-west-auckland/">Property Auctions</a>
+</div>
+</details>
+<details class="nav-dropdown">
+<summary class="nav-parent">Listings</summary>
+<div class="dropdown-menu">
+<a href="/properties.html">Properties For Sale</a>
+<a href="/sold.html">Sold Properties</a>
+</div>
+</details>
+<details class="nav-dropdown">
+<summary class="nav-parent">Market Reports</summary>
+<div class="dropdown-menu">
+<a href="/market-reports/">All Suburb Market Reports</a>
+<a href="/market-reports/avondale/">Avondale</a>
+<a href="/market-reports/titirangi/">Titirangi</a>
+<a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+<a href="/market-reports/lynfield/">Lynfield</a>
+<a href="/market-reports/new-lynn/">New Lynn</a>
+<a href="/market-reports/green-bay/">Green Bay</a>
+<a href="/market-reports/glen-eden/">Glen Eden</a>
+<a href="/market-reports/kelston/">Kelston</a>
+<a href="/market-reports/mount-roskill/">Mount Roskill</a>
+<a href="/market-reports/new-windsor/">New Windsor</a>
+<a href="/market-reports/glendene/">Glendene</a>
+</div>
+</details>
+<a href="/articles/">Articles</a>
 <a href="https://peterandedita.co.nz/#reviews">Reviews</a>
 <a href="https://peterandedita.co.nz/contact.html">Contact</a>
 </div>
@@ -804,7 +893,7 @@
 <h1 id="article-title">How to Choose a Real Estate Agent in New Windsor</h1>
 <p>Use the same practical questions for every New Windsor agent you interview. Compare appraisal evidence, preparation advice, marketing, communication, buyer follow-up and negotiation rather than relying on the largest promise.</p>
 <p>This informational guide gives New Windsor homeowners a consistent checklist to use before signing an agency agreement.</p>
-<div class="article-meta">By Edita Andrijasevic · Published 13 May 2026 · Updated 11 July 2026</div><div class="cta-row">
+<div class="article-meta">By Edita Andrijasevic · Published 13 May 2026 · Updated 17 July 2026</div><div class="cta-row">
 <a class="btn btn-primary" href="https://peterandedita.co.nz/free-home-appraisal-new-windsor/">Request Free New Windsor Appraisal</a>
 <a class="btn btn-secondary" href="tel:+6421765234">Call 021 765 234</a>
 </div>
@@ -1003,7 +1092,7 @@
 <div class="side-card">
 <h3>Talk to Edita Andrijasevic</h3>
 <p>
-              Raine &amp; Horne Edita Andrijasevichelp New Windsor and nearby West Auckland homeowners with practical real estate advice.
+              Raine &amp; Horne Edita Andrijasevic help New Windsor and nearby West Auckland homeowners with practical real estate advice.
             </p>
 <p>
 <a href="tel:+6421765234">Call 021 765 234</a>
@@ -1076,7 +1165,7 @@
 </main>
 <footer>
 <p>
-<strong>Edita Andrijasevic | Raine &amp; Horne</strong><br/>
+<strong>Edita Andrijasevic - Raine &amp; Horne</strong><br/>
       Helping homeowners in New Windsor, Mount Roskill, Lynfield, Blockhouse Bay and nearby West Auckland suburbs.
     </p>
 <p>
