@@ -158,6 +158,18 @@
       color: var(--gold);
     }
 
+    .menu-toggle {
+      display: none;
+      min-height: 44px;
+      padding: 10px 18px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--dark);
+      font-weight: 900;
+      cursor: pointer;
+    }
+
     .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
     .nav-dropdown summary { list-style: none; cursor: pointer; }
     .nav-dropdown summary::-webkit-details-marker { display: none; }
@@ -466,12 +478,18 @@
       }
 
       .nav {
-        flex-direction: column;
         align-items: stretch;
+        flex-wrap: wrap;
       }
 
-      .nav a.brand {
-        justify-content: flex-start;
+      .brand {
+        flex: 1;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .brand-name {
@@ -480,13 +498,19 @@
       }
 
       .nav-links {
-        display: grid;
+        display: none;
+        width: 100%;
         grid-template-columns: 1fr;
         gap: 10px;
       }
 
+      .nav-links.is-open {
+        display: grid;
+      }
+
       .nav-links a,
       .nav-dropdown summary.nav-parent {
+        min-height: 52px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -760,7 +784,8 @@
 <span class="brand-rh">Raine <span class="brand-amp">&amp;</span> Horne</span>
 </div>
 </a>
-<div class="nav-links">
+<button aria-controls="primary-navigation" aria-expanded="false" class="menu-toggle" type="button">Menu</button>
+<div class="nav-links" id="primary-navigation">
 <a href="https://peterandedita.co.nz/">Home</a>
 <details class="nav-dropdown">
 <summary class="nav-parent">Locations</summary>
@@ -1049,5 +1074,17 @@
       Edita Andrijasevic (Licensee 20027060) is a Licensed Salesperson under the Real Estate Agents Act 2008. This page provides general real estate information and is not a registered valuation.
     </p>
 </footer>
+<script>
+    (function () {
+      var toggle=document.querySelector('.menu-toggle');
+      var nav=document.getElementById('primary-navigation');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click',function () {
+        var open=nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded',String(open));
+        toggle.textContent=open?'Close menu':'Menu';
+      });
+    }());
+  </script>
 </body>
 </html>
