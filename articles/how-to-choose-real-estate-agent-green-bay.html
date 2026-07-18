@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en-NZ">
 <head>
 <meta charset="utf-8"/>
@@ -9,6 +8,9 @@
 <meta content="index, follow" name="robots"/>
 <meta content="#202020" name="theme-color"/>
 <link href="https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html" rel="canonical"/>
+<link as="image" href="/images/rh-logo.webp" rel="preload"/>
+<link href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin="" rel="preload"/>
+<link href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin="" rel="preload"/>
 <link href="/favicon.ico" rel="icon"/>
 <link href="/images/favicon-the-a-team.png" rel="icon" sizes="96x96" type="image/png"/>
 <link href="/images/favicon-the-a-team.png" rel="apple-touch-icon"/>
@@ -26,6 +28,16 @@
 <meta content="https://peterandedita.co.nz/images/choose-real-estate-agent-green-bay.webp" name="twitter:image"/>
 <style>
     :root { --gold:#ffb200; --dark:#202020; --charcoal:#4d4e50; --white:#fff; --cream:#fff8e8; --soft:#f7f7f5; --border:#e8e2d7; --muted:#575757; }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400; font-style: normal; font-display: optional;
+    }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/rainehorne.ttf') format('truetype');
+      font-weight: 400 900; font-style: normal; font-display: optional;
+    }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
     body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--dark); background:var(--soft); line-height:1.72; }
@@ -33,10 +45,10 @@
     .topbar { background:var(--dark); color:var(--white); text-align:center; padding:9px 20px; font-size:14px; }
     .topbar a { color:var(--gold); font-weight:900; text-decoration:none; }
     header { background:#fff; border-bottom:1px solid var(--border); position:sticky; top:0; z-index:50; }
-    .nav { max-width:1220px; margin:0 auto; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    .nav { max-width:1220px; margin:0 auto; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; gap:20px; font-family:'RaineHorne', Arial, Helvetica, sans-serif; }
     .brand { display:flex; align-items:center; gap:12px; font-weight:900; font-size:18px; text-decoration:none; }
     .brand img { width:46px; height:46px; object-fit:contain; }
-    .nav-links { display:flex; flex-wrap:wrap; gap:18px; font-size:14px; font-weight:800; }
+    .nav-links { display:flex; flex-wrap:wrap; gap:18px; font-size:14px; font-weight:800; align-items:center; }
     .nav-links a { text-decoration:none; }
     .nav-links a:hover, .nav-parent:hover { color:#9b6b00; }
     .nav-dropdown { position:relative; display:inline-flex; align-items:center; }
@@ -131,7 +143,7 @@
 <header>
 <nav class="nav">
 <a class="brand" href="https://peterandedita.co.nz/">
-<img alt="Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.png" width="46"/>
+<img alt="Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.webp" width="46"/>
 <div>
 <span style="font-weight:900;">Edita Andrijasevic</span>
 <span style="font-weight:400;"> - Raine &amp; Horne</span>
@@ -141,13 +153,13 @@
 <a href="/">Home</a>
 <details class="nav-dropdown nav-locations">
 <summary class="nav-parent">Locations</summary>
-<div class="dropdown-menu"><a href="/locations/">All Areas We Serve</a><a href="/real-estate-agent-west-auckland/">West Auckland</a><a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a><a href="/real-estate-agent-titirangi/">Titirangi</a><a href="/real-estate-agent-lynfield/">Lynfield</a><a href="/real-estate-agent-new-lynn/">New Lynn</a><a href="/real-estate-agent-green-bay/">Green Bay</a><a href="/real-estate-agent-glen-eden/">Glen Eden</a><a href="/real-estate-agent-kelston/">Kelston</a><a href="/real-estate-agent-mount-roskill/">Mount Roskill</a><a href="/real-estate-agent-new-windsor/">New Windsor</a><a href="/real-estate-agent-green-bay/" style="font-weight:900; color:#9b6b00 !important;">Green Bay</a><a href="/real-estate-agent-avondale/">Avondale</a></div>
+<div class="dropdown-menu"><a href="/locations/">All Areas We Serve</a><a href="/real-estate-agent-west-auckland/">West Auckland</a><a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a><a href="/real-estate-agent-titirangi/">Titirangi</a><a href="/real-estate-agent-lynfield/">Lynfield</a><a href="/real-estate-agent-new-lynn/">New Lynn</a><a href="/real-estate-agent-green-bay/" style="font-weight:900; color:#9b6b00 !important;">Green Bay</a><a href="/real-estate-agent-glen-eden/">Glen Eden</a><a href="/real-estate-agent-kelston/">Kelston</a><a href="/real-estate-agent-mount-roskill/">Mount Roskill</a><a href="/real-estate-agent-new-windsor/">New Windsor</a><a href="/real-estate-agent-glendene/">Glendene</a><a href="/real-estate-agent-avondale/">Avondale</a></div>
 </details>
 <details class="nav-dropdown nav-services">
 <summary class="nav-parent">Services</summary>
 <div class="dropdown-menu">
 <a href="/services/">All Real Estate Services</a>
-<a href="/free-home-appraisal-green-bay/">Free Property Appraisal</a>
+<a href="/free-home-appraisal-green-bay/" style="font-weight:900; color:#9b6b00 !important;">Free Property Appraisal</a>
 <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
 <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
 <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
@@ -165,7 +177,7 @@
 </details>
 <details class="nav-dropdown nav-market-reports">
 <summary class="nav-parent">Market Reports</summary>
-<div class="dropdown-menu"><a href="/market-reports/">All Suburb Market Reports</a><a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a><a href="/market-reports/titirangi/">Titirangi</a><a href="/market-reports/lynfield/">Lynfield</a><a href="/market-reports/new-lynn/">New Lynn</a><a href="/market-reports/green-bay/">Green Bay</a><a href="/market-reports/glen-eden/">Glen Eden</a><a href="/market-reports/kelston/">Kelston</a><a href="/market-reports/mount-roskill/">Mount Roskill</a><a href="/market-reports/new-windsor/">New Windsor</a><a href="/market-reports/green-bay/">Green Bay</a><a href="/market-reports/avondale/">Avondale</a></div>
+<div class="dropdown-menu"><a href="/market-reports/">All Suburb Market Reports</a><a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a><a href="/market-reports/titirangi/">Titirangi</a><a href="/market-reports/lynfield/">Lynfield</a><a href="/market-reports/new-lynn/">New Lynn</a><a href="/market-reports/green-bay/">Green Bay</a><a href="/market-reports/glen-eden/">Glen Eden</a><a href="/market-reports/kelston/">Kelston</a><a href="/market-reports/mount-roskill/">Mount Roskill</a><a href="/market-reports/new-windsor/">New Windsor</a><a href="/market-reports/glendene/">Glendene</a><a href="/market-reports/avondale/">Avondale</a></div>
 </details>
 <a href="/articles/">Articles</a>
 <a href="/#reviews">Reviews</a>
@@ -182,7 +194,7 @@
 <span class="kicker">Green Bay Seller Checklist</span>
 <h1>How to Choose a Real Estate Agent in Green Bay</h1>
 <p>Use the same practical questions for every agent you interview so you can compare evidence, campaign strategy, communication, buyer follow-up and negotiation—not just the highest appraisal or lowest fee.</p>
-<div class="meta">By Edita Andrijasevic · Published 13 May 2026 · Updated 10 July 2026</div>
+<div class="meta">By Edita Andrijasevic · Published 13 May 2026 · Updated 17 July 2026</div>
 </div>
 </section>
 <div class="article-layout">
@@ -303,7 +315,7 @@
 <footer class="seo-footer">
 <div class="footer-inner">
 <div class="footer-card">
-<h2>Edita Andrijasevic — Raine &amp; Horne</h2>
+<h2>Edita Andrijasevic - Raine &amp; Horne</h2>
 <p>Local real estate information and selling support for Green Bay and surrounding West Auckland suburbs.</p>
 <p class="small">Edita Andrijasevic (Licensee 20027060) is a Licensed Salesperson under the Real Estate Agents Act 2008. This article provides general information and is not a registered valuation.</p>
 <a href="tel:+6421765234">021 765 234</a>
@@ -342,6 +354,6 @@
   </script>
 
 <!-- Structured data is placed after visible content so it does not delay CSS discovery or first paint. -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://peterandedita.co.nz/#website","url":"https://peterandedita.co.nz/","name":"Edita Andrijasevic - Raine & Horne","inLanguage":"en-NZ"},{"@type":"RealEstateAgent","@id":"https://peterandedita.co.nz/#realestateagent","name":"Edita Andrijasevic - Raine & Horne","url":"https://peterandedita.co.nz/","telephone":"+6421765234","email":"edita.andrijasevic@blockhousebay.rh.co.nz","priceRange":"$$","image":["https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg","https://peterandedita.co.nz/images/choose-real-estate-agent-green-bay.webp"],"logo":"https://peterandedita.co.nz/images/rh-logo.png","address":{"@type":"PostalAddress","streetAddress":"9 Sheridan Drive","addressLocality":"New Lynn","addressRegion":"Auckland","postalCode":"0600","addressCountry":"NZ"},"currenciesAccepted":"NZD"},{"@type":"Person","@id":"https://peterandedita.co.nz/#edita","name":"Edita Andrijasevic","jobTitle":"Licensed Real Estate Salesperson","url":"https://peterandedita.co.nz/","worksFor":{"@id":"https://peterandedita.co.nz/#realestateagent"}},{"@type":"Article","@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#article","headline":"How to Choose a Real Estate Agent in Green Bay","description":"A practical seller checklist for comparing Green Bay real estate agents by appraisal evidence, local knowledge, marketing, communication, buyer follow-up and negotiation.","image":"https://peterandedita.co.nz/images/choose-real-estate-agent-green-bay.webp","datePublished":"2026-05-13T09:00:00+12:00","dateModified":"2026-07-10T15:00:00+12:00","author":{"@id":"https://peterandedita.co.nz/#edita"},"publisher":{"@id":"https://peterandedita.co.nz/#realestateagent"},"mainEntityOfPage":{"@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#webpage"},"inLanguage":"en-NZ"},{"@type":"WebPage","@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#webpage","url":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html","name":"How to Choose a Real Estate Agent in Green Bay","isPartOf":{"@id":"https://peterandedita.co.nz/#website"},"breadcrumb":{"@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#breadcrumb"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://peterandedita.co.nz/images/choose-real-estate-agent-green-bay.webp"},"datePublished":"2026-05-13T09:00:00+12:00","dateModified":"2026-07-10T15:00:00+12:00","inLanguage":"en-NZ"},{"@type":"BreadcrumbList","@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://peterandedita.co.nz/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://peterandedita.co.nz/articles/"},{"@type":"ListItem","position":3,"name":"How to Choose a Real Estate Agent in Green Bay","item":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html"}]},{"@type":"FAQPage","@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#faq","mainEntity":[{"@type":"Question","name":"How many Green Bay agents should I interview?","acceptedAnswer":{"@type":"Answer","text":"Two or three interviews are usually enough to compare appraisal evidence, communication style, marketing plans and fees without making the process unnecessarily complicated. Ask each agent the same core questions so the comparison is fair."}},{"@type":"Question","name":"Should I choose the agent who gives the highest appraisal?","acceptedAnswer":{"@type":"Answer","text":"Not automatically. Ask which comparable sales support the figure, what current listings compete with your home and how the proposed strategy is expected to reach that result. A well-explained range is more useful than an unsupported promise."}},{"@type":"Question","name":"What should a real estate marketing proposal include?","acceptedAnswer":{"@type":"Answer","text":"It should explain the likely buyer group, recommended method of sale, photography and copy, property portals, database and social promotion, open-home plan, reporting, campaign costs and how results will be measured."}},{"@type":"Question","name":"How can I assess an agent’s negotiation approach?","acceptedAnswer":{"@type":"Answer","text":"Ask the agent to explain how they handle a low first offer, multiple interested buyers, difficult conditions and a buyer who refuses to improve. Look for a clear process rather than a general claim that they are a strong negotiator."}},{"@type":"Question","name":"Should commission be the deciding factor when choosing an agent?","acceptedAnswer":{"@type":"Answer","text":"Commission matters, but it should be considered alongside the agent’s strategy, communication, marketing, buyer follow-up and negotiation process. A lower fee is not a saving if the campaign receives weaker attention or produces a lower result."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://peterandedita.co.nz/#website","url":"https://peterandedita.co.nz/","name":"Edita Andrijasevic - Raine & Horne","inLanguage":"en-NZ"},{"@type":"RealEstateAgent","@id":"https://peterandedita.co.nz/#realestateagent","name":"Edita Andrijasevic - Raine & Horne","url":"https://peterandedita.co.nz/","telephone":"+6421765234","email":"edita.andrijasevic@blockhousebay.rh.co.nz","priceRange":"$$","image":["https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg","https://peterandedita.co.nz/images/choose-real-estate-agent-green-bay.webp"],"logo":"https://peterandedita.co.nz/images/rh-logo.webp","address":{"@type":"PostalAddress","streetAddress":"9 Sheridan Drive","addressLocality":"New Lynn","addressRegion":"Auckland","postalCode":"0600","addressCountry":"NZ"},"currenciesAccepted":"NZD"},{"@type":"Person","@id":"https://peterandedita.co.nz/#edita","name":"Edita Andrijasevic","jobTitle":"Licensed Real Estate Salesperson","url":"https://peterandedita.co.nz/","worksFor":{"@id":"https://peterandedita.co.nz/#realestateagent"}},{"@type":"Article","@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#article","headline":"How to Choose a Real Estate Agent in Green Bay","description":"A practical seller checklist for comparing Green Bay real estate agents by appraisal evidence, local knowledge, marketing, communication, buyer follow-up and negotiation.","image":"https://peterandedita.co.nz/images/choose-real-estate-agent-green-bay.webp","datePublished":"2026-05-13T09:00:00+12:00","dateModified":"2026-07-17T15:00:00+12:00","author":{"@id":"https://peterandedita.co.nz/#edita"},"publisher":{"@id":"https://peterandedita.co.nz/#realestateagent"},"mainEntityOfPage":{"@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#webpage"},"inLanguage":"en-NZ"},{"@type":"WebPage","@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#webpage","url":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html","name":"How to Choose a Real Estate Agent in Green Bay","isPartOf":{"@id":"https://peterandedita.co.nz/#website"},"breadcrumb":{"@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#breadcrumb"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://peterandedita.co.nz/images/choose-real-estate-agent-green-bay.webp"},"datePublished":"2026-05-13T09:00:00+12:00","dateModified":"2026-07-17T15:00:00+12:00","inLanguage":"en-NZ"},{"@type":"BreadcrumbList","@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://peterandedita.co.nz/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://peterandedita.co.nz/articles/"},{"@type":"ListItem","position":3,"name":"How to Choose a Real Estate Agent in Green Bay","item":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html"}]},{"@type":"FAQPage","@id":"https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html#faq","mainEntity":[{"@type":"Question","name":"How many Green Bay agents should I interview?","acceptedAnswer":{"@type":"Answer","text":"Two or three interviews are usually enough to compare appraisal evidence, communication style, marketing plans and fees without making the process unnecessarily complicated. Ask each agent the same core questions so the comparison is fair."}},{"@type":"Question","name":"Should I choose the agent who gives the highest appraisal?","acceptedAnswer":{"@type":"Answer","text":"Not automatically. Ask which comparable sales support the figure, what current listings compete with your home and how the proposed strategy is expected to reach that result. A well-explained range is more useful than an unsupported promise."}},{"@type":"Question","name":"What should a real estate marketing proposal include?","acceptedAnswer":{"@type":"Answer","text":"It should explain the likely buyer group, recommended method of sale, photography and copy, property portals, database and social promotion, open-home plan, reporting, campaign costs and how results will be measured."}},{"@type":"Question","name":"How can I assess an agent’s negotiation approach?","acceptedAnswer":{"@type":"Answer","text":"Ask the agent to explain how they handle a low first offer, multiple interested buyers, difficult conditions and a buyer who refuses to improve. Look for a clear process rather than a general claim that they are a strong negotiator."}},{"@type":"Question","name":"Should commission be the deciding factor when choosing an agent?","acceptedAnswer":{"@type":"Answer","text":"Commission matters, but it should be considered alongside the agent’s strategy, communication, marketing, buyer follow-up and negotiation process. A lower fee is not a saving if the campaign receives weaker attention or produces a lower result."}}]}]}</script>
 </body>
 </html>
