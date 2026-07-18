@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en-NZ">
 <head>
 <meta charset="utf-8"/>
@@ -10,6 +9,9 @@
 <meta content="#202020" name="theme-color"/>
 <link href="https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-glendene.html" rel="canonical"/>
 <link as="image" fetchpriority="high" href="/images/how-to-choose-real-estate-agent-glendene.png" rel="preload"/>
+<link as="image" href="/images/rh-logo.webp" rel="preload"/>
+<link href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin="" rel="preload"/>
+<link href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin="" rel="preload"/>
 <link href="/favicon.ico" rel="icon"/>
 <link href="/images/favicon-the-a-team.png" rel="icon" sizes="96x96" type="image/png"/>
 <link href="/images/favicon-the-a-team.png" rel="apple-touch-icon"/>
@@ -28,6 +30,16 @@
 
 <style>
 :root { --gold:#ffb200; --dark:#202020; --charcoal:#4d4e50; --white:#fff; --cream:#fff8e8; --soft:#f7f7f5; --border:#e8e2d7; --muted:#575757; }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400; font-style: normal; font-display: optional;
+    }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/rainehorne.ttf') format('truetype');
+      font-weight: 400 900; font-style: normal; font-display: optional;
+    }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; scrollbar-gutter:stable; }
     body { margin:0; overflow-x:hidden; font-family:Arial,Helvetica,sans-serif; color:var(--dark); background:var(--soft); line-height:1.72; }
@@ -56,6 +68,7 @@
       justify-content:space-between;
       align-items:center;
       gap:20px;
+      font-family:'RaineHorne', Arial, Helvetica, sans-serif;
     }
     .brand {
       min-width:0;
@@ -72,7 +85,7 @@
       overflow-wrap:anywhere;
     }
     .brand img { width:46px; height:46px; flex:0 0 46px; display:block; object-fit:contain; }
-    .nav-links { display:flex; flex-wrap:wrap; gap:18px; font-size:14px; font-weight:800; }
+    .nav-links { display:flex; flex-wrap:wrap; gap:18px; font-size:14px; font-weight:800; align-items:center; }
     .nav-links a { text-decoration:none; }
     .nav-links a:hover, .nav-parent:hover { color:#9b6b00; }
     .nav-dropdown { position:relative; display:inline-flex; align-items:center; }
@@ -97,7 +110,7 @@
     }
     .breadcrumb-inner { width:100%; max-width:1220px; margin:0 auto; display:flex; gap:8px; flex-wrap:wrap; }
     .breadcrumb a { font-weight:800; text-decoration:none; }
-    
+
     .article-hero {
       position:relative;
       height:540px;
@@ -211,7 +224,7 @@
       .check-grid, .footer-links { grid-template-columns:1fr; }
       .nav-links { grid-template-columns:1fr; }
     }
-    
+
     @media(max-width:520px) {
       .topbar { min-height:52px; padding:8px 14px; }
       header { min-height:76px; }
@@ -251,7 +264,7 @@
       "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
       "priceRange": "$$",
       "currenciesAccepted": "NZD",
-      "logo": "https://peterandedita.co.nz/images/rh-logo.png",
+      "logo": "https://peterandedita.co.nz/images/rh-logo.webp",
       "image": [
         "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg",
         "https://peterandedita.co.nz/images/how-to-choose-real-estate-agent-glendene.png"
@@ -321,7 +334,7 @@
         "height": 600
       },
       "datePublished": "2026-05-13T09:00:00+12:00",
-      "dateModified": "2026-07-11T14:00:00+12:00",
+      "dateModified": "2026-07-17T14:00:00+12:00",
       "author": {
         "@id": "https://peterandedita.co.nz/#edita"
       },
@@ -355,7 +368,7 @@
         "height": 600
       },
       "datePublished": "2026-05-13T09:00:00+12:00",
-      "dateModified": "2026-07-11T14:00:00+12:00",
+      "dateModified": "2026-07-17T14:00:00+12:00",
       "inLanguage": "en-NZ"
     },
     {
@@ -439,7 +452,7 @@
 <header>
 <nav class="nav">
 <a class="brand" href="https://peterandedita.co.nz/">
-<img alt="Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.png" width="46"/>
+<img alt="Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.webp" width="46"/>
 <div>
 <span style="font-weight:900;">Edita Andrijasevic</span>
 <span style="font-weight:400;"> - Raine &amp; Horne</span>
@@ -455,7 +468,7 @@
 <summary class="nav-parent">Services</summary>
 <div class="dropdown-menu">
 <a href="/services/">All Real Estate Services</a>
-<a href="/free-home-appraisal-glendene/">Free Property Appraisal</a>
+<a href="/free-home-appraisal-glendene/" style="font-weight:900; color:#9b6b00 !important;">Free Property Appraisal</a>
 <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
 <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
 <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
@@ -492,7 +505,7 @@
 <span class="kicker">Glendene Seller Checklist</span>
 <h1 id="article-title">How to Choose a Real Estate Agent in Glendene</h1>
 <p>Use the same practical questions for every agent you interview so you can compare evidence, campaign strategy, communication, buyer follow-up and negotiation—not just the highest appraisal or lowest fee.</p>
-<div class="meta">By Edita Andrijasevic · Published 13 May 2026 · Updated 11 July 2026</div>
+<div class="meta">By Edita Andrijasevic · Published 13 May 2026 · Updated 17 July 2026</div>
 </div>
 </section>
 <div class="article-layout">
@@ -613,7 +626,7 @@
 <footer class="seo-footer">
 <div class="footer-inner">
 <div class="footer-card">
-<h2>Edita Andrijasevic — Raine &amp; Horne</h2>
+<h2>Edita Andrijasevic - Raine &amp; Horne</h2>
 <p>Local real estate information and selling support for Glendene and surrounding West Auckland suburbs.</p>
 <p class="small">Edita Andrijasevic (Licensee 20027060) is a Licensed Salesperson under the Real Estate Agents Act 2008. This article provides general information and is not a registered valuation.</p>
 <a href="tel:+6421765234">021 765 234</a>
