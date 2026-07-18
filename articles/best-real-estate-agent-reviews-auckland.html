@@ -12,10 +12,13 @@
 
   <link rel="canonical" href="https://peterandedita.co.nz/articles/best-real-estate-agent-reviews-auckland.html" />
   <link rel="preload" as="image" href="https://peterandedita.co.nz/images/best-real-estate-agent-reviews-auckland-hero.webp" />
+  <link rel="preload" as="image" href="/images/rh-logo.webp" />
+  <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
 
-  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-the-a-team.png">
-  <link rel="shortcut icon" type="image/png" href="/images/favicon-the-a-team.png">
-  <link rel="apple-touch-icon" href="/images/favicon-the-a-team.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-the-a-team.webp">
+  <link rel="shortcut icon" type="image/png" href="/images/favicon-the-a-team.webp">
+  <link rel="apple-touch-icon" href="/images/favicon-the-a-team.webp">
 
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Best Real Estate Agent Reviews Auckland |  - Raine &amp; Horne" />
@@ -42,6 +45,18 @@
       --shadow: 0 18px 45px rgba(0,0,0,0.08);
       --radius: 22px;
       --max: 1120px;
+      --border: #e8e2d7;
+    }
+
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400; font-style: normal; font-display: optional;
+    }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/rainehorne.ttf') format('truetype');
+      font-weight: 400 900; font-style: normal; font-display: optional;
     }
 
     * {
@@ -74,54 +89,91 @@
       text-align: center;
     }
 
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid var(--line);
+    header.site-header {
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
-      z-index: 20;
+      z-index: 50;
+      backdrop-filter: blur(8px);
     }
 
-    .nav-wrap {
-      max-width: var(--max);
+    .nav {
+      max-width: 1220px;
       margin: 0 auto;
-      padding: 16px 20px;
+      padding: 15px 20px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 18px;
+      align-items: center;
+      gap: 20px;
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
     }
 
     .brand {
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: var(--charcoal);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: -0.3px;
       font-size: 18px;
+      flex-shrink: 0;
     }
 
-    .brand span {
-      color: var(--gold-dark);
+    .brand img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
     }
 
-    nav {
+    .brand-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text) !important;
+    }
+
+    .brand-team, .brand-rh { color: var(--text) !important; }
+    .brand-divider, .brand-amp { color: var(--gold) !important; }
+
+    .nav-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px;
-      font-size: 14px;
-      color: var(--charcoal);
       align-items: center;
-    }
-
-    nav a:hover {
-      color: #000000;
-    }
-
-    .nav-cta {
-      background: var(--gold);
-      color: #111111;
+      gap: 14px;
+      font-size: 13.5px;
       font-weight: 800;
-      padding: 10px 15px;
-      border-radius: 999px;
+    }
+
+    .nav-links a { color: var(--text); text-decoration: none; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold-dark); }
+    .menu-toggle { display: none; align-items: center; justify-content: center; gap: 6px; background: var(--gold); color: var(--text); border: 2px solid var(--gold); border-radius: 999px; padding: 10px 18px; font-weight: 900; font-size: 14px; font-family: inherit; cursor: pointer; }
+    .menu-toggle:hover { background: var(--gold-dark); }
+
+    .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+    .nav-dropdown summary { list-style: none; cursor: pointer; }
+    .nav-dropdown summary::-webkit-details-marker { display: none; }
+    .nav-parent { font-size: 13.5px; font-weight: 800; color: var(--text); display: inline-flex; align-items: center; gap: 6px; }
+    .nav-parent::after { content: "▾"; font-size: 11px; color: var(--gold); margin-top: 1px; }
+    .nav-parent:hover { color: var(--gold-dark); }
+    .dropdown-menu { display: none; position: absolute; top: 34px; left: 0; min-width: 300px; background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 18px 45px rgba(0,0,0,0.14); padding: 10px; z-index: 100; }
+    .nav-dropdown[open] .dropdown-menu, .nav-dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu a, .dropdown-menu a:visited { display: block; padding: 11px 13px; border-radius: 10px; color: var(--text) !important; background: #fff !important; font-size: 14px; font-weight: 800; line-height: 1.25; white-space: normal; }
+    .dropdown-menu a:hover { background: var(--gold) !important; color: var(--text) !important; }
+
+    @media (max-width: 980px) {
+      .nav { width: 100%; align-items: center !important; gap: 14px; flex-wrap: wrap; justify-content: space-between; }
+      .brand { flex: 1; min-width: 0; }
+      .menu-toggle { display: inline-flex !important; }
+      .nav-links { display: none; width: 100% !important; }
+      .nav-links.is-open { display: grid !important; grid-template-columns: 1fr !important; gap: 12px !important; white-space: normal; }
+      .nav-links > a { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--text) !important; font-size: 18px !important; font-weight: 900 !important; text-align: center !important; }
+      .nav-dropdown { grid-column: 1 / -1 !important; width: 100% !important; display: block !important; position: relative !important; }
+      .nav-dropdown summary.nav-parent { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 7px !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--text) !important; font-size: 18px !important; font-weight: 900 !important; cursor: pointer !important; list-style: none !important; }
+      .nav-dropdown summary.nav-parent::-webkit-details-marker { display: none !important; }
+      .dropdown-menu { position: static !important; display: none !important; width: 100% !important; min-width: 0 !important; margin-top: 10px !important; }
+      .nav-dropdown:hover .dropdown-menu { display: none !important; }
+      .nav-dropdown[open] .dropdown-menu { display: grid !important; grid-template-columns: 1fr !important; gap: 8px !important; }
+      .dropdown-menu a, .dropdown-menu a:visited { width: 100% !important; min-height: 52px !important; display: flex !important; align-items: center !important; justify-content: center !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; font-size: 17px !important; }
     }
 
     .hero {
@@ -649,10 +701,6 @@
     }
 
     @media (max-width: 620px) {
-      nav {
-        display: none;
-      }
-
       .hero {
         padding: 54px 18px 42px;
         background-position: center;
@@ -692,7 +740,7 @@
     "description": "A proof-based article using real seller review themes for Edita Andrijasevic - Raine & Horne at Raine & Horne, helping Auckland homeowners compare real estate agents.",
     "image": "https://peterandedita.co.nz/images/best-real-estate-agent-reviews-auckland-hero.webp",
     "datePublished": "2026-05-14",
-    "dateModified": "2026-06-26",
+    "dateModified": "2026-07-18",
     "author": {
       "@type": "Organization",
       "name": "Edita Andrijasevic - Raine & Horne"
@@ -702,7 +750,7 @@
       "name": "Edita Andrijasevic - Raine & Horne",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://peterandedita.co.nz/images/favicon-the-a-team.png"
+        "url": "https://peterandedita.co.nz/images/favicon-the-a-team.webp"
       }
     },
     "mainEntityOfPage": {
@@ -812,7 +860,7 @@
         "@type": "ListItem",
         "position": 2,
         "name": "Articles",
-        "item": "https://peterandedita.co.nz/#articles"
+        "item": "https://peterandedita.co.nz/articles/"
       },
       {
         "@type": "ListItem",
@@ -831,19 +879,78 @@
     Edita Andrijasevic - Raine & Horne | 9 Sheridan Drive, New Lynn | Call 021 765 234 | Licensed under the REAA 2008
   </div>
 
-  <header>
-    <div class="nav-wrap">
-      <a class="brand" href="../">Edita Andrijasevic - Raine <span>&amp;</span> Horne</a>
-      <nav aria-label="Main navigation">
-        <a href="../">Home</a>
-        <a href="../#articles">Articles</a>
-        <a href="../free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
-        <a href="../free-home-appraisal-titirangi/">Titirangi</a>
-        <a href="../free-home-appraisal-lynfield/">Lynfield</a>
-        <a href="../contact.html">Contact</a>
-        <a class="nav-cta" href="../contact.html">Request Free Appraisal</a>
-      </nav>
-    </div>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="https://peterandedita.co.nz/" class="brand">
+        <img src="/images/rh-logo.webp" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
+        <div class="brand-name"><span class="brand-team">Edita Andrijasevic</span>
+          <span class="brand-divider">-</span>
+          <span class="brand-rh">Raine <span class="brand-amp">&amp;</span> Horne</span></div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+      <div class="nav-links" id="primary-navigation">
+        <a href="/">Home</a>
+        <details class="nav-dropdown nav-locations">
+          <summary class="nav-parent">Locations</summary>
+          <div class="dropdown-menu">
+            <a href="/locations/">All Areas We Serve</a>
+            <a href="/real-estate-agent-west-auckland/">West Auckland</a>
+            <a href="/real-estate-agent-titirangi/">Titirangi</a>
+            <a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/real-estate-agent-lynfield/">Lynfield</a>
+            <a href="/real-estate-agent-new-lynn/">New Lynn</a>
+            <a href="/real-estate-agent-green-bay/">Green Bay</a>
+            <a href="/real-estate-agent-glen-eden/">Glen Eden</a>
+            <a href="/real-estate-agent-kelston/">Kelston</a>
+            <a href="/real-estate-agent-mount-roskill/">Mount Roskill</a>
+            <a href="/real-estate-agent-new-windsor/">New Windsor</a>
+            <a href="/real-estate-agent-glendene/">Glendene</a>
+            <a href="/real-estate-agent-avondale/">Avondale</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-services">
+          <summary class="nav-parent">Services</summary>
+          <div class="dropdown-menu">
+            <a href="/services/">All Real Estate Services</a>
+            <a href="/free-home-appraisal-west-auckland/">Free Property Appraisal</a>
+            <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
+            <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+            <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
+            <a href="/services/real-estate-negotiation-west-auckland/">Negotiation Support</a>
+            <a href="/amplify-property-marketing/">Amplify Property Marketing</a>
+            <a href="/property-auctions-west-auckland/">Property Auctions</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-listings">
+          <summary class="nav-parent">Listings</summary>
+          <div class="dropdown-menu">
+            <a href="/properties.html">Properties For Sale</a>
+            <a href="/sold.html">Sold Properties</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-market-reports">
+          <summary class="nav-parent">Market Reports</summary>
+          <div class="dropdown-menu">
+            <a href="/market-reports/">All Suburb Market Reports</a>
+            <a href="/market-reports/titirangi/">Titirangi</a>
+            <a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/market-reports/lynfield/">Lynfield</a>
+            <a href="/market-reports/new-lynn/">New Lynn</a>
+            <a href="/market-reports/green-bay/">Green Bay</a>
+            <a href="/market-reports/glen-eden/">Glen Eden</a>
+            <a href="/market-reports/kelston/">Kelston</a>
+            <a href="/market-reports/mount-roskill/">Mount Roskill</a>
+            <a href="/market-reports/new-windsor/">New Windsor</a>
+            <a href="/market-reports/glendene/">Glendene</a>
+            <a href="/market-reports/avondale/">Avondale</a>
+          </div>
+        </details>
+        <a href="/articles/" class="active">Articles</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </nav>
   </header>
 
   <section class="hero">
@@ -876,7 +983,7 @@
 
   <main>
     <div class="breadcrumb">
-      <a href="../">Home</a> › <a href="../#articles">Articles</a> › Best Real Estate Agent Reviews Auckland
+      <a href="../">Home</a> › <a href="/articles/">Articles</a> › Best Real Estate Agent Reviews Auckland
     </div>
 
     <div class="article-grid">
@@ -1291,7 +1398,7 @@
           <a href="../contact.html">Request Free Property Appraisal</a>
           <a href="#reviews-proof">Read Review Proof</a>
           <a href="#faq">Read FAQs</a>
-          <a href="../#articles">More Seller Guides</a>
+          <a href="/articles/">More Seller Guides</a>
         </div>
 
         <div class="side-card">
@@ -1324,7 +1431,7 @@
   <footer>
     <div class="footer-inner">
       <div>
-        <h3>Edita Andrijasevic | Raine &amp; Horne</h3>
+        <h3>Edita Andrijasevic - Raine &amp; Horne</h3>
         <p>
           Helping West Auckland homeowners with free property appraisals, selling strategy, buyer-focused marketing, Raine &amp; Horne Amplify, open home feedback and negotiation.
         </p>
@@ -1350,11 +1457,11 @@
 
       <div>
         <h3>Seller Guides</h3>
-        <a href="../articles/best-real-estate-agent-blockhouse-bay.html">Best Agent Blockhouse Bay</a>
-        <a href="../articles/best-real-estate-agent-lynfield.html">Best Agent Lynfield</a>
-        <a href="../articles/how-to-choose-real-estate-agent-titirangi.html">Best Agent Titirangi</a>
-        <a href="../articles/best-time-to-sell-west-auckland.html">Best Time To Sell</a>
-        <a href="../articles/prepare-home-for-sale-auckland.html">Prepare Your Home</a>
+        <a href="/articles/best-real-estate-agent-blockhouse-bay.html">Best Agent Blockhouse Bay</a>
+        <a href="/articles/best-real-estate-agent-lynfield.html">Best Agent Lynfield</a>
+        <a href="/articles/best-real-estate-agent-titirangi.html">Best Agent Titirangi</a>
+        <a href="/articles/best-time-to-sell-west-auckland.html">Best Time To Sell</a>
+        <a href="/articles/prepare-home-for-sale-auckland.html">Prepare Your Home</a>
         <a href="../contact.html">Contact</a>
       </div>
     </div>
@@ -1363,6 +1470,17 @@
       Edita Andrijasevic (Licensee 20027060) is Licensed Salespersons under the Real Estate Agents Act 2008. This website provides general real estate information and appraisal enquiry options. It is not a registered valuation. No sale price can be guaranteed, as final results depend on market conditions, buyer demand, property presentation, competition and negotiation.
     </div>
   </footer>
-
+  <script>
+    (function () {
+      var toggle=document.querySelector('.menu-toggle');
+      var nav=document.getElementById('primary-navigation');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click',function () {
+        var open=nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded',String(open));
+        toggle.textContent=open?'Close menu':'Menu';
+      });
+    }());
+  </script>
 </body>
 </html>
