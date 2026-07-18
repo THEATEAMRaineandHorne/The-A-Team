@@ -1,6 +1,4 @@
-
 <!DOCTYPE html>
-
 <html lang="en-NZ">
 <head>
 <meta charset="utf-8"/>
@@ -10,6 +8,9 @@
 <link href="https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-glen-eden.html" rel="canonical"/>
 <meta content="index, follow" name="robots"/>
 <link as="image" fetchpriority="high" href="/images/how-to-choose-real-estate-agent-glen-eden.jpg" rel="preload"/>
+<link as="image" href="/images/rh-logo.webp" rel="preload"/>
+<link href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin="" rel="preload"/>
+<link href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin="" rel="preload"/>
 <meta content="Edita Andrijasevic - Raine &amp; Horne" name="application-name"/>
 <meta content="Edita Andrijasevic - Raine &amp; Horne" name="apple-mobile-web-app-title"/>
 <meta content="Edita Andrijasevic - Raine &amp; Horne" property="og:site_name"/>
@@ -37,6 +38,17 @@
       --soft: #f7f7f5;
       --border: #e8e2d7;
       --muted: #555555;
+    }
+
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400; font-style: normal; font-display: optional;
+    }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/rainehorne.ttf') format('truetype');
+      font-weight: 400 900; font-style: normal; font-display: optional;
     }
 
     * {
@@ -90,6 +102,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 20px;
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
     }
 
     .brand {
@@ -127,13 +140,25 @@
       gap: 18px;
       font-size: 14px;
       font-weight: 900;
+      align-items: center;
     }
 
     .nav-links a:hover {
       color: var(--gold);
     }
 
-    
+    .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+    .nav-dropdown summary { list-style: none; cursor: pointer; }
+    .nav-dropdown summary::-webkit-details-marker { display: none; }
+    .nav-parent { font-size: 14px; font-weight: 900; color: var(--dark); display: inline-flex; align-items: center; gap: 6px; }
+    .nav-parent::after { content: '▾'; font-size: 11px; color: var(--gold); margin-top: 1px; }
+    .nav-parent:hover { color: var(--gold); }
+    .dropdown-menu { display: none; position: absolute; top: 38px; left: 0; min-width: 300px; background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 18px 45px rgba(0,0,0,.14); padding: 10px; z-index: 100; }
+    .nav-dropdown[open] .dropdown-menu, .nav-dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu a, .dropdown-menu a:visited { display: block; padding: 11px 13px; border-radius: 10px; color: var(--dark) !important; background: #fff !important; font-size: 14px; font-weight: 800; line-height: 1.25; white-space: normal; }
+    .dropdown-menu a:hover { background: var(--gold) !important; color: var(--dark) !important; }
+
+
     .hero {
       position: relative;
       min-height: 520px;
@@ -435,13 +460,19 @@
         gap: 10px;
       }
 
-      .nav-links a {
+      .nav-links a,
+      .nav-dropdown summary.nav-parent {
         background: #f6f2e8;
         border: 1px solid var(--border);
         border-radius: 999px;
         text-align: center;
         padding: 10px;
       }
+
+      .nav-dropdown { grid-column: 1 / -1; display: block; }
+      .dropdown-menu { position: static; min-width: 0; width: 100%; margin-top: 8px; }
+      .nav-dropdown:hover .dropdown-menu { display: none; }
+      .nav-dropdown[open] .dropdown-menu { display: grid; gap: 7px; }
 
       .hero {
         min-height: 480px;
@@ -504,7 +535,7 @@
         "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg",
         "https://peterandedita.co.nz/images/how-to-choose-real-estate-agent-glen-eden.jpg"
       ],
-      "logo": "https://peterandedita.co.nz/images/rh-logo.png",
+      "logo": "https://peterandedita.co.nz/images/rh-logo.webp",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "9 Sheridan Drive",
@@ -583,7 +614,7 @@
         "@id": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-glen-eden.html#webpage"
       },
       "datePublished": "2026-05-13T09:00:00+12:00",
-      "dateModified": "2026-07-11T15:00:00+12:00",
+      "dateModified": "2026-07-17T15:00:00+12:00",
       "inLanguage": "en-NZ"
     },
     {
@@ -608,7 +639,7 @@
         "@id": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-glen-eden.html#breadcrumb"
       },
       "datePublished": "2026-05-13T09:00:00+12:00",
-      "dateModified": "2026-07-11T15:00:00+12:00",
+      "dateModified": "2026-07-17T15:00:00+12:00",
       "inLanguage": "en-NZ"
     },
     {
@@ -700,16 +731,71 @@
 <header>
 <nav class="nav">
 <a class="brand" href="https://peterandedita.co.nz/">
-<img alt="Team Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.png" width="46"/>
+<img alt="Team Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.webp" width="46"/>
 <div class="brand-name">
 <span class="brand-team">Edita Andrijasevic</span>
-<span class="brand-divider">|</span>
+<span class="brand-divider">-</span>
 <span class="brand-rh">Raine <span class="brand-amp">&amp;</span> Horne</span>
 </div>
 </a>
 <div class="nav-links">
 <a href="https://peterandedita.co.nz/">Home</a>
-<a href="https://peterandedita.co.nz/free-home-appraisal-glen-eden/">Glen Eden Appraisal</a>
+<details class="nav-dropdown">
+<summary class="nav-parent">Locations</summary>
+<div class="dropdown-menu">
+<a href="/locations/">All Areas We Serve</a>
+<a href="/real-estate-agent-west-auckland/">West Auckland</a>
+<a href="/real-estate-agent-avondale/">Avondale</a>
+<a href="/real-estate-agent-titirangi/">Titirangi</a>
+<a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+<a href="/real-estate-agent-lynfield/">Lynfield</a>
+<a href="/real-estate-agent-new-lynn/">New Lynn</a>
+<a href="/real-estate-agent-green-bay/">Green Bay</a>
+<a href="/real-estate-agent-glen-eden/" style="font-weight:900; color:#9b6b00 !important;">Glen Eden</a>
+<a href="/real-estate-agent-kelston/">Kelston</a>
+<a href="/real-estate-agent-mount-roskill/">Mount Roskill</a>
+<a href="/real-estate-agent-new-windsor/">New Windsor</a>
+<a href="/real-estate-agent-glendene/">Glendene</a>
+</div>
+</details>
+<details class="nav-dropdown">
+<summary class="nav-parent">Services</summary>
+<div class="dropdown-menu">
+<a href="/services/">All Real Estate Services</a>
+<a href="/free-home-appraisal-glen-eden/" style="font-weight:900; color:#9b6b00 !important;">Free Property Appraisal</a>
+<a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
+<a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+<a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
+<a href="/services/real-estate-negotiation-west-auckland/">Negotiation Support</a>
+<a href="/amplify-property-marketing/">Amplify Property Marketing</a>
+<a href="/property-auctions-west-auckland/">Property Auctions</a>
+</div>
+</details>
+<details class="nav-dropdown">
+<summary class="nav-parent">Listings</summary>
+<div class="dropdown-menu">
+<a href="/properties.html">Properties For Sale</a>
+<a href="/sold.html">Sold Properties</a>
+</div>
+</details>
+<details class="nav-dropdown">
+<summary class="nav-parent">Market Reports</summary>
+<div class="dropdown-menu">
+<a href="/market-reports/">All Suburb Market Reports</a>
+<a href="/market-reports/avondale/">Avondale</a>
+<a href="/market-reports/titirangi/">Titirangi</a>
+<a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+<a href="/market-reports/lynfield/">Lynfield</a>
+<a href="/market-reports/new-lynn/">New Lynn</a>
+<a href="/market-reports/green-bay/">Green Bay</a>
+<a href="/market-reports/glen-eden/">Glen Eden</a>
+<a href="/market-reports/kelston/">Kelston</a>
+<a href="/market-reports/mount-roskill/">Mount Roskill</a>
+<a href="/market-reports/new-windsor/">New Windsor</a>
+<a href="/market-reports/glendene/">Glendene</a>
+</div>
+</details>
+<a href="/articles/">Articles</a>
 <a href="https://peterandedita.co.nz/#reviews">Reviews</a>
 <a href="https://peterandedita.co.nz/contact.html">Contact</a>
 </div>
@@ -999,7 +1085,7 @@
 </main>
 <footer>
 <p>
-<strong>Edita Andrijasevic | Raine &amp; Horne</strong><br/>
+<strong>Edita Andrijasevic - Raine &amp; Horne</strong><br/>
       Helping homeowners in Glen Eden, New Lynn, Green Bay, Titirangi and nearby West Auckland suburbs.
     </p>
 <p>
