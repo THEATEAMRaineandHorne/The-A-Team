@@ -1,6 +1,4 @@
-
 <!DOCTYPE html>
-
 <html lang="en-NZ">
 <head>
 <meta charset="utf-8"/>
@@ -478,12 +476,16 @@
 
       .nav-links {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 10px;
       }
 
       .nav-links a,
       .nav-dropdown summary.nav-parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         background: #f6f2e8;
         border: 1px solid var(--border);
         border-radius: 999px;
@@ -491,7 +493,7 @@
         padding: 10px;
       }
 
-      .nav-dropdown { grid-column: 1 / -1; display: block; }
+      .nav-dropdown { display: block; width: 100%; }
       .dropdown-menu { position: static; min-width: 0; width: 100%; margin-top: 8px; }
       .nav-dropdown:hover .dropdown-menu { display: none; }
       .nav-dropdown[open] .dropdown-menu { display: grid; gap: 7px; }
@@ -561,7 +563,7 @@
         display: none;
         grid-column: 1 / -1;
         width: 100%;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 10px;
       }
 
