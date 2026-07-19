@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
@@ -7,8 +8,8 @@
 <meta content="Free Titirangi home appraisal from Edita Andrijasevic, Raine &amp; Horne. Local pricing advice, buyer demand, presentation, marketing and selling strategy for Titirangi homeowners." name="description"/>
 <link href="https://peterandedita.co.nz/free-home-appraisal-titirangi/" rel="canonical"/>
 <meta content="index, follow" name="robots"/>
-<link href="https://peterandedita.co.nz/images/favicon-the-a-team.webp" rel="icon" sizes="96x96" type="image/webp"/>
-<link href="https://peterandedita.co.nz/images/favicon-the-a-team.webp" rel="shortcut icon" type="image/webp"/>
+<link href="https://peterandedita.co.nz/images/favicon-the-a-team.webp" rel="icon" sizes="96x96" type="image/png"/>
+<link href="https://peterandedita.co.nz/images/favicon-the-a-team.webp" rel="shortcut icon" type="image/png"/>
 <link href="https://peterandedita.co.nz/images/favicon-the-a-team.webp" rel="apple-touch-icon"/>
 <meta content="Free Home Appraisal Titirangi | Edita Andrijasevic - Raine &amp; Horne" property="og:title"/>
 <meta content="Thinking of selling in Titirangi? Get local appraisal advice, pricing strategy and buyer-focused marketing from Edita Andrijasevic, Raine &amp; Horne." property="og:description"/>
@@ -22,7 +23,20 @@
 <meta content="Local Titirangi appraisal advice, pricing strategy, buyer demand insight and AI-powered property marketing from Edita Andrijasevic." name="twitter:description"/>
 <meta content="https://peterandedita.co.nz/images/free-property-appraisal-titirangi.webp" name="twitter:image"/>
 <link as="image" fetchpriority="high" href="https://peterandedita.co.nz/images/free-property-appraisal-titirangi.webp" rel="preload"/>
+<link as="image" href="/images/rh-logo.webp" rel="preload"/>
+<link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
 <style>
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400; font-style: normal; font-display: optional;
+    }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/rainehorne.ttf') format('truetype');
+      font-weight: 400 900; font-style: normal; font-display: optional;
+    }
     :root {
       --gold: #ffb200;
       --dark: #202020;
@@ -44,10 +58,14 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
       color: var(--dark);
       background: var(--white);
       line-height: 1.6;
+    }
+
+    button, input, textarea, select {
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
     }
 
     a {
@@ -104,17 +122,43 @@
     }
 .nav-links {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       align-items: center;
       gap: 14px;
       font-size: 13.5px;
       font-weight: 800;
-      white-space: nowrap;
     }
+    .menu-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--gold);
+      color: var(--dark);
+      border: 2px solid var(--gold);
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-weight: 900;
+      font-size: 14px;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .menu-toggle:hover { background: var(--gold-dark); }
 
-    .nav-links a:hover {
+    .nav-links a:hover, .nav-links a.active {
       color: var(--gold);
     }
+
+    .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+    .nav-dropdown summary { list-style: none; cursor: pointer; }
+    .nav-dropdown summary::-webkit-details-marker { display: none; }
+    .nav-parent { font-size: 13.5px; font-weight: 800; color: var(--dark); display: inline-flex; align-items: center; gap: 6px; }
+    .nav-parent::after { content: "▾"; font-size: 11px; color: var(--gold); margin-top: 1px; }
+    .nav-parent:hover, .nav-parent.active { color: var(--gold); }
+    .dropdown-menu { display: none; position: absolute; top: 34px; left: 0; min-width: 300px; background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 18px 45px rgba(0,0,0,0.14); padding: 10px; z-index: 100; }
+    .nav-dropdown[open] .dropdown-menu, .nav-dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu a, .dropdown-menu a:visited { display: block; padding: 11px 13px; border-radius: 10px; color: var(--dark) !important; background: #fff !important; font-size: 14px; font-weight: 800; line-height: 1.25; white-space: normal; }
+    .dropdown-menu a:hover { background: var(--gold) !important; color: var(--dark) !important; }
 
     .hero {
       position: relative;
@@ -672,15 +716,19 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-links {
-        flex-wrap: wrap;
-        white-space: normal;
-      }
+      .nav { width: 100%; display: flex !important; flex-direction: row !important; align-items: center !important; gap: 14px; flex-wrap: wrap; justify-content: space-between; }
+      .brand { flex: 1; min-width: 0; margin-bottom: 0 !important; }
+      .menu-toggle { display: inline-flex !important; }
+      .nav-links { display: none; width: 100% !important; }
+      .nav-links.is-open { display: grid !important; grid-template-columns: 1fr !important; gap: 12px !important; white-space: normal; max-height: calc(100vh - 140px) !important; overflow-y: auto !important; -webkit-overflow-scrolling: touch !important; }
+      .nav-links > a { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; text-align: center !important; }
+      .nav-dropdown { grid-column: 1 / -1 !important; width: 100% !important; display: block !important; position: relative !important; }
+      .nav-dropdown summary.nav-parent { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 7px !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; cursor: pointer !important; list-style: none !important; }
+      .nav-dropdown summary.nav-parent::-webkit-details-marker { display: none !important; }
+      .dropdown-menu { position: static !important; display: none !important; width: 100% !important; min-width: 0 !important; margin-top: 10px !important; }
+      .nav-dropdown:hover .dropdown-menu { display: none !important; }
+      .nav-dropdown[open] .dropdown-menu { display: grid !important; grid-template-columns: 1fr !important; gap: 8px !important; }
+      .dropdown-menu a, .dropdown-menu a:visited { width: 100% !important; min-height: 52px !important; display: flex !important; align-items: center !important; justify-content: center !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; font-size: 17px !important; }
     }
 
     @media (max-width: 560px) {
@@ -716,8 +764,7 @@
       color: var(--gold) !important;
     }
 
-  </style><link href="/css/brand-font.css" rel="stylesheet"/>
-  
+  </style>
 
   <!-- TITIRANGI COMPLETE SCHEMA PACKAGE - START -->
 
@@ -766,7 +813,7 @@
       "url": "https://peterandedita.co.nz/free-home-appraisal-titirangi/",
       "name": "Free Home Appraisal Titirangi | Edita Andrijasevic - Raine & Horne",
       "description": "Free Titirangi home appraisal from Edita Andrijasevic, Raine & Horne. Local pricing advice, buyer demand, presentation, marketing and selling strategy for Titirangi homeowners.",
-      "dateModified": "2026-06-09",
+      "dateModified": "2026-07-18",
       "inLanguage": "en-NZ",
       "isPartOf": {
         "@id": "https://peterandedita.co.nz/#website"
@@ -898,29 +945,79 @@
 <header>
 <nav class="nav">
 <a class="brand" href="https://peterandedita.co.nz/">
-<img alt="Edita Andrijasevic Raine and Horne logo" height="46" src="https://peterandedita.co.nz/images/rh-logo.png" width="46"/>
+<img alt="Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.webp" width="46"/>
 
 
         <div class="brand-name"><span class="brand-team">Edita Andrijasevic</span>
-          <span class="brand-divider">|</span>
+          <span class="brand-divider">-</span>
           <span class="brand-rh">Raine <span class="brand-amp">&amp;</span> Horne</span></div>
       </a>
-<div class="nav-links">
-<a href="https://peterandedita.co.nz/">Home</a>
-<a href="#appraisal">Appraisal</a>
-<a href="/locations/">Locations</a>
-<a href="/services/">Services</a>
-<a href="/property-auctions-west-auckland/">Auctions</a>
-<a href="#about-team">About</a>
-<a href="#titirangi-market-advice">Titirangi Insight</a>
-<a href="#amplify">Amplify</a>
-<a href="#reviews">Reviews</a>
+<button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+      <div class="nav-links" id="primary-navigation">
+<a href="/">Home</a>
+<details class="nav-dropdown nav-locations">
+  <summary class="nav-parent">Locations</summary>
+  <div class="dropdown-menu">
+    <a href="/locations/">All Areas We Serve</a>
+    <a href="/real-estate-agent-west-auckland/">West Auckland</a>
+    <a href="/real-estate-agent-titirangi/" style="font-weight:900; color:#9b6b00 !important;">Titirangi</a>
+    <a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+    <a href="/real-estate-agent-lynfield/">Lynfield</a>
+    <a href="/real-estate-agent-new-lynn/">New Lynn</a>
+    <a href="/real-estate-agent-green-bay/">Green Bay</a>
+    <a href="/real-estate-agent-glen-eden/">Glen Eden</a>
+    <a href="/real-estate-agent-kelston/">Kelston</a>
+    <a href="/real-estate-agent-mount-roskill/">Mount Roskill</a>
+    <a href="/real-estate-agent-new-windsor/">New Windsor</a>
+    <a href="/real-estate-agent-glendene/">Glendene</a>
+    <a href="/real-estate-agent-avondale/">Avondale</a>
+  </div>
+</details>
+<details class="nav-dropdown nav-services">
+  <summary class="nav-parent active">Services</summary>
+  <div class="dropdown-menu">
+    <a href="/services/">All Real Estate Services</a>
+    <a href="/free-home-appraisal-titirangi/" style="font-weight:900; color:#9b6b00 !important;">Free Property Appraisal</a>
+    <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
+    <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+    <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
+    <a href="/services/real-estate-negotiation-west-auckland/">Negotiation Support</a>
+    <a href="/amplify-property-marketing/">Amplify Property Marketing</a>
+    <a href="/property-auctions-west-auckland/">Property Auctions</a>
+  </div>
+</details>
+<details class="nav-dropdown nav-listings">
+  <summary class="nav-parent">Listings</summary>
+  <div class="dropdown-menu">
+    <a href="/properties.html">Properties For Sale</a>
+    <a href="/sold.html">Sold Properties</a>
+  </div>
+</details>
+<details class="nav-dropdown nav-market-reports">
+  <summary class="nav-parent">Market Reports</summary>
+  <div class="dropdown-menu">
+    <a href="/market-reports/">All Suburb Market Reports</a>
+    <a href="/market-reports/titirangi/">Titirangi</a>
+    <a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+    <a href="/market-reports/lynfield/">Lynfield</a>
+    <a href="/market-reports/new-lynn/">New Lynn</a>
+    <a href="/market-reports/green-bay/">Green Bay</a>
+    <a href="/market-reports/glen-eden/">Glen Eden</a>
+    <a href="/market-reports/kelston/">Kelston</a>
+    <a href="/market-reports/mount-roskill/">Mount Roskill</a>
+    <a href="/market-reports/new-windsor/">New Windsor</a>
+    <a href="/market-reports/glendene/">Glendene</a>
+    <a href="/market-reports/avondale/">Avondale</a>
+  </div>
+</details>
+<a href="/articles/">Articles</a>
+<a href="/#reviews">Reviews</a>
 <a href="/contact.html">Contact</a>
 </div>
 </nav>
 </header>
 <div class="breadcrumb-bar">
-<a href="../">Home</a>
+<a href="/">Home</a>
 <span>›</span>
 <span>Free Home Appraisal Titirangi</span>
 </div>
@@ -1011,7 +1108,7 @@
 <button class="btn form-button" type="submit">Send My Titirangi Appraisal Request</button>
 <p class="small" style="color:#555555; margin:0;">
               Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.
-              <a href="../privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
+              <a href="/privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
 </p>
 </form>
 </div>
@@ -1071,7 +1168,7 @@
 <section class="local-team-section" id="about-team">
 <div class="local-team-wrap">
 <div class="local-team-image-card">
-<img alt="Edita Andrijasevic, local Raine and Horne real estate agent helping Titirangi homeowners" loading="lazy" src="https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg"/>
+<img alt="Edita Andrijasevic, local Raine and Horne real estate agent helping Titirangi homeowners" loading="lazy" src="https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg" width="900" height="1100"/>
 <p class="local-team-photo-note">
             Edita Andrijasevic - Raine &amp; Horne
           </p>
@@ -1176,7 +1273,7 @@
 <div>
 <div class="video-wrap video-placeholder" data-video-id="DkKp8I__4mI">
 <button aria-label="Play Raine and Horne Amplify video" class="video-play-button" type="button">
-<img alt="Raine and Horne Amplify AI property marketing video" loading="lazy" src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg"/>
+<img alt="Raine and Horne Amplify AI property marketing video" loading="lazy" src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg" width="1280" height="720"/>
 <span>▶</span>
 </button>
 </div>
@@ -1280,8 +1377,6 @@
 </p>
 </div>
 </section>
-
-
 <section class="highlight" id="titirangi-agent-guide">
 <div class="container">
 <div class="section-title">
@@ -1297,7 +1392,7 @@
         A practical guide for Titirangi homeowners comparing agents, appraisals, marketing strategy, buyer behaviour and negotiation.
       </p>
 <p style="margin-top:18px;">
-<a class="btn btn-primary" href="../articles/best-real-estate-agent-titirangi.html">Read Titirangi Agent Guide</a>
+<a class="btn btn-primary" href="/articles/best-real-estate-agent-titirangi.html">Read Titirangi Agent Guide</a>
 </p>
 </div>
 </div>
@@ -1313,21 +1408,21 @@
     </div>
 
     <div class="grid-3">
-      <a class="card" href="../articles/best-real-estate-agent-titirangi.html">
+      <a class="card" href="/articles/best-real-estate-agent-titirangi.html">
         <h3>Best Real Estate Agent Titirangi</h3>
         <p>
           Learn how to compare Titirangi agents based on pricing evidence, local knowledge, buyer follow-up, marketing and negotiation.
         </p>
       </a>
 
-      <a class="card" href="../articles/prepare-home-for-sale-auckland.html">
+      <a class="card" href="/articles/prepare-home-for-sale-auckland.html">
         <h3>Prepare Your Home For Sale</h3>
         <p>
           See what to improve before selling, where not to waste money, and how to make buyers feel more confident.
         </p>
       </a>
 
-      <a class="card" href="../articles/best-time-to-sell-west-auckland.html">
+      <a class="card" href="/articles/best-time-to-sell-west-auckland.html">
         <h3>Best Time To Sell In West Auckland</h3>
         <p>
           A practical guide to timing, seasonality, buyer demand, competition and preparation before launching.
@@ -1607,6 +1702,18 @@
         window.addEventListener('load', loadElfsight);
       }
     })();
+  </script>
+  <script>
+    (function () {
+      var toggle=document.querySelector('.menu-toggle');
+      var nav=document.getElementById('primary-navigation');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click',function () {
+        var open=nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded',String(open));
+        toggle.textContent=open?'Close menu':'Menu';
+      });
+    }());
   </script>
 </body>
 </html>
