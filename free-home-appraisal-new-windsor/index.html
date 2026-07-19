@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
@@ -10,24 +11,24 @@
   <link rel="canonical" href="https://peterandedita.co.nz/free-home-appraisal-new-windsor/">
   <meta name="robots" content="index, follow">
 
-  <link rel="icon" type="image/webp" sizes="96x96" href="https://peterandedita.co.nz/images/favicon-the-a-team.webp">
-  <link rel="shortcut icon" type="image/webp" href="https://peterandedita.co.nz/images/favicon-the-a-team.webp">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://peterandedita.co.nz/images/favicon-the-a-team.webp">
+  <link rel="shortcut icon" type="image/png" href="https://peterandedita.co.nz/images/favicon-the-a-team.webp">
   <link rel="apple-touch-icon" href="https://peterandedita.co.nz/images/favicon-the-a-team.webp">
 
   <meta property="og:title" content="Free Home Appraisal New Windsor | Edita Andrijasevic - Raine &amp; Horne">
   <meta property="og:description" content="Thinking of selling in New Windsor Auckland? Get local appraisal advice, pricing strategy and buyer-focused marketing from Edita Andrijasevic, Raine &amp; Horne.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://peterandedita.co.nz/free-home-appraisal-new-windsor/">
-  <meta property="og:image" content="https://peterandedita.co.nz/images/new-windsor-home-appraisal-1400.webp">
+  <meta property="og:image" content="https://peterandedita.co.nz/images/new-windsor-home-appraisal.jpg">
   <meta property="og:image:alt" content="Free home appraisal New Windsor Auckland from Edita Andrijasevic, Raine and Horne">
   <meta property="og:site_name" content="Edita Andrijasevic - Raine &amp; Horne">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Free Home Appraisal New Windsor | Edita Andrijasevic - Raine &amp; Horne">
   <meta name="twitter:description" content="Local New Windsor Auckland appraisal advice, pricing strategy, buyer demand insight and AI-powered property marketing from Edita Andrijasevic.">
-  <meta name="twitter:image" content="https://peterandedita.co.nz/images/new-windsor-home-appraisal-1400.webp">
+  <meta name="twitter:image" content="https://peterandedita.co.nz/images/new-windsor-home-appraisal.jpg">
 
-  <link rel="preload" as="image" href="https://peterandedita.co.nz/images/new-windsor-home-appraisal-1400.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="https://peterandedita.co.nz/images/new-windsor-home-appraisal.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="/images/rh-logo.webp">
   <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
@@ -130,6 +131,22 @@
       font-size: 13.5px;
       font-weight: 800;
     }
+    .menu-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--gold);
+      color: var(--dark);
+      border: 2px solid var(--gold);
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-weight: 900;
+      font-size: 14px;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .menu-toggle:hover { background: var(--gold-dark); }
 
     .nav-links a:hover, .nav-links a.active { color: var(--gold); }
 
@@ -674,9 +691,11 @@
       }
       .suburb-grid { grid-template-columns: repeat(2, 1fr); }
 
-      .nav { width: 100%; align-items: stretch !important; gap: 14px; flex-direction: column; }
-      .brand { width: 100%; }
-      .nav-links { width: 100% !important; display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px 16px !important; white-space: normal; }
+      .nav { width: 100%; display: flex !important; flex-direction: row !important; align-items: center !important; gap: 14px; flex-wrap: wrap; justify-content: space-between; }
+      .brand { flex: 1; min-width: 0; margin-bottom: 0 !important; }
+      .menu-toggle { display: inline-flex !important; }
+      .nav-links { display: none; width: 100% !important; }
+      .nav-links.is-open { display: grid !important; grid-template-columns: 1fr !important; gap: 12px !important; white-space: normal; max-height: calc(100vh - 140px) !important; overflow-y: auto !important; -webkit-overflow-scrolling: touch !important; }
       .nav-links > a { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; text-align: center !important; }
       .nav-dropdown { grid-column: 1 / -1 !important; width: 100% !important; display: block !important; position: relative !important; }
       .nav-dropdown summary.nav-parent { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 7px !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; cursor: pointer !important; list-style: none !important; }
@@ -765,7 +784,7 @@
       "url": "https://peterandedita.co.nz/free-home-appraisal-new-windsor/",
       "name": "Free Home Appraisal New Windsor | Edita Andrijasevic - Raine & Horne",
       "description": "Free New Windsor Auckland home appraisal from Edita Andrijasevic, Raine & Horne. Local pricing advice, buyer demand, presentation, marketing and selling strategy for New Windsor homeowners.",
-      "dateModified": "2026-07-17",
+      "dateModified": "2026-07-18",
       "inLanguage": "en-NZ",
       "isPartOf": {
         "@id": "https://peterandedita.co.nz/#website"
@@ -781,7 +800,7 @@
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://peterandedita.co.nz/images/new-windsor-home-appraisal-1400.webp"
+        "url": "https://peterandedita.co.nz/images/new-windsor-home-appraisal.jpg"
       },
       "publisher": {
         "@id": "https://peterandedita.co.nz/#realestateagent"
@@ -914,7 +933,8 @@
           <span class="brand-rh">Raine <span class="brand-amp">&amp;</span> Horne</span></div>
       </a>
 
-      <div class="nav-links">
+      <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+      <div class="nav-links" id="primary-navigation">
         <a href="/">Home</a>
         <details class="nav-dropdown nav-locations">
           <summary class="nav-parent">Locations</summary>
@@ -988,7 +1008,7 @@
 
     <section class="hero" id="appraisal">
       <img
-        src="/images/new-windsor-home-appraisal-1400.webp"
+        src="/images/new-windsor-home-appraisal.jpg"
         alt="Free home appraisal New Windsor Auckland and property selling advice from Edita Andrijasevic, Raine and Horne"
         class="hero-bg"
         width="1800"
@@ -1736,5 +1756,17 @@
     })();
   </script>
 
+  <script>
+    (function () {
+      var toggle=document.querySelector('.menu-toggle');
+      var nav=document.getElementById('primary-navigation');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click',function () {
+        var open=nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded',String(open));
+        toggle.textContent=open?'Close menu':'Menu';
+      });
+    }());
+  </script>
 </body>
 </html>
