@@ -2,7 +2,7 @@
 <html lang="en-NZ">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Free Home Appraisal West Auckland | Edita Andrijasevic - Raine &amp; Horne</title>
   <meta name="description" content="Free West Auckland home appraisal from Edita Andrijasevic, Raine &amp; Horne. Local pricing advice, buyer demand, presentation, marketing and selling strategy before you sell.">
@@ -13,9 +13,9 @@
   <meta name="apple-mobile-web-app-title" content="Edita Andrijasevic - Raine &amp; Horne">
 
   <link rel="icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-the-a-team.png">
-  <link rel="shortcut icon" type="image/png" href="/images/favicon-the-a-team.png">
-  <link rel="apple-touch-icon" href="/images/favicon-the-a-team.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-the-a-team.webp">
+  <link rel="shortcut icon" type="image/png" href="/images/favicon-the-a-team.webp">
+  <link rel="apple-touch-icon" href="/images/favicon-the-a-team.webp">
 
   <meta property="og:site_name" content="Edita Andrijasevic - Raine &amp; Horne">
   <meta property="og:title" content="Free Home Appraisal West Auckland | Edita Andrijasevic - Raine &amp; Horne">
@@ -32,10 +32,21 @@
   <meta name="twitter:image" content="https://peterandedita.co.nz/images/free-home-appraisal-west-auckland.webp">
 
   <link rel="preload" as="image" href="/images/free-home-appraisal-west-auckland.webp" fetchpriority="high">
-  <link rel="preload" as="image" href="/images/rh-logo.png">
-  <link rel="stylesheet" href="/css/brand-font.css">
+  <link rel="preload" as="image" href="/images/rh-logo.webp">
+  <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
 
   <style>
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400; font-style: normal; font-display: optional;
+    }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/rainehorne.ttf') format('truetype');
+      font-weight: 400 900; font-style: normal; font-display: optional;
+    }
     :root {
       --gold: #ffb200;
       --dark: #202020;
@@ -123,15 +134,41 @@
 
     .nav-links {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       align-items: center;
       gap: 14px;
       font-size: 13.5px;
       font-weight: 800;
-      white-space: nowrap;
     }
+    .menu-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--gold);
+      color: var(--dark);
+      border: 2px solid var(--gold);
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-weight: 900;
+      font-size: 14px;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .menu-toggle:hover { background: var(--gold-dark); }
 
     .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+
+    .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+    .nav-dropdown summary { list-style: none; cursor: pointer; }
+    .nav-dropdown summary::-webkit-details-marker { display: none; }
+    .nav-parent { font-size: 13.5px; font-weight: 800; color: var(--dark); display: inline-flex; align-items: center; gap: 6px; }
+    .nav-parent::after { content: "▾"; font-size: 11px; color: var(--gold); margin-top: 1px; }
+    .nav-parent:hover, .nav-parent.active { color: var(--gold); }
+    .dropdown-menu { display: none; position: absolute; top: 34px; left: 0; min-width: 300px; background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 18px 45px rgba(0,0,0,0.14); padding: 10px; z-index: 100; }
+    .nav-dropdown[open] .dropdown-menu, .nav-dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu a, .dropdown-menu a:visited { display: block; padding: 11px 13px; border-radius: 10px; color: var(--dark) !important; background: #fff !important; font-size: 14px; font-weight: 800; line-height: 1.25; white-space: normal; }
+    .dropdown-menu a:hover { background: var(--gold) !important; color: var(--dark) !important; }
 
     .breadcrumb-bar {
       max-width: 1220px;
@@ -158,21 +195,21 @@
     }
 
     .hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(1.08);
-}
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(1.08);
+    }
 
     .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.40) 46%, rgba(0,0,0,0.14) 100%),
-    linear-gradient(0deg, rgba(0,0,0,0.30), rgba(0,0,0,0.05));
-}
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.40) 46%, rgba(0,0,0,0.14) 100%),
+        linear-gradient(0deg, rgba(0,0,0,0.30), rgba(0,0,0,0.05));
+    }
 
     .hero-content {
       position: relative;
@@ -656,8 +693,20 @@
       .hero { min-height: auto; }
       .hero-proof, .local-team-grid { grid-template-columns: 1fr; }
       .suburb-grid { grid-template-columns: repeat(2, 1fr); }
-      .nav { flex-direction: column; align-items: flex-start; }
-      .nav-links { flex-wrap: wrap; white-space: normal; }
+
+      .nav { width: 100%; display: flex !important; flex-direction: row !important; align-items: center !important; gap: 14px; flex-wrap: wrap; justify-content: space-between; }
+      .brand { flex: 1; min-width: 0; margin-bottom: 0 !important; }
+      .menu-toggle { display: inline-flex !important; }
+      .nav-links { display: none; width: 100% !important; }
+      .nav-links.is-open { display: grid !important; grid-template-columns: 1fr !important; gap: 12px !important; white-space: normal; max-height: calc(100vh - 140px) !important; overflow-y: auto !important; -webkit-overflow-scrolling: touch !important; }
+      .nav-links > a { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; text-align: center !important; }
+      .nav-dropdown { grid-column: 1 / -1 !important; width: 100% !important; display: block !important; position: relative !important; }
+      .nav-dropdown summary.nav-parent { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 7px !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; cursor: pointer !important; list-style: none !important; }
+      .nav-dropdown summary.nav-parent::-webkit-details-marker { display: none !important; }
+      .dropdown-menu { position: static !important; display: none !important; width: 100% !important; min-width: 0 !important; margin-top: 10px !important; }
+      .nav-dropdown:hover .dropdown-menu { display: none !important; }
+      .nav-dropdown[open] .dropdown-menu { display: grid !important; grid-template-columns: 1fr !important; gap: 8px !important; }
+      .dropdown-menu a, .dropdown-menu a:visited { width: 100% !important; min-height: 52px !important; display: flex !important; align-items: center !important; justify-content: center !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; font-size: 17px !important; }
     }
 
     @media (max-width: 560px) {
@@ -668,88 +717,88 @@
       section { padding: 58px 18px; }
     }
     .amplify-card-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  align-items: stretch;
-}
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      align-items: stretch;
+    }
 
-.amplify-card-row .card {
-  padding: 20px;
-  min-height: 170px;
-}
+    .amplify-card-row .card {
+      padding: 20px;
+      min-height: 170px;
+    }
 
-.amplify-card-row .card h3 {
-  font-size: 20px;
-}
+    .amplify-card-row .card h3 {
+      font-size: 20px;
+    }
 
-.amplify-card-row .card p {
-  font-size: 15px;
-  line-height: 1.55;
-}
+    .amplify-card-row .card p {
+      font-size: 15px;
+      line-height: 1.55;
+    }
 
-@media (max-width: 760px) {
-  .amplify-card-row {
-    grid-template-columns: 1fr;
-  }
-}
+    @media (max-width: 760px) {
+      .amplify-card-row {
+        grid-template-columns: 1fr;
+      }
+    }
     .video-wrap {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 22px;
-  overflow: hidden;
-  box-shadow: 0 18px 55px rgba(0,0,0,0.22);
-  background: #000;
-}
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 18px 55px rgba(0,0,0,0.22);
+      background: #000;
+    }
 
-.video-wrap iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
 
-.video-placeholder {
-  background: #000;
-}
+    .video-placeholder {
+      background: #000;
+    }
 
-.video-play-button {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-  background: #000;
-  display: block;
-}
+    .video-play-button {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      background: #000;
+      display: block;
+    }
 
-.video-play-button img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  opacity: 0.88;
-}
+    .video-play-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      opacity: 0.88;
+    }
 
-.video-play-button span {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  transform: translate(-50%, -50%);
-  width: 74px;
-  height: 74px;
-  border-radius: 50%;
-  background: var(--gold);
-  color: var(--dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 34px;
-  font-weight: 900;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
-}
+    .video-play-button span {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      transform: translate(-50%, -50%);
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      font-weight: 900;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+    }
   </style>
 
   <script type="application/ld+json">
@@ -793,7 +842,7 @@
           "https://homes.co.nz/profile/raine-and-horne/blockhouse-bay-and-titirangi/edita-andrijasevic",
           "https://www.oneroof.co.nz/agent/edita-andrijasevic-90262",
           "https://www.trademe.co.nz/a/property/agent/Edita-Andrijasevic",
-        "https://www.hougarden.com/nz/real-estate-agent/edita-andrijasevic-92824",
+          "https://www.hougarden.com/nz/real-estate-agent/edita-andrijasevic-92824",
           "https://www.ratemyagent.co.nz/real-estate-agent/edita-andrijasevic-ad977/sales/overview",
           "https://www.realestate.co.nz/agent/261782/edita-andrijasevic"
         ]
@@ -804,6 +853,7 @@
         "url": "https://peterandedita.co.nz/free-home-appraisal-west-auckland/",
         "name": "Free Home Appraisal West Auckland | Edita Andrijasevic - Raine & Horne",
         "description": "Free West Auckland home appraisal from Edita Andrijasevic, Raine & Horne. Local pricing advice, buyer demand, presentation, marketing and selling strategy before you sell.",
+        "dateModified": "2026-07-18",
         "inLanguage": "en-NZ",
         "isPartOf": {
           "@id": "https://peterandedita.co.nz/#website"
@@ -930,7 +980,7 @@
   <header>
     <nav class="nav">
       <a href="https://peterandedita.co.nz/" class="brand">
-        <img src="/images/rh-logo.png" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
+        <img src="/images/rh-logo.webp" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
         <div class="brand-name">
           <span class="brand-team">Edita Andrijasevic</span>
           <span class="brand-divider">-</span>
@@ -938,16 +988,65 @@
         </div>
       </a>
 
-      <div class="nav-links">
+      <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+      <div class="nav-links" id="primary-navigation">
         <a href="/">Home</a>
-        <a href="#appraisal" class="active">Free Appraisal</a>
-        <a href="/locations/">Locations</a>
-        <a href="/property-auctions-west-auckland/">Auctions</a>
-        <a href="/properties.html">Properties</a>
-        <a href="/sold.html">Sold</a>
-        <a href="/amplify-property-marketing/">Amplify</a>
+        <details class="nav-dropdown nav-locations">
+          <summary class="nav-parent">Locations</summary>
+          <div class="dropdown-menu">
+            <a href="/locations/">All Areas We Serve</a>
+            <a href="/real-estate-agent-west-auckland/" style="font-weight:900; color:#9b6b00 !important;">West Auckland</a>
+            <a href="/real-estate-agent-titirangi/">Titirangi</a>
+            <a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/real-estate-agent-lynfield/">Lynfield</a>
+            <a href="/real-estate-agent-new-lynn/">New Lynn</a>
+            <a href="/real-estate-agent-green-bay/">Green Bay</a>
+            <a href="/real-estate-agent-glen-eden/">Glen Eden</a>
+            <a href="/real-estate-agent-kelston/">Kelston</a>
+            <a href="/real-estate-agent-mount-roskill/">Mount Roskill</a>
+            <a href="/real-estate-agent-new-windsor/">New Windsor</a>
+            <a href="/real-estate-agent-glendene/">Glendene</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-services">
+          <summary class="nav-parent active">Services</summary>
+          <div class="dropdown-menu">
+            <a href="/services/">All Real Estate Services</a>
+            <a href="/free-home-appraisal-west-auckland/" style="font-weight:900; color:#9b6b00 !important;">Free Property Appraisal</a>
+            <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
+            <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+            <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
+            <a href="/services/real-estate-negotiation-west-auckland/">Negotiation Support</a>
+            <a href="/amplify-property-marketing/">Amplify Property Marketing</a>
+            <a href="/property-auctions-west-auckland/">Property Auctions</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-listings">
+          <summary class="nav-parent">Listings</summary>
+          <div class="dropdown-menu">
+            <a href="/properties.html">Properties For Sale</a>
+            <a href="/sold.html">Sold Properties</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-market-reports">
+          <summary class="nav-parent">Market Reports</summary>
+          <div class="dropdown-menu">
+            <a href="/market-reports/">All Suburb Market Reports</a>
+            <a href="/market-reports/titirangi/">Titirangi</a>
+            <a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/market-reports/lynfield/">Lynfield</a>
+            <a href="/market-reports/new-lynn/">New Lynn</a>
+            <a href="/market-reports/green-bay/">Green Bay</a>
+            <a href="/market-reports/glen-eden/">Glen Eden</a>
+            <a href="/market-reports/kelston/">Kelston</a>
+            <a href="/market-reports/mount-roskill/">Mount Roskill</a>
+            <a href="/market-reports/new-windsor/">New Windsor</a>
+            <a href="/market-reports/glendene/">Glendene</a>
+            <a href="/market-reports/avondale/">Avondale</a>
+          </div>
+        </details>
         <a href="/articles/">Articles</a>
-        <a href="#reviews">Reviews</a>
+        <a href="/#reviews">Reviews</a>
         <a href="/contact.html">Contact</a>
       </div>
     </nav>
@@ -962,133 +1061,133 @@
   <main>
 
     <section class="hero" id="appraisal">
-  <img
-    src="/images/free-home-appraisal-west-auckland.webp"
-    alt="Free home appraisal in West Auckland with Edita Andrijasevic, Raine and Horne"
-    class="hero-bg"
-    width="1800"
-    height="1000"
-    loading="eager"
-    fetchpriority="high"
-    decoding="async">
+      <img
+        src="/images/free-home-appraisal-west-auckland.webp"
+        alt="Free home appraisal in West Auckland with Edita Andrijasevic, Raine and Horne"
+        class="hero-bg"
+        width="1800"
+        height="1000"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async">
 
-  <div class="hero-overlay"></div>
+      <div class="hero-overlay"></div>
 
-  <div class="hero-content">
-    <div>
-      <span class="eyebrow">Know Your Value Before You Sell</span>
+      <div class="hero-content">
+        <div>
+          <span class="eyebrow">Know Your Value Before You Sell</span>
 
-      <h1>Free Home Appraisal West Auckland</h1>
+          <h1>Free Home Appraisal West Auckland</h1>
 
-      <p class="hero-lead">
-        Thinking of selling, downsizing, refinancing or planning your next move? Get clear local guidance
-        on what your West Auckland property may be worth and how buyers are likely to see it.
-      </p>
+          <p class="hero-lead">
+            Thinking of selling, downsizing, refinancing or planning your next move? Get clear local guidance
+            on what your West Auckland property may be worth and how buyers are likely to see it.
+          </p>
 
-      <p class="hero-lead">
-        Edita Andrijasevic helps homeowners understand pricing, buyer demand, presentation, competition,
-        AI-powered marketing and the best selling strategy before going to market.
-      </p>
+          <p class="hero-lead">
+            Edita Andrijasevic helps homeowners understand pricing, buyer demand, presentation, competition,
+            AI-powered marketing and the best selling strategy before going to market.
+          </p>
 
-      <div class="hero-proof">
-        <div class="proof-card">
-          <strong>Licensed advice</strong>
-          <span>Edita Andrijasevic, Licensed Salesperson under the REAA 2008</span>
+          <div class="hero-proof">
+            <div class="proof-card">
+              <strong>Licensed advice</strong>
+              <span>Edita Andrijasevic, Licensed Salesperson under the REAA 2008</span>
+            </div>
+
+            <div class="proof-card">
+              <strong>5.0 Google rating</strong>
+              <span>trusted by local Auckland sellers and buyers</span>
+            </div>
+
+            <div class="proof-card">
+              <strong>Local + AI marketing</strong>
+              <span>West Auckland insight supported by Raine &amp; Horne Amplify</span>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#request-appraisal">Request Free Appraisal</a>
+            <a class="btn btn-secondary" href="tel:+6421765234">Call 021 765 234</a>
+          </div>
         </div>
 
-        <div class="proof-card">
-          <strong>5.0 Google rating</strong>
-          <span>trusted by local Auckland sellers and buyers</span>
-        </div>
+        <div class="hero-form" id="request-appraisal">
+          <h2>Request Your Free Home Appraisal</h2>
 
-        <div class="proof-card">
-          <strong>Local + AI marketing</strong>
-          <span>West Auckland insight supported by Raine &amp; Horne Amplify</span>
+          <p>
+            Send your details and we will help you understand your likely value, buyer demand and best selling strategy.
+          </p>
+
+          <form action="https://formspree.io/f/mdabnpgl" method="POST">
+            <input type="hidden" name="_subject" value="New West Auckland appraisal enquiry">
+
+            <label>
+              Name
+              <input name="name" type="text" required>
+            </label>
+
+            <label>
+              Phone
+              <input name="phone" type="tel" required>
+            </label>
+
+            <label>
+              Email
+              <input name="email" type="email" required>
+            </label>
+
+            <label>
+              Property address
+              <input name="property_address" type="text" required>
+            </label>
+
+            <label>
+              Suburb
+              <select name="suburb" required>
+                <option value="">Select suburb</option>
+                <option>Titirangi</option>
+                <option>Blockhouse Bay</option>
+                <option>Lynfield</option>
+                <option>New Lynn</option>
+                <option>Kelston</option>
+                <option>Green Bay</option>
+                <option>Glen Eden</option>
+                <option>Mount Roskill</option>
+                <option>New Windsor</option>
+                <option>Glendene</option>
+                <option>Avondale</option>
+                <option>Other West Auckland suburb</option>
+              </select>
+            </label>
+
+            <label>
+              When are you thinking of selling?
+              <select name="selling_timeframe">
+                <option value="">Select timeframe</option>
+                <option>Just curious</option>
+                <option>Within 3 months</option>
+                <option>Within 6 months</option>
+                <option>This year</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+
+            <label>
+              What would you like help with?
+              <textarea name="message" placeholder="Example: value, timing, preparation, buyer demand, marketing, downsizing, investment property, cross-lease, etc."></textarea>
+            </label>
+
+            <button class="btn form-button" type="submit">Send My Appraisal Request</button>
+
+            <p class="small" style="color:#555555; margin:0;">
+              Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.
+              <a href="/privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
+            </p>
+          </form>
         </div>
       </div>
-
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#request-appraisal">Request Free Appraisal</a>
-        <a class="btn btn-secondary" href="tel:+6421765234">Call 021 765 234</a>
-      </div>
-    </div>
-
-    <div class="hero-form" id="request-appraisal">
-      <h2>Request Your Free Home Appraisal</h2>
-
-      <p>
-        Send your details and we will help you understand your likely value, buyer demand and best selling strategy.
-      </p>
-
-      <form action="https://formspree.io/f/mdabnpgl" method="POST">
-        <input type="hidden" name="_subject" value="New West Auckland appraisal enquiry">
-
-        <label>
-          Name
-          <input name="name" type="text" required>
-        </label>
-
-        <label>
-          Phone
-          <input name="phone" type="tel" required>
-        </label>
-
-        <label>
-          Email
-          <input name="email" type="email" required>
-        </label>
-
-        <label>
-          Property address
-          <input name="property_address" type="text" required>
-        </label>
-
-        <label>
-          Suburb
-          <select name="suburb" required>
-            <option value="">Select suburb</option>
-            <option>Titirangi</option>
-            <option>Blockhouse Bay</option>
-            <option>Lynfield</option>
-            <option>New Lynn</option>
-            <option>Kelston</option>
-            <option>Green Bay</option>
-            <option>Glen Eden</option>
-            <option>Mount Roskill</option>
-            <option>New Windsor</option>
-            <option>Glendene</option>
-            <option>Avondale</option>
-            <option>Other West Auckland suburb</option>
-          </select>
-        </label>
-
-        <label>
-          When are you thinking of selling?
-          <select name="selling_timeframe">
-            <option value="">Select timeframe</option>
-            <option>Just curious</option>
-            <option>Within 3 months</option>
-            <option>Within 6 months</option>
-            <option>This year</option>
-            <option>Not sure yet</option>
-          </select>
-        </label>
-
-        <label>
-          What would you like help with?
-          <textarea name="message" placeholder="Example: value, timing, preparation, buyer demand, marketing, downsizing, investment property, cross-lease, etc."></textarea>
-        </label>
-
-        <button class="btn form-button" type="submit">Send My Appraisal Request</button>
-
-        <p class="small" style="color:#555555; margin:0;">
-          Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.
-          <a href="/privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
-        </p>
-      </form>
-    </div>
-  </div>
-</section>
+    </section>
 
     <section id="what-you-get">
       <div class="container">
@@ -1115,7 +1214,7 @@
     <section class="local-team-section" id="about-team">
       <div class="local-team-wrap">
         <div class="local-team-image-card">
-          <img src="/images/edita-andrijasevic-raine-and-horne.jpg" alt="Edita Andrijasevic, Raine and Horne real estate agent in West Auckland" loading="lazy" decoding="async">
+          <img src="/images/edita-andrijasevic-raine-and-horne.jpg" alt="Edita Andrijasevic, Raine and Horne real estate agent in West Auckland" loading="lazy" decoding="async" width="900" height="1100">
           <p class="local-team-photo-note">Edita Andrijasevic - Raine &amp; Horne</p>
           <p class="licence-line">Edita Andrijasevic — Licensed Salesperson (REAA 2008), Licensee 20027060</p>
         </div>
@@ -1154,28 +1253,26 @@
         </div>
       </div>
     </section>
-<section class="highlight" id="reviews">
-  <div class="container">
-    <div class="section-title">
-      <span class="eyebrow">Google Reviews</span>
-      <h2>What Local Auckland Sellers Say About Edita</h2>
-      <p>
-        Before choosing a real estate agent, it helps to see what other local sellers and buyers have experienced.
-        Read recent Google reviews for Edita Andrijasevic and her team at Raine &amp; Horne.
-      </p>
-    </div>
 
-    <div class="card">
-      
+    <section class="highlight" id="reviews">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Google Reviews</span>
+          <h2>What Local Auckland Sellers Say About Edita</h2>
+          <p>
+            Before choosing a real estate agent, it helps to see what other local sellers and buyers have experienced.
+            Read recent Google reviews for Edita Andrijasevic and her team at Raine &amp; Horne.
+          </p>
+        </div>
 
-      <div id="reviews-widget" class="elfsight-review-box" style="margin-top: 28px; min-height: 380px; overflow: visible;">
-        <!-- Elfsight Google Reviews | THE A-TEAM REVIEWS -->
-        <script src="https://elfsightcdn.com/platform.js" async></script>
-        <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
+        <div class="card">
+          <div id="reviews-widget" class="elfsight-review-box" style="margin-top: 28px; min-height: 380px; overflow: visible;">
+            <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
     <section class="highlight" id="why-local">
       <div class="container">
         <div class="section-title">
@@ -1196,107 +1293,111 @@
     </section>
 
     <section class="dark-section" id="amplify">
-  <div class="container">
-    <div class="grid-2">
+      <div class="container">
+        <div class="grid-2">
 
-      <div>
-        <span class="eyebrow">Raine &amp; Horne Amplify</span>
+          <div>
+            <span class="eyebrow">Raine &amp; Horne Amplify</span>
 
-        <h2>Smarter Marketing To Help Reach More Relevant Buyers</h2>
+            <h2>Smarter Marketing To Help Reach More Relevant Buyers</h2>
 
-        <p>
-          The best buyer may not be sitting on one property website waiting. Raine &amp; Horne Amplify
-          helps promote properties across key digital channels, supporting stronger visibility and more opportunity
-          to reach buyers who may be likely to engage with your home.
-        </p>
+            <p>
+              The best buyer may not be sitting on one property website waiting. Raine &amp; Horne Amplify
+              helps promote properties across key digital channels, supporting stronger visibility and more opportunity
+              to reach buyers who may be likely to engage with your home.
+            </p>
 
-        <p>
-          For West Auckland sellers, this matters because different homes attract different buyer groups:
-          first-home buyers, families, downsizers, investors, renovators, developers or lifestyle-focused buyers.
-        </p>
+            <p>
+              For West Auckland sellers, this matters because different homes attract different buyer groups:
+              first-home buyers, families, downsizers, investors, renovators, developers or lifestyle-focused buyers.
+            </p>
 
-        <div class="cta-row">
-          <a class="btn btn-primary" href="/amplify-property-marketing/">Learn More About Amplify</a>
-          <a class="btn btn-secondary" href="#request-appraisal">Ask About Marketing Strategy</a>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="/amplify-property-marketing/">Learn More About Amplify</a>
+              <a class="btn btn-secondary" href="#request-appraisal">Ask About Marketing Strategy</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="video-wrap video-placeholder" data-video-id="DkKp8I__4mI">
+              <button class="video-play-button" type="button" aria-label="Play Raine and Horne Amplify video">
+                <img
+                  src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg"
+                  alt="Raine and Horne Amplify AI property marketing video"
+                  loading="lazy"
+                  decoding="async"
+                  width="1280"
+                  height="720">
+                <span>▶</span>
+              </button>
+            </div>
+
+            <div style="margin-top:28px;">
+              <div class="amplify-card-row">
+                <div class="card">
+                  <h3>Better buyer targeting</h3>
+                  <p>Position your property for the buyer groups most likely to care about its strongest features.</p>
+                </div>
+
+                <div class="card">
+                  <h3>More than portals</h3>
+                  <p>Support your property campaign beyond standard property websites with wider digital visibility.</p>
+                </div>
+
+                <div class="card">
+                  <h3>Works with the right price</h3>
+                  <p>Marketing is strongest when combined with realistic pricing, strong presentation and buyer follow-up.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <div>
-        <div class="video-wrap video-placeholder" data-video-id="DkKp8I__4mI">
-          <button class="video-play-button" type="button" aria-label="Play Raine and Horne Amplify video">
-            <img
-              src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg"
-              alt="Raine and Horne Amplify AI property marketing video"
-              loading="lazy"
-              decoding="async">
-            <span>▶</span>
-          </button>
+    <section id="west-auckland-suburb-advice">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">West Auckland appraisal advice</span>
+          <h2>Local Advice For The Suburb Your Property Is Actually In</h2>
+          <p>
+            West Auckland is not one single market. A Titirangi home may be judged on privacy, sunlight,
+            bush setting and driveway access. A Blockhouse Bay or Lynfield home may be compared around
+            family convenience, school appeal, land, renovation potential and buyer competition. New Lynn,
+            Kelston, Glen Eden, Avondale, Green Bay, Mount Roskill, New Windsor and Glendene each attract
+            different buyer groups and different value expectations.
+          </p>
         </div>
 
-        <div style="margin-top:28px;">
-  <div class="amplify-card-row">
-            <div class="card">
-              <h3>Better buyer targeting</h3>
-              <p>Position your property for the buyer groups most likely to care about its strongest features.</p>
-            </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Better local pricing context</h3>
+            <p>
+              A strong appraisal looks at recent nearby sales, current competition, buyer demand and how
+              your property compares in the eyes of active buyers.
+            </p>
+          </div>
 
-            <div class="card">
-              <h3>More than portals</h3>
-              <p>Support your property campaign beyond standard property websites with wider digital visibility.</p>
-            </div>
+          <div class="card">
+            <h3>Suburb-specific buyer appeal</h3>
+            <p>
+              Different suburbs attract different buyers. The right appraisal should consider who is likely
+              to inspect, what they will value and what may hold them back.
+            </p>
+          </div>
 
-            <div class="card">
-              <h3>Works with the right price</h3>
-              <p>Marketing is strongest when combined with realistic pricing, strong presentation and buyer follow-up.</p>
-            </div>
+          <div class="card">
+            <h3>Clear selling strategy</h3>
+            <p>
+              Once we understand your property and location, we can discuss presentation, price positioning,
+              marketing, buyer follow-up and negotiation strategy.
+            </p>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-<section id="west-auckland-suburb-advice">
-  <div class="container">
-    <div class="section-title">
-      <span class="eyebrow">West Auckland appraisal advice</span>
-      <h2>Local Advice For The Suburb Your Property Is Actually In</h2>
-      <p>
-        West Auckland is not one single market. A Titirangi home may be judged on privacy, sunlight,
-        bush setting and driveway access. A Blockhouse Bay or Lynfield home may be compared around
-        family convenience, school appeal, land, renovation potential and buyer competition. New Lynn,
-        Kelston, Glen Eden, Avondale, Green Bay, Mount Roskill, New Windsor and Glendene each attract
-        different buyer groups and different value expectations.
-      </p>
-    </div>
-
-    <div class="grid-3">
-      <div class="card">
-        <h3>Better local pricing context</h3>
-        <p>
-          A strong appraisal looks at recent nearby sales, current competition, buyer demand and how
-          your property compares in the eyes of active buyers.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Suburb-specific buyer appeal</h3>
-        <p>
-          Different suburbs attract different buyers. The right appraisal should consider who is likely
-          to inspect, what they will value and what may hold them back.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Clear selling strategy</h3>
-        <p>
-          Once we understand your property and location, we can discuss presentation, price positioning,
-          marketing, buyer follow-up and negotiation strategy.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
     <section class="highlight" id="areas">
       <div class="container">
         <div class="section-title">
@@ -1434,45 +1535,91 @@
           </div>
 
           <div class="seo-footer-links">
-  <h3>Seller Guides</h3>
-  <a href="/free-home-appraisal-west-auckland/">Free Appraisal West Auckland</a>
-  <a href="/locations/">Areas We Serve</a>
-  <a href="/property-auctions-west-auckland/">Property Auctions</a>
-  <a href="/amplify-property-marketing/">Raine &amp; Horne Amplify</a>
-  <a href="/articles/best-time-to-sell-west-auckland.html">Best Time To Sell</a>
-  <a href="/articles/prepare-home-for-sale-auckland.html">Prepare Your Home</a>
-  <a href="/articles/best-real-estate-agent-reviews-auckland.html">Best Agent Reviews</a>
-  <a href="/articles/best-real-estate-agent-titirangi.html">Best Agent Titirangi</a>
-  <a href="/articles/best-real-estate-agent-blockhouse-bay.html">Best Agent Blockhouse Bay</a>
-  <a href="/articles/best-real-estate-agent-lynfield.html">Best Agent Lynfield</a>
-  <a href="/contact.html">Contact Edita</a>
-  <a href="/privacy-policy.html">Privacy Policy</a>
-</div>
+            <h3>Seller Guides</h3>
+            <a href="/free-home-appraisal-west-auckland/">Free Appraisal West Auckland</a>
+            <a href="/locations/">Areas We Serve</a>
+            <a href="/property-auctions-west-auckland/">Property Auctions</a>
+            <a href="/amplify-property-marketing/">Raine &amp; Horne Amplify</a>
+            <a href="/articles/best-time-to-sell-west-auckland.html">Best Time To Sell</a>
+            <a href="/articles/prepare-home-for-sale-auckland.html">Prepare Your Home</a>
+            <a href="/articles/best-real-estate-agent-reviews-auckland.html">Best Agent Reviews</a>
+            <a href="/articles/best-real-estate-agent-titirangi.html">Best Agent Titirangi</a>
+            <a href="/articles/best-real-estate-agent-blockhouse-bay.html">Best Agent Blockhouse Bay</a>
+            <a href="/articles/best-real-estate-agent-lynfield.html">Best Agent Lynfield</a>
+            <a href="/contact.html">Contact Edita</a>
+            <a href="/privacy-policy.html">Privacy Policy</a>
+          </div>
 
         </div>
       </div>
 
     </div>
   </footer>
-<script>
-  document.querySelectorAll('.video-placeholder').forEach(function (wrapper) {
-    const button = wrapper.querySelector('button');
-    const videoId = wrapper.getAttribute('data-video-id');
 
-    if (!button || !videoId) return;
+  <script>
+    document.querySelectorAll('.video-placeholder').forEach(function (wrapper) {
+      const button = wrapper.querySelector('button');
+      const videoId = wrapper.getAttribute('data-video-id');
 
-    button.addEventListener('click', function () {
-      const iframe = document.createElement('iframe');
-      iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
-      iframe.title = 'Raine & Horne Amplify AI Property Marketing';
-      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-      iframe.allowFullscreen = true;
-      iframe.loading = 'lazy';
+      if (!button || !videoId) return;
 
-      wrapper.innerHTML = '';
-      wrapper.appendChild(iframe);
+      button.addEventListener('click', function () {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+        iframe.title = 'Raine & Horne Amplify AI Property Marketing';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.loading = 'lazy';
+
+        wrapper.innerHTML = '';
+        wrapper.appendChild(iframe);
+      });
     });
-  });
-</script>
+  </script>
+
+  <script>
+    (function () {
+      const reviews = document.getElementById('reviews-widget');
+      let loaded = false;
+
+      function loadElfsight() {
+        if (loaded) return;
+        loaded = true;
+
+        const script = document.createElement('script');
+        script.src = 'https://elfsightcdn.com/platform.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+
+      if ('IntersectionObserver' in window && reviews) {
+        const observer = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) {
+            loadElfsight();
+            observer.disconnect();
+          }
+        }, {
+          rootMargin: '300px'
+        });
+
+        observer.observe(reviews);
+      } else {
+        window.addEventListener('load', loadElfsight);
+      }
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var toggle=document.querySelector('.menu-toggle');
+      var nav=document.getElementById('primary-navigation');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click',function () {
+        var open=nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded',String(open));
+        toggle.textContent=open?'Close menu':'Menu';
+      });
+    }());
+  </script>
 </body>
 </html>
