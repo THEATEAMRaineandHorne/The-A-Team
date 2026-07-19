@@ -410,7 +410,7 @@
       }
       .menu-toggle { display: inline-flex !important; }
       .nav-links { display: none; width: 100%; }
-      .nav-links.is-open { display: grid !important; grid-template-columns: 1fr !important; gap: 10px !important; }
+      .nav-links.is-open { display: grid !important; grid-template-columns: 1fr !important; gap: 10px !important;  max-height: calc(100vh - 140px) !important; overflow-y: auto !important; -webkit-overflow-scrolling: touch !important;}
       .nav-links > a {
         width: 100% !important;
         min-height: 52px !important;
@@ -510,7 +510,8 @@
   "about": {
     "@type": "RealEstateAgent",
     "@id": "https://peterandedita.co.nz/#realestateagent",
-    "name": "Edita Andrijasevic - Raine & Horne",
+    "priceRange": "$$",
+        "name": "Edita Andrijasevic - Raine & Horne",
     "url": "https://peterandedita.co.nz/",
     "image": "https://peterandedita.co.nz/images/west-auckland-real-estate-articles-edita-andrijasevic-raine-horne.webp",
     "telephone": "+6421765234",
