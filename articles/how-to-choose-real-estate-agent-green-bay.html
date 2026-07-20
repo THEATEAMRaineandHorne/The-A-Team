@@ -12,8 +12,8 @@
 <link href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin="" rel="preload"/>
 <link href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin="" rel="preload"/>
 <link href="/favicon.ico" rel="icon"/>
-<link href="/images/favicon-the-a-team.png" rel="icon" sizes="96x96" type="image/png"/>
-<link href="/images/favicon-the-a-team.png" rel="apple-touch-icon"/>
+<link href="/images/favicon-the-a-team.webp" rel="icon" sizes="96x96" type="image/webp"/>
+<link href="/images/favicon-the-a-team.webp" rel="apple-touch-icon"/>
 <meta content="Edita Andrijasevic - Raine &amp; Horne" property="og:site_name"/>
 <meta content="How to Choose a Green Bay Real Estate Agent | Checklist" property="og:title"/>
 <meta content="A practical checklist for comparing appraisal evidence, marketing, communication, follow-up and negotiation before appointing an agent." property="og:description"/>
@@ -117,7 +117,7 @@
       .brand { flex:1; }
       .menu-toggle { display:inline-flex; align-items:center; justify-content:center; }
       .nav-links { display:none; width:100%; grid-template-columns:1fr 1fr; gap:10px; }
-      .nav-links.is-open { display:grid; }
+      .nav-links.is-open { display:grid; max-height:calc(100vh - 140px) !important; overflow-y:auto !important; -webkit-overflow-scrolling:touch !important; }
       .nav-links > a, .nav-dropdown summary.nav-parent { min-height:52px; display:flex; align-items:center; justify-content:center; padding:12px; border:1px solid var(--border); border-radius:999px; background:#f5f0e6; font-size:16px; text-align:center; }
       .nav-dropdown { grid-column:1/-1; display:block; }
       .dropdown-menu { position:static; min-width:0; width:100%; margin-top:8px; }
