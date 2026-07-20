@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Free Property Appraisal Online Auckland | Edita Andrijasevic</title>
   <meta name="description" content="Request a free property appraisal online with Edita Andrijasevic, Raine &amp; Horne. Local Auckland pricing advice, buyer demand insight and selling strategy.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://peterandedita.co.nz/articles/free-property-appraisal-online.html">
-
   <meta property="og:title" content="Free Property Appraisal Online | Edita Andrijasevic - Raine &amp; Horne">
   <meta property="og:description" content="A smarter first step before selling. Get local Auckland property appraisal advice, buyer demand insight and selling strategy.">
   <meta property="og:type" content="article">
@@ -18,15 +16,15 @@
   <meta property="og:image:width" content="720">
   <meta property="og:image:height" content="520">
   <meta property="og:image:alt" content="Free property appraisal advice for Auckland homeowners">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Free Property Appraisal Online Auckland">
   <meta name="twitter:description" content="Local Auckland property appraisal advice, buyer demand insight and a clear selling strategy.">
   <meta name="twitter:image" content="https://peterandedita.co.nz/images/free-property-appraisal-online-auckland.webp">
-
   <meta name="theme-color" content="#4D4E50">
   <link rel="icon" href="/favicon.ico">
-
+  <link rel="icon" href="/images/favicon-the-a-team.webp" sizes="96x96" type="image/webp">
+  <link rel="apple-touch-icon" href="/images/favicon-the-a-team.webp">
+  <link rel="preload" href="/images/rh-logo.webp" as="image">
   <style>
     :root {
       --gold: #ffb200;
@@ -43,15 +41,12 @@
       --radius: 18px;
       --shadow: 0 14px 35px rgba(0,0,0,0.08);
     }
-
     * {
       box-sizing: border-box;
     }
-
     html {
       scroll-behavior: smooth;
     }
-
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -59,17 +54,14 @@
       background: var(--white);
       line-height: 1.65;
     }
-
     a {
       color: var(--charcoal);
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-
     a:hover {
       color: var(--gold-dark);
     }
-
     a:focus-visible,
     button:focus-visible,
     input:focus-visible,
@@ -79,7 +71,6 @@
       outline: 3px solid #005fcc;
       outline-offset: 3px;
     }
-
     .skip-link {
       position: fixed;
       left: 16px;
@@ -93,11 +84,9 @@
       text-decoration: none;
       transform: translateY(-180%);
     }
-
     .skip-link:focus {
       transform: translateY(0);
     }
-
     .sr-only {
       position: absolute !important;
       width: 1px !important;
@@ -109,13 +98,11 @@
       white-space: nowrap !important;
       border: 0 !important;
     }
-
     img {
       max-width: 100%;
       height: auto;
       display: block;
     }
-
     .top-bar {
       background: var(--charcoal);
       color: var(--white);
@@ -123,21 +110,18 @@
       padding: 9px 18px;
       text-align: center;
     }
-
     .top-bar a {
       color: var(--white);
       text-decoration: none;
       font-weight: 700;
     }
-
     header {
       background: var(--white);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
-      z-index: 20;
+      z-index: 50;
     }
-
     .nav {
       max-width: var(--max);
       margin: 0 auto;
@@ -147,46 +131,48 @@
       justify-content: space-between;
       gap: 20px;
     }
-
     .brand {
       font-weight: 800;
       color: var(--charcoal);
       font-size: 20px;
       text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
-
     .brand span {
       color: var(--gold-dark);
     }
-
     .nav-links {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 18px;
       margin: 0;
       padding: 0;
-      list-style: none;
       font-size: 15px;
     }
-
     .nav-links a {
       text-decoration: none;
       font-weight: 700;
+      color: var(--charcoal);
     }
-
-    .nav-cta {
-      background: var(--gold);
-      color: var(--dark) !important;
-      padding: 10px 15px;
-      border-radius: 999px;
-      box-shadow: 0 8px 20px rgba(255,178,0,0.26);
+    .nav-links a:hover, .nav-parent:hover {
+      color: var(--gold-dark);
     }
-
+    .nav-dropdown { position:relative; display:inline-flex; align-items:center; }
+    .nav-dropdown summary { list-style:none; cursor:pointer; }
+    .nav-dropdown summary::-webkit-details-marker { display:none; }
+    .nav-parent { font-size:15px; font-weight:700; display:inline-flex; align-items:center; gap:6px; color:var(--charcoal); }
+    .nav-parent::after { content:'▾'; font-size:11px; color:var(--gold-dark); }
+    .dropdown-menu { display:none; position:absolute; top:34px; left:0; min-width:300px; background:var(--white); border:1px solid var(--border); border-radius:16px; box-shadow:var(--shadow); padding:10px; z-index:100; }
+    .nav-dropdown[open] .dropdown-menu, .nav-dropdown:hover .dropdown-menu { display:block; }
+    .dropdown-menu a { display:block; padding:11px 13px; border-radius:10px; color:var(--dark) !important; background:var(--white) !important; font-size:14px; font-weight:700; line-height:1.25; text-decoration:none; }
+    .dropdown-menu a:hover { background:var(--gold) !important; color:var(--dark) !important; }
+    .menu-toggle { display:none; min-height:44px; padding:10px 18px; border:1px solid var(--border); border-radius:999px; background:var(--gold); color:var(--dark); font-weight:900; cursor:pointer; }
     .hero {
       background: linear-gradient(135deg, #fff7df 0%, #ffffff 48%, #f2efe7 100%);
       padding: 54px 20px 40px;
     }
-
     .hero-wrap {
       max-width: var(--max);
       margin: 0 auto;
@@ -195,7 +181,6 @@
       gap: 38px;
       align-items: center;
     }
-
     .eyebrow {
       color: var(--gold-dark);
       font-weight: 800;
@@ -204,7 +189,6 @@
       font-size: 13px;
       margin-bottom: 12px;
     }
-
     h1 {
       font-size: clamp(36px, 5vw, 58px);
       line-height: 1.05;
@@ -212,13 +196,11 @@
       color: var(--dark);
       letter-spacing: -0.04em;
     }
-
     .hero p {
       font-size: 20px;
       margin: 0 0 22px;
       color: #3d3d3d;
     }
-
     .hero-card {
       background: var(--white);
       border-radius: var(--radius);
@@ -226,12 +208,10 @@
       box-shadow: var(--shadow);
       border: 1px solid var(--border);
     }
-
     .hero-card img {
       border-radius: 14px;
       margin-bottom: 18px;
     }
-
     .trust-list {
       list-style: none;
       padding: 0;
@@ -241,21 +221,18 @@
       font-weight: 700;
       color: var(--charcoal);
     }
-
     .trust-list li::before {
       content: "✓";
       color: var(--gold-dark);
       font-weight: 900;
       margin-right: 8px;
     }
-
     .buttons {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       margin-top: 24px;
     }
-
     .button {
       display: inline-block;
       border-radius: 999px;
@@ -264,30 +241,25 @@
       text-decoration: none;
       border: 2px solid var(--charcoal);
     }
-
     .button.primary {
       background: var(--gold);
       color: var(--dark);
       border-color: var(--gold);
     }
-
     .button.secondary {
       background: var(--white);
       color: var(--charcoal);
     }
-
     .container {
       max-width: var(--max);
       margin: 0 auto;
       padding: 0 20px;
     }
-
     .breadcrumb {
       font-size: 14px;
       color: var(--muted);
       padding: 20px 0 0;
     }
-
     .breadcrumb ol {
       display: flex;
       flex-wrap: wrap;
@@ -296,18 +268,15 @@
       padding: 0;
       list-style: none;
     }
-
     .breadcrumb li:not(:last-child)::after {
       content: "›";
       margin-left: 7px;
       color: var(--muted);
     }
-
     .breadcrumb a {
       color: var(--muted);
       text-decoration: none;
     }
-
     .main-grid {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 340px;
@@ -317,11 +286,9 @@
       max-width: var(--max);
       margin: 0 auto;
     }
-
     article {
       min-width: 0;
     }
-
     article h2 {
       font-size: clamp(26px, 3vw, 36px);
       line-height: 1.2;
@@ -329,19 +296,16 @@
       color: var(--dark);
       letter-spacing: -0.025em;
     }
-
     article h3 {
       font-size: 22px;
       line-height: 1.25;
       margin: 28px 0 10px;
       color: var(--charcoal);
     }
-
     article p {
       font-size: 18px;
       margin: 0 0 18px;
     }
-
     .lead {
       font-size: 21px;
       color: #2e2e2e;
@@ -349,7 +313,6 @@
       padding-left: 18px;
       margin-bottom: 26px;
     }
-
     .note-box,
     .cta-box,
     .author-box {
@@ -359,27 +322,22 @@
       border: 1px solid var(--border);
       box-shadow: 0 10px 26px rgba(0,0,0,0.05);
     }
-
     .note-box {
       background: var(--soft);
     }
-
     .cta-box {
       background: var(--charcoal);
       color: var(--white);
     }
-
     .cta-box h2,
     .cta-box p {
       color: var(--white);
     }
-
     .cta-box .button.secondary {
       background: var(--white);
       color: var(--dark);
       border-color: var(--white);
     }
-
     .author-box {
       background: #fafafa;
       display: grid;
@@ -387,14 +345,12 @@
       gap: 20px;
       align-items: center;
     }
-
     .author-box img {
       border-radius: 50%;
       aspect-ratio: 1 / 1;
       object-fit: cover;
       background: #eee;
     }
-
     .comparison {
       width: 100%;
       border-collapse: collapse;
@@ -404,42 +360,36 @@
       border-radius: 14px;
       box-shadow: 0 8px 22px rgba(0,0,0,0.05);
     }
-
     .comparison th {
       background: var(--charcoal);
       color: var(--white);
       text-align: left;
       padding: 14px;
     }
-
     .comparison td {
       border: 1px solid var(--border);
       padding: 14px;
       vertical-align: top;
       background: var(--white);
     }
-
     .article-image {
       margin: 34px 0;
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow);
     }
-
     .article-image figcaption {
       background: #f4f1e8;
       color: var(--muted);
       padding: 12px 16px;
       font-size: 14px;
     }
-
     .internal-links {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 14px;
       margin: 24px 0;
     }
-
     .internal-links a {
       display: block;
       padding: 16px;
@@ -449,29 +399,24 @@
       font-weight: 800;
       text-decoration: none;
     }
-
     .faq {
       border-top: 1px solid var(--border);
       padding-top: 10px;
     }
-
     .faq details {
       border-bottom: 1px solid var(--border);
       padding: 18px 0;
     }
-
     .faq summary {
       cursor: pointer;
       font-weight: 800;
       color: var(--dark);
       font-size: 18px;
     }
-
     aside {
       position: sticky;
       top: 92px;
     }
-
     .side-card {
       background: var(--white);
       border: 1px solid var(--border);
@@ -480,37 +425,30 @@
       box-shadow: var(--shadow);
       margin-bottom: 20px;
     }
-
     .side-card h3 {
       margin-top: 0;
       color: var(--dark);
       line-height: 1.25;
     }
-
     .side-card p {
       margin-bottom: 16px;
     }
-
     .side-card form {
       display: grid;
       gap: 14px;
     }
-
     .form-field {
       display: grid;
       gap: 6px;
     }
-
     .form-field label {
       color: var(--dark);
       font-size: 14px;
       font-weight: 800;
     }
-
     .required {
       color: #8b0000;
     }
-
     input,
     select,
     textarea {
@@ -522,18 +460,15 @@
       font-family: inherit;
       background: #fff;
     }
-
     textarea {
       min-height: 110px;
       resize: vertical;
     }
-
     input:focus,
     select:focus,
     textarea:focus {
       border-color: #005fcc;
     }
-
     button {
       border: 2px solid var(--gold);
       cursor: pointer;
@@ -544,25 +479,21 @@
       font-weight: 900;
       font-size: 15px;
     }
-
     button:hover {
       background: #ffc340;
       border-color: #ffc340;
     }
-
     .small {
       color: var(--muted);
       font-size: 13px;
       line-height: 1.45;
     }
-
     footer {
       background: var(--charcoal);
       color: var(--white);
       padding: 40px 20px;
       margin-top: 40px;
     }
-
     footer .footer-inner {
       max-width: var(--max);
       margin: 0 auto;
@@ -570,58 +501,82 @@
       grid-template-columns: 1.2fr 0.8fr 0.8fr;
       gap: 28px;
     }
-
     footer a {
       color: var(--white);
       text-decoration: none;
     }
-
     footer h3 {
       margin-top: 0;
       color: var(--gold);
     }
-
     .footer-links {
       display: grid;
       gap: 8px;
     }
-
     @media (prefers-reduced-motion: reduce) {
       html {
         scroll-behavior: auto;
       }
     }
-
     @media (max-width: 900px) {
       .hero-wrap,
       .main-grid,
       footer .footer-inner {
         grid-template-columns: 1fr;
       }
-
       aside {
         position: static;
       }
-
       .nav {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .nav-links {
+        align-items: stretch;
         flex-wrap: wrap;
       }
-
+      .brand {
+        flex: 1;
+        white-space: normal;
+      }
+      .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .nav-links {
+        display: none;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        flex-wrap: nowrap;
+      }
+      .nav-links.is-open {
+        display: grid;
+        max-height: calc(100vh - 140px) !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+      .nav-links > a, .nav-dropdown summary.nav-parent {
+        min-height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: #f5f0e6;
+        font-size: 16px;
+        text-align: center;
+      }
+      .nav-dropdown { grid-column: 1/-1; display: block; }
+      .dropdown-menu { position: static; min-width: 0; width: 100%; margin-top: 8px; }
+      .nav-dropdown:hover .dropdown-menu { display: none; }
+      .nav-dropdown[open] .dropdown-menu { display: grid; gap: 7px; }
       .internal-links {
         grid-template-columns: 1fr;
       }
-
       .author-box {
         grid-template-columns: 1fr;
       }
     }
   </style>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -669,6 +624,8 @@
         "publisher": {
           "@id": "https://peterandedita.co.nz/#realestateagent"
         },
+        "datePublished": "2026-07-20T09:00:00+12:00",
+        "dateModified": "2026-07-20T09:00:00+12:00",
         "mainEntityOfPage": {
           "@id": "https://peterandedita.co.nz/articles/free-property-appraisal-online.html#webpage"
         }
@@ -680,6 +637,7 @@
         "url": "https://peterandedita.co.nz/",
         "telephone": "+6421765234",
         "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
+        "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "9 Sheridan Drive",
@@ -729,28 +687,78 @@
   }
   </script>
 </head>
-
 <body>
-
   <a class="skip-link" href="#main-content">Skip to main content</a>
-
   <section class="top-bar" aria-label="Contact information">
     Free Auckland property appraisal · Call <a href="tel:021765234">021&nbsp;765&nbsp;234</a> · Licensed under the REAA 2008
   </section>
-
   <header>
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="/" aria-label="Edita Andrijasevic, Raine and Horne home page">Edita Andrijasevic <span>| Raine &amp; Horne</span></a>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/articles/">Articles</a></li>
-        <li><a href="/amplify-property-marketing/">Amplify</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a class="nav-cta" href="#appraisal-form">Request Free Appraisal</a></li>
-      </ul>
+      <button aria-controls="primary-navigation" aria-expanded="false" class="menu-toggle" type="button">Menu</button>
+      <div class="nav-links" id="primary-navigation">
+        <a href="/">Home</a>
+        <details class="nav-dropdown nav-locations">
+          <summary class="nav-parent">Locations</summary>
+          <div class="dropdown-menu">
+            <a href="/locations/">All Areas We Serve</a>
+            <a href="/real-estate-agent-west-auckland/">West Auckland</a>
+            <a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/real-estate-agent-titirangi/">Titirangi</a>
+            <a href="/real-estate-agent-lynfield/">Lynfield</a>
+            <a href="/real-estate-agent-new-lynn/">New Lynn</a>
+            <a href="/real-estate-agent-green-bay/">Green Bay</a>
+            <a href="/real-estate-agent-glen-eden/">Glen Eden</a>
+            <a href="/real-estate-agent-kelston/">Kelston</a>
+            <a href="/real-estate-agent-mount-roskill/">Mount Roskill</a>
+            <a href="/real-estate-agent-new-windsor/">New Windsor</a>
+            <a href="/real-estate-agent-glendene/">Glendene</a>
+            <a href="/real-estate-agent-avondale/">Avondale</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-services">
+          <summary class="nav-parent">Services</summary>
+          <div class="dropdown-menu">
+            <a href="/services/">All Real Estate Services</a>
+            <a href="/free-home-appraisal-west-auckland/">Free Property Appraisal</a>
+            <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
+            <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+            <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
+            <a href="/services/real-estate-negotiation-support/">Negotiation Support</a>
+            <a href="/amplify-property-marketing/">Amplify Property Marketing</a>
+            <a href="/property-auctions-west-auckland/">Property Auctions</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-listings">
+          <summary class="nav-parent">Listings</summary>
+          <div class="dropdown-menu">
+            <a href="/properties.html">Properties For Sale</a>
+            <a href="/sold.html">Sold Properties</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-market-reports">
+          <summary class="nav-parent">Market Reports</summary>
+          <div class="dropdown-menu">
+            <a href="/market-reports/">All Suburb Market Reports</a>
+            <a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/market-reports/titirangi/">Titirangi</a>
+            <a href="/market-reports/lynfield/">Lynfield</a>
+            <a href="/market-reports/new-lynn/">New Lynn</a>
+            <a href="/market-reports/green-bay/">Green Bay</a>
+            <a href="/market-reports/glen-eden/">Glen Eden</a>
+            <a href="/market-reports/kelston/">Kelston</a>
+            <a href="/market-reports/mount-roskill/">Mount Roskill</a>
+            <a href="/market-reports/new-windsor/">New Windsor</a>
+            <a href="/market-reports/glendene/">Glendene</a>
+            <a href="/market-reports/avondale/">Avondale</a>
+          </div>
+        </details>
+        <a href="/articles/">Articles</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="/contact.html">Contact</a>
+      </div>
     </nav>
   </header>
-
   <main id="main-content">
     <section class="hero">
       <div class="hero-wrap">
@@ -758,13 +766,11 @@
           <div class="eyebrow">Online appraisal advice for Auckland homeowners</div>
           <h1>Free Property Appraisal Online</h1>
           <p>A smarter first step before selling your Auckland home — with local pricing advice, buyer demand insight and a clear selling strategy.</p>
-
           <div class="buttons">
             <a class="button primary" href="#appraisal-form">Request Free Online Appraisal</a>
             <a class="button secondary" href="tel:021765234">Call&nbsp;Edita</a>
           </div>
         </div>
-
         <div class="hero-card">
           <img
             src="/images/free-property-appraisal-online-auckland.webp"
@@ -781,7 +787,6 @@
         </div>
       </div>
     </section>
-
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol>
@@ -791,58 +796,43 @@
         </ol>
       </nav>
     </div>
-
     <div class="main-grid">
       <article>
-
         <p class="lead">
           Yes, you can start with a free property appraisal online. But the most useful appraisal is not just a computer estimate. It is local advice that helps you understand what buyers may actually pay, what could hold them back, and what you can do before selling.
         </p>
-
         <p>
           Most homeowners begin with one quiet question: <strong>“What could my property be worth in today’s market?”</strong>
         </p>
-
         <p>
           Online estimates can be helpful for curiosity. They may look at past sales, property data and broad market movements. But they cannot walk through your home, feel the light in the living room, notice the driveway, understand the floor plan or judge how buyers may react at an open home.
         </p>
-
         <p>
           That is where a <strong>free property appraisal online</strong> becomes a better first step. You can send your property details online and receive practical advice from a local real estate professional who understands how Auckland buyers compare homes.
         </p>
-
         <div class="note-box">
           <strong>Quick answer:</strong> An online estimate gives you a rough number. A proper online appraisal request gives you local pricing advice, comparable sales, buyer-demand insight and a selling strategy tailored to your property.
         </div>
-
         <h2>What is a free property appraisal online?</h2>
-
         <p>
           A free property appraisal online is a simple way to start the appraisal process through a website form, email or online enquiry.
         </p>
-
         <p>
           Instead of relying only on an automated number, you share key property details such as the address, property type, bedroom and bathroom count, condition, improvements, selling timeframe and anything unusual buyers may notice.
         </p>
-
         <p>
           From there, a local agent can look at your property in context. That context matters because two homes can look similar online but perform very differently in the real market.
         </p>
-
         <p>
           One home may have better sun, easier parking, stronger street appeal or a more practical floor plan. Another may look attractive in photos but create buyer hesitation around access, maintenance, title, privacy, layout, outdoor usability or presentation.
         </p>
-
         <p>
           A useful appraisal does not only ask, <strong>“What did similar homes sell for?”</strong> It also asks, <strong>“How will real buyers compare this home against everything else available right now?”</strong>
         </p>
-
         <h2>Online estimate vs online appraisal</h2>
-
         <p>
           Many homeowners search online because they want a quick number. That is completely understandable. But there is a big difference between an online property estimate and an online appraisal request.
         </p>
-
         <table class="comparison">
           <caption class="sr-only">Comparison of an automated online property estimate with an online appraisal from a local real estate agent</caption>
           <thead>
@@ -870,15 +860,12 @@
             </tr>
           </tbody>
         </table>
-
         <p>
           The simplest way to think about it is this:
         </p>
-
         <p>
           <strong>An online estimate looks at data. A proper appraisal looks at data plus buyer behaviour.</strong>
         </p>
-
         <figure class="article-image">
           <img
             src="/images/online-property-appraisal-checklist.webp"
@@ -888,51 +875,38 @@
             alt="Online property appraisal advice using local sales and buyer demand">
           <figcaption>A useful appraisal should consider recent sales, current competition, buyer demand and the way your home is likely to be received.</figcaption>
         </figure>
-
         <h2>Why online does not mean generic</h2>
-
         <p>
           A strong online appraisal should not feel like a copy-and-paste reply. It should help you understand the real selling picture around your property.
         </p>
-
         <p>
           In suburbs like <a href="/free-home-appraisal-titirangi/">Titirangi</a>, an online estimate may miss driveway access, bush outlook, privacy, maintenance, sunlight and the emotional appeal of the setting.
         </p>
-
         <p>
           In <a href="/free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>, buyers may place more weight on family layout, parking, school appeal, section usability and convenience.
         </p>
-
         <p>
           In Lynfield, New Lynn, Green Bay, Glen Eden, Mount Roskill, New Windsor and Avondale, buyers may compare homes differently again depending on property type, land, renovation level, transport access and current competing listings.
         </p>
-
         <p>
           That is why local knowledge matters. Buyers do not inspect spreadsheets. They inspect homes. They notice how a property feels, how easy it is to live in, and whether it gives them confidence.
         </p>
-
         <h2>The mistake many sellers make before requesting an appraisal</h2>
-
         <p>
           One common mistake is waiting too long.
         </p>
-
         <p>
           Some homeowners ask for an appraisal only when they are almost ready to list. By then, they may have already spent money on the wrong improvements, chosen the wrong timing or formed price expectations around an online estimate that does not reflect the current buyer mood.
         </p>
-
         <p>
           A better approach is to ask earlier.
         </p>
-
         <p>
           Even if you are not selling for three, six or twelve months, an appraisal can help you make smarter decisions. You may discover that small presentation changes could make a big difference. You may also learn that some improvements are not worth doing before selling.
         </p>
-
         <p>
           If you are still deciding whether to sell now or wait, this guide may also help: <a href="/articles/should-i-sell-my-house-now-or-wait-auckland.html">Should I sell my house now or wait?</a>
         </p>
-
         <div class="cta-box">
           <h2>Want a clearer idea of your property’s position?</h2>
           <p>Send your details online and receive local appraisal advice for your Auckland property. No pressure. No obligation.</p>
@@ -941,17 +915,13 @@
             <a class="button secondary" href="/contact.html">Contact Edita</a>
           </div>
         </div>
-
         <h2>What makes a property appraisal more useful?</h2>
-
         <p>
           No appraisal can guarantee the final sale price. The market decides that when real buyers respond.
         </p>
-
         <p>
           But a better appraisal should consider more than recent sales. It should look at:
         </p>
-
         <ul>
           <li>recent local comparable sales</li>
           <li>current competing listings</li>
@@ -964,46 +934,35 @@
           <li>market timing and pricing strategy</li>
           <li>marketing options, including digital exposure</li>
         </ul>
-
         <p>
           This is why the highest appraisal is not always the best appraisal. The best appraisal is the one that helps you make the best decision.
         </p>
-
         <p>
           An inflated price can create problems later: low enquiry, longer days on market, price reductions and weaker negotiation power. Clear, evidence-based advice helps you go to market with more confidence.
         </p>
-
         <h2>Can a free online property appraisal replace an in-person visit?</h2>
-
         <p>
           It can be a very good first step, but it should not always be the final step.
         </p>
-
         <p>
           If you are only curious or planning ahead, an online appraisal request may be enough to start the conversation.
         </p>
-
         <p>
           But if you are seriously thinking of selling, an in-person visit is usually better. That is when your agent can properly assess presentation, flow, condition, light, access, privacy, maintenance and buyer emotion.
         </p>
-
         <p>
           A good process is:
         </p>
-
         <ol>
           <li>Start with a free online appraisal request.</li>
           <li>Get an initial sense of value, demand and next steps.</li>
           <li>Arrange a property visit if you want more accurate selling advice.</li>
           <li>Decide whether to sell now, prepare first or wait.</li>
         </ol>
-
         <h2>Helpful seller resources</h2>
-
         <p>
           These pages may help depending on where your property is and what stage you are at:
         </p>
-
         <div class="internal-links">
           <a href="/free-home-appraisal-titirangi/">Free Home Appraisal Titirangi</a>
           <a href="/free-home-appraisal-blockhouse-bay/">Free Property Appraisal Blockhouse Bay</a>
@@ -1012,21 +971,16 @@
           <a href="/articles/prepare-home-for-sale-auckland.html">How To Prepare Your Home For Sale</a>
           <a href="/amplify-property-marketing/">Raine &amp; Horne Amplify Marketing</a>
         </div>
-
         <h2>What you receive when you request a free appraisal</h2>
-
         <p>
           When you request a free property appraisal online with Edita Andrijasevic from Raine &amp; Horne, the goal is not just to give you a number. The goal is to help you understand your position.
         </p>
-
         <p>
           Depending on your property and timeframe, you may receive guidance around likely selling range, comparable sales, buyer demand, competing properties, presentation improvements, pricing strategy, marketing options and whether it may be better to sell now or prepare first.
         </p>
-
         <p>
           This can be especially useful if you are comparing selling versus renting, considering renovations, helping family make a property decision or trying to understand whether the current market can meet your expectations.
         </p>
-
         <div class="author-box">
           <img
             src="/images/edita-andrijasevic-raine-and-horne.webp"
@@ -1044,36 +998,29 @@
             </p>
           </div>
         </div>
-
         <h2>Free property appraisal online FAQs</h2>
-
         <div class="faq">
           <details>
             <summary>Is a free property appraisal online really free?</summary>
             <p>Yes. You can request free appraisal advice online. There is no pressure and no obligation to sell.</p>
           </details>
-
           <details>
             <summary>Is an online appraisal the same as a registered valuation?</summary>
             <p>No. A real estate appraisal is market advice from a real estate professional. It is not a registered valuation.</p>
           </details>
-
           <details>
             <summary>How accurate is an online property appraisal?</summary>
             <p>It depends on the information available. Online appraisal advice can be a helpful first step, but an in-person visit usually improves accuracy because condition, layout, access, sunlight, presentation and buyer emotion are easier to assess in person.</p>
           </details>
-
           <details>
             <summary>What information should I provide?</summary>
             <p>The property address, property type, number of bedrooms and bathrooms, condition, improvements, selling timeframe and any special features or concerns are helpful.</p>
           </details>
-
           <details>
             <summary>Can I request an appraisal if I am not ready to sell?</summary>
             <p>Yes. Asking early can help you make better decisions about timing, preparation and whether any improvements are worth doing before selling.</p>
           </details>
         </div>
-
         <div class="cta-box" id="request">
           <h2>Request your free property appraisal online</h2>
           <p>
@@ -1084,37 +1031,29 @@
             <a class="button secondary" href="tel:021765234">Call&nbsp;021&nbsp;765&nbsp;234</a>
           </div>
         </div>
-
       </article>
-
       <aside aria-label="Property appraisal form and related links">
         <div class="side-card" id="appraisal-form">
           <h3 id="appraisal-form-title">Request Your Free Online Appraisal</h3>
           <p id="appraisal-form-description">Tell us a little about your property and we will help you understand your likely value, buyer demand and next step.</p>
-
           <form action="https://formspree.io/f/mdabnpgl" method="POST" aria-labelledby="appraisal-form-title" aria-describedby="appraisal-form-description appraisal-privacy-note">
             <p class="small">Fields marked with <span class="required" aria-hidden="true">*</span> are required.</p>
-
             <div class="form-field">
               <label for="appraisal-name">Name <span class="required" aria-hidden="true">*</span></label>
               <input id="appraisal-name" type="text" name="name" autocomplete="name" required>
             </div>
-
             <div class="form-field">
               <label for="appraisal-phone">Phone <span class="required" aria-hidden="true">*</span></label>
               <input id="appraisal-phone" type="tel" name="phone" autocomplete="tel" inputmode="tel" required>
             </div>
-
             <div class="form-field">
               <label for="appraisal-email">Email <span class="required" aria-hidden="true">*</span></label>
               <input id="appraisal-email" type="email" name="email" autocomplete="email" inputmode="email" required>
             </div>
-
             <div class="form-field">
               <label for="appraisal-address">Property address</label>
               <input id="appraisal-address" type="text" name="property-address" autocomplete="address-line1">
             </div>
-
             <div class="form-field">
               <label for="appraisal-suburb">Suburb</label>
               <select id="appraisal-suburb" name="suburb" autocomplete="address-level2">
@@ -1131,7 +1070,6 @@
                 <option>Other Auckland suburb</option>
               </select>
             </div>
-
             <div class="form-field">
               <label for="appraisal-timeframe">When are you thinking of selling?</label>
               <select id="appraisal-timeframe" name="timeframe">
@@ -1143,17 +1081,14 @@
                 <option>Not sure yet</option>
               </select>
             </div>
-
             <div class="form-field">
               <label for="appraisal-message">What would you like help with?</label>
               <textarea id="appraisal-message" name="message"></textarea>
             </div>
-
             <button type="submit">Send My Appraisal Request</button>
             <p class="small" id="appraisal-privacy-note">Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.</p>
           </form>
         </div>
-
         <div class="side-card">
           <h3>Popular appraisal pages</h3>
           <p><a href="/free-home-appraisal-titirangi/">Titirangi appraisal</a></p>
@@ -1161,7 +1096,6 @@
           <p><a href="/free-home-appraisal-new-lynn/">New Lynn appraisal</a></p>
           <p><a href="/free-home-appraisal-mount-roskill/">Mount Roskill appraisal</a></p>
         </div>
-
         <div class="side-card">
           <h3>Need help now?</h3>
           <p><strong>Call:</strong> <a href="tel:021765234">021&nbsp;765&nbsp;234</a></p>
@@ -1170,7 +1104,6 @@
       </aside>
     </div>
   </main>
-
   <footer>
     <div class="footer-inner">
       <div>
@@ -1178,7 +1111,6 @@
         <p>Helping Auckland homeowners with free property appraisals, selling strategy, buyer-focused marketing, Raine &amp; Horne Amplify and negotiation.</p>
         <p>Edita Andrijasevic is a Licensed Salesperson under the Real Estate Agents Act 2008.</p>
       </div>
-
       <div>
         <h3>Free Appraisals</h3>
         <div class="footer-links">
@@ -1188,7 +1120,6 @@
           <a href="/free-home-appraisal-mount-roskill/">Mount Roskill</a>
         </div>
       </div>
-
       <div>
         <h3>Contact</h3>
         <div class="footer-links">
@@ -1200,6 +1131,17 @@
       </div>
     </div>
   </footer>
-
+  <script>
+    (function () {
+      var toggle=document.querySelector('.menu-toggle');
+      var nav=document.getElementById('primary-navigation');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click',function () {
+        var open=nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded',String(open));
+        toggle.textContent=open?'Close menu':'Menu';
+      });
+    }());
+  </script>
 </body>
 </html>
