@@ -3,21 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>How To Prepare Your Home For A Stronger Sale Price | Edita Andrijasevic - Raine &amp; Horne</title>
-
 <meta name="description" content="How to prepare your home for a stronger sale price in Auckland. A practical seller guide covering presentation, repairs, staging, documents, marketing and buyer confidence.">
-
 <link rel="canonical" href="https://peterandedita.co.nz/articles/prepare-home-for-sale-auckland.html">
 <meta property="og:site_name" content="Edita Andrijasevic - Raine &amp; Horne">
 <meta property="og:title" content="How To Prepare Your Home For A Stronger Sale Price | Edita Andrijasevic - Raine &amp; Horne">
 <meta property="og:description" content="How to prepare your home for a stronger sale price in Auckland — a practical seller guide.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://peterandedita.co.nz/articles/prepare-home-for-sale-auckland.html">
-
+<link rel="preload" href="/images/rh-logo.webp" as="image">
+<link href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" rel="preload" crossorigin>
+<link href="/fonts/rainehorne.ttf" as="font" type="font/ttf" rel="preload" crossorigin>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/images/favicon-the-a-team.webp" sizes="96x96" type="image/png">
+<link rel="apple-touch-icon" href="/images/favicon-the-a-team.webp">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-
 :root{
   --gold:#b08a42;
   --gold-dark:#8f6d2e;
@@ -27,50 +28,65 @@
   --white:#fff;
   --muted:#555;
 }
-
+@font-face {
+  font-family: 'RaineHorne';
+  src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+  font-weight: 400; font-style: normal; font-display: optional;
+}
+@font-face {
+  font-family: 'RaineHorne';
+  src: url('/fonts/rainehorne.ttf') format('truetype');
+  font-weight: 400 900; font-style: normal; font-display: optional;
+}
+.topbar { background:#202020; color:#fff; text-align:center; padding:9px 20px; font-size:14px; }
+.topbar a { color:#ffb200; font-weight:900; text-decoration:none; }
+header { background:#fff; border-bottom:1px solid #e8e2d7; position:sticky; top:0; z-index:50; }
+.nav { max-width:1220px; margin:0 auto; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; gap:20px; font-family:'RaineHorne',Arial,Helvetica,sans-serif; }
+.brand { display:flex; align-items:center; gap:12px; font-weight:900; font-size:18px; text-decoration:none; white-space:nowrap; flex-shrink:0; }
+.brand img { width:46px; height:46px; object-fit:contain; }
+.brand-name { display:flex; align-items:center; gap:6px; color:#202020 !important; }
+.brand-team, .brand-rh { color:#202020 !important; }
+.brand-divider, .brand-amp { color:#ffb200 !important; }
+.nav-links { display:flex; flex-wrap:wrap; gap:18px; font-size:14px; font-weight:800; }
+.nav-links a { text-decoration:none; color:#202020; }
+.nav-links a:hover, .nav-parent:hover { color:#9b6b00; }
+.nav-dropdown { position:relative; display:inline-flex; align-items:center; }
+.nav-dropdown summary { list-style:none; cursor:pointer; }
+.nav-dropdown summary::-webkit-details-marker { display:none; }
+.nav-parent { font-size:14px; font-weight:800; display:inline-flex; align-items:center; gap:6px; color:#202020; }
+.nav-parent::after { content:'▾'; font-size:11px; color:#ffb200; }
+.dropdown-menu { display:none; position:absolute; top:34px; left:0; min-width:300px; background:#fff; border:1px solid #e8e2d7; border-radius:16px; box-shadow:0 18px 45px rgba(0,0,0,.14); padding:10px; z-index:100; }
+.nav-dropdown[open] .dropdown-menu, .nav-dropdown:hover .dropdown-menu { display:block; }
+.dropdown-menu a { display:block; padding:11px 13px; border-radius:10px; color:#202020 !important; background:#fff !important; font-size:14px; font-weight:800; line-height:1.25; }
+.dropdown-menu a:hover { background:#ffb200 !important; }
+.menu-toggle { display:none; min-height:44px; padding:10px 18px; border:1px solid #e8e2d7; border-radius:999px; background:#ffb200; color:#202020; font-weight:900; cursor:pointer; }
+@media(max-width:980px) {
+  .nav { align-items:stretch; flex-wrap:wrap; }
+  .brand { flex:1; white-space:normal; }
+  .menu-toggle { display:inline-flex; align-items:center; justify-content:center; }
+  .nav-links { display:none; width:100%; grid-template-columns:1fr; gap:10px; }
+  .nav-links.is-open { display:grid; max-height:calc(100vh - 140px) !important; overflow-y:auto !important; -webkit-overflow-scrolling:touch !important; }
+  .nav-links > a, .nav-dropdown summary.nav-parent { min-height:52px; display:flex; align-items:center; justify-content:center; padding:12px; border:1px solid #e8e2d7; border-radius:999px; background:#f5f0e6; font-size:16px; text-align:center; }
+  .nav-dropdown { grid-column:1/-1; display:block; }
+  .dropdown-menu { position:static; min-width:0; width:100%; margin-top:8px; }
+  .nav-dropdown:hover .dropdown-menu { display:none; }
+  .nav-dropdown[open] .dropdown-menu { display:grid; gap:7px; }
+}
+@media(max-width:620px) {
+  .nav-links { grid-template-columns:1fr; }
+}
 html{scroll-behavior:smooth}
-
 body{
   font-family:Arial,sans-serif;
   background:var(--soft);
   color:#111;
   line-height:1.75;
 }
-
 h1,h2,h3{
   font-family:Georgia,'Times New Roman',serif;
   font-weight:400;
   line-height:1.15;
 }
-
-nav{
-  background:#111;
-  color:white;
-  padding:24px 8%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:16px;
-}
-
-.logo{
-  font-size:18px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:22px;
-  font-size:13px;
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-
-nav a:hover{color:#e7c782}
-
 .article-hero{
   background:
     linear-gradient(rgba(0,0,0,.64),rgba(0,0,0,.48)),
@@ -80,9 +96,7 @@ nav a:hover{color:#e7c782}
   color:white;
   padding:115px 8%;
 }
-
 .article-hero-inner{max-width:980px}
-
 .kicker{
   color:#e7c782;
   text-transform:uppercase;
@@ -91,24 +105,20 @@ nav a:hover{color:#e7c782}
   font-weight:bold;
   margin-bottom:18px;
 }
-
 .article-hero h1{
   font-size:clamp(42px,6vw,72px);
   margin-bottom:22px;
 }
-
 .article-hero p{
   font-size:21px;
   max-width:850px;
   color:#f1f1f1;
 }
-
 .meta{
   margin-top:26px;
   font-size:14px;
   color:#ddd;
 }
-
 .article-wrap{
   display:grid;
   grid-template-columns:minmax(0,780px) 320px;
@@ -116,100 +126,79 @@ nav a:hover{color:#e7c782}
   padding:80px 8%;
   align-items:start;
 }
-
 .article{
   background:white;
   padding:54px;
   border:1px solid #eee;
 }
-
 .article p{
   font-size:18px;
   color:#333;
   margin-bottom:22px;
 }
-
 .article h2{
   font-size:36px;
   margin:46px 0 18px;
 }
-
 .article h3{
   font-size:26px;
   margin:32px 0 14px;
 }
-
 .article ul{
   margin:10px 0 26px 24px;
 }
-
 .article li{
   font-size:18px;
   color:#333;
   margin-bottom:10px;
 }
-
 .article a{
   color:var(--gold-dark);
   font-weight:bold;
 }
-
 .snapshot{
   background:#f7f4ef;
   border-left:5px solid var(--gold);
   padding:26px;
   margin:36px 0;
 }
-
 .snapshot h3{margin-top:0}
-
 .snapshot p{margin-bottom:12px}
-
 .source-note{
   font-size:14px!important;
   color:#666!important;
   margin-top:10px;
 }
-
 .callout{
   background:#111;
   color:white;
   padding:30px;
   margin:36px 0;
 }
-
 .callout h3{
   color:white;
   margin-top:0;
 }
-
 .callout p{color:#ddd}
-
 .faq{
   background:#f7f4ef;
   padding:28px;
   margin-top:42px;
 }
-
 .faq h2{margin-top:0}
-
 .faq h3{font-size:24px}
-
 .cta-box{
   background:#111;
   color:white;
   padding:36px;
   margin:46px 0 10px;
 }
-
 .cta-box h2{
   color:white;
   font-size:34px;
   margin-top:0;
 }
-
 .cta-box p{color:#ddd}
-
 .btn{
   display:inline-block;
   padding:15px 28px;
@@ -224,53 +213,44 @@ nav a:hover{color:#e7c782}
   margin-top:8px;
   transition:.25s ease;
 }
-
 .btn:hover{
   background:var(--gold-dark);
   border-color:var(--gold-dark);
   transform:translateY(-1px);
 }
-
 .sidebar{
   position:sticky;
   top:24px;
 }
-
 .side-card{
   background:white;
   padding:28px;
   border:1px solid #eee;
   margin-bottom:22px;
 }
-
 .side-card h3{
   font-size:24px;
   margin-bottom:12px;
 }
-
 .side-card p,
 .side-card li{
   color:#444;
   font-size:16px;
 }
-
 .side-card ul{
   padding-left:20px;
   margin-top:10px;
 }
-
 .side-card a{
   color:var(--gold-dark);
   text-decoration:none;
   font-weight:bold;
 }
-
 .related a{
   display:block;
   padding:12px 0;
   border-bottom:1px solid #eee;
 }
-
 footer{
   background:#111;
   color:white;
@@ -281,55 +261,47 @@ footer{
   gap:24px;
   font-size:14px;
 }
-
 footer a{
   color:white;
   text-decoration:none;
 }
-
 footer a:hover{color:#e7c782}
-
 @media(max-width:980px){
   .article-wrap{grid-template-columns:1fr}
   .sidebar{position:relative;top:0}
 }
-
 @media(max-width:760px){
-  nav a{
-    display:inline-block;
-    margin:10px 12px 0 0;
-  }
-
   .article-hero{padding:70px 6%}
   .article-wrap{padding:50px 6%}
   .article{padding:30px 22px}
   .article h2{font-size:31px}
 }
 </style>
-<link rel="stylesheet" href="/css/brand-font.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How To Prepare Your Home For A Stronger Sale Price",
   "description": "A practical Auckland seller guide explaining how to prepare a home for a stronger sale price through presentation, repairs, staging, documents, marketing and buyer confidence.",
+  "image": "https://peterandedita.co.nz/images/prepare-home-for-sale-auckland.webp",
   "author": {
     "@type": "Organization",
-    "name": "Edita Andrijasevic - Raine & Horne"
+    "name": "Edita Andrijasevic - Raine & Horne",
+    "url": "https://peterandedita.co.nz/"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Edita Andrijasevic - Raine & Horne"
+    "name": "Edita Andrijasevic - Raine & Horne",
+    "url": "https://peterandedita.co.nz/"
   },
-  "datePublished": "2026-04-30",
-  "dateModified": "2026-04-30",
+  "datePublished": "2026-04-30T09:00:00+12:00",
+  "dateModified": "2026-07-20T09:00:00+12:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://peterandedita.co.nz/articles/prepare-home-for-sale-auckland.html"
   }
 }
 </script>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -379,74 +351,111 @@ footer a:hover{color:#e7c782}
 }
 </script>
 </head>
-
 <body>
-
-<nav>
-  <div class="logo">Edita Andrijasevic</div>
-  <div>
-    <a href="https://peterandedita.co.nz/">Home</a>
-    <a href="https://peterandedita.co.nz/free-home-appraisal-west-auckland/">Free Appraisal</a>
-    <a href="https://peterandedita.co.nz/articles/">Articles</a>
-    <a href="https://peterandedita.co.nz/locations/">Locations</a>
-    <a href="https://peterandedita.co.nz/contact">Contact</a>
+<div class="topbar">
+    Auckland seller guide · Call <a href="tel:+6421765234">021 765 234</a> · Licensed under the REAA 2008
   </div>
+<header>
+<nav class="nav">
+<a class="brand" href="https://peterandedita.co.nz/">
+<img alt="Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.webp" width="46"/>
+<div class="brand-name"><span class="brand-team" style="font-weight:900;">Edita Andrijasevic</span>
+<span class="brand-divider">-</span>
+<span class="brand-rh">Raine <span class="brand-amp">&amp;</span> Horne</span></div>
+</a>
+<button aria-controls="primary-navigation" aria-expanded="false" class="menu-toggle" type="button">Menu</button><div class="nav-links" id="primary-navigation">
+<a href="/">Home</a>
+<details class="nav-dropdown nav-locations">
+<summary class="nav-parent">Locations</summary>
+<div class="dropdown-menu">
+<a href="/locations/">All Areas We Serve</a>
+<a href="/real-estate-agent-west-auckland/" style="font-weight:900; color:#9b6b00 !important;">West Auckland</a>
+<a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+<a href="/real-estate-agent-titirangi/">Titirangi</a>
+<a href="/real-estate-agent-lynfield/">Lynfield</a>
+<a href="/real-estate-agent-new-lynn/">New Lynn</a>
+<a href="/real-estate-agent-green-bay/">Green Bay</a>
+<a href="/real-estate-agent-glen-eden/">Glen Eden</a>
+<a href="/real-estate-agent-kelston/">Kelston</a>
+<a href="/real-estate-agent-mount-roskill/">Mount Roskill</a>
+<a href="/real-estate-agent-new-windsor/">New Windsor</a>
+<a href="/real-estate-agent-glendene/">Glendene</a>
+<a href="/real-estate-agent-avondale/">Avondale</a>
+</div>
+</details>
+<details class="nav-dropdown nav-services">
+<summary class="nav-parent">Services</summary>
+<div class="dropdown-menu">
+<a href="/services/">All Real Estate Services</a>
+<a href="/free-home-appraisal-west-auckland/">Free Property Appraisal</a>
+<a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
+<a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+<a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
+<a href="/services/real-estate-negotiation-support/">Negotiation Support</a>
+<a href="/amplify-property-marketing/">Amplify Property Marketing</a>
+<a href="/property-auctions-west-auckland/">Property Auctions</a>
+</div>
+</details>
+<details class="nav-dropdown nav-listings">
+<summary class="nav-parent">Listings</summary>
+<div class="dropdown-menu">
+<a href="/properties.html">Properties For Sale</a>
+<a href="/sold.html">Sold Properties</a>
+</div>
+</details>
+<details class="nav-dropdown nav-market-reports">
+<summary class="nav-parent">Market Reports</summary>
+<div class="dropdown-menu">
+<a href="/market-reports/">All Suburb Market Reports</a>
+<a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+<a href="/market-reports/titirangi/">Titirangi</a>
+<a href="/market-reports/lynfield/">Lynfield</a>
+<a href="/market-reports/new-lynn/">New Lynn</a>
+<a href="/market-reports/green-bay/">Green Bay</a>
+<a href="/market-reports/glen-eden/">Glen Eden</a>
+<a href="/market-reports/kelston/">Kelston</a>
+<a href="/market-reports/mount-roskill/">Mount Roskill</a>
+<a href="/market-reports/new-windsor/">New Windsor</a>
+<a href="/market-reports/glendene/">Glendene</a>
+<a href="/market-reports/avondale/">Avondale</a>
+</div>
+</details>
+<a href="/articles/">Articles</a>
+<a href="/#reviews">Reviews</a>
+<a href="/contact.html">Contact</a>
+</div>
 </nav>
-
+</header>
 <section class="article-hero">
   <div class="article-hero-inner">
     <div class="kicker">Auckland Seller Preparation Guide</div>
-
     <h1>How To Prepare Your Home For A Stronger Sale Price</h1>
-
     <p>Preparing your home for sale is not about making it perfect. It is about helping buyers feel confident, emotionally engaged and ready to compete.</p>
-
     <div class="meta">By Edita Andrijasevic | Raine & Horne • Practical seller guide for Auckland homeowners</div>
   </div>
 </section>
-
 <main class="article-wrap">
-
   <article class="article">
-
     <p>Many sellers ask the same question before going to market: “What should we do to get the best possible price?”</p>
-
     <p>The answer is not always a full renovation. In many cases, the best preparation is more strategic: remove buyer doubt, improve first impressions, make the home easier to understand, and show buyers why the property is worth competing for.</p>
-
     <p>A stronger sale price usually comes from a combination of pricing evidence, presentation, confidence, marketing reach and negotiation. Preparation helps all of those areas work together.</p>
-
     <p>In a careful Auckland market, buyers are not just looking at the property. They are comparing it against every other home they could buy for similar money. If your property feels brighter, cleaner, easier, better documented and better presented, it gives buyers more confidence to act.</p>
-
     <div class="snapshot">
       <h3>Quick Auckland market context</h3>
-
       <p>Recent public market data from Opes Partners reports Auckland’s median property price at about $1,040,000 as at March 2026, with prices down around 1.21% over the previous 12 months.</p>
-
       <p>That means sellers are not in a market where every property automatically sells strongly just because it is listed. Preparation matters because buyers are comparing value carefully.</p>
-
       <p>Professional staging and presentation can also be a meaningful part of preparation. One Auckland staging guide notes that a standard three-bedroom home may cost around $3,500 + GST to stage for a typical five-week campaign period, with lead time ideally planned before the listing goes live.</p>
-
       <p><strong>What this means for sellers:</strong> if the market is selective, the best-prepared homes often have an advantage because they make buyers feel more confident from the first viewing.</p>
-
-      <p class="source-note">Sources checked April 2026: Opes Partners Auckland property market data</a>, REA disclosure guidance</a>, REA approved consumer guides</a>, and The Look Auckland home staging guide</a>. Market data, staging costs and selling conditions change regularly and should be checked before making decisions.</p>
+      <p class="source-note">Sources checked April 2026: Opes Partners Auckland property market data, REA disclosure guidance, REA approved consumer guides, and The Look Auckland home staging guide. Market data, staging costs and selling conditions change regularly and should be checked before making decisions.</p>
     </div>
-
     <h2>Preparation starts with buyer confidence</h2>
-
     <p>Most sellers think preparation means cleaning, painting and tidying. Those things matter, but the deeper goal is buyer confidence.</p>
-
     <p>Buyers are more likely to act when the home feels easy to understand and low-risk. They want to know what they are buying, why it is worth the price, and whether it compares well against other homes in their budget.</p>
-
     <p>If buyers feel uncertain, they may still attend the open home. They may still say polite things. But hesitation often shows up later as silence, low offers, repeated questions, or a decision to buy somewhere else.</p>
-
     <h2>1. Walk through your home like a buyer, not an owner</h2>
-
     <p>Owners often stop noticing small things because they live with them every day. Buyers notice everything quickly.</p>
-
     <p>Before you start spending money, walk through the property as if you are seeing it for the first time. Start at the street. Look at the driveway, entrance, front door, gardens, exterior paint, paths, decks, light, smell, clutter and room flow.</p>
-
     <p>Ask yourself:</p>
-
     <ul>
       <li>Does the property feel welcoming from the street?</li>
       <li>Is the entrance clean, bright and easy to access?</li>
@@ -455,17 +464,11 @@ footer a:hover{color:#e7c782}
       <li>Can buyers understand how each space is used?</li>
       <li>Does the home photograph well?</li>
     </ul>
-
     <p>The goal is not to make the home look unrealistic. The goal is to remove distractions so buyers focus on value.</p>
-
     <h2>2. Fix small maintenance issues before buyers use them against the price</h2>
-
     <p>Small defects can have a bigger effect than sellers expect. A loose handle, dripping tap, cracked tile, tired paint, slippery deck or broken light may seem minor, but buyers often treat visible issues as signs of hidden problems.</p>
-
     <p>That can affect the offer. Buyers may mentally deduct more than the repair actually costs because they are pricing in inconvenience, uncertainty and risk.</p>
-
     <h3>High-impact maintenance jobs to consider</h3>
-
     <ul>
       <li>repair loose handles, hinges, doors and latches</li>
       <li>replace broken light bulbs and improve lighting</li>
@@ -476,22 +479,15 @@ footer a:hover{color:#e7c782}
       <li>tidy gardens and trim overgrown areas</li>
       <li>check decks, stairs and handrails feel safe</li>
     </ul>
-
     <p>These improvements do not always cost a lot, but they can change how buyers feel. A home that feels cared for often creates more confidence than a home that looks neglected.</p>
-
     <div class="callout">
       <h3>The seller rule</h3>
       <p>If a buyer can see it in the first five minutes, it can affect how they judge value. Fixing obvious issues early is often cheaper than explaining them later during negotiation.</p>
     </div>
-
     <h2>3. Declutter so buyers can see the space, not your belongings</h2>
-
     <p>Decluttering is one of the most powerful preparation steps because it helps buyers understand the size and purpose of each room.</p>
-
     <p>When rooms are full, buyers may think the home lacks storage or space. When surfaces are crowded, buyers may focus on personal items instead of the property. When garages, cupboards and spare rooms are overflowing, buyers can start worrying that the home will not work for their own lifestyle.</p>
-
     <p>Start with the areas buyers care about most:</p>
-
     <ul>
       <li>kitchen benches</li>
       <li>living areas</li>
@@ -501,25 +497,15 @@ footer a:hover{color:#e7c782}
       <li>decks and outdoor areas</li>
       <li>garage and storage spaces</li>
     </ul>
-
     <p>Remove anything that makes a room feel smaller, darker, too personal or harder to understand. Buyers should be able to imagine their own life in the home.</p>
-
     <h2>4. Use light to increase emotional value</h2>
-
     <p>Light changes buyer emotion. A bright room often feels larger, warmer and more inviting. A dark room can feel smaller, colder and less valuable, even if the size is the same.</p>
-
     <p>Before photos and open homes, check natural light carefully. Clean windows, open curtains, trim plants blocking light, use warm lamps where needed and make sure every bulb works.</p>
-
     <p>This is especially important in areas such as Titirangi and other leafy suburbs, where privacy and bush surroundings are attractive but can sometimes make rooms feel darker if not presented carefully.</p>
-
     <h2>5. Make outdoor areas feel usable, not high-maintenance</h2>
-
     <p>Outdoor living can be a major selling feature in Auckland, but only if buyers can imagine using it.</p>
-
     <p>A deck, patio, garden or lawn should feel like an extension of the home. If it looks slippery, overgrown, unsafe or difficult to maintain, buyers may start seeing cost instead of lifestyle.</p>
-
     <p>Before going to market, consider:</p>
-
     <ul>
       <li>cleaning decks, stairs and paths</li>
       <li>trimming plants that block light or access</li>
@@ -528,25 +514,15 @@ footer a:hover{color:#e7c782}
       <li>checking fences, handrails and steps</li>
       <li>mowing lawns and tidying edges</li>
     </ul>
-
     <p>The best outdoor presentation helps buyers think, “We could enjoy living here,” not “This will be a lot of work.”</p>
-
     <h2>6. Understand what matters locally</h2>
-
     <p>Preparation should match the type of buyer likely to inspect your home. A Titirangi buyer may focus heavily on decks, sunlight, driveway access, bush maintenance and indoor-outdoor flow. A Blockhouse Bay family buyer may compare school zones, parking, bedroom layout, storage and how quickly the home feels ready to move into.</p>
-
     <p>In Lynfield, buyers may compare value, access, condition and convenience against nearby suburbs. A home that is well-presented and easy to understand can feel more competitive even when buyers have several options.</p>
-
     <p>This is why preparation should not be generic. The right improvements depend on what buyers in your local area are likely to notice, question and value.</p>
-
     <h2>7. Stage the rooms that influence buyer decisions most</h2>
-
     <p>Not every home needs full staging, but almost every home needs thoughtful presentation.</p>
-
     <p>Staging helps when a property is vacant, awkwardly furnished, dated, cluttered or difficult for buyers to understand. It can also help buyers understand scale, room use and lifestyle.</p>
-
     <p>The most important rooms are usually:</p>
-
     <ul>
       <li>living room</li>
       <li>kitchen and dining area</li>
@@ -554,17 +530,11 @@ footer a:hover{color:#e7c782}
       <li>outdoor entertaining area</li>
       <li>any flexible room that could be office, bedroom or second living</li>
     </ul>
-
     <p>If full professional staging is not appropriate, partial styling can still help. Fresh linen, fewer personal items, better furniture placement, plants, artwork, cushions and clear surfaces can improve emotional appeal.</p>
-
     <h2>8. Prepare documents before buyers ask</h2>
-
     <p>Presentation gets buyers interested. Documentation helps buyers feel safe enough to offer.</p>
-
     <p>In New Zealand, disclosure and buyer information matter. REA guidance notes the importance of sharing necessary information with buyers, and licensed real estate professionals have obligations around approved guides and property information.</p>
-
     <p>Useful documents may include:</p>
-
     <ul>
       <li>title</li>
       <li>LIM report</li>
@@ -574,17 +544,11 @@ footer a:hover{color:#e7c782}
       <li>rental compliance information if tenanted</li>
       <li>information about known issues or improvements</li>
     </ul>
-
     <p>Not every property will have every document, and some issues need careful handling with legal advice. But waiting until buyers ask can slow momentum. If documents are ready early, buyers often feel more confident.</p>
-
     <h2>9. Prepare the marketing before the property goes live</h2>
-
     <p>Marketing should not start after the listing is online. It should be planned before launch.</p>
-
     <p>The first impression online is critical. Buyers may decide in seconds whether to click, save, share or ignore a listing. Strong preparation gives the marketing more power because the photos, video, floor plan and copy have better material to work with.</p>
-
     <p>Before launch, ask:</p>
-
     <ul>
       <li>What is the buyer story?</li>
       <li>Who is the most likely buyer?</li>
@@ -593,17 +557,11 @@ footer a:hover{color:#e7c782}
       <li>Are the photos showing the strongest features?</li>
       <li>Is the campaign reaching qualified buyers, not just casual browsers?</li>
     </ul>
-
     <p>AI-enhanced marketing can help reach buyers who are more likely to be ready, able and motivated, but it works best when the property is presented clearly and positioned properly.</p>
-
     <h2>10. Do not overcapitalise before selling</h2>
-
     <p>One of the biggest seller mistakes is spending money on improvements buyers may not fully reward.</p>
-
     <p>Before committing to larger upgrades, compare the likely cost with the likely buyer response. A full kitchen renovation, new bathroom or major landscaping may help in some situations, but it may not always return enough before sale.</p>
-
     <p>Often, the best preparation focuses on:</p>
-
     <ul>
       <li>cleaning</li>
       <li>decluttering</li>
@@ -614,35 +572,21 @@ footer a:hover{color:#e7c782}
       <li>floor plan clarity</li>
       <li>professional presentation</li>
     </ul>
-
     <p>The question should not be, “Can we improve this?” The better question is, “Will buyers value this improvement enough to justify the cost?”</p>
-
     <h2>The 5-minute pre-sale preparation checklist</h2>
-
     <p>If you are getting ready to sell, start with the areas that usually affect buyer confidence fastest.</p>
-
     <div class="snapshot">
       <h3>Quick preparation checklist</h3>
-
       <p><strong>1. Street appeal:</strong> Does the property look cared for before buyers enter?</p>
-
       <p><strong>2. Presentation:</strong> Are rooms clean, clear, bright and easy to understand?</p>
-
       <p><strong>3. Maintenance:</strong> Are obvious repairs fixed before buyers notice them?</p>
-
       <p><strong>4. Documents:</strong> Are title, LIM, council records or relevant certificates ready or underway?</p>
-
       <p><strong>5. Marketing:</strong> Is the campaign designed to reach qualified buyers and show the home at its best?</p>
     </div>
-
     <p>If one of these areas is weak, it does not always mean spending a large amount of money. It means dealing with the issue before buyers use it as a reason to hesitate or discount their offer.</p>
-
     <h2>What preparation can actually help the sale price?</h2>
-
     <p>The improvements most likely to help are the ones that change buyer perception.</p>
-
     <p>Buyers pay more confidently when they feel:</p>
-
     <ul>
       <li>the property is well cared for</li>
       <li>the price makes sense</li>
@@ -651,46 +595,31 @@ footer a:hover{color:#e7c782}
       <li>the home compares well with alternatives</li>
       <li>there is competition from other buyers</li>
     </ul>
-
     <p>That is why preparation should not be random. It should be connected to buyer behaviour, local competition and the likely selling strategy.</p>
-
     <h2>How Edita Andrijasevic help sellers prepare</h2>
-
     <p>Edita Andrijasevic help sellers look at their property through buyer eyes before launching to market. That includes price positioning, presentation advice, document preparation, buyer objections, marketing strategy and negotiation planning.</p>
-
     <p>The goal is not to spend money unnecessarily. The goal is to identify the changes that may create stronger buyer confidence and better competition.</p>
-
     <p>If you are thinking of selling in Auckland, Titirangi, Blockhouse Bay, Lynfield or nearby suburbs, the best time to prepare is before buyers see the property online.</p>
-
     <section class="faq">
       <h2>Frequently asked questions about preparing your home for sale</h2>
-
       <h3>How do I prepare my home for a stronger sale price?</h3>
       <p>Focus on buyer confidence first. Clean, declutter, repair visible issues, improve lighting, prepare documents, tidy outdoor areas and use professional marketing that shows the property clearly.</p>
-
       <h3>Should I renovate before selling?</h3>
       <p>Not always. Some repairs and presentation improvements can help, but major renovations may not return enough before selling. Get advice before spending heavily.</p>
-
       <h3>Is home staging worth it?</h3>
       <p>It can be, especially if the home is vacant, cluttered, dated or difficult for buyers to imagine furnished. Staging should help buyers understand space, scale and lifestyle.</p>
-
       <h3>What documents should I organise before selling?</h3>
       <p>Useful documents can include title, LIM, council records, CCCs where relevant, warranties, records of work and information about known issues. Sellers should get legal and licensed real estate advice for their situation.</p>
-
       <h3>What should I fix first before selling?</h3>
       <p>Fix anything buyers will notice quickly: lighting, broken fittings, leaks, slippery paths, tired paint, messy gardens, clutter, unpleasant smells and maintenance issues that reduce confidence.</p>
     </section>
-
     <div class="cta-box">
       <h2>Thinking of selling?</h2>
       <p>Get practical advice on what is worth fixing, what to leave, and how to prepare your home for stronger buyer interest before going to market.</p>
-      <a class="btn" href="../#appraisal">Request Selling Advice</a>
+      <a class="btn" href="/free-home-appraisal-west-auckland/">Request Selling Advice</a>
     </div>
-
   </article>
-
   <aside class="sidebar">
-
     <div class="side-card">
       <h3>Preparation checklist</h3>
       <ul>
@@ -702,31 +631,25 @@ footer a:hover{color:#e7c782}
         <li>Plan professional marketing before launch</li>
       </ul>
     </div>
-
     <div class="side-card">
       <h3>Need pre-sale advice?</h3>
       <p>Get a practical seller review before spending money on repairs, staging or upgrades.</p>
-      <a class="btn" href="../#appraisal">Request Advice</a>
+      <a class="btn" href="/free-home-appraisal-west-auckland/">Request Advice</a>
     </div>
-
     <div class="side-card related">
       <h3>Related articles</h3>
       <a href="titirangi-house-prices-2026.html">Titirangi House Prices 2026: What Sellers Should Watch</a>
       <a href="why-homes-do-not-sell-blockhouse-bay.html">Why Some Homes Do Not Sell In Blockhouse Bay</a>
       <a href="best-real-estate-agent-titirangi.html">How To Choose The Best Real Estate Agent In Titirangi</a>
     </div>
-
   </aside>
-
 </main>
-
 <style>
   .seo-footer{
     background:#202020 !important;
     color:#ffffff !important;
     padding:54px 20px !important;
   }
-
   .seo-footer-inner{
     max-width:1220px;
     margin:0 auto;
@@ -735,7 +658,6 @@ footer a:hover{color:#e7c782}
     gap:28px;
     align-items:stretch;
   }
-
   .seo-footer-card{
     background:#292929;
     border:1px solid rgba(255,255,255,0.10);
@@ -743,7 +665,6 @@ footer a:hover{color:#e7c782}
     padding:32px;
     box-shadow:0 18px 45px rgba(0,0,0,0.18);
   }
-
   .seo-footer h2{
     color:#ffffff !important;
     font-size:clamp(28px,3vw,42px);
@@ -751,50 +672,41 @@ footer a:hover{color:#e7c782}
     margin:0 0 16px;
     letter-spacing:-0.8px;
   }
-
   .seo-footer h3{
     color:#ffffff !important;
     font-size:20px;
     margin:0 0 14px;
   }
-
   .seo-footer p{
     color:#eeeeee !important;
     line-height:1.65;
     margin:0 0 14px;
   }
-
   .seo-footer .small{
     font-size:13px;
     color:#cccccc !important;
   }
-
   .seo-footer-gold{
     color:#ffb200 !important;
   }
-
   .seo-footer-contact{
     margin-top:22px;
     display:grid;
     gap:10px;
   }
-
   .seo-footer-contact a{
     color:#ffb200 !important;
     font-weight:800 !important;
     text-decoration:none !important;
   }
-
   .seo-footer-contact a:hover{
     color:#ffffff !important;
   }
-
   .seo-footer-link-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:28px;
   }
-
   .seo-footer-links a{
     display:block;
     color:#ffb200 !important;
@@ -803,11 +715,9 @@ footer a:hover{color:#e7c782}
     margin-bottom:10px;
     line-height:1.35;
   }
-
   .seo-footer-links a:hover{
     color:#ffffff !important;
   }
-
   .seo-footer .seo-footer-contact a.seo-footer-cta{
     background:#ffb200 !important;
     color:#202020 !important;
@@ -820,57 +730,45 @@ footer a:hover{color:#e7c782}
     align-items:center !important;
     justify-content:center !important;
   }
-
   .seo-footer .seo-footer-contact a.seo-footer-cta:hover{
     background:#ffffff !important;
     color:#202020 !important;
   }
-
   @media(max-width:900px){
     .seo-footer-inner{
       grid-template-columns:1fr;
     }
-
     .seo-footer-link-grid{
       grid-template-columns:1fr;
     }
-
     .seo-footer-card{
       padding:26px;
     }
   }
 </style>
-
 <footer class="seo-footer">
   <div class="seo-footer-inner">
-
     <div class="seo-footer-card">
       <h2>Edita Andrijasevic | Raine <span class="seo-footer-gold">&amp;</span> Horne</h2>
-
       <p>
         Helping West Auckland homeowners prepare their homes for sale, improve buyer confidence,
         understand property value and create a stronger selling strategy before going to market.
       </p>
-
       <p class="small">
         Edita Andrijasevic (Licensee 20027060) is Licensed Salespersons under the Real Estate Agents Act 2008. This article provides general real estate information and selling guidance. It is not a registered valuation.
       </p>
-
       <p class="small">
         Areas served: Titirangi, Blockhouse Bay, Lynfield, New Lynn, Kelston, Green Bay, Glen Eden,
         Mount Roskill, New Windsor, Glendene, Avondale and nearby West Auckland suburbs.
       </p>
-
       <div class="seo-footer-contact">
         <a href="tel:+6421765234">021 765 234</a>
         <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
-        <a class="seo-footer-cta" href="/#request-appraisal">Request Free Appraisal</a>
+        <a class="seo-footer-cta" href="/free-home-appraisal-west-auckland/">Request Free Appraisal</a>
       </div>
     </div>
-
     <div class="seo-footer-card">
       <div class="seo-footer-link-grid">
-
         <div class="seo-footer-links">
           <h3>Free Appraisals</h3>
           <a href="/free-home-appraisal-titirangi/">Titirangi</a>
@@ -885,7 +783,6 @@ footer a:hover{color:#e7c782}
           <a href="/free-home-appraisal-new-windsor/">New Windsor</a>
           <a href="/free-home-appraisal-mount-roskill/">Mount Roskill</a>
         </div>
-
         <div class="seo-footer-links">
           <h3>Seller Guides</h3>
           <a href="/articles/prepare-home-for-sale-auckland.html">Prepare Your Home</a>
@@ -897,12 +794,21 @@ footer a:hover{color:#e7c782}
           <a href="/contact.html">Contact</a>
           <a href="/privacy-policy.html">Privacy Policy</a>
         </div>
-
       </div>
     </div>
-
   </div>
 </footer>
-
+<script>
+  (function () {
+    var toggle=document.querySelector('.menu-toggle');
+    var nav=document.getElementById('primary-navigation');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click',function () {
+      var open=nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded',String(open));
+      toggle.textContent=open?'Close menu':'Menu';
+    });
+  }());
+</script>
 </body>
 </html>
