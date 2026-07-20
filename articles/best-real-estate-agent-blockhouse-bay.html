@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en-NZ">
 <head>
 <meta charset="utf-8"/>
@@ -12,9 +11,12 @@
 <link as="image" fetchpriority="high" href="/images/real-estate-agent-blockhouse-bay-640.webp" media="(max-width:700px)" rel="preload"/>
 <link as="image" fetchpriority="high" href="/images/real-estate-agent-blockhouse-bay-960.webp" media="(min-width:701px) and (max-width:1100px)" rel="preload"/>
 <link as="image" fetchpriority="high" href="/images/real-estate-agent-blockhouse-bay-1400.webp" media="(min-width:1101px)" rel="preload"/>
+<link as="image" href="/images/rh-logo.webp" rel="preload"/>
+<link href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" rel="preload" crossorigin/>
+<link href="/fonts/rainehorne.ttf" as="font" type="font/ttf" rel="preload" crossorigin/>
 <link href="/favicon.ico" rel="icon"/>
-<link href="/images/favicon-the-a-team.png" rel="icon" sizes="96x96" type="image/png"/>
-<link href="/images/favicon-the-a-team.png" rel="apple-touch-icon"/>
+<link href="/images/favicon-the-a-team.webp" rel="icon" sizes="96x96" type="image/webp"/>
+<link href="/images/favicon-the-a-team.webp" rel="apple-touch-icon"/>
 <meta content="Edita Andrijasevic - Raine &amp; Horne" property="og:site_name"/>
 <meta content="How to Choose a Blockhouse Bay Real Estate Agent | Seller Checklist" property="og:title"/>
 <meta content="A practical checklist for comparing appraisal evidence, marketing, communication, follow-up and negotiation before appointing an agent." property="og:description"/>
@@ -30,6 +32,16 @@
 
 <style>
 :root { --gold:#ffb200; --dark:#202020; --charcoal:#4d4e50; --white:#fff; --cream:#fff8e8; --soft:#f7f7f5; --border:#e8e2d7; --muted:#575757; }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400; font-style: normal; font-display: optional;
+    }
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/rainehorne.ttf') format('truetype');
+      font-weight: 400 900; font-style: normal; font-display: optional;
+    }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
     body { margin:0; overflow-x:hidden; font-family:Arial,Helvetica,sans-serif; color:var(--dark); background:var(--soft); line-height:1.72; }
@@ -37,9 +49,12 @@
     .topbar { background:var(--dark); color:var(--white); text-align:center; padding:9px 20px; font-size:14px; }
     .topbar a { color:var(--gold); font-weight:900; text-decoration:none; }
     header { background:#fff; border-bottom:1px solid var(--border); position:sticky; top:0; z-index:50; }
-    .nav { max-width:1220px; margin:0 auto; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    .nav { max-width:1220px; margin:0 auto; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; gap:20px; font-family:'RaineHorne',Arial,Helvetica,sans-serif; }
     .brand { display:flex; align-items:center; gap:12px; font-weight:900; font-size:18px; text-decoration:none; }
     .brand img { width:46px; height:46px; object-fit:contain; }
+    .brand-name { display:flex; align-items:center; gap:6px; color:var(--dark) !important; }
+    .brand-team, .brand-rh { color:var(--dark) !important; }
+    .brand-divider, .brand-amp { color:var(--gold) !important; }
     .nav-links { display:flex; flex-wrap:wrap; gap:18px; font-size:14px; font-weight:800; }
     .nav-links a { text-decoration:none; }
     .nav-links a:hover, .nav-parent:hover { color:#9b6b00; }
@@ -56,7 +71,7 @@
     .breadcrumb { border-bottom:1px solid var(--border); padding:11px 20px; background:#fff; font-size:13px; color:var(--muted); }
     .breadcrumb-inner { max-width:1220px; margin:0 auto; display:flex; gap:8px; flex-wrap:wrap; }
     .breadcrumb a { font-weight:800; text-decoration:none; }
-    
+
     .article-hero {
       position:relative;
       min-height:520px;
@@ -138,7 +153,7 @@
       .brand { flex:1; }
       .menu-toggle { display:inline-flex; align-items:center; justify-content:center; }
       .nav-links { display:none; width:100%; grid-template-columns:1fr 1fr; gap:10px; }
-      .nav-links.is-open { display:grid; }
+      .nav-links.is-open { display:grid; max-height:calc(100vh - 140px) !important; overflow-y:auto !important; -webkit-overflow-scrolling:touch !important; }
       .nav-links > a, .nav-dropdown summary.nav-parent { min-height:52px; display:flex; align-items:center; justify-content:center; padding:12px; border:1px solid var(--border); border-radius:999px; background:#f5f0e6; font-size:16px; text-align:center; }
       .nav-dropdown { grid-column:1/-1; display:block; }
       .dropdown-menu { position:static; min-width:0; width:100%; margin-top:8px; }
@@ -180,7 +195,7 @@
       "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
       "priceRange": "$$",
       "currenciesAccepted": "NZD",
-      "logo": "https://peterandedita.co.nz/images/rh-logo.png",
+      "logo": "https://peterandedita.co.nz/images/rh-logo.webp",
       "image": [
         "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg",
         "https://peterandedita.co.nz/images/real-estate-agent-blockhouse-bay-1400.webp"
@@ -250,7 +265,7 @@
         "height": 600
       },
       "datePublished": "2026-05-10T09:00:00+12:00",
-      "dateModified": "2026-07-11T14:00:00+12:00",
+      "dateModified": "2026-07-17T14:00:00+12:00",
       "author": {
         "@id": "https://peterandedita.co.nz/#edita"
       },
@@ -284,7 +299,7 @@
         "height": 600
       },
       "datePublished": "2026-05-10T09:00:00+12:00",
-      "dateModified": "2026-07-11T14:00:00+12:00",
+      "dateModified": "2026-07-17T14:00:00+12:00",
       "inLanguage": "en-NZ"
     },
     {
@@ -368,11 +383,10 @@
 <header>
 <nav class="nav">
 <a class="brand" href="https://peterandedita.co.nz/">
-<img alt="Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.png" width="46"/>
-<div>
-<span style="font-weight:900;">Edita Andrijasevic</span>
-<span style="font-weight:400;"> - Raine &amp; Horne</span>
-</div>
+<img alt="Edita Andrijasevic Raine and Horne logo" height="46" src="/images/rh-logo.webp" width="46"/>
+<div class="brand-name"><span class="brand-team" style="font-weight:900;">Edita Andrijasevic</span>
+<span class="brand-divider">-</span>
+<span class="brand-rh">Raine <span class="brand-amp">&amp;</span> Horne</span></div>
 </a>
 <button aria-controls="primary-navigation" aria-expanded="false" class="menu-toggle" type="button">Menu</button><div class="nav-links" id="primary-navigation">
 <a href="/">Home</a>
@@ -452,7 +466,7 @@
 <span class="kicker">Blockhouse Bay Seller Checklist</span>
 <h1 id="article-title">How to Choose a Real Estate Agent in Blockhouse Bay</h1>
 <p>Use the same practical questions for every agent you interview so you can compare evidence, campaign strategy, communication, buyer follow-up and negotiation—not just the highest appraisal or lowest fee.</p>
-<div class="meta">By Edita Andrijasevic · Published 10 May 2026 · Updated 11 July 2026</div>
+<div class="meta">By Edita Andrijasevic · Published 10 May 2026 · Updated 17 July 2026</div>
 </div>
 </section>
 <div class="article-layout">
@@ -579,7 +593,7 @@
 <footer class="seo-footer">
 <div class="footer-inner">
 <div class="footer-card">
-<h2>Edita Andrijasevic — Raine &amp; Horne</h2>
+<h2>Edita Andrijasevic - Raine &amp; Horne</h2>
 <p>Local real estate information and selling support for Blockhouse Bay and surrounding West Auckland suburbs.</p>
 <p class="small">Edita Andrijasevic (Licensee 20027060) is a Licensed Salesperson under the Real Estate Agents Act 2008. This article provides general information and is not a registered valuation.</p>
 <a href="tel:+6421765234">021 765 234</a>
