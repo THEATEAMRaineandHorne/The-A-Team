@@ -506,6 +506,9 @@
 
       .nav-links.is-open {
         display: grid;
+        max-height: calc(100vh - 140px) !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
       }
 
       .nav-links a,
