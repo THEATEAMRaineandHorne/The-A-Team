@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
@@ -14,8 +13,8 @@
   <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-the-a-team.png">
-  <link rel="apple-touch-icon" href="/images/favicon-the-a-team.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-the-a-team.webp">
+  <link rel="apple-touch-icon" href="/images/favicon-the-a-team.webp">
   <meta property="og:site_name" content="Edita Andrijasevic - Raine &amp; Horne">
   <meta property="og:title" content="New Windsor Property Market Report July 2026 | Edita Andrijasevic">
   <meta property="og:description" content="July 2026 New Windsor property market report based on REINZ sales analysis, including median sale price, days to sell, sales volume and seller advice.">
@@ -55,6 +54,7 @@ header{min-height:78px;background:rgba(255,255,255,0.96);border-bottom:1px solid
 .nav-dropdown[open] .dropdown-menu,.nav-dropdown:hover .dropdown-menu{display:block;}
 .dropdown-menu a,.dropdown-menu a:visited{display:block;padding:11px 13px;border-radius:10px;color:var(--dark)!important;background:#fff!important;font-size:14px;font-weight:900;line-height:1.25;}
 .dropdown-menu a:hover{background:var(--gold)!important;color:var(--dark)!important;}
+.menu-toggle{display:none;min-height:44px;padding:10px 18px;border:1px solid var(--border);border-radius:999px;background:var(--gold);color:var(--dark);font-weight:900;cursor:pointer;}
 .report-hero{position:relative;overflow:hidden;background:var(--dark);color:#fff;min-height:600px;}
 .report-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.48;}
 .report-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.80),rgba(0,0,0,.58) 48%,rgba(0,0,0,.22));}
@@ -145,8 +145,8 @@ footer a{color:var(--gold);font-weight:900;}
 .footer-links a{display:block;margin-bottom:8px;line-height:1.35;}
 .footer-cta{display:inline-flex;align-items:center;justify-content:center;background:var(--gold)!important;color:#202020!important;padding:16px 28px!important;border-radius:999px!important;font-size:18px!important;font-weight:900!important;text-align:center!important;margin-top:12px;width:100%;}
 .disclaimer{font-size:13px;color:#666;line-height:1.6;margin-top:12px;}
-@media(max-width:1020px){header{min-height:auto;}.report-hero-content,.grid-2,.grid-3,.report-body,.footer-inner{grid-template-columns:1fr;}.snapshot-grid{grid-template-columns:1fr 1fr;}.side-card{position:static;}.local-list,.footer-link-grid{grid-template-columns:1fr;}.suburb-links{grid-template-columns:1fr 1fr;}.nav{width:100%;align-items:stretch!important;gap:14px;flex-direction:column;}.brand{width:100%;}.nav-links{width:100%!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:12px 16px!important;}.nav-links>a{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:900!important;line-height:1.15!important;text-align:center!important;}.nav-dropdown{grid-column:1/-1!important;width:100%!important;display:block!important;position:relative!important;}.nav-dropdown summary.nav-parent{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:900!important;line-height:1.15!important;text-align:center!important;}.dropdown-menu{position:static!important;display:none!important;width:100%!important;min-width:0!important;margin-top:10px!important;padding:12px!important;border-radius:20px!important;box-shadow:none!important;}.nav-dropdown:hover .dropdown-menu{display:none!important;}.nav-dropdown[open] .dropdown-menu{display:grid!important;grid-template-columns:1fr!important;gap:8px!important;}.dropdown-menu a{min-height:52px!important;display:flex!important;align-items:center!important;justify-content:center!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;font-size:17px!important;}.chart-grid{grid-template-columns:1fr;}}
-@media(max-width:600px){section{padding:56px 18px;}.report-hero{min-height:620px;}.report-hero-content{min-height:620px;padding:60px 18px 58px;}.snapshot-grid,.suburb-links{grid-template-columns:1fr;}h1{letter-spacing:-1.2px;}.hero-lead{font-size:18px;}.report-panel,.form-card,.hero-card{padding:22px;}.data-table th,.data-table td{padding:12px;font-size:14px;}.bar-row{grid-template-columns:1fr;gap:6px;}.bar-row span{text-align:left;}}
+@media(max-width:1020px){header{min-height:auto;}.report-hero-content,.grid-2,.grid-3,.report-body,.footer-inner{grid-template-columns:1fr;}.snapshot-grid{grid-template-columns:1fr 1fr;}.side-card{position:static;}.local-list,.footer-link-grid{grid-template-columns:1fr;}.suburb-links{grid-template-columns:1fr 1fr;}.nav{width:100%;flex-wrap:wrap;gap:14px;align-items:center;}.brand{width:100%;}.menu-toggle{display:inline-flex;align-items:center;justify-content:center;}.nav-links{width:100%!important;display:none!important;}.nav-links.is-open{display:grid!important;grid-template-columns:1fr 1fr!important;gap:12px 16px!important;max-height:calc(100vh - 140px) !important;overflow-y:auto !important;-webkit-overflow-scrolling:touch !important;}.nav-links>a{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:900!important;line-height:1.15!important;text-align:center!important;}.nav-dropdown{grid-column:1/-1!important;width:100%!important;display:block!important;position:relative!important;}.nav-dropdown summary.nav-parent{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:900!important;line-height:1.15!important;text-align:center!important;}.dropdown-menu{position:static!important;display:none!important;width:100%!important;min-width:0!important;margin-top:10px!important;padding:12px!important;border-radius:20px!important;box-shadow:none!important;}.nav-dropdown:hover .dropdown-menu{display:none!important;}.nav-dropdown[open] .dropdown-menu{display:grid!important;grid-template-columns:1fr!important;gap:8px!important;}.dropdown-menu a{min-height:52px!important;display:flex!important;align-items:center!important;justify-content:center!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;font-size:17px!important;}.chart-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){section{padding:56px 18px;}.report-hero{min-height:620px;}.report-hero-content{min-height:620px;padding:60px 18px 58px;}.snapshot-grid,.suburb-links{grid-template-columns:1fr;}h1{letter-spacing:-1.2px;}.hero-lead{font-size:18px;}.report-panel,.form-card,.hero-card{padding:22px;}.data-table th,.data-table td{padding:12px;font-size:14px;}.bar-row{grid-template-columns:1fr;gap:6px;}.bar-row span{text-align:left;}.nav-links.is-open{grid-template-columns:1fr!important;}}
   </style>
   <script type="application/ld+json">
 {
@@ -395,7 +395,6 @@ footer a{color:var(--gold);font-weight:900;}
   </script>
 </head>
 <body>
-
 <div class="topbar">West Auckland real estate market reports · Call <a href="tel:+6421765234">021 765 234</a> · Licensed under the REAA 2008</div>
 <header>
   <nav class="nav" aria-label="Main navigation">
@@ -403,7 +402,8 @@ footer a{color:var(--gold);font-weight:900;}
       <img src="/images/rh-logo.png" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
       <div class="brand-name"><span>Edita Andrijasevic</span> <span>-</span> <span>Raine &amp; Horne</span></div>
     </a>
-    <div class="nav-links">
+    <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+    <div class="nav-links" id="primary-navigation">
         <a href="/">Home</a>
         <details class="nav-dropdown">
           <summary class="nav-parent">Locations</summary>
@@ -464,7 +464,6 @@ footer a{color:var(--gold);font-weight:900;}
     </div>
   </nav>
 </header>
-
 <main>
   <section class="report-hero">
     <img src="/images/market-reports/new-windsor/new-windsor-market-report-hero-rh.webp" alt="New Windsor property market report hero image with houses and market trend arrows" class="report-hero-bg" width="1400" height="600" loading="eager" fetchpriority="high" decoding="async">
@@ -492,7 +491,6 @@ footer a{color:var(--gold);font-weight:900;}
       </aside>
     </div>
   </section>
-
   <section class="highlight" id="snapshot">
     <div class="container">
       <div class="section-title">
@@ -512,7 +510,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section class="soft" id="opening-summary">
     <div class="container">
       <div class="section-title">
@@ -527,7 +524,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section id="charts">
     <div class="container">
       <div class="section-title">
@@ -568,7 +564,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section class="soft" id="suburb-report">
     <div class="container report-body">
       <article>
@@ -579,20 +574,17 @@ footer a{color:var(--gold);font-weight:900;}
           <p>The latest REINZ data shows a market where transaction activity improved, but the median price softened. This suggests buyers are still present, but they are not chasing every property at any price. They are comparing condition, land, title, layout, renovation cost and nearby alternatives before committing.</p>
           <p>For vendors, the most important point is to price from the right evidence. A renovated freehold residence, a townhouse on New Windsor Road, a crosslease unit, a residential section and a larger site with unusual value potential are all different markets inside the same suburb.</p>
         </div>
-
         <div class="report-panel">
           <h2>Buyer Behaviour</h2>
           <p>Buyers are active, but they are careful. The latest clean 12-month period recorded <strong>88</strong> residence sales, <strong>16</strong> townhouse sales and <strong>19</strong> unit sales. The residence median was <strong>$1,100,000</strong>, while the townhouse median was <strong>$777,500</strong> and the unit median was <strong>$775,000</strong>.</p>
           <p>Three-bedroom homes recorded a median of about <strong>$999,500</strong>, while four-bedroom homes recorded about <strong>$1,255,000</strong>. This reinforces the need to separate family-home evidence from smaller attached or unit-style stock.</p>
           <p>Common buyer objections include dated interiors, renovation cost, roof or moisture concerns, unclear consent history, crosslease limitations, awkward access, limited parking, small outdoor areas and pricing that does not match recent comparable sales.</p>
         </div>
-
         <div class="report-panel">
           <h2>Property Types Performing Best</h2>
           <p>Well-presented family homes with practical parking, good sun, usable land and clear documentation are generally easier to position. In the latest period, New Windsor residence sales recorded a median of <strong>$1,100,000</strong>. That is still a stronger segment than most townhouse and unit sales, but condition and location are doing a lot of the work.</p>
           <p>Townhouses and units remain important because they provide a lower entry point for some buyers. However, those buyers are especially sensitive to value. They compare floor area, number of bedrooms, parking, body corporate or shared ownership arrangements, quality of finish and the difference between buying in New Windsor versus Avondale, Mount Roskill or New Lynn.</p>
         </div>
-
         <div class="report-panel">
           <h2>Advice For Sellers</h2>
           <p>New Windsor sellers should prepare carefully before launch. In a market where the median has softened, the goal is not just to advertise the property. The goal is to reduce buyer uncertainty and make the price position easy to understand.</p>
@@ -605,7 +597,6 @@ footer a{color:var(--gold);font-weight:900;}
             <li>Negotiate carefully around finance, building reports, settlement timing and the buyer's alternative options.</li>
           </ul>
         </div>
-
         <div class="report-panel">
           <h2>Local Factors Affecting New Windsor</h2>
           <ul class="local-list">
@@ -617,13 +608,11 @@ footer a{color:var(--gold);font-weight:900;}
             <li>Different value patterns between freehold, crosslease and unit-style properties</li>
           </ul>
         </div>
-
         <div class="report-panel">
           <h2>What This Means For Homeowners</h2>
           <p>For New Windsor homeowners, the latest REINZ data is not negative across every property, but it is a reminder that the market is selective. Sales volume is up, which is encouraging, but the lower median means buyers are demanding clear value. A strong result is still possible, especially when the property is well-presented, well-documented and priced against the right comparable sales.</p>
         </div>
       </article>
-
       <aside class="side-card">
         <h3>New Windsor REINZ Data Notes</h3>
         <p><strong>$1,020,000</strong><br>Median sale price in the latest clean 12-month REINZ period.</p>
@@ -634,7 +623,6 @@ footer a{color:var(--gold);font-weight:900;}
       </aside>
     </div>
   </section>
-
   <section id="numbers">
     <div class="container">
       <div class="section-title">
@@ -657,7 +645,6 @@ footer a{color:var(--gold);font-weight:900;}
       <p class="source-note" id="image-license">Image note: The New Windsor market report hero image is used for this page as branded web artwork for Edita Andrijasevic - Raine &amp; Horne. Do not reuse without permission.</p>
     </div>
   </section>
-
   <section class="highlight" id="outlook">
     <div class="container">
       <div class="section-title">
@@ -672,7 +659,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section id="faq">
     <div class="container">
       <div class="section-title">
@@ -687,7 +673,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section class="dark-section" id="request-appraisal">
     <div class="container grid-2">
       <div>
@@ -714,7 +699,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section class="soft">
     <div class="container">
       <div class="section-title">
@@ -733,7 +717,6 @@ footer a{color:var(--gold);font-weight:900;}
     </div>
   </section>
 </main>
-
 <footer>
   <div class="footer-inner">
     <div class="footer-card">
@@ -784,6 +767,6 @@ footer a{color:var(--gold);font-weight:900;}
     </div>
   </div>
 </footer>
-
+<script>(function(){var toggle=document.querySelector('.menu-toggle');var nav=document.getElementById('primary-navigation');if(toggle&&nav){toggle.addEventListener('click',function(){var open=nav.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Close menu':'Menu';});}})();</script>
 </body>
 </html>
