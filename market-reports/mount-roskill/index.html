@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
@@ -13,8 +12,8 @@
   <link rel="preload" as="image" href="/images/market-reports/mount-roskill/mount-roskill-market-report-hero-rh.webp" fetchpriority="high">
   <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-the-a-team.png">
-  <link rel="apple-touch-icon" href="/images/favicon-the-a-team.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-the-a-team.webp">
+  <link rel="apple-touch-icon" href="/images/favicon-the-a-team.webp">
   <meta property="og:site_name" content="Edita Andrijasevic - Raine &amp; Horne">
   <meta property="og:title" content="Mount Roskill Property Market Report July 2026 | Edita Andrijasevic">
   <meta property="og:description" content="July 2026 Mount Roskill property market report using REINZ sales analysis and practical seller advice.">
@@ -53,6 +52,7 @@ header{min-height:78px;background:rgba(255,255,255,0.96);border-bottom:1px solid
 .nav-dropdown[open] .dropdown-menu,.nav-dropdown:hover .dropdown-menu{display:block;}
 .dropdown-menu a,.dropdown-menu a:visited{display:block;padding:11px 13px;border-radius:10px;color:var(--dark)!important;background:#fff!important;font-size:14px;font-weight:900;line-height:1.25;}
 .dropdown-menu a:hover{background:var(--gold)!important;color:var(--dark)!important;}
+.menu-toggle{display:none;min-height:44px;padding:10px 18px;border:1px solid var(--border);border-radius:999px;background:var(--gold);color:var(--dark);font-weight:900;cursor:pointer;}
 .report-hero{position:relative;min-height:600px;overflow:hidden;background:var(--dark);color:#fff;}
 .report-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.52;}
 .report-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.80),rgba(0,0,0,.58) 48%,rgba(0,0,0,.22));}
@@ -148,9 +148,11 @@ footer a{color:var(--gold);font-weight:900;}
   .side-card{position:static;}
   .local-list,.footer-link-grid{grid-template-columns:1fr;}
   .suburb-links{grid-template-columns:1fr 1fr;}
-  .nav{width:100%;align-items:stretch!important;gap:14px;flex-direction:column;}
+  .nav{width:100%;flex-wrap:wrap;gap:14px;align-items:center;}
   .brand{width:100%;}
-  .nav-links{width:100%!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:12px 16px!important;}
+  .menu-toggle{display:inline-flex;align-items:center;justify-content:center;}
+  .nav-links{width:100%!important;display:none!important;}
+  .nav-links.is-open{display:grid!important;grid-template-columns:1fr 1fr!important;gap:12px 16px!important;max-height:calc(100vh - 140px) !important;overflow-y:auto !important;-webkit-overflow-scrolling:touch !important;}
   .nav-links>a{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:900!important;line-height:1.15!important;text-align:center!important;}
   .nav-dropdown{grid-column:1/-1!important;width:100%!important;display:block!important;position:relative!important;}
   .nav-dropdown summary.nav-parent{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:900!important;line-height:1.15!important;text-align:center!important;}
@@ -171,6 +173,7 @@ footer a{color:var(--gold);font-weight:900;}
   .data-table th,.data-table td{padding:12px;font-size:14px;}
   .bar-row{grid-template-columns:1fr;gap:6px;}
   .bar-row span{text-align:left;}
+  .nav-links.is-open{grid-template-columns:1fr!important;}
 }
   </style>
   <script type="application/ld+json">
@@ -427,7 +430,8 @@ footer a{color:var(--gold);font-weight:900;}
       <img src="/images/rh-logo.png" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
       <div class="brand-name"><span>Edita Andrijasevic</span> <span>-</span> <span>Raine &amp; Horne</span></div>
     </a>
-    <div class="nav-links">
+    <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+    <div class="nav-links" id="primary-navigation">
         <a href="/">Home</a>
         <details class="nav-dropdown">
           <summary class="nav-parent">Locations</summary>
@@ -488,7 +492,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
   </nav>
 </header>
-
 <main>
   <section class="report-hero">
     <img src="/images/market-reports/mount-roskill/mount-roskill-market-report-hero-rh.webp" alt="Mount Roskill property market report hero image with houses and market trend arrows" class="report-hero-bg" width="1400" height="600" loading="eager" fetchpriority="high" decoding="async">
@@ -516,7 +519,6 @@ footer a{color:var(--gold);font-weight:900;}
       </aside>
     </div>
   </section>
-
   <section class="highlight" id="snapshot">
     <div class="container">
       <div class="section-title">
@@ -536,7 +538,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section class="soft" id="opening-summary">
     <div class="container">
       <div class="section-title">
@@ -551,7 +552,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section id="charts">
     <div class="container">
       <div class="section-title">
@@ -593,7 +593,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section class="soft" id="suburb-report">
     <div class="container report-body">
       <article>
@@ -604,20 +603,17 @@ footer a{color:var(--gold);font-weight:900;}
           <p>The latest REINZ numbers show a market that is holding reasonably well, with the median sale price up <strong>+4.0%</strong>. However, this does not mean every property has moved equally. Mount Roskill has a wide spread of property types, from apartments and townhouses through to larger freehold family homes and sites with redevelopment appeal.</p>
           <p>For vendors, the main message is to avoid using a single suburb median as the full answer. A freehold family home, a crosslease unit, a townhouse, an apartment and a site with future potential can all sit in the same suburb but behave very differently in the market.</p>
         </div>
-
         <div class="report-panel">
           <h2>Buyer Behaviour</h2>
           <p>Buyers are active, but they are careful. Many are comparing Mount Roskill against nearby suburbs for school access, transport, motorway convenience, house size, section size, condition and long-term potential. Homes with practical layouts, good sun, parking and clear documentation are easier for buyers to act on.</p>
           <p>The latest REINZ period recorded <strong>308</strong> residence sales, <strong>72</strong> townhouse sales and <strong>62</strong> unit sales. Three-bedroom homes recorded a median of about <strong>$908,000</strong>, while four-bedroom homes recorded about <strong>$1,149,000</strong>. This reinforces that the family-home market is still central to Mount Roskill buyer demand.</p>
           <p>Common buyer objections include renovation cost, older interiors, roof and moisture concerns, awkward access, limited parking, unclear consent history, body corporate considerations, crosslease limitations, and pricing that does not match recent comparable sales.</p>
         </div>
-
         <div class="report-panel">
           <h2>Property Types Performing Best</h2>
           <p>Well-presented freehold homes are generally easier to position because they appeal to families, long-term owner-occupiers and buyers looking for future flexibility. In the latest REINZ period, freehold sales recorded a median of <strong>$1,030,000</strong>, compared with <strong>$928,500</strong> for crosslease sales.</p>
           <p>Townhouses and units remain important in Mount Roskill, but buyers in those segments are very value-conscious. They compare layout, body corporate or shared ownership costs, parking, outdoor space, quality of finish and location. A strong result is still possible, but the campaign needs to make the value clear quickly.</p>
         </div>
-
         <div class="report-panel">
           <h2>Advice For Sellers</h2>
           <p>Mount Roskill sellers should prepare the property and documentation before launch. The best campaigns reduce uncertainty early, especially where buyers may have questions about title, CCC, extensions, rental compliance, crosslease flats plan, unit title matters or previous renovations.</p>
@@ -630,7 +626,6 @@ footer a{color:var(--gold);font-weight:900;}
             <li>Negotiate carefully around finance, building report, settlement timing and buyer motivation.</li>
           </ul>
         </div>
-
         <div class="report-panel">
           <h2>Local Factors Affecting Mount Roskill</h2>
           <ul class="local-list">
@@ -642,13 +637,11 @@ footer a{color:var(--gold);font-weight:900;}
             <li>Buyer caution around older homes, maintenance, crosslease records and renovation cost</li>
           </ul>
         </div>
-
         <div class="report-panel">
           <h2>What This Means For Homeowners</h2>
           <p>For Mount Roskill homeowners, the latest REINZ data is reasonably positive but still selective. The median price has improved, sales volume is stable, and median days to sell are slightly better. However, the best result still depends on matching the price strategy to the exact property type, condition, land, title, location and buyer pool.</p>
         </div>
       </article>
-
       <aside class="side-card">
         <h3>Mount Roskill REINZ Data Notes</h3>
         <p><strong>$981,000</strong><br>Median sale price in the latest clean 12-month REINZ period.</p>
@@ -659,7 +652,6 @@ footer a{color:var(--gold);font-weight:900;}
       </aside>
     </div>
   </section>
-
   <section id="numbers">
     <div class="container">
       <div class="section-title">
@@ -683,7 +675,6 @@ footer a{color:var(--gold);font-weight:900;}
       <p class="source-note" id="image-license">Image licence note: The hero image and page visuals are used for this Mount Roskill market report by Edita Andrijasevic - Raine &amp; Horne. Do not copy, reuse or redistribute the image without permission.</p>
     </div>
   </section>
-
   <section class="highlight" id="outlook">
     <div class="container">
       <div class="section-title">
@@ -698,7 +689,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section id="faq">
     <div class="container">
       <div class="section-title">
@@ -713,7 +703,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section class="dark-section" id="request-appraisal">
     <div class="container grid-2">
       <div>
@@ -740,7 +729,6 @@ footer a{color:var(--gold);font-weight:900;}
       </div>
     </div>
   </section>
-
   <section class="soft">
     <div class="container">
       <div class="section-title">
@@ -757,7 +745,6 @@ footer a{color:var(--gold);font-weight:900;}
     </div>
   </section>
 </main>
-
 <footer>
   <div class="footer-inner">
     <div class="footer-card">
@@ -807,5 +794,6 @@ footer a{color:var(--gold);font-weight:900;}
     </div>
   </div>
 </footer>
+<script>(function(){var toggle=document.querySelector('.menu-toggle');var nav=document.getElementById('primary-navigation');if(toggle&&nav){toggle.addEventListener('click',function(){var open=nav.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Close menu':'Menu';});}})();</script>
 </body>
 </html>
