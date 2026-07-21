@@ -713,7 +713,7 @@
       .brand { flex: 1; min-width: 0; }
       .menu-toggle { display: inline-flex !important; }
       .nav-links { display: none; width: 100% !important; }
-      .nav-links.is-open { display: grid !important; grid-template-columns: 1fr !important; gap: 12px !important; }
+      .nav-links.is-open { display: grid !important; grid-template-columns: 1fr !important; gap: 12px !important;  max-height: calc(100vh - 140px) !important; overflow-y: auto !important; -webkit-overflow-scrolling: touch !important;}
       .nav-links > a { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; text-align: center !important; }
       .nav-dropdown { grid-column: 1 / -1 !important; width: 100% !important; display: block !important; position: relative !important; }
       .nav-dropdown summary.nav-parent { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 7px !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; cursor: pointer !important; list-style: none !important; }
@@ -766,7 +766,7 @@
       "publisher": {
         "@id": "https://peterandedita.co.nz/#realestateagent"
       },
-      "dateModified": "2026-07-18"
+      "dateModified": "2026-07-18T09:00:00+12:00"
     },
     {
       "@type": "BreadcrumbList",
@@ -948,7 +948,7 @@
           <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
           <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
           <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
-          <a href="/services/real-estate-negotiation-west-auckland/">Negotiation Support</a>
+          <a href="/services/real-estate-negotiation-support/">Negotiation Support</a>
           <a href="/amplify-property-marketing/">Amplify Property Marketing</a>
           <a href="/property-auctions-west-auckland/">Property Auctions</a>
         </div>
@@ -992,11 +992,11 @@
     <section class="hero" id="appraisal">
       <img
         src="/images/home-hero-960.webp"
-        srcset=",,"
-          /images/home-hero-640.webp 640w
-          /images/home-hero-960.webp 960w
+        srcset="
+          /images/home-hero-640.webp 640w,
+          /images/home-hero-960.webp 960w,
           /images/home-hero-1400.webp 1400w
-        
+        "
         sizes="100vw"
         alt="Real estate services for West Auckland homeowners with Edita Andrijasevic, Raine and Horne"
         class="hero-bg"
@@ -1363,7 +1363,7 @@
     From first enquiry to final offer, we help manage buyer motivation, conditions,
     timing and price conversations with care.
   </p>
-  <a class="btn btn-primary" style="margin-top:18px;" href="/services/real-estate-negotiation-west-auckland/">
+  <a class="btn btn-primary" style="margin-top:18px;" href="/services/real-estate-negotiation-support/">
     Learn About Negotiation Support
   </a>
 </div>
