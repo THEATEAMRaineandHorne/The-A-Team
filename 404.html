@@ -5,75 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found | Edita Andrijasevic</title>
   <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://peterandedita.co.nz">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-the-a-team.webp">
+  
   <style>
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: optional;
+    }
     :root {
       --gold: #ffb200;
       --dark: #202020;
-      --white: #ffffff;
       --charcoal: #4D4E50;
+      --white: #ffffff;
+      --soft: #f7f7f5;
+      --border: #e8e2d7;
+      --muted: #555555;
     }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
       color: var(--dark);
-      background: #f7f7f5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
-    .error-container {
       background: var(--white);
-      max-width: 500px;
-      padding: 40px 30px;
-      border-radius: 24px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.06);
-      border: 1px solid #e8e2d7;
+      line-height: 1.6;
     }
-    h1 {
-      font-size: 64px;
-      margin: 0 0 10px;
-      color: var(--dark);
-    }
-    h2 {
-      font-size: 24px;
-      margin: 0 0 15px;
-      color: var(--charcoal);
-    }
-    p {
-      color: #555555;
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 30px;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--gold);
-      color: var(--dark);
-      padding: 14px 28px;
-      border-radius: 999px;
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 16px;
-      transition: background 0.2s ease;
-    }
-    .btn:hover {
-      background: #e6a100;
-    }
+    a { color: inherit; text-decoration: none; }
+    
+    /* NAVIGATION MENU STYLES */
+    .topbar { background: var(--dark); color: var(--white); text-align: center; padding: 9px 20px; font-size: 14px; }
+    .topbar a { color: var(--gold); font-weight: 800; }
+    header { background: rgba(255,255,255,0.96); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+    .nav { max-width: 1220px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; font-size: 18px; }
+    .brand img { width: 46px; height: 46px; object-fit: contain; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 18px; font-size: 14px; font-weight: 800; }
+    .nav-links a:hover { color: var(--gold); }
+    
+    /* 404 CONTENT HERO STYLES */
+    .error-hero { padding: 90px 20px; text-align: center; background: var(--soft); border-bottom: 1px solid var(--border); }
+    .error-container { max-width: 600px; margin: 0 auto; background: var(--white); padding: 50px 30px; border-radius: 24px; box-shadow: 0 15px 40px rgba(0,0,0,0.04); border: 1px solid var(--border); }
+    .error-container h1 { font-size: 80px; margin: 0; color: var(--dark); line-height: 1; letter-spacing: -2px; }
+    .error-container h2 { font-size: 26px; margin: 10px 0 20px; color: var(--charcoal); }
+    .error-container p { color: var(--muted); font-size: 16px; margin-bottom: 30px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 15px 30px; border-radius: 10px; font-weight: 900; background: var(--gold); color: var(--dark); border: 2px solid var(--gold); cursor: pointer; font-size: 15px; }
+    .btn:hover { background: var(--dark); color: var(--white); border-color: var(--dark); }
+
+    /* FOOTER STYLES */
+    .seo-footer { background: var(--dark); color: var(--white); padding: 60px 20px 20px; font-size: 15px; }
+    .seo-footer-inner { max-width: 1220px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; }
+    @media (max-width: 768px) { .seo-footer-inner { grid-template-columns: 1fr; } }
+    .seo-footer h2 { color: var(--white); font-size: 24px; margin-top: 0; }
+    .seo-footer h3 { color: var(--gold); font-size: 16px; margin: 20px 0 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .seo-footer p { color: #cccccc; margin: 0 0 15px; }
+    .seo-footer p.small { font-size: 13px; color: #999999; line-height: 1.5; }
+    .seo-footer-gold { color: var(--gold); }
+    .seo-footer-contact a { display: block; color: var(--gold); font-weight: 700; margin-bottom: 5px; }
+    .seo-footer-link-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    @media (max-width: 480px) { .seo-footer-link-grid { grid-template-columns: 1fr; } }
+    .seo-footer-links a { display: block; color: #bbbbbb; margin-bottom: 8px; font-size: 14px; }
+    .seo-footer-links a:hover { color: var(--gold); }
+    .footer-social { text-align: center; margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; }
+    .footer-social-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 15px; }
+    .footer-social-links a { display: inline-flex; align-items: center; gap: 8px; color: #cccccc; }
+    .footer-social-links a:hover { color: var(--gold); }
   </style>
 </head>
 <body>
 
-  <div class="error-container">
-    <h1>404</h1>
-    <h2>Page Not Found</h2>
-    <p>The link you clicked might be broken, or the page may have moved. Let's get you back to finding property advice in West Auckland.</p>
-    <a href="https://peterandedita.co.nz" class="btn">Return to Homepage</a>
+  <!-- HEADER NAVIGATION -->
+  <div class="topbar">
+    Looking for local real estate advice? <a href="https://peterandedita.co.nz">Book your free property appraisal</a>
   </div>
+  <header>
+    <div class="nav">
+      <a href="https://peterandedita.co.nz" class="brand">
+        <img src="images/favicon-the-a-team.webp" alt="Raine & Horne Logo">
+        <span>Edita Andrijasevic</span>
+      </a>
+      <div class="nav-links">
+        <a href="https://peterandedita.co.nz">Home</a>
+        <a href="https://peterandedita.co.nz">Free Appraisal</a>
+        <a href="tel:+6421765234">Call Edita</a>
+      </div>
+    </div>
+  </header>
 
-</body>
-</html>
+  <!-- 404 MAIN HERO CORE -->
+  <main class="error-hero">
+    <div class="error-container">
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+      <p>The page you are looking for might have been moved, renamed, or is temporarily unavailable. Let's get you back on track with trusted West Auckland property advice.</p>
+      <a href="https://peterandedita.co.nz" class="btn">Go Back To Homepage</a>
+    </div>
+  </main>
+
+  <!-- COMPLETE LOCAL SEO FOOTER -->
+  <footer class="seo-footer">
+    <div class="seo-footer-inner">
+      <!-- LEFT FOOTER BLOCK -->
+      <div class="seo-footer-card seo-footer-left">
+        <h2>Edita Andrijasevic - Raine <span class="seo-footer-gold">&amp;</span> Horne</h2>
+        <p>Helping West Auckland homeowners with local real estate advice, selling strategy, buyer-focused marketing, Raine &amp; Horne Amplify and negotiation.</p>
+        <p class="small">Edita Andrijasevic (Licensee 20027060) is a Licensed Salesperson under the Real Estate Agents Act 2008. This website provides general real estate information and appraisal enquiry options. It is not a registered valuation.</p>
+        <p class="small">Areas served: Titirangi, Blockhouse Bay, Lynfield, New Lynn, Green Bay, Glen Eden, Kelston, Mount Roskill, New Windsor, Glendene, Avondale and nearby West Auckland suburbs.</p>
+        <div class="seo-footer-contact">
+          <a href="tel:+6421765234">021 765 234</a>
+          <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
+          <p class="small" style="margin-top:10px;">Office: 9 Sheridan Drive, New Lynn, Auckland 0600</p>
+          <a href="https://peterandedita.co.nz" class="btn" style="background:#ffb200; color:#202020; margin-top:15px; border-radius:999px; padding:12px 24px; font-weight:900;">
+            Ask Edita For Advice
+          </a>
+        </div>
+        <div class="seo-footer-link-grid" style="margin-top:28px;">
+          <div class="seo-footer-links">
+            <h3>Real Estate Agent by Suburb</h3>
+            <a href="https://peterandedita.co.nzlocations/">Areas We Serve</a>
+            <a href="https://peterandedita.co.nzservices/">Real Estate Services</a>
+            <a href="https://peterandedita.co.nzreal-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+            <a href="https://peterandedita.co.nzreal-estate-agent-titirangi/">Titirangi</a>
+            <a href="https://peterandedita.co.nzreal-estate-agent-lynfield/">Lynfield</a>
+            <a href="https://peterandedita.co.nzreal-estate-agent-new-lynn/">New Lynn</a>
+            <a href="https://peterandedita.co.nzreal-estate-agent-green-bay/">Green Bay</a>
+            <a href="https://peterandedita.co.nzreal-estate-agent-glen-eden/">Glen Eden</a>
+            <a href="https://peterandedita.co.nzreal-estate-agent-kelston/">Kelston</a>
+            <a href="https://peterandedita.co.nzreal-estate-agent-mount-roskill/">Mount Roskill</a>
+            <a href="https://peterandedita.co.nzreal-estate-agent-new-windsor/">New Windsor</a>
+            <a href="https://peterandedita.co.nzreal-estate-agent-glendene/">Glendene</a>
+            <a href="https://peterandedita.co.nzreal-estate-agent-avondale/">Avondale</a>
+          </div>
+          <div class="seo-footer-links">
+            <h3>Seller Guides</h3>
+            <a href="https://peterandedita.co.nzarticles/should-i-sell-my-house-now-or-wait-auckland.html">Should I Sell Now Or Wait?</a>
+            <a href="https://peterandedita.co.nzarticles/best-time-to-sell-west-auckland.html">Best Time To Sell In West Auckland</a>
+            <a href="https://peterandedita.co.nzarticles/prepare-home-for-sale-auckland.html">Prepare Your Home For Sale</a>
+            <a href="https://peterandedita.co.nzarticles/why-homes-do-not-sell-blockhouse-bay.html">Why Some Homes Do Not Sell</a>
+            <a href="https://peterandedita.co.nzarticles/best-real-estate-agent-reviews-auckland.html">Best Real Estate Agent Reviews</a>
+            <a href="https://peterandedita.co.nzarticles/best-real-estate-agent-titirangi.html">Best Agent Titirangi</a>
+            <a href="https://peterandedita.co.nzarticles/best-real-estate-agent-blockhouse-bay.html">Best Agent Blockhouse Bay</a>
+            <a href="https://peterandedita.co.nzarticles/best-real-estate-agent-lynfield.html">Best Agent Lynfield</a>
+            <a href="https://peterandedita.co.nzhow-to-choose-real-estate-agent-green-bay.html">Choosing A Green Bay Real Estate Agent</a>
+            <a href="https://peterandedita.co.nzservices/selling-your-home-west-auckland/">Selling Your Home In West Auckland</a>
+            <a href="https://peterandedita.co.nzservices/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
