@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-88WTQFKQV6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-88WTQFKQV6');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You for Your Enquiry | Edita Andrijasevic</title>
+  <meta name="description" content="Thank you for contacting Edita Andrijasevic. Your enquiry has been received and Edita will be in touch.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/webp" sizes="96x96" href="/images/favicon-the-a-team.webp">
+  <link rel="apple-touch-icon" href="/images/favicon-the-a-team.webp">
+  <style>
+    :root{--gold:#ffb200;--dark:#202020;--white:#fff;--soft:#f7f7f5;--border:#e8e2d7;--muted:#555}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--soft);line-height:1.6}
+    .topbar{background:var(--dark);color:var(--white);text-align:center;padding:10px 20px;font-size:14px}
+    .topbar a{color:var(--gold);font-weight:800}
+    header{background:var(--white);border-bottom:1px solid var(--border)}
+    .nav{max-width:1100px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;color:var(--dark);text-decoration:none;font-weight:800}
+    .brand img{width:46px;height:46px;object-fit:contain}
+    .home-link{color:var(--dark);text-decoration:none;font-weight:800}
+    main{min-height:calc(100vh - 190px);display:grid;place-items:center;padding:48px 20px}
+    .card{width:min(720px,100%);background:var(--white);border:1px solid var(--border);border-radius:24px;padding:48px 34px;text-align:center;box-shadow:0 18px 50px rgba(0,0,0,.08)}
+    .check{width:74px;height:74px;margin:0 auto 22px;border-radius:50%;display:grid;place-items:center;background:var(--gold);font-size:38px;font-weight:900}
+    h1{margin:0 0 14px;font-size:clamp(32px,5vw,52px);line-height:1.1}
+    p{margin:0 auto 18px;max-width:590px;color:var(--muted);font-size:18px}
+    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;border-radius:999px;padding:13px 22px;text-decoration:none;font-weight:900}
+    .btn-primary{background:var(--gold);color:var(--dark)}
+    .btn-secondary{background:var(--dark);color:var(--white)}
+    footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:14px}
+    @media(max-width:600px){.nav{align-items:flex-start}.card{padding:38px 22px}.home-link{font-size:14px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">West Auckland real estate advice · <a href="tel:+6421765234">Call 021 765 234</a></div>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="/">
+        <img src="/images/favicon-the-a-team.webp" alt="" width="46" height="46">
+        <span>Edita Andrijasevic – Raine &amp; Horne</span>
+      </a>
+      <a class="home-link" href="/">Return Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card" aria-labelledby="thank-you-title">
+      <div class="check" aria-hidden="true">✓</div>
+      <h1 id="thank-you-title">Thank you for your enquiry</h1>
+      <p>Your message has been received. Edita will review the details and get in touch with you as soon as possible.</p>
+      <p>If your enquiry is urgent, you are welcome to call Edita directly on 021 765 234.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/">Return to the website</a>
+        <a class="btn btn-secondary" href="tel:+6421765234">Call Edita</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Edita Andrijasevic. All Rights Reserved.</footer>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('submitted') !== '1') return;
+
+      var eventKey = 'edita_generate_lead_recorded';
+      if (sessionStorage.getItem(eventKey) === '1') return;
+
+      sessionStorage.setItem(eventKey, '1');
+      gtag('event', 'generate_lead', {
+        method: 'Formspree',
+        page_location: window.location.href,
+        send_to: 'G-88WTQFKQV6'
+      });
+
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }());
+  </script>
+</body>
+</html>
