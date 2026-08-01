@@ -18,6 +18,13 @@ This repository is the live static website for Edita Andrijasevic – Raine & Ho
 - Do not add a new dependency, framework, CMS, paid service, or external script without explicit approval.
 - Do not make legal, financial, sales-performance, ranking, testimonial, review, award, or “best agent” claims unless Peter supplied or approved the evidence and wording.
 
+
+- Do not begin repository work unless Peter explicitly asks for that specific task in the current conversation.
+- A request to review, explain, diagnose or suggest changes does not authorise edits, commits or pull requests.
+- A draft pull request is for Peter’s review only and must never be treated as approval to merge.
+- Before any live publication, wait for Peter’s clear instruction to merge the specific pull request.
+- Never enable auto-merge or merge a pull request based on a previous, implied or general approval.
+
 ## Important production files
 
 Handle these files with extra care:
