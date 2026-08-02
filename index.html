@@ -8,16 +8,37 @@
   "name" : "Edita Andrijasevic",
   "url" : "https://peterandedita.co.nz/"
 }
-</script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-88WTQFKQV6"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  // This function injects Google Analytics only when needed
+  function loadGoogleAnalytics() {
+    if (window.analyticsLoaded) return;
+    window.analyticsLoaded = true;
 
-  gtag('config', 'G-88WTQFKQV6');
+    // Create the script element
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = "https://googletagmanager.com";
+    document.head.appendChild(script);
+
+    // Initialise dataLayer
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-88WTQFKQV6');
+    
+    console.log('Google Analytics loaded via user interaction!');
+  }
+
+  // Set up event listeners to catch any first human interaction
+  const interactionEvents = ['mouseover', 'keydown', 'touchstart', 'scroll'];
+  interactionEvents.forEach(event => {
+    window.addEventListener(event, loadGoogleAnalytics, { once: true });
+  });
+
+  // Fallback: If no interaction happens, load it anyway after 4 seconds
+  setTimeout(loadGoogleAnalytics, 4000);
 </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Edita Andrijasevic | Real Estate Agent West Auckland</title>
