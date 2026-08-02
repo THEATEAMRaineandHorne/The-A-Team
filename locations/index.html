@@ -34,15 +34,13 @@
   <meta name="twitter:title" content="Areas We Serve West Auckland | Edita Andrijasevic">
   <meta name="twitter:description" content="West Auckland property appraisal and selling advice from Edita Andrijasevic - Raine &amp; Horne.">
   <meta name="twitter:image" content="https://peterandedita.co.nz/images/locations-west-auckland-map-hero.webp">
-  <link rel="preload" as="image" href="/images/locations-west-auckland-map-hero.webp" fetchpriority="high">
-  <link rel="preload" as="image" href="/images/rh-logo.webp">
-  <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" as="image" href="/images/locations-west-auckland-map-hero.webp" type="image/webp" fetchpriority="high">
   <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
   <style>
     @font-face {
       font-family: 'RaineHorne';
-      src: url('/fonts/rainehorne.ttf') format('truetype'), url('/fonts/raine-horne-regular.ttf') format('truetype');
-      font-weight: 400 900;
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400;
       font-style: normal;
       font-display: optional;
     }
@@ -817,6 +815,25 @@
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "RealEstateAgent",
+        "@id": "https://peterandedita.co.nz/#realestateagent",
+        "name": "Edita Andrijasevic - Raine & Horne",
+        "url": "https://peterandedita.co.nz/",
+        "telephone": "+6421765234",
+        "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
+        "priceRange": "$$",
+        "image": "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg",
+        "logo": "https://peterandedita.co.nz/images/rh-logo.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "9 Sheridan Drive",
+          "addressLocality": "New Lynn",
+          "addressRegion": "Auckland",
+          "postalCode": "0600",
+          "addressCountry": "NZ"
+        }
+      },
       {
         "@type": "CollectionPage",
         "@id": "https://peterandedita.co.nz/locations/#webpage",
