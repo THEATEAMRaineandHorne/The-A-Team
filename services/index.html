@@ -34,15 +34,15 @@
   <meta name="twitter:title" content="Services West Auckland | Edita Andrijasevic - Raine &amp; Horne">
   <meta name="twitter:description" content="Real estate services for West Auckland homeowners including appraisal advice, pricing strategy, presentation, marketing and negotiation support.">
   <meta name="twitter:image" content="https://peterandedita.co.nz/images/west-auckland-free-property-appraisal.jpg">
-  <link rel="preload" as="image" href="/images/home-hero-960.webp" fetchpriority="high">
-  <link rel="preload" as="image" href="/images/rh-logo.webp">
-  <link rel="preload" href="/fonts/rainehorne.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" as="image" href="/images/home-hero-640.webp" media="(max-width: 600px)" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/home-hero-960.webp" media="(min-width: 601px) and (max-width: 1000px)" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/home-hero-1400.webp" media="(min-width: 1001px)" fetchpriority="high">
   <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
   <style>
     @font-face {
       font-family: 'RaineHorne';
-      src: url('/fonts/rainehorne.ttf') format('truetype'), url('/fonts/raine-horne-regular.ttf') format('truetype');
-      font-weight: 400 900;
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400;
       font-style: normal;
       font-display: optional;
     }
@@ -750,6 +750,25 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "RealEstateAgent",
+      "@id": "https://peterandedita.co.nz/#realestateagent",
+      "name": "Edita Andrijasevic - Raine & Horne",
+      "url": "https://peterandedita.co.nz/",
+      "telephone": "+6421765234",
+      "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
+      "priceRange": "$$",
+      "image": "https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.jpg",
+      "logo": "https://peterandedita.co.nz/images/rh-logo.webp",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9 Sheridan Drive",
+        "addressLocality": "New Lynn",
+        "addressRegion": "Auckland",
+        "postalCode": "0600",
+        "addressCountry": "NZ"
+      }
+    },
+    {
       "@type": "WebPage",
       "@id": "https://peterandedita.co.nz/services/#webpage",
       "url": "https://peterandedita.co.nz/services/",
@@ -999,21 +1018,19 @@
   </div>
   <main>
     <section class="hero" id="appraisal">
-      <img
-        src="/images/home-hero-960.webp"
-        srcset="
-          /images/home-hero-640.webp 640w,
-          /images/home-hero-960.webp 960w,
-          /images/home-hero-1400.webp 1400w
-        "
-        sizes="100vw"
-        alt="Real estate services for West Auckland homeowners with Edita Andrijasevic, Raine and Horne"
-        class="hero-bg"
-        width="1800"
-        height="1000"
-        loading="eager"
-        fetchpriority="high"
-        decoding="async">
+      <picture>
+        <source media="(max-width: 600px)" srcset="/images/home-hero-640.webp">
+        <source media="(max-width: 1000px)" srcset="/images/home-hero-960.webp">
+        <img
+          src="/images/home-hero-1400.webp"
+          alt="Real estate services for West Auckland homeowners with Edita Andrijasevic, Raine and Horne"
+          class="hero-bg"
+          width="1400"
+          height="933"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async">
+      </picture>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div>
