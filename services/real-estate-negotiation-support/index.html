@@ -1794,8 +1794,9 @@
 
         button.addEventListener('click', function () {
           var iframe = document.createElement('iframe');
-          iframe.src = 'https://www.youtube-nocookie.com/embed/' + videoId + '?autoplay=1';
+          iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0&origin=https%3A%2F%2Fpeterandedita.co.nz';
           iframe.title = 'Raine & Horne Amplify AI Property Marketing';
+          iframe.referrerPolicy = 'strict-origin-when-cross-origin';
           iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
           iframe.allowFullscreen = true;
           iframe.loading = 'lazy';
