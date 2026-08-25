@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
@@ -7,7 +8,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-88WTQFKQV6');
 </script>
   <meta charset="UTF-8">
@@ -71,7 +71,7 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 16px;
+      gap: 34px;
     }
     .nav a {
       color: var(--white);
@@ -262,68 +262,124 @@
       border-left: 6px solid var(--gold);
       border-radius: 16px;
       padding: 22px;
-      margin: 0 0 26px;
+      margin: 0 0 34px;
     }
     .article-note p {
       margin: 0;
       color: var(--muted);
       font-size: 17px;
     }
-    .article-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-    .card {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      background: var(--white);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 245px;
-      transition: 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 16px 34px rgba(0, 0, 0, 0.12);
-    }
-    .featured-card {
-      border-left: 7px solid var(--gold);
-      background: linear-gradient(180deg, #fffdf8 0%, #ffffff 100%);
-    }
-    .tag {
-      margin: 0 0 10px !important;
-      color: var(--gold-dark) !important;
-      text-transform: uppercase;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-      font-size: 12px;
-    }
-    .card h2 {
-      font-size: 22px;
-      color: var(--charcoal);
-      margin: 0 0 12px;
-      line-height: 1.25;
-    }
-    .card p {
-      color: var(--muted);
-      margin: 0 0 18px;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: auto;
-      color: var(--charcoal);
+    .article-note a {
+      color: var(--gold-dark);
       font-weight: 800;
       text-decoration: none;
-      border-bottom: 3px solid var(--gold);
-      width: fit-content;
+      border-bottom: 2px solid var(--gold);
     }
-    .card a:hover {
+
+    /* ---------- suburb directory (accordion) ---------- */
+    .directory {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .acc-item {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--white);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+    .acc-item > summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 20px 24px;
+    }
+    .acc-item > summary::-webkit-details-marker {
+      display: none;
+    }
+    .acc-item-title {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .acc-item-title h2 {
+      margin: 0;
+      font-size: 21px;
+      color: var(--charcoal);
+      line-height: 1.3;
+    }
+    .acc-item-count {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .acc-item-icon {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      font-weight: 800;
       color: var(--gold-dark);
     }
+    .acc-item[open] > summary .acc-item-icon::before {
+      content: "–";
+    }
+    .acc-item:not([open]) > summary .acc-item-icon::before {
+      content: "+";
+    }
+    .acc-body {
+      padding: 0 24px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+    }
+    .acc-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 13px 16px;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--gold);
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--light);
+      transition: 0.15s ease;
+    }
+    .acc-row:hover {
+      background: #fdf6e3;
+      border-left-color: var(--gold-dark);
+    }
+    .acc-row-title {
+      font-weight: 700;
+      font-size: 15.5px;
+      color: var(--charcoal);
+    }
+    .acc-row-type {
+      flex-shrink: 0;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--gold-dark);
+      white-space: nowrap;
+    }
+
     .local-links {
       background: var(--light);
       padding: 58px 0;
@@ -399,9 +455,6 @@
       }
       .hero-content {
         max-width: 760px;
-      }
-      .article-grid {
-        grid-template-columns: repeat(2, 1fr);
       }
       .suburb-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -494,13 +547,24 @@
       .hero-image-card {
         padding: 8px;
       }
-      .article-grid,
       .suburb-grid {
         grid-template-columns: 1fr;
       }
       .articles,
       .local-links {
         padding: 48px 0;
+      }
+      .acc-item > summary {
+        padding: 16px 18px;
+      }
+      .acc-body {
+        padding: 0 16px 18px;
+        padding-top: 12px;
+      }
+      .acc-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
       }
     }
   </style>
@@ -536,178 +600,54 @@
       }
     },
     "areaServed": [
-      {
-        "@type": "Place",
-        "name": "Blockhouse Bay"
-      },
-      {
-        "@type": "Place",
-        "name": "Titirangi"
-      },
-      {
-        "@type": "Place",
-        "name": "Lynfield"
-      },
-      {
-        "@type": "Place",
-        "name": "New Lynn"
-      },
-      {
-        "@type": "Place",
-        "name": "Green Bay"
-      },
-      {
-        "@type": "Place",
-        "name": "Glen Eden"
-      },
-      {
-        "@type": "Place",
-        "name": "Avondale"
-      },
-      {
-        "@type": "Place",
-        "name": "Kelston"
-      },
-      {
-        "@type": "Place",
-        "name": "Glendene"
-      },
-      {
-        "@type": "Place",
-        "name": "New Windsor"
-      },
-      {
-        "@type": "Place",
-        "name": "Mount Roskill"
-      }
+      { "@type": "Place", "name": "Blockhouse Bay" },
+      { "@type": "Place", "name": "Titirangi" },
+      { "@type": "Place", "name": "Lynfield" },
+      { "@type": "Place", "name": "New Lynn" },
+      { "@type": "Place", "name": "Green Bay" },
+      { "@type": "Place", "name": "Glen Eden" },
+      { "@type": "Place", "name": "Avondale" },
+      { "@type": "Place", "name": "Kelston" },
+      { "@type": "Place", "name": "Glendene" },
+      { "@type": "Place", "name": "New Windsor" },
+      { "@type": "Place", "name": "Mount Roskill" }
     ]
   },
   "mainEntity": {
     "@type": "ItemList",
     "itemListElement": [
-      {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "How Much Would Auckland House Prices Need To Fall?",
-            "url": "https://peterandedita.co.nz/articles/how-much-would-auckland-house-prices-need-to-fall.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Questions To Ask A Real Estate Agent Before Selling",
-            "url": "https://peterandedita.co.nz/articles/questions-to-ask-real-estate-agent-before-selling.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "How Long Does It Take to Sell a House in Blockhouse Bay?",
-            "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-blockhouse-bay.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "How to Choose the Best Real Estate Agent in Blockhouse Bay",
-            "url": "https://peterandedita.co.nz/articles/best-real-estate-agent-blockhouse-bay.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "How to Choose the Best Real Estate Agent in Lynfield",
-            "url": "https://peterandedita.co.nz/articles/best-real-estate-agent-lynfield.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 6,
-            "name": "How to Choose the Best Real Estate Agent in Titirangi",
-            "url": "https://peterandedita.co.nz/articles/best-real-estate-agent-titirangi.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 7,
-            "name": "Best Real Estate Agent Reviews in Auckland",
-            "url": "https://peterandedita.co.nz/articles/best-real-estate-agent-reviews-auckland.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 8,
-            "name": "How to Choose a Real Estate Agent in Avondale",
-            "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-avondale.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 9,
-            "name": "How to Choose a Real Estate Agent in Glen Eden",
-            "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-glen-eden.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 10,
-            "name": "How to Choose a Real Estate Agent in Glendene",
-            "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-glendene.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 11,
-            "name": "How to Choose a Real Estate Agent in Green Bay",
-            "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 12,
-            "name": "How to Choose a Real Estate Agent in Mount Roskill",
-            "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-mount-roskill.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 13,
-            "name": "How to Choose a Real Estate Agent in New Lynn",
-            "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-new-lynn.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 14,
-            "name": "How to Choose a Real Estate Agent in New Windsor",
-            "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-new-windsor.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 15,
-            "name": "How to Choose a Real Estate Agent in Titirangi",
-            "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-titirangi.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 16,
-            "name": "Why Some Homes Do Not Sell in Blockhouse Bay",
-            "url": "https://peterandedita.co.nz/articles/why-homes-do-not-sell-blockhouse-bay.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 17,
-            "name": "Best Time to Sell in West Auckland",
-            "url": "https://peterandedita.co.nz/articles/best-time-to-sell-west-auckland.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 18,
-            "name": "How to Prepare Your Home for a Stronger Sale Price",
-            "url": "https://peterandedita.co.nz/articles/prepare-home-for-sale-auckland.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 19,
-            "name": "Free Property Appraisal Online",
-            "url": "https://peterandedita.co.nz/articles/free-property-appraisal-online.html"
-      },
-      {
-            "@type": "ListItem",
-            "position": 20,
-            "name": "Glen Eden House Prices 2026",
-            "url": "https://peterandedita.co.nz/articles/glen-eden-house-prices-2026.html"
-      }
-]
+      { "@type": "ListItem", "position": 1, "name": "How Much Would Auckland House Prices Need To Fall?", "url": "https://peterandedita.co.nz/articles/how-much-would-auckland-house-prices-need-to-fall.html" },
+      { "@type": "ListItem", "position": 2, "name": "Questions To Ask A Real Estate Agent Before Selling", "url": "https://peterandedita.co.nz/articles/questions-to-ask-real-estate-agent-before-selling.html" },
+      { "@type": "ListItem", "position": 3, "name": "Best Real Estate Agent Reviews in Auckland", "url": "https://peterandedita.co.nz/articles/best-real-estate-agent-reviews-auckland.html" },
+      { "@type": "ListItem", "position": 4, "name": "Best Time to Sell in West Auckland", "url": "https://peterandedita.co.nz/articles/best-time-to-sell-west-auckland.html" },
+      { "@type": "ListItem", "position": 5, "name": "How to Prepare Your Home for a Stronger Sale Price", "url": "https://peterandedita.co.nz/articles/prepare-home-for-sale-auckland.html" },
+      { "@type": "ListItem", "position": 6, "name": "Free Property Appraisal Online", "url": "https://peterandedita.co.nz/articles/free-property-appraisal-online.html" },
+      { "@type": "ListItem", "position": 7, "name": "How Long Does It Take to Sell a House in Blockhouse Bay?", "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-blockhouse-bay.html" },
+      { "@type": "ListItem", "position": 8, "name": "How to Choose the Best Real Estate Agent in Blockhouse Bay", "url": "https://peterandedita.co.nz/articles/best-real-estate-agent-blockhouse-bay.html" },
+      { "@type": "ListItem", "position": 9, "name": "Why Some Homes Do Not Sell in Blockhouse Bay", "url": "https://peterandedita.co.nz/articles/why-homes-do-not-sell-blockhouse-bay.html" },
+      { "@type": "ListItem", "position": 10, "name": "How Long Does It Take To Sell A House In Titirangi?", "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-titirangi.html" },
+      { "@type": "ListItem", "position": 11, "name": "How to Choose the Best Real Estate Agent in Titirangi", "url": "https://peterandedita.co.nz/articles/best-real-estate-agent-titirangi.html" },
+      { "@type": "ListItem", "position": 12, "name": "How Long Does It Take To Sell A House In Lynfield?", "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-lynfield.html" },
+      { "@type": "ListItem", "position": 13, "name": "How to Choose the Best Real Estate Agent in Lynfield", "url": "https://peterandedita.co.nz/articles/best-real-estate-agent-lynfield.html" },
+      { "@type": "ListItem", "position": 14, "name": "How Long Does It Take To Sell A House In New Lynn?", "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-new-lynn.html" },
+      { "@type": "ListItem", "position": 15, "name": "How to Choose a Real Estate Agent in New Lynn", "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-new-lynn.html" },
+      { "@type": "ListItem", "position": 16, "name": "How Long Does It Take To Sell A House In Green Bay?", "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-green-bay.html" },
+      { "@type": "ListItem", "position": 17, "name": "How to Choose a Real Estate Agent in Green Bay", "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-green-bay.html" },
+      { "@type": "ListItem", "position": 18, "name": "How Long Does It Take To Sell A House In Glen Eden?", "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-glen-eden.html" },
+      { "@type": "ListItem", "position": 19, "name": "How to Choose a Real Estate Agent in Glen Eden", "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-glen-eden.html" },
+      { "@type": "ListItem", "position": 20, "name": "Glen Eden House Prices 2026", "url": "https://peterandedita.co.nz/articles/glen-eden-house-prices-2026.html" },
+      { "@type": "ListItem", "position": 21, "name": "How Long Does It Take To Sell A House In Kelston?", "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-kelston.html" },
+      { "@type": "ListItem", "position": 22, "name": "How Long Does It Take To Sell A House In Mount Roskill?", "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-mount-roskill.html" },
+      { "@type": "ListItem", "position": 23, "name": "How to Choose a Real Estate Agent in Mount Roskill", "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-mount-roskill.html" },
+      { "@type": "ListItem", "position": 24, "name": "How Long Does It Take To Sell A House In New Windsor?", "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-new-windsor.html" },
+      { "@type": "ListItem", "position": 25, "name": "How to Choose a Real Estate Agent in New Windsor", "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-new-windsor.html" },
+      { "@type": "ListItem", "position": 26, "name": "How Long Does It Take To Sell A House In Glendene?", "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-glendene.html" },
+      { "@type": "ListItem", "position": 27, "name": "How to Choose a Real Estate Agent in Glendene", "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-glendene.html" },
+      { "@type": "ListItem", "position": 28, "name": "How Long Does It Take To Sell A House In Avondale?", "url": "https://peterandedita.co.nz/articles/how-long-to-sell-house-avondale.html" },
+      { "@type": "ListItem", "position": 29, "name": "How to Choose a Real Estate Agent in Avondale", "url": "https://peterandedita.co.nz/articles/how-to-choose-real-estate-agent-avondale.html" }
+    ]
   },
-  "dateModified": "2026-07-18T09:00:00+12:00"
+  "dateModified": "2026-08-25T09:00:00+12:00"
 }
   </script>
   <script type="application/ld+json">
@@ -829,215 +769,277 @@
       <div class="section-intro">
         <h2>Helpful Real Estate Guides</h2>
         <p>
-          Practical articles for homeowners thinking about selling, comparing agents, requesting an appraisal or preparing their property for the market.
+          Practical articles for homeowners thinking about selling, comparing agents, requesting an appraisal or preparing their property for the market. Open your suburb below to see the guides written for you.
         </p>
       </div>
       <div class="article-note">
         <p>
-          Start with the newest guide, <strong>How Much Would Auckland House Prices Need To Fall?</strong>, if you want a practical look at Auckland housing affordability, buyer pressure and what the market means for sellers.
+          Start with our newest guide, <a href="/articles/how-much-would-auckland-house-prices-need-to-fall.html">How Much Would Auckland House Prices Need To Fall?</a> &mdash; a practical look at Auckland housing affordability, buyer pressure and what the market means for sellers.
         </p>
       </div>
-      <div class="article-grid">
-        <article class="card featured-card">
-          <div>
-            <p class="tag">Newest guide</p>
-            <h2>How Much Would Auckland House Prices Need To Fall?</h2>
-            <p>
-              A practical Auckland housing affordability guide covering prices, income, mortgage repayments and what this means for buyers and sellers.
-            </p>
-          </div>
-          <a href="/articles/how-much-would-auckland-house-prices-need-to-fall.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
-            <p class="tag">Seller guide</p>
-            <h2>Questions To Ask A Real Estate Agent Before Selling</h2>
-            <p>
-              The key questions sellers should ask before choosing an agent, including pricing, marketing, communication, negotiation, open homes, reviews and red flags.
-            </p>
-          </div>
-          <a href="/articles/questions-to-ask-real-estate-agent-before-selling.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
 
-            <h2>How Long Does It Take to Sell a House in Blockhouse Bay?</h2>
-            <p>
-              A 2026 market update covering selling timeframes, local buyer demand, pricing and tips to sell faster.
-            </p>
-          </div>
-          <a href="/articles/how-long-to-sell-house-blockhouse-bay.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+      <div class="directory">
 
-            <h2>How to Choose the Best Real Estate Agent in Blockhouse Bay</h2>
-            <p>
-              A practical guide for Blockhouse Bay homeowners comparing agents, appraisals, marketing and selling strategy.
-            </p>
+        <details class="acc-item" open>
+          <summary>
+            <div class="acc-item-title">
+              <h2>General Guides</h2>
+              <span class="acc-item-count">6 guides</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-much-would-auckland-house-prices-need-to-fall.html">
+              <span class="acc-row-title">How Much Would Auckland House Prices Need To Fall?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
+            <a class="acc-row" href="/articles/questions-to-ask-real-estate-agent-before-selling.html">
+              <span class="acc-row-title">Questions To Ask A Real Estate Agent Before Selling</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
+            <a class="acc-row" href="/articles/best-real-estate-agent-reviews-auckland.html">
+              <span class="acc-row-title">Best Real Estate Agent Reviews in Auckland</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
+            <a class="acc-row" href="/articles/best-time-to-sell-west-auckland.html">
+              <span class="acc-row-title">Best Time to Sell in West Auckland</span>
+              <span class="acc-row-type">Selling Tips</span>
+            </a>
+            <a class="acc-row" href="/articles/prepare-home-for-sale-auckland.html">
+              <span class="acc-row-title">How to Prepare Your Home for a Stronger Sale Price</span>
+              <span class="acc-row-type">Selling Tips</span>
+            </a>
+            <a class="acc-row" href="/articles/free-property-appraisal-online.html">
+              <span class="acc-row-title">Free Property Appraisal Online</span>
+              <span class="acc-row-type">Selling Tips</span>
+            </a>
           </div>
-          <a href="/articles/best-real-estate-agent-blockhouse-bay.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>How to Choose the Best Real Estate Agent in Lynfield</h2>
-            <p>
-              Helpful advice for Lynfield homeowners thinking about selling and wanting to choose the right local agent.
-            </p>
+        <details class="acc-item">
+          <summary>
+            <div class="acc-item-title">
+              <h2>Blockhouse Bay</h2>
+              <span class="acc-item-count">3 guides</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-long-to-sell-house-blockhouse-bay.html">
+              <span class="acc-row-title">How Long Does It Take to Sell a House in Blockhouse Bay?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
+            <a class="acc-row" href="/articles/best-real-estate-agent-blockhouse-bay.html">
+              <span class="acc-row-title">How to Choose the Best Real Estate Agent in Blockhouse Bay</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
+            <a class="acc-row" href="/articles/why-homes-do-not-sell-blockhouse-bay.html">
+              <span class="acc-row-title">Why Some Homes Do Not Sell in Blockhouse Bay</span>
+              <span class="acc-row-type">Selling Tips</span>
+            </a>
           </div>
-          <a href="/articles/best-real-estate-agent-lynfield.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>How to Choose the Best Real Estate Agent in Titirangi</h2>
-            <p>
-              What Titirangi sellers should look for when comparing local agents, pricing advice, marketing and negotiation.
-            </p>
+        <details class="acc-item">
+          <summary>
+            <div class="acc-item-title">
+              <h2>Titirangi</h2>
+              <span class="acc-item-count">2 guides</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-long-to-sell-house-titirangi.html">
+              <span class="acc-row-title">How Long Does It Take To Sell A House In Titirangi?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
+            <a class="acc-row" href="/articles/best-real-estate-agent-titirangi.html">
+              <span class="acc-row-title">How to Choose the Best Real Estate Agent in Titirangi</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
           </div>
-          <a href="/articles/best-real-estate-agent-titirangi.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>Best Real Estate Agent Reviews in Auckland</h2>
-            <p>
-              Why reviews matter when choosing a real estate agent and what sellers should look for beyond star ratings.
-            </p>
+        <details class="acc-item">
+          <summary>
+            <div class="acc-item-title">
+              <h2>Lynfield</h2>
+              <span class="acc-item-count">2 guides</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-long-to-sell-house-lynfield.html">
+              <span class="acc-row-title">How Long Does It Take To Sell A House In Lynfield?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
+            <a class="acc-row" href="/articles/best-real-estate-agent-lynfield.html">
+              <span class="acc-row-title">How to Choose the Best Real Estate Agent in Lynfield</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
           </div>
-          <a href="/articles/best-real-estate-agent-reviews-auckland.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>How to Choose a Real Estate Agent in Avondale</h2>
-            <p>
-              What Avondale homeowners should ask before choosing an agent, including local knowledge, pricing and buyer follow-up.
-            </p>
+        <details class="acc-item">
+          <summary>
+            <div class="acc-item-title">
+              <h2>New Lynn</h2>
+              <span class="acc-item-count">2 guides</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-long-to-sell-house-new-lynn.html">
+              <span class="acc-row-title">How Long Does It Take To Sell A House In New Lynn?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
+            <a class="acc-row" href="/articles/how-to-choose-real-estate-agent-new-lynn.html">
+              <span class="acc-row-title">How to Choose a Real Estate Agent in New Lynn</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
           </div>
-          <a href="/articles/how-to-choose-real-estate-agent-avondale.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>How to Choose a Real Estate Agent in Glen Eden</h2>
-            <p>
-              A Glen Eden seller guide covering local pricing, market demand, agent communication and sale strategy.
-            </p>
+        <details class="acc-item">
+          <summary>
+            <div class="acc-item-title">
+              <h2>Green Bay</h2>
+              <span class="acc-item-count">2 guides</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-long-to-sell-house-green-bay.html">
+              <span class="acc-row-title">How Long Does It Take To Sell A House In Green Bay?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
+            <a class="acc-row" href="/articles/how-to-choose-real-estate-agent-green-bay.html">
+              <span class="acc-row-title">How to Choose a Real Estate Agent in Green Bay</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
           </div>
-          <a href="/articles/how-to-choose-real-estate-agent-glen-eden.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>How to Choose a Real Estate Agent in Glendene</h2>
-            <p>
-              Questions Glendene sellers should ask before signing with an agent and launching a campaign.
-            </p>
+        <details class="acc-item">
+          <summary>
+            <div class="acc-item-title">
+              <h2>Glen Eden</h2>
+              <span class="acc-item-count">3 guides</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-long-to-sell-house-glen-eden.html">
+              <span class="acc-row-title">How Long Does It Take To Sell A House In Glen Eden?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
+            <a class="acc-row" href="/articles/how-to-choose-real-estate-agent-glen-eden.html">
+              <span class="acc-row-title">How to Choose a Real Estate Agent in Glen Eden</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
+            <a class="acc-row" href="/articles/glen-eden-house-prices-2026.html">
+              <span class="acc-row-title">Glen Eden House Prices 2026</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
           </div>
-          <a href="/articles/how-to-choose-real-estate-agent-glendene.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>How to Choose a Real Estate Agent in Green Bay</h2>
-            <p>
-              What Green Bay sellers should consider when comparing local agents, pricing advice and marketing plans.
-            </p>
+        <details class="acc-item">
+          <summary>
+            <div class="acc-item-title">
+              <h2>Kelston</h2>
+              <span class="acc-item-count">1 guide</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-long-to-sell-house-kelston.html">
+              <span class="acc-row-title">How Long Does It Take To Sell A House In Kelston?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
           </div>
-          <a href="/articles/how-to-choose-real-estate-agent-green-bay.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>How to Choose a Real Estate Agent in Mount Roskill</h2>
-            <p>
-              A Mount Roskill seller guide covering appraisal evidence, buyer objections, marketing and negotiation.
-            </p>
+        <details class="acc-item">
+          <summary>
+            <div class="acc-item-title">
+              <h2>Mount Roskill</h2>
+              <span class="acc-item-count">2 guides</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-long-to-sell-house-mount-roskill.html">
+              <span class="acc-row-title">How Long Does It Take To Sell A House In Mount Roskill?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
+            <a class="acc-row" href="/articles/how-to-choose-real-estate-agent-mount-roskill.html">
+              <span class="acc-row-title">How to Choose a Real Estate Agent in Mount Roskill</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
           </div>
-          <a href="/articles/how-to-choose-real-estate-agent-mount-roskill.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>How to Choose a Real Estate Agent in New Lynn</h2>
-            <p>
-              Advice for New Lynn homeowners comparing agents, local market knowledge, presentation and buyer strategy.
-            </p>
+        <details class="acc-item">
+          <summary>
+            <div class="acc-item-title">
+              <h2>New Windsor</h2>
+              <span class="acc-item-count">2 guides</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-long-to-sell-house-new-windsor.html">
+              <span class="acc-row-title">How Long Does It Take To Sell A House In New Windsor?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
+            <a class="acc-row" href="/articles/how-to-choose-real-estate-agent-new-windsor.html">
+              <span class="acc-row-title">How to Choose a Real Estate Agent in New Windsor</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
           </div>
-          <a href="/articles/how-to-choose-real-estate-agent-new-lynn.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>How to Choose a Real Estate Agent in New Windsor</h2>
-            <p>
-              What New Windsor sellers should ask about pricing, marketing, communication and sale method.
-            </p>
+        <details class="acc-item">
+          <summary>
+            <div class="acc-item-title">
+              <h2>Glendene</h2>
+              <span class="acc-item-count">2 guides</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-long-to-sell-house-glendene.html">
+              <span class="acc-row-title">How Long Does It Take To Sell A House In Glendene?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
+            <a class="acc-row" href="/articles/how-to-choose-real-estate-agent-glendene.html">
+              <span class="acc-row-title">How to Choose a Real Estate Agent in Glendene</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
           </div>
-          <a href="/articles/how-to-choose-real-estate-agent-new-windsor.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>How to Choose a Real Estate Agent in Titirangi</h2>
-            <p>
-              A deeper Titirangi guide for homeowners choosing an agent who understands unique homes and local buyer concerns.
-            </p>
+        <details class="acc-item">
+          <summary>
+            <div class="acc-item-title">
+              <h2>Avondale</h2>
+              <span class="acc-item-count">2 guides</span>
+            </div>
+            <span class="acc-item-icon"></span>
+          </summary>
+          <div class="acc-body">
+            <a class="acc-row" href="/articles/how-long-to-sell-house-avondale.html">
+              <span class="acc-row-title">How Long Does It Take To Sell A House In Avondale?</span>
+              <span class="acc-row-type">Market Data</span>
+            </a>
+            <a class="acc-row" href="/articles/how-to-choose-real-estate-agent-avondale.html">
+              <span class="acc-row-title">How to Choose a Real Estate Agent in Avondale</span>
+              <span class="acc-row-type">Choosing an Agent</span>
+            </a>
           </div>
-          <a href="/articles/best-real-estate-agent-titirangi.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
+        </details>
 
-            <h2>Why Some Homes Do Not Sell in Blockhouse Bay</h2>
-            <p>
-              The common reasons homes sit on the market in Blockhouse Bay, and how to avoid them before you list.
-            </p>
-          </div>
-          <a href="/articles/why-homes-do-not-sell-blockhouse-bay.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
-
-            <h2>Best Time to Sell in West Auckland</h2>
-            <p>
-              How timing, season, competition and buyer demand can affect your sale, and how to choose the right moment.
-            </p>
-          </div>
-          <a href="/articles/best-time-to-sell-west-auckland.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
-
-            <h2>How to Prepare Your Home for a Stronger Sale Price</h2>
-            <p>
-              Practical presentation and preparation tips to help your West Auckland home achieve a stronger result.
-            </p>
-          </div>
-          <a href="/articles/prepare-home-for-sale-auckland.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
-
-            <h2>Free Property Appraisal Online</h2>
-            <p>
-              What online appraisals can and cannot tell you, and why local context still matters before selling.
-            </p>
-          </div>
-          <a href="/articles/free-property-appraisal-online.html">Read article</a>
-        </article>
-        <article class="card">
-          <div>
-
-            <h2>Glen Eden House Prices 2026</h2>
-            <p>
-              A local market guide for Glen Eden homeowners reviewing house prices, buyer demand and selling considerations.
-            </p>
-          </div>
-          <a href="/articles/glen-eden-house-prices-2026.html">Read article</a>
-        </article>
       </div>
     </div>
   </main>
