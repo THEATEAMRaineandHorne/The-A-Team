@@ -70,6 +70,11 @@ section{padding:72px 20px} main>section:not(.report-hero){content-visibility:aut
 .container{max-width:1220px;margin:0 auto} .section-title{max-width:940px;margin-bottom:34px} .section-title p,.muted{color:var(--muted);font-size:18px;margin:0}
 .highlight{background:var(--cream)} .soft{background:var(--soft)} .dark-section{background:var(--dark);color:#fff} .dark-section p{color:#eee} .dark-section .form-card{color:var(--dark)} .dark-section .form-card p{color:#444}
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px} .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.qa-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.qa-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.qa-grid .card{height:100%;display:flex;flex-direction:column}
+.qa-grid .card h3{font-size:22px;line-height:1.25}
+.qa-grid .card p{margin-bottom:0}
 .snapshot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:28px}
 .snapshot-card,.card,.report-panel,.chart-card,.form-card,.source-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:24px;box-shadow:0 14px 38px rgba(0,0,0,.05)}
 .snapshot-card span{display:block;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.4px;font-weight:800;margin-bottom:8px} .snapshot-card strong{display:block;font-size:23px;line-height:1.15} .snapshot-card small{display:block;margin-top:8px;color:#666;line-height:1.45}
@@ -85,7 +90,7 @@ section{padding:72px 20px} main>section:not(.report-hero){content-visibility:aut
 .breadcrumbs{font-size:14px;margin:0 0 18px;color:#eee} .breadcrumbs a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.35)}
 .suburb-links{display:grid;grid-template-columns:repeat(4,1fr);gap:14px} .suburb-links a{background:#fff;border:1px solid var(--border);border-radius:15px;padding:16px;text-align:center;font-weight:800} .suburb-links a:hover{background:var(--gold);border-color:var(--gold)}
 footer{background:var(--dark);color:#fff;padding:46px 20px} .footer-inner{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:1.25fr .75fr;gap:30px} .footer-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:28px} footer h2,footer h3{color:#fff} footer a{color:var(--gold);font-weight:800} .footer-link-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px} .footer-links a{display:block;margin-bottom:8px;line-height:1.35} .footer-cta{display:inline-flex;align-items:center;justify-content:center;background:var(--gold)!important;color:#202020!important;padding:16px 28px!important;border-radius:999px!important;font-size:18px!important;font-weight:800!important;text-align:center!important;margin-top:12px;width:100%} .small{font-size:13px;color:#d6d6d6}
-@media(max-width:1020px){.report-hero-content,.grid-2,.grid-3,.report-body,.footer-inner{grid-template-columns:1fr} .snapshot-grid,.chart-grid,.suburb-links{grid-template-columns:1fr 1fr} .side-card{position:static} .local-list,.footer-link-grid{grid-template-columns:1fr} .nav{width:100%;flex-wrap:wrap;gap:14px;align-items:center} .brand{flex:1;min-width:0} .menu-toggle{display:inline-flex;align-items:center;justify-content:center} .nav-links{width:100%!important;display:none!important} .nav-links.is-open{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;max-height:calc(100vh - 140px)!important;overflow-y:auto!important} .nav-links>a,.nav-dropdown summary{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important} .nav-dropdown{display:block!important;width:100%!important} .dropdown-menu{position:static!important;display:none!important;min-width:0!important;width:100%!important;margin-top:10px!important;padding:12px!important;border-radius:18px!important;box-shadow:none!important} .nav-dropdown[open] .dropdown-menu{display:grid!important;grid-template-columns:1fr!important;gap:10px!important} .dropdown-menu a{padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:14px!important;text-align:center!important;font-size:16px!important} .chart-card.full{grid-column:auto;max-width:none}}
+@media(max-width:1020px){.qa-grid,.qa-grid.two{grid-template-columns:1fr}.report-hero-content,.grid-2,.grid-3,.report-body,.footer-inner{grid-template-columns:1fr} .snapshot-grid,.chart-grid,.suburb-links{grid-template-columns:1fr 1fr} .side-card{position:static} .local-list,.footer-link-grid{grid-template-columns:1fr} .nav{width:100%;flex-wrap:wrap;gap:14px;align-items:center} .brand{flex:1;min-width:0} .menu-toggle{display:inline-flex;align-items:center;justify-content:center} .nav-links{width:100%!important;display:none!important} .nav-links.is-open{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;max-height:calc(100vh - 140px)!important;overflow-y:auto!important} .nav-links>a,.nav-dropdown summary{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important} .nav-dropdown{display:block!important;width:100%!important} .dropdown-menu{position:static!important;display:none!important;min-width:0!important;width:100%!important;margin-top:10px!important;padding:12px!important;border-radius:18px!important;box-shadow:none!important} .nav-dropdown[open] .dropdown-menu{display:grid!important;grid-template-columns:1fr!important;gap:10px!important} .dropdown-menu a{padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:14px!important;text-align:center!important;font-size:16px!important} .chart-card.full{grid-column:auto;max-width:none}}
 @media(max-width:620px){.snapshot-grid,.chart-grid,.suburb-links{grid-template-columns:1fr} section{padding:58px 18px} h1{font-size:42px} .report-hero,.report-hero-content{min-height:720px}}
   </style>
 
@@ -479,7 +484,7 @@ footer{background:var(--dark);color:#fff;padding:46px 20px} .footer-inner{max-wi
       </div>
 
       <h3 style="margin:0 0 18px">Your Home, Equity And Selling Price</h3>
-      <div class="grid-2" style="margin-bottom:34px">
+      <div class="qa-grid" style="margin-bottom:34px">
         <article class="card">
           <h3>How much extra can a flat driveway, north-facing sun or a good outlook add to my Titirangi sale price?</h3>
           <p>There is no fixed percentage. In Titirangi these things can make a real difference because access, sun and outlook vary so much from one street to the next. The best guide is recent sales with similar land, access and position.</p>
@@ -497,7 +502,7 @@ footer{background:var(--dark);color:#fff;padding:46px 20px} .footer-inner{max-wi
       </div>
 
       <h3 style="margin:0 0 18px">Timing And Sale Strategy</h3>
-      <div class="grid-2" style="margin-bottom:34px">
+      <div class="qa-grid" style="margin-bottom:34px">
         <article class="card">
           <h3>If 45 days is the median, why do some Titirangi homes sell in three weeks and others take much longer?</h3>
           <p>Usually it comes back to price, presentation and the property itself. Difficult access, maintenance, dampness, retaining or incomplete paperwork can slow buyers down. A well-presented home at the right price can move much faster.</p>
@@ -515,7 +520,7 @@ footer{background:var(--dark);color:#fff;padding:46px 20px} .footer-inner{max-wi
       </div>
 
       <h3 style="margin:0 0 18px">Bush, Hillsides And Property Condition</h3>
-      <div class="grid-2" style="margin-bottom:34px">
+      <div class="qa-grid" style="margin-bottom:34px">
         <article class="card">
           <h3>How much are landslip, hillside and insurance concerns affecting Titirangi buyers?</h3>
           <p>Buyers are asking more questions about natural hazards, retaining and insurance. That matters most when a property is steep, has known issues or needs further investigation. It does not mean every bush property is discounted. Good information helps buyers feel more comfortable.</p>
@@ -533,7 +538,7 @@ footer{background:var(--dark);color:#fff;padding:46px 20px} .footer-inner{max-wi
       </div>
 
       <h3 style="margin:0 0 18px">What To Do Next</h3>
-      <div class="grid-2">
+      <div class="qa-grid two">
         <article class="card">
           <h3>If I sell now, would my equity go further if I downsized to an apartment or moved further west?</h3>
           <p>It can, but the answer depends on what you buy next. An apartment may free up more cash, but body corporate costs and the building itself matter. Moving further west may buy more land or a larger home, but travel time and upkeep can be higher. Work from your likely net sale proceeds, not the suburb median.</p>
