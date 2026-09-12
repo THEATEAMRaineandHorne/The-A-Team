@@ -1,24 +1,17 @@
-function loadGoogleAnalytics() {
-  if (window.analyticsLoaded) return;
-  window.analyticsLoaded = true;
+(function () {
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  window.gtag = gtag;
 
   var script = document.createElement('script');
   script.async = true;
-  script.src = "https://googletagmanager.com";
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-88WTQFKQV6';
   document.head.appendChild(script);
 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-88WTQFKQV6');
-  
-  console.log('Google Analytics loaded via user interaction!');
-}
-
-const interactionEvents = ['mouseover', 'keydown', 'touchstart', 'scroll'];
-interactionEvents.forEach(event => {
-  window.addEventListener(event, loadGoogleAnalytics, { once: true });
-});
-
-setTimeout(loadGoogleAnalytics, 4000);
-
+})();
