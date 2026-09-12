@@ -58,7 +58,12 @@ h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-2.4px;margin:
 .hero-lead{font-size:21px;max-width:760px;color:#f3f3f3;margin:0}.hero-card,.form-card{background:rgba(255,255,255,.96);color:var(--dark);border-radius:24px;padding:30px;box-shadow:0 24px 70px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.7)}.hero-card p{color:#444;margin:0 0 15px}.hero-meta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.hero-pill{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:10px 13px;font-weight:800}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 23px;border-radius:10px;font-weight:800;border:2px solid var(--gold);transition:.2s ease;cursor:pointer;font-size:15px}.btn-primary{background:var(--gold);color:#202020}.btn-dark{background:#202020;color:#fff;border-color:#202020}.btn-primary:hover{background:#fff;border-color:#fff}.btn-dark:hover{background:var(--gold);color:#202020;border-color:var(--gold)}
 section{padding:78px 20px}main>section:not(.report-hero){content-visibility:auto;contain-intrinsic-size:1px 900px}.container{max-width:1220px;margin:0 auto}.section-title{max-width:940px;margin-bottom:36px}.section-title p,.muted{color:var(--muted);font-size:18px;margin:0}.highlight{background:var(--cream)}.soft{background:var(--soft)}.dark-section{background:#202020;color:#fff}.dark-section p{color:#eee}.dark-section .form-card{color:var(--dark)}.dark-section .form-card p{color:#444}
-.snapshot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;align-items:start}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.snapshot-card,.card,.report-panel,.side-card,.chart-card,.source-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:26px;box-shadow:0 14px 38px rgba(0,0,0,.05)}.snapshot-card span{display:block;color:#666;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.35px}.snapshot-card strong{display:block;font-size:28px;line-height:1.1;margin:10px 0}.snapshot-card small{color:#555;line-height:1.45}.data-window{background:#fff;border:1px solid var(--border);border-left:8px solid var(--gold);border-radius:18px;padding:18px;margin-top:20px;color:#444}.callout{background:#202020;color:#fff;border-radius:20px;padding:24px;margin-top:22px}.callout strong{color:var(--gold)}
+.snapshot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;align-items:start}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.qa-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.qa-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.qa-grid .card{height:100%;display:flex;flex-direction:column}
+.qa-grid .card h3{font-size:22px;line-height:1.25}
+.qa-grid .card p{margin-bottom:0}.snapshot-card,.card,.report-panel,.side-card,.chart-card,.source-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:26px;box-shadow:0 14px 38px rgba(0,0,0,.05)}.snapshot-card span{display:block;color:#666;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.35px}.snapshot-card strong{display:block;font-size:28px;line-height:1.1;margin:10px 0}.snapshot-card small{color:#555;line-height:1.45}.data-window{background:#fff;border:1px solid var(--border);border-left:8px solid var(--gold);border-radius:18px;padding:18px;margin-top:20px;color:#444}.callout{background:#202020;color:#fff;border-radius:20px;padding:24px;margin-top:22px}.callout strong{color:var(--gold)}
 .report-body{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:28px;align-items:start}.side-card{position:sticky;top:110px;background:#202020;color:#fff}.side-card p{color:#eee}.report-panel{margin-bottom:24px}.report-panel p{color:#444;font-size:17px;margin:0 0 16px}.seller-advice-list{padding-left:21px;margin:18px 0 0}.seller-advice-list li{margin-bottom:10px;color:#444;font-size:17px}.local-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:18px 0 0;padding:0;list-style:none}.local-list li{background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px;font-weight:800;color:#333}
 .chart-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.chart-card{padding:18px;margin:0}.chart-card img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--border);background:#fff}.chart-card figcaption{font-size:15px;color:#555;margin-top:12px;line-height:1.55}.chart-card.full{grid-column:1/-1;max-width:590px;margin:0 auto}
 .table-wrap{overflow-x:auto;border-radius:18px}.data-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border);box-shadow:0 14px 38px rgba(0,0,0,.05)}.data-table th,.data-table td{padding:16px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}.data-table th{background:#202020;color:#fff}.data-table tr:last-child td{border-bottom:0}.source-note,.disclaimer{font-size:14px;color:#666;line-height:1.5}.source-note{background:#fff;border-left:6px solid var(--gold);padding:18px;border-radius:14px;margin-top:22px}
@@ -66,7 +71,7 @@ input,select,textarea{width:100%;padding:13px 14px;border:1px solid #ccc;border-
 .suburb-links{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.suburb-links a{background:#fff;border:1px solid var(--border);border-radius:15px;padding:18px;text-align:center;font-weight:800}.suburb-links a:hover{background:var(--gold);border-color:var(--gold)}
 footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:1.25fr .75fr;gap:30px}.footer-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:28px}.footer-links a,footer a{display:block;color:var(--gold);font-weight:800;margin-bottom:8px}.footer-cta{display:inline-flex!important;align-items:center;justify-content:center;width:100%;min-height:58px;margin-top:16px;padding:16px 24px;border-radius:999px;background:var(--gold);color:#202020!important;font-size:18px;font-weight:800}.footer-link-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.small{font-size:13px;color:#d6d6d6}
 @media(max-width:1100px){.snapshot-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:980px){.report-hero-content,.report-body,.grid-2,.grid-3,.chart-grid,.footer-inner,.footer-link-grid,.suburb-links{grid-template-columns:1fr}.side-card{position:static}.nav{width:100%;display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;gap:12px!important}.menu-toggle{display:inline-flex}.nav-links{display:none!important;grid-column:1/-1;width:100%!important}.nav-links.is-open{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;max-height:calc(100vh - 140px)!important;overflow-y:auto!important}.nav-links>a,.nav-dropdown summary{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:800!important}.nav-dropdown{display:block!important;width:100%!important}.dropdown-menu{position:static!important;display:none!important;min-width:0!important;width:100%!important;margin-top:10px!important;padding:12px!important;border-radius:18px!important;box-shadow:none!important}.nav-dropdown[open] .dropdown-menu{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}.dropdown-menu a{padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:14px!important;text-align:center!important;font-size:16px!important}.report-hero{min-height:620px}.chart-card.full{grid-column:auto;max-width:none}}
+@media(max-width:980px){.qa-grid,.qa-grid.two{grid-template-columns:1fr}.report-hero-content,.report-body,.grid-2,.grid-3,.chart-grid,.footer-inner,.footer-link-grid,.suburb-links{grid-template-columns:1fr}.side-card{position:static}.nav{width:100%;display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;gap:12px!important}.menu-toggle{display:inline-flex}.nav-links{display:none!important;grid-column:1/-1;width:100%!important}.nav-links.is-open{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;max-height:calc(100vh - 140px)!important;overflow-y:auto!important}.nav-links>a,.nav-dropdown summary{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:800!important}.nav-dropdown{display:block!important;width:100%!important}.dropdown-menu{position:static!important;display:none!important;min-width:0!important;width:100%!important;margin-top:10px!important;padding:12px!important;border-radius:18px!important;box-shadow:none!important}.nav-dropdown[open] .dropdown-menu{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}.dropdown-menu a{padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:14px!important;text-align:center!important;font-size:16px!important}.report-hero{min-height:620px}.chart-card.full{grid-column:auto;max-width:none}}
 @media(max-width:620px){.snapshot-grid,.chart-grid,.suburb-links,.local-list{grid-template-columns:1fr}section{padding:58px 18px}h1{font-size:42px}.report-hero,.report-hero-content{min-height:720px}}
   </style>
 
@@ -185,7 +190,7 @@ footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1
       "@type": "Article",
       "@id": "https://peterandedita.co.nz/market-reports/blockhouse-bay/#market-report",
       "headline": "Blockhouse Bay Property Market Report – September 2026",
-      "description": "A homeowner-focused Blockhouse Bay property market report using cleaned REINZ sales data and local market interpretation.",
+      "description": "A Blockhouse Bay property market report using REINZ sales data and local market commentary.",
       "image": {
         "@id": "https://peterandedita.co.nz/market-reports/blockhouse-bay/#hero-image"
       },
@@ -205,11 +210,11 @@ footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1
       "citation": [
         {
           "@type": "CreativeWork",
-          "name": "REINZ Statistics Search Export 12 Sep 2026 (3).csv"
+          "name": "REINZ Blockhouse Bay sales data"
         },
         {
           "@type": "CreativeWork",
-          "name": "REINZ Statistics Search Export 12 Sep 2026 (2).csv"
+          "name": "REINZ Blockhouse Bay sales data"
         }
       ],
       "keywords": [
@@ -262,7 +267,7 @@ footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1
     <div class="nav-links" id="primary-navigation">
       <a href="/">Home</a><a href="/about-edita/">Meet Edita</a>
       <details class="nav-dropdown"><summary class="nav-parent">Locations</summary><div class="dropdown-menu"><a href="/locations/">All Areas We Serve</a><a href="/real-estate-agent-west-auckland/">West Auckland</a><a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a><a href="/real-estate-agent-titirangi/">Titirangi</a><a href="/real-estate-agent-lynfield/">Lynfield</a><a href="/real-estate-agent-new-lynn/">New Lynn</a><a href="/real-estate-agent-green-bay/">Green Bay</a><a href="/real-estate-agent-glen-eden/">Glen Eden</a><a href="/real-estate-agent-kelston/">Kelston</a><a href="/real-estate-agent-mount-roskill/">Mount Roskill</a><a href="/real-estate-agent-new-windsor/">New Windsor</a><a href="/real-estate-agent-glendene/">Glendene</a><a href="/real-estate-agent-avondale/">Avondale</a></div></details>
-      <details class="nav-dropdown"><summary class="nav-parent">Services</summary><div class="dropdown-menu"><a href="/services/">All Real Estate Services</a><a href="/free-home-appraisal-west-auckland/">Free Property Appraisal</a><a href="/services/selling-your-home-west-auckland/">Selling Your Home</a><a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a><a href="/services/real-estate-negotiation-support/">Negotiation Support</a><a href="/amplify-property-marketing/">Amplify Property Marketing</a></div></details>
+      <details class="nav-dropdown"><summary class="nav-parent">Services</summary><div class="dropdown-menu"><a href="/services/">All Real Estate Services</a><a href="/free-home-appraisal-blockhouse-bay/">Free Blockhouse Bay Appraisal</a><a href="/services/selling-your-home-west-auckland/">Selling Your Home</a><a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a><a href="/services/real-estate-negotiation-support/">Negotiation Support</a><a href="/amplify-property-marketing/">Amplify Property Marketing</a></div></details>
       <details class="nav-dropdown"><summary class="nav-parent">Listings</summary><div class="dropdown-menu"><a href="/properties.html">Properties For Sale</a><a href="/sold.html">Sold Properties</a></div></details>
       <details class="nav-dropdown"><summary class="nav-parent active">Market Reports</summary><div class="dropdown-menu"><a href="/market-reports/">All Suburb Market Reports</a><a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a><a href="/market-reports/titirangi/">Titirangi</a><a href="/market-reports/lynfield/">Lynfield</a><a href="/market-reports/new-lynn/">New Lynn</a><a href="/market-reports/green-bay/">Green Bay</a><a href="/market-reports/glen-eden/">Glen Eden</a><a href="/market-reports/kelston/">Kelston</a><a href="/market-reports/mount-roskill/">Mount Roskill</a><a href="/market-reports/new-windsor/">New Windsor</a><a href="/market-reports/glendene/">Glendene</a><a href="/market-reports/avondale/">Avondale</a></div></details>
       <a href="/articles/">Articles</a><a href="/contact.html">Contact</a>
@@ -282,15 +287,15 @@ footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1
         <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/market-reports/">Market Reports</a> / Blockhouse Bay</nav>
         <span class="eyebrow">September 2026 Market Report</span>
         <h1>Blockhouse Bay Property Market Report – September 2026</h1>
-        <p class="hero-lead">REINZ sales analysis for Blockhouse Bay homeowners, covering price direction, selling speed, transaction volume, property mix and practical seller strategy.</p>
-        <div class="hero-meta"><span class="hero-pill">Median: $1,100,000</span><span class="hero-pill">Median days to sell: 41 days</span><span class="hero-pill">Cleaned transactions: 261</span></div>
-        <div class="cta-row"><a class="btn btn-primary" href="#request-appraisal">Request A Blockhouse Bay Appraisal</a><a class="btn btn-dark" href="tel:+6421765234">Call 021 765 234</a></div>
+        <p class="hero-lead">A clear look at what has been selling in Blockhouse Bay, what buyers have been paying and what it means if you are thinking about selling.</p>
+        <div class="hero-meta"><span class="hero-pill">Median: $1,100,000</span><span class="hero-pill">Median days to sell: 41 days</span><span class="hero-pill">Sales: 261</span></div>
+        <div class="cta-row"><a class="btn btn-primary" href="/free-home-appraisal-blockhouse-bay/">Request A Blockhouse Bay Appraisal</a><a class="btn btn-dark" href="tel:+6421765234">Call 021 765 234</a></div>
       </div>
       <aside class="hero-card" aria-label="September 2026 Blockhouse Bay market summary">
         <h2>Market Summary</h2>
-        <p><strong>Headline median:</strong> up <strong>5.5%</strong> to <strong>$1,100,000</strong>.</p>
-        <p><strong>Residence-only median:</strong> up a more moderate <strong>2.1%</strong> to <strong>$1,123,000</strong>, which better reflects the standalone-home market.</p>
-        <p><strong>Speed and volume:</strong> median selling time held at <strong>41 days</strong>, while cleaned transaction volume fell <strong>10.6%</strong>.</p>
+        <p>The Blockhouse Bay median reached <strong>$1.10 million</strong>, up <strong>5.5%</strong> on the year before.</p>
+        <p>For standard residences, the increase was smaller. The median was <strong>$1,123,000</strong>, up <strong>2.1%</strong>.</p>
+        <p>Homes took a median of <strong>41 days</strong> to sell. That was the same as last year. Fewer properties sold overall.</p>
       </aside>
     </div>
   </section>
@@ -300,38 +305,42 @@ footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1
       <div class="section-title"><span class="eyebrow">Market Snapshot</span><h2>Blockhouse Bay Market Snapshot</h2><p>Exact comparison: 1 September 2025–31 August 2026 versus 1 September 2024–31 August 2025.</p></div>
       <div class="snapshot-grid">
         <div class="snapshot-card"><span>Median sale price</span><strong>$1,100,000</strong><small>+5.5% from $1,042,500.</small></div>
-        <div class="snapshot-card"><span>Average sale price</span><strong>$1,140,469</strong><small>+5.4% from $1,082,065.</small></div>
+        <div class="snapshot-card"><span>Average sale price</span><strong>$1,140,469</strong><small>Up 5.4% from $1,082,065.</small></div>
         <div class="snapshot-card"><span>Median days to sell</span><strong>41 days</strong><small>Unchanged from the previous period.</small></div>
-        <div class="snapshot-card"><span>Cleaned transactions</span><strong>261</strong><small>Compared with 292; -10.6%.</small></div>
-        <div class="snapshot-card"><span>Residence median</span><strong>$1,123,000</strong><small>+2.1% from $1,100,000.</small></div>
+        <div class="snapshot-card"><span>Sales</span><strong>261</strong><small>Down from 292 in the previous year.</small></div>
+        <div class="snapshot-card"><span>Residence median</span><strong>$1,123,000</strong><small>Up 2.1% from $1,100,000.</small></div>
       </div>
-      <div class="data-window"><strong>Updated 12 September 2026.</strong></div>
-      <div class="callout"><strong>Seller takeaway:</strong> the suburb-wide median rose 5.5%, but sellers should not assume every Blockhouse Bay house rose by that amount. The latest period contained a much higher proportion of residences and far fewer units and townhouses. The residence-only median rose a more measured 2.1%.</div>
+      <div class="data-window"><strong>Updated 12 September 2026.</strong> Based on REINZ sales for 1 September 2025–31 August 2026, compared with the previous 12 months.</div>
+      <div class="callout"><strong>For sellers:</strong> the $1.10 million median looks strong, but it does not mean every home has gone up by 5.5%. Standard residences were up a more modest 2.1%. Price still needs to be based on homes that are genuinely comparable to yours.</div>
     </div>
   </section>
 
   <section class="soft">
     <div class="container">
-      <div class="section-title"><span class="eyebrow">Direct Answer</span><h2>What Is The Blockhouse Bay Property Market Doing?</h2><p>The September data points to firmer headline pricing, stable annual selling time and lower transaction volume, with property mix playing a meaningful role in the price comparison.</p></div>
+      <div class="section-title">
+        <span class="eyebrow">Market Update</span>
+        <h2>What Is Happening In Blockhouse Bay?</h2>
+        <p>Prices are a little stronger than a year ago. Selling time is unchanged, and fewer properties changed hands.</p>
+      </div>
       <div class="report-panel">
-        <p>The cleaned suburb median increased from <strong>$1,042,500</strong> to <strong>$1,100,000</strong>, a rise of <strong>5.5%</strong>. The average increased <strong>5.4%</strong> to <strong>$1,140,469</strong>.</p>
-        <p>For residences—the dominant category—the median moved from <strong>$1,100,000</strong> to <strong>$1,123,000</strong>, an increase of <strong>2.1%</strong>. This is a more useful reference for many homeowners than the all-property median because the previous period contained <strong>40 unit sales</strong> and <strong>23 townhouse sales</strong>, compared with only <strong>11 units</strong> and <strong>8 townhouses</strong> in the latest period.</p>
-        <p>Median days to sell was <strong>41 days</strong> in both periods. Cleaned transaction volume fell from <strong>292</strong> to <strong>261</strong>, a decline of <strong>10.6%</strong>. Residence sales, however, increased from <strong>223</strong> to <strong>236</strong>, showing that the overall volume decline was heavily influenced by fewer lower-density and development-style transactions.</p>
+        <p>Blockhouse Bay’s median sale price was <strong>$1.10 million</strong> over the past 12 months. A year earlier it was <strong>$1,042,500</strong>. The average sale price was <strong>$1,140,469</strong>.</p>
+        <p>For standard residences, the median was <strong>$1,123,000</strong>. A year earlier it was <strong>$1,100,000</strong>. That 2.1% increase is a better guide for many local homeowners.</p>
+        <p>Homes took a median of <strong>41 days</strong> to sell, the same as last year. There were <strong>261 sales</strong>, down from <strong>292</strong>.</p>
       </div>
     </div>
   </section>
 
   <section id="charts">
     <div class="container">
-      <div class="section-title"><span class="eyebrow">Visual Market Evidence</span><h2>Blockhouse Bay REINZ Sales Charts</h2><p>The underlying figures are also written in HTML on this page so the market evidence is accessible to homeowners, search engines and AI systems.</p></div>
+      <div class="section-title"><span class="eyebrow">Market Charts</span><h2>Blockhouse Bay Sales At A Glance</h2><p>A quick look at prices, sales activity and selling time over the past two years.</p></div>
       <div class="chart-grid">
-        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-sale-price-comparison-rh.webp" alt="Blockhouse Bay September 2026 chart comparing median and average sale prices for the latest and previous 12 months" width="840" height="516" loading="lazy" decoding="async"><figcaption>The cleaned all-property median rose 5.5% and the average rose 5.4%. Residence-only median growth was lower at 2.1%.</figcaption></figure>
-        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-quarterly-median-sale-price-rh.webp" alt="Blockhouse Bay September 2026 quarterly median sale price chart comparing latest and previous periods" width="840" height="516" loading="lazy" decoding="async"><figcaption>The latest quarterly median rose from $1,051,000 in September–November to $1,150,000 in June–August. Quarterly mix should be considered when interpreting the movement.</figcaption></figure>
-        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-quarterly-sales-volume-rh.webp" alt="Blockhouse Bay September 2026 quarterly sales volume chart comparing latest and previous periods" width="840" height="516" loading="lazy" decoding="async"><figcaption>Latest-period activity was strongest in March–May with 93 cleaned transactions, while June–August recorded 43.</figcaption></figure>
-        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-quarterly-days-to-sell-rh.webp" alt="Blockhouse Bay September 2026 quarterly median days to sell chart comparing latest and previous periods" width="840" height="516" loading="lazy" decoding="async"><figcaption>Annual median selling time was unchanged at 41 days, but quarterly speed varied considerably, reinforcing the importance of launch timing and pricing.</figcaption></figure>
-        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-sales-by-property-category-rh.webp" alt="Blockhouse Bay September 2026 cleaned sales count by REINZ property category" width="840" height="516" loading="lazy" decoding="async"><figcaption>Residences dominated the latest period with 236 transactions, materially changing the mix compared with the previous year.</figcaption></figure>
-        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-sales-by-tenure-rh.webp" alt="Blockhouse Bay September 2026 sales count by freehold crosslease strata and unknown tenure" width="840" height="516" loading="lazy" decoding="async"><figcaption>Freehold represented 198 cleaned transactions, while cross-lease accounted for 30.</figcaption></figure>
-        <figure class="chart-card full"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-sales-by-bedroom-count-rh.webp" alt="Blockhouse Bay September 2026 known bedroom sales counts for two three four five and six-plus bedroom properties" width="840" height="516" loading="lazy" decoding="async"><figcaption>Three- and four-bedroom properties dominated records with known bedroom counts, underlining Blockhouse Bay’s family-home market.</figcaption></figure>
+        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-sale-price-comparison-rh.webp" alt="Blockhouse Bay September 2026 chart comparing median and average sale prices for the latest and previous 12 months" width="840" height="516" loading="lazy" decoding="async"><figcaption>The suburb median rose 5.5%. For standard residences, the increase was 2.1%.</figcaption></figure>
+        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-quarterly-median-sale-price-rh.webp" alt="Blockhouse Bay September 2026 quarterly median sale price chart comparing latest and previous periods" width="840" height="516" loading="lazy" decoding="async"><figcaption>The quarterly median moved from $1,051,000 in September–November to $1,150,000 in June–August.</figcaption></figure>
+        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-quarterly-sales-volume-rh.webp" alt="Blockhouse Bay September 2026 quarterly sales volume chart comparing latest and previous periods" width="840" height="516" loading="lazy" decoding="async"><figcaption>March to May was the busiest quarter, with 93 sales. June to August recorded 43.</figcaption></figure>
+        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-quarterly-days-to-sell-rh.webp" alt="Blockhouse Bay September 2026 quarterly median days to sell chart comparing latest and previous periods" width="840" height="516" loading="lazy" decoding="async"><figcaption>The annual median stayed at 41 days. Selling time moved around from quarter to quarter.</figcaption></figure>
+        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-sales-by-property-category-rh.webp" alt="Blockhouse Bay September 2026 sales count by REINZ property category" width="840" height="516" loading="lazy" decoding="async"><figcaption>Most Blockhouse Bay sales were standard residences: 236 of the 261 sales.</figcaption></figure>
+        <figure class="chart-card"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-sales-by-tenure-rh.webp" alt="Blockhouse Bay September 2026 sales count by freehold crosslease strata and unknown tenure" width="840" height="516" loading="lazy" decoding="async"><figcaption>Freehold homes made up most of the market, with 198 sales. There were 30 cross-lease sales.</figcaption></figure>
+        <figure class="chart-card full"><img src="/images/market-reports/blockhouse-bay/blockhouse-bay-sales-by-bedroom-count-rh.webp" alt="Blockhouse Bay September 2026 known bedroom sales counts for two three four five and six-plus bedroom properties" width="840" height="516" loading="lazy" decoding="async"><figcaption>Three-bedroom homes were the largest group, followed by four-bedroom homes.</figcaption></figure>
       </div>
     </div>
   </section>
@@ -339,24 +348,24 @@ footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1
   <section class="soft" id="suburb-report">
     <div class="container report-body">
       <article>
-        <div class="report-panel"><span class="eyebrow">Local Interpretation</span><h2>Blockhouse Bay Market Report</h2><p>Blockhouse Bay remains an established West Auckland family suburb, with buyers attracted by its village centre, schools, parks, coastal and reserve access, and convenient links toward New Lynn, Lynfield, Green Bay and Mount Roskill.</p><p>The September data suggests values for standard residences have been reasonably resilient, but the broader market is still selective. Sellers should price against truly comparable homes rather than using the stronger all-property median as a blanket guide.</p><p>Properties with practical layout, useful parking, good sun, tidy presentation and clear title or consent information are generally easier for buyers to assess with confidence.</p></div>
+        <div class="report-panel"><span class="eyebrow">Local Market</span><h2>Blockhouse Bay Market Report</h2><p>Blockhouse Bay continues to appeal to families. The village, schools, parks and easy access to nearby suburbs all help.</p><p>Prices are a little stronger than a year ago, but buyers are still careful. A good suburb does not make an over-priced home sell.</p><p>Homes with a practical layout, good sun, useful parking and tidy presentation are easier for buyers to say yes to.</p></div>
 
-        <div class="report-panel"><h2>Property Type And Tenure</h2><p>Residences recorded <strong>236 sales</strong> at a median of <strong>$1,123,000</strong>, compared with <strong>223 sales</strong> at <strong>$1,100,000</strong> previously.</p><p>Units recorded <strong>11 sales</strong> at a median of <strong>$800,000</strong>, while townhouses recorded only <strong>8 sales</strong> at <strong>$886,000</strong>. These smaller categories should be interpreted cautiously and property-by-property.</p><p>Freehold properties recorded <strong>198 sales</strong> at a median of <strong>$1,135,500</strong>. Cross-lease properties recorded <strong>30 sales</strong> at a median of <strong>$873,250</strong>.</p></div>
+        <div class="report-panel"><h2>Property Type And Tenure</h2><p>Most sales were standard residences. There were <strong>236</strong>, with a median of <strong>$1,123,000</strong>. A year earlier the residence median was <strong>$1,100,000</strong>.</p><p>Only <strong>11 units</strong> and <strong>8 townhouses</strong> sold. Those are small samples, so their medians should not be used as a broad market guide.</p><p>There were <strong>198 freehold sales</strong> and <strong>30 cross-lease sales</strong>. The freehold median was <strong>$1,135,500</strong>.</p></div>
 
-        <div class="report-panel"><h2>Bedroom Analysis</h2><p>Three-bedroom properties recorded <strong>86 sales</strong> with a median of <strong>$1,058,000</strong>. Four-bedroom properties recorded <strong>69 sales</strong> with a median of <strong>$1,144,000</strong>.</p><p>Five-bedroom properties recorded <strong>23 sales</strong> at a median of <strong>$1,360,000</strong>. Two-bedroom properties recorded <strong>22 sales</strong> at <strong>$793,000</strong>.</p><p>Bedroom count is only one factor. Land, renovation quality, garaging, school appeal, road position, cross-lease arrangements and indoor-outdoor flow can materially change a Blockhouse Bay sale result.</p></div>
+        <div class="report-panel"><h2>Bedroom Sales</h2><p>Three-bedroom homes had a median of <strong>$1,058,000</strong>. Four-bedroom homes were higher at <strong>$1,144,000</strong>.</p><p>Five-bedroom homes had a median of <strong>$1,360,000</strong>. The two-bedroom median was <strong>$793,000</strong>.</p><p>Bedroom count is only part of the picture. Land, condition, parking and the quality of the renovation can make a big difference.</p></div>
 
-        <div class="report-panel"><h2>Buyer Behaviour</h2><p>Three- and four-bedroom homes continue to make up the centre of the local buyer market. Buyers tend to compare Blockhouse Bay closely with Lynfield, Green Bay, New Windsor and parts of New Lynn, so perceived value against nearby alternatives matters.</p><p>Well-presented homes with good natural light, practical parking, useful outdoor space and straightforward documentation are easier to commit to. Buyers can be more cautious where significant renovation, shared-access, title or consent issues create uncertainty.</p></div>
+        <div class="report-panel"><h2>What Buyers Are Looking At</h2><p>Three- and four-bedroom homes make up a large part of the local market. Buyers often compare Blockhouse Bay with Lynfield, Green Bay, New Windsor and New Lynn.</p><p>Natural light, parking, outdoor space and a sensible layout matter. Buyers also notice when a home needs major work or the title and consent history are unclear.</p></div>
 
-        <div class="report-panel"><h2>Sale Method And Negotiation</h2><p>The latest period included <strong>64 auction sales</strong>, with a median price of <strong>$1,252,500</strong> and median selling time of <strong>34.5 days</strong>.</p><p>Private treaty and negotiation accounted for <strong>196 sales</strong>, with a median of <strong>$1,086,250</strong> and median selling time of <strong>52 days</strong>.</p><p>This does not mean one method automatically produces a higher price. Auction properties may differ in quality, value range and buyer competition. Method selection should be based on the individual home and likely buyer pool.</p></div>
+        <div class="report-panel"><h2>Sale Method</h2><p>There were <strong>64 auction sales</strong>. Their median price was <strong>$1,252,500</strong> and the median selling time was <strong>34.5 days</strong>.</p><p>Another <strong>196 properties</strong> sold by private treaty or negotiation. Their median was <strong>$1,086,250</strong>, with a median selling time of <strong>52 days</strong>.</p><p>That does not make auction the right choice for every property. The method should suit the home and the buyers we expect to attract.</p></div>
 
-        <div class="report-panel"><h2>Advice For Blockhouse Bay Sellers</h2><ul class="seller-advice-list"><li>Base pricing on recent directly comparable Blockhouse Bay sales, not the suburb median alone.</li><li>Prepare title, LIM, consent and cross-lease information before launch where relevant.</li><li>Highlight sun, parking, family layout, storage and outdoor usability.</li><li>Address obvious maintenance and presentation issues before photography where practical.</li><li>Compare your home against nearby alternatives in Lynfield, Green Bay, New Windsor and New Lynn.</li><li>Track second inspections, document requests and buyer objections—not only enquiry counts.</li></ul></div>
+        <div class="report-panel"><h2>Advice For Blockhouse Bay Sellers</h2><ul class="seller-advice-list"><li>Use recent comparable sales. Do not rely on the suburb median alone.</li><li>Have the title, LIM and consent information ready early.</li><li>Make the most of sun, parking, storage and outdoor space.</li><li>Fix obvious presentation issues before the photos where practical.</li><li>Watch the homes competing with yours in nearby suburbs.</li><li>Listen to buyer feedback and respond quickly if the market is telling you something.</li></ul></div>
 
         <div class="report-panel"><h2>Local Factors Affecting Blockhouse Bay</h2><ul class="local-list"><li>Blockhouse Bay Village and established community feel</li><li>Schools, reserves, coastal walks and family appeal</li><li>Access toward New Lynn, Lynfield and central Auckland</li><li>Freehold and cross-lease ownership differences</li><li>Parking, road position, sun and outdoor usability</li><li>Renovation quality, consent history and maintenance</li></ul></div>
 
-        <div class="report-panel"><h2>Blockhouse Bay 3–6 Month Market Outlook</h2><p>The latest evidence supports a <strong>steady to modestly firmer</strong> outlook for well-positioned residences rather than assuming broad 5%+ growth across every property type. Residence medians are up around 2.1% year-on-year, while annual selling time is unchanged.</p><p>Buyer selectivity is likely to remain important. Homes that launch with realistic evidence-based pricing, strong presentation and clear documentation should be better placed to create competition, while over-priced or compromised properties may take longer.</p><p>For homeowners considering a sale, the useful question is where the individual property sits within today’s competing stock—not simply whether the suburb-wide median has risen.</p></div>
+        <div class="report-panel"><h2>What We Expect Over The Next Few Months</h2><p>I expect Blockhouse Bay to remain fairly steady. Standard residence prices are a little higher than a year ago, but buyers still have choices.</p><p>Good family homes should continue to attract interest. Over-priced homes may take longer, especially if they also need work.</p><p>For a seller, the most useful guide will be the homes competing with yours when you come to market.</p></div>
       </article>
 
-      <aside class="side-card"><h3>Blockhouse Bay REINZ Data Notes</h3><p><strong>$1,100,000</strong><br>Cleaned suburb median.</p><p><strong>+5.5%</strong><br>Headline median movement.</p><p><strong>$1,123,000</strong><br>Residence-only median; +2.1%.</p><p><strong>41 days</strong><br>Median selling time.</p><p><strong>261 transactions</strong><br>After one exact duplicate consolidation.</p><a class="btn btn-primary" href="#request-appraisal">Request An Appraisal</a></aside>
+      <aside class="side-card"><h3>Blockhouse Bay At A Glance</h3><p><strong>$1,100,000</strong><br>Median sale price.</p><p><strong>+5.5%</strong><br>Change in the suburb median.</p><p><strong>$1,123,000</strong><br>Median for standard residences.</p><p><strong>41 days</strong><br>Median time to sell.</p><p><strong>261 sales</strong><br>Over the past 12 months.</p><a class="btn btn-primary" href="/free-home-appraisal-blockhouse-bay/">Free Blockhouse Bay Appraisal</a></aside>
     </div>
   </section>
 
@@ -365,10 +374,10 @@ footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1
       <div class="section-title"><span class="eyebrow">Detailed Comparison</span><h2>Blockhouse Bay REINZ Market Indicators</h2></div>
       <div class="table-wrap"><table class="data-table"><thead><tr><th>Indicator</th><th>Latest 12 months</th><th>Previous 12 months / comment</th></tr></thead><tbody>
         <tr><td>Comparison period</td><td>1 September 2025–31 August 2026</td><td>1 September 2024–31 August 2025</td></tr>
-        <tr><td>Cleaned suburb median</td><td>$1,100,000</td><td>$1,042,500 · up 5.5%</td></tr>
+        <tr><td>Median sale price</td><td>$1,100,000</td><td>$1,042,500 · up 5.5%</td></tr>
         <tr><td>Average sale price</td><td>$1,140,469</td><td>$1,082,065 · up 5.4%</td></tr>
         <tr><td>Median days to sell</td><td>41 days</td><td>41 days · unchanged</td></tr>
-        <tr><td>Cleaned transactions</td><td>261</td><td>292 · down 10.6%</td></tr>
+        <tr><td>Sales</td><td>261</td><td>292 · down 10.6%</td></tr>
         <tr><td>Residences</td><td>236 sales · median $1,123,000</td><td>223 sales · median $1,100,000</td></tr>
         <tr><td>Units</td><td>11 sales · median $800,000</td><td>40 sales · median $890,000</td></tr>
         <tr><td>Townhouses</td><td>8 sales · median $886,000</td><td>23 sales · median $849,000</td></tr>
@@ -380,44 +389,103 @@ footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1
         <tr><td>Auction</td><td>64 sales · median $1,252,500</td><td>Median 34.5 days to sell</td></tr>
         <tr><td>Private treaty / negotiation</td><td>196 sales · median $1,086,250</td><td>Median 52 days to sell</td></tr>
       </tbody></table></div>
-      <div class="source-note" id="data-license"><strong>Methodology:</strong> both supplied REINZ Statistics Search Export files were filtered to the exact comparison periods. One exact repeated latest-period transaction at 2/28 Margate Road was consolidated. Different titled/unit records were retained unless they were exact same-address, same-price and same-sale-date repeats, maintaining consistency with the prior Blockhouse Bay report methodology. Small category samples should be treated cautiously.</div>
     </div>
   </section>
 
   <section class="soft" id="faq">
     <div class="container">
-      <div class="section-title"><span class="eyebrow">Seller Questions</span><h2>Blockhouse Bay Market Report FAQs</h2></div>
-      <div class="grid-2">
-        <article class="card"><h3>Are Blockhouse Bay house prices rising in September 2026?</h3><p>The cleaned all-property median is up 5.5%, but the residence-only median is up a more moderate 2.1%. The difference is important because the mix of units, townhouses and residences changed significantly.</p></article>
-        <article class="card"><h3>How long are Blockhouse Bay homes taking to sell?</h3><p>The cleaned annual median is 41 days, unchanged from the previous 12 months. Individual campaigns vary according to pricing, condition, location, title, presentation and buyer competition.</p></article>
-        <article class="card"><h3>Why did the suburb median rise more than the residence median?</h3><p>The previous period contained many more unit and townhouse transactions, which generally sold below the residence median. With fewer of those lower-priced categories in the latest mix, the headline median moved higher.</p></article>
-        <article class="card"><h3>What should Blockhouse Bay sellers focus on before listing?</h3><p>Use genuinely comparable sales, prepare property documents early, present the home strongly and make pricing competitive against the homes buyers will see at the same time.</p></article>
+      <div class="section-title">
+        <span class="eyebrow">For Blockhouse Bay Homeowners</span>
+        <h2>Questions Homeowners Are Asking Right Now</h2>
+        <p>These are the questions that come up when owners are weighing up value, timing and what to do next.</p>
+      </div>
+
+      <h3 style="margin:0 0 18px">Suburb Equity And Value Realities</h3>
+      <div class="qa-grid" style="margin-bottom:34px">
+        <article class="card">
+          <h3>Which value tier does my home sit in if it has elevation or harbour views?</h3>
+          <p>Three-bedroom homes had a median of <strong>$1,058,000</strong> over the past year, but that is only a starting point. Harbour outlook, elevation, sun, land, condition and street position can move a home well above the suburb average.</p>
+        </article>
+
+        <article class="card">
+          <h3>How much does a cross-lease title affect value, and should I convert before selling?</h3>
+          <p>Freehold made up about <strong>75.9%</strong> of the sales in this report. Cross-lease homes can still sell very well. The impact depends on the property, the flats plan and any alterations. Converting title can be expensive, so it should be assessed before spending money on it.</p>
+        </article>
+
+        <article class="card">
+          <h3>Are Blockhouse Bay buyers paying close to CV, or discounting heavily?</h3>
+          <p>Among sales with a valuation figure recorded, just over half sold above that figure. Around <strong>55%</strong> sold above it, <strong>44%</strong> below it and about <strong>2%</strong> at it. CV is a reference point. Buyers still judge the actual home, condition, parking and position.</p>
+        </article>
+      </div>
+
+      <h3 style="margin:0 0 18px">Market Velocity And Buyer Competition</h3>
+      <div class="qa-grid" style="margin-bottom:34px">
+        <article class="card">
+          <h3>If the median selling time is 41 days, what makes some homes sit much longer?</h3>
+          <p>Price is usually the first thing to look at. Presentation, maintenance, title issues and lack of parking can also slow buyers down. A home that feels easy to understand is easier to buy.</p>
+        </article>
+
+        <article class="card">
+          <h3>How is the new townhouse supply in New Lynn affecting older Blockhouse Bay homes?</h3>
+          <p>Buyers do compare the two areas, especially at similar price points. New townhouses can appeal to people who want low maintenance. Older Blockhouse Bay homes can still win on land, privacy, parking and family space.</p>
+        </article>
+
+        <article class="card">
+          <h3>Does being close to Blockhouse Bay Village add a premium?</h3>
+          <p>Walkability can help, especially for buyers who value shops, schools and everyday convenience. There is no fixed percentage. The premium depends on the street, traffic, land, parking and the quality of the home.</p>
+        </article>
+      </div>
+
+      <h3 style="margin:0 0 18px">School Zones And Property Due Diligence</h3>
+      <div class="qa-grid" style="margin-bottom:34px">
+        <article class="card">
+          <h3>How much more is a home worth if it is in the preferred local school zones?</h3>
+          <p>School zones can make a home more attractive to family buyers, but there is no reliable suburb-wide dollar premium in the REINZ data we have. The best comparison is between similar nearby homes where the main difference is zoning.</p>
+        </article>
+
+        <article class="card">
+          <h3>How do coastal erosion or clifftop stability rules affect a harbour-edge property?</h3>
+          <p>It depends on the individual site. Buyers may look closely at LIM information, hazard overlays, retaining, drainage and insurance. A harbour position can be a major positive, but any known risk needs to be understood and disclosed properly.</p>
+        </article>
+
+        <article class="card">
+          <h3>Will an unpermitted extension or missing CCC stop my sale?</h3>
+          <p>Not always, but it can reduce the buyer pool and make finance or insurance harder. The earlier the issue is identified, the more options you have. Good documentation can make a big difference.</p>
+        </article>
+      </div>
+
+      <h3 style="margin:0 0 18px">The Safety Net And Next Steps</h3>
+      <div class="qa-grid two">
+        <article class="card">
+          <h3>If I sell now, how far could my equity go in Green Bay or Titirangi?</h3>
+          <p>That depends on your likely net sale proceeds and what type of home you want next. Green Bay and Titirangi can offer very different choices in land, outlook, access and maintenance. Compare actual homes, not just suburb medians.</p>
+        </article>
+
+        <article class="card">
+          <h3>Could I keep my Blockhouse Bay home and rent it out instead?</h3>
+          <p>Possibly. Well-presented three-bedroom homes can achieve strong rents, but the result depends on condition, parking, location and the time of year. Get a current rental appraisal before deciding to hold rather than sell.</p>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="dark-section" id="request-appraisal">
-    <div class="container grid-2">
-      <div><span class="eyebrow">Property-Specific Advice</span><h2>What Is Your Blockhouse Bay Property Worth?</h2><p style="font-size:19px">Your home may sit above or below the suburb median depending on land, condition, title, parking, school appeal, renovation quality, road position and current buyer competition.</p><p style="font-size:19px">Edita can help you understand the likely buyer audience, realistic selling range and the best way to position your property.</p></div>
-      <div class="form-card"><h2>Request A Blockhouse Bay Appraisal</h2><p class="muted">Tell us a little about your property and what you are considering. No pressure, just clear local advice.</p>
-        <form action="https://formspree.io/f/mdabnpgl" method="POST">
-          <input type="hidden" name="_subject" value="New Blockhouse Bay September 2026 market report appraisal enquiry">
-          <label>Name<input name="name" type="text" autocomplete="name" required></label><label>Phone<input name="phone" type="tel" autocomplete="tel" required></label><label>Email<input name="email" type="email" autocomplete="email" required></label><label>Property address<input name="property_address" type="text" autocomplete="street-address" required></label><label>Suburb<input name="suburb" type="text" value="Blockhouse Bay" required></label>
-          <label>When are you thinking of selling?<select name="selling_timeframe"><option value="">Select timeframe</option><option>Just curious</option><option>Within 3 months</option><option>Within 6 months</option><option>This year</option><option>Not sure yet</option></select></label>
-          <label>What would you like advice about?<textarea name="message" placeholder="Example: price range, timing, presentation, buyer demand, appraisal, title, renovation or negotiation strategy."></textarea></label>
-          <button class="btn form-button" type="submit">Send My Enquiry</button><p class="disclaimer">Your details are used only to respond to your enquiry. No pressure, no obligation. <a href="/privacy-policy.html" style="font-weight:800;text-decoration:underline">Privacy Policy</a></p>
-        </form>
-      </div>
+    <div class="container" style="text-align:center;max-width:900px">
+      <span class="eyebrow">Thinking Of Selling?</span>
+      <h2>Find Out What Your Blockhouse Bay Home Could Be Worth Today</h2>
+      <p style="font-size:19px;max-width:760px;margin:0 auto 24px">
+        The suburb median is only a starting point. Your street, land, title, condition, parking and presentation all affect what buyers may pay. Ask Edita for a free, no-obligation appraisal based on recent Blockhouse Bay sales.
+      </p>
+      <a class="btn btn-primary" href="/free-home-appraisal-blockhouse-bay/" style="font-size:18px;padding:17px 30px">Free Blockhouse Bay Property Appraisal</a>
     </div>
   </section>
 
   <section>
     <div class="container">
-      <div class="section-title"><span class="eyebrow">Sources</span><h2>Data Sources And Important Notes</h2></div>
-      <div class="grid-3">
-        <div class="source-card"><h3>Latest REINZ Export</h3><p>Used for 1 September 2025–31 August 2026.</p><p class="source-note"><strong>Source file:</strong> REINZ Statistics Search Export 12 Sep 2026 (3).csv</p></div>
-        <div class="source-card"><h3>Previous REINZ Export</h3><p>Used for 1 September 2024–31 August 2025.</p><p class="source-note"><strong>Source file:</strong> REINZ Statistics Search Export 12 Sep 2026 (2).csv</p></div>
-        <div class="source-card" id="image-license"><h3>Hero Image</h3><p>The existing Blockhouse Bay hero remains visually unchanged. This page uses the already-uploaded 640px, 960px and 1400px WebP variants responsively.</p><p class="source-note"><strong>Image:</strong> /images/market-reports/blockhouse-bay/blockhouse-bay-market-report-hero-1400.webp</p></div>
+      <div class="section-title"><span class="eyebrow">About The Data</span><h2>Where These Figures Come From</h2></div>
+      <div class="grid-2">
+        <div class="source-card"><h3>Data Source</h3><p>REINZ sales data supplied for Blockhouse Bay.</p><p><strong>Current period:</strong> 1 September 2025–31 August 2026</p><p><strong>Previous period:</strong> 1 September 2024–31 August 2025</p></div>
+        <div class="source-card"><h3>About The Numbers</h3><p>Suburb figures are a useful guide, but they cannot value an individual home. Condition, land, title, position, parking and presentation can all change the result.</p></div>
       </div>
       <p class="disclaimer" style="margin-top:22px"><strong>Please note:</strong> This report is general market commentary only. It is not a registered valuation, legal advice, financial advice or a guarantee of selling price.</p>
     </div>
@@ -425,15 +493,25 @@ footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1
 
   <section class="soft">
     <div class="container"><div class="section-title"><span class="eyebrow">Read Next</span><h2>Other West Auckland Market Reports</h2></div>
-      <div class="suburb-links"><a href="/market-reports/titirangi/">Titirangi</a><a href="/market-reports/lynfield/">Lynfield</a><a href="/market-reports/green-bay/">Green Bay</a><a href="/market-reports/new-lynn/">New Lynn</a><a href="/market-reports/new-windsor/">New Windsor</a><a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay Real Estate Agent</a><a href="/free-home-appraisal-west-auckland/">Free Home Appraisal</a><a href="/market-reports/">All Market Reports</a></div>
+      <div class="suburb-links"><a href="/market-reports/titirangi/">Titirangi</a><a href="/market-reports/lynfield/">Lynfield</a><a href="/market-reports/green-bay/">Green Bay</a><a href="/market-reports/new-lynn/">New Lynn</a><a href="/market-reports/new-windsor/">New Windsor</a><a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay Real Estate Agent</a><a href="/free-home-appraisal-blockhouse-bay/">Free Blockhouse Bay Appraisal</a><a href="/market-reports/">All Market Reports</a></div>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-card"><h2>Edita Andrijasevic - Raine <span style="color:#ffb200">&amp;</span> Horne</h2><p>Helping West Auckland homeowners with clear property advice, suburb-specific market insight, buyer-focused marketing and confident negotiation.</p><p class="small">Edita Andrijasevic (Licensee 20027060) is a Licensed Agent under the Real Estate Agents Act 2008. This report is general market commentary and is not a registered valuation.</p><p><a href="tel:+6421765234">021 765 234</a><a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a></p><a class="footer-cta" href="#request-appraisal">Ask Edita For A Blockhouse Bay Appraisal</a><div class="footer-link-grid"><div class="footer-links"><h3>Market Reports</h3><a href="/market-reports/blockhouse-bay/">Blockhouse Bay Market Report</a><a href="/market-reports/titirangi/">Titirangi Market Report</a><a href="/market-reports/lynfield/">Lynfield Market Report</a><a href="/market-reports/">All Market Reports</a></div><div class="footer-links"><h3>Seller Services</h3><a href="/free-home-appraisal-west-auckland/">Free Property Appraisal</a><a href="/services/selling-your-home-west-auckland/">Selling Your Home</a><a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a><a href="/services/real-estate-negotiation-support/">Negotiation Support</a><a href="/amplify-property-marketing/">Amplify Property Marketing</a></div></div></div>
-    <div class="footer-card"><h2>Office Location</h2><p>Raine &amp; Horne<br>9 Sheridan Drive, New Lynn, Auckland 0600</p><div style="overflow:hidden;border-radius:18px;border:1px solid rgba(255,255,255,.12);background:#fff"><iframe src="https://www.google.com/maps?q=9%20Sheridan%20Drive%2C%20New%20Lynn%2C%20Auckland%200600%2C%20New%20Zealand&output=embed" title="Edita Andrijasevic Raine and Horne office location map" width="100%" height="290" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+    <div class="footer-card"><h2>Edita Andrijasevic - Raine <span style="color:#ffb200">&amp;</span> Horne</h2><p>Helping West Auckland homeowners with clear property advice, suburb-specific market insight, buyer-focused marketing and confident negotiation.</p><p class="small">Edita Andrijasevic (Licensee 20027060) is a Licensed Agent under the Real Estate Agents Act 2008. This report is general market commentary and is not a registered valuation.</p><p><a href="tel:+6421765234">021 765 234</a><a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a></p><a class="footer-cta" href="/free-home-appraisal-blockhouse-bay/">Free Blockhouse Bay Property Appraisal</a><div class="footer-link-grid"><div class="footer-links"><h3>Market Reports</h3><a href="/market-reports/blockhouse-bay/">Blockhouse Bay Market Report</a><a href="/market-reports/titirangi/">Titirangi Market Report</a><a href="/market-reports/lynfield/">Lynfield Market Report</a><a href="/market-reports/">All Market Reports</a></div><div class="footer-links"><h3>Seller Services</h3><a href="/free-home-appraisal-blockhouse-bay/">Free Blockhouse Bay Appraisal</a><a href="/services/selling-your-home-west-auckland/">Selling Your Home</a><a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a><a href="/services/real-estate-negotiation-support/">Negotiation Support</a><a href="/amplify-property-marketing/">Amplify Property Marketing</a></div></div></div>
+    <div class="footer-card">
+      <h2>Office Location</h2>
+      <p><strong>Raine &amp; Horne</strong><br>9 Sheridan Drive, New Lynn, Auckland 0600</p>
+      <div style="background:#fff;color:#202020;border-radius:18px;padding:22px;margin-top:18px">
+        <p style="margin:0 0 16px"><strong>Visit or find us online</strong></p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a href="https://www.google.com/maps/search/?api=1&query=9+Sheridan+Drive%2C+New+Lynn%2C+Auckland+0600" target="_blank" rel="noopener" class="btn btn-primary">Open In Google Maps</a>
+          <a href="https://share.google/ddO9ayximJFNs2muB" target="_blank" rel="noopener" class="btn btn-dark">View Google Business Profile</a>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 
