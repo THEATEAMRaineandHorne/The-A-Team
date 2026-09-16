@@ -7,9 +7,11 @@
 
   window.gtag = gtag;
 
+  var loaded = false;
+
   function loadAnalytics() {
-    if (window.__gaLoaded) return;
-    window.__gaLoaded = true;
+    if (loaded) return;
+    loaded = true;
 
     var script = document.createElement('script');
     script.async = true;
@@ -18,11 +20,35 @@
 
     gtag('js', new Date());
     gtag('config', 'G-88WTQFKQV6');
+
+    removeListeners();
   }
 
-  if ('requestIdleCallback' in window) {
-    requestIdleCallback(loadAnalytics, { timeout: 3000 });
-  } else {
-    setTimeout(loadAnalytics, 2000);
+  function removeListeners() {
+    window.removeEventListener('scroll', loadAnalytics);
+    window.removeEventListener('pointerdown', loadAnalytics);
+    window.removeEventListener('keydown', loadAnalytics);
+    window.removeEventListener('touchstart', loadAnalytics);
   }
+
+  window.addEventListener('scroll', loadAnalytics, {
+    passive: true,
+    once: true
+  });
+
+  window.addEventListener('pointerdown', loadAnalytics, {
+    passive: true,
+    once: true
+  });
+
+  window.addEventListener('keydown', loadAnalytics, {
+    once: true
+  });
+
+  window.addEventListener('touchstart', loadAnalytics, {
+    passive: true,
+    once: true
+  });
+
+  setTimeout(loadAnalytics, 10000);
 })();
