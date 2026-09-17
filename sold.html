@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-88WTQFKQV6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-88WTQFKQV6');
-</script>
+  <script src="/analytics.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sold Properties West Auckland | Edita Andrijasevic</title>
-  <meta name="description" content="View recently sold properties by Edita Andrijasevic - Raine &amp; Horne across Blockhouse Bay, Titirangi, Lynfield, Glen Eden, Sunnyvale and West Auckland.">
+  <title>Sold Properties West Auckland | Recent Sales & Results</title>
+  <meta name="description" content="Explore recently sold properties across West Auckland, including Blockhouse Bay, Lynfield, Glen Eden, Kelston, Glendene and Sunnyvale. See local sales evidence, seller insights and request a free property appraisal.">
   <link rel="canonical" href="https://peterandedita.co.nz/sold.html">
   <meta name="robots" content="index, follow">
   <meta name="application-name" content="Edita Andrijasevic - Raine &amp; Horne">
@@ -38,14 +30,13 @@
   <link rel="preload" as="image" href="/images/sold-properties-blockhouse-bay-titirangi-lynfield-raine-horne.webp" fetchpriority="high">
   <link rel="preload" as="image" href="/images/rh-logo.webp">
   <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
   <style>
     @font-face {
       font-family: 'RaineHorne';
       src: url('/fonts/raine-horne-regular.ttf') format('truetype'), url('/fonts/raine-horne-regular.ttf') format('truetype');
       font-weight: 400 900;
       font-style: normal;
-      font-display: optional;
+      font-display: swap;
     }
     :root{
       --gold:#ffb200;
@@ -497,7 +488,7 @@
       }
     ]
   },
-  "dateModified": "2026-07-18T09:00:00+12:00",
+  "dateModified": "2026-09-17T16:00:00+12:00",
   "inLanguage": "en-NZ"
 }
   </script>
@@ -517,6 +508,55 @@
       "position": 2,
       "name": "Sold Properties",
       "item": "https://peterandedita.co.nz/sold.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://peterandedita.co.nz/sold.html#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why are recent sold properties useful when I am thinking of selling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recent local sales help show what buyers have actually paid for comparable homes. They are most useful when considered alongside differences in land, floor area, condition, location, title, presentation, buyer demand and the circumstances of each sale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a nearby sale to work out exactly what my home is worth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A nearby sale is useful evidence, but it should not be treated as an exact valuation. Two homes on the same street can achieve different prices because of condition, layout, outlook, parking, renovations, development potential, title and buyer competition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide free property appraisals in West Auckland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Homeowners can request a free property appraisal and selling discussion for West Auckland and nearby suburbs served by Edita Andrijasevic - Raine & Horne."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which areas are covered on this sold properties page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The page includes selected sales from West Auckland and nearby suburbs such as Blockhouse Bay, Lynfield, Glen Eden, Kelston, Glendene, Sunnyvale and other areas where local property work has been completed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I compare when looking at sold properties?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Compare the property type, land area, floor area, number of bedrooms and bathrooms, condition, age, parking, title, location, school zones, development potential and how recently the sale occurred."
+      }
     }
   ]
 }
@@ -605,7 +645,7 @@
       <div class="container hero-inner">
         <span class="eyebrow">Local Proof For Sellers</span>
         <h1>Recently Sold Properties</h1>
-        <p>Selected recent sales with photos and official Raine &amp; Horne links. Showing real local activity, not just promises.</p>
+        <p>Explore selected recent property sales across West Auckland and nearby suburbs. These results provide useful local evidence for homeowners researching values, buyer demand and the right strategy before selling.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="https://peterandedita.co.nz/#appraisal">Request Free Appraisal</a>
           <a class="btn btn-secondary" href="tel:+6421765234">Call 021 765 234</a>
@@ -621,14 +661,153 @@
         <div id="sold-listings" class="property-grid"></div>
       </div>
     </section>
-    <section class="soft-section">
-  <div class="container">
-    <div class="cta-row" style="justify-content:center; margin-top:0;">
-      <a class="btn btn-primary" href="https://peterandedita.co.nz/#appraisal">Ask For A Free Appraisal</a>
-      <a class="btn" href="https://peterandedita.co.nz/properties.html">View Current Properties</a>
-    </div>
-  </div>
-</section>
+    <section class="soft-section" aria-labelledby="what-sales-mean">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="what-sales-mean">What Recent Sales Can Tell West Auckland Sellers</h2>
+          <p>A sold price is useful evidence, but the real value comes from understanding why one property sold for more or less than another.</p>
+        </div>
+
+        <div class="content-grid">
+          <article class="info-card">
+            <h3>Recent Local Evidence</h3>
+            <p>Sales in the same suburb can help establish a realistic starting point for your own property. The strongest comparisons usually involve similar property type, land size, floor area, condition, parking, title and location.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Buyer Demand Matters</h3>
+            <p>Two similar homes can produce different outcomes if one attracts stronger competition. Presentation, launch timing, marketing reach, pricing strategy and the number of active buyers can all influence the final result.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Condition Changes The Comparison</h3>
+            <p>Renovated homes, original-condition homes and properties needing significant work should not be compared on address alone. Buyers also respond differently to layout, sunlight, outlook, access, outdoor space and maintenance.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Every Sale Has Context</h3>
+            <p>A recent sale is not an automatic valuation for the house next door. Settlement terms, buyer urgency, vendor motivation, building issues, title matters and development potential can all affect what a buyer is prepared to pay.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="using-sold-results">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="using-sold-results">How To Use Sold Properties When Planning Your Sale</h2>
+          <p>Use recent sales as a guide, then narrow the comparison to homes that genuinely compete with yours.</p>
+        </div>
+
+        <div class="seller-copy">
+          <p>If you are thinking about selling in West Auckland, it is tempting to focus on the highest sale you can find nearby. A better approach is to build a group of relevant comparable sales and then look carefully at the differences between those homes and your own.</p>
+
+          <p>For example, a larger section does not always mean a higher sale price if the land is steep, difficult to access or has limited development potential. Likewise, a smaller property may attract stronger competition if it is well presented, easy to maintain, close to transport or positioned in a location buyers strongly prefer.</p>
+
+          <p>When we discuss a property with a homeowner, the aim is to look beyond a single number. We consider recent comparable sales, current competing listings, buyer feedback, presentation, location, property features and the likely target buyer. That creates a more useful selling conversation than relying only on an automated online estimate.</p>
+
+          <ul>
+            <li>Compare sales from the same suburb or a genuinely similar nearby location.</li>
+            <li>Prioritise recent sales because buyer conditions can change over time.</li>
+            <li>Allow for differences in condition, size, title, parking, layout and outlook.</li>
+            <li>Check whether a property had development potential or other unusual features.</li>
+            <li>Look at current listings as well as sold properties to understand your competition.</li>
+          </ul>
+
+          <p style="margin-top:20px;">For a broader view of current conditions, visit our <a class="text-link" href="/market-reports/">West Auckland suburb market reports</a>, or read our guide to <a class="text-link" href="/services/selling-your-home-west-auckland/">selling your home in West Auckland</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" aria-labelledby="local-selling-experience">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="local-selling-experience">Local Property Results Across Different West Auckland Markets</h2>
+          <p>West Auckland is not one single property market. Buyer priorities can vary significantly between neighbouring suburbs and different property types.</p>
+        </div>
+
+        <div class="proof-grid">
+          <div class="proof-card">
+            <h3>Family Home Markets</h3>
+            <p>In suburbs such as Lynfield, Blockhouse Bay and Titirangi, buyers often compare space, school access, garaging, outdoor living, sun and overall presentation alongside the price.</p>
+          </div>
+
+          <div class="proof-card">
+            <h3>First-Home Buyer Markets</h3>
+            <p>In areas such as Glen Eden, Kelston, Glendene and Sunnyvale, affordability, transport access, maintenance requirements and the ability to move in without major work can be especially important.</p>
+          </div>
+
+          <div class="proof-card">
+            <h3>Property-Specific Strategy</h3>
+            <p>The best marketing and sale method should suit the property, the likely buyer group and current market conditions. There is no single approach that is right for every home.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="sold-by-suburb">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="sold-by-suburb">Research Your Local Suburb Before You Sell</h2>
+          <p>Explore our local area pages for suburb-specific selling information, market reports and property appraisal options.</p>
+        </div>
+
+        <div class="suburb-link-grid" aria-label="West Auckland suburb real estate pages">
+          <a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+          <a href="/real-estate-agent-titirangi/">Titirangi</a>
+          <a href="/real-estate-agent-lynfield/">Lynfield</a>
+          <a href="/real-estate-agent-new-lynn/">New Lynn</a>
+          <a href="/real-estate-agent-glen-eden/">Glen Eden</a>
+          <a href="/real-estate-agent-green-bay/">Green Bay</a>
+          <a href="/real-estate-agent-kelston/">Kelston</a>
+          <a href="/real-estate-agent-glendene/">Glendene</a>
+          <a href="/real-estate-agent-avondale/">Avondale</a>
+          <a href="/real-estate-agent-new-windsor/">New Windsor</a>
+          <a href="/real-estate-agent-mount-roskill/">Mount Roskill</a>
+        </div>
+
+        <div class="cta-row" style="justify-content:center; margin-top:34px;">
+          <a class="btn btn-primary" href="https://peterandedita.co.nz/#appraisal">Ask For A Free Appraisal</a>
+          <a class="btn" href="https://peterandedita.co.nz/properties.html">View Current Properties</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section" aria-labelledby="sold-faq">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="sold-faq">Sold Property Questions From West Auckland Homeowners</h2>
+          <p>These are some of the most common questions sellers ask when comparing their home with recent local sales.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Why are recent sold properties useful when I am thinking of selling?</summary>
+            <div class="faq-answer"><p>Recent local sales help show what buyers have actually paid for comparable homes. They are most useful when considered alongside differences in land, floor area, condition, location, title, presentation, buyer demand and the circumstances of each sale.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I use a nearby sale to work out exactly what my home is worth?</summary>
+            <div class="faq-answer"><p>A nearby sale is useful evidence, but it should not be treated as an exact valuation. Two homes on the same street can achieve different prices because of condition, layout, outlook, parking, renovations, development potential, title and buyer competition.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you provide free property appraisals in West Auckland?</summary>
+            <div class="faq-answer"><p>Yes. You can request a free property appraisal and selling discussion for West Auckland and nearby suburbs. An appraisal can consider recent comparable sales as well as the features and condition of your individual property.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Which areas are covered on this sold properties page?</summary>
+            <div class="faq-answer"><p>This page includes selected sales from West Auckland and nearby suburbs such as Blockhouse Bay, Lynfield, Glen Eden, Kelston, Glendene, Sunnyvale and other areas where local property work has been completed.</p></div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What should I compare when looking at sold properties?</summary>
+            <div class="faq-answer"><p>Compare the property type, land area, floor area, bedrooms, bathrooms, condition, age, parking, title, location, school zones, development potential and how recently the sale occurred. The closer the comparison, the more useful the evidence is likely to be.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
 <style>
   .suburb-appraisal-block {
     background: #fff8e8;
