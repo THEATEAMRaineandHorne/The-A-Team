@@ -7,34 +7,11 @@
 
   window.gtag = gtag;
 
-  var loaded = false;
+  var script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-88WTQFKQV6';
+  document.head.appendChild(script);
 
-  function loadAnalytics() {
-    if (loaded) return;
-    loaded = true;
-
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-88WTQFKQV6';
-    document.head.appendChild(script);
-
-    gtag('js', new Date());
-    gtag('config', 'G-88WTQFKQV6');
-
-    removeListeners();
-  }
-
-  function removeListeners() {
-    window.removeEventListener('pointerdown', loadAnalytics);
-    window.removeEventListener('keydown', loadAnalytics);
-  }
-
-  window.addEventListener('pointerdown', loadAnalytics, {
-    passive: true,
-    once: true
-  });
-
-  window.addEventListener('keydown', loadAnalytics, {
-    once: true
-  });
+  gtag('js', new Date());
+  gtag('config', 'G-88WTQFKQV6');
 })();
