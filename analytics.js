@@ -25,16 +25,9 @@
   }
 
   function removeListeners() {
-    window.removeEventListener('scroll', loadAnalytics);
     window.removeEventListener('pointerdown', loadAnalytics);
     window.removeEventListener('keydown', loadAnalytics);
-    window.removeEventListener('touchstart', loadAnalytics);
   }
-
-  window.addEventListener('scroll', loadAnalytics, {
-    passive: true,
-    once: true
-  });
 
   window.addEventListener('pointerdown', loadAnalytics, {
     passive: true,
@@ -42,11 +35,6 @@
   });
 
   window.addEventListener('keydown', loadAnalytics, {
-    once: true
-  });
-
-  window.addEventListener('touchstart', loadAnalytics, {
-    passive: true,
     once: true
   });
 
