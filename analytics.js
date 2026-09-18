@@ -37,6 +37,4 @@
   window.addEventListener('keydown', loadAnalytics, {
     once: true
   });
-
-  setTimeout(loadAnalytics, 10000);
 })();
