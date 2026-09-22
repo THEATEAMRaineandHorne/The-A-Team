@@ -1,5 +1,15 @@
 const currentProperties = [
   {
+label: "A little bit hidden, a lot to love",
+title: "9 Caspian Close, New Lynn",
+details: "3 Bed · 1.5 Bath · 4 Car",
+status: "For Sale · Deadline 14 October",
+image: "https://trademe.tmcdn.co.nz/photoserver/plus/2330455367.jpg",
+alt: "9 Caspian Close New Lynn renovated cedar home for sale",
+summary: "A renovated freehold cedar home with flexible living, a modern kitchen, sun-soaked covered deck and established fruit trees, all within easy walking distance of LynnMall and New Lynn Train Station.",
+url: "https://www.raineandhorne.co.nz/blockhousebay/properties/9-caspian-close-new-lynn-0600-auckland"
+},
+  {
     label: "Serious value in a special setting",
     title: "3/17 Cape Horn Road, Mount Roskill",
     details: "3 Bed · 1 Bath · 3 Car",
