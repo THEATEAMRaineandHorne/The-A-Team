@@ -238,6 +238,27 @@
       .dropdown-menu a, .dropdown-menu a:visited { width: 100% !important; min-height: 52px !important; display: flex !important; align-items: center !important; justify-content: center !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; font-size: 17px !important; }
     }
     @media (max-width: 560px) {
+  .brand {
+    white-space: normal;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .brand img {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  .brand > div {
+    min-width: 0;
+  }
+
+  .menu-toggle {
+    flex-shrink: 0;
+    padding: 9px 12px;
+  }
       .suburb-grid { grid-template-columns: 1fr; }
       .hero-content { padding: 60px 18px; }
       section { padding: 56px 18px; }
