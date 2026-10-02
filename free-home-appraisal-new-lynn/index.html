@@ -5,37 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Free Property Appraisal Lynfield | Edita Andrijasevic</title>
-  <meta name="description" content="Free Lynfield property appraisal from Edita Andrijasevic, Raine & Horne. Local pricing, buyer demand, presentation, marketing and selling strategy advice.">
+  <title>Free Property Appraisal New Lynn | Edita Andrijasevic</title>
+  <meta name="description" content="Free Property Appraisal New Lynn: Local New Lynn Auckland advice, pricing strategy, buyer demand insight and AI-powered property marketing.">
 
-  <link rel="canonical" href="https://peterandedita.co.nz/free-home-appraisal-lynfield/">
+  <link rel="canonical" href="https://peterandedita.co.nz/free-home-appraisal-new-lynn/">
   <meta name="robots" content="index, follow">
 
   <link rel="icon" type="image/webp" sizes="96x96" href="https://peterandedita.co.nz/images/favicon-the-a-team.webp">
   <link rel="shortcut icon" type="image/webp" href="https://peterandedita.co.nz/images/favicon-the-a-team.webp">
   <link rel="apple-touch-icon" href="https://peterandedita.co.nz/images/favicon-the-a-team.webp">
 
-  <meta property="og:title" content="Free Property Appraisal Lynfield | Edita Andrijasevic">
-  <meta property="og:description" content="Find out what your Lynfield property may be worth with local pricing, buyer demand, presentation and selling strategy advice.">
+  <meta property="og:title" content="Free Property Appraisal New Lynn | Edita Andrijasevic">
+  <meta property="og:description" content="Free Property Appraisal New Lynn: Local New Lynn Auckland advice, pricing strategy, buyer demand insight and AI-powered property marketing.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://peterandedita.co.nz/free-home-appraisal-lynfield/">
-  <meta property="og:image" content="https://peterandedita.co.nz/images/free-home-appraisal-lynfield.jpg">
-  <meta property="og:image:alt" content="Free Lynfield property appraisal and home selling advice from Edita Andrijasevic, Raine and Horne">
+  <meta property="og:url" content="https://peterandedita.co.nz/free-home-appraisal-new-lynn/">
+  <meta property="og:image" content="https://peterandedita.co.nz/images/new-lynn-free-home-appraisal.jpg">
+  <meta property="og:image:alt" content="Free property appraisal New Lynn Auckland from Edita Andrijasevic, Raine and Horne">
   <meta property="og:site_name" content="Edita Andrijasevic">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Property Appraisal New Lynn | Edita Andrijasevic">
+  <meta name="twitter:description" content="Free Property Appraisal New Lynn: Local New Lynn Auckland advice, pricing strategy, buyer demand insight and AI-powered property marketing.">
+  <meta name="twitter:image" content="https://peterandedita.co.nz/images/new-lynn-free-home-appraisal.jpg">
 
   <link
     rel="preload"
     as="image"
-    href="https://peterandedita.co.nz/images/free-home-appraisal-lynfield-1068.webp"
+    href="https://peterandedita.co.nz/images/new-lynn-free-home-appraisal-1344.webp"
     imagesrcset="
-      https://peterandedita.co.nz/images/free-home-appraisal-lynfield-480.webp 480w,
-      https://peterandedita.co.nz/images/free-home-appraisal-lynfield-768.webp 768w,
-      https://peterandedita.co.nz/images/free-home-appraisal-lynfield-1068.webp 1068w"
+      https://peterandedita.co.nz/images/new-lynn-free-home-appraisal-480.webp 480w,
+      https://peterandedita.co.nz/images/new-lynn-free-home-appraisal-800.webp 800w,
+      https://peterandedita.co.nz/images/new-lynn-free-home-appraisal-1344.webp 1344w"
     imagesizes="100vw"
     type="image/webp"
     fetchpriority="high">
+  <link rel="preload" as="image" href="/images/rh-logo.webp">
+  <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
 
   <style>
+    @font-face {
+      font-family: 'RaineHorne';
+      src: url('/fonts/raine-horne-regular.ttf') format('truetype');
+      font-weight: 400; font-style: normal; font-display: optional;
+    }
     :root {
       --gold: #ffb200;
       --dark: #202020;
@@ -48,15 +60,18 @@
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
       color: var(--dark);
       background: var(--white);
       line-height: 1.6;
+    }
+
+    button, input, textarea, select {
+      font-family: 'RaineHorne', Arial, Helvetica, sans-serif;
     }
 
     a {
@@ -104,7 +119,6 @@
       letter-spacing: -0.3px;
       font-size: 18px;
       flex-shrink: 0;
-      white-space: nowrap;
     }
 
     .brand img {
@@ -113,41 +127,47 @@
       object-fit: contain;
     }
 
-    .brand span {
-      color: var(--dark);
-      margin-left: 8px;
-    }
-
     .nav-links {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       align-items: center;
       gap: 14px;
       font-size: 13.5px;
       font-weight: 800;
-      white-space: nowrap;
     }
-
-    .nav-links a:hover { color: var(--gold); }
-
-    .breadcrumb-bar {
-      max-width: 1220px;
-      margin: 0 auto;
-      padding: 14px 20px;
+    .menu-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--gold);
+      color: var(--dark);
+      border: 2px solid var(--gold);
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-weight: 900;
       font-size: 14px;
-      color: #555555;
+      font-family: inherit;
+      cursor: pointer;
     }
+    .menu-toggle:hover { background: var(--gold-dark); }
 
-    .breadcrumb-bar a {
-      color: #202020;
-      font-weight: 800;
-    }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
 
-    .breadcrumb-bar span { margin: 0 6px; }
+    .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+    .nav-dropdown summary { list-style: none; cursor: pointer; }
+    .nav-dropdown summary::-webkit-details-marker { display: none; }
+    .nav-parent { font-size: 13.5px; font-weight: 800; color: var(--dark); display: inline-flex; align-items: center; gap: 6px; }
+    .nav-parent::after { content: "▾"; font-size: 11px; color: var(--gold); margin-top: 1px; }
+    .nav-parent:hover, .nav-parent.active { color: var(--gold); }
+    .dropdown-menu { display: none; position: absolute; top: 34px; left: 0; min-width: 300px; background: #fff; border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 18px 45px rgba(0,0,0,0.14); padding: 10px; z-index: 100; }
+    .nav-dropdown[open] .dropdown-menu, .nav-dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu a, .dropdown-menu a:visited { display: block; padding: 11px 13px; border-radius: 10px; color: var(--dark) !important; background: #fff !important; font-size: 14px; font-weight: 800; line-height: 1.25; white-space: normal; }
+    .dropdown-menu a:hover { background: var(--gold) !important; color: var(--dark) !important; }
 
     .hero {
       position: relative;
-      min-height: 720px;
+      min-height: 760px;
       display: flex;
       align-items: stretch;
       overflow: hidden;
@@ -166,8 +186,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.58) 48%, rgba(0,0,0,0.24) 100%),
-        linear-gradient(0deg, rgba(0,0,0,0.42), rgba(0,0,0,0.08));
+        linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.58) 46%, rgba(0,0,0,0.22) 100%),
+        linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.08));
     }
 
     .hero-content {
@@ -175,10 +195,10 @@
       z-index: 2;
       max-width: 1220px;
       margin: 0 auto;
-      padding: 86px 20px;
+      padding: 90px 20px;
       width: 100%;
       display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
+      grid-template-columns: 1.1fr 0.9fr;
       gap: 44px;
       align-items: center;
       color: var(--white);
@@ -198,39 +218,24 @@
     }
 
     h1 {
-      font-size: clamp(42px, 6vw, 72px);
+      font-size: clamp(42px, 6vw, 76px);
       line-height: 1.02;
-      letter-spacing: -2.2px;
+      letter-spacing: -2.4px;
       margin: 0 0 22px;
     }
 
-    h2 {
-      font-size: clamp(32px, 4vw, 48px);
-      line-height: 1.1;
-      letter-spacing: -1.2px;
-      margin: 0 0 14px;
-    }
-
-    h3 {
-      font-size: 23px;
-      line-height: 1.2;
-      margin: 0 0 10px;
-    }
-
-    p { margin-top: 0; }
-
     .hero-lead {
-      font-size: 20px;
+      font-size: 21px;
       max-width: 760px;
       color: #f3f3f3;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .hero-proof {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
-      margin: 30px 0;
+      margin: 32px 0;
       max-width: 780px;
     }
 
@@ -357,7 +362,14 @@
       color: var(--gold);
     }
 
-    section { padding: 78px 20px; }
+    section {
+      padding: 78px 20px;
+    }
+
+    section:not(.hero) {
+      content-visibility: auto;
+      contain-intrinsic-size: 800px;
+    }
 
     .container {
       max-width: 1220px;
@@ -365,8 +377,15 @@
     }
 
     .section-title {
-      max-width: 880px;
+      max-width: 920px;
       margin-bottom: 36px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.1;
+      letter-spacing: -1.2px;
+      margin: 0 0 14px;
     }
 
     .section-title p {
@@ -396,6 +415,12 @@
       box-shadow: 0 14px 38px rgba(0,0,0,0.05);
     }
 
+    .card h3 {
+      font-size: 23px;
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
     .card p {
       color: var(--muted);
       margin: 0;
@@ -417,89 +442,22 @@
       background: #303030;
       border-color: #555555;
     }
+.breadcrumb-bar {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  font-size: 14px;
+  color: #555555;
+}
 
-    .video-wrap {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border-radius: 22px;
-      overflow: hidden;
-      box-shadow: 0 18px 55px rgba(0,0,0,0.22);
-      background: #000;
-    }
+.breadcrumb-bar a {
+  color: #202020;
+  font-weight: 800;
+}
 
-    .video-wrap iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    .team-section { background: #ffffff; }
-
-    .team-wrap {
-      max-width: 1220px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 42px;
-      align-items: center;
-    }
-
-    .team-image-card {
-      background: #f8f7f4;
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 18px;
-      box-shadow: 0 14px 38px rgba(0,0,0,0.05);
-    }
-
-    .team-image-card img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 18px;
-      object-fit: cover;
-    }
-
-    .team-photo-note {
-      margin: 12px 4px 0;
-      font-size: 14px;
-      color: #666666;
-      text-align: center;
-    }
-
-    .team-content p {
-      font-size: 18px;
-      line-height: 1.7;
-      color: #555555;
-      margin: 0 0 18px;
-    }
-
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-      margin-top: 24px;
-    }
-
-    .team-box {
-      background: #fffdf8;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 22px;
-    }
-
-    .team-box h3 { font-size: 20px; }
-
-    .team-box p {
-      margin: 0;
-      font-size: 16px;
-      line-height: 1.65;
-      color: #555555;
-    }
-
+.breadcrumb-bar span {
+  margin: 0 6px;
+}
     .suburb-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -520,6 +478,94 @@
       background: var(--gold);
       border-color: var(--gold);
       transform: translateY(-2px);
+    }
+
+    .amplify-box {
+      background: linear-gradient(135deg, #302a1a, #111111);
+      border-radius: 26px;
+      padding: 34px;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.18);
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 18px 55px rgba(0,0,0,0.22);
+      background: #000;
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-placeholder { background: #000; }
+
+    .video-play-button {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      background: #000;
+    }
+
+    .video-play-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      opacity: 0.88;
+    }
+
+    .video-play-button span {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      transform: translate(-50%, -50%);
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      font-weight: 900;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+    }
+
+    .bullet-list {
+      padding-left: 20px;
+      margin: 18px 0 0;
+    }
+
+    .bullet-list li {
+      margin-bottom: 10px;
+      color: #f1f1f1;
+    }
+
+    .reviews-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.05);
+    }
+
+    .elfsight-review-box {
+      width: 100%;
+      min-height: 220px;
+      overflow: hidden;
     }
 
     .faq details {
@@ -564,31 +610,27 @@
       .hero-content,
       .grid-2,
       .grid-3,
-      .footer-inner,
-      .team-wrap {
+      .footer-inner {
         grid-template-columns: 1fr;
       }
 
       .hero { min-height: auto; }
+      .hero-proof { grid-template-columns: 1fr; }
+      .suburb-grid { grid-template-columns: repeat(2, 1fr); }
 
-      .hero-proof,
-      .team-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .suburb-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-links {
-        flex-wrap: wrap;
-        white-space: normal;
-      }
+      .nav { width: 100%; display: flex !important; flex-direction: row !important; align-items: center !important; gap: 14px; flex-wrap: wrap; justify-content: space-between; }
+      .brand { flex: 1; min-width: 0; margin-bottom: 0 !important; }
+      .menu-toggle { display: inline-flex !important; }
+      .nav-links { display: none; width: 100% !important; }
+      .nav-links.is-open { display: grid !important; grid-template-columns: 1fr !important; gap: 12px !important; white-space: normal; max-height: calc(100vh - 140px) !important; overflow-y: auto !important; -webkit-overflow-scrolling: touch !important; }
+      .nav-links > a { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; text-align: center !important; }
+      .nav-dropdown { grid-column: 1 / -1 !important; width: 100% !important; display: block !important; position: relative !important; }
+      .nav-dropdown summary.nav-parent { width: 100% !important; min-height: 58px !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 7px !important; padding: 14px 16px !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; color: var(--dark) !important; font-size: 18px !important; font-weight: 900 !important; cursor: pointer !important; list-style: none !important; }
+      .nav-dropdown summary.nav-parent::-webkit-details-marker { display: none !important; }
+      .dropdown-menu { position: static !important; display: none !important; width: 100% !important; min-width: 0 !important; margin-top: 10px !important; }
+      .nav-dropdown:hover .dropdown-menu { display: none !important; }
+      .nav-dropdown[open] .dropdown-menu { display: grid !important; grid-template-columns: 1fr !important; gap: 8px !important; }
+      .dropdown-menu a, .dropdown-menu a:visited { width: 100% !important; min-height: 52px !important; display: flex !important; align-items: center !important; justify-content: center !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; font-size: 17px !important; }
     }
 
     @media (max-width: 560px) {
@@ -617,57 +659,27 @@
       .hero-content { padding: 62px 18px; }
       section { padding: 58px 18px; }
     }
-    .seo-footer .seo-footer-contact a.seo-footer-cta{
-  background:#ffb200 !important;
-  color:#202020 !important;
-  font-weight:900 !important;
-  text-align:center !important;
-  min-height:52px !important;
-  padding:13px 24px !important;
-  border-radius:999px !important;
-  display:inline-flex !important;
-  align-items:center !important;
-  justify-content:center !important;
-}
 
-.seo-footer .seo-footer-contact a.seo-footer-cta:hover{
-  background:#ffffff !important;
-  color:#202020 !important;
-}
-  
-/* Lynfield sales case studies */
-.sales-story {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 36px;
-  align-items: center;
-  margin: 34px 0;
-  padding: 28px;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.06);
-}
-.sales-story.reverse .sales-story-image { order: 2; }
-.sales-story.reverse .sales-story-copy { order: 1; }
-.sales-story-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 14px;
-}
-.sales-story-copy h3 { margin-top: 6px; }
-.sales-result { font-size: 1.05rem; }
-.sales-summary { margin-top: 34px; }
-@media (max-width: 820px) {
-  .sales-story { grid-template-columns: 1fr; gap: 22px; padding: 20px; }
-  .sales-story.reverse .sales-story-image,
-  .sales-story.reverse .sales-story-copy { order: initial; }
-}
-</style>
+    /* Brand header colour fix */
+    .brand-name {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      color: var(--dark) !important;
+    }
 
-  <!-- LYNFIELD COMPLETE SCHEMA PACKAGE - START -->
+    .brand-team,
+    .brand-rh {
+      color: var(--dark) !important;
+    }
+
+    .brand-divider,
+    .brand-amp {
+      color: var(--gold) !important;
+    }
+  </style>
+  <!-- NEW LYNN COMPLETE SCHEMA PACKAGE - START -->
 
 <script type="application/ld+json">
 {
@@ -698,8 +710,8 @@
         "addressCountry": "NZ"
       },
       "areaServed": [
-        { "@type": "Place", "name": "Lynfield, Auckland, New Zealand" },
-        { "@type": "Place", "name": "Auckland, New Zealand" }
+        { "@type": "Place", "name": "New Lynn, Auckland, New Zealand" },
+        { "@type": "Place", "name": "West Auckland, New Zealand" }
       ],
       "sameAs": [
         "https://www.facebook.com/EditaAndrijasevicRH/",
@@ -717,27 +729,28 @@
     },
     {
       "@type": "WebPage",
-      "@id": "https://peterandedita.co.nz/free-home-appraisal-lynfield/#webpage",
-      "url": "https://peterandedita.co.nz/free-home-appraisal-lynfield/",
-      "name": "Free Property Appraisal Lynfield | Edita Andrijasevic - Raine & Horne",
-      "description": "Free Lynfield property appraisal from Edita Andrijasevic, Raine & Horne. Local pricing, buyer demand, presentation, marketing and selling strategy advice.",
-      "dateModified": "2026-10-02T13:38:00+13:00",
+      "@id": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/#webpage",
+      "url": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/",
+      "name": "Free Home Appraisal New Lynn | Edita Andrijasevic - Raine & Horne",
+      "description": "Free New Lynn Auckland home appraisal from Edita Andrijasevic, Raine & Horne. Local pricing advice, buyer demand, presentation, marketing and selling strategy for New Lynn homeowners.",
+     "datePublished": "2026-07-01T00:00:00+12:00",
+     "dateModified": "2026-09-26T13:00:00+12:00",
       "inLanguage": "en-NZ",
       "isPartOf": {
         "@id": "https://peterandedita.co.nz/#website"
       },
       "about": {
-        "@id": "https://peterandedita.co.nz/free-home-appraisal-lynfield/#service"
+        "@id": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/#service"
       },
       "mainEntity": {
-        "@id": "https://peterandedita.co.nz/free-home-appraisal-lynfield/#service"
+        "@id": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/#service"
       },
       "breadcrumb": {
-        "@id": "https://peterandedita.co.nz/free-home-appraisal-lynfield/#breadcrumb"
+        "@id": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/#breadcrumb"
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://peterandedita.co.nz/images/free-home-appraisal-lynfield.jpg"
+        "url": "https://peterandedita.co.nz/images/new-lynn-free-home-appraisal.jpg"
       },
       "publisher": {
         "@id": "https://peterandedita.co.nz/#realestateagent"
@@ -745,7 +758,7 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://peterandedita.co.nz/free-home-appraisal-lynfield/#breadcrumb",
+      "@id": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -756,40 +769,40 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Free Property Appraisal Lynfield",
-          "item": "https://peterandedita.co.nz/free-home-appraisal-lynfield/"
+          "name": "Free Home Appraisal New Lynn",
+          "item": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/"
         }
       ]
     },
     {
       "@type": "Service",
-      "@id": "https://peterandedita.co.nz/free-home-appraisal-lynfield/#service",
-      "name": "Free Property Appraisal Lynfield",
+      "@id": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/#service",
+      "name": "Free Home Appraisal New Lynn",
       "serviceType": "Residential property appraisal and selling advice",
-      "description": "Free Lynfield property appraisal service from Edita Andrijasevic, Raine & Horne. Includes local pricing guidance, buyer demand insight, presentation advice, marketing strategy and selling preparation for Lynfield homeowners.",
-      "url": "https://peterandedita.co.nz/free-home-appraisal-lynfield/",
+      "description": "Free New Lynn home appraisal service from Edita Andrijasevic, Raine & Horne. Includes local pricing guidance, buyer demand insight, presentation advice, marketing strategy and selling preparation for New Lynn homeowners.",
+      "url": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/",
       "provider": {
         "@id": "https://peterandedita.co.nz/#realestateagent"
       },
       "areaServed": {
         "@type": "Place",
-        "name": "Lynfield, Auckland, New Zealand"
+        "name": "New Lynn, Auckland, New Zealand"
       },
       "audience": {
         "@type": "Audience",
-        "audienceType": "Lynfield homeowners thinking of selling"
+        "audienceType": "New Lynn homeowners thinking of selling"
       },
       "offers": {
         "@type": "Offer",
-        "name": "Free Property Appraisal Lynfield",
+        "name": "Free Home Appraisal New Lynn",
         "price": "0",
         "priceCurrency": "NZD",
-        "url": "https://peterandedita.co.nz/free-home-appraisal-lynfield/"
+        "url": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/"
       }
     },
     {
       "@type": "VideoObject",
-      "@id": "https://peterandedita.co.nz/free-home-appraisal-lynfield/#amplify-video",
+      "@id": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/#amplify-video",
       "name": "Raine & Horne Amplify AI Property Marketing",
       "description": "Video explaining Raine & Horne Amplify and how AI-powered digital marketing can help promote property listings to more relevant buyers.",
       "thumbnailUrl": [
@@ -804,54 +817,46 @@
     },
     {
       "@type": "FAQPage",
-      "@id": "https://peterandedita.co.nz/free-home-appraisal-lynfield/#faq",
+      "@id": "https://peterandedita.co.nz/free-home-appraisal-new-lynn/#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How do I get a free property appraisal in Lynfield?",
+          "name": "Is a New Lynn Auckland home appraisal really free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can request a free Lynfield property appraisal from Edita Andrijasevic and her team of professionals at Raine & Horne. We can help you understand likely value, recent local sales, buyer demand, presentation, pricing strategy and next steps before selling."
+            "text": "Yes. We offer free New Lynn Auckland home appraisal advice for homeowners thinking of selling, planning ahead or wanting to understand their current market position."
           }
         },
         {
           "@type": "Question",
-          "name": "What affects property value in Lynfield?",
+          "name": "What affects a New Lynn property’s value?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Lynfield property values can be affected by location, land size, layout, condition, parking, school appeal, access, outdoor living, views, buyer demand, nearby competition and recent comparable sales."
+            "text": "Buyer appeal can be influenced by location, transport convenience, shopping access, layout, parking, property type, condition, presentation, renovation quality and current buyer demand."
           }
         },
         {
           "@type": "Question",
-          "name": "Why should I use a local Lynfield real estate agent?",
+          "name": "How should I prepare a New Lynn home before selling?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A local Lynfield agent understands how buyers compare homes in the area, including family appeal, convenience, school access, transport, layout, presentation and value compared with nearby suburbs."
+            "text": "Focus on first impressions, light and openness, parking clarity, storage, outdoor usability and practical presentation. New Lynn buyers often compare homes quickly on convenience and value."
           }
         },
         {
           "@type": "Question",
-          "name": "What should I prepare before selling a Lynfield home?",
+          "name": "Is an online estimate enough for a New Lynn home?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It can help to review presentation, maintenance, gardens, LIM and title documents, recent comparable sales, competing listings and likely buyer objections. Early preparation can help buyers feel more confident."
+            "text": "Online estimates can miss important local details such as property type, layout, parking, transport access, presentation, buyer emotion, cross-lease considerations and current local competition."
           }
         },
         {
           "@type": "Question",
-          "name": "Is a real estate appraisal the same as a registered valuation?",
+          "name": "What types of buyers look in New Lynn Auckland?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. A real estate appraisal is market guidance prepared by a licensed real estate professional to estimate a likely selling range. It is not a registered valuation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can Edita Andrijasevic help if I am not ready to sell yet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Many Lynfield homeowners ask for advice before they are ready to sell. Early guidance can help with timing, preparation, presentation, repairs, pricing expectations and understanding current buyer demand."
+            "text": "New Lynn can attract families, first-home buyers, townhouse buyers, unit buyers, investors, renovators and buyers comparing value across nearby suburbs such as Avondale, Blockhouse Bay, Green Bay, Glen Eden and New Windsor."
           }
         }
       ]
@@ -860,75 +865,108 @@
 }
 </script>
 
-<!-- LYNFIELD COMPLETE SCHEMA PACKAGE - END -->
-
-<style>
-.seller-quote {
-  margin: 24px 0;
-  padding: 22px 24px;
-  border-left: 4px solid #ffb200;
-  background: #f7f7f7;
-  border-radius: 12px;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  font-style: italic;
-}
-.seller-quote cite {
-  display: block;
-  margin-top: 12px;
-  font-size: 0.9rem;
-  font-style: normal;
-  font-weight: 700;
-}
-</style>
+<!-- NEW LYNN COMPLETE SCHEMA PACKAGE - END -->
 </head>
 
 <body>
 
   <div class="topbar">
-    Free Lynfield property appraisal · Call <a href="tel:+6421765234">021 765 234</a> · Licensed under the REAA 2008
+    Free New Lynn Auckland home appraisal · Call <a href="tel:+6421765234">021 765 234</a> · Licensed under the REAA 2008
   </div>
 
   <header>
     <nav class="nav">
       <a href="https://peterandedita.co.nz/" class="brand">
-        <img src="/images/rh-logo.webp" alt="Team Edita Andrijasevic Raine and Horne logo" width="46" height="46">
-        <div>Edita Andrijasevic<span>- Raine &amp; Horne</span></div>
+        <img src="/images/rh-logo.webp" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46">
+        <div class="brand-name"><span class="brand-team">Edita Andrijasevic</span>
+          <span class="brand-divider">-</span>
+          <span class="brand-rh">Raine <span class="brand-amp">&amp;</span> Horne</span></div>
       </a>
 
-      <div class="nav-links">
-        <a href="#appraisal">Free Appraisal</a>
-        <a href="/locations/">Locations</a>
-        <a href="/property-auctions-west-auckland/">Auctions</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#local-advice">Lynfield Advice</a>
-        <a href="#about-team">About</a>
-        <a href="#faq">FAQs</a>
+      <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+      <div class="nav-links" id="primary-navigation">
+        <a href="/">Home</a>
+        <a href="/about-edita/">Meet Edita</a>
+        <details class="nav-dropdown nav-locations">
+          <summary class="nav-parent">Locations</summary>
+          <div class="dropdown-menu">
+            <a href="/locations/">All Areas We Serve</a>
+            <a href="/real-estate-agent-new-lynn/" style="font-weight:900; color:#9b6b00 !important;">New Lynn</a>
+            <a href="/real-estate-agent-west-auckland/">West Auckland</a>
+            <a href="/real-estate-agent-titirangi/">Titirangi</a>
+            <a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/real-estate-agent-lynfield/">Lynfield</a>
+            <a href="/real-estate-agent-green-bay/">Green Bay</a>
+            <a href="/real-estate-agent-glen-eden/">Glen Eden</a>
+            <a href="/real-estate-agent-kelston/">Kelston</a>
+            <a href="/real-estate-agent-mount-roskill/">Mount Roskill</a>
+            <a href="/real-estate-agent-new-windsor/">New Windsor</a>
+            <a href="/real-estate-agent-glendene/">Glendene</a>
+            <a href="/real-estate-agent-avondale/">Avondale</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-services">
+          <summary class="nav-parent active">Services</summary>
+          <div class="dropdown-menu">
+            <a href="/services/">All Real Estate Services</a>
+            <a href="/free-home-appraisal-new-lynn/" style="font-weight:900; color:#9b6b00 !important;">Free Property Appraisal</a>
+            <a href="/real-estate-agent-west-auckland/">Real Estate Agent West Auckland</a>
+            <a href="/services/selling-your-home-west-auckland/">Selling Your Home</a>
+            <a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a>
+            <a href="/services/real-estate-negotiation-support/">Negotiation Support</a>
+            <a href="/amplify-property-marketing/">Amplify Property Marketing</a>
+            <a href="/property-deadline-sale-west-auckland/">Deadline Sale</a>
+<a href="/property-auctions-west-auckland/">Property Auctions</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-listings">
+          <summary class="nav-parent">Listings</summary>
+          <div class="dropdown-menu">
+            <a href="/properties.html">Properties For Sale</a>
+            <a href="/sold.html">Sold Properties</a>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-market-reports">
+          <summary class="nav-parent">Market Reports</summary>
+          <div class="dropdown-menu">
+            <a href="/market-reports/">All Suburb Market Reports</a>
+            <a href="/market-reports/new-lynn/">New Lynn</a>
+            <a href="/market-reports/titirangi/">Titirangi</a>
+            <a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+            <a href="/market-reports/lynfield/">Lynfield</a>
+            <a href="/market-reports/green-bay/">Green Bay</a>
+            <a href="/market-reports/glen-eden/">Glen Eden</a>
+            <a href="/market-reports/kelston/">Kelston</a>
+            <a href="/market-reports/mount-roskill/">Mount Roskill</a>
+            <a href="/market-reports/new-windsor/">New Windsor</a>
+            <a href="/market-reports/glendene/">Glendene</a>
+            <a href="/market-reports/avondale/">Avondale</a>
+          </div>
+        </details>
+        <a href="/articles/">Articles</a>
         <a href="/contact.html">Contact</a>
       </div>
     </nav>
   </header>
-
-  <div class="breadcrumb-bar">
-    <a href="../">Home</a>
-    <span>›</span>
-    <span>Free Property Appraisal Lynfield</span>
-  </div>
-
+<div class="breadcrumb-bar">
+  <a href="/">Home</a>
+  <span>›</span>
+  <span>Free Home Appraisal New Lynn</span>
+</div>
   <main>
 
     <section class="hero" id="appraisal">
       <img
-        src="/images/free-home-appraisal-lynfield-1068.webp"
-        srcset=",,"
-          /images/free-home-appraisal-lynfield-480.webp 480w
-          /images/free-home-appraisal-lynfield-768.webp 768w
-          /images/free-home-appraisal-lynfield-1068.webp 1068w
+        src="https://peterandedita.co.nz/images/new-lynn-free-home-appraisal-1344.webp"
+        srcset="
+          https://peterandedita.co.nz/images/new-lynn-free-home-appraisal-480.webp 480w,
+          https://peterandedita.co.nz/images/new-lynn-free-home-appraisal-800.webp 800w,
+          https://peterandedita.co.nz/images/new-lynn-free-home-appraisal-1344.webp 1344w"
         sizes="100vw"
-        alt="Lynfield property appraisal and home selling advice from Edita Andrijasevic, Raine and Horne"
+        alt="Free home appraisal New Lynn Auckland and property selling advice from Edita Andrijasevic Raine and Horne"
         class="hero-bg"
-        width="1068"
-        height="800"
+        width="1344"
+        height="799"
         loading="eager"
         fetchpriority="high"
         decoding="async">
@@ -937,47 +975,46 @@
 
       <div class="hero-content">
         <div>
-          <span class="eyebrow">Free Property Appraisal Lynfield</span>
-          <h1>What Is Your Lynfield Home Worth?</h1>
+          <span class="eyebrow">Know Your New Lynn Home Value Before You Sell</span>
+          <h1>Free Property Appraisal New Lynn Auckland</h1>
 
           <p class="hero-lead">
-            If you are thinking of selling in Lynfield, the real question is not only what your home may be worth. It is how buyers will judge the location, layout, school appeal, parking, presentation and confidence of the property.
+            Thinking of selling in New Lynn? Before you rely on an online estimate or choose a campaign, it helps to understand how local buyers compare your home — from transport access, town centre convenience and property type to layout, parking, condition, presentation and long-term practicality.
           </p>
 
           <p class="hero-lead">
-            Edita Andrijasevic from Raine &amp; Horne help Lynfield homeowners with local pricing advice, buyer demand, presentation, marketing strategy and negotiation planning before going to market.
+            Edita Andrijasevic helps New Lynn Auckland homeowners with local pricing advice, buyer demand insight, presentation guidance, AI-powered marketing and a clear selling strategy before going to market.
           </p>
 
           <div class="hero-proof">
+            <div class="proof-card">
+              <strong>New Lynn insight</strong>
+              <span>local pricing, buyer demand and presentation advice</span>
+            </div>
             <div class="proof-card">
               <strong>15+ years</strong>
               <span>Edita's real estate experience</span>
             </div>
             <div class="proof-card">
               <strong>AI marketing</strong>
-              <span>through Raine &amp; Horne Amplify</span>
-            </div>
-            <div class="proof-card">
-              <strong>Lynfield</strong>
-              <span>local appraisal and selling advice</span>
+              <span>through Raine & Horne Amplify</span>
             </div>
           </div>
 
           <div class="cta-row">
-            <a class="btn btn-primary" href="#request-appraisal">Request Free Lynfield Appraisal</a>
+            <a class="btn btn-primary" href="#request-appraisal">Request Free New Lynn Appraisal</a>
             <a class="btn btn-secondary" href="tel:+6421765234">Call 021 765 234</a>
           </div>
         </div>
 
         <div class="hero-form" id="request-appraisal">
-          <h2>Request Your Free Lynfield Appraisal</h2>
+          <h2>Get a Free New Lynn Appraisal</h2>
           <p>
-            Send your details and we will help you understand your likely value, buyer demand and best selling strategy.
+            Send your details and we will help you understand your likely value, buyer demand and best selling strategy for your New Lynn property.
           </p>
 
           <form action="https://formspree.io/f/mdabnpgl" method="POST">
-            <input type="hidden" name="_subject" value="New Lynfield appraisal enquiry">
-            <input type="hidden" name="suburb" value="Lynfield">
+            <input type="hidden" name="_subject" value="New Lynn appraisal enquiry">
 
             <label>
               Name
@@ -1000,6 +1037,20 @@
             </label>
 
             <label>
+              Suburb
+              <select name="suburb" required>
+                <option selected>New Lynn</option>
+                <option>Avondale</option>
+                <option>Blockhouse Bay</option>
+                <option>Green Bay</option>
+                <option>New Windsor</option>
+                <option>Glen Eden</option>
+                <option>Titirangi</option>
+                <option>Other nearby suburb</option>
+              </select>
+            </label>
+
+            <label>
               When are you thinking of selling?
               <select name="selling_timeframe">
                 <option value="">Select timeframe</option>
@@ -1013,105 +1064,351 @@
 
             <label>
               What would you like help with?
-              <textarea name="message" placeholder="Example: value, timing, presentation, buyer demand, family appeal, school appeal, marketing, etc."></textarea>
+              <textarea name="message" placeholder="Example: value, timing, presentation, buyer demand, family home, townhouse, unit, investment property, renovation, cross-lease, marketing, pricing strategy, etc."></textarea>
             </label>
 
-            <button class="btn form-button" type="submit">Send My Lynfield Appraisal Request</button>
+            <button class="btn form-button" type="submit">Send My New Lynn Appraisal Request</button>
 
             <p class="small" style="color:#555555; margin:0;">
               Your details are used only to respond to your appraisal enquiry. No pressure, no obligation.
-              <a href="../privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
+              <a href="/privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
             </p>
           </form>
         </div>
       </div>
     </section>
-
+<section aria-labelledby="new-lynn-sale-example">
+  <div class="container">
+    <h2 id="new-lynn-sale-example">A New Lynn Sale: 69 Hutchinson Avenue</h2>
+    <p>
+      When selling 69 Hutchinson Avenue, a garage title issue needed careful
+      explanation to buyers. Edita found a buyer through her database before
+      the property went to the wider market. The home sold in August 2024 for
+      $813,633.
+    </p>
+    <p>
+      It is one example of why a New Lynn appraisal should consider more than
+      an online price estimate. Property details, likely buyers and the right
+      selling approach all matter.
+    </p>
+    <a class="btn btn-primary" href="#request-appraisal">
+      Ask Edita About Your New Lynn Home
+    </a>
+  </div>
+</section>
     <section id="why-us">
       <div class="container">
         <div class="section-title">
-          <span class="eyebrow">Why sellers choose us</span>
-          <h2>More Than A Price Estimate — Lynfield Selling Strategy</h2>
+          <span class="eyebrow">New Lynn selling advice</span>
+          <h2>New Lynn Homes Need A Strong Convenience And Value Story</h2>
           <p>
-            A good appraisal should help you understand buyer demand, likely objections, presentation, pricing, marketing and the best way to create buyer confidence before they visit your property.
+            New Lynn attracts a wide range of buyers. A family home, townhouse, unit, cross-lease property, renovation project or investment-style home can all attract different reactions, so pricing and marketing need to reflect the right buyer mindset.
           </p>
         </div>
 
         <div class="grid-3">
           <div class="card">
-            <h3>Local buyer understanding</h3>
+            <h3>Transport hub appeal</h3>
             <p>
-              Lynfield buyers often compare family usability, school appeal, parking, layout, outdoor space, convenience and value against nearby suburbs.
+              Buyers often value New Lynn for access to trains, buses, major roads and everyday convenience. Good marketing should make that easy to understand.
             </p>
           </div>
 
           <div class="card">
-            <h3>Presentation advice</h3>
+            <h3>Town centre convenience</h3>
             <p>
-              We help you decide what to fix, what to leave, what to highlight and how to make the home feel more appealing before spending money.
+              Shopping, services, cafes and daily practicality can make New Lynn attractive to buyers who want a suburb that feels connected and easy to live in.
             </p>
           </div>
 
           <div class="card">
-            <h3>AI-powered marketing</h3>
+            <h3>Mixed property types</h3>
             <p>
-              Raine &amp; Horne Amplify helps promote your property beyond standard listing portals, aiming to reach more of the right buyers online.
+              Standalone homes, townhouses, units and cross-lease properties all need slightly different pricing and buyer messaging to perform well.
             </p>
           </div>
 
           <div class="card">
-            <h3>Conjunctional exposure</h3>
+            <h3>First-home and investor demand</h3>
             <p>
-              We work with other agencies and agents where it helps your sale, so choosing us does not mean limiting your buyer pool.
+              Many New Lynn buyers compare value carefully. Presentation, parking, layout and confidence can make a noticeable difference.
             </p>
           </div>
 
           <div class="card">
-            <h3>Direct local service</h3>
+            <h3>Renovation or future upside</h3>
             <p>
-              You deal directly with experienced local agents who are personally involved in strategy, feedback, buyer follow-up and negotiation.
+              Older or partly updated homes can still attract strong interest when the opportunity, condition and price logic are explained properly.
             </p>
           </div>
 
           <div class="card">
-            <h3>Negotiation strategy</h3>
+            <h3>Negotiation support</h3>
             <p>
-              Selling well is not only about attracting buyers. It is also about reading motivation, managing objections and negotiating with confidence.
+              We help manage buyer feedback, conditions, motivation and price conversations so sellers can make decisions with more confidence.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="highlight" id="local-advice">
+    <!-- NEW LYNN MEET TEAM SECTION - START -->
+<section id="about-team" class="local-team-section">
+  <style>
+
+    .local-team-section {
+      padding: 78px 20px;
+      background: #ffffff;
+    }
+
+    .local-team-wrap {
+      max-width: 1220px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .local-team-image-card {
+      background: #f8f7f4;
+      border: 1px solid #e8e2d7;
+      border-radius: 24px;
+      padding: 18px;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.05);
+    }
+
+    .local-team-image-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 18px;
+      object-fit: cover;
+    }
+
+    .local-team-photo-note {
+      margin: 12px 4px 0;
+      font-size: 14px;
+      color: #666666;
+      text-align: center;
+    }
+
+    .local-team-content .eyebrow {
+      display: inline-block;
+      background: #ffb200;
+      color: #202020;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+    }
+
+    .local-team-content h2 {
+      font-size: clamp(34px, 4vw, 60px);
+      line-height: 1.06;
+      margin: 0 0 18px;
+      color: #202020;
+      letter-spacing: -1px;
+    }
+
+    .local-team-content p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #555555;
+      margin: 0 0 18px;
+    }
+
+    .local-team-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .local-team-box {
+      background: #fffdf8;
+      border: 1px solid #e8e2d7;
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .local-team-box h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #202020;
+    }
+
+    .local-team-box p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.65;
+      color: #555555;
+    }
+
+    @media (max-width: 980px) {
+      .local-team-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .local-team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="local-team-wrap">
+    <div class="local-team-image-card">
+      <img
+        src="https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.webp"
+        alt="Edita Andrijasevic, local Raine and Horne real estate agent helping New Lynn homeowners"
+        loading="lazy" width="900" height="1100">
+      <p class="local-team-photo-note">
+        Edita Andrijasevic - Raine & Horne
+      </p>
+    </div>
+
+    <div class="local-team-content">
+      <span class="eyebrow">Local New Lynn Auckland Real Estate Agents</span>
+      <h2>Meet Edita Andrijasevic</h2>
+
+      <p>
+        Edita Andrijasevic - Raine & Horne is a local Raine & Horne real estate agent helping homeowners across New Lynn, Avondale, Blockhouse Bay, Green Bay, New Windsor, Glen Eden, Titirangi and nearby Auckland suburbs.
+      </p>
+
+      <p>
+        If you are thinking about selling in New Lynn, we help you understand buyer demand, pricing, presentation, marketing and the small details that can affect buyer confidence before your property goes to market.
+      </p>
+
+      <div class="local-team-grid">
+        <div class="local-team-box">
+          <h3>New Lynn advice with buyer reality in mind</h3>
+          <p>
+            We help you understand how buyers may react to your property’s layout, parking, presentation, property type, transport convenience, maintenance level and comparison with nearby suburbs.
+          </p>
+        </div>
+
+        <div class="local-team-box">
+          <h3>Personal service, backed by Raine & Horne since 1883</h3>
+          <p>
+            You get direct guidance from Edita Andrijasevic, with the support, systems and marketing strength of a real estate brand whose story began in 1883.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- NEW LYNN MEET TEAM SECTION - END -->
+
+    <section class="highlight" id="new-lynn-market-advice">
       <div class="container">
         <div class="section-title">
-          <span class="eyebrow">Lynfield property advice</span>
-          <h2>What Lynfield Sellers Should Think About Before Going To Market</h2>
+          <span class="eyebrow">Local New Lynn insight</span>
+          <h2>What New Lynn Buyers Often Compare First</h2>
           <p>
-            In Lynfield, buyers often look closely at family comfort, access, parking, school convenience, outdoor living, property condition and how the home compares with nearby options.
+            New Lynn buyers often compare homes in a practical, value-focused way. They may like the location, but they still weigh parking, layout, maintenance, storage, transport access and whether the property feels easy to own, easy to rent or easy to live in.
           </p>
         </div>
 
         <div class="grid-3">
           <div class="card">
-            <h3>Family buyer appeal</h3>
+            <h3>Transport and location</h3>
             <p>
-              Many Lynfield buyers are looking for a practical family home, good flow, usable bedrooms, parking, storage and a layout that feels easy to live in.
+              Buyers often consider how easy the home makes daily life — commuting, shopping, schools, weekend routines and access to surrounding suburbs.
             </p>
           </div>
 
           <div class="card">
-            <h3>Condition and confidence</h3>
+            <h3>Parking and access</h3>
             <p>
-              Buyers often calculate future costs quickly. Presentation, maintenance, paint, flooring, kitchens, bathrooms and outdoor usability can all affect confidence.
+              Off-street parking, garaging, easy entry and functional access can influence buyer confidence before they focus on smaller details.
             </p>
           </div>
 
           <div class="card">
-            <h3>Pricing and competition</h3>
+            <h3>Property type comparison</h3>
             <p>
-              Your property should be assessed against recent sales and current competing listings so buyers can see clear value and a reason to act.
+              Buyers may compare standalone homes, units, townhouses and cross-lease homes differently, so the pricing strategy should reflect that.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Layout and usability</h3>
+            <p>
+              Buyers notice whether the living, dining, bedrooms and outdoor areas work well for daily routines, guests, working from home and long-term flexibility.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Condition and maintenance</h3>
+            <p>
+              Buyers quickly notice kitchens, bathrooms, roofs, flooring, drainage, fencing and general maintenance before deciding what represents good value.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Neighbouring suburb comparison</h3>
+            <p>
+              New Lynn buyers may compare value with Avondale, Blockhouse Bay, Green Bay, Glen Eden and New Windsor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="new-lynn-seller-checklist">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">New Lynn seller checklist</span>
+          <h2>Before Selling In New Lynn, Check These Buyer Signals</h2>
+          <p>
+            Small practical details can change how buyers feel in the first few minutes. Before launching your property, it helps to improve the areas buyers quietly judge when comparing value.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Street appeal and arrival</h3>
+            <p>
+              Buyers start forming an opinion from the driveway, path and exterior. Tidy lawns, entry points and a clean first impression matter more than many sellers expect.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Light and openness</h3>
+            <p>
+              New Lynn buyers often respond well to homes that feel bright, practical and uncluttered. Cleaner lines and better flow can make the property feel easier to live in.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Parking clarity</h3>
+            <p>
+              If the property has useful parking, make that obvious. Buyers often want to quickly understand garage space, off-street options and day-to-day access.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Storage and practicality</h3>
+            <p>
+              Buyers notice wardrobes, cupboards, garage storage, laundry areas and whether the home feels easy to manage for normal daily life.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Outdoor usability</h3>
+            <p>
+              A deck, courtyard, lawn or garden should feel usable and clear, not confusing or cramped. Buyers need to imagine how the space fits their routine.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Competing value story</h3>
+            <p>
+              Many buyers compare New Lynn with surrounding suburbs. Your pricing and marketing should explain why your home makes sense versus nearby options.
             </p>
           </div>
         </div>
@@ -1121,304 +1418,180 @@
     <section class="dark-section" id="amplify">
       <div class="container">
         <div class="grid-2">
+          <div class="amplify-box">
+            <span class="eyebrow">Raine & Horne Amplify</span>
+            <h2>AI-Powered Marketing To Help More New Lynn Buyers See Your Home</h2>
+            <p>
+              In today’s market, the best buyer for a New Lynn property may not be waiting on one property website. Amplify helps place your home in front of more relevant buyers across key digital channels, supporting stronger visibility, more traffic to the listing and better opportunity for buyer competition.
+            </p>
+            <p>
+              This matters in New Lynn because different properties attract different buyer groups — families, first-home buyers, investors, townhouse buyers, unit buyers, renovators and people comparing nearby suburbs for value and convenience.
+            </p>
+            <ul class="bullet-list">
+              <li>Helps reach buyers beyond standard real estate websites</li>
+              <li>Supports more traffic and awareness around your listing</li>
+              <li>Uses AI-powered targeting to help find likely buyers</li>
+              <li>Can help create stronger competition when paired with the right pricing and presentation</li>
+              <li>Part of a full selling strategy, not just a basic advertisement</li>
+            </ul>
+          </div>
+
           <div>
-            <span class="eyebrow">Raine &amp; Horne Amplify</span>
-            <h2>AI-Powered Marketing To Help Create More Buyer Attention</h2>
-            <p>
-              In today’s market, the best buyer for your Lynfield property may not be sitting on one property website waiting. Raine &amp; Horne Amplify helps promote your property across key digital channels to support stronger visibility, better buyer targeting and more enquiry opportunity.
-            </p>
-            <p>
-              For Lynfield sellers, this matters because buyers often compare family practicality, school appeal, parking, presentation and price very carefully.
-            </p>
-          </div>
-
-          <div class="video-wrap">
-            <iframe
-              src="https://www.youtube.com/embed/DkKp8I__4mI"
-              title="Raine & Horne Amplify AI Property Marketing"
-              loading="lazy"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about-team" class="team-section">
-      <div class="team-wrap">
-        <div class="team-image-card">
-          <img
-            src="https://peterandedita.co.nz/images/edita-andrijasevic-raine-and-horne.webp"
-            alt="Edita Andrijasevic, local Raine and Horne real estate agents helping Lynfield homeowners"
-            loading="lazy" width="900" height="1100">
-
-          <p class="team-photo-note">
-            Edita Andrijasevic - Raine &amp; Horne
-          </p>
-        </div>
-
-        <div class="team-content">
-          <span class="eyebrow">Local Lynfield Auckland Real Estate Agents</span>
-          <h2>Meet Edita Andrijasevic</h2>
-
-          <p>
-            Edita Andrijasevic - Raine & Horne and her team, are local Raine &amp; Horne real estate agents helping homeowners across Lynfield, Blockhouse Bay, Mount Roskill, Hillsborough, New Windsor, New Lynn and nearby Auckland suburbs.
-          </p>
-
-          <p>
-            If you are thinking about selling in Lynfield, we help you understand buyer demand, pricing, presentation, school appeal, layout, parking, marketing and the small details that can affect buyer confidence before your property goes to market.
-          </p>
-
-          <div class="team-grid">
-            <div class="team-box">
-              <h3>Lynfield advice with buyer reality in mind</h3>
-              <p>
-                We help you understand how buyers may react to your property’s family appeal, layout, parking, outdoor space, presentation, school convenience and comparison with nearby suburbs.
-              </p>
-            </div>
-
-            <div class="team-box">
-              <h3>Personal service, backed by Raine &amp; Horne since 1883</h3>
-              <p>
-                You get direct guidance from Edita Andrijasevic, with the support, systems and marketing strength of a real estate brand whose story began in 1883.
-              </p>
+            <div class="video-wrap video-placeholder" data-video-id="DkKp8I__4mI">
+              <button class="video-play-button" type="button" aria-label="Play Raine and Horne Amplify video">
+                <img
+                  src="https://img.youtube.com/vi/DkKp8I__4mI/maxresdefault.jpg"
+                  alt="Raine and Horne Amplify AI property marketing video"
+                  loading="lazy" width="1280" height="720">
+                <span>▶</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
-<section class="highlight" id="lynfield-sales-experience">
-  <div class="container">
-    <div class="section-title">
-      <span class="eyebrow">Real Lynfield Property Experience</span>
-      <h2>Real Lynfield Sales Experience Behind Your Property Appraisal</h2>
-      <p>
-        A useful property appraisal is about more than looking at recent sales on a screen. It also comes from understanding how buyers respond to different homes, what preparation can make a difference, how selling methods perform in changing markets, and how to negotiate when several buyers are interested. These are three real Lynfield sales we have worked through with local homeowners.
-      </p>
-    </div>
 
-    <article class="sales-story">
-      <div class="sales-story-image">
-        <img src="/images/10-orsova-place-lynfield-sold.webp" width="1200" height="900" loading="lazy" decoding="async" alt="10 Orsova Place, Lynfield">
-      </div>
-      <div class="sales-story-copy">
-        <span class="eyebrow">Lynfield Sale</span>
-        <h3>10 Orsova Place, Lynfield</h3>
-        <p class="sales-result"><strong>Sold for $1,205,000 in August 2024</strong></p>
-        <p>
-          After more than 25 happy years in their Lynfield home, the owners decided it was time to retire. They interviewed four real estate agencies and, after considering their options, chose us because they believed we were best placed to achieve the result they were hoping for.
-        </p>
-        <p>
-          The property market had slowed considerably and auctions were becoming less effective, so we recommended a <strong>deadline sale campaign</strong>. Over the three-week campaign, approximately <strong>27 groups</strong> viewed the property and by the deadline we had received <strong>four offers</strong>.
-        </p>
-        <p>
-          The offers were closely matched on price but differed in their conditions, so we carefully worked through each one with the vendors. We recommended negotiating with the buyer who appeared the most serious and committed. After several days of back-and-forth negotiation, we secured a final offer above $1.2 million, achieving the result the vendors had hoped for.
-        </p>
-        <p><strong>What this showed:</strong> in a slower market, choosing the right selling method and carefully comparing both price and conditions can be just as important as generating buyer interest.</p>
-      </div>
-    </article>
-
-    <article class="sales-story reverse">
-      <div class="sales-story-image">
-        <img src="/images/9-caronia-crescent-lynfield-sold.webp" width="1024" height="768" loading="lazy" decoding="async" alt="9 Caronia Crescent, Lynfield">
-      </div>
-      <div class="sales-story-copy">
-        <span class="eyebrow">Lynfield Sale</span>
-        <h3>9 Caronia Crescent, Lynfield</h3>
-        <p class="sales-result"><strong>Sold for $1,150,200 on 12 November 2021</strong></p>
-        <p>
-          The owner initially hoped to sell while long-term tenants were still living in the property so they would not be unnecessarily disturbed. We introduced three potential buyers from our database and received an early offer of <strong>$870,000</strong>.
-        </p>
-        <p>
-          The owner was hoping for around $900,000 to $950,000. The interested buyer did not want to increase the offer, considering the property a do-up and expecting significant work would be required.
-        </p>
-        <p>
-          Rather than encouraging the owner to accept the first offer, we recommended waiting until the tenants had moved and investing approximately <strong>$10,000</strong> in targeted preparation, including painting, replacing older drapes and staging the property before presenting it to the wider market.
-        </p>
-        <p>
-          The owner followed that advice. The campaign subsequently produced <strong>three conditional offers in less than three weeks</strong>, including interest from two first-home buyers and an investor. The property ultimately sold unconditionally for <strong>$1,150,200</strong>.
-        </p>
-        <p>
-          That final sale price was <strong>$280,200 above the initial $870,000 offer</strong>, following approximately $10,000 of property preparation.
-        </p>
-        <blockquote class="seller-quote">
-          “I am still on cloud 9 with the sale price and the quick and easy process.”
-          <cite>— Vendor of 9 Caronia Crescent, Lynfield</cite>
-        </blockquote>
-        <p><strong>What this showed:</strong> presentation, timing and listening carefully to early buyer feedback can materially change how a property is received by the wider market.</p>
-      </div>
-    </article>
-
-    <article class="sales-story">
-      <div class="sales-story-image">
-        <img src="/images/25-marco-polo-avenue-lynfield-sold.webp" width="720" height="480" loading="lazy" decoding="async" alt="25 Marco Polo Avenue, Lynfield">
-      </div>
-      <div class="sales-story-copy">
-        <span class="eyebrow">Recent Lynfield Sale</span>
-        <h3>25 Marco Polo Avenue, Lynfield</h3>
-        <p class="sales-result"><strong>Sold for $1,543,210 in November 2025</strong></p>
-        <p>
-          This Lynfield campaign attracted strong competition, resulting in <strong>four competing offers</strong>. The successful buyer presented an <strong>all-cash offer with no conditions</strong>.
-        </p>
-        <p>
-          With several buyers competing, the strength and conditions of each offer mattered alongside the price.
-        </p>
-        <p><strong>What this showed:</strong> when competition develops, sellers need to understand more than the number written at the top of an offer. Price, conditions and the buyer's ability to proceed all form part of assessing the strongest overall position.</p>
-      </div>
-    </article>
-
-    <div class="card sales-summary">
-      <span class="eyebrow">Local Selling Strategy</span>
-      <h3>Three Lynfield Homes. Three Different Strategies.</h3>
-      <p>
-        These Lynfield sales involved different properties, different owners and different market circumstances. The best approach was not identical in each case.
-      </p>
-      <p>
-        One owner benefited from preparing the property before launch, another needed a deadline campaign that allowed buyers with different conditions to compete, while another attracted multiple buyers whose offers needed careful comparison.
-      </p>
-      <p>
-        That practical local experience is part of the thinking we bring to a <strong>free Lynfield property appraisal</strong>: not simply what your home may be worth today, but how buyers are likely to see it and what selling strategy may suit the property and current market.
-      </p>
-      <p>
-        <a href="/real-estate-agent-lynfield/">Learn more about our Lynfield real estate experience</a><br>
-        <a href="/market-reports/lynfield/">View the latest Lynfield property market report</a>
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="highlight" id="lynfield-agent-guide">
-  <div class="container">
-    <div class="section-title">
-      <span class="eyebrow">Helpful Seller Guide</span>
-      <h2>Choosing A Real Estate Agent In Lynfield?</h2>
-      <p>
-        Lynfield sellers should compare agents on local buyer knowledge, pricing evidence, family appeal, presentation advice, marketing reach, buyer follow-up and negotiation strategy.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>How To Choose The Best Real Estate Agent In Lynfield</h3>
-      <p>
-        A practical guide for Lynfield homeowners comparing real estate agents, free appraisals, buyer demand, family appeal, marketing and selling strategy.
-      </p>
-      <p style="margin-top:18px;">
-        <a class="btn btn-primary" href="../articles/best-real-estate-agent-lynfield.html">
-          Read Lynfield Agent Guide
-        </a>
-      </p>
-    </div>
-  </div>
-</section>
-    <section class="highlight" id="lynfield-seller-guides">
-  <div class="container">
-    <div class="section-title">
-      <span class="eyebrow">Lynfield Seller Resources</span>
-      <h2>Helpful Guides Before Selling In Lynfield</h2>
-      <p>
-        Selling well is not just about choosing a price. These guides can help you think through timing, preparation, buyer appeal, marketing and agent selection before going to market.
-      </p>
-    </div>
-
-    <div class="grid-3">
-      <a class="card" href="../articles/best-real-estate-agent-lynfield.html">
-        <h3>Best Real Estate Agent Lynfield</h3>
-        <p>
-          Learn what to look for when choosing a Lynfield real estate agent, including pricing evidence, buyer follow-up, marketing and negotiation.
-        </p>
-      </a>
-
-      <a class="card" href="../articles/prepare-home-for-sale-auckland.html">
-        <h3>Prepare Your Home For Sale</h3>
-        <p>
-          Practical advice on what to fix, what to leave, and how to improve buyer confidence before your property goes live.
-        </p>
-      </a>
-
-      <a class="card" href="../articles/best-time-to-sell-west-auckland.html">
-        <h3>Best Time To Sell In West Auckland</h3>
-        <p>
-          Understand how season, buyer demand, competition and property readiness can affect your selling strategy.
-        </p>
-      </a>
-    </div>
-  </div>
-</section>
-    <section class="faq" id="faq">
-      <div class="container">
-        <div class="section-title">
-          <span class="eyebrow">Lynfield FAQs</span>
-          <h2>Free Property Appraisal Lynfield — Common Questions</h2>
-        </div>
-
-        <details>
-          <summary>How do I get a free property appraisal in Lynfield?</summary>
-          <p>
-            You can request a free Lynfield property appraisal from Edita Andrijasevic and her team of professionals at Raine &amp; Horne. We can help you understand likely value, recent local sales, buyer demand, presentation, pricing strategy and next steps before selling.
-          </p>
-        </details>
-
-        <details>
-          <summary>What affects property value in Lynfield?</summary>
-          <p>
-            Lynfield property values can be affected by location, land size, layout, condition, parking, school appeal, access, outdoor living, views, buyer demand, nearby competition and recent comparable sales.
-          </p>
-        </details>
-
-        <details>
-          <summary>Why should I use a local Lynfield real estate agent?</summary>
-          <p>
-            A local Lynfield agent understands how buyers compare homes in the area, including family appeal, convenience, school access, transport, layout, presentation and value compared with nearby suburbs.
-          </p>
-        </details>
-
-        <details>
-          <summary>What should I prepare before selling a Lynfield home?</summary>
-          <p>
-            It can help to review presentation, maintenance, gardens, LIM and title documents, recent comparable sales, competing listings and likely buyer objections. Early preparation can help buyers feel more confident.
-          </p>
-        </details>
-
-        <details>
-          <summary>Is a real estate appraisal the same as a registered valuation?</summary>
-          <p>
-            No. A real estate appraisal is market guidance prepared by a licensed real estate professional to estimate a likely selling range. It is not a registered valuation.
-          </p>
-        </details>
-
-        <details>
-          <summary>Can Edita Andrijasevic help if I am not ready to sell yet?</summary>
-          <p>
-            Yes. Many Lynfield homeowners ask for advice before they are ready to sell. Early guidance can help with timing, preparation, presentation, repairs, pricing expectations and understanding current buyer demand.
-          </p>
-        </details>
-      </div>
-    </section>
-
-    <section class="highlight" id="nearby">
+    <section class="highlight" id="suburbs">
       <div class="container">
         <div class="section-title">
           <span class="eyebrow">Nearby appraisal pages</span>
-          <h2>Other West Auckland Appraisal Areas</h2>
+          <h2>Free Property Appraisals Near New Lynn</h2>
           <p>
-            Explore nearby suburb appraisal pages for more specific local selling advice.
+            Selling in or near New Lynn? These nearby local appraisal pages can also help if your property sits close to surrounding suburbs.
           </p>
         </div>
 
         <div class="suburb-grid">
-          <a class="suburb-link" href="../free-home-appraisal-titirangi/">Titirangi</a>
-          <a class="suburb-link" href="../free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
-          <a class="suburb-link" href="../free-home-appraisal-new-lynn/">New Lynn</a>
-          <a class="suburb-link" href="../free-home-appraisal-kelston/">Kelston</a>
-          <a class="suburb-link" href="../free-home-appraisal-green-bay/">Green Bay</a>
-          <a class="suburb-link" href="../free-home-appraisal-glen-eden/">Glen Eden</a>
-          <a class="suburb-link" href="../free-home-appraisal-mount-roskill/">Mount Roskill</a>
-          <a class="suburb-link" href="../free-home-appraisal-new-windsor/">New Windsor</a>
-          <a class="suburb-link" href="../free-home-appraisal-glendene/">Glendene</a>
-          <a class="suburb-link" href="../free-home-appraisal-avondale/">Avondale</a>
+          <a class="suburb-link" href="https://peterandedita.co.nz/free-home-appraisal-avondale/">Avondale</a>
+          <a class="suburb-link" href="https://peterandedita.co.nz/free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
+          <a class="suburb-link" href="https://peterandedita.co.nz/free-home-appraisal-green-bay/">Green Bay</a>
+          <a class="suburb-link" href="https://peterandedita.co.nz/free-home-appraisal-new-windsor/">New Windsor</a>
+          <a class="suburb-link" href="https://peterandedita.co.nz/free-home-appraisal-kelston/">Kelston</a>
+          <a class="suburb-link" href="https://peterandedita.co.nz/free-home-appraisal-glen-eden/">Glen Eden</a>
+          <a class="suburb-link" href="https://peterandedita.co.nz/free-home-appraisal-glendene/">Glendene</a>
+          <a class="suburb-link" href="https://peterandedita.co.nz/free-home-appraisal-titirangi/">Titirangi</a>
+          <a class="suburb-link" href="https://peterandedita.co.nz/free-home-appraisal-mount-roskill/">Mount Roskill</a>
+          <a class="suburb-link" href="https://peterandedita.co.nz/free-home-appraisal-lynfield/">Lynfield</a>
           <a class="suburb-link" href="/free-home-appraisal-west-auckland/">West Auckland Appraisal</a>
         </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Google Reviews</span>
+          <h2>What Local Sellers Say About Edita Andrijasevic</h2>
+          <p>
+            Trust matters when choosing a real estate agent. Read recent Google reviews from people who have worked with Edita Andrijasevic and Raine & Horne.
+          </p>
+        </div>
+
+        <div class="reviews-card">
+          <div class="elfsight-review-box" id="reviews-widget">
+            <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight" id="services">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">How we help New Lynn sellers</span>
+          <h2>Real Estate Selling Services For New Lynn Homeowners</h2>
+          <p>
+            Whether you are ready to sell now or still planning, our New Lynn appraisal process helps you understand value, buyer appeal, preparation priorities and the right selling strategy before going to market.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>New Lynn Value Check</h3>
+            <p>
+              We assess likely price range using recent local sales, current competition, buyer demand and how your home compares with nearby options.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Buyer Appeal Review</h3>
+            <p>
+              We look at layout, parking, property type, presentation, convenience and the features New Lynn buyers are likely to value most.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Pre-Sale Preparation Advice</h3>
+            <p>
+              We help you decide what is worth improving, what can be left alone and how to avoid spending money in the wrong places before selling.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>AI-Powered Buyer Marketing</h3>
+            <p>
+              Using Raine & Horne Amplify, we help place your property in front of more relevant buyers across important digital channels.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Open Home Signal Reading</h3>
+            <p>
+              We help interpret buyer comments, objections, hesitation and enquiry quality so you can make better decisions during the campaign.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Offer Strategy</h3>
+            <p>
+              We help manage buyer motivation, conditions, timing and negotiation so you can respond with confidence rather than guesswork.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Questions New Lynn sellers ask</span>
+          <h2>New Lynn Home Appraisal FAQs</h2>
+        </div>
+
+        <details>
+          <summary>Is a New Lynn Auckland home appraisal really free?</summary>
+          <p>
+            Yes. We offer free New Lynn Auckland home appraisal advice for homeowners thinking of selling, planning ahead or wanting to understand their current market position.
+          </p>
+        </details>
+
+        <details>
+          <summary>What affects a New Lynn property’s value?</summary>
+          <p>
+            Buyer appeal can be influenced by location, transport convenience, shopping access, layout, parking, property type, condition, presentation, renovation quality and current buyer demand.
+          </p>
+        </details>
+
+        <details>
+          <summary>How should I prepare a New Lynn home before selling?</summary>
+          <p>
+            Focus on first impressions, light and openness, parking clarity, storage, outdoor usability and practical presentation. New Lynn buyers often compare homes quickly on convenience and value.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is an online estimate enough for a New Lynn home?</summary>
+          <p>
+            Online estimates can miss important local details such as property type, layout, parking, transport access, presentation, buyer emotion, cross-lease considerations and current local competition.
+          </p>
+        </details>
+
+        <details>
+          <summary>What types of buyers look in New Lynn Auckland?</summary>
+          <p>
+            New Lynn can attract families, first-home buyers, townhouse buyers, unit buyers, investors, renovators and buyers comparing value across nearby suburbs such as Avondale, Blockhouse Bay, Green Bay, Glen Eden and New Windsor.
+          </p>
+        </details>
       </div>
     </section>
 
@@ -1512,21 +1685,21 @@
     color:#ffffff !important;
   }
 
-  .seo-footer-cta{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    margin-top:10px;
-    padding:13px 20px;
-    border-radius:999px;
-    background:#ffb200;
+  .seo-footer .seo-footer-contact a.seo-footer-cta{
+    background:#ffb200 !important;
     color:#202020 !important;
     font-weight:900 !important;
-    text-decoration:none !important;
+    text-align:center !important;
+    min-height:52px !important;
+    padding:13px 24px !important;
+    border-radius:999px !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
   }
 
-  .seo-footer-cta:hover{
-    background:#ffffff;
+  .seo-footer .seo-footer-contact a.seo-footer-cta:hover{
+    background:#ffffff !important;
     color:#202020 !important;
   }
 
@@ -1552,7 +1725,7 @@
       <h2>Edita Andrijasevic - Raine <span class="seo-footer-gold">&amp;</span> Horne</h2>
 
       <p>
-        Helping Lynfield and West Auckland homeowners with free property appraisals, selling strategy,
+        Helping New Lynn and West Auckland homeowners with free property appraisals, selling strategy,
         buyer-focused marketing, Raine &amp; Horne Amplify and negotiation.
       </p>
 
@@ -1562,14 +1735,14 @@
       </p>
 
       <p class="small">
-        Areas served: Lynfield, Blockhouse Bay, Titirangi, New Lynn, Kelston, Green Bay, Glen Eden,
+        Areas served: New Lynn, Blockhouse Bay, Lynfield, Titirangi, Green Bay, Glen Eden,
         Mount Roskill, New Windsor, Glendene, Avondale and nearby West Auckland suburbs.
       </p>
 
       <div class="seo-footer-contact">
         <a href="tel:+6421765234">021 765 234</a>
         <a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a>
-        <a class="seo-footer-cta" href="#request-appraisal">Request Free Lynfield Appraisal</a>
+        <a class="seo-footer-cta" href="#request-appraisal">Request Free New Lynn Appraisal</a>
       </div>
     </div>
 
@@ -1578,25 +1751,25 @@
 
         <div class="seo-footer-links">
           <h3>Free Appraisals</h3>
-          <a href="/locations/">Areas We Serve</a>
-          <a href="/free-home-appraisal-titirangi/">Titirangi</a>
-          <a href="/free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
-          <a href="/free-home-appraisal-lynfield/">Lynfield</a>
-          <a href="/free-home-appraisal-new-lynn/">New Lynn</a>
-          <a href="/free-home-appraisal-kelston/">Kelston</a>
-          <a href="/free-home-appraisal-green-bay/">Green Bay</a>
-          <a href="/free-home-appraisal-glen-eden/">Glen Eden</a>
-          <a href="/free-home-appraisal-mount-roskill/">Mount Roskill</a>
-          <a href="/free-home-appraisal-new-windsor/">New Windsor</a>
-          <a href="/free-home-appraisal-glendene/">Glendene</a>
-          <a href="/free-home-appraisal-avondale/">Avondale</a>
+         <a href="/locations/">Areas We Serve</a>
+         <a href="/free-home-appraisal-titirangi/">Titirangi</a>
+         <a href="/free-home-appraisal-blockhouse-bay/">Blockhouse Bay</a>
+         <a href="/free-home-appraisal-lynfield/">Lynfield</a>
+         <a href="/free-home-appraisal-new-lynn/">New Lynn</a>
+         <a href="/free-home-appraisal-green-bay/">Green Bay</a>
+         <a href="/free-home-appraisal-glen-eden/">Glen Eden</a>
+         <a href="/free-home-appraisal-mount-roskill/">Mount Roskill</a>
+         <a href="/free-home-appraisal-new-windsor/">New Windsor</a>
+         <a href="/free-home-appraisal-glendene/">Glendene</a>
+         <a href="/free-home-appraisal-avondale/">Avondale</a>
+         <a href="/free-home-appraisal-kelston/">Kelston</a>
         </div>
 
         <div class="seo-footer-links">
           <h3>Seller Guides</h3>
-          <a href="/articles/best-real-estate-agent-lynfield.html">Best Agent Lynfield</a>
-          <a href="/articles/best-real-estate-agent-blockhouse-bay.html">Best Agent Blockhouse Bay</a>
           <a href="/articles/best-real-estate-agent-titirangi.html">Best Agent Titirangi</a>
+          <a href="/articles/best-real-estate-agent-blockhouse-bay.html">Best Agent Blockhouse Bay</a>
+          <a href="/articles/best-real-estate-agent-lynfield.html">Best Agent Lynfield</a>
           <a href="/articles/best-time-to-sell-west-auckland.html">Best Time To Sell</a>
           <a href="/articles/prepare-home-for-sale-auckland.html">Prepare Your Home</a>
           <a href="/amplify-property-marketing/">Raine &amp; Horne Amplify</a>
@@ -1609,6 +1782,71 @@
   </div>
 </footer>
 
+  <script>
+    document.querySelectorAll('.video-placeholder').forEach(function (wrapper) {
+      const button = wrapper.querySelector('button');
+      const videoId = wrapper.getAttribute('data-video-id');
+
+      if (!button || !videoId) return;
+
+      button.addEventListener('click', function () {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+        iframe.title = 'Raine & Horne Amplify AI Property Marketing';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.loading = 'lazy';
+
+        wrapper.innerHTML = '';
+        wrapper.appendChild(iframe);
+      });
+    });
+  </script>
+
+  <script>
+    (function () {
+      const reviews = document.getElementById('reviews-widget');
+      let loaded = false;
+
+      function loadElfsight() {
+        if (loaded) return;
+        loaded = true;
+
+        const script = document.createElement('script');
+        script.src = 'https://elfsightcdn.com/platform.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+
+      if ('IntersectionObserver' in window && reviews) {
+        const observer = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) {
+            loadElfsight();
+            observer.disconnect();
+          }
+        }, {
+          rootMargin: '300px'
+        });
+
+        observer.observe(reviews);
+      } else {
+        window.addEventListener('load', loadElfsight);
+      }
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var toggle=document.querySelector('.menu-toggle');
+      var nav=document.getElementById('primary-navigation');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click',function () {
+        var open=nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded',String(open));
+        toggle.textContent=open?'Close menu':'Menu';
+      });
+    }());
+  </script>
 <script src="/js/formspree-redirect.js" defer></script>
 </body>
 </html>
