@@ -852,34 +852,48 @@
 </style>
 
 <style>
-/* Property sale stories: compact photo left, copy right. */
+/* Sold property photos on the right, with text wrapping around them. */
 #lynfield-sales-experience .cards {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 24px;
+  gap: 28px;
 }
 #lynfield-sales-experience .lynfield-sale-row {
-  display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  align-items: start;
-  gap: 28px;
+  display: flow-root;
+}
+#lynfield-sales-experience .lynfield-sale-photo {
+  float: right;
+  width: 45%;
+  max-width: 480px;
+  margin: 0 0 22px 30px;
+  border-radius: 18px;
+  overflow: hidden;
 }
 #lynfield-sales-experience .lynfield-sale-photo img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 12px;
   margin: 0;
+  border-radius: 18px;
 }
-#lynfield-sales-experience .lynfield-sale-text { min-width: 0; }
+#lynfield-sales-experience .lynfield-sale-text {
+  display: contents;
+}
 @media (max-width: 600px) {
-  #lynfield-sales-experience .lynfield-sale-row {
-    grid-template-columns: 100px minmax(0, 1fr);
-    gap: 16px;
-    padding: 18px;
+  #lynfield-sales-experience .lynfield-sale-row { padding: 18px; }
+  #lynfield-sales-experience .lynfield-sale-photo {
+    width: 42%;
+    max-width: 220px;
+    margin: 0 0 16px 16px;
   }
-  #lynfield-sales-experience .lynfield-sale-text { overflow-wrap: anywhere; }
 }
+</style>
+<style>
+.amplify-video-preview { position:absolute; inset:0; display:block; color:#fff; background:#000; }
+.amplify-video-preview img { display:block; width:100%; height:100%; object-fit:cover; }
+.amplify-play-label { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); padding:14px 22px; border-radius:10px; background:#202020; color:#fff; font-weight:700; white-space:nowrap; }
+.amplify-video-preview:hover .amplify-play-label { background:#a00000; }
+.amplify-video-preview:focus-visible { outline:4px solid #ffb200; outline-offset:-5px; }
 </style>
 </head>
 
@@ -1134,13 +1148,13 @@
           </div>
 
           <div class="video-wrap">
-            <iframe
-              src="https://www.youtube.com/embed/DkKp8I__4mI"
-              title="Raine & Horne Amplify AI Property Marketing"
-              loading="lazy"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+            <a class="amplify-video-preview" id="amplify-video-preview"
+              href="https://www.youtube.com/watch?v=DkKp8I__4mI"
+              aria-label="Play Raine and Horne Amplify AI Property Marketing video">
+              <img src="https://img.youtube.com/vi/DkKp8I__4mI/hqdefault.jpg"
+                alt="" width="480" height="360" loading="lazy" decoding="async">
+              <span class="amplify-play-label"><span aria-hidden="true">&#9654;</span> Play video</span>
+            </a>
           </div>
         </div>
       </div>
@@ -1619,5 +1633,23 @@
 </footer>
 
 <script src="/js/formspree-redirect.js" defer></script>
+<script>
+(function () {
+  const preview = document.getElementById('amplify-video-preview');
+  if (!preview) return;
+  preview.addEventListener('click', function (event) {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    const player = document.createElement('iframe');
+    player.title = 'Raine and Horne Amplify AI Property Marketing';
+    player.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    player.allowFullscreen = true;
+    player.referrerPolicy = 'strict-origin-when-cross-origin';
+    player.src = 'https://www.youtube.com/embed/DkKp8I__4mI?autoplay=1&playsinline=1';
+    preview.replaceWith(player);
+    player.focus();
+  });
+})();
+</script>
 </body>
 </html>
