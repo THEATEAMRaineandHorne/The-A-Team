@@ -850,6 +850,37 @@
   font-weight: 700;
 }
 </style>
+
+<style>
+/* Property sale stories: compact photo left, copy right. */
+#lynfield-sales-experience .cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+#lynfield-sales-experience .lynfield-sale-row {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  align-items: start;
+  gap: 28px;
+}
+#lynfield-sales-experience .lynfield-sale-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 0;
+}
+#lynfield-sales-experience .lynfield-sale-text { min-width: 0; }
+@media (max-width: 600px) {
+  #lynfield-sales-experience .lynfield-sale-row {
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 16px;
+    padding: 18px;
+  }
+  #lynfield-sales-experience .lynfield-sale-text { overflow-wrap: anywhere; }
+}
+</style>
 </head>
 
 <body>
@@ -1169,9 +1200,11 @@
     </div>
 
     <div class="cards">
-      <article class="card">
+      <article class="card lynfield-sale-row">
+<div class="lynfield-sale-photo"><img src="/images/10-orsova-place-lynfield-sold.webp" alt="10 Orsova Place, Lynfield" width="1200" height="900" loading="lazy" decoding="async"></div>
+<div class="lynfield-sale-text">
         <span class="eyebrow">Lynfield Sale</span>
-        <img src="/images/10-orsova-place-lynfield-sold.webp" alt="10 Orsova Place, Lynfield" width="1200" height="900" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:12px;margin-bottom:20px;">
+        
         <h3>10 Orsova Place, Lynfield</h3>
         <p><strong>Sold for $1,205,000 in August 2024</strong></p>
         <p>
@@ -1186,11 +1219,15 @@
         <p>
           <strong>What this showed:</strong> in a slower market, choosing the right selling method and carefully comparing both price and conditions can be just as important as generating buyer interest.
         </p>
-      </article>
+      
+</div>
+</article>
 
-      <article class="card">
+      <article class="card lynfield-sale-row">
+<div class="lynfield-sale-photo"><img src="/images/9-caronia-crescent-lynfield-sold.webp" alt="9 Caronia Crescent, Lynfield" width="1024" height="768" loading="lazy" decoding="async"></div>
+<div class="lynfield-sale-text">
         <span class="eyebrow">Lynfield Sale</span>
-        <img src="/images/9-caronia-crescent-lynfield-sold.webp" alt="9 Caronia Crescent, Lynfield" width="1024" height="768" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:12px;margin-bottom:20px;">
+        
         <h3>9 Caronia Crescent, Lynfield</h3>
         <p><strong>Sold for $1,150,200 on 12 November 2021</strong></p>
         <p>
@@ -1215,11 +1252,15 @@
         <p>
           <strong>What this showed:</strong> presentation, timing and listening carefully to early buyer feedback can materially change how a property is received by the wider market.
         </p>
-      </article>
+      
+</div>
+</article>
 
-      <article class="card">
+      <article class="card lynfield-sale-row">
+<div class="lynfield-sale-photo"><img src="/images/25-marco-polo-avenue-lynfield-sold.webp" alt="25 Marco Polo Avenue, Lynfield" width="720" height="480" loading="lazy" decoding="async"></div>
+<div class="lynfield-sale-text">
         <span class="eyebrow">Recent Lynfield Sale</span>
-        <img src="/images/25-marco-polo-avenue-lynfield-sold.webp" alt="25 Marco Polo Avenue, Lynfield" width="720" height="480" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:12px;margin-bottom:20px;">
+        
         <h3>25 Marco Polo Avenue, Lynfield</h3>
         <p><strong>Sold for $1,543,210 in November 2025</strong></p>
         <p>
@@ -1231,7 +1272,9 @@
         <p>
           <strong>What this showed:</strong> when competition develops, sellers need to understand more than the number written at the top of an offer. Price, conditions and the buyer's ability to proceed all form part of assessing the strongest overall position.
         </p>
-      </article>
+      
+</div>
+</article>
 
       <article class="card">
         <span class="eyebrow">Local Selling Strategy</span>
