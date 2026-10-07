@@ -1,637 +1,226 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-  <script src="/analytics.js" defer></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Lynfield Property Market Report September 2026</title>
-  <meta name="description" content="September 2026 Lynfield property market report using REINZ sales data: median price, sales volume, days to sell, property mix, buyer demand and seller advice.">
-  <link rel="canonical" href="https://peterandedita.co.nz/market-reports/lynfield/">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="application-name" content="Edita Andrijasevic">
-  <meta name="apple-mobile-web-app-title" content="Edita Andrijasevic">
-
-  <link rel="preload" as="image"
-        href="/images/market-reports/lynfield/lynfield-market-report-hero-rh-960.webp"
-        imagesrcset="/images/market-reports/lynfield/lynfield-market-report-hero-rh-640.webp 640w, /images/market-reports/lynfield/lynfield-market-report-hero-rh-960.webp 960w, /images/market-reports/lynfield/lynfield-market-report-hero.webp 1400w"
-        imagesizes="100vw"
-        type="image/webp"
-        fetchpriority="high">
-
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" type="image/webp" sizes="96x96" href="/images/favicon-the-a-team.webp">
-  <link rel="apple-touch-icon" href="/images/favicon-the-a-team.webp">
-
-  <meta property="og:site_name" content="Edita Andrijasevic">
-  <meta property="og:title" content="Lynfield Property Market Report September 2026 | Edita Andrijasevic">
-  <meta property="og:description" content="Lynfield September 2026 REINZ market analysis covering prices, selling time, sales activity, property mix and practical seller advice.">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://peterandedita.co.nz/market-reports/lynfield/">
-  <meta property="og:image" content="https://peterandedita.co.nz/images/market-reports/lynfield/lynfield-market-report-hero.webp">
-  <meta property="og:image:width" content="1400">
-  <meta property="og:image:height" content="600">
-  <meta property="og:image:alt" content="Lynfield property market report September 2026 hero image with houses and market trend arrows">
-  <meta property="og:locale" content="en_NZ">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lynfield Property Market Report September 2026 | Edita Andrijasevic">
-  <meta name="twitter:description" content="Lynfield REINZ sales analysis for 1 September 2025–31 August 2026 with homeowner-focused interpretation and seller advice.">
-  <meta name="twitter:image" content="https://peterandedita.co.nz/images/market-reports/lynfield/lynfield-market-report-hero.webp">
-
-  <style>
-:root{--gold:#ffb200;--dark:#202020;--charcoal:#4D4E50;--white:#fff;--cream:#fff8e8;--soft:#f7f7f5;--border:#e8e2d7;--muted:#555}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scrollbar-gutter:stable}
-body{margin:0;font-family:Arial,Helvetica,"Segoe UI",sans-serif;color:var(--dark);background:#fff;line-height:1.65;overflow-x:hidden}
-a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}img{max-width:100%;height:auto}
-.topbar{background:var(--dark);color:#fff;text-align:center;padding:9px 20px;font-size:14px;min-height:40px;display:flex;align-items:center;justify-content:center}.topbar a{color:var(--gold);font-weight:800}
-header{background:rgba(255,255,255,.98);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50}
-.nav{max-width:1220px;margin:0 auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:76px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;line-height:1.15;min-width:0}.brand img{width:46px;height:46px;object-fit:contain;flex:0 0 46px}
-.nav-links{display:flex;flex-wrap:wrap;gap:18px;font-size:14px;font-weight:800;align-items:center}.nav-links a:hover,.nav-parent:hover,.nav-parent.active{color:var(--gold)}
-.menu-toggle{display:none;align-items:center;justify-content:center;background:var(--gold);color:var(--dark);border:1px solid var(--border);border-radius:999px;padding:10px 18px;font-weight:800;cursor:pointer;min-height:44px}
-.nav-dropdown{position:relative;display:inline-flex;align-items:center}.nav-dropdown summary{list-style:none;cursor:pointer}.nav-dropdown summary::-webkit-details-marker{display:none}.nav-parent::after{content:'▾';font-size:11px;color:var(--gold);margin-left:6px}
-.dropdown-menu{display:none;position:absolute;top:34px;left:0;min-width:300px;background:#fff;border:1px solid var(--border);border-radius:16px;box-shadow:0 18px 45px rgba(0,0,0,.14);padding:10px;z-index:100}.nav-dropdown[open] .dropdown-menu,.nav-dropdown:hover .dropdown-menu{display:block}
-.dropdown-menu a{display:block;padding:11px 13px;border-radius:10px;color:var(--dark)!important;background:#fff!important;font-size:14px;font-weight:800;line-height:1.25}.dropdown-menu a:hover{background:var(--gold)!important;color:var(--dark)!important}
-.report-hero{position:relative;min-height:620px;display:flex;align-items:center;overflow:hidden;background:var(--dark);color:#fff;padding:0}.report-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.report-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.80),rgba(0,0,0,.28),rgba(0,0,0,.15))}.report-hero-content{position:relative;z-index:2;max-width:1220px;margin:0 auto;padding:90px 20px;width:100%;display:grid;grid-template-columns:1.08fr .75fr;gap:36px;align-items:center}
-.breadcrumbs{font-size:14px;color:#f1f1f1;margin-bottom:14px}.breadcrumbs a{color:var(--gold);font-weight:800;text-decoration:underline;text-underline-offset:3px}.eyebrow{display:inline-block;background:var(--gold);color:var(--dark);padding:8px 13px;border-radius:999px;font-size:13px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;margin-bottom:18px}
-h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-2.4px;margin:0 0 22px}h2{font-size:clamp(31px,4vw,48px);line-height:1.1;letter-spacing:-1.2px;margin:0 0 14px}h3{font-size:24px;line-height:1.22;margin:0 0 10px}
-.hero-lead{font-size:21px;max-width:760px;color:#f3f3f3;margin:0}.hero-card,.form-card{background:rgba(255,255,255,.96);color:var(--dark);border-radius:24px;padding:30px;box-shadow:0 24px 70px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.7)}.hero-card p{color:#444;margin:0 0 15px}.hero-meta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.hero-pill{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:10px 13px;font-weight:800}
-.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 23px;border-radius:10px;font-weight:800;border:2px solid var(--gold);transition:.2s ease;cursor:pointer;font-size:15px}.btn-primary{background:var(--gold);color:#202020}.btn-dark{background:#202020;color:#fff;border-color:#202020}.btn-primary:hover{background:#fff;border-color:#fff}.btn-dark:hover{background:var(--gold);color:#202020;border-color:var(--gold)}
-section{padding:78px 20px}main>section:not(.report-hero){content-visibility:auto;contain-intrinsic-size:1px 900px}.container{max-width:1220px;margin:0 auto}.section-title{max-width:940px;margin-bottom:36px}.section-title p,.muted{color:var(--muted);font-size:18px;margin:0}.highlight{background:var(--cream)}.soft{background:var(--soft)}.dark-section{background:#202020;color:#fff}.dark-section p{color:#eee}.dark-section .form-card{color:var(--dark)}.dark-section .form-card p{color:#444}
-.snapshot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;align-items:start}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.qa-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
-.qa-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
-.qa-grid .card{height:100%;display:flex;flex-direction:column}
-.qa-grid .card h3{font-size:22px;line-height:1.25}
-.qa-grid .card p{margin-bottom:0}.snapshot-card,.card,.report-panel,.side-card,.chart-card,.source-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:26px;box-shadow:0 14px 38px rgba(0,0,0,.05)}.snapshot-card span{display:block;color:#666;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.35px}.snapshot-card strong{display:block;font-size:28px;line-height:1.1;margin:10px 0}.snapshot-card small{color:#555;line-height:1.45}.data-window{background:#fff;border:1px solid var(--border);border-left:8px solid var(--gold);border-radius:18px;padding:18px;margin-top:20px;color:#444}.callout{background:#202020;color:#fff;border-radius:20px;padding:24px;margin-top:22px}.callout strong{color:var(--gold)}
-.report-body{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:28px;align-items:start}.side-card{position:sticky;top:110px;background:#202020;color:#fff}.side-card p{color:#eee}.report-panel{margin-bottom:24px}.report-panel p{color:#444;font-size:17px;margin:0 0 16px}.seller-advice-list{padding-left:21px;margin:18px 0 0}.seller-advice-list li{margin-bottom:10px;color:#444;font-size:17px}.local-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:18px 0 0;padding:0;list-style:none}.local-list li{background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px;font-weight:800;color:#333}
-.chart-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.chart-card{padding:18px;margin:0}.chart-card img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--border);background:#fff}.chart-card figcaption{font-size:15px;color:#555;margin-top:12px;line-height:1.55}.chart-card.full{grid-column:1/-1;max-width:590px;margin:0 auto}
-.table-wrap{overflow-x:auto;border-radius:18px}.data-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border);box-shadow:0 14px 38px rgba(0,0,0,.05)}.data-table th,.data-table td{padding:16px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}.data-table th{background:#202020;color:#fff}.data-table tr:last-child td{border-bottom:0}.source-note,.disclaimer{font-size:14px;color:#666;line-height:1.5}.source-note{background:#fff;border-left:6px solid var(--gold);padding:18px;border-radius:14px;margin-top:22px}
-input,select,textarea{width:100%;padding:13px 14px;border:1px solid #ccc;border-radius:10px;font-size:16px;margin-top:6px;background:#fff;color:#202020}textarea{min-height:105px;resize:vertical}label{font-weight:800;font-size:14px}form{display:grid;gap:13px}.form-button{width:100%;border:2px solid var(--dark);background:var(--gold);color:var(--dark);margin-top:4px}
-.suburb-links{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.suburb-links a{background:#fff;border:1px solid var(--border);border-radius:15px;padding:18px;text-align:center;font-weight:800}.suburb-links a:hover{background:var(--gold);border-color:var(--gold)}
-footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:1.25fr .75fr;gap:30px}.footer-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:28px}.footer-links a,footer a{display:block;color:var(--gold);font-weight:800;margin-bottom:8px}.footer-cta{display:inline-flex!important;align-items:center;justify-content:center;width:100%;min-height:58px;margin-top:16px;padding:16px 24px;border-radius:999px;background:var(--gold);color:#202020!important;font-size:18px;font-weight:800}.footer-link-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.small{font-size:13px;color:#d6d6d6}
-@media(max-width:1100px){.snapshot-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:980px){.qa-grid,.qa-grid.two{grid-template-columns:1fr}.report-hero-content,.report-body,.grid-2,.grid-3,.chart-grid,.footer-inner,.footer-link-grid,.suburb-links{grid-template-columns:1fr}.side-card{position:static}.nav{width:100%;display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;gap:12px!important}.menu-toggle{display:inline-flex}.nav-links{display:none!important;grid-column:1/-1;width:100%!important}.nav-links.is-open{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;max-height:calc(100vh - 140px)!important;overflow-y:auto!important}.nav-links>a,.nav-dropdown summary{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:800!important}.nav-dropdown{display:block!important;width:100%!important}.dropdown-menu{position:static!important;display:none!important;min-width:0!important;width:100%!important;margin-top:10px!important;padding:12px!important;border-radius:18px!important;box-shadow:none!important}.nav-dropdown[open] .dropdown-menu{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}.dropdown-menu a{padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:14px!important;text-align:center!important;font-size:16px!important}.report-hero{min-height:620px}.chart-card.full{grid-column:auto;max-width:none}}
-@media(max-width:620px){.snapshot-grid,.chart-grid,.suburb-links,.local-list{grid-template-columns:1fr}section{padding:58px 18px}h1{font-size:42px}.report-hero,.report-hero-content{min-height:720px}.brand{font-size:15px;gap:9px}.brand img{width:42px;height:42px;flex-basis:42px}}
-  </style>
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://peterandedita.co.nz/#raine-horne-office",
-      "name": "Raine & Horne Blockhouse Bay | Titirangi | Lynfield",
-      "url": "https://www.raineandhorne.co.nz/blockhousebay"
-    },
-    {
-      "@type": "Person",
-      "@id": "https://peterandedita.co.nz/#edita-andrijasevic",
-      "name": "Edita Andrijasevic",
-      "url": "https://peterandedita.co.nz/",
-      "jobTitle": "Licensed Agent",
-      "worksFor": {
-        "@id": "https://peterandedita.co.nz/#realestateagent"
-      }
-    },
-    {
-      "@type": "RealEstateAgent",
-      "@id": "https://peterandedita.co.nz/#realestateagent",
-      "name": "Edita Andrijasevic - Raine & Horne",
-      "url": "https://peterandedita.co.nz/",
-      "image": "https://peterandedita.co.nz/images/rh-logo.webp",
-      "telephone": "+64 21 765 234",
-      "email": "edita.andrijasevic@blockhousebay.rh.co.nz",
-      "priceRange": "$$$",
-      "employee": {
-        "@id": "https://peterandedita.co.nz/#edita-andrijasevic"
-      },
-      "parentOrganization": {
-        "@id": "https://peterandedita.co.nz/#raine-horne-office"
-      },
-      "sameAs": [
-        "https://www.raineandhorne.co.nz/blockhousebay"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "9 Sheridan Drive",
-        "addressLocality": "New Lynn",
-        "addressRegion": "Auckland",
-        "postalCode": "0600",
-        "addressCountry": "NZ"
-      },
-      "areaServed": [
-        {
-          "@type": "Place",
-          "name": "Lynfield, Auckland"
-        },
-        {
-          "@type": "Place",
-          "name": "West Auckland"
-        }
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://peterandedita.co.nz/#website",
-      "url": "https://peterandedita.co.nz/",
-      "name": "Edita Andrijasevic - Raine & Horne",
-      "publisher": {
-        "@id": "https://peterandedita.co.nz/#realestateagent"
-      },
-      "inLanguage": "en-NZ"
-    },
-    {
-  "@type": "ImageObject",
-  "@id": "https://peterandedita.co.nz/market-reports/lynfield/#hero-image",
-  "url": "https://peterandedita.co.nz/images/market-reports/lynfield/lynfield-market-report-hero.webp",
-  "contentUrl": "https://peterandedita.co.nz/images/market-reports/lynfield/lynfield-market-report-hero.webp",
-  "caption": "Lynfield property market report hero image with houses and market trend arrows",
-  "creditText": "Edita Andrijasevic - Raine & Horne",
-  "copyrightNotice": "© Edita Andrijasevic - Raine & Horne",
-  "license": "https://peterandedita.co.nz/terms-of-use.html#image-licensing",
-  "width": 1400,
-  "height": 600
-},
-    {
-      "@type": "WebPage",
-      "@id": "https://peterandedita.co.nz/market-reports/lynfield/#webpage",
-      "url": "https://peterandedita.co.nz/market-reports/lynfield/",
-      "name": "Lynfield Property Market Report September 2026 | Edita Andrijasevic",
-      "description": "September 2026 Lynfield property market report using REINZ sales data, with price movement, sales volume, days to sell, property mix and seller advice.",
-      "isPartOf": {
-        "@id": "https://peterandedita.co.nz/#website"
-      },
-      "about": [
-        {
-          "@type": "Place",
-          "name": "Lynfield, Auckland"
-        },
-        {
-          "@id": "https://peterandedita.co.nz/#realestateagent"
-        }
-      ],
-      "mainEntity": {
-        "@id": "https://peterandedita.co.nz/market-reports/lynfield/#market-report"
-      },
-      "primaryImageOfPage": {
-        "@id": "https://peterandedita.co.nz/market-reports/lynfield/#hero-image"
-      },
-      "breadcrumb": {
-        "@id": "https://peterandedita.co.nz/market-reports/lynfield/#breadcrumb"
-      },
-      "datePublished": "2026-07-08T09:00:00+12:00",
-      "dateModified": "2026-09-16T11:52:00+12:00",
-      "inLanguage": "en-NZ"
-    },
-    {
-      "@type": "Article",
-      "@id": "https://peterandedita.co.nz/market-reports/lynfield/#market-report",
-      "headline": "Lynfield Property Market Report – September 2026",
-      "description": "A homeowner-focused Lynfield property market report using REINZ sales data and local market interpretation.",
-      "image": {
-        "@id": "https://peterandedita.co.nz/market-reports/lynfield/#hero-image"
-      },
-      "author": {
-        "@id": "https://peterandedita.co.nz/#edita-andrijasevic"
-      },
-      "publisher": {
-        "@id": "https://peterandedita.co.nz/#realestateagent"
-      },
-      "datePublished": "2026-07-08T09:00:00+12:00",
-      "dateModified": "2026-09-16T11:52:00+12:00",
-      "articleSection": "West Auckland Property Market Reports",
-      "about": {
-        "@type": "Place",
-        "name": "Lynfield, Auckland"
-      },
-      "citation": [
-        {
-          "@type": "CreativeWork",
-          "name": "REINZ sales data – current 12-month period"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "REINZ sales data – previous 12-month period"
-        }
-      ],
-      "keywords": [
-        "Lynfield property market report",
-        "Lynfield house prices",
-        "Lynfield real estate",
-        "REINZ Lynfield sales",
-        "Lynfield property market September 2026"
-      ],
-      "mainEntityOfPage": {
-        "@id": "https://peterandedita.co.nz/market-reports/lynfield/#webpage"
-      },
-      "inLanguage": "en-NZ"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://peterandedita.co.nz/market-reports/lynfield/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://peterandedita.co.nz/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Market Reports",
-          "item": "https://peterandedita.co.nz/market-reports/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Lynfield",
-          "item": "https://peterandedita.co.nz/market-reports/lynfield/"
-        }
-      ]
-    }
-  ]
-}
-  </script>
+<script src="/analytics.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lynfield Property Report Oct 2026 | Latest REINZ Data</title>
+<meta name="description" content="October 2026 Lynfield REINZ property report: median $1,082,500, 62 sales and 39.5 days to sell, with practical local seller advice.">
+<link rel="canonical" href="https://peterandedita.co.nz/market-reports/lynfield/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:site_name" content="Edita Andrijasevic – Raine &amp; Horne">
+<meta property="og:title" content="Lynfield Property Report Oct 2026 | Latest REINZ Data">
+<meta property="og:description" content="Lynfield October 2026 REINZ analysis covering price movement, selling speed, sales volume, property mix and seller advice.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://peterandedita.co.nz/market-reports/lynfield/">
+<meta property="og:image" content="https://peterandedita.co.nz/images/market-reports/lynfield/lynfield-market-report-hero.webp">
+<meta property="og:image:width" content="1400">
+<meta property="og:image:height" content="600">
+<meta property="og:image:alt" content="Lynfield property market report October 2026 hero image">
+<meta property="og:locale" content="en_NZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lynfield Property Report Oct 2026 | Latest REINZ Data">
+<meta name="twitter:description" content="Lynfield REINZ sales for 1 October 2025–30 September 2026 with prices, selling times and seller advice.">
+<meta name="twitter:image" content="https://peterandedita.co.nz/images/market-reports/lynfield/lynfield-market-report-hero.webp">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/webp" sizes="96x96" href="/images/favicon-the-a-team.webp">
+<link rel="apple-touch-icon" href="/images/favicon-the-a-team.webp">
+<link rel="preload" as="image" href="/images/market-reports/lynfield/lynfield-market-report-hero-rh-960.webp" imagesrcset="/images/market-reports/lynfield/lynfield-market-report-hero-rh-640.webp 640w, /images/market-reports/lynfield/lynfield-market-report-hero-rh-960.webp 960w, /images/market-reports/lynfield/lynfield-market-report-hero.webp 1400w" imagesizes="100vw" type="image/webp" fetchpriority="high">
+<style>
+:root{--gold:#ffb200;--dark:#202020;--charcoal:#4d4e50;--white:#fff;--cream:#fff8e8;--soft:#f7f7f5;--border:#e8e2d7;--muted:#555}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scrollbar-gutter:stable}body{margin:0;font-family:Arial,Helvetica,"Segoe UI",sans-serif;color:var(--dark);background:#fff;line-height:1.65;overflow-x:hidden}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}img{max-width:100%;height:auto}.topbar{background:var(--dark);color:#fff;text-align:center;padding:9px 20px;font-size:14px;min-height:40px;display:flex;align-items:center;justify-content:center}.topbar a{color:var(--gold);font-weight:900}header{background:rgba(255,255,255,.98);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50}.nav{max-width:1220px;margin:0 auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:76px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:18px;line-height:1.15;min-width:0}.brand img{width:46px;height:46px;object-fit:contain;flex:0 0 46px}.nav-links{display:flex;flex-wrap:wrap;gap:18px;font-size:14px;font-weight:800;align-items:center}.nav-links a:hover,.nav-parent:hover,.nav-parent.active{color:var(--gold)}.menu-toggle{display:none;align-items:center;justify-content:center;background:var(--gold);color:var(--dark);border:1px solid var(--border);border-radius:999px;padding:10px 18px;font-weight:900;cursor:pointer;min-height:44px}.nav-dropdown{position:relative;display:inline-flex;align-items:center}.nav-dropdown summary{list-style:none;cursor:pointer}.nav-dropdown summary::-webkit-details-marker{display:none}.nav-parent::after{content:'▾';font-size:11px;color:var(--gold);margin-left:6px}.dropdown-menu{display:none;position:absolute;top:34px;left:0;min-width:300px;background:#fff;border:1px solid var(--border);border-radius:16px;box-shadow:0 18px 45px rgba(0,0,0,.14);padding:10px;z-index:100}.nav-dropdown[open] .dropdown-menu,.nav-dropdown:hover .dropdown-menu{display:block}.dropdown-menu a{display:block;padding:11px 13px;border-radius:10px;color:var(--dark)!important;background:#fff!important;font-size:14px;font-weight:800;line-height:1.25}.dropdown-menu a:hover{background:var(--gold)!important;color:var(--dark)!important}
+.report-hero{position:relative;min-height:620px;display:flex;align-items:center;overflow:hidden;background:#202020;color:#fff;padding:0}.report-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.report-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.80),rgba(0,0,0,.28),rgba(0,0,0,.15))}.report-hero-content{position:relative;z-index:2;max-width:1220px;margin:0 auto;padding:90px 20px;width:100%;display:grid;grid-template-columns:1.08fr .75fr;gap:36px;align-items:center}.breadcrumbs{font-size:14px;color:#f1f1f1;margin-bottom:14px}.breadcrumbs a{color:var(--gold);font-weight:900;text-decoration:underline;text-underline-offset:3px}.eyebrow{display:inline-block;background:var(--gold);color:var(--dark);padding:8px 13px;border-radius:999px;font-size:13px;font-weight:900;letter-spacing:.5px;text-transform:uppercase;margin-bottom:18px}h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-2.4px;margin:0 0 22px}h2{font-size:clamp(29px,3.7vw,46px);line-height:1.1;letter-spacing:-1.2px;margin:0 0 14px}h3{font-size:23px;line-height:1.23;margin:0 0 10px}.hero-lead{font-size:21px;max-width:760px;color:#f3f3f3;margin:0}.hero-card{background:rgba(255,255,255,.96);color:var(--dark);border-radius:24px;padding:30px;box-shadow:0 24px 70px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.7)}.hero-card p{color:#444;margin:0 0 15px}.hero-meta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.hero-pill{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:10px 13px;font-weight:800}.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 23px;border-radius:10px;font-weight:900;border:2px solid var(--gold);transition:.2s ease;cursor:pointer;font-size:15px}.btn-primary{background:var(--gold);color:#202020}.btn-dark{background:#202020;color:#fff;border-color:#202020}.btn-primary:hover{background:#fff;border-color:#fff}.btn-dark:hover{background:var(--gold);color:#202020;border-color:var(--gold)}section{padding:76px 20px}main>section:not(.report-hero){content-visibility:auto;contain-intrinsic-size:1px 900px}.container{max-width:1220px;margin:0 auto}.section-title{max-width:980px;margin-bottom:36px}.section-title p,.muted{color:var(--muted);font-size:18px;margin:0}.highlight{background:var(--cream)}.soft{background:var(--soft)}.dark-section{background:#202020;color:#fff}.dark-section p{color:#eee}.snapshot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;align-items:start}.qa-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}.qa-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.qa-grid .card{height:100%;display:flex;flex-direction:column}.qa-grid .card h3{font-size:21px;line-height:1.28}.qa-grid .card p{margin-bottom:0}.snapshot-card,.card,.report-panel,.side-card,.chart-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:26px;box-shadow:0 14px 38px rgba(0,0,0,.05)}.snapshot-card span{display:block;color:#666;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.35px}.snapshot-card strong{display:block;font-size:27px;line-height:1.1;margin:10px 0}.snapshot-card small{color:#555;line-height:1.45}.data-window{background:#fff;border:1px solid var(--border);border-left:8px solid var(--gold);border-radius:18px;padding:18px;margin-top:20px;color:#444}.callout{background:#202020;color:#fff;border-radius:20px;padding:24px;margin-top:22px}.callout strong{color:var(--gold)}.report-body{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:28px;align-items:start}.side-card{position:sticky;top:110px;background:#202020;color:#fff}.side-card p{color:#eee}.report-panel{margin-bottom:24px}.report-panel p{color:#444;font-size:17px;margin:0 0 16px}.seller-advice-list{padding-left:21px;margin:18px 0 0}.seller-advice-list li{margin-bottom:10px;color:#444;font-size:17px}.local-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:18px 0 0;padding:0;list-style:none}.local-list li{background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px;font-weight:800;color:#333}.chart-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.chart-card{padding:18px;margin:0}.chart-card img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--border);background:#fff}.chart-card figcaption{font-size:15px;color:#555;margin-top:12px;line-height:1.55}.chart-card.full{grid-column:1/-1;max-width:590px;margin:0 auto}.table-wrap{overflow-x:auto;border-radius:18px}.data-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border);box-shadow:0 14px 38px rgba(0,0,0,.05)}.data-table th,.data-table td{padding:15px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}.data-table th{background:#202020;color:#fff}.data-table tr:last-child td{border-bottom:0}.source-note{font-size:14px;color:#666;line-height:1.55;background:#fff;border-left:6px solid var(--gold);padding:18px;border-radius:14px;margin-top:22px}.suburb-links{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.suburb-links a{background:#fff;border:1px solid var(--border);border-radius:15px;padding:18px;text-align:center;font-weight:900}.suburb-links a:hover{background:var(--gold);border-color:var(--gold)}footer{background:#202020;color:#fff;padding:46px 20px}.footer-inner{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:1.25fr .75fr;gap:30px}.footer-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:28px}.footer-name{font-size:clamp(30px,3vw,42px);line-height:1.05;margin:0 0 6px;letter-spacing:-.7px;font-weight:900}.footer-brand{font-size:20px;font-weight:900;color:var(--gold);margin:0 0 20px}.footer-links a,footer a{display:block;color:var(--gold);font-weight:800;margin-bottom:8px}.footer-link-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.small{font-size:13px;color:#d6d6d6}.icon-list{display:grid;gap:18px;margin-top:18px}.icon-row{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start}.gold-icon{width:42px;height:42px;border-radius:50%;background:var(--gold);color:var(--dark);display:inline-flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.08);flex:0 0 42px}.gold-icon svg{width:23px;height:23px;display:block;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.icon-row p{margin:0!important}.question-heading{display:flex;align-items:center;gap:12px}.question-heading .gold-icon{width:40px;height:40px;flex-basis:40px}.question-heading .gold-icon svg{width:21px;height:21px}
+@media(max-width:1020px){.qa-grid,.qa-grid.two,.report-hero-content,.grid-2,.report-body,.footer-inner{grid-template-columns:1fr}.snapshot-grid,.chart-grid,.suburb-links{grid-template-columns:1fr 1fr}.side-card{position:static}.footer-link-grid,.local-list{grid-template-columns:1fr}.nav{width:100%;flex-wrap:wrap;gap:14px;align-items:center}.brand{flex:1;min-width:0}.menu-toggle{display:inline-flex}.nav-links{width:100%!important;display:none!important}.nav-links.is-open{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;max-height:calc(100vh - 140px)!important;overflow-y:auto!important}.nav-links>a,.nav-dropdown summary{width:100%!important;min-height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:999px!important;background:#f5f0e6!important;color:var(--dark)!important;font-size:18px!important;font-weight:900!important}.nav-dropdown{display:block!important;width:100%!important}.dropdown-menu{position:static!important;display:none!important;min-width:0!important;width:100%!important;margin-top:10px!important;padding:12px!important;border-radius:18px!important;box-shadow:none!important}.nav-dropdown[open] .dropdown-menu{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}.dropdown-menu a{padding:14px 16px!important;border:1px solid var(--border)!important;border-radius:14px!important;text-align:center!important;font-size:16px!important}.chart-card.full{grid-column:auto;max-width:none}}
+@media(max-width:620px){.snapshot-grid,.chart-grid,.suburb-links{grid-template-columns:1fr}section{padding:56px 18px}h1{font-size:42px}.brand{font-size:15px;gap:9px}.brand img{width:42px;height:42px;flex-basis:42px}.icon-row{grid-template-columns:40px 1fr;gap:12px}.gold-icon{width:38px;height:38px;flex-basis:38px}.question-heading{align-items:flex-start}.question-heading .gold-icon{width:36px;height:36px;flex-basis:36px}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://peterandedita.co.nz/#website","url":"https://peterandedita.co.nz/","name":"Edita Andrijasevic – Raine & Horne","publisher":{"@id":"https://peterandedita.co.nz/#organization"},"inLanguage":"en-NZ"},{"@type":"Organization","@id":"https://peterandedita.co.nz/#organization","name":"Raine & Horne Blockhouse Bay | Titirangi | Lynfield","url":"https://www.raineandhorne.co.nz/blockhousebay","logo":{"@type":"ImageObject","url":"https://peterandedita.co.nz/images/rh-logo.webp"},"sameAs":["https://www.raineandhorne.co.nz/blockhousebay","https://share.google/ddO9ayximJFNs2muB"]},{"@type":"Person","@id":"https://peterandedita.co.nz/about-edita/#person","name":"Edita Andrijasevic","url":"https://peterandedita.co.nz/about-edita/","jobTitle":"Licensed Agent","worksFor":{"@id":"https://peterandedita.co.nz/#organization"}},{"@type":"RealEstateAgent","@id":"https://peterandedita.co.nz/#realestateagent","name":"Edita Andrijasevic – Raine & Horne","url":"https://peterandedita.co.nz/","image":"https://peterandedita.co.nz/images/rh-logo.webp","telephone":"+6421765234","email":"edita.andrijasevic@blockhousebay.rh.co.nz","priceRange":"$$$","address":{"@type":"PostalAddress","streetAddress":"9 Sheridan Drive","addressLocality":"New Lynn","addressRegion":"Auckland","postalCode":"0600","addressCountry":"NZ"},"areaServed":{"@type":"Place","name":"Lynfield, Auckland, New Zealand"},"employee":{"@id":"https://peterandedita.co.nz/about-edita/#person"},"parentOrganization":{"@id":"https://peterandedita.co.nz/#organization"},"sameAs":["https://www.raineandhorne.co.nz/blockhousebay","https://share.google/ddO9ayximJFNs2muB"]},{"@type":"ImageObject","@id":"https://peterandedita.co.nz/market-reports/lynfield/#primaryimage","url":"https://peterandedita.co.nz/images/market-reports/lynfield/lynfield-market-report-hero.webp","contentUrl":"https://peterandedita.co.nz/images/market-reports/lynfield/lynfield-market-report-hero.webp","width":1400,"height":600,"caption":"Lynfield property market report October 2026"},{"@type":"BreadcrumbList","@id":"https://peterandedita.co.nz/market-reports/lynfield/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://peterandedita.co.nz/"},{"@type":"ListItem","position":2,"name":"Market Reports","item":"https://peterandedita.co.nz/market-reports/"},{"@type":"ListItem","position":3,"name":"Lynfield","item":"https://peterandedita.co.nz/market-reports/lynfield/"}]},{"@type":"WebPage","@id":"https://peterandedita.co.nz/market-reports/lynfield/#webpage","url":"https://peterandedita.co.nz/market-reports/lynfield/","name":"Lynfield Property Report Oct 2026 | Latest REINZ Data","description":"October 2026 Lynfield REINZ report: median $1,082,500, 62 sales and 39.5 days to sell, with practical seller advice.","isPartOf":{"@id":"https://peterandedita.co.nz/#website"},"primaryImageOfPage":{"@id":"https://peterandedita.co.nz/market-reports/lynfield/#primaryimage"},"breadcrumb":{"@id":"https://peterandedita.co.nz/market-reports/lynfield/#breadcrumb"},"about":{"@type":"Place","name":"Lynfield, Auckland, New Zealand"},"datePublished":"2026-07-08T09:00:00+12:00","dateModified":"2026-10-07T16:41:00+13:00","inLanguage":"en-NZ"},{"@type":"Article","@id":"https://peterandedita.co.nz/market-reports/lynfield/#article","headline":"Lynfield Property Report – October 2026","description":"REINZ-based Lynfield market analysis for 1 October 2025–30 September 2026 compared with the previous 12 months.","url":"https://peterandedita.co.nz/market-reports/lynfield/","mainEntityOfPage":{"@id":"https://peterandedita.co.nz/market-reports/lynfield/#webpage"},"datePublished":"2026-07-08T09:00:00+12:00","dateModified":"2026-10-07T16:41:00+13:00","author":{"@id":"https://peterandedita.co.nz/about-edita/#person"},"publisher":{"@id":"https://peterandedita.co.nz/#organization"},"image":{"@id":"https://peterandedita.co.nz/market-reports/lynfield/#primaryimage"},"about":{"@type":"Place","name":"Lynfield, Auckland, New Zealand"},"articleSection":"West Auckland Property Market Reports","inLanguage":"en-NZ"}]}</script>
 </head>
-
 <body>
 <div class="topbar">West Auckland real estate market reports · Call <a href="tel:+6421765234">021 765 234</a> · Licensed under the REAA 2008</div>
-
-<header>
-  <nav class="nav" aria-label="Main navigation">
-    <a href="/" class="brand"><img src="/images/rh-logo.webp" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46" decoding="async"><div>Edita Andrijasevic - Raine &amp; Horne</div></a>
-    <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
-    <div class="nav-links" id="primary-navigation">
-      <a href="/">Home</a><a href="/about-edita/">Meet Edita</a>
-      <details class="nav-dropdown"><summary class="nav-parent">Locations</summary><div class="dropdown-menu"><a href="/locations/">All Areas We Serve</a><a href="/real-estate-agent-west-auckland/">West Auckland</a><a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a><a href="/real-estate-agent-titirangi/">Titirangi</a><a href="/real-estate-agent-lynfield/">Lynfield</a><a href="/real-estate-agent-new-lynn/">New Lynn</a><a href="/real-estate-agent-green-bay/">Green Bay</a><a href="/real-estate-agent-glen-eden/">Glen Eden</a><a href="/real-estate-agent-kelston/">Kelston</a><a href="/real-estate-agent-mount-roskill/">Mount Roskill</a><a href="/real-estate-agent-new-windsor/">New Windsor</a><a href="/real-estate-agent-glendene/">Glendene</a><a href="/real-estate-agent-avondale/">Avondale</a></div></details>
-      <details class="nav-dropdown"><summary class="nav-parent">Services</summary><div class="dropdown-menu"><a href="/services/">All Real Estate Services</a><a href="/free-home-appraisal-lynfield/">Free Property Appraisal</a><a href="/services/selling-your-home-west-auckland/">Selling Your Home</a><a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a><a href="/services/real-estate-negotiation-support/">Negotiation Support</a>
-        <a href="/amplify-property-marketing/">Amplify Property Marketing</a>
-      <a href="/property-deadline-sale-west-auckland/">Deadline Sale</a>
-<a href="/property-auctions-west-auckland/">Property Auctions</a>
-      </div></details>
-      <details class="nav-dropdown"><summary class="nav-parent">Listings</summary><div class="dropdown-menu"><a href="/properties.html">Properties For Sale</a><a href="/sold.html">Sold Properties</a></div></details>
-      <details class="nav-dropdown"><summary class="nav-parent active">Market Reports</summary><div class="dropdown-menu"><a href="/market-reports/">All Suburb Market Reports</a><a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a><a href="/market-reports/titirangi/">Titirangi</a><a href="/market-reports/lynfield/">Lynfield</a><a href="/market-reports/new-lynn/">New Lynn</a><a href="/market-reports/green-bay/">Green Bay</a><a href="/market-reports/glen-eden/">Glen Eden</a><a href="/market-reports/kelston/">Kelston</a><a href="/market-reports/mount-roskill/">Mount Roskill</a><a href="/market-reports/new-windsor/">New Windsor</a><a href="/market-reports/glendene/">Glendene</a><a href="/market-reports/avondale/">Avondale</a></div></details>
-      <a href="/articles/">Articles</a><a href="/contact.html">Contact</a>
-    </div>
-  </nav>
-</header>
-
+<header><nav class="nav" aria-label="Main navigation">
+<a href="/" class="brand"><img src="/images/rh-logo.webp" alt="Edita Andrijasevic Raine and Horne logo" width="46" height="46" decoding="async"><div>Edita Andrijasevic - Raine &amp; Horne</div></a>
+<button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+<div class="nav-links" id="primary-navigation">
+<a href="/">Home</a><a href="/about-edita/">Meet Edita</a>
+<details class="nav-dropdown"><summary class="nav-parent">Locations</summary><div class="dropdown-menu"><a href="/locations/">All Areas We Serve</a><a href="/real-estate-agent-west-auckland/">West Auckland</a><a href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay</a><a href="/real-estate-agent-titirangi/">Titirangi</a><a href="/real-estate-agent-lynfield/">Lynfield</a><a href="/real-estate-agent-new-lynn/">New Lynn</a><a href="/real-estate-agent-glen-eden/">Glen Eden</a><a href="/real-estate-agent-green-bay/">Green Bay</a><a href="/real-estate-agent-avondale/">Avondale</a><a href="/real-estate-agent-glendene/">Glendene</a><a href="/real-estate-agent-kelston/">Kelston</a><a href="/real-estate-agent-mount-roskill/">Mount Roskill</a><a href="/real-estate-agent-new-windsor/">New Windsor</a></div></details>
+<details class="nav-dropdown"><summary class="nav-parent">Services</summary><div class="dropdown-menu"><a href="/services/">All Real Estate Services</a><a href="/free-home-appraisal-lynfield/">Free Lynfield Appraisal</a><a href="/services/selling-your-home-west-auckland/">Selling Your Home</a><a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a><a href="/services/real-estate-negotiation-support/">Negotiation Support</a><a href="/amplify-property-marketing/">Amplify Property Marketing</a></div></details>
+<details class="nav-dropdown"><summary class="nav-parent">Listings</summary><div class="dropdown-menu"><a href="/properties.html">Properties For Sale</a><a href="/sold.html">Sold Properties</a></div></details>
+<details class="nav-dropdown"><summary class="nav-parent active">Market Reports</summary><div class="dropdown-menu"><a href="/market-reports/">All Suburb Market Reports</a><a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a><a href="/market-reports/titirangi/">Titirangi</a><a href="/market-reports/lynfield/">Lynfield</a><a href="/market-reports/new-lynn/">New Lynn</a><a href="/market-reports/glen-eden/">Glen Eden</a><a href="/market-reports/green-bay/">Green Bay</a><a href="/market-reports/avondale/">Avondale</a><a href="/market-reports/glendene/">Glendene</a><a href="/market-reports/kelston/">Kelston</a><a href="/market-reports/mount-roskill/">Mount Roskill</a><a href="/market-reports/new-windsor/">New Windsor</a></div></details>
+<a href="/articles/">Articles</a><a href="/contact.html">Contact</a>
+</div></nav></header>
 <main>
-  <section class="report-hero">
-    <img src="/images/market-reports/lynfield/lynfield-market-report-hero-rh-960.webp"
-         srcset="/images/market-reports/lynfield/lynfield-market-report-hero-rh-640.webp 640w, /images/market-reports/lynfield/lynfield-market-report-hero-rh-960.webp 960w, /images/market-reports/lynfield/lynfield-market-report-hero.webp 1400w"
-         sizes="100vw"
-         alt="Lynfield property market report September 2026 hero image with houses and market trend arrows"
-         class="report-hero-bg" width="1400" height="600" loading="eager" fetchpriority="high" decoding="async">
+<section class="report-hero">
+<img src="/images/market-reports/lynfield/lynfield-market-report-hero-rh-960.webp" srcset="/images/market-reports/lynfield/lynfield-market-report-hero-rh-640.webp 640w, /images/market-reports/lynfield/lynfield-market-report-hero-rh-960.webp 960w, /images/market-reports/lynfield/lynfield-market-report-hero.webp 1400w" sizes="100vw" alt="Lynfield property market report October 2026 hero image" class="report-hero-bg" width="1400" height="600" loading="eager" fetchpriority="high" decoding="async">
+<div class="report-hero-content"><div>
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/market-reports/">Market Reports</a> / Lynfield</nav>
+<span class="eyebrow">October 2026 Market Report</span>
+<h1>Lynfield Property Market Report – October 2026</h1>
+<p class="hero-lead">Lynfield prices remain below the previous rolling year, but sales activity improved slightly and selling time was faster. The market is still highly sensitive to property quality and direct comparable evidence.</p>
+<div class="hero-meta"><span class="hero-pill">Median: $1,082,500</span><span class="hero-pill">Median days: 39.5</span><span class="hero-pill">Sales: 62</span></div>
+<div class="cta-row"><a class="btn btn-primary" href="/free-home-appraisal-lynfield/">Request A Lynfield Appraisal</a><a class="btn btn-dark" href="tel:+6421765234">Call 021 765 234</a></div>
+</div>
+<aside class="hero-card"><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18 10 12l4 3 6-8"/><path d="M16 7h4v4"/></svg></span><span>What Does the October 2026 Lynfield Market Mean for Homeowners?</span></h2>
+<p>The 12-month median was <strong>$1,082,500</strong>, down <strong>7.7%</strong> from $1,172,500.</p>
+<p>Sales increased from <strong>64</strong> to <strong>62</strong>, while median selling time improved from <strong>42</strong> to <strong>39.5 days</strong>.</p>
+<p>The residence median was <strong>$1,099,750</strong>, below the previous <strong>$1,225,000</strong>.</p></aside>
+</div></section>
 
-    <div class="report-hero-content">
-      <div>
-        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/market-reports/">Market Reports</a> / Lynfield</nav>
-        <span class="eyebrow">September 2026 Market Report</span>
-        <h1>Lynfield Property Market Report – September 2026</h1>
-        <p class="hero-lead">A straightforward look at Lynfield prices, selling time, recent sales and what the numbers mean if you are thinking about selling.</p>
-        <div class="hero-meta"><span class="hero-pill">Median: $1,087,000</span><span class="hero-pill">Median days to sell: 39 days</span><span class="hero-pill">Sales analysed: 60</span></div>
-        <div class="cta-row"><a class="btn btn-primary" href="/free-home-appraisal-lynfield/">Request A Lynfield Appraisal</a><a class="btn btn-dark" href="tel:+6421765234">Call 021 765 234</a></div>
-      </div>
+<section class="highlight"><div class="container">
+<div class="section-title"><span class="eyebrow">Market Snapshot</span><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18 10 12l4 3 6-8"/><path d="M16 7h4v4"/></svg></span><span>What Are Lynfield House Prices and Selling Times in October 2026?</span></h2><p>Exact comparison: 1 October 2025–30 September 2026 versus 1 October 2024–30 September 2025.</p></div>
+<div class="snapshot-grid">
+<div class="snapshot-card"><span>Median sale price</span><strong>$1,082,500</strong><small>-7.7% from $1,172,500.</small></div>
+<div class="snapshot-card"><span>Average sale price</span><strong>$1,146,903</strong><small>-5.9% from $1,219,102.</small></div>
+<div class="snapshot-card"><span>Sales</span><strong>62</strong><small>-3.1% from 64 sales.</small></div>
+<div class="snapshot-card"><span>Median days to sell</span><strong>39.5 days</strong><small>2.5 days faster than 42.</small></div>
+<div class="snapshot-card"><span>Residence median</span><strong>$1,099,750</strong><small>-10.2% from $1,225,000.</small></div>
+</div>
+<div class="data-window"><strong>Updated 7 October 2026.</strong> REINZ sales for 1 October 2025–30 September 2026 compared with the previous 12 months.</div>
+<div class="callout"><strong>For sellers:</strong> Lynfield’s price measures are softer than a year ago, but selling time improved and total transactions edged higher. That makes accurate comparable selection especially important: a well-presented family home may perform differently from the suburb headline.</div>
+</div></section>
 
-      <aside class="hero-card" aria-label="September 2026 Lynfield market summary">
-        <h2>Market Summary</h2>
-        <p><strong>Price direction:</strong> the suburb median fell <strong>5.5%</strong> to <strong>$1,087,000</strong>.</p>
-        <p><strong>Residence-only picture:</strong> the median fell <strong>8.3%</strong> to <strong>$1,100,500</strong>, indicating genuine softness rather than only a property-mix effect.</p>
-        <p><strong>Selling speed:</strong> median days to sell improved from <strong>44</strong> to <strong>39 days</strong>, while sales volume fell <strong>21.1%</strong>.</p>
-      </aside>
-    </div>
-  </section>
+<section class="soft"><div class="container">
+<div class="section-title"><span class="eyebrow">Price Direction</span><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18 10 12l4 3 6-8"/><path d="M16 7h4v4"/></svg></span><span>Are Lynfield House Prices Going Up or Down in October 2026?</span></h2><p>The annual direction remains softer, although the market is not simply weakening across every measure.</p></div>
+<div class="report-panel">
+<p>The median moved from <strong>$1,172,500</strong> to <strong>$1,082,500</strong>, a change of <strong>-7.7%</strong>. The average moved from <strong>$1,219,102</strong> to <strong>$1,146,903</strong>, a change of <strong>-5.9%</strong>.</p>
+<p>Sales increased from <strong>64</strong> to <strong>62</strong>, while median selling time improved from <strong>42</strong> to <strong>39.5 days</strong>.</p>
+<p>Residences accounted for <strong>54 sales</strong> at a median of <strong>$1,099,750</strong>, compared with <strong>47</strong> sales at <strong>$1,225,000</strong> previously.</p>
+</div></div></section>
 
-  <section class="highlight" id="snapshot">
-    <div class="container">
-      <div class="section-title"><span class="eyebrow">Market Snapshot</span><h2>Lynfield Market Snapshot</h2><p>Exact comparison: 1 September 2025–31 August 2026 versus 1 September 2024–31 August 2025.</p></div>
+<section id="charts"><div class="container">
+<div class="section-title"><span class="eyebrow">Market Charts</span><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18 10 12l4 3 6-8"/><path d="M16 7h4v4"/></svg></span><span>How Has the Lynfield Property Market Changed Over the Past Year?</span></h2><p>The charts use the same current and previous periods shown in the tables.</p></div>
+<div class="chart-grid">
+<figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-sale-price-comparison-rh.webp" alt="Lynfield October 2026 median and average sale price comparison" width="840" height="516" loading="lazy" decoding="async"><figcaption>The annual median and average were both below the previous rolling year.</figcaption></figure>
+<figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-quarterly-median-sale-price-rh.webp" alt="Lynfield October 2026 quarterly median sale price chart" width="840" height="516" loading="lazy" decoding="async"><figcaption>The latest Jul–Sep quarter recorded a median of $975,000, compared with $1,365,000 a year earlier.</figcaption></figure>
+<figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-quarterly-sales-volume-rh.webp" alt="Lynfield October 2026 quarterly sales volume chart" width="840" height="516" loading="lazy" decoding="async"><figcaption>The latest quarter recorded 21 sales, compared with 11 in the comparable quarter.</figcaption></figure>
+<figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-quarterly-days-to-sell-rh.webp" alt="Lynfield October 2026 quarterly median days to sell chart" width="840" height="516" loading="lazy" decoding="async"><figcaption>The latest quarter had a median selling time of 40 days.</figcaption></figure>
+<figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-sales-by-property-category-rh.webp" alt="Lynfield October 2026 sales by property type chart" width="840" height="516" loading="lazy" decoding="async"><figcaption>Standard residences dominated the current Lynfield market.</figcaption></figure>
+<figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-sales-by-tenure-rh.webp" alt="Lynfield October 2026 sales by tenure chart" width="840" height="516" loading="lazy" decoding="async"><figcaption>Freehold remained the largest recorded tenure group.</figcaption></figure>
+<figure class="chart-card full"><img src="/images/market-reports/lynfield/lynfield-sales-by-bedroom-count-rh.webp" alt="Lynfield October 2026 sales by bedroom count chart" width="840" height="516" loading="lazy" decoding="async"><figcaption>Four-bedroom homes were the largest known-bedroom group, followed by three-bedroom homes.</figcaption></figure>
+</div></div></section>
 
-      <div class="snapshot-grid">
-        <div class="snapshot-card"><span>Median sale price</span><strong>$1,087,000</strong><small>-5.5% from $1,150,000.</small></div>
-        <div class="snapshot-card"><span>Average sale price</span><strong>$1,136,050</strong><small>-5.4% from $1,201,039.</small></div>
-        <div class="snapshot-card"><span>Median days to sell</span><strong>39 days</strong><small>Five days faster than the previous 44-day median.</small></div>
-        <div class="snapshot-card"><span>Sales analysed</span><strong>60</strong><small>Compared with 76; -21.1%.</small></div>
-        <div class="snapshot-card"><span>Residence median</span><strong>$1,100,500</strong><small>-8.3% from $1,200,000.</small></div>
-      </div>
+<section class="soft" id="suburb-report"><div class="container report-body"><article>
+<div class="report-panel"><span class="eyebrow">Local Market</span><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 5 5"/></svg></span><span>What Is Driving the Lynfield Property Market Right Now?</span></h2>
+<p>Lynfield remains a smaller, family-focused market where the mix of homes can move the median quickly. Buyers compare it with Blockhouse Bay, Mount Roskill, Hillsborough and New Windsor, so the value proposition has to make sense beyond the suburb boundary.</p>
+<p>Practical family features remain important: usable living space, garaging, parking, natural light, outdoor areas, access and confidence around condition and paperwork.</p></div>
 
-      <div class="data-window"><strong>Updated 12 September 2026.</strong> Based on REINZ sales for 1 September 2025–31 August 2026, compared with 1 September 2024–31 August 2025.</div>
-      <div class="callout"><strong>For sellers:</strong> prices are softer than a year ago, but homes are selling a little faster. Buyers are still making decisions. They are simply more careful about what they pay.</div>
-    </div>
-  </section>
+<div class="report-panel"><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/><path d="M9.5 19v-5h5v5"/></svg></span><span>What Types of Homes Are Selling Best in Lynfield?</span></h2>
+<div class="icon-list">
+<div class="icon-row"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/><path d="M9.5 19v-5h5v5"/></svg></span><p><strong>Standard residences</strong> recorded <strong>54 sales</strong> at a median of <strong>$1,099,750</strong>, compared with <strong>47</strong> sales at <strong>$1,225,000</strong>.</p></div>
+<div class="icon-row"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.5 11 8 6.5 13.5 11"/><path d="M10.5 11 16 6.5 21.5 11"/><path d="M4 10.5V19h8V10.5"/><path d="M12 10.5V19h8V10.5"/></svg></span><p><strong>Townhouses</strong> recorded only <strong>3 sales</strong> at a median of <strong>$950,000</strong>. This is too small a sample for a strong suburb-wide conclusion.</p></div>
+<div class="icon-row"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span><p><strong>Units</strong> recorded <strong>5 sales</strong> at a median of <strong>$651,000</strong>, compared with <strong>9</strong> sales previously.</p></div>
+</div></div>
 
-  <section class="soft">
-    <div class="container">
-      <div class="section-title"><span class="eyebrow">Market Update</span><h2>What Is Happening In Lynfield?</h2><p>Prices are softer than a year ago. Fewer homes sold, but the homes that did sell generally moved faster.</p></div>
+<div class="report-panel"><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"/><path d="M15 3v4h4"/><path d="M9 11h6M9 15h6"/><path d="m9 18 1.5 1.5L14 16"/></svg></span><span>Do Freehold or Cross-Lease Homes Sell Better in Lynfield?</span></h2>
+<div class="icon-list">
+<div class="icon-row"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"/><path d="M15 3v4h4"/><path d="M9 11h6M9 15h6"/><path d="m9 18 1.5 1.5L14 16"/></svg></span><p><strong>Freehold</strong> recorded <strong>48 sales</strong> at a median of <strong>$1,099,500</strong>, compared with <strong>50</strong> sales at <strong>$1,225,000</strong>.</p></div>
+<div class="icon-row"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4v16M17 4v16"/><path d="m4 7 3-3 3 3M14 17l3 3 3-3"/></svg></span><p><strong>Cross-lease</strong> recorded only <strong>5 sales</strong> at a median of <strong>$730,000</strong>. Because the sample is small, direct property comparables matter more than the category median.</p></div>
+</div></div>
 
-      <div class="report-panel">
-        <p>Lynfield’s median sale price was <strong>$1,087,000</strong> over the past 12 months. A year earlier it was <strong>$1,150,000</strong>. The average sale price was <strong>$1,136,050</strong>.</p>
-        <p>Standard residences were softer too. Their median was <strong>$1,100,500</strong>, compared with <strong>$1,200,000</strong> a year earlier.</p>
-        <p>Homes took a median of <strong>39 days</strong> to sell, down from <strong>44 days</strong>. There were <strong>60 sales</strong>, compared with <strong>76</strong> the year before.</p>
-      </div>
-    </div>
-  </section>
+<div class="report-panel"><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 19v-7h18v7"/><path d="M5 12V7h5a3 3 0 0 1 3 3v2"/><path d="M3 16h18"/><path d="M5 19v2M19 19v2"/></svg></span><span>Which Bedroom Sizes Are Selling Most in Lynfield?</span></h2>
+<div class="icon-list">
+<div class="icon-row"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 19v-7h18v7"/><path d="M5 12V7h5a3 3 0 0 1 3 3v2"/><path d="M3 16h18"/><path d="M5 19v2M19 19v2"/></svg></span><p><strong>Four-bedroom homes</strong> recorded <strong>14 sales</strong> at a median of <strong>$1,099,750</strong>.</p></div>
+<div class="icon-row"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 19v-7h18v7"/><path d="M5 12V7h5a3 3 0 0 1 3 3v2"/><path d="M3 16h18"/><path d="M5 19v2M19 19v2"/></svg></span><p><strong>Three-bedroom homes</strong> recorded <strong>11 sales</strong> at a median of <strong>$975,000</strong>.</p></div>
+<div class="icon-row"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 19v-7h18v7"/><path d="M5 12V7h5a3 3 0 0 1 3 3v2"/><path d="M3 16h18"/><path d="M5 19v2M19 19v2"/></svg></span><p><strong>Five-bedroom homes</strong> recorded <strong>6 sales</strong> at a median of <strong>$1,375,000</strong>. Smaller bedroom groups should be interpreted carefully.</p></div>
+</div></div>
 
-  <section id="charts">
-    <div class="container">
-      <div class="section-title"><span class="eyebrow">Market Charts</span><h2>Lynfield Sales At A Glance</h2><p>A quick look at price, sales activity and selling time over the two comparison periods.</p></div>
+<div class="report-panel"><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7 7 4-4 6 6-4 4z"/><path d="m10 10-6 6 4 4 6-6"/><path d="M14 20h7"/></svg></span><span>Is Auction or Private Treaty Working Better in Lynfield?</span></h2>
+<div class="icon-list">
+<div class="icon-row"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7 7 4-4 6 6-4 4z"/><path d="m10 10-6 6 4 4 6-6"/><path d="M14 20h7"/></svg></span><p><strong>Auction:</strong> <strong>12 sales</strong>, median <strong>$1,401,000</strong>, median selling time <strong>37 days</strong>.</p></div>
+<div class="icon-row"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"/><path d="M15 3v4h4"/><path d="M9 11h6M9 15h6"/><path d="m9 18 1.5 1.5L14 16"/></svg></span><p><strong>Private treaty / negotiation:</strong> <strong>50 sales</strong>, median <strong>$1,072,500</strong>, median selling time <strong>46 days</strong>.</p></div>
+</div><p style="margin-top:18px">The two groups include different property types and price brackets, so the numbers do not prove one sale method is automatically better.</p></div>
 
-      <div class="chart-grid">
-        <figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-sale-price-comparison-rh.webp" alt="Lynfield September 2026 chart comparing median and average sale prices for the latest and previous 12 months" width="840" height="516" loading="lazy" decoding="async"><figcaption>The suburb median fell 5.5% and the average fell 5.4%, showing broadly consistent price softness.</figcaption></figure>
+<div class="report-panel"><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 5 5"/></svg></span><span>What Are Lynfield Buyers Looking for in 2026?</span></h2>
+<p>Buyers appear to be rewarding homes that feel practical and easy to understand. Flexible family layouts, good natural light, parking, garaging and usable outdoor space can all help.</p>
+<p>Homes requiring substantial work can still sell, but buyers often price in expected renovation, maintenance and documentation risk.</p></div>
 
-        <figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-quarterly-median-sale-price-rh.webp" alt="Lynfield September 2026 quarterly median sale price chart comparing latest and previous periods" width="840" height="516" loading="lazy" decoding="async"><figcaption>The latest period started strongly at $1,375,000 in September–November, then the following three quarters recorded medians around $1.04–$1.07 million.</figcaption></figure>
+<div class="report-panel"><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="m8 9 1.5 1.5L12 8"/><path d="M13 10h3"/><path d="m8 15 1.5 1.5L12 14"/><path d="M13 16h3"/></svg></span><span>How Should I Price and Prepare My Lynfield Home for Sale?</span></h2>
+<ul class="seller-advice-list">
+<li>Use recent direct comparables rather than older peak sales.</li>
+<li>Prepare title, LIM, consent and renovation information before launch where possible.</li>
+<li>Show floorplan flexibility, natural light, parking and family use clearly.</li>
+<li>If the home has views, elevation or multi-generational potential, make those advantages easy to understand.</li>
+<li>Watch competing homes in Blockhouse Bay, Mount Roskill, Hillsborough and New Windsor.</li>
+<li>Use buyer feedback quickly. In a small suburb, a poor starting position can waste the best part of the campaign.</li>
+</ul></div>
 
-        <figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-quarterly-sales-volume-rh.webp" alt="Lynfield September 2026 quarterly sales volume chart comparing latest and previous periods" width="840" height="516" loading="lazy" decoding="async"><figcaption>Fewer properties sold overall. March to May was the busiest quarter, with 20 sales.</figcaption></figure>
+<div class="report-panel"><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>Which Local Features Matter Most to Lynfield Buyers?</span></h2>
+<ul class="local-list"><li>Lynfield College and family-school appeal</li><li>Access to Hillsborough, Blockhouse Bay and Mount Roskill</li><li>Views, sun and elevation</li><li>Garaging, parking and section usability</li><li>Flexible or multi-generational layouts</li><li>Renovation quality, maintenance and consent history</li></ul></div>
 
-        <figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-quarterly-days-to-sell-rh.webp" alt="Lynfield September 2026 quarterly median days to sell chart comparing latest and previous periods" width="840" height="516" loading="lazy" decoding="async"><figcaption>Annual selling speed improved. December–February was fastest at a 32-day median, while March–May was slower at 45.5 days.</figcaption></figure>
+<div class="report-panel"><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18 10 12l4 3 6-8"/><path d="M16 7h4v4"/></svg></span><span>What Is the Lynfield Property Market Outlook for the Next 3–6 Months?</span></h2>
+<p>The annual price measures remain below the previous period, but selling time improved and the number of completed sales increased slightly. That suggests buyers are still transacting when the home and pricing make sense.</p>
+<p>The latest Jul–Sep quarter recorded a median of <strong>$975,000</strong> from <strong>21 sales</strong>. With a relatively small quarterly sample, one or two higher-value or lower-value transactions can move the result sharply.</p>
+<p>For sellers, the practical outlook is selective rather than uniformly weak: strong family homes with realistic pricing and clear documentation should have the best chance of attracting serious buyers.</p></div>
+</article>
 
-        <figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-sales-by-property-category-rh.webp" alt="Lynfield September 2026 sales count by REINZ property category" width="840" height="516" loading="lazy" decoding="async"><figcaption>Residences accounted for 49 of the 60 latest-period sales. Units, townhouses and sections were much smaller samples.</figcaption></figure>
+<aside class="side-card"><h3>Lynfield At A Glance</h3><p><strong>$1,082,500</strong><br>12-month suburb median.</p><p><strong>-7.7%</strong><br>Median price movement.</p><p><strong>$1,099,750</strong><br>Residence-only median.</p><p><strong>39.5 days</strong><br>Median selling time.</p><p><strong>62 sales</strong><br>Current 12-month period.</p><a class="btn btn-primary" href="/free-home-appraisal-lynfield/">Request An Appraisal</a></aside>
+</div></section>
 
-        <figure class="chart-card"><img src="/images/market-reports/lynfield/lynfield-sales-by-tenure-rh.webp" alt="Lynfield September 2026 sales count by freehold crosslease strata and unknown tenure" width="840" height="516" loading="lazy" decoding="async"><figcaption>Freehold represented 48 latest-period records, while cross-lease represented only 4.</figcaption></figure>
+<section id="numbers"><div class="container">
+<div class="section-title"><span class="eyebrow">Detailed Comparison</span><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4v16M17 4v16"/><path d="m4 7 3-3 3 3M14 17l3 3 3-3"/></svg></span><span>How Do Lynfield House Prices Compare With a Year Ago?</span></h2></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>Indicator</th><th>1 Oct 2025–30 Sep 2026</th><th>1 Oct 2024–30 Sep 2025</th><th>Change</th></tr></thead><tbody>
+<tr><td>Median sale price</td><td>$1,082,500</td><td>$1,172,500</td><td>-7.7%</td></tr>
+<tr><td>Average sale price</td><td>$1,146,903</td><td>$1,219,102</td><td>-5.9%</td></tr>
+<tr><td>Sales</td><td>62</td><td>64</td><td>-3.1%</td></tr>
+<tr><td>Median days to sell</td><td>39.5 days</td><td>42 days</td><td>2.5 days faster</td></tr>
+<tr><td>Residence median</td><td>$1,099,750</td><td>$1,225,000</td><td>-10.2%</td></tr>
+<tr><td>Residence sales</td><td>54</td><td>47</td><td>+14.9%</td></tr>
+<tr><td>Unit median</td><td>$651,000</td><td>$695,000</td><td>-6.3%</td></tr>
+<tr><td>Townhouse median</td><td>$950,000</td><td>$850,500</td><td>+11.7%</td></tr>
+</tbody></table></div>
+</div></section>
 
-        <figure class="chart-card full"><img src="/images/market-reports/lynfield/lynfield-sales-by-bedroom-count-rh.webp" alt="Lynfield September 2026 known bedroom sales counts for two three four five and six-plus bedroom properties" width="840" height="516" loading="lazy" decoding="async"><figcaption>Among records with a known bedroom count, four-bedroom homes were the largest group, followed by three-bedroom homes.</figcaption></figure>
-      </div>
-    </div>
-  </section>
+<section class="soft" id="quarterly"><div class="container">
+<div class="section-title"><span class="eyebrow">Quarterly Detail</span><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18 10 12l4 3 6-8"/><path d="M16 7h4v4"/></svg></span><span>How Have Lynfield House Prices Changed Quarter by Quarter?</span></h2><p>Quarterly samples are small, so use these trends as context rather than as a valuation of an individual home.</p></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>Quarter</th><th>Current sales</th><th>Current median</th><th>Current days</th><th>Previous sales</th><th>Previous median</th><th>Previous days</th></tr></thead><tbody>
+<tr><td>Oct–Dec</td><td>13</td><td>$1,430,000</td><td>27</td><td>17</td><td>$1,150,000</td><td>37</td></tr><tr><td>Jan–Mar</td><td>13</td><td>$930,000</td><td>33</td><td>17</td><td>$1,101,000</td><td>44</td></tr><tr><td>Apr–Jun</td><td>15</td><td>$1,053,000</td><td>47</td><td>19</td><td>$1,150,000</td><td>45</td></tr><tr><td>Jul–Sep</td><td>21</td><td>$975,000</td><td>40</td><td>11</td><td>$1,365,000</td><td>41</td></tr>
+</tbody></table></div></div></section>
 
-  <section class="soft" id="suburb-report">
-    <div class="container report-body">
-      <article>
-        <div class="report-panel">
-          <span class="eyebrow">Local Market</span><h2>Lynfield Market Report</h2>
-          <p>Lynfield buyers often focus on practical family features: usable living space, garaging, access, school options and how well the section works.</p>
-          <p>Prices are softer than a year ago, but buyers are still buying. A home that is presented well and priced properly can still move without sitting on the market for months.</p>
-          <p>Lynfield is a smaller market, so a few high or low sales can move the quarterly numbers quickly. Your own home should be compared with the most relevant nearby sales.</p>
-        </div>
+<section id="mix"><div class="container">
+<div class="section-title"><span class="eyebrow">Property Mix</span><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9h13v-9"/><path d="M9.5 19v-5h5v5"/></svg></span><span>What Does Lynfield’s Property Mix Tell Sellers?</span></h2></div>
+<div class="grid-2"><div class="table-wrap"><table class="data-table"><thead><tr><th>Property type</th><th>Sales</th><th>Median</th></tr></thead><tbody>
+<tr><td>Residence</td><td>54</td><td>$1,099,750</td></tr><tr><td>Townhouse</td><td>3</td><td>$950,000</td></tr><tr><td>Unit</td><td>5</td><td>$651,000</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>Tenure</th><th>Sales</th><th>Median</th></tr></thead><tbody>
+<tr><td>Freehold</td><td>48</td><td>$1,099,500</td></tr><tr><td>Cross-lease</td><td>5</td><td>$730,000</td></tr><tr><td>Strata</td><td>0</td><td>—</td></tr><tr><td>Unknown</td><td>9</td><td>$1,099,500</td></tr>
+</tbody></table></div></div>
+<div class="table-wrap" style="margin-top:26px"><table class="data-table"><thead><tr><th>Bedrooms</th><th>Sales with known count</th><th>Median sale price</th></tr></thead><tbody><tr><td>1</td><td>0</td><td>—</td></tr><tr><td>2</td><td>4</td><td>$642,500</td></tr><tr><td>3</td><td>11</td><td>$975,000</td></tr><tr><td>4</td><td>14</td><td>$1,099,750</td></tr><tr><td>5</td><td>6</td><td>$1,375,000</td></tr><tr><td>6+</td><td>2</td><td>$1,260,000</td></tr></tbody></table></div>
+<p class="source-note">Bedroom figures use sales where a positive bedroom count was recorded. Small samples can move sharply from only a few transactions.</p>
+</div></section>
 
-        <div class="report-panel">
-          <h2>Property Type And Tenure</h2>
-          <p>Residences recorded <strong>49 sales</strong> at a median of <strong>$1,100,500</strong>, compared with <strong>53 sales</strong> at <strong>$1,200,000</strong> previously.</p>
-          <p>Units recorded <strong>5 sales</strong> at a median of <strong>$651,000</strong>. Townhouses recorded only <strong>3 sales</strong> at a median of <strong>$950,000</strong>, while residential sections also recorded only <strong>3 sales</strong>. These smaller categories are too limited for strong trend conclusions.</p>
-          <p>Freehold properties recorded <strong>48 sales</strong> at a median of <strong>$1,100,250</strong>. Cross-lease recorded only <strong>4 sales</strong> at <strong>$682,000</strong>, so direct comparable evidence matters more than the tenure median alone.</p>
-        </div>
+<section class="soft" id="faq"><div class="container">
+<div class="section-title"><span class="eyebrow">For Lynfield Homeowners</span><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.8 9a2.4 2.4 0 1 1 3.7 2c-1 .6-1.5 1.1-1.5 2"/><path d="M12 17h.01"/></svg></span><span>What Are Lynfield Homeowners Asking Before They Sell?</span></h2><p>These questions focus on value, timing, property type and the decisions that affect a Lynfield campaign.</p></div>
+<h3 style="margin:0 0 18px">Price, Value And Property Type</h3>
+<div class="qa-grid" style="margin-bottom:34px">
+<article class="card"><h3>Have Lynfield house prices fallen in 2026?</h3><p>The rolling 12-month median was <strong>$1,082,500</strong>, compared with <strong>$1,172,500</strong> previously, a change of <strong>-7.7%</strong>. The residence median also softened. That does not mean every Lynfield home fell by the same amount.</p></article>
+<article class="card"><h3>What types of homes are selling most in Lynfield?</h3><p>Standard residences dominate the market, with <strong>54 sales</strong> in the current period. Units and townhouses are much smaller samples, so their category medians are less reliable for broad conclusions.</p></article>
+<article class="card"><h3>Are cross-lease homes worth less than freehold homes in Lynfield?</h3><p>The current cross-lease sample is only <strong>5 sales</strong>, which is too small to establish a fixed discount. Buyers will also consider land, condition, alterations, parking, shared access and the flats plan.</p></article>
+</div>
 
-        <div class="report-panel">
-          <h2>Bedroom Analysis</h2>
-          <p>Four-bedroom properties recorded <strong>13 sales</strong> with a median of <strong>$1,100,000</strong>. Three-bedroom properties recorded <strong>10 sales</strong> at <strong>$1,005,000</strong>.</p>
-          <p>Five-bedroom properties recorded only <strong>5 sales</strong> at a median of <strong>$1,350,000</strong>. Two-bedroom properties recorded <strong>4 sales</strong> at <strong>$642,500</strong>. These smaller samples should be read cautiously.</p>
-          <p>In Lynfield, bedroom count alone does not determine value. Floor area, views, renovation quality, garaging, access, school appeal, section usability and the ability to accommodate extended family can materially change the result.</p>
-        </div>
+<h3 style="margin:0 0 18px">Selling Time And Sale Method</h3>
+<div class="qa-grid" style="margin-bottom:34px">
+<article class="card"><h3>How long does it take to sell a house in Lynfield?</h3><p>The current median is <strong>39.5 days</strong>, compared with <strong>42 days</strong> previously. Individual homes can sell much faster or slower depending on price, condition, demand and campaign strategy.</p></article>
+<article class="card"><h3>Is auction better than private treaty in Lynfield?</h3><p>Auction sales had a median selling time of <strong>37 days</strong>, while private treaty and negotiation had a median of <strong>46 days</strong>. The groups contain different homes and price points, so the figures do not prove one method is automatically better.</p></article>
+<article class="card"><h3>Why do some Lynfield homes take longer to sell?</h3><p>Price positioning, condition, presentation, access, parking and documentation can all slow buyer decisions. Homes that are easy to understand and compare tend to give buyers more confidence.</p></article>
+</div>
 
-        <div class="report-panel">
-          <h2>Buyer Behaviour</h2>
-          <p>Buyers remain value-sensitive, particularly when comparing Lynfield with Blockhouse Bay, Mount Roskill, Hillsborough and New Windsor. A property needs to make sense both emotionally and financially against the alternatives available at the same time.</p>
-          <p>Family buyers tend to respond best to practical layouts, good natural light, useful outdoor space, parking and confidence around condition and documentation. Homes requiring substantial work can still sell, but the expected cost is usually reflected in buyer pricing.</p>
-        </div>
+<h3 style="margin:0 0 18px">Family Appeal And Due Diligence</h3>
+<div class="qa-grid">
+<article class="card"><h3>How much can views or elevation add to a Lynfield home?</h3><p>There is no reliable fixed premium in the supplied REINZ data. Sun, outlook, privacy, land and the way the home uses its elevation all matter. The best evidence comes from recent sales with genuinely similar features.</p></article>
+<article class="card"><h3>How important are flexible family or multi-generational layouts in Lynfield?</h3><p>They can widen the buyer pool, especially where extra living areas, bathrooms or separate spaces are genuinely useful. The marketing should explain how the layout works rather than relying only on a bedroom count.</p></article>
+<article class="card"><h3>Can missing consents or renovation paperwork affect my sale?</h3><p>Yes. Unclear work can create questions for buyers, lenders and insurers. Checking title, LIM and consent history early gives you more options before the campaign starts.</p></article>
+</div>
+</div></section>
 
-        <div class="report-panel">
-          <h2>Sale Method And Negotiation</h2>
-          <p>The latest period included <strong>10 auction sales</strong>, with a median price of <strong>$1,401,000</strong> and median selling time of <strong>35 days</strong>.</p>
-          <p>Private treaty and negotiation accounted for <strong>50 sales</strong>, with a median of <strong>$1,072,500</strong> and median selling time of <strong>43.5 days</strong>.</p>
-          <p>The auction sample sits in a higher price bracket, so this does not prove that auction itself caused the higher median. Sale method should be chosen around expected competition, vendor timing and the property’s likely buyer pool.</p>
-        </div>
+<section class="highlight"><div class="container"><div class="section-title"><span class="eyebrow">Nearby Reports</span><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4v16M17 4v16"/><path d="m4 7 3-3 3 3M14 17l3 3 3-3"/></svg></span><span>How Does Lynfield Compare With Nearby Property Markets?</span></h2></div><div class="suburb-links"><a href="/market-reports/blockhouse-bay/">Blockhouse Bay Market Report</a><a href="/market-reports/new-windsor/">New Windsor Market Report</a><a href="/market-reports/mount-roskill/">Mount Roskill Market Report</a><a href="/market-reports/new-lynn/">New Lynn Market Report</a></div></div></section>
 
-        <div class="report-panel">
-          <h2>Advice For Lynfield Sellers</h2>
-          <ul class="seller-advice-list">
-            <li>Use recent direct comparables and allow for the softer residence-price evidence.</li>
-            <li>Do not anchor solely to last year’s higher-value sales or council valuations.</li>
-            <li>Prepare LIM, title, consent and renovation information before launch where possible.</li>
-            <li>Present floorplan, natural light, parking, outdoor use and family flexibility clearly.</li>
-            <li>Price to create a reason for buyers to act rather than waiting for the market to “catch up”.</li>
-            <li>Use second inspections, document requests and buyer objections to guide negotiation strategy.</li>
-          </ul>
-        </div>
+<section class="dark-section" id="request-appraisal"><div class="container" style="text-align:center;max-width:900px"><span class="eyebrow">Planning Your Next Move?</span><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 5 5"/></svg></span><span>How Much Could My Lynfield Home Be Worth in Today’s Market?</span></h2><p style="font-size:19px;max-width:780px;margin:0 auto 24px">A suburb median cannot see your view, elevation, layout, renovation, garaging or how well the home works for a family. Edita can compare your property with the sales that matter and give you a clear, no-pressure appraisal.</p><a class="btn btn-primary" href="/free-home-appraisal-lynfield/" style="font-size:18px;padding:17px 30px">Request My Free Lynfield Appraisal</a></div></section>
 
-        <div class="report-panel">
-          <h2>Local Factors Affecting Lynfield</h2>
-          <ul class="local-list">
-            <li>Lynfield College and family-school appeal</li>
-            <li>Access to Hillsborough, Blockhouse Bay and Mount Roskill</li>
-            <li>Motorway and airport-route convenience</li>
-            <li>Views, sun, elevation and section usability</li>
-            <li>Garaging, parking and multi-generational layouts</li>
-            <li>Renovation quality, condition and consent history</li>
-          </ul>
-        </div>
-
-        <div class="report-panel">
-          <h2>Lynfield 3–6 Month Market Outlook</h2>
-          <p>The data supports a <strong>cautious, value-sensitive outlook</strong>. Annual prices have softened, but selling times improved, which suggests buyers are still willing to transact when a property is positioned convincingly.</p>
-          <p>The latest June–August median of <strong>$1,070,000</strong> was below the same quarter a year earlier, so sellers should be careful about using older peak comparables without adjustment. At the same time, small quarterly samples can move sharply, so this should not be treated as a forecast of another equivalent decline.</p>
-          <p>Over the next few months, well-presented family homes with realistic pricing and good paperwork should have the best chance of attracting serious buyers. An ambitious starting price can make the campaign harder.</p>
-        </div>
-      </article>
-
-      <aside class="side-card">
-        <h3>Lynfield At A Glance</h3>
-        <p><strong>$1,087,000</strong><br>Latest 12-month median.</p>
-        <p><strong>-5.5%</strong><br>Median price movement.</p>
-        <p><strong>$1,100,500</strong><br>Residence-only median; -8.3%.</p>
-        <p><strong>39 days</strong><br>Median selling time.</p>
-        <p><strong>60 sales</strong><br>Compared with 76 previously.</p>
-        <a class="btn btn-primary" href="/free-home-appraisal-lynfield/">Request An Appraisal</a>
-      </aside>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-title"><span class="eyebrow">Detailed Comparison</span><h2>Lynfield REINZ Market Indicators</h2></div>
-
-      <div class="table-wrap">
-        <table class="data-table">
-          <thead><tr><th>Indicator</th><th>Latest 12 months</th><th>Previous 12 months / comment</th></tr></thead>
-          <tbody>
-            <tr><td>Comparison period</td><td>1 September 2025–31 August 2026</td><td>1 September 2024–31 August 2025</td></tr>
-            <tr><td>Median sale price</td><td>$1,087,000</td><td>$1,150,000 · down 5.5%</td></tr>
-            <tr><td>Average sale price</td><td>$1,136,050</td><td>$1,201,039 · down 5.4%</td></tr>
-            <tr><td>Median days to sell</td><td>39 days</td><td>44 days · five days faster</td></tr>
-            <tr><td>Sales</td><td>60</td><td>76 · down 21.1%</td></tr>
-            <tr><td>Residences</td><td>49 sales · median $1,100,500</td><td>53 sales · median $1,200,000</td></tr>
-            <tr><td>Units</td><td>5 sales · median $651,000</td><td>15 sales · median $785,000</td></tr>
-            <tr><td>Townhouses</td><td>3 sales · median $950,000</td><td>5 sales · median $837,500</td></tr>
-            <tr><td>Residential sections</td><td>3 sales · median $600,000</td><td>1 sale · median $1,035,000</td></tr>
-            <tr><td>Freehold</td><td>48 sales · median $1,100,250</td><td>58 sales · median $1,215,000</td></tr>
-            <tr><td>Cross-lease</td><td>4 sales · median $682,000</td><td>14 sales · median $868,750</td></tr>
-            <tr><td>Three bedrooms</td><td>10 sales · median $1,005,000</td><td>27 sales · median $996,000</td></tr>
-            <tr><td>Four bedrooms</td><td>13 sales · median $1,100,000</td><td>16 sales · median $1,216,500</td></tr>
-            <tr><td>Five bedrooms</td><td>5 sales · median $1,350,000</td><td>7 sales · median $1,400,000</td></tr>
-            <tr><td>Auction</td><td>10 sales · median $1,401,000</td><td>Median 35 days to sell</td></tr>
-            <tr><td>Private treaty / negotiation</td><td>50 sales · median $1,072,500</td><td>Median 43.5 days to sell</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="source-note" id="data-license"><strong>Data source:</strong> REINZ sales for 1 September 2025–31 August 2026, compared with 1 September 2024–31 August 2025. Category figures use the information recorded for each sale.</div>
-    </div>
-  </section>
-
-  <section class="soft" id="faq">
-    <div class="container">
-      <div class="section-title">
-        <span class="eyebrow">For Lynfield Homeowners</span>
-        <h2>Questions Homeowners Are Asking Right Now</h2>
-        <p>These are the questions that matter when you are weighing up value, timing and your next move.</p>
-      </div>
-
-      <h3 style="margin:0 0 18px">Your Equity And Property Tier</h3>
-      <div class="qa-grid" style="margin-bottom:34px">
-        <article class="card">
-          <h3>How much can elevation or a harbour outlook add to my Lynfield home?</h3>
-          <p>There is no fixed view premium. Lynfield’s current residence median is <strong>$1,100,500</strong>, but a home with strong sun, elevation, outlook, land and good presentation can sit well above the suburb average. The right comparison is with recent homes that share those same features.</p>
-        </article>
-
-        <article class="card">
-          <h3>How resilient are Lynfield’s smaller brick units compared with standalone homes?</h3>
-          <p>The current unit sample is very small: only <strong>5 unit sales</strong>, with a median of <strong>$651,000</strong>. Only <strong>4 two-bedroom sales</strong> had a known bedroom count. That is too little data for a strong suburb-wide conclusion, so the individual complex, condition and title matter more.</p>
-        </article>
-
-        <article class="card">
-          <h3>Are Lynfield buyers paying close to CV, or discounting older homes?</h3>
-          <p>Among the <strong>38 sales</strong> in this report with a valuation figure recorded, about <strong>61%</strong> sold below it, <strong>34%</strong> above it and <strong>5%</strong> at it. CV is only a reference point. Renovation, condition, garaging, layout and outlook can all move the result.</p>
-        </article>
-      </div>
-
-      <h3 style="margin:0 0 18px">Listing Speed And Buyer Competition</h3>
-      <div class="qa-grid" style="margin-bottom:34px">
-        <article class="card">
-          <h3>If the median selling time is 39 days, why do some Lynfield homes take much longer?</h3>
-          <p>Price is usually the first thing to check. Tired presentation, deferred maintenance, awkward access and incomplete paperwork can also slow buyers down. Homes that feel easy to understand and fairly priced can move much faster.</p>
-        </article>
-
-        <article class="card">
-          <h3>Does Lynfield’s smaller supply of traditional family homes give me an advantage?</h3>
-          <p>It can when there are very few comparable homes for sale at the same time. But fewer annual sales do not automatically prove low listing supply. The real advantage comes from launching when buyers have limited alternatives to your type of home.</p>
-        </article>
-
-        <article class="card">
-          <h3>Is my layout being marketed to the right family or multi-generational buyer?</h3>
-          <p>It should be. Extra bathrooms, a second living area, downstairs rooms or flexible spaces can widen the buyer pool. The marketing needs to show how the layout works in real life, not just list the bedroom count.</p>
-        </article>
-      </div>
-
-      <h3 style="margin:0 0 18px">School Zones And Property Due Diligence</h3>
-      <div class="qa-grid" style="margin-bottom:34px">
-        <article class="card">
-          <h3>How much value do Lynfield College or Marshall Laing Primary zones add?</h3>
-          <p>School zones can matter to family buyers, but the supplied REINZ data does not give us a reliable dollar premium. The best way to judge it is to compare similar nearby homes where school zoning is one of the main differences.</p>
-        </article>
-
-        <article class="card">
-          <h3>How closely are buyers looking at land stability, retaining and coastal hazards?</h3>
-          <p>Very closely when the property is near a cliff edge, steep land or bush. Buyers may look at LIM information, retaining, drainage, insurance and any known hazard information. A good outlook is still a positive, but clear information gives buyers confidence.</p>
-        </article>
-
-        <article class="card">
-          <h3>How much can unpermitted work or a missing CCC hurt my sale?</h3>
-          <p>There is no standard dollar penalty, but it can reduce the buyer pool and make finance or insurance harder. An unpermitted deck, altered garage or incomplete CCC is much easier to deal with when it is identified before the property goes on the market.</p>
-        </article>
-      </div>
-
-      <h3 style="margin:0 0 18px">The Safety Net And Your Next Move</h3>
-      <div class="qa-grid two">
-        <article class="card">
-          <h3>Could I keep my Lynfield home and rent it out instead of selling?</h3>
-          <p>Possibly. Some well-presented family homes can achieve strong rents, but this REINZ report is sales data, not a rental appraisal. Before relying on a $750–$890+ weekly range, get a current rental assessment and compare it with mortgage, rates, insurance and maintenance.</p>
-        </article>
-
-        <article class="card">
-          <h3>If I sell now, how far could my equity go in New Lynn or further west?</h3>
-          <p>Start with your likely net sale proceeds. A low-maintenance New Lynn townhouse may release more cash, while moving further west may buy more land or a larger home. Compare the actual properties you would buy, not just suburb medians.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="dark-section" id="request-appraisal">
-    <div class="container" style="text-align:center;max-width:900px">
-      <span class="eyebrow">Planning Your Next Move?</span>
-      <h2>See Where Your Lynfield Home Sits In Today’s Market</h2>
-      <p style="font-size:19px;max-width:780px;margin:0 auto 24px">
-        A suburb median cannot see your view, elevation, layout, renovation, garaging or how well the home works for a family. If a move is on your mind, Edita can compare your property with the sales that matter and give you a clear, no-pressure appraisal.
-      </p>
-      <a class="btn btn-primary" href="/free-home-appraisal-lynfield/" style="font-size:18px;padding:17px 30px">Request My Free Lynfield Appraisal</a>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-title"><span class="eyebrow">Data Source</span><h2>Data Sources And Important Notes</h2></div>
-      <div class="report-panel">
-        <p><strong>Source:</strong> REINZ sales for Lynfield.</p>
-        <p><strong>Current period:</strong> 1 September 2025–31 August 2026. <strong>Previous period:</strong> 1 September 2024–31 August 2025.</p>
-        <p>Some records do not contain every field, so bedroom, tenure and days-to-sell breakdowns use the information available for those sales.</p>
-        <p>This report is general market commentary, not a registered valuation. An appraisal needs to consider the individual property, land, title, condition, outlook and current competition.</p>
-        <p class="small">Prepared by Edita Andrijasevic – Raine &amp; Horne · Licensed Agent · Updated 12 September 2026.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="soft">
-    <div class="container">
-      <div class="section-title"><span class="eyebrow">Read Next</span><h2>Other West Auckland Market Reports</h2></div>
-      <div class="suburb-links"><a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a><a href="/market-reports/titirangi/">Titirangi</a><a href="/market-reports/new-windsor/">New Windsor</a><a href="/market-reports/mount-roskill/">Mount Roskill</a><a href="/market-reports/new-lynn/">New Lynn</a><a href="/real-estate-agent-lynfield/">Lynfield Real Estate Agent</a><a href="/free-home-appraisal-lynfield/">Free Home Appraisal</a><a href="/market-reports/">All Market Reports</a></div>
-    </div>
-  </section>
+<section id="sources"><div class="container"><div class="section-title"><span class="eyebrow">Data Source</span><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="7" ry="3"/><path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5"/><path d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></span><span>Where Does This Lynfield Property Market Data Come From?</span></h2></div><div class="report-panel">
+<p><strong>Source:</strong> REINZ sales data supplied for Lynfield on 7 October 2026.</p><p><strong>Current period:</strong> 1 October 2025–30 September 2026. <strong>Previous period:</strong> 1 October 2024–30 September 2025.</p><p>Some records do not contain every field, so bedroom, tenure and days-to-sell breakdowns use the information available for those sales. Small category samples are noted and should be treated cautiously.</p><p>This report is general market commentary, not a registered valuation or legal, financial, tax or building advice.</p><p class="small">Prepared by Edita Andrijasevic – Raine &amp; Horne · Licensed Agent · Updated 7 October 2026.</p>
+</div></div></section>
 </main>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-card">
-      <h2>Edita Andrijasevic - Raine <span style="color:#ffb200">&amp;</span> Horne</h2>
-      <p>Helping West Auckland homeowners with clear property advice, suburb-specific market insight, buyer-focused marketing and confident negotiation.</p>
-      <p class="small">Edita Andrijasevic (Licensee 20027060) is a Licensed Agent under the Real Estate Agents Act 2008. This report is general market commentary and is not a registered valuation.</p>
-      <p><a href="tel:+6421765234">021 765 234</a><a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a></p>
-      <a class="footer-cta" href="/free-home-appraisal-lynfield/">Ask Edita For A Lynfield Appraisal</a>
-
-      <div class="footer-link-grid">
-        <div class="footer-links"><h3>Market Reports</h3><a href="/market-reports/lynfield/">Lynfield Market Report</a><a href="/market-reports/blockhouse-bay/">Blockhouse Bay Market Report</a><a href="/market-reports/titirangi/">Titirangi Market Report</a><a href="/market-reports/">All Market Reports</a></div>
-        <div class="footer-links"><h3>Seller Services</h3><a href="/free-home-appraisal-lynfield/">Free Property Appraisal</a><a href="/services/selling-your-home-west-auckland/">Selling Your Home</a><a href="/services/home-presentation-advice-west-auckland/">Home Presentation Advice</a><a href="/services/real-estate-negotiation-support/">Negotiation Support</a><a href="/amplify-property-marketing/">Amplify Property Marketing</a></div>
-      </div>
-    </div>
-
-    <div class="footer-card">
-      <h2>Office Location</h2>
-      <p>Raine &amp; Horne<br>9 Sheridan Drive, New Lynn, Auckland 0600</p>
-      <div style="overflow:hidden;border-radius:18px;border:1px solid rgba(255,255,255,.12);background:#fff">
-        <iframe
-          src="https://www.google.com/maps?q=9%20Sheridan%20Drive%2C%20New%20Lynn%2C%20Auckland%200600%2C%20New%20Zealand&output=embed"
-          title="Edita Andrijasevic Raine and Horne office location map"
-          width="100%"
-          height="290"
-          style="border:0;display:block"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-(function(){
-  var toggle=document.querySelector('.menu-toggle');
-  var nav=document.getElementById('primary-navigation');
-  if(toggle&&nav){
-    toggle.addEventListener('click',function(){
-      var open=nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded',String(open));
-      toggle.textContent=open?'Close menu':'Menu';
-    });
-  }
-  document.querySelectorAll('.nav-dropdown').forEach(function(d){
-    d.addEventListener('toggle',function(){
-      if(d.open) document.querySelectorAll('.nav-dropdown').forEach(function(other){if(other!==d) other.removeAttribute('open');});
-    });
-  });
-})();
-</script>
-<script src="/js/formspree-redirect.js" defer></script>
-</body>
-</html>
+<footer><div class="footer-inner"><div class="footer-card"><div class="footer-name">Edita Andrijasevic</div><p class="footer-brand">Raine &amp; Horne</p><p>Property appraisals, selling advice and local market reports across Lynfield and West Auckland.</p><div class="footer-link-grid"><div class="footer-links"><a href="/real-estate-agent-lynfield/">Lynfield Real Estate Agent</a><a href="/free-home-appraisal-lynfield/">Free Lynfield Property Appraisal</a><a href="/market-reports/">All Market Reports</a><a href="/contact.html">Contact Edita</a></div><div class="footer-links"><a href="tel:+6421765234">021 765 234</a><a href="mailto:edita.andrijasevic@blockhousebay.rh.co.nz">edita.andrijasevic@blockhousebay.rh.co.nz</a><a href="https://www.raineandhorne.co.nz/blockhousebay" target="_blank" rel="noopener">Raine &amp; Horne Office</a><a href="https://share.google/ddO9ayximJFNs2muB" target="_blank" rel="noopener">Google Business Profile</a></div></div></div>
+<div class="footer-card"><h2 class="question-heading"><span class="gold-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>Where Is Edita’s Raine & Horne Office?</span></h2><p>Raine &amp; Horne<br>9 Sheridan Drive, New Lynn, Auckland 0600</p><div style="overflow:hidden;border-radius:18px;border:1px solid rgba(255,255,255,.12);background:#fff"><iframe src="https://www.google.com/maps?q=9%20Sheridan%20Drive%2C%20New%20Lynn%2C%20Auckland%200600%2C%20New%20Zealand&output=embed" title="Edita Andrijasevic Raine and Horne office location map" width="100%" height="290" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></div></div></footer>
+<script>(function(){const btn=document.querySelector('.menu-toggle');const nav=document.getElementById('primary-navigation');if(!btn||!nav)return;btn.addEventListener('click',function(){const open=nav.classList.toggle('is-open');btn.setAttribute('aria-expanded',open?'true':'false');});document.addEventListener('click',function(e){if(window.innerWidth<=1020&&!e.target.closest('.nav')){nav.classList.remove('is-open');btn.setAttribute('aria-expanded','false');}});})();</script>
+</body></html>
