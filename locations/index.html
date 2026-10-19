@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-88WTQFKQV6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-88WTQFKQV6');
-</script>
+ <script src="/analytics.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Areas We Serve West Auckland | Edita Andrijasevic</title>
@@ -76,6 +68,24 @@
     a {
       color: inherit;
       text-decoration: none;
+    }
+    /* Contextual links remain visible in both light and dark sections. */
+    main a.location-inline-link {
+      color: inherit;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: #9b6b00;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+    main .dark-section a.location-inline-link {
+      color: #ffb200;
+      text-decoration-color: currentColor;
+    }
+    main a.location-inline-link:hover { text-decoration-thickness: 3px; }
+    main a.location-inline-link:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 3px;
     }
     .topbar {
       background: var(--dark);
@@ -970,7 +980,7 @@
             "name": "Should I use the location page or a suburb appraisal page?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Use the location page to choose the suburb most relevant to your property. Each suburb appraisal page gives more specific local selling advice for that area."
+              "text": "Use this page to find your suburb. The suburb agent page explains local selling advice and how Edita can help; the suburb appraisal page focuses on understanding your property’s likely value and requesting an appraisal."
             }
           },
           {
@@ -1099,8 +1109,8 @@
           </p>
           <div class="hero-proof">
             <div class="proof-card">
-              <strong>11 local pages</strong>
-              <span>clear suburb-specific appraisal advice</span>
+              <strong>11 suburbs</strong>
+              <span>local selling and appraisal advice</span>
             </div>
             <div class="proof-card">
               <strong>Edita Andrijasevic</strong>
@@ -1146,7 +1156,7 @@
           <div class="card">
             <h3>Local pricing context</h3>
             <p>
-              The right strategy depends on recent comparable sales, current competition, property condition and how buyers are likely to judge the home.
+              Our <a class="location-inline-link" href="/market-reports/">suburb property market reports</a> provide local sales context. Your pricing strategy should also reflect current competition, property condition and how buyers are likely to judge your home.
             </p>
           </div>
           <div class="card">
@@ -1161,7 +1171,7 @@
     <section class="highlight" id="local-pages">
       <div class="container">
         <div class="section-title">
-          <span class="eyebrow">Local appraisal pages</span>
+          <span class="eyebrow">Local real estate advice</span>
           <h2>Choose Your West Auckland Suburb</h2>
           <p>
             Select your suburb below for more specific local advice about buyer demand, pricing, property type,
@@ -1171,80 +1181,47 @@
         <div class="grid-3">
           <article class="card">
             <h3>Titirangi</h3>
-            <p>
-              Local selling advice for homes where privacy, bush setting, sunlight, access, presentation and lifestyle appeal can strongly influence buyer confidence.
-            </p>
-            <a class="card-link" href="/free-home-appraisal-titirangi/">Free home appraisal Titirangi</a>
+            <p>For advice on presenting privacy, bush setting, sunlight and access, speak with a <a class="location-inline-link" href="/real-estate-agent-titirangi/">real estate agent in Titirangi</a>. A <a class="location-inline-link" href="/free-home-appraisal-titirangi/">free home appraisal in Titirangi</a> can help you weigh these features alongside recent comparable sales.</p>
           </article>
           <article class="card">
             <h3>Blockhouse Bay</h3>
-            <p>
-              Appraisal advice for family homes, land value, school appeal, renovation potential, buyer demand, presentation and negotiation strategy.
-            </p>
-            <a class="card-link" href="/free-home-appraisal-blockhouse-bay/">Free home appraisal Blockhouse Bay</a>
+            <p>Working with a <a class="location-inline-link" href="/real-estate-agent-blockhouse-bay/">Blockhouse Bay real estate agent</a> helps you consider family-home appeal, presentation and land value together. Start with a <a class="location-inline-link" href="/free-home-appraisal-blockhouse-bay/">free property appraisal in Blockhouse Bay</a> to discuss your property and its likely selling range.</p>
           </article>
           <article class="card">
             <h3>Lynfield</h3>
-            <p>
-              Local advice around school zones, family-home appeal, presentation, pricing, buyer demand and campaign strategy.
-            </p>
-            <a class="card-link" href="/free-home-appraisal-lynfield/">Free home appraisal Lynfield</a>
+            <p>School zones, presentation and family-home appeal all deserve attention when selling. A <a class="location-inline-link" href="/real-estate-agent-lynfield/">local real estate agent in Lynfield</a> can help plan your campaign, while a <a class="location-inline-link" href="/free-home-appraisal-lynfield/">free home appraisal in Lynfield</a> gives you a starting point for pricing.</p>
           </article>
           <article class="card">
             <h3>New Lynn</h3>
-            <p>
-              Selling advice for properties where transport, convenience, buyer demand, value positioning and local competition can influence the result.
-            </p>
-            <a class="card-link" href="/free-home-appraisal-new-lynn/">Free home appraisal New Lynn</a>
+            <p>Transport, convenience and competition can influence how buyers compare your home. Discuss your selling options with a <a class="location-inline-link" href="/real-estate-agent-new-lynn/">New Lynn real estate agent</a> and request a <a class="location-inline-link" href="/free-home-appraisal-new-lynn/">free property appraisal in New Lynn</a> before deciding on your asking price.</p>
           </article>
           <article class="card">
             <h3>Kelston</h3>
-            <p>
-              Property appraisal advice for Kelston homeowners, including value positioning, buyer demand, presentation and nearby competition.
-            </p>
-            <a class="card-link" href="/free-home-appraisal-kelston/">Free home appraisal Kelston</a>
+            <p>If you are weighing up when to sell, a <a class="location-inline-link" href="/real-estate-agent-kelston/">real estate agent in Kelston</a> can help you assess preparation, buyer demand and nearby competition. A <a class="location-inline-link" href="/free-home-appraisal-kelston/">free home appraisal in Kelston</a> puts that advice into the context of your own property.</p>
           </article>
           <article class="card">
             <h3>Green Bay</h3>
-            <p>
-              Local advice for sellers where lifestyle appeal, family buyers, local demand, presentation and pricing strategy matter.
-            </p>
-            <a class="card-link" href="/free-home-appraisal-green-bay/">Free home appraisal Green Bay</a>
+            <p>Lifestyle appeal and presentation help shape the way buyers see a home. Work with a <a class="location-inline-link" href="/real-estate-agent-green-bay/">Green Bay real estate agent</a> to plan your sale, or arrange a <a class="location-inline-link" href="/free-home-appraisal-green-bay/">free property appraisal in Green Bay</a> if you are still exploring your options.</p>
           </article>
           <article class="card">
             <h3>Glen Eden</h3>
-            <p>
-              Appraisal advice around buyer activity, property type, pricing strategy, presentation and marketing approach.
-            </p>
-            <a class="card-link" href="/free-home-appraisal-glen-eden/">Free home appraisal Glen Eden</a>
+            <p>Different property types need different pricing and marketing decisions. A <a class="location-inline-link" href="/real-estate-agent-glen-eden/">real estate agent in Glen Eden</a> can explain your options, and a <a class="location-inline-link" href="/free-home-appraisal-glen-eden/">free home appraisal in Glen Eden</a> can help you compare your home with recent local sales.</p>
           </article>
           <article class="card">
             <h3>Mount Roskill</h3>
-            <p>
-              Selling advice for Mount Roskill homeowners, including buyer demand, location appeal, family needs and pricing strategy.
-            </p>
-            <a class="card-link" href="/free-home-appraisal-mount-roskill/">Free home appraisal Mount Roskill</a>
+            <p>For guidance on location appeal, family buyers and preparation, talk with a <a class="location-inline-link" href="/real-estate-agent-mount-roskill/">Mount Roskill real estate agent</a>. Request a <a class="location-inline-link" href="/free-home-appraisal-mount-roskill/">free property appraisal in Mount Roskill</a> to explore a selling range that reflects your home and current competition.</p>
           </article>
           <article class="card">
             <h3>New Windsor</h3>
-            <p>
-              Local appraisal advice for sellers where access, buyer demand, presentation, local competition and selling options are important.
-            </p>
-            <a class="card-link" href="/free-home-appraisal-new-windsor/">Free home appraisal New Windsor</a>
+            <p>Access, presentation and nearby competing homes can all affect your selling approach. A <a class="location-inline-link" href="/real-estate-agent-new-windsor/">local real estate agent in New Windsor</a> can help you plan ahead, starting with a <a class="location-inline-link" href="/free-home-appraisal-new-windsor/">free home appraisal in New Windsor</a> tailored to your property.</p>
           </article>
           <article class="card">
             <h3>Glendene</h3>
-            <p>
-              Selling advice for Glendene homeowners, including pricing, buyer demand, presentation and local campaign strategy.
-            </p>
-            <a class="card-link" href="/free-home-appraisal-glendene/">Free home appraisal Glendene</a>
+            <p>A <a class="location-inline-link" href="/real-estate-agent-glendene/">real estate agent in Glendene</a> can help you connect pricing, presentation and marketing into a practical selling plan. If you want to understand your likely value first, arrange a <a class="location-inline-link" href="/free-home-appraisal-glendene/">free property appraisal in Glendene</a>.</p>
           </article>
           <article class="card">
             <h3>Avondale</h3>
-            <p>
-              Local advice around buyer demand, transport appeal, local competition, pricing, presentation and campaign planning.
-            </p>
-            <a class="card-link" href="/free-home-appraisal-avondale/">Free home appraisal Avondale</a>
+            <p>Transport appeal, property condition and buyer demand all matter when planning your campaign. Speak with an <a class="location-inline-link" href="/real-estate-agent-avondale/">Avondale real estate agent</a>, or begin with a <a class="location-inline-link" href="/free-home-appraisal-avondale/">free home appraisal in Avondale</a> to understand how your home compares locally.</p>
           </article>
         </div>
       </div>
@@ -1398,32 +1375,32 @@
           <h2>Real Estate Selling Services Across West Auckland</h2>
           <p>
             Whether you are ready to sell now or simply planning ahead, the right advice can help you make
-            better decisions before you go to market.
+            better decisions before you go to market. Our <a class="location-inline-link" href="/services/">West Auckland real estate services</a> cover the preparation, marketing and negotiation involved in selling your home.
           </p>
         </div>
         <div class="grid-3">
           <div class="card">
             <h3>Free Property Appraisal</h3>
             <p>
-              Understand your likely selling range using recent local sales, current competition, buyer demand, condition and timing.
+              A <a class="location-inline-link" href="/free-home-appraisal-west-auckland/">free property appraisal in West Auckland</a> helps you understand your likely selling range using recent local sales, current competition, buyer demand and property condition.
             </p>
           </div>
           <div class="card">
             <h3>Pricing &amp; Selling Strategy</h3>
             <p>
-              Choose the right pricing method, campaign style and timing so your property attracts serious buyers with confidence.
+              Our advice on <a class="location-inline-link" href="/services/selling-your-home-west-auckland/">selling your home in West Auckland</a> brings pricing, campaign timing and buyer follow-up together. We can also explain how a <a class="location-inline-link" href="/property-deadline-sale-west-auckland/">deadline sale</a> or <a class="location-inline-link" href="/property-auctions-west-auckland/">property auction</a> would work before you choose a method.
             </p>
           </div>
           <div class="card">
             <h3>Presentation Advice</h3>
             <p>
-              Decide what to improve, what to leave and how to make the home feel more appealing before spending money.
+              Before spending money, our <a class="location-inline-link" href="/services/home-presentation-advice-west-auckland/">home presentation advice</a> helps you decide what to improve, what to leave and how to make your home more appealing to buyers.
             </p>
           </div>
           <div class="card">
             <h3>AI-Powered Buyer Marketing</h3>
             <p>
-              Raine &amp; Horne Amplify can help place your property in front of more relevant buyers across key digital channels.
+              <a class="location-inline-link" href="/amplify-property-marketing/">Raine &amp; Horne Amplify property marketing</a> can help place your property in front of relevant buyers across digital channels as part of your selling campaign.
             </p>
           </div>
           <div class="card">
@@ -1435,7 +1412,7 @@
           <div class="card">
             <h3>Negotiation Support</h3>
             <p>
-              From first enquiry to final offer, we help manage motivation, conditions, timing and price conversations with care.
+              Our <a class="location-inline-link" href="/services/real-estate-negotiation-support/">real estate negotiation support</a> helps you assess buyer interest, offer conditions, timing and price before deciding how to respond.
             </p>
           </div>
         </div>
@@ -1545,8 +1522,7 @@
         <details>
           <summary>Should I use this page or a suburb appraisal page?</summary>
           <p>
-            Use this page to choose the suburb that best matches your property. Each suburb page gives more
-            specific advice about local buyer demand, pricing and selling strategy.
+            Use this page to find your suburb. The suburb agent page explains local selling advice and how Edita can help; the suburb appraisal page focuses on understanding your property’s likely value and requesting an appraisal.
           </p>
         </details>
         <details>
