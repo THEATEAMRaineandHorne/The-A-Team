@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
   <script src="/analytics.js" defer></script>
   <meta charset="UTF-8">
-  <link rel="preload" as="image" href="/images/175-avondale-road-waterfront.webp" fetchpriority="high">
+  <link rel="preload" as="image" type="image/avif" href="/images/175-avondale-road-waterfront.avif" fetchpriority="high">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Real Estate Agents Avondale | Edita</title>
   <link rel="preload" href="/fonts/raine-horne-regular.ttf" as="font" type="font/ttf" crossorigin>
@@ -439,7 +438,7 @@
     .hero-rating { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.22); border-radius: 999px; padding: 10px 18px; margin-top: 20px; font-size: 15px; }
     .hero-rating .stars { color: var(--gold); letter-spacing: 2px; font-size: 17px; }
     section { padding: 76px 20px; }
-    section:not(.hero) { content-visibility: auto; contain-intrinsic-size: 800px; }
+    section:not(.hero) { content-visibility: visible; }
     #reviews { content-visibility: visible !important; contain-intrinsic-size: auto !important; }
     .container { max-width: 1220px; margin: 0 auto; }
     .section-label { display: inline-block; background: var(--gold); color: var(--dark); padding: 8px 13px; border-radius: 999px; font-size: 13px; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 18px; }
@@ -553,7 +552,8 @@
     .hero-overlay { background: linear-gradient(90deg,rgba(0,0,0,.83),rgba(0,0,0,.48)); }
     .sale-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
     .sale-card { background: #fff; border: 1px solid var(--border); border-radius: 20px; overflow: hidden; }
-    .sale-card > img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+    .sale-card picture { display: block; }
+    .sale-card picture img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
     .sale-copy { padding: 22px; }
     .sale-copy h3 { font-size: 24px; line-height: 1.2; margin: 10px 0; }
     .sale-copy p { color: #4d4e50; margin: 0 0 16px; }
@@ -578,6 +578,14 @@
     main a.context-link:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
     @media(min-width:701px) and (max-width:1000px) { .sale-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
     @media(max-width:700px) { .sale-grid { grid-template-columns: 1fr; } .sale-copy { padding: 22px; } .hero-proof { grid-template-columns: 1fr; } }
+
+    /* Explicit surfaces and text colours for readable sale cards and dark sections. */
+    .sale-card, .sale-copy { background: #ffffff; color: #202020; }
+    .sale-copy p, .sale-copy .sale-date, .sale-copy time { color: #4d4e50; }
+    .sale-copy strong, .sale-copy h3, .sale-copy a.context-link { color: #202020; }
+    .dark-section .section-title p, .dark-section .marketing-copy { color: #eeeeee; }
+    .nav-links a:hover, .nav-parent:hover, .breadcrumb-bar a:hover { color: #795600; }
+    #google-reviews { content-visibility: visible; }
 </style>
 </head>
 <body>
@@ -670,6 +678,7 @@
   <main id="main-content">
   <section class="hero" aria-labelledby="hero-heading">
     <picture>
+      <source type="image/avif" srcset="/images/175-avondale-road-waterfront.avif">
       <img src="/images/175-avondale-road-waterfront.webp" alt="Garden and gazebo overlooking the Whau River at 175 Avondale Road, previously sold by Edita" class="hero-bg" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async">
     </picture>
     <div class="hero-overlay"></div>
@@ -696,7 +705,42 @@
         <p>Read customer reviews about Edita’s communication, advice and support throughout the buying and selling process.</p>
       </div>
       <div class="reviews-card">
-        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <script>
+          (function () {
+            var section = document.getElementById('google-reviews');
+            var started = false;
+            function loadReviews() {
+              if (started) return;
+              started = true;
+              var script = document.createElement('script');
+              script.src = 'https://static.elfsight.com/platform/platform.js';
+              script.async = true;
+              document.head.appendChild(script);
+            }
+            function scheduleReviews() {
+              if ('requestIdleCallback' in window) {
+                window.requestIdleCallback(loadReviews, { timeout: 1500 });
+              } else {
+                window.setTimeout(loadReviews, 0);
+              }
+            }
+            function watchReviews() {
+              if (!section || !('IntersectionObserver' in window)) {
+                scheduleReviews();
+                return;
+              }
+              var observer = new IntersectionObserver(function (entries) {
+                if (entries.some(function (entry) { return entry.isIntersecting; })) {
+                  observer.disconnect();
+                  scheduleReviews();
+                }
+              }, { rootMargin: '300px 0px' });
+              observer.observe(section);
+            }
+            if (document.readyState === 'complete') watchReviews();
+            else window.addEventListener('load', watchReviews, { once: true });
+          }());
+        </script>
         <div class="elfsight-app-34088271-82e1-4cab-9136-f9e1296fc7d5" data-elfsight-app-lazy></div>
       </div>
     </div>
@@ -716,12 +760,12 @@
   <section class="soft-bg" id="avondale-sales"><div class="container">
     <div class="section-title"><span class="section-label">Sold by Edita</span><h2>Six Avondale properties. Six different selling situations.</h2><p>These historical sales show the preparation, buyer conversations and decisions behind each result. The photographs are from those campaigns; historical sale prices are not estimates of today’s value.</p></div>
     <div class="sale-grid">
-      <article class="sale-card" id="rosebank-road"><img src="/images/3-120-rosebank-road-garden.webp" alt="Brick unit, lawn and raised vegetable beds at 3/120 Rosebank Road, Avondale" width="1200" height="800" loading="lazy" decoding="async"><div class="sale-copy"><p class="sale-date">Sold <time datetime="2023-11-15">15 November 2023</time> · $660,000</p><h3>3/120 Rosebank Road</h3><p class="sale-theme">Preparing a rear unit and managing shared-property questions</p><p>The middle unit in a group of three had a garden, double glazing and a garage. Shared-area upkeep needed attention before buyers arrived.</p><p>We coordinated maintenance arrangements and advised on tidying, presentation and repairs raised through buyer feedback. A shared water-meter arrangement also needed to be explained during the campaign.</p><p><strong>The outcome:</strong> Three offers were received at the deadline, and the property sold to a first-home buyer through a multi-offer process.</p></div></article>
-      <article class="sale-card" id="blockhouse-bay-road"><img src="/images/2-20-blockhouse-bay-road-deck.webp" alt="Single-level home opening onto a timber deck and garden at 2/20 Blockhouse Bay Road, Avondale" width="1200" height="800" loading="lazy" decoding="async"><div class="sale-copy"><p class="sale-date">Sold <time datetime="2022-05-30">30 May 2022</time> · Price not disclosed</p><h3>2/20 Blockhouse Bay Road</h3><p class="sale-theme">Improving the approach to a home down a shared driveway</p><p>This single-level two-bedroom home combined a leafy outlook, a fenced yard and a distinctive 1970s style. The long shared driveway needed cleaning and weeding, while surrounding presentation also influenced first impressions.</p><p>We suggested approaching neighbours together with the vendors, explaining the upcoming sale and encouraging everyone to help keep the shared approach tidy.</p><p><strong>The local lesson:</strong> A home’s presentation starts before buyers reach its front door. This sale is recorded on 30 May 2022.</p></div></article>
-      <article class="sale-card" id="wingate-street"><img src="/images/7-29-wingate-street-exterior.webp" alt="Upper-level unit with a covered balcony, external stairs and garage at 7/29 Wingate Street, Avondale" width="1200" height="800" loading="lazy" decoding="async"><div class="sale-copy"><p class="sale-date">Sold <time datetime="2017-04-28">28 April 2017</time> · $552,750</p><h3>7/29 Wingate Street</h3><p class="sale-theme">Making a renovated unit ready for every viewing</p><p>A renovated kitchen and bathroom, fresh finishes, a garage and storage were useful selling features. Road noise, limited privacy and nearby outdoor clutter were factors buyers also considered.</p><p>The vendor temporarily stayed with family, taking the dog along and clearing belongings from the home and garage. That made viewings easier to arrange and helped present the available space.</p><p><strong>The outcome:</strong> The campaign attracted local and out-of-area buyers, and the property sold under the hammer.</p></div></article>
-      <article class="sale-card" id="saintly-lane"><img src="/images/52-saintly-lane-courtyard.webp" alt="Private courtyard with garden, outdoor seating and doors opening into 52 Saintly Lane, Avondale" width="1200" height="800" loading="lazy" decoding="async"><div class="sale-copy"><p class="sale-date">Sold <time datetime="2015-04-17">17 April 2015</time> · $456,000</p><h3>52 Saintly Lane</h3><p class="sale-theme">Coordinating a sale and the next purchase</p><p>This two-level home offered a gated setting, dedicated parking and a small backyard. Its proximity to the railway and two-level layout suited some buyers better than others.</p><p>The vendor also needed to find her next home. We helped with the search and offer process, then worked through the timing of both transactions.</p><p><strong>The outcome:</strong> The sale and purchase settlement dates were aligned, helping the vendor make a coordinated move.</p></div></article>
-      <article class="sale-card" id="53b-avondale-road"><img src="/images/53b-avondale-road-bungalow.webp" alt="Weatherboard bungalow and lawn with a trampoline at 53B Avondale Road, Avondale" width="1200" height="800" loading="lazy" decoding="async"><div class="sale-copy"><p class="sale-date">Sold <time datetime="2017-08-06">6 August 2017</time> · $702,000</p><h3>53B Avondale Road</h3><p class="sale-theme">Continuing the campaign after a withdrawn offer</p><p>A rear position, flat outdoor area, three bedrooms and a study gave this relocated bungalow several points of appeal. Its unusual layout and visible signs of its relocation history needed to be considered in buyer conversations.</p><p>An early conditional offer was withdrawn before acceptance. We continued the campaign and followed up with a later buyer who returned for another viewing.</p><p><strong>The outcome:</strong> The vendors accepted a subsequent offer with a three-day finance condition and moved within nine weeks. Our <a class="context-link" href="/services/real-estate-negotiation-support/">negotiation support</a> considers conditions and timing alongside price.</p></div></article>
-      <article class="sale-card" id="175-avondale-road"><img src="/images/175-avondale-road-waterfront.webp" alt="Established garden and gazebo beside the Whau River at 175 Avondale Road, Avondale" width="1200" height="800" loading="lazy" decoding="async"><div class="sale-copy"><p class="sale-date">Sold <time datetime="2015-04-19">19 April 2015</time> · $950,000</p><h3>175 Avondale Road</h3><p class="sale-theme">Following up on interest after an auction passed in</p><p>The approximately 1,244 m² section, established garden and Whau River outlook distinguished this property from competing homes. The marketing focused on its setting, lifestyle and land.</p><p>After three weeks of viewings, the property went to auction and passed in without a bid. A buyer who had missed the auction called afterwards, and we arranged a viewing with her mother within an hour.</p><p><strong>The outcome:</strong> An unconditional offer was received that day. The sale illustrates why follow-up remains important after the auction itself finishes.</p></div></article>
+      <article class="sale-card" id="rosebank-road"><picture><source type="image/avif" srcset="/images/3-120-rosebank-road-garden.avif"><img src="/images/3-120-rosebank-road-garden.webp" alt="Brick unit, lawn and raised vegetable beds at 3/120 Rosebank Road, Avondale" width="1200" height="800" loading="lazy" decoding="async"></picture><div class="sale-copy"><p class="sale-date">Sold <time datetime="2023-11-15">15 November 2023</time> · $660,000</p><h3>3/120 Rosebank Road</h3><p class="sale-theme">Preparing a rear unit and managing shared-property questions</p><p>The middle unit in a group of three had a garden, double glazing and a garage. Shared-area upkeep needed attention before buyers arrived.</p><p>We coordinated maintenance arrangements and advised on tidying, presentation and repairs raised through buyer feedback. A shared water-meter arrangement also needed to be explained during the campaign.</p><p><strong>The outcome:</strong> Three offers were received at the deadline, and the property sold to a first-home buyer through a multi-offer process.</p></div></article>
+      <article class="sale-card" id="blockhouse-bay-road"><picture><source type="image/avif" srcset="/images/2-20-blockhouse-bay-road-deck.avif"><img src="/images/2-20-blockhouse-bay-road-deck.webp" alt="Single-level home opening onto a timber deck and garden at 2/20 Blockhouse Bay Road, Avondale" width="1200" height="800" loading="lazy" decoding="async"></picture><div class="sale-copy"><p class="sale-date">Sold <time datetime="2022-05-30">30 May 2022</time> · Price not disclosed</p><h3>2/20 Blockhouse Bay Road</h3><p class="sale-theme">Improving the approach to a home down a shared driveway</p><p>This single-level two-bedroom home combined a leafy outlook, a fenced yard and a distinctive 1970s style. The long shared driveway needed cleaning and weeding, while surrounding presentation also influenced first impressions.</p><p>We suggested approaching neighbours together with the vendors, explaining the upcoming sale and encouraging everyone to help keep the shared approach tidy.</p><p><strong>The local lesson:</strong> A home’s presentation starts before buyers reach its front door. This sale is recorded on 30 May 2022.</p></div></article>
+      <article class="sale-card" id="wingate-street"><picture><source type="image/avif" srcset="/images/7-29-wingate-street-exterior.avif"><img src="/images/7-29-wingate-street-exterior.webp" alt="Upper-level unit with a covered balcony, external stairs and garage at 7/29 Wingate Street, Avondale" width="1200" height="800" loading="lazy" decoding="async"></picture><div class="sale-copy"><p class="sale-date">Sold <time datetime="2017-04-28">28 April 2017</time> · $552,750</p><h3>7/29 Wingate Street</h3><p class="sale-theme">Making a renovated unit ready for every viewing</p><p>A renovated kitchen and bathroom, fresh finishes, a garage and storage were useful selling features. Road noise, limited privacy and nearby outdoor clutter were factors buyers also considered.</p><p>The vendor temporarily stayed with family, taking the dog along and clearing belongings from the home and garage. That made viewings easier to arrange and helped present the available space.</p><p><strong>The outcome:</strong> The campaign attracted local and out-of-area buyers, and the property sold under the hammer.</p></div></article>
+      <article class="sale-card" id="saintly-lane"><picture><source type="image/avif" srcset="/images/52-saintly-lane-courtyard.avif"><img src="/images/52-saintly-lane-courtyard.webp" alt="Private courtyard with garden, outdoor seating and doors opening into 52 Saintly Lane, Avondale" width="1200" height="800" loading="lazy" decoding="async"></picture><div class="sale-copy"><p class="sale-date">Sold <time datetime="2015-04-17">17 April 2015</time> · $456,000</p><h3>52 Saintly Lane</h3><p class="sale-theme">Coordinating a sale and the next purchase</p><p>This two-level home offered a gated setting, dedicated parking and a small backyard. Its proximity to the railway and two-level layout suited some buyers better than others.</p><p>The vendor also needed to find her next home. We helped with the search and offer process, then worked through the timing of both transactions.</p><p><strong>The outcome:</strong> The sale and purchase settlement dates were aligned, helping the vendor make a coordinated move.</p></div></article>
+      <article class="sale-card" id="53b-avondale-road"><picture><source type="image/avif" srcset="/images/53b-avondale-road-bungalow.avif"><img src="/images/53b-avondale-road-bungalow.webp" alt="Weatherboard bungalow and lawn with a trampoline at 53B Avondale Road, Avondale" width="1200" height="800" loading="lazy" decoding="async"></picture><div class="sale-copy"><p class="sale-date">Sold <time datetime="2017-08-06">6 August 2017</time> · $702,000</p><h3>53B Avondale Road</h3><p class="sale-theme">Continuing the campaign after a withdrawn offer</p><p>A rear position, flat outdoor area, three bedrooms and a study gave this relocated bungalow several points of appeal. Its unusual layout and visible signs of its relocation history needed to be considered in buyer conversations.</p><p>An early conditional offer was withdrawn before acceptance. We continued the campaign and followed up with a later buyer who returned for another viewing.</p><p><strong>The outcome:</strong> The vendors accepted a subsequent offer with a three-day finance condition and moved within nine weeks. Our <a class="context-link" href="/services/real-estate-negotiation-support/">negotiation support</a> considers conditions and timing alongside price.</p></div></article>
+      <article class="sale-card" id="175-avondale-road"><picture><source type="image/avif" srcset="/images/175-avondale-road-waterfront.avif"><img src="/images/175-avondale-road-waterfront.webp" alt="Established garden and gazebo beside the Whau River at 175 Avondale Road, Avondale" width="1200" height="800" loading="lazy" decoding="async"></picture><div class="sale-copy"><p class="sale-date">Sold <time datetime="2015-04-19">19 April 2015</time> · $950,000</p><h3>175 Avondale Road</h3><p class="sale-theme">Following up on interest after an auction passed in</p><p>The approximately 1,244 m² section, established garden and Whau River outlook distinguished this property from competing homes. The marketing focused on its setting, lifestyle and land.</p><p>After three weeks of viewings, the property went to auction and passed in without a bid. A buyer who had missed the auction called afterwards, and we arranged a viewing with her mother within an hour.</p><p><strong>The outcome:</strong> An unconditional offer was received that day. The sale illustrates why follow-up remains important after the auction itself finishes.</p></div></article>
     </div>
   </div></section>
 
@@ -901,3 +945,4 @@
   </script>
 </body>
 </html>
+
