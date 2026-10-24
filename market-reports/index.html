@@ -112,6 +112,32 @@
     textarea { min-height: 100px; resize: vertical; }
     .form-button { width: 100%; border: 2px solid var(--dark); background: var(--gold); color: var(--dark); margin-top: 4px; }
     .form-button:hover { background: var(--dark); color: var(--gold); }
+    .reports-layout { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 34px; align-items: start; }
+    .reports-main .grid-3 { grid-template-columns: repeat(2, 1fr); }
+    .reports-main { min-width: 0; }
+    .reports-sidebar { position: static; }
+    @media (min-width: 981px) and (min-height: 950px) { .reports-sidebar { position: sticky; top: 140px; } }
+    .widget { background: var(--white); border: 1px solid var(--border); border-top: 6px solid var(--gold); border-radius: 20px; padding: 20px 22px; box-shadow: 0 18px 50px rgba(0,0,0,0.10); }
+    .widget h2 { font-size: 22px; line-height: 1.15; margin: 0 0 6px; }
+    .widget > p { color: var(--muted); font-size: 14px; line-height: 1.45; margin: 0 0 10px; }
+    .widget form { gap: 7px; }
+    .widget label { font-size: 13px; }
+    .widget input, .widget select, .widget textarea { padding: 8px 11px; font-size: 15px; margin-top: 3px; }
+    .widget textarea { min-height: 54px; }
+    .widget .form-button { padding: 12px 18px; }
+    .widget .small { font-size: 12px; }
+    .widget-call { display: block; text-align: center; margin: 10px 0 0; font-weight: 900; }
+    .widget-call a { color: var(--dark); border-bottom: 3px solid var(--gold); }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 18px; background: var(--white); margin-bottom: 14px; }
+    .glance { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 480px; }
+    .glance th, .glance td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+    .glance thead th { background: var(--dark); color: var(--white); font-size: 13px; text-transform: uppercase; letter-spacing: .4px; }
+    .glance tbody th a { font-weight: 900; border-bottom: 2px solid var(--gold); }
+    .glance tbody tr:last-child th, .glance tbody tr:last-child td { border-bottom: 0; }
+    .glance td.up { color: #1d7a3a; font-weight: 800; }
+    .glance td.down { color: #a33a1f; font-weight: 800; }
+    .data-note { font-size: 13px; color: var(--muted); margin: 0 0 34px; }
+    .reports-main h3.sub { font-size: 24px; margin: 0 0 16px; }
     .faq details { background: var(--white); border: 1px solid var(--border); border-radius: 15px; padding: 18px; margin-bottom: 13px; }
     .faq summary { cursor: pointer; font-size: 18px; font-weight: 900; }
     .seo-footer { background: #202020 !important; color: #ffffff !important; padding: 54px 20px !important; }
@@ -153,6 +179,16 @@
       .hero-content { padding: 62px 18px; }
       section { padding: 58px 18px; }
     }
+      @media (max-width: 980px) {
+      .reports-layout { grid-template-columns: minmax(0, 1fr); }
+      .reports-sidebar { position: static; }
+    }
+    @media (max-width: 640px) {
+      .reports-main .grid-3 { grid-template-columns: 1fr; }
+      .glance { min-width: 0; font-size: 13px; }
+      .glance th, .glance td { padding: 9px 7px; }
+      .glance thead th { font-size: 11px; letter-spacing: 0; }
+    }
   </style>
 <script type="application/ld+json">
 {
@@ -183,7 +219,7 @@
       "publisher": {
         "@id": "https://peterandedita.co.nz/#realestateagent"
       },
-      "dateModified": "2026-10-07T09:00:00+13:00",
+      "dateModified": "2026-10-25T09:00:00+13:00",
       "inLanguage": "en-NZ"
     },
     {
@@ -209,17 +245,72 @@
       "@id": "https://peterandedita.co.nz/market-reports/#reportlist",
       "name": "West Auckland suburb market reports",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "url": "https://peterandedita.co.nz/market-reports/titirangi/", "name": "Titirangi Market Report" },
-        { "@type": "ListItem", "position": 2, "url": "https://peterandedita.co.nz/market-reports/blockhouse-bay/", "name": "Blockhouse Bay Market Report" },
-        { "@type": "ListItem", "position": 3, "url": "https://peterandedita.co.nz/market-reports/lynfield/", "name": "Lynfield Market Report" },
-        { "@type": "ListItem", "position": 4, "url": "https://peterandedita.co.nz/market-reports/new-lynn/", "name": "New Lynn Market Report" },
-        { "@type": "ListItem", "position": 5, "url": "https://peterandedita.co.nz/market-reports/glen-eden/", "name": "Glen Eden Market Report" },
-        { "@type": "ListItem", "position": 6, "url": "https://peterandedita.co.nz/market-reports/green-bay/", "name": "Green Bay Market Report" },
-        { "@type": "ListItem", "position": 7, "url": "https://peterandedita.co.nz/market-reports/avondale/", "name": "Avondale Market Report" },
-        { "@type": "ListItem", "position": 8, "url": "https://peterandedita.co.nz/market-reports/glendene/", "name": "Glendene Market Report" },
-        { "@type": "ListItem", "position": 9, "url": "https://peterandedita.co.nz/market-reports/kelston/", "name": "Kelston Market Report" },
-        { "@type": "ListItem", "position": 10, "url": "https://peterandedita.co.nz/market-reports/mount-roskill/", "name": "Mount Roskill Market Report" },
-        { "@type": "ListItem", "position": 11, "url": "https://peterandedita.co.nz/market-reports/new-windsor/", "name": "New Windsor Market Report" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://peterandedita.co.nz/market-reports/titirangi/",
+          "name": "Titirangi Market Report"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://peterandedita.co.nz/market-reports/blockhouse-bay/",
+          "name": "Blockhouse Bay Market Report"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://peterandedita.co.nz/market-reports/lynfield/",
+          "name": "Lynfield Market Report"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://peterandedita.co.nz/market-reports/new-lynn/",
+          "name": "New Lynn Market Report"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://peterandedita.co.nz/market-reports/glen-eden/",
+          "name": "Glen Eden Market Report"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://peterandedita.co.nz/market-reports/green-bay/",
+          "name": "Green Bay Market Report"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "url": "https://peterandedita.co.nz/market-reports/avondale/",
+          "name": "Avondale Market Report"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "url": "https://peterandedita.co.nz/market-reports/glendene/",
+          "name": "Glendene Market Report"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "url": "https://peterandedita.co.nz/market-reports/kelston/",
+          "name": "Kelston Market Report"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "url": "https://peterandedita.co.nz/market-reports/mount-roskill/",
+          "name": "Mount Roskill Market Report"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "url": "https://peterandedita.co.nz/market-reports/new-windsor/",
+          "name": "New Windsor Market Report"
+        }
       ]
     },
     {
@@ -244,10 +335,26 @@
         },
         {
           "@type": "Question",
-          "name": "How often should these be updated?",
+          "name": "How often are these reports updated?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For best accuracy, update suburb reports when new 12-month sales exports are available or when market conditions change noticeably."
+            "text": "Every month. Each report is refreshed with the latest rolling 12 months of REINZ sales and compared with the 12 months before."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do the median and average price differ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The median is the middle sale, so a few very high or low sales barely move it. The average adds every sale together, so one unusual sale can pull it a long way."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a report to price my home?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use it as context only. Your likely selling range depends on your land, condition, title, presentation and the most relevant recent sales, which an appraisal checks."
           }
         }
       ]
@@ -340,6 +447,7 @@
       <strong>Market Reports</strong>
     </div>
   </div>
+  </header>
   <main>
     <section class="hero">
       <img
@@ -371,126 +479,95 @@
         <div class="section-title">
           <span class="eyebrow">All Reports</span>
           <h2>Choose Your Suburb Market Report</h2>
-          <p>Each report is written for homeowners and focuses on practical selling advice, not just raw statistics.</p>
+          <p>Each report compares the latest 12 months of REINZ sales with the 12 months before, then explains what the numbers mean for homeowners thinking of selling.</p>
         </div>
-        <div class="grid-3">
-          <article class="card">
-            <h3>Titirangi</h3>
-            <p>Titirangi property market report for homeowners based on REINZ sales analysis and local buyer behaviour.</p>
-            <a class="card-link" href="/market-reports/titirangi/">View Titirangi report</a>
-          </article>
-          <article class="card">
-            <h3>Blockhouse Bay</h3>
-            <p>Blockhouse Bay property market report covering recent sales, pricing evidence and seller advice.</p>
-            <a class="card-link" href="/market-reports/blockhouse-bay/">View Blockhouse Bay report</a>
-          </article>
-          <article class="card">
-            <h3>Lynfield</h3>
-            <p>Lynfield property market report with suburb-specific price, sales and buyer demand insight.</p>
-            <a class="card-link" href="/market-reports/lynfield/">View Lynfield report</a>
-          </article>
-          <article class="card">
-            <h3>New Lynn</h3>
-            <p>New Lynn property market report using REINZ sales data and practical seller guidance.</p>
-            <a class="card-link" href="/market-reports/new-lynn/">View New Lynn report</a>
-          </article>
-          <article class="card">
-            <h3>Glen Eden</h3>
-            <p>Glen Eden property market report covering median price, days to sell and property type performance.</p>
-            <a class="card-link" href="/market-reports/glen-eden/">View Glen Eden report</a>
-          </article>
-          <article class="card">
-            <h3>Green Bay</h3>
-            <p>Green Bay property market report with current REINZ sales analysis and seller strategy.</p>
-            <a class="card-link" href="/market-reports/green-bay/">View Green Bay report</a>
-          </article>
-          <article class="card">
-            <h3>Avondale</h3>
-            <p>Avondale property market report with REINZ sales analysis and practical homeowner insight.</p>
-            <a class="card-link" href="/market-reports/avondale/">View Avondale report</a>
-          </article>
-          <article class="card">
-            <h3>Glendene</h3>
-            <p>Glendene property market report with latest sales evidence, price movement and seller advice.</p>
-            <a class="card-link" href="/market-reports/glendene/">View Glendene report</a>
-          </article>
-          <article class="card">
-            <h3>Kelston</h3>
-            <p>Kelston property market report covering buyer activity, sales evidence and market conditions.</p>
-            <a class="card-link" href="/market-reports/kelston/">View Kelston report</a>
-          </article>
-          <article class="card">
-            <h3>Mount Roskill</h3>
-            <p>Mount Roskill property market report with current REINZ sales data and homeowner guidance.</p>
-            <a class="card-link" href="/market-reports/mount-roskill/">View Mount Roskill report</a>
-          </article>
-          <article class="card">
-            <h3>New Windsor</h3>
-            <p>New Windsor property market report with REINZ sales analysis and suburb-specific seller advice.</p>
-            <a class="card-link" href="/market-reports/new-windsor/">View New Windsor report</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="highlight">
-      <div class="container">
-        <div class="section-title">
-          <span class="eyebrow">How To Use These Reports</span>
-          <h2>Use the suburb report as a guide, then check your exact property</h2>
-          <p>
-            A suburb median is helpful, but your own likely selling range depends on land, floor area, title,
-            condition, presentation, access, sun, views, consent records and the most relevant comparable sales.
-          </p>
-        </div>
-        <div class="note-box">
-          <strong style="display:block; font-size:17px; color:var(--dark); margin-bottom:8px;">Best next step</strong>
-          Read the report for your suburb, then request an appraisal so the data can be adjusted to your property,
-          your street and your likely buyer pool.
-        </div>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#request-appraisal">Request an appraisal</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-title">
-          <span class="eyebrow">Quick Links</span>
-          <h2>Market Report Links</h2>
-        </div>
-        <div class="quicklinks">
-          <a href="/market-reports/titirangi/">Titirangi</a>
-          <a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
-          <a href="/market-reports/lynfield/">Lynfield</a>
-          <a href="/market-reports/new-lynn/">New Lynn</a>
-          <a href="/market-reports/glen-eden/">Glen Eden</a>
-          <a href="/market-reports/green-bay/">Green Bay</a>
-          <a href="/market-reports/avondale/">Avondale</a>
-          <a href="/market-reports/glendene/">Glendene</a>
-          <a href="/market-reports/kelston/">Kelston</a>
-          <a href="/market-reports/mount-roskill/">Mount Roskill</a>
-          <a href="/market-reports/new-windsor/">New Windsor</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="soft-section" id="request-appraisal">
-      <div class="container">
-        <div class="section-title" style="margin:0 auto 36px; text-align:center; max-width:720px;">
-          <span class="eyebrow">Thinking Of Selling?</span>
-          <h2>Ask For A Suburb-Specific Appraisal</h2>
-          <p>
-            Edita can help you understand your likely selling range, what buyers may object to, what to prepare
-            and how to position your property in the current West Auckland market.
-          </p>
-        </div>
-        <div class="hero-form-wrap">
-          <div class="hero-form">
-            <h2>Request A Property Appraisal</h2>
-            <p>Tell us a little about your property. No pressure, just clear local advice.</p>
-            <form action="https://formspree.io/f/mdabnpgl" method="POST">
+        <div class="reports-layout">
+          <div class="reports-main">
+            <h3 class="sub">West Auckland at a glance</h3>
+            <div class="table-wrap">
+              <table class="glance">
+                <caption class="sr-only" style="position:absolute;left:-9999px;">Median sale price, annual change, median days to sell and number of sales by suburb</caption>
+                <thead><tr><th scope="col">Suburb</th><th scope="col">Median price</th><th scope="col">vs last year</th><th scope="col">Days to sell</th><th scope="col">Sales</th></tr></thead>
+                <tbody>
+                <tr><th scope="row"><a href="/market-reports/titirangi/">Titirangi</a></th><td>$1,057,500</td><td class="up">+3.9%</td><td>43 days</td><td>202</td></tr>
+                <tr><th scope="row"><a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a></th><td>$1,119,500</td><td class="up">+8.7%</td><td>42 days</td><td>264</td></tr>
+                <tr><th scope="row"><a href="/market-reports/lynfield/">Lynfield</a></th><td>$1,082,500</td><td class="down">-7.7%</td><td>39.5 days</td><td>62</td></tr>
+                <tr><th scope="row"><a href="/market-reports/new-lynn/">New Lynn</a></th><td>$828,000</td><td class="up">+1.0%</td><td>45 days</td><td>359</td></tr>
+                <tr><th scope="row"><a href="/market-reports/glen-eden/">Glen Eden</a></th><td>$794,000</td><td class="down">-3.8%</td><td>47 days</td><td>414</td></tr>
+                <tr><th scope="row"><a href="/market-reports/green-bay/">Green Bay</a></th><td>$1,050,000</td><td class="down">-3.2%</td><td>42 days</td><td>75</td></tr>
+                <tr><th scope="row"><a href="/market-reports/avondale/">Avondale</a></th><td>$906,250</td><td class="up">+3.0%</td><td>46 days</td><td>312</td></tr>
+                <tr><th scope="row"><a href="/market-reports/glendene/">Glendene</a></th><td>$868,000</td><td class="down">-1.4%</td><td>37 days</td><td>102</td></tr>
+                <tr><th scope="row"><a href="/market-reports/kelston/">Kelston</a></th><td>$775,000</td><td class="down">-0.6%</td><td>63 days</td><td>78</td></tr>
+                <tr><th scope="row"><a href="/market-reports/mount-roskill/">Mount Roskill</a></th><td>$993,800</td><td class="up">+4.6%</td><td>42 days</td><td>405</td></tr>
+                <tr><th scope="row"><a href="/market-reports/new-windsor/">New Windsor</a></th><td>$1,015,000</td><td class="down">-12.9%</td><td>38 days</td><td>135</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="data-note">REINZ sales, 1 October 2025–30 September 2026, compared with the previous 12 months. Taken from each suburb report, which is refreshed monthly. A suburb median is not a valuation of any single home.</p>
+            <h3 class="sub">Suburb reports</h3>
+            <div class="grid-3">
+              <article class="card">
+                <h3>Titirangi</h3>
+                <p>Prices firmer over the year, with fewer sales and faster selling times. Every home still needs to be read on its own merits.</p>
+                <a class="card-link" href="/market-reports/titirangi/">View Titirangi report</a>
+              </article>
+              <article class="card">
+                <h3>Blockhouse Bay</h3>
+                <p>Prices strengthened with fewer completed sales, and selling time was almost unchanged.</p>
+                <a class="card-link" href="/market-reports/blockhouse-bay/">View Blockhouse Bay report</a>
+              </article>
+              <article class="card">
+                <h3>Lynfield</h3>
+                <p>A small, family-focused market. Prices sit below last year, but homes sold faster.</p>
+                <a class="card-link" href="/market-reports/lynfield/">View Lynfield report</a>
+              </article>
+              <article class="card">
+                <h3>New Lynn</h3>
+                <p>A mixed market where houses, townhouses, units and apartments all sell at different price points.</p>
+                <a class="card-link" href="/market-reports/new-lynn/">View New Lynn report</a>
+              </article>
+              <article class="card">
+                <h3>Glen Eden</h3>
+                <p>More sales than last year, but softer prices and longer selling times. Buyers are value-conscious.</p>
+                <a class="card-link" href="/market-reports/glen-eden/">View Glen Eden report</a>
+              </article>
+              <article class="card">
+                <h3>Green Bay</h3>
+                <p>A small, house-led market. Prices are softer than a year ago, but buyers act when property and price line up.</p>
+                <a class="card-link" href="/market-reports/green-bay/">View Green Bay report</a>
+              </article>
+              <article class="card">
+                <h3>Avondale</h3>
+                <p>The median edged up, but sales fell and homes took longer to sell. Comparable sales matter more than the headline.</p>
+                <a class="card-link" href="/market-reports/avondale/">View Avondale report</a>
+              </article>
+              <article class="card">
+                <h3>Glendene</h3>
+                <p>Prices slightly softer, while sales activity and selling speed held up well.</p>
+                <a class="card-link" href="/market-reports/glendene/">View Glendene report</a>
+              </article>
+              <article class="card">
+                <h3>Kelston</h3>
+                <p>The median was broadly stable, but selling times stayed long. Value and presentation matter.</p>
+                <a class="card-link" href="/market-reports/kelston/">View Kelston report</a>
+              </article>
+              <article class="card">
+                <h3>Mount Roskill</h3>
+                <p>Median and average prices are up on last year, with sales volume unchanged.</p>
+                <a class="card-link" href="/market-reports/mount-roskill/">View Mount Roskill report</a>
+              </article>
+              <article class="card">
+                <h3>New Windsor</h3>
+                <p>A property-specific market where street position, land, access and property type change buyer response.</p>
+                <a class="card-link" href="/market-reports/new-windsor/">View New Windsor report</a>
+              </article>
+            </div>
+          </div>
+          <aside class="reports-sidebar" id="request-appraisal" aria-label="Request a property appraisal">
+            <div class="widget">
+              <h2>Get a suburb-specific appraisal</h2>
+              <p>Edita will turn the suburb figures into a likely selling range for your home, and call you back the same day.</p>
+              <form action="https://formspree.io/f/mdabnpgl" method="POST">
               <input type="hidden" name="_subject" value="New market reports page appraisal enquiry">
               <label>
                 Name
@@ -538,8 +615,8 @@
                 </select>
               </label>
               <label>
-                What would you like advice about?
-                <textarea name="message" placeholder="Example: value, timing, preparation, buyer demand, marketing, downsizing, investment property, cross-lease, etc."></textarea>
+                Anything we should know?
+                <textarea name="message" rows="2" placeholder="Optional: value, timing, preparation, downsizing, cross-lease…"></textarea>
               </label>
               <button class="btn form-button" type="submit">Send My Enquiry</button>
               <p class="small" style="color:#555555; margin:0;">
@@ -547,7 +624,75 @@
                 <a href="/privacy-policy.html" style="color:#202020; font-weight:800;">Privacy Policy</a>
               </p>
             </form>
-          </div>
+              <p class="widget-call">Or call Edita: <a href="tel:+6421765234">021 765 234</a></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">How To Use These Reports</span>
+          <h2>Use the suburb report as a guide, then check your exact property</h2>
+          <p>
+            A suburb median is helpful, but your own likely selling range depends on land, floor area, title,
+            condition, presentation, access, sun, views, consent records and the most relevant comparable sales.
+          </p>
+        </div>
+        <div class="note-box">
+          <strong style="display:block; font-size:17px; color:var(--dark); margin-bottom:8px;">Best next step</strong>
+          Read the report for your suburb, then request an appraisal so the data can be adjusted to your property,
+          your street and your likely buyer pool.
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#request-appraisal">Request an appraisal</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Reading The Numbers</span>
+          <h2>Why suburb figures can move more than real values</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Property mix</h3>
+            <p>A suburb median blends houses, townhouses, units and apartments. When more of one type sells, the median moves even if values have not. See <a href="/articles/new-lynn-median-price-explained.html" style="color:#9b6b00; font-weight:900; text-decoration:underline;">why the New Lynn median looks lower than house prices</a>.</p>
+          </article>
+          <article class="card">
+            <h3>Outliers</h3>
+            <p>One unusual sale can drag an average for a whole year. Mount Roskill is a good example: <a href="/articles/mount-roskill-average-price-explained.html" style="color:#9b6b00; font-weight:900; text-decoration:underline;">why its average price misled</a>.</p>
+          </article>
+          <article class="card">
+            <h3>Small markets</h3>
+            <p>Suburbs with fewer sales swing more from period to period. <a href="/articles/glen-eden-house-prices-2026.html" style="color:#9b6b00; font-weight:900; text-decoration:underline;">Glen Eden house prices explained</a> shows how the sales window changes the picture.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Quick Links</span>
+          <h2>Market Report Links</h2>
+        </div>
+        <div class="quicklinks">
+          <a href="/market-reports/titirangi/">Titirangi</a>
+          <a href="/market-reports/blockhouse-bay/">Blockhouse Bay</a>
+          <a href="/market-reports/lynfield/">Lynfield</a>
+          <a href="/market-reports/new-lynn/">New Lynn</a>
+          <a href="/market-reports/glen-eden/">Glen Eden</a>
+          <a href="/market-reports/green-bay/">Green Bay</a>
+          <a href="/market-reports/avondale/">Avondale</a>
+          <a href="/market-reports/glendene/">Glendene</a>
+          <a href="/market-reports/kelston/">Kelston</a>
+          <a href="/market-reports/mount-roskill/">Mount Roskill</a>
+          <a href="/market-reports/new-windsor/">New Windsor</a>
         </div>
       </div>
     </section>
@@ -567,8 +712,16 @@
           <p>REINZ sales exports help show actual recorded sales evidence, which is more useful than relying only on asking prices or online estimates.</p>
         </details>
         <details>
-          <summary>How often should these be updated?</summary>
-          <p>For best accuracy, update suburb reports when new 12-month sales exports are available or when market conditions change noticeably.</p>
+          <summary>How often are these reports updated?</summary>
+          <p>Every month. Each report is refreshed with the latest rolling 12 months of REINZ sales and compared with the 12 months before.</p>
+        </details>
+        <details>
+          <summary>Why do the median and average price differ?</summary>
+          <p>The median is the middle sale, so a few very high or low sales barely move it. The average adds every sale together, so one unusual sale can pull it a long way.</p>
+        </details>
+        <details>
+          <summary>Can I use a report to price my home?</summary>
+          <p>Use it as context only. Your likely selling range depends on your land, condition, title, presentation and the most relevant recent sales, which an appraisal checks.</p>
         </details>
       </div>
     </section>
