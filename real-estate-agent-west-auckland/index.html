@@ -24,17 +24,17 @@
 <link href="/favicon.ico" rel="icon"/>
 <style>
     :root {
-      -charcoal: #4D4E50;
-      -gold: #E1AA14;
-      -gold-dark: #b8870f;
-      -light: #f7f6f2;
-      -white: #ffffff;
-      -text: #222222;
-      -muted: #666666;
-      -border: #e5e1d8;
-      -shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
-      -radius: 18px;
-      -max: 1180px;
+      --charcoal: #4D4E50;
+      --gold: #E1AA14;
+      --gold-dark: #b8870f;
+      --light: #f7f6f2;
+      --white: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --border: #e5e1d8;
+      --shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
+      --radius: 18px;
+      --max: 1180px;
     }
 
     * {
@@ -48,8 +48,8 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      color: var(-text);
-      background: var(-white);
+      color: var(--text);
+      background: var(--white);
       line-height: 1.6;
     }
 
@@ -69,13 +69,13 @@
     }
 
     .container {
-      width: min(var(-max), calc(100% - 32px));
+      width: min(var(--max), calc(100% - 32px));
       margin: 0 auto;
     }
 
     .top-bar {
-      background: var(-charcoal);
-      color: var(-white);
+      background: var(--charcoal);
+      color: var(--white);
       font-size: 14px;
     }
 
@@ -89,13 +89,13 @@
     }
 
     .top-bar a {
-      color: var(-white);
+      color: var(--white);
       font-weight: 600;
     }
 
     header {
-      background: var(-white);
-      border-bottom: 1px solid var(-border);
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -114,23 +114,26 @@
       align-items: center;
       gap: 12px;
       font-weight: 800;
-      color: var(-charcoal);
-      min-width: 220px;
+      color: var(--charcoal);
+      min-width: 0;
+      flex-shrink: 0;
     }
 
     .brand img {
-      width: 90px;
+      width: 46px;
       height: auto;
     }
 
     .brand-text {
-      display: none;
+      display: inline;
+      font-size: 16px;
+      line-height: 1.25;
     }
 
     .nav-toggle {
       display: none;
-      background: var(-charcoal);
-      color: var(-white);
+      background: var(--charcoal);
+      color: var(--white);
       border: 0;
       border-radius: 8px;
       padding: 10px 13px;
@@ -157,7 +160,7 @@
       align-items: center;
       gap: 6px;
       padding: 12px 11px;
-      color: var(-charcoal);
+      color: var(--charcoal);
       font-weight: 700;
       font-size: 15px;
       background: transparent;
@@ -169,7 +172,7 @@
     .nav-menu a, .dropdown-toggle { white-space: nowrap; }
     .nav-menu > li > a:hover,
     .dropdown-toggle:hover {
-      color: var(-gold-dark);
+      color: var(--gold-dark);
     }
 
     .dropdown-menu {
@@ -178,9 +181,9 @@
       top: 100%;
       left: 0;
       min-width: 260px;
-      background: var(-white);
-      box-shadow: var(-shadow);
-      border: 1px solid var(-border);
+      background: var(--white);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
       border-radius: 14px;
       padding: 10px;
       z-index: 1001;
@@ -195,19 +198,19 @@
       display: block;
       padding: 10px 12px;
       border-radius: 9px;
-      color: var(-charcoal);
+      color: var(--charcoal);
       font-weight: 650;
       font-size: 14px;
     }
 
     .dropdown-menu a:hover {
-      background: var(-light);
-      color: var(-gold-dark);
+      background: var(--light);
+      color: var(--gold-dark);
     }
 
     .nav-cta {
-      background: var(-gold);
-      color: var(-charcoal) !important;
+      background: var(--gold);
+      color: var(--charcoal) !important;
       border-radius: 999px;
       padding: 11px 16px !important;
       font-weight: 800 !important;
@@ -215,15 +218,15 @@
     }
 
     .nav-cta:hover {
-      background: var(-gold-dark);
-      color: var(-white) !important;
+      background: var(--gold-dark);
+      color: var(--white) !important;
     }
 
     .hero {
       position: relative;
       overflow: hidden;
-      background: var(-charcoal);
-      color: var(-white);
+      background: var(--charcoal);
+      color: var(--white);
       padding: 82px 0 76px;
     }
 
@@ -260,7 +263,7 @@
     }
 
     .eyebrow {
-      color: var(-gold);
+      color: var(--gold);
       text-transform: uppercase;
       letter-spacing: 0.08em;
       font-size: 13px;
@@ -303,44 +306,44 @@
     }
 
     .btn-primary {
-      background: var(-gold);
-      color: var(-charcoal);
+      background: var(--gold);
+      color: var(--charcoal);
     }
 
     .btn-primary:hover {
-      background: var(-gold-dark);
-      color: var(-white);
+      background: var(--gold-dark);
+      color: var(--white);
     }
 
     .btn-secondary {
       background: transparent;
-      color: var(-white);
+      color: var(--white);
       border-color: rgba(255, 255, 255, 0.75);
     }
 
     .btn-secondary:hover {
-      background: var(-white);
-      color: var(-charcoal);
+      background: var(--white);
+      color: var(--charcoal);
     }
 
     .btn-outline {
       background: transparent;
-      color: var(-charcoal);
-      border-color: var(-charcoal);
+      color: var(--charcoal);
+      border-color: var(--charcoal);
     }
 
     .btn-outline:hover {
-      background: var(-charcoal);
-      color: var(-white);
+      background: var(--charcoal);
+      color: var(--white);
     }
 
     .hero-card {
       background: rgba(255, 255, 255, 0.96);
-      color: var(-charcoal);
-      border-radius: var(-radius);
+      color: var(--charcoal);
+      border-radius: var(--radius);
       padding: 28px;
-      box-shadow: var(-shadow);
-      border-top: 6px solid var(-gold);
+      box-shadow: var(--shadow);
+      border-top: 6px solid var(--gold);
     }
 
     .hero-card h2 {
@@ -359,11 +362,11 @@
     }
 
     .section-light {
-      background: var(-light);
+      background: var(--light);
     }
 
     .section h2 {
-      color: var(-charcoal);
+      color: var(--charcoal);
       font-size: clamp(28px, 3vw, 40px);
       line-height: 1.15;
       letter-spacing: -0.03em;
@@ -371,7 +374,7 @@
     }
 
     .section h3 {
-      color: var(-charcoal);
+      color: var(--charcoal);
       margin: 0 0 10px;
       font-size: 21px;
       line-height: 1.25;
@@ -390,15 +393,15 @@
     }
 
     .feature-card {
-      background: var(-white);
-      border: 1px solid var(-border);
-      border-radius: var(-radius);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       padding: 24px;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
     }
 
     .section-light .feature-card {
-      background: var(-white);
+      background: var(--white);
     }
 
     .check-list {
@@ -411,8 +414,8 @@
     }
 
     .check-list li {
-      background: var(-white);
-      border: 1px solid var(-border);
+      background: var(--white);
+      border: 1px solid var(--border);
       border-radius: 12px;
       padding: 12px 14px 12px 42px;
       position: relative;
@@ -424,7 +427,7 @@
       position: absolute;
       left: 15px;
       top: 10px;
-      color: var(-gold-dark);
+      color: var(--gold-dark);
       font-weight: 900;
     }
 
@@ -436,20 +439,20 @@
     }
 
     .suburb-links a {
-      background: var(-white);
-      border: 1px solid var(-border);
-      border-left: 5px solid var(-gold);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--gold);
       border-radius: 13px;
       padding: 14px 15px;
       font-weight: 800;
-      color: var(-charcoal);
+      color: var(--charcoal);
       transition: 0.2s ease;
     }
 
     .suburb-links a:hover {
       transform: translateY(-2px);
-      box-shadow: var(-shadow);
-      color: var(-gold-dark);
+      box-shadow: var(--shadow);
+      color: var(--gold-dark);
     }
 
     .split {
@@ -460,16 +463,16 @@
     }
 
     .highlight-box {
-      background: var(-charcoal);
-      color: var(-white);
-      border-radius: var(-radius);
+      background: var(--charcoal);
+      color: var(--white);
+      border-radius: var(--radius);
       padding: 34px;
-      border-top: 6px solid var(-gold);
+      border-top: 6px solid var(--gold);
     }
 
     .highlight-box h2,
     .highlight-box h3 {
-      color: var(-white);
+      color: var(--white);
     }
 
     .highlight-box p {
@@ -484,25 +487,25 @@
     }
 
     .stat {
-      background: var(-white);
-      border-radius: var(-radius);
-      border: 1px solid var(-border);
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
       padding: 22px;
       text-align: center;
     }
 
     .stat strong {
       display: block;
-      color: var(-gold-dark);
+      color: var(--gold-dark);
       font-size: 28px;
       line-height: 1.1;
       margin-bottom: 6px;
     }
 
     .faq-item {
-      background: var(-white);
-      border: 1px solid var(-border);
-      border-radius: var(-radius);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       padding: 22px;
       margin-top: 14px;
     }
@@ -514,13 +517,13 @@
     .cta-section {
       background:
         linear-gradient(115deg, rgba(77, 78, 80, 0.96), rgba(77, 78, 80, 0.82)),
-        var(-charcoal);
-      color: var(-white);
+        var(--charcoal);
+      color: var(--white);
       padding: 76px 0;
     }
 
     .cta-section h2 {
-      color: var(-white);
+      color: var(--white);
       font-size: clamp(30px, 4vw, 48px);
       margin: 0 0 18px;
       line-height: 1.12;
@@ -533,19 +536,19 @@
     }
 
     .text-link {
-      color: var(-gold-dark);
+      color: var(--gold-dark);
       font-weight: 800;
       text-decoration: underline;
       text-underline-offset: 4px;
     }
 
     .section-light .text-link {
-      color: var(-gold-dark);
+      color: var(--gold-dark);
     }
 
     footer {
       background: #2f3032;
-      color: var(-white);
+      color: var(--white);
       padding: 48px 0 22px;
     }
 
@@ -558,7 +561,7 @@
 
     footer h3 {
       margin: 0 0 13px;
-      color: var(-gold);
+      color: var(--gold);
     }
 
     footer a {
@@ -568,7 +571,7 @@
     }
 
     footer a:hover {
-      color: var(-gold);
+      color: var(--gold);
     }
 
     .footer-bottom {
@@ -594,7 +597,11 @@
       }
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 1180px) {
+      .brand { max-width: calc(100% - 110px); }
+      .brand-text { font-size: 14px; }
+      .dropdown:focus-within .dropdown-menu { display: none; }
+      .dropdown.open:focus-within .dropdown-menu { display: block; }
       .top-bar-inner {
         justify-content: center;
         text-align: center;
@@ -602,10 +609,11 @@
 
       .nav {
         min-height: 72px;
+        position: relative;
       }
 
       .brand img {
-        width: 80px;
+        width: 40px;
       }
 
       .nav-toggle {
@@ -618,9 +626,9 @@
         top: 72px;
         left: 0;
         right: 0;
-        background: var(-white);
-        border-bottom: 1px solid var(-border);
-        box-shadow: var(-shadow);
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
         padding: 12px 16px 18px;
         flex-direction: column;
         align-items: stretch;
@@ -631,7 +639,7 @@
         display: flex;
         max-height: calc(100vh - 72px);
         overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
+        --webkit-overflow-scrolling: touch;
       }
 
       .nav-menu > li > a,
@@ -639,7 +647,7 @@
         width: 100%;
         justify-content: space-between;
         padding: 13px 10px;
-        border-bottom: 1px solid var(-border);
+        border-bottom: 1px solid var(--border);
       }
 
       .dropdown-menu {
@@ -650,7 +658,7 @@
         border: 0;
         border-radius: 0;
         padding: 4px 0 10px 14px;
-        background: var(-light);
+        background: var(--light);
       }
 
       .dropdown.open .dropdown-menu {
@@ -671,6 +679,9 @@
         justify-content: center !important;
       }
 
+    }
+
+    @media (max-width: 760px) {
       .hero {
         padding: 58px 0 54px;
       }
@@ -719,7 +730,7 @@
 <img alt="Raine and Horne real estate logo" height="90" loading="eager" src="/images/rh-logo.webp" width="90"/>
 <span class="brand-text">Edita Andrijasevic - Raine &amp; Horne</span>
 </a>
-<button aria-expanded="false" aria-label="Open menu" class="nav-toggle" type="button">
+<button aria-expanded="false" aria-controls="navMenu" aria-label="Open menu" class="nav-toggle" type="button">
         ☰ Menu
       </button>
 <ul class="nav-menu" id="navMenu">
@@ -1066,6 +1077,8 @@
     navToggle.addEventListener('click', function () {
       const isOpen = navMenu.classList.toggle('active');
       navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      navToggle.textContent = isOpen ? '✕ Close' : '☰ Menu';
     });
 
     dropdownButtons.forEach(function (button) {
