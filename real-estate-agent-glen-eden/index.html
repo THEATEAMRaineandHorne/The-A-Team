@@ -383,7 +383,7 @@
           "name": "Does Edita Andrijasevic work in Glen Eden?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Glen Eden is one of Edita Andrijasevic's active areas within West Auckland. She works across Glen Eden, Kelston, Titirangi, New Lynn, Blockhouse Bay, Green Bay, Lynfield, Mount Roskill, New Windsor, Glendene and Avondale. Her Raine & Horne office is based at 9 Sheridan Drive, New Lynn."
+            "text": "Yes. Glen Eden is one of Edita's active areas within West Auckland. She works across Glen Eden, Kelston, Titirangi, New Lynn, Blockhouse Bay, Green Bay, Lynfield, Mount Roskill, New Windsor, Glendene and Avondale. Her Raine & Horne office is based at 9 Sheridan Drive, New Lynn."
           }
         }
       ]
@@ -608,6 +608,21 @@
       .dropdown-menu a, .dropdown-menu a:visited { width: 100% !important; min-height: 52px !important; display: flex !important; align-items: center !important; justify-content: center !important; border: 1px solid var(--border) !important; border-radius: 999px !important; background: #f5f0e6 !important; font-size: 17px !important; }
     }
   </style>
+<style id="mobile-overflow-fix">
+  @media (max-width: 760px) {
+    .seo-footer { padding-left: 16px !important; padding-right: 16px !important; }
+    .seo-footer-inner, .seo-footer-link-grid { grid-template-columns: minmax(0, 1fr) !important; }
+    .seo-footer-inner > *, .seo-footer-card, .pe-footer-card, .footer-card, .contact-card, .content-card, .article { min-width: 0; max-width: 100%; box-sizing: border-box; }
+    .seo-footer-card, .pe-footer-card, .footer-card { padding: 24px 18px !important; }
+    .seo-footer h2, .pe-footer-card h2, .footer-card h2 { font-size: 24px !important; }
+    .seo-footer a, .seo-footer p, .seo-footer h2, .pe-footer-card *, .footer-card *, .contact-card *, .content-card *, article p, article a, .notice { overflow-wrap: break-word; }
+    table, .data-table, .cost-table { display: block !important; max-width: 100% !important; overflow-x: auto !important; }
+    .seo-footer-contact { grid-template-columns: minmax(0, 1fr) !important; }
+    [class*="grid"] > *, [class*="wrap"] > *, main article, .contact-method { min-width: 0; }
+    a[href^="mailto:"], .seo-footer-contact a, .contact-method a { overflow-wrap: anywhere; }
+    .brand, .brand-name { min-width: 0; flex-wrap: wrap; }
+  }
+</style>
 </head>
 <body>
   <div class="topbar">
