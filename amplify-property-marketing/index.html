@@ -561,7 +561,23 @@
       }
     }
   ]
-}</script></head>
+}</script>
+<style>
+  /* Improve contrast on gold buttons */
+  a.btn:not(.btn-outline) {
+    background: #ffb200;
+    border-color: #ffb200;
+    color: #202020;
+  }
+
+  a.btn:not(.btn-outline):hover,
+  a.btn:not(.btn-outline):focus-visible {
+    background: #202020;
+    border-color: #202020;
+    color: #ffffff;
+  }
+</style>
+</head>
 <body>
 <header class="site-header">
 <div class="logo">Edita Andrijasevic</div>
