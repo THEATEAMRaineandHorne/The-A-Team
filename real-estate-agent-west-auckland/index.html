@@ -449,8 +449,29 @@
       transition: 0.2s ease;
     }
 
+    .suburb-map-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 26px;
+      align-items: stretch;
+    }
+
+    .suburb-map-split .suburb-links {
+      grid-template-columns: repeat(2, 1fr);
+      align-content: start;
+      margin-top: 0;
+    }
+
+    .office-map-col {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
     .office-map {
-      margin-top: 30px;
+      flex: 1;
+      min-height: 320px;
       border: 1px solid var(--border);
       border-radius: var(--radius);
       overflow: hidden;
@@ -460,7 +481,8 @@
     .office-map iframe {
       display: block;
       width: 100%;
-      height: 340px;
+      height: 100%;
+      min-height: 320px;
       border: 0;
     }
 
@@ -615,6 +637,14 @@
       .suburb-links {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      .suburb-map-split {
+        grid-template-columns: 1fr;
+      }
+
+      .suburb-map-split .suburb-links {
+        order: -1;
+      }
     }
 
     @media (max-width: 1180px) {
@@ -717,6 +747,7 @@
       .feature-grid,
       .check-list,
       .suburb-links,
+      .suburb-map-split .suburb-links,
       .stats-grid {
         grid-template-columns: 1fr;
       }
@@ -969,6 +1000,13 @@
 <p class="intro-text">
           Edita and the Raine &amp; Horne team help homeowners across many West Auckland suburbs. Choose your local area below for more specific appraisal and selling advice.
         </p>
+<div class="suburb-map-split">
+<div class="office-map-col">
+<div class="office-map">
+<iframe src="https://www.google.com/maps?q=9%20Sheridan%20Drive%2C%20New%20Lynn%2C%20Auckland%200600%2C%20New%20Zealand&amp;output=embed" title="Map of Edita Andrijasevic's Raine &amp; Horne office at 9 Sheridan Drive, New Lynn" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+</div>
+<p class="office-map-note">Edita's office is at 9 Sheridan Drive, New Lynn, central to the suburbs Edita covers. Edita arranges in-person property appointments at a time that suits you.</p>
+</div>
 <div class="suburb-links">
 <a href="/free-home-appraisal-blockhouse-bay/">Blockhouse Bay Appraisal</a>
 <a href="/free-home-appraisal-titirangi/">Titirangi Appraisal</a>
@@ -982,10 +1020,7 @@
 <a href="/free-home-appraisal-new-windsor/">New Windsor Appraisal</a>
 <a href="/free-home-appraisal-mount-roskill/">Mount Roskill Appraisal</a>
 </div>
-<div class="office-map">
-<iframe src="https://www.google.com/maps?q=9%20Sheridan%20Drive%2C%20New%20Lynn%2C%20Auckland%200600%2C%20New%20Zealand&amp;output=embed" title="Map of Edita Andrijasevic's Raine &amp; Horne office at 9 Sheridan Drive, New Lynn" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
 </div>
-<p class="office-map-note">Edita's office is at 9 Sheridan Drive, New Lynn, central to the suburbs listed above. Edita arranges in-person property appointments at a time that suits you.</p>
 </div>
 </section>
 <section class="section">
