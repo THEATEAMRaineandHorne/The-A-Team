@@ -73,6 +73,16 @@ Handle these files with extra care:
 - Use root-relative asset paths only where they are already the project convention and verify that they work on the live custom domain.
 - Do not change all pages in bulk merely to standardise a link or style. Propose the scoped affected pages first.
 
+## Monthly market report refresh
+
+- Start from the current file on `main` for each report. Never rebuild a report from a template, an older version or a newly generated page.
+- Change only the figures, dates and the wording those figures affect. Keep every section, table, FAQ, breadcrumb, byline and in-text link.
+- Leave everything between the `KEEP ON MONTHLY REFRESH` comments exactly as it is. That section holds no figures and carries the report's main seller links.
+- Before calculating any figures, count a sale once if the REINZ export lists it twice: same street, price within about 0.1%, and one record's agreement date matches the other record's sale date. One record often shows a lot number and the other a street number. Keep the record that has the agreement date, bedrooms and days to sell.
+- Before handing over, compare each report with the version it replaces. Each report must keep at least 10 unique internal destinations in the body, not counting breadcrumbs, including its own `real-estate-agent-[suburb]` and `free-home-appraisal-[suburb]` pages.
+- Report any removed link, section or FAQ, and any drop of more than about 10% in visible word count, and get Peter's approval before publishing.
+- Never put keyword tool data, search volumes or other internal SEO notes in page copy.
+
 ## Verification and hand-off
 
 Before opening a draft pull request:
