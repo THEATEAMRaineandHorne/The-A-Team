@@ -78,10 +78,11 @@ Handle these files with extra care:
 - Start from the current file on `main` for each report. Never rebuild a report from a template, an older version or a newly generated page.
 - Change only the figures, dates and the wording those figures affect. Keep every section, table, FAQ, breadcrumb, byline and in-text link.
 - Leave everything between the `KEEP ON MONTHLY REFRESH` comments exactly as it is. That section holds no figures and carries the report's main seller links.
-- Before calculating any figures, count a sale once if the REINZ export lists it twice: same street, price within about 0.1%, and one record's agreement date matches the other record's sale date. One record often shows a lot number and the other a street number. Keep the record that has the agreement date, bedrooms and days to sell.
+- Before calculating any figures, count a sale once if the REINZ export lists it twice: same street, price within about 0.1%, and one record's agreement date matches the other record's sale date. One record often shows a lot number and the other a street number. Keep the record that has the agreement date, bedrooms and days to sell. If one address appears twice within a few days at different prices, ask Peter which sale is right.
 - Before handing over, compare each report with the version it replaces. Each report must keep at least 10 unique internal destinations in the body, not counting breadcrumbs, including its own `real-estate-agent-[suburb]` and `free-home-appraisal-[suburb]` pages.
 - Report any removed link, section or FAQ, and any drop of more than about 10% in visible word count, and get Peter's approval before publishing.
 - Never put keyword tool data, search volumes or other internal SEO notes in page copy.
+- After each refresh is committed, purge the Cloudflare cache (Caching > Configuration > Purge Everything). Cloudflare holds images for up to a year and chart files keep the same names, so old charts stay live until the cache is purged. Then compare every live chart with GitHub.
 
 ## Verification and hand-off
 
