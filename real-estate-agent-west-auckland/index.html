@@ -777,6 +777,17 @@
     a[href^="mailto:"], .seo-footer-contact a, .contact-method a { overflow-wrap: anywhere; }
     .brand, .brand-name { min-width: 0; flex-wrap: wrap; }
   }
+    /* Keep the desktop menu inside the page width */
+    @media (min-width: 1181px) {
+      .nav { gap: 12px; }
+      .nav-menu { gap: 2px; }
+      .nav-menu > li > a, .dropdown-toggle { padding-left: 7px; padding-right: 7px; }
+      .nav-cta { padding: 11px 12px !important; }
+    }
+    @media (min-width: 1181px) and (max-width: 1240px) {
+      .brand-text { font-size: 15px; }
+      .nav-menu > li > a, .dropdown-toggle { font-size: 14px; padding-left: 5px; padding-right: 5px; }
+    }
 </style>
 </head>
 <body>
