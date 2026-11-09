@@ -306,7 +306,7 @@
         "breadcrumb": {
           "@id": "https://peterandedita.co.nz/real-estate-agent-titirangi/#breadcrumb"
         },
-        "dateModified": "2026-10-26T09:00:00+13:00",
+        "dateModified": "2026-11-09T14:30:00+13:00",
         "inLanguage": "en-NZ"
       },
       {
@@ -493,6 +493,29 @@
     .property-evidence-list { margin: 16px 0 0; padding-left: 20px; color: var(--muted); }
     .property-evidence-list li { margin-bottom: 10px; line-height: 1.55; }
     .evidence-note { margin-top: 22px; padding: 16px 18px; border-left: 4px solid var(--gold); background: var(--cream); color: var(--muted); font-size: 14px; }
+    .case-study { background: var(--dark); color: var(--white); border-color: #4a4a4a; }
+    .case-study-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 30px; align-items: start; }
+    .case-study-facts { background: rgba(255,255,255,0.06); border: 1px solid #4a4a4a; border-radius: 16px; padding: 4px 22px 20px; margin-top: 14px; }
+    .case-study-facts .property-evidence-list { color: #e5e5e5; }
+    .case-study-facts p { margin-top: 6px; }
+    .story-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 22px; margin-top: 26px; }
+    .card .story-tag { display: inline-block; background: var(--cream); color: #7a5300; border: 1px solid #f1d9a3; padding: 5px 11px; border-radius: 999px; font-size: 12px; font-weight: 900; letter-spacing: 0.4px; text-transform: uppercase; line-height: 1.4; margin: 0 0 12px; }
+    .card .story-meta { font-size: 14px; font-weight: 800; color: var(--charcoal); margin: 0 0 12px; }
+    .story-more { margin-top: 26px; background: var(--white); border: 1px solid var(--border); border-radius: 20px; box-shadow: 0 14px 38px rgba(0,0,0,0.05); }
+    .story-more summary { cursor: pointer; padding: 20px 26px; font-weight: 900; font-size: 18px; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .story-more summary::-webkit-details-marker { display: none; }
+    .story-more summary::after { content: "+"; flex: 0 0 34px; height: 34px; border-radius: 50%; background: var(--gold); color: var(--dark); display: flex; align-items: center; justify-content: center; font-size: 22px; line-height: 1; }
+    .story-more[open] summary::after { content: "\2013"; }
+    .story-more summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 20px; }
+    .story-more .story-grid { margin-top: 0; padding: 0 26px; }
+    .story-more .card { background: var(--soft); box-shadow: none; }
+    .story-also { color: var(--muted); margin: 20px 26px 26px; font-size: 15px; }
+    @media (max-width: 980px) {
+      .story-grid, .case-study-grid { grid-template-columns: 1fr; }
+      .story-more .story-grid { padding: 0 16px; }
+      .story-more summary { padding: 18px 18px; font-size: 17px; }
+      .story-also { margin: 18px 18px 22px; }
+    }
     .highlight { background: var(--cream); }
     .soft-bg { background: var(--soft); }
     .dark-section { background: var(--dark); color: var(--white); }
@@ -811,20 +834,35 @@
         </div>
       </div>
     </section>
-    <!-- VERIFIED TITIRANGI PROPERTY EXPERIENCE -->
+    <!-- TITIRANGI SOLD STORIES -->
     <section class="soft-bg" id="titirangi-property-experience">
       <div class="container">
         <div class="section-title">
-          <span class="section-label">First-Hand Property Experience</span>
-          <h2>Titirangi Properties Marketed by Edita</h2>
+          <span class="section-label">Titirangi Sold Stories</span>
+          <h2>Titirangi Homes Sold by Edita: What Each Sale Involved</h2>
           <p>
-            The following settled listings are drawn from agency property records supplied for this page. Edita Andrijasevic was a named listing agent on each. Public marketing prices are not presented as settled sale prices.
+            Every sale on this page comes from agency property records supplied for this page, and Edita Andrijasevic was a named listing agent on each. Prices shown are settled sale prices, not marketing prices. Each story explains what made the property different to sell and how the campaign dealt with it.
           </p>
         </div>
-        <div class="grid-2">
-          <article class="card">
-            <h3>773 South Titirangi Road</h3>
-            <p><a href="https://www.raineandhorne.co.nz/blockhousebay/properties/773-south-titirangi-road-titirangi-0604-auckland" style="color:#9b6b00; font-weight:900; text-decoration:underline;">View the Raine &amp; Horne sold property record →</a></p>
+        <article class="card case-study">
+          <span class="section-label">Campaign Case Study</span>
+          <h3 style="font-size:clamp(26px,3vw,38px); color:var(--white); margin-top:4px;">773 South Titirangi Road: Sustained Follow-Up Found the Right Buyer</h3>
+          <div class="case-study-grid">
+          <div>
+            <p style="color:#e5e5e5; margin-top:14px;">
+              The vendors wanted a result above the property's capital value during a market in which they had been receiving offers below their expectations. The property was launched on 6 August 2024 using a Deadline Sale campaign supported by professional property marketing and Raine &amp; Horne Amplify.
+            </p>
+            <p style="color:#e5e5e5; margin-top:14px;">
+              The home, known locally as The Old School House, needed a targeted campaign rather than a standard listing. The marketing set out the layout's options clearly and was aimed at the buyers most likely to see its potential: artists, trade professionals and multi-generational families.
+            </p>
+            <p style="color:#e5e5e5; margin-top:14px;">
+              The campaign generated substantial buyer interest. Three offers were presented but were not accepted by the vendors. Edita continued buyer follow-up and negotiation until a buyer was found who recognised the property's potential.
+            </p>
+            <p style="color:#e5e5e5; margin-top:14px;">
+              The property sold on 24 September 2024 for $1,320,000, which was $70,000 above its capital value. This is one completed campaign and does not guarantee the same outcome for another property. Amplify supported the wider campaign; no claim is made that any single marketing channel produced the result.
+            </p>
+          </div>
+          <div class="case-study-facts">
             <ul class="property-evidence-list">
               <li><strong>Sale price:</strong> $1,320,000</li>
               <li><strong>Campaign:</strong> Deadline Sale followed by negotiation</li>
@@ -832,52 +870,132 @@
               <li><strong>Property:</strong> three bedrooms, approximately 223 m² floor area and 1,480 m² land</li>
               <li><strong>Agent:</strong> Edita Andrijasevic</li>
             </ul>
+            <p><a href="https://www.raineandhorne.co.nz/blockhousebay/properties/773-south-titirangi-road-titirangi-0604-auckland" style="color:var(--gold); font-weight:900; text-decoration:underline;">View the Raine &amp; Horne sold property record →</a></p>
+          </div>
+          </div>
+        </article>
+        <div class="story-grid">
+          <article class="card story-card">
+            <p class="story-tag">Decades of belongings to sort</p>
+            <h3>12 Havelle Avenue</h3>
+            <p class="story-meta">Set date of sale · Sold 28 February 2023 · $1,075,000</p>
+            <p>The vendor had decades of belongings to sort before she could sell. Edita sat down with her and mapped out a timeline that gave her room to do it without feeling overwhelmed, then talked through presentation. The campaign allowed offers before the set date. After one weekend of open homes, the home sold in seven days for more than the price the vendor had in mind. She later told Edita she had felt looked after from that first meeting.</p>
           </article>
-          <article class="card">
-            <h3>Selected Titirangi Sales</h3>
-            <ul class="property-evidence-list">
-              <li><strong>12 Havelle Avenue</strong> — sold 28 February 2023 for $1,075,000.</li>
-              <li><strong>271 Huia Road</strong> — sold 23 June 2022 for $780,000.</li>
-              <li><strong>27 Hollywood Avenue</strong> — sold 10 March 2022 for $1,360,000.</li>
-              <li><strong>1D De Val Drive</strong> — sold 24 December 2021 for $1,030,000.</li>
-              <li><strong>23C West Lynn Road</strong> — sold 12 November 2021 for $2,000,000.</li>
-              <li><strong>56 Atkinson Road</strong> — sold 31 October 2021 for $985,000.</li>
-              <li><strong>230 Atkinson Road</strong> — sold 5 March 2021 for $1,075,000.</li>
-            </ul>
+          <article class="card story-card">
+            <p class="story-tag">Keeping preparation costs down</p>
+            <h3>271 Huia Road</h3>
+            <p class="story-meta">Price by negotiation · Sold 23 June 2022 · $780,000</p>
+            <p>Buyers needed help picturing what the rooms could become. Instead of asking the vendors to pay for traditional staging, Edita used virtual staging in the online marketing to show how the space could be used. The vendors avoided the cost of hiring furniture, the listing caught buyers' attention online, and the home sold.</p>
+          </article>
+          <article class="card story-card">
+            <p class="story-tag">An error in a building report</p>
+            <h3>27 Hollywood Avenue</h3>
+            <p class="story-meta">Price by negotiation · Sold 10 March 2022 · $1,360,000</p>
+            <p>The polished floors and garden drew plenty of interest, and the home went under contract. During the buyer's due diligence, a building report raised a problem that did not exist at this property. The text had come from another property's file. Edita picked up the error and had it corrected. The sale held together and settled smoothly.</p>
+          </article>
+          <article class="card story-card">
+            <p class="story-tag">A neighbour's private offer</p>
+            <h3>1D De Val Drive</h3>
+            <p class="story-meta">Set date of sale · Sold 24 December 2021 · $1,030,000</p>
+            <p>The neighbour wanted to buy the property privately before it was marketed. Edita advised the vendor to test the open market first, with a set date of sale. Strong early interest from other buyers meant the neighbour now had competition, and they made an offer strong enough to secure the home. The vendor was very happy with both the price and how quickly it sold.</p>
+          </article>
+          <article class="card story-card">
+            <p class="story-tag">Passed in at auction</p>
+            <h3>2/33 Konini Road</h3>
+            <p class="story-meta">Auction, then negotiation · Sold 30 October 2020 · $900,000</p>
+            <p>This renovated home was on an auction campaign when consent issues came to light, and it passed in. Edita helped the vendor get the consent issues resolved quickly and took the property back to buyers. Four offers came in. One was accepted, with an unconditional backup offer behind it in case the first buyer did not go unconditional. They did.</p>
+          </article>
+          <article class="card story-card">
+            <p class="story-tag">Changing method mid-campaign</p>
+            <h3>27 Wirihana Road</h3>
+            <p class="story-meta">Auction, then priced · Sold 9 October 2019 · $770,000</p>
+            <p>The campaign started as an auction, but buyer feedback showed a priced campaign would suit this home better. Edita recommended the switch, along with some presentation improvements. The change brought more buyer competition: the home attracted multiple offers and had two backup offers in place when it sold.</p>
           </article>
         </div>
-        <article class="card" style="margin-top:26px;">
-          <h3>Long-standing Titirangi experience</h3>
-          <p>These earlier completed campaigns demonstrate Edita's continuing experience in the suburb. Their historic prices are provided as a record of the sale at that time, not as an indication of a property's value today.</p>
-          <ul class="property-evidence-list" style="columns:2; column-gap:34px;">
-            <li><strong>2/33 Konini Road</strong> — sold 30 October 2020 for $900,000.</li>
-            <li><strong>258 Shaw Road</strong> — sold 6 October 2020 for $1,335,000.</li>
-            <li><strong>65 Konini Road</strong> — sold 13 October 2020 for $858,000.</li>
-            <li><strong>24 Arama Avenue</strong> — sold 15 June 2020 for $1,400,000.</li>
-            <li><strong>4 Arama Avenue</strong> — sold 11 June 2020 for $735,000.</li>
-            <li><strong>7 Pokapu Street</strong> — sold 24 March 2020 for $1,127,000.</li>
-            <li><strong>17 Hilling Street</strong> — sold 3 February 2020 for $870,000.</li>
-            <li><strong>27 Wirihana Road</strong> — sold 9 October 2019 for $770,000.</li>
-            <li><strong>2/132 Golf Road</strong> — sold 31 May 2018 for $860,000.</li>
-            <li><strong>23B West Lynn Road</strong> — sold 3 September 2016 for $1,370,000.</li>
-            <li><strong>91B Kaurilands Road</strong> — sold 30 March 2016 for $737,000.</li>
-            <li><strong>260 Titirangi Road</strong> — sold 28 November 2015 for $835,000.</li>
-            <li><strong>21 Landing Road</strong> — sold 31 July 2015 for $950,000.</li>
-          </ul>
-        </article>
-        <article class="card" style="margin-top:26px; background:var(--dark); color:var(--white); border-color:#4a4a4a;">
-          <span class="section-label">Campaign Case Study</span>
-          <h3 style="font-size:clamp(26px,3vw,38px); color:var(--white); margin-top:4px;">773 South Titirangi Road: Sustained Follow-Up Found the Right Buyer</h3>
-          <p style="color:#e5e5e5; margin-top:14px;">
-            The vendors wanted a result above the property's capital value during a market in which they had been receiving offers below their expectations. The property was launched on 6 August 2024 using a Deadline Sale campaign supported by professional property marketing and Raine &amp; Horne Amplify.
-          </p>
-          <p style="color:#e5e5e5; margin-top:14px;">
-            The campaign generated substantial buyer interest. Three offers were presented but were not accepted by the vendors. Edita continued buyer follow-up and negotiation until a buyer was found who recognised the property's potential.
-          </p>
-          <p style="color:#e5e5e5; margin-top:14px;">
-            The property sold on 24 September 2024 for $1,320,000, which was $70,000 above its capital value. This is one completed campaign and does not guarantee the same outcome for another property. Amplify supported the wider campaign; no claim is made that any single marketing channel produced the result.
-          </p>
-        </article>
+        <details class="story-more">
+          <summary>Read 13 more Titirangi sold stories</summary>
+          <div class="story-grid">
+            <article class="card story-card">
+              <p class="story-tag">A vendor outside Auckland during lockdown</p>
+              <h3>23C West Lynn Road</h3>
+              <p class="story-meta">Price by negotiation · Sold 12 November 2021 · $2,000,000</p>
+              <p>Buyer interest was high, but COVID-19 restrictions meant the vendor, who lived rurally outside Auckland, could not travel in to sign the sale documents. Edita arranged for the paperwork to reach the vendor locally so it could be signed there, and the sale went ahead.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">A consent matter found before auction</p>
+              <h3>56 Atkinson Road</h3>
+              <p class="story-meta">Auction · Sold 31 October 2021 · $985,000</p>
+              <p>A cottage with a special setting and a bridge that added to its character. Edita reviewed the LIM report before the auction, found a consent matter early and worked with the vendor's solicitor so it was dealt with openly. The home sold at auction, and the vendor's own review is quoted below.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">Setting a fair price within a family</p>
+              <h3>230 Atkinson Road</h3>
+              <p class="story-meta">Auction · Sold 5 March 2021 · $1,075,000</p>
+              <p>Members of the vendors' family were interested in buying, which can make agreeing on a fair price awkward for everyone. A competitive auction campaign let the open market set the benchmark. The family became the buyers, and everyone could be confident the price had been tested against other bidders.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">Cross-lease buyer concerns</p>
+              <h3>65 Konini Road</h3>
+              <p class="story-meta">Price by negotiation · Sold 13 October 2020 · $858,000</p>
+              <p>Some buyers are wary of cross-lease titles and fibre-cement cladding, with questions about neighbour arrangements, finance and maintenance. Edita had a full legal pack ready from the start so buyers could get answers early. The marketing focused on the location and the opportunity for families and investors, rather than letting the building's era set the conversation.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">A pre-auction offer</p>
+              <h3>24 Arama Avenue</h3>
+              <p class="story-meta">Auction · Sold 15 June 2020 · $1,400,000</p>
+              <p>Well presented and marketed to the right buyers, this home had busy open homes from the start. Edita negotiated a pre-auction offer, which brought the auction forward. Competitive bidding followed, and the home sold 13 days into the campaign.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">A steep driveway and a dated home</p>
+              <h3>4 Arama Avenue</h3>
+              <p class="story-meta">Price by negotiation · Sold 11 June 2020 · $735,000</p>
+              <p>A tidy but dated home of Lockwood and pole construction with a steep driveway, sold as part of an estate. Features like these narrow the buyer pool, so the price reflected the home's condition as well as its location. It drew strong interest and sold in under five weeks to a buyer who could see what it could become.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">Lockdown arrived mid-campaign</p>
+              <h3>7 Pokapu Street</h3>
+              <p class="story-meta">Auction campaign, sold by multi-offer · Sold 24 March 2020 · $1,127,000</p>
+              <p>The vendors first wanted a price-by-negotiation campaign. Edita recommended auction to build competition, and they agreed. When COVID-19 restrictions arrived in March 2020 and the auction could not go ahead as planned, the campaign moved quickly to a multi-offer process. The home sold in under three weeks for more than the vendors had hoped. Getting the LIM early also meant a compliance matter was found and resolved before settlement.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">Keeping the sellers informed</p>
+              <h3>17 Hilling Street</h3>
+              <p class="story-meta">Auction on site · Sold 3 February 2020 · $870,000</p>
+              <p>Selling a family home can be an anxious time. Edita gave the sellers a weekly update on the campaign, talked them through buyer feedback as it came in and kept them informed at each step, through to the fall of the hammer at the on-site auction.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">A deadline to move on</p>
+              <h3>2/132 Golf Road</h3>
+              <p class="story-meta">Price by negotiation · Sold 31 May 2018 · $860,000</p>
+              <p>The vendors needed to sell in time to move on. On Edita's advice they sorted out potential issues before listing, had the home deep-cleaned and tidied the landscaping, so this cross-lease home with an unusual layout went to market in excellent condition. The campaign drew strong interest, and the buyer came from outside the area, attracted by the location and the views.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">An eco-friendly lifestyle property</p>
+              <h3>23B West Lynn Road</h3>
+              <p class="story-meta">Auction · Sold 3 September 2016 · $1,370,000</p>
+              <p>A secluded lifestyle property with solar heating, rainwater tanks and a wetback wood burner. It drew strong interest and sold at auction to a buyer who had been searching for two years. Some years later, the home's original owners bought it back.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">A shared private driveway</p>
+              <h3>91B Kaurilands Road</h3>
+              <p class="story-meta">Price by negotiation · Sold 30 March 2016 · $737,000</p>
+              <p>One of six modern homes down a private driveway. Shared access can raise buyer questions about parking and common areas. Edita's marketing presented the home's seclusion as a strength and showed buyers what could not be seen from the street. Interest was strong, and the vendor was able to downsize as planned.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">A stepped, sloping section</p>
+              <h3>260 Titirangi Road</h3>
+              <p class="story-meta">Auction on site · Sold 28 November 2015 · $835,000</p>
+              <p>The section falls in steps, and recently removed trees had left large stumps across parts of it. Rather than play the land down, Edita held the auction on site so buyers could walk it, understand the layout and judge the access and privacy for themselves. The campaign targeted buyers who would value the setting, and the property sold.</p>
+            </article>
+            <article class="card story-card">
+              <p class="story-tag">Matching a known buyer</p>
+              <h3>21 Landing Road</h3>
+              <p class="story-meta">Price by negotiation · Sold 31 July 2015 · $950,000</p>
+              <p>Edita already knew a buyer who was looking for a private, semi-rural lifestyle, and 21 Landing Road fitted that brief. Introducing the buyer early led to a straightforward negotiation and a sale that worked for the vendor.</p>
+            </article>
+          </div>
+          <p class="story-also">Also sold in Titirangi: <strong>258 Shaw Road</strong>, 6 October 2020, $1,335,000.</p>
+        </details>
         <article class="card" style="margin-top:26px;">
           <span class="section-label">Titirangi Vendor Testimonial</span>
           <h3 style="font-size:clamp(26px,3vw,38px); margin-top:4px;">Tracey Pierard — Vendor of 56 Atkinson Road</h3>
@@ -889,7 +1007,7 @@
           </p>
         </article>
         <p class="evidence-note">
-          Property details, campaign dates and results are based on agency records supplied by Edita and publicly available agent-property records. Past results do not guarantee a future result and should not be used as evidence of current market value. For current suburb-level REINZ figures and selling context, read the <a href="/market-reports/titirangi/" style="color:#9b6b00; font-weight:900; text-decoration:underline;">current Titirangi property market report →</a>
+          Property details, campaign dates and results are based on agency records supplied by Edita and publicly available agent-property records. Historic sale prices are a record of the sale at that time, not an indication of a property's value today. Past results do not guarantee a future result. For current suburb-level REINZ figures and selling context, read the <a href="/market-reports/titirangi/" style="color:#9b6b00; font-weight:900; text-decoration:underline;">current Titirangi property market report →</a>
         </p>
       </div>
     </section>
@@ -1012,9 +1130,10 @@
           </div>
           <div style="display:flex; flex-direction:column; gap:20px; padding-top:10px;">
             <div class="card" style="background:var(--cream);">
-              <h3>Also selling in Kelston or Titirangi?</h3>
-              <p style="margin-bottom:14px;">If your property sits close to Kelston or Titirangi, current listings and recent sales in those areas may sometimes be relevant to the appraisal or campaign context. Edita also serves homeowners in those suburbs.</p>
-              <a href="/real-estate-agent-titirangi/" style="color:#9b6b00; font-weight:900; text-decoration:underline;">Real estate agents Titirangi →</a>
+              <h3>Also selling in Green Bay or Glen Eden?</h3>
+              <p style="margin-bottom:14px;">If your property sits close to Green Bay or Glen Eden, current listings and recent sales in those areas may sometimes be relevant to the appraisal or campaign context. Edita also serves homeowners in those suburbs.</p>
+              <a href="/real-estate-agent-green-bay/" style="color:#9b6b00; font-weight:900; text-decoration:underline;">Real estate agents Green Bay →</a><br>
+              <a href="/real-estate-agent-glen-eden/" style="color:#9b6b00; font-weight:900; text-decoration:underline; margin-top:8px; display:inline-block;">Real estate agents Glen Eden →</a>
             </div>
             <div class="card">
               <h3>Not ready to sell yet?</h3>
