@@ -479,6 +479,67 @@
       border: 0;
     }
 
+    .video-placeholder {
+      background: #000;
+    }
+
+    .video-play-button {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      background: #000;
+    }
+
+    .video-play-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      opacity: 0.88;
+    }
+
+    .video-play-button span {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      transform: translate(-50%, -50%);
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      font-weight: 900;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+    }
+
+    .video-transcript {
+      margin-top: 26px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 18px;
+    }
+    .video-transcript summary {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 900;
+    }
+    .video-transcript p {
+      color: var(--muted);
+    }
+    .video-points {
+      margin: 0 0 18px;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+    .video-points li { margin-bottom: 6px; }
+
     .local-team-section {
       background: #ffffff;
     }
@@ -753,7 +814,7 @@
       "url": "https://peterandedita.co.nz/free-home-appraisal-glen-eden/",
       "name": "Free Property Appraisal Glen Eden | Edita Andrijasevic - Raine & Horne",
       "description": "Free Glen Eden property appraisal from Edita Andrijasevic, Raine & Horne. Local pricing, buyer demand, presentation, marketing and selling strategy advice.",
-      "dateModified": "2026-10-26T09:00:00+13:00",
+      "dateModified": "2026-11-20T18:30:00+13:00",
       "inLanguage": "en-NZ",
       "isPartOf": {
         "@type": "WebSite",
@@ -841,6 +902,30 @@
       "contentUrl": "https://www.youtube.com/watch?v=DkKp8I__4mI",
       "publisher": {
         "@id": "https://peterandedita.co.nz/#realestateagent"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://peterandedita.co.nz/free-home-appraisal-glen-eden/#appraisal-video",
+      "name": "Glen Eden Free Property Appraisal | Edita Andrijasevic",
+      "description": "Edita Andrijasevic, licensed agent with Raine & Horne, explains why a sale on your Glen Eden street can tell you very little about your own home, how she checks your section and access in person before choosing the comparable sales, and what her written appraisal includes: a likely selling range, the recent sales behind it and why each one was chosen.",
+      "thumbnailUrl": [
+        "https://i.ytimg.com/vi/rhJjnPTvvSY/hqdefault.jpg",
+        "https://i.ytimg.com/vi/rhJjnPTvvSY/maxresdefault.jpg"
+      ],
+      "uploadDate": "2026-11-20T18:01:55+13:00",
+      "duration": "PT1M16S",
+      "embedUrl": "https://www.youtube.com/embed/rhJjnPTvvSY",
+      "inLanguage": "en-NZ",
+      "transcript": "What could your home sell for? A house can sell on your Glen Eden street and still tell me very little about what yours might sell for. Say your home sits on a sloping section, with stairs up from the driveway. A similar-sized home down the road sold recently, but it has level access and a flat lawn. Different buyer, different price. That's a sale I'd leave out. I come and see how your section and access work in person, then check what genuinely comparable homes sold for. Slopes in Glen Eden often have their own pull: bush outlooks, privacy, and the ranges close by. Being near the train station or village shops counts too. In writing, you get a likely selling range, the recent sales behind it, and a plain explanation of why I chose them. So you can see which features to highlight and what price the evidence supports. Request your free Glen Eden appraisal online today. There's no obligation to list.",
+      "creator": {
+        "@id": "https://peterandedita.co.nz/#realestateagent"
+      },
+      "publisher": {
+        "@id": "https://peterandedita.co.nz/#realestateagent"
+      },
+      "isPartOf": {
+        "@id": "https://peterandedita.co.nz/free-home-appraisal-glen-eden/#webpage"
       }
     },
     {
@@ -1118,6 +1203,43 @@
         </div>
       </div>
     </section>
+
+<section class="highlight" id="appraisal-video">
+<div class="container">
+<div class="section-title">
+<span class="eyebrow">Watch: 1-minute explainer</span>
+<h2>What Could Your Glen Eden Home Sell For? How An Appraisal Works</h2>
+<p>A sale on your street can tell you very little about your own home. Edita explains how she chooses the sales that genuinely compare.</p>
+</div>
+<div class="grid-2">
+<div class="video-wrap video-placeholder" data-video-id="rhJjnPTvvSY" data-video-title="Glen Eden Free Property Appraisal | Edita Andrijasevic">
+<button aria-label="Play Edita’s video: Glen Eden Free Property Appraisal | Edita Andrijasevic" class="video-play-button" type="button">
+<img alt="Edita Andrijasevic explaining how she appraises a Glen Eden home" decoding="async" height="720" loading="lazy" onload="if(this.naturalWidth&lt;200){this.onload=null;this.src='https://img.youtube.com/vi/rhJjnPTvvSY/hqdefault.jpg';}" src="https://img.youtube.com/vi/rhJjnPTvvSY/maxresdefault.jpg" width="1280"/>
+<span>▶</span>
+</button>
+</div>
+<div class="card">
+<h3>Your written appraisal includes</h3>
+<ul class="video-points">
+<li>A likely selling range</li>
+<li>The recent sales behind it, and why each one was chosen</li>
+<li>Which features to highlight when you sell</li>
+<li>Free, with no obligation to list</li>
+</ul>
+<p>Want the detail? <a href="/free-home-appraisal-west-auckland/#appraisal-video" style="color:#9b6b00; font-weight:900; text-decoration:underline;">Watch Edita’s full 3-minute appraisal explainer</a>.</p>
+<div class="cta-row"><a class="btn btn-primary" href="#request-appraisal">Request Your Free Glen Eden Appraisal</a></div>
+</div>
+</div>
+<details class="video-transcript">
+<summary>Read the video transcript</summary>
+<p>What could your home sell for?</p>
+<p>A house can sell on your Glen Eden street and still tell me very little about what yours might sell for. Say your home sits on a sloping section, with stairs up from the driveway. A similar-sized home down the road sold recently, but it has level access and a flat lawn. Different buyer, different price. That’s a sale I’d leave out.</p>
+<p>I come and see how your section and access work in person, then check what genuinely comparable homes sold for. Slopes in Glen Eden often have their own pull: bush outlooks, privacy, and the ranges close by. Being near the train station or village shops counts too.</p>
+<p>In writing, you get a likely selling range, the recent sales behind it, and a plain explanation of why I chose them. So you can see which features to highlight and what price the evidence supports.</p>
+<p>Request your free Glen Eden appraisal online today. There’s no obligation to list.</p>
+</details>
+</div>
+</section>
 
     <section id="why-us">
       <div class="container">
@@ -1605,6 +1727,27 @@
 
   </div>
 </footer>
+
+  <script>
+    document.querySelectorAll('.video-placeholder').forEach(function (wrapper) {
+      const button = wrapper.querySelector('button');
+      const videoId = wrapper.getAttribute('data-video-id');
+
+      if (!button || !videoId) return;
+
+      button.addEventListener('click', function () {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+        iframe.title = wrapper.getAttribute('data-video-title') || 'Edita Andrijasevic video';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.loading = 'lazy';
+
+        wrapper.innerHTML = '';
+        wrapper.appendChild(iframe);
+      });
+    });
+  </script>
 
   <script>
     (function () {
