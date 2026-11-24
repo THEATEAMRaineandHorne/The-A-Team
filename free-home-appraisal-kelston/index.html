@@ -138,6 +138,35 @@
     .dark-section .card { background: #303030; border-color: #555555; }
 
     .about-photo-card { background: #f7f5ef; border-radius: 26px; padding: 18px; box-shadow: 0 18px 45px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.06); }
+
+    .video-wrap { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 22px; overflow: hidden; box-shadow: 0 18px 55px rgba(0,0,0,0.22); background: #000; }
+    .video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .video-placeholder { background: #000; }
+    .video-play-button { position: relative; width: 100%; height: 100%; border: 0; padding: 0; cursor: pointer; background: #000; }
+    .video-play-button img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.88; }
+    .video-play-button span { position: absolute; inset: 50% auto auto 50%; transform: translate(-50%, -50%); width: 74px; height: 74px; border-radius: 50%; background: var(--gold); color: var(--dark); display: flex; align-items: center; justify-content: center; font-size: 34px; font-weight: 900; box-shadow: 0 12px 35px rgba(0,0,0,0.35); }
+
+    .video-transcript {
+      margin-top: 26px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 18px;
+    }
+    .video-transcript summary {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 900;
+    }
+    .video-transcript p {
+      color: var(--muted);
+    }
+    .video-points {
+      margin: 0 0 18px;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+    .video-points li { margin-bottom: 6px; }
     .about-photo-card img { width: 100%; height: auto; display: block; border-radius: 20px; object-fit: cover; }
     .photo-caption { margin: 14px 6px 0; font-size: 14px; color: #555; text-align: center; }
 
@@ -347,7 +376,7 @@
       "url": "https://peterandedita.co.nz/free-home-appraisal-kelston/",
       "name": "Free Home Appraisal Kelston | Edita Andrijasevic - Raine & Horne",
       "description": "Free Kelston home appraisal from Edita Andrijasevic, Raine & Horne. Local pricing advice, buyer demand, presentation, marketing and selling strategy for Kelston homeowners.",
-      "dateModified": "2026-10-26T09:00:00+13:00",
+      "dateModified": "2026-11-24T15:35:00+13:00",
       "inLanguage": "en-NZ",
       "isPartOf": {
         "@id": "https://peterandedita.co.nz/#website"
@@ -464,6 +493,30 @@
           }
         }
       ]
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://peterandedita.co.nz/free-home-appraisal-kelston/#appraisal-video",
+      "name": "What Could Your Kelston Home Sell For? See It Like a Buyer",
+      "description": "Edita Andrijasevic, licensed agent with Raine & Horne, explains how she appraises a Kelston home the way a buyer sees it: the routes they would walk, where they would park and how the home works day to day, then tests it against recent sales of homes with a similar location, layout and section, with a likely selling range and the sales behind it.",
+      "thumbnailUrl": [
+        "https://i.ytimg.com/vi/4kfK3RvI9uc/hqdefault.jpg",
+        "https://i.ytimg.com/vi/4kfK3RvI9uc/maxresdefault.jpg"
+      ],
+      "uploadDate": "2026-11-24T15:30:00+13:00",
+      "duration": "PT55S",
+      "embedUrl": "https://www.youtube.com/embed/4kfK3RvI9uc",
+      "inLanguage": "en-NZ",
+      "transcript": "If you live near Archibald Park in Kelston, you probably know exactly how long it takes to walk to the Whau River. A buyer seeing your home for the first time might have no idea. I'm Edita from Raine & Horne. When I appraise a Kelston home, I look at the routes buyers would actually walk, where they'd park, and how the home would work for them day to day. Then I use recent sales to test what buyers have paid for homes with a similar location, layout and section. If the closest sale had a bigger backyard or a more practical layout, I'll explain how that changes the comparison. If you're thinking about selling in Kelston, get in touch for a free written appraisal. I'll show you the likely selling range and the sales behind it.",
+      "creator": {
+        "@id": "https://peterandedita.co.nz/#realestateagent"
+      },
+      "publisher": {
+        "@id": "https://peterandedita.co.nz/#realestateagent"
+      },
+      "isPartOf": {
+        "@id": "https://peterandedita.co.nz/free-home-appraisal-kelston/#webpage"
+      }
     }
   ]
 }
@@ -661,6 +714,42 @@
         </div>
       </div>
     </section>
+
+<section class="highlight" id="appraisal-video">
+<div class="container">
+<div class="section-title">
+<span class="eyebrow">Watch: 1-minute explainer</span>
+<h2>What Could Your Kelston Home Sell For? See It Like a Buyer</h2>
+<p>A first-time buyer doesn’t know your street the way you do. Edita explains how she looks at your home through a buyer’s eyes, then tests it against recent sales.</p>
+</div>
+<div class="grid-2">
+<div class="video-wrap video-placeholder" data-video-id="4kfK3RvI9uc" data-video-title="What Could Your Kelston Home Sell For? See It Like a Buyer">
+<button aria-label="Play Edita’s video: What Could Your Kelston Home Sell For? See It Like a Buyer" class="video-play-button" type="button">
+<img alt="Edita Andrijasevic explaining how she appraises a Kelston home" decoding="async" height="720" loading="lazy" onload="if(this.naturalWidth&lt;200){this.onload=null;this.src='https://img.youtube.com/vi/4kfK3RvI9uc/hqdefault.jpg';}" src="https://img.youtube.com/vi/4kfK3RvI9uc/maxresdefault.jpg" width="1280"/>
+<span>▶</span>
+</button>
+</div>
+<div class="card">
+<h3>Your written appraisal includes</h3>
+<ul class="video-points">
+<li>A likely selling range</li>
+<li>The recent sales behind it</li>
+<li>How the closest sales differ from your home, and what that changes</li>
+<li>Free, with no obligation to list</li>
+</ul>
+<p>Want the detail? <a href="/free-home-appraisal-west-auckland/#appraisal-video" style="color:#9b6b00; font-weight:900; text-decoration:underline;">Watch Edita’s full 3-minute appraisal explainer</a>.</p>
+<div class="cta-row"><a class="btn btn-primary" href="#request-appraisal">Request Your Free Kelston Appraisal</a></div>
+</div>
+</div>
+<details class="video-transcript">
+<summary>Read the video transcript</summary>
+<p>If you live near Archibald Park in Kelston, you probably know exactly how long it takes to walk to the Whau River. A buyer seeing your home for the first time might have no idea.</p>
+<p>I’m Edita from Raine &amp; Horne. When I appraise a Kelston home, I look at the routes buyers would actually walk, where they’d park, and how the home would work for them day to day.</p>
+<p>Then I use recent sales to test what buyers have paid for homes with a similar location, layout and section. If the closest sale had a bigger backyard or a more practical layout, I’ll explain how that changes the comparison.</p>
+<p>If you’re thinking about selling in Kelston, get in touch for a free written appraisal. I’ll show you the likely selling range and the sales behind it.</p>
+</details>
+</div>
+</section>
 
     <!-- KELSTON LOCAL ADVICE -->
     <section id="kelston-market-advice">
@@ -935,6 +1024,24 @@
     </div>
 
   </footer>
+
+  <script>
+    document.querySelectorAll('.video-placeholder').forEach(function (wrapper) {
+      var button = wrapper.querySelector('button');
+      var videoId = wrapper.getAttribute('data-video-id');
+      if (!button || !videoId) return;
+      button.addEventListener('click', function () {
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+        iframe.title = wrapper.getAttribute('data-video-title') || 'Edita Andrijasevic video';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.loading = 'lazy';
+        wrapper.innerHTML = '';
+        wrapper.appendChild(iframe);
+      });
+    });
+  </script>
 
   <script>
     (function () {
